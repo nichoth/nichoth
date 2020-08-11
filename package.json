@@ -24,11 +24,12 @@
     "url-join": "0.0.1"
   },
   "devDependencies": {
-    "ecstatic": "^4.1.2",
+    "ecstatic": "^4.1.4",
     "handlebars": "^4.0.5",
     "hbsfy": "^2.5.0",
     "mkdirp": "^0.5.1",
     "node-neat": "^1.7.2",
-    "node-sass": "^3.4.2"
+    "node-sass": "^4.14.1",
+    "surge": "^0.21.6"
   }
 }
