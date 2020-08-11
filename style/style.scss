@@ -1,0 +1,31 @@
+@import "_common.scss";
+
+@-webkit-keyframes EvilColor {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@-moz-keyframes EvilColor {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@-o-keyframes EvilColor {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@keyframes EvilColor {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+
+.main-image {
+  background-size: 600%;
+  -webkit-animation: EvilColor 10s ease infinite;
+  -moz-animation: EvilColor 10s ease infinite;
+  -o-animation: EvilColor 10s ease infinite;
+  animation: EvilColor 10cs ease infinite;
+}
+

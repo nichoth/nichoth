@@ -1,0 +1,34 @@
+{
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  },
+  "scripts": {
+    "watch": "npm run watch-sass & npm run watch-js",
+    "watch-js": "watchify lib/main.js -o public/bundle.js -dv",
+    "watch-sass": "node-sass -w style/style.scss -o public",
+    "sass": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets --include-path node_modules/bourbon-neat/app/assets/stylesheets style/style.scss > public/style.css",
+    "dev": "npm run watch & ecstatic public",
+    "build": "browserify lib/main.js > public/bundle.js && npm run sass",
+    "deploy": "npm run build && surge public"
+  },
+  "dependencies": {
+    "after": "^0.8.1",
+    "canvas-particles": "0.0.8",
+    "catch-links": "^2.0.0",
+    "hyperglue": "^2.0.1",
+    "randomcolor": "^0.4.3",
+    "routes": "^2.1.0",
+    "single-page": "^1.1.0",
+    "url-join": "0.0.1"
+  },
+  "devDependencies": {
+    "ecstatic": "^4.1.2",
+    "handlebars": "^4.0.5",
+    "hbsfy": "^2.5.0",
+    "mkdirp": "^0.5.1",
+    "node-neat": "^1.7.2",
+    "node-sass": "^3.4.2"
+  }
+}
