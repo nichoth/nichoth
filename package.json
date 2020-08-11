@@ -9,6 +9,7 @@
     "watch-js": "watchify lib/main.js -o public/bundle.js -dv",
     "watch-sass": "node-sass -w style/style.scss -o public",
     "sass": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets --include-path node_modules/bourbon-neat/app/assets/stylesheets style/style.scss > public/style.css",
+    "start": "concurrently --kill-others \"npm run watch\" \"ecstatic public\"",
     "dev": "npm run watch & ecstatic public",
     "build": "browserify lib/main.js > public/bundle.js && npm run sass",
     "deploy": "npm run build && surge public"
@@ -24,6 +25,7 @@
     "url-join": "0.0.1"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "ecstatic": "^4.1.4",
     "handlebars": "^4.0.5",
     "hbsfy": "^2.5.0",
