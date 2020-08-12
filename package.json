@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "watch": "npm run watch-sass & npm run watch-js",
+    "watch": "concurrently --kill-others \"npm run watch-sass\" \"npm run watch-js\"",
     "watch-js": "watchify lib/main.js -o public/bundle.js -dv",
     "watch-sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" -w style/style.scss -o public",
     "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" style/style.scss > public/style.css",
