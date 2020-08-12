@@ -1,4 +1,11 @@
 {
+  "name": "nichoth",
+  "description": "http://nichoth.com/",
+  "version": "0.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "watch": "npm run watch-sass & npm run watch-js",
     "watch-js": "watchify lib/main.js -o public/bundle.js -dv",
@@ -23,9 +30,19 @@
     "bourbon-neat": "^4.0.0",
     "concurrently": "^5.3.0",
     "ecstatic": "^4.1.4",
-    "handlebars": "^4.0.5",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.14.1",
     "surge": "^0.21.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/nichoth.git"
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/nichoth/issues"
+  },
+  "homepage": "https://github.com/nichoth/nichoth#readme",
+  "private": true
 }
