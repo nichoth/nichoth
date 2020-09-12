@@ -3,7 +3,6 @@
 $green-color: #e5fff0;
 
 #github {
-    width: 2em;
     img {
         width: 100%;
         max-height: 100%;
@@ -17,6 +16,12 @@ $green-color: #e5fff0;
 
 .icon-wrapper {
     margin-top: 1em;
+    .icon-box.github {
+        width: 5vw;
+    }
+    .icon-box.email {
+        width: 6vw;
+    }
 }
 
 .icon-box {
