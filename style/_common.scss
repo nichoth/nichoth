@@ -1,5 +1,4 @@
 $iconColor: #2F596D;
-$iconWidth: 14vh;
 
 @import "bourbon";
 @import "neat";
@@ -16,7 +15,7 @@ body {
 
 .icon-box {
   display: inline-block;
-  width: $iconWidth;
+  width: 3em;
   min-width: 40px;
   svg {
     width: 100%;
