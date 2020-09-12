@@ -4,6 +4,11 @@ $green-color: #e5fff0;
 
 .main-image-wrapper {
     margin-bottom: 3em;
+    display: inline-block;
+    height: 50vh;
+    width: 50vw;
+    max-height: 350px;
+    max-width: 350px;
 }
 
 #github {
