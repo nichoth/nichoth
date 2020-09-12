@@ -2,6 +2,10 @@
 
 $green-color: #e5fff0;
 
+.main-image-wrapper {
+    margin-bottom: 3em;
+}
+
 #github {
     img {
         width: 100%;
@@ -56,6 +60,5 @@ $green-color: #e5fff0;
   -o-animation: EvilColor 10s ease infinite;
   animation: EvilColor 10cs ease infinite;
   margin-top: 1em;
-  margin-bottom: 3em;
 }
 
