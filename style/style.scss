@@ -4,17 +4,6 @@ $green-color: #e5fff0;
 @import "bourbon";
 @import "neat";
 
-
-.main-image-wrapper {
-    margin-bottom: 3em;
-    margin-top: 2em;
-    display: inline-block;
-    height: 50vh;
-    width: 50vw;
-    max-height: 350px;
-    max-width: 350px;
-}
-
 #github {
     img {
         width: 100%;
@@ -30,7 +19,7 @@ $green-color: #e5fff0;
 .icon-wrapper {
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 4em;
 
     .icon-box.github {
@@ -55,24 +44,15 @@ $green-color: #e5fff0;
     50%{background-position:100% 52%}
     100%{background-position:0% 49%}
 }
-@-o-keyframes EvilColor {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
+// @-o-keyframes EvilColor {
+//     0%{background-position:0% 49%}
+//     50%{background-position:100% 52%}
+//     100%{background-position:0% 49%}
+// }
 @keyframes EvilColor {
     0%{background-position:0% 49%}
     50%{background-position:100% 52%}
     100%{background-position:0% 49%}
-}
-
-.main-image {
-  background-size: 600%;
-  -webkit-animation: EvilColor 10s ease infinite;
-  -moz-animation: EvilColor 10s ease infinite;
-  -o-animation: EvilColor 10s ease infinite;
-  animation: EvilColor 10cs ease infinite;
-  margin-top: 1em;
 }
 
 body {
@@ -211,8 +191,13 @@ a {
   display: block;
   margin: 0 auto;
   background: linear-gradient(304deg, #f8f292, #07bed8, rgb(253, 87, 144), #ffa849, #f8f292);
-  /*background: linear-gradient(304deg, #f8f292, #07bed8, #EF4D42, #ffa849, #f8f292);*/
-  background-size: 100%;
+
+  background-size: 600%;
+  -webkit-animation: EvilColor 10s ease infinite;
+  -moz-animation: EvilColor 10s ease infinite;
+  -o-animation: EvilColor 10s ease infinite;
+  animation: EvilColor 10s ease infinite;
+  margin-top: 1em;
 }
 
 .links {
