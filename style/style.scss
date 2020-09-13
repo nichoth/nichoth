@@ -27,8 +27,11 @@ $green-color: #e5fff0;
 }
 
 .icon-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 4em;
+
     .icon-box.github {
         width: 5vw;
     }
@@ -76,11 +79,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.icon-wrapper {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
 .icon-box {
   display: inline-block;
   min-width: 40px;
@@ -93,9 +91,9 @@ body {
   }
 }
 
-.icon-copy {
-  opacity: 0.4;
-}
+// .icon-copy {
+//   opacity: 0.4;
+// }
 
 .email {
   #front-square {
