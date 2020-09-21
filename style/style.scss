@@ -4,6 +4,15 @@ $green-color: #e5fff0;
 @import "bourbon";
 @import "neat";
 
+
+p.main-text {
+  font-weight: 300;
+  font-size: 1.8em;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+
 #github {
     img {
         width: 100%;
@@ -20,7 +29,7 @@ $green-color: #e5fff0;
     max-width: 400px;
     margin: 0 auto;
     margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 
     .icon-box.github {
         width: 5vw;
@@ -57,6 +66,7 @@ $green-color: #e5fff0;
 
 body {
   margin: 0;
+  // font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
 
