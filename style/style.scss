@@ -4,14 +4,41 @@ $green-color: #e5fff0;
 @import "bourbon";
 @import "neat";
 
+body {
+  margin: 0;
+  // font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 4em;
+}
+
+a {
+  text-decoration: none;
+}
 
 p.main-text {
   font-weight: 300;
   font-size: 1.8em;
   margin-bottom: 2em;
   margin-top: 0;
+  max-width: 14em;
+  color: #05385F;
+  font-size: 2em;
+  margin: 0 auto;
+  a {
+    color: #1ABBA7;
+    transition: color 0.2s;
+    &:first-child {
+      color: #ff7795;
+    }
+    &:last-child {
+      color: #4fa8e0
+    }
+    &:hover {
+      // background: linear-gradient(#e6646500 20%, gray 50%, transparent 71.2%);
+      color: black;
+    }
+  }
 }
-
 
 #github {
     img {
@@ -62,12 +89,6 @@ p.main-text {
     0%{background-position:0% 49%}
     50%{background-position:100% 52%}
     100%{background-position:0% 49%}
-}
-
-body {
-  margin: 0;
-  // font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Raleway', sans-serif;
 }
 
 .icon-box {
@@ -133,37 +154,6 @@ body {
 
 #content {
   text-align: center;
-}
-
-.main-text-top {
-  top: 0;
-}
-
-.main-text.main-text-bottom {
-  bottom: 0;
-  letter-spacing: 0.6em;
-  padding-left: 0.1em;
-}
-
-.main-text {
-  //font-family: 'VT323', sans-serif;
-  font-family: 'Source Code Pro', sans-serif;
-  margin-top: 2em;
-  color: #05385F;
-  position: absolute;
-  width: 100%;
-  //text-transform: uppercase;
-  z-index: 2;
-  text-align: center;
-  font-size: 2em;
-  //font-weight: 100;
-  //letter-spacing: 0.1em;
-  //word-spacing: 0.3em;
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .main-image-wrapper {
