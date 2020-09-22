@@ -28,6 +28,8 @@
     "bourbon-neat": "^4.0.0",
     "concurrently": "^5.3.0",
     "ecstatic": "^4.1.4",
+    "hyperstream": "^1.2.2",
+    "minimist": "^1.2.5",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.14.1",
     "surge": "^0.21.6"

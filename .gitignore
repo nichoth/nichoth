@@ -89,6 +89,9 @@ node_modules
 
 public/bundle.js
 public/style.css
+public/websites
+public/software
+public/detritus
 ### https://raw.github.com/github/gitignore/93838230a341d789a5a833c8527e43ea76b2cb22/Global/SublimeText.gitignore
 
 # cache files for sublime text
