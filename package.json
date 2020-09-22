@@ -9,8 +9,9 @@
   "scripts": {
     "start": "concurrently --kill-others \"ecstatic public\" \"npm run watch-sass\"",
     "watch-sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" -w style/style.scss -o public",
+    "build": "node build.js && npm run build-js && npm run sass",
+    "build-js": "browserify lib/main.js > public/bundle.js",
     "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" style/style.scss > public/style.css",
-    "build": "node build.js && npm run sass",
     "deploy": "npm run build && surge public"
   },
   "dependencies": {
