@@ -7,10 +7,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"eleventy --input=src --output=public --serve\" \"npm run watch-sass\"",
+    "start": "concurrently --kill-others \"ecstatic public\" \"npm run watch-sass\"",
     "watch-sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" -w style/style.scss -o public",
     "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" style/style.scss > public/style.css",
-    "build": "eleventy --input=src --output=public && npm run sass",
+    "build": "node build.js && npm run sass",
     "deploy": "npm run build && surge public"
   },
   "dependencies": {
@@ -23,10 +23,10 @@
     "url-join": "0.0.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
     "bourbon": "^7.0.0",
     "bourbon-neat": "^4.0.0",
     "concurrently": "^5.3.0",
+    "ecstatic": "^4.1.4",
     "hyperstream": "^1.2.2",
     "node-sass": "^4.14.1",
     "surge": "^0.21.6"
