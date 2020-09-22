@@ -15,11 +15,34 @@ body {
   }
 
   &.websites {
+    .home-link {
+      img {
+        background-color: #ff7795;
+      }
+    }
+
     #content {
       text-align: left;
+      background-color: beige;
       & > div {
         border: 1px solid gray;
         padding: 1em;
+      }
+    }
+  }
+
+  &.software {
+    .home-link {
+      img {
+        background-color: #1ABBA7;
+      }
+    }
+  }
+
+  &.detritus {
+    .home-link {
+      img {
+        background-color: #4fa8e0;
       }
     }
   }
@@ -28,10 +51,20 @@ body {
 .site-nav {
   justify-content: space-around;
   display: flex;
+  align-items: center;
+  position: relative;
+  top: 6px;
+
   a {
     padding-left: 0.2em;
     &.active {
       background-image: radial-gradient(red, transparent);
+    }
+  }
+
+  .home-link {
+    img {
+      width: 2em;
     }
   }
 }

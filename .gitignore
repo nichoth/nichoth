@@ -183,3 +183,5 @@ node_modules
 
 bundle.js
 
+public/detritus/
+public/software/
