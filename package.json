@@ -7,13 +7,10 @@
     "lib": "lib"
   },
   "scripts": {
-    "watch": "concurrently --kill-others \"npm run watch-sass\" \"npm run watch-js\"",
-    "watch-js": "watchify lib/main.js -o public/bundle.js -dv",
+    "start": "concurrently --kill-others \"eleventy --input=src --output=public --serve\" \"npm run watch-sass\"",
     "watch-sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" -w style/style.scss -o public",
     "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" style/style.scss > public/style.css",
-    "start": "concurrently --kill-others \"npm run watch\" \"ecstatic public\"",
-    "dev": "npm run watch & ecstatic public",
-    "build": "browserify lib/main.js > public/bundle.js && npm run sass",
+    "build": "eleventy --input=src --output=public && npm run sass",
     "deploy": "npm run build && surge public"
   },
   "dependencies": {
@@ -26,6 +23,7 @@
     "url-join": "0.0.1"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "bourbon": "^7.0.0",
     "bourbon-neat": "^4.0.0",
     "concurrently": "^5.3.0",
