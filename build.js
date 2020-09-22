@@ -5,7 +5,10 @@ var srcPaths = [ 'websites', 'detritus', 'software' ]
 
 srcPaths.forEach(function (path) {
     var obj = {
-        '#content': fs.createReadStream(__dirname + '/src/' + path + '.html')
+        '#content': fs.createReadStream(__dirname + '/src/' + path + '.html'),
+        'body': {
+            class: { append: path }
+        }
     }
 
     obj['.site-nav a[href="/' + path + '"]'] = {
