@@ -9,6 +9,20 @@ body {
   // font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Raleway', sans-serif;
   padding-bottom: 4em;
+
+  img.thumbnail {
+    max-width: 20em;
+  }
+
+  &.websites {
+    #content {
+      text-align: left;
+      & > div {
+        border: 1px solid gray;
+        padding: 1em;
+      }
+    }
+  }
 }
 
 .site-nav {
