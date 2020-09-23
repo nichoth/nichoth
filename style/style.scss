@@ -32,9 +32,28 @@ body {
   }
 
   &.software {
+    .software-links {
+      margin-bottom: 2em;
+    }
+
+    .project > p {
+      margin-top: 0;
+    }
+
+    #content {
+      text-align: left;
+      margin: 2em;
+    }
+
     .home-link {
       img {
         background-color: #1ABBA7;
+      }
+    }
+
+    #github-icon {
+      img {
+        width: 4em;
       }
     }
   }
@@ -54,6 +73,8 @@ body {
   align-items: center;
   position: relative;
   top: 6px;
+  background-color: white;
+  border-bottom: 1px solid black;
 
   a {
     padding-left: 0.2em;
