@@ -45,7 +45,7 @@ sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
                 console.log('sbot closed', err)
             })
 
-            var indexRs = fs.createReadStream(__dirname + '/src/detritus.html')
+            // var indexRs = fs.createReadStream(__dirname + '/src/detritus.html')
             // indexRs.pipe(cat(cats)).pipe(fs.createWriteStream(__dirname +
             //     '/public/detritus/index.html'))
             cat(cats).pipe(fs.createWriteStream(__dirname +
