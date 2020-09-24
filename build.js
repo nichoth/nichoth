@@ -25,6 +25,8 @@ srcPaths.forEach(function (path) {
     rs.pipe(hs).pipe(fs.createWriteStream(outPath))
 })
 
+
+// the visual detritus page
 sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
     if (err) throw err
     console.log('sbot started')
@@ -47,12 +49,22 @@ sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
 
 
             var hs = hyperstream({
-                '#content': cat(cats)
+                '#content-detritus': cat(cats)
             })
-            fs.createReadStream(__dirname + '/src/detritus.html')
+            var _content = fs.createReadStream(__dirname + '/src/detritus.html')
                 .pipe(hs)
-                .pipe(fs.createWriteStream(__dirname +
-                    '/public/detritus/index.html'))
+
+            var _hs = hyperstream({
+                '#content': _content,
+                'body': {
+                    class: { append: 'detritus' }
+                }
+            })
+
+            fs.createReadStream(__dirname + '/src/_index.html')
+            .pipe(_hs)
+            .pipe(fs.createWriteStream(__dirname +
+                '/public/detritus/index.html'))
 
 
         }),
