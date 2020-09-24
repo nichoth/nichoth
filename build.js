@@ -45,16 +45,23 @@ sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
                 console.log('sbot closed', err)
             })
 
-            // indexRs.pipe(hs).pipe(fs.createWriteStream(__dirname + '/public/detritus/index.html'))
-
+            var indexRs = fs.createReadStream(__dirname + '/src/detritus.html')
+            // indexRs.pipe(cat(cats)).pipe(fs.createWriteStream(__dirname +
+            //     '/public/detritus/index.html'))
             cat(cats).pipe(fs.createWriteStream(__dirname +
                 '/public/detritus/index.html'))
 
+
+            var hs = hyperstream({
+                '#content': cat(cats)
+            })
+            fs.createReadStream(__dirname + '/src/detritus.html')
+                .pipe(hs)
+                .pipe(fs.createWriteStream(__dirname +
+                    '/public/detritus/index.html'))
+
+
         }),
-        // scan(function (acc, val) {
-        //     var {post, n} = val
-        //     return { post, n: acc[n] + 1 }
-        // }),
         S.drain(function ({ post, n }) {
             console.log('post', n)
             // for each post, append it to #content, after making it html
@@ -70,12 +77,14 @@ sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
             )
 
             // make a thumbnail stream of html
-            var indexRs = fs.createReadStream(__dirname + '/src/detritus.html')
+            var indexRs = fs.createReadStream(__dirname +
+                '/src/_detritus_template.html')
             var hs = hyperstream({
                 '.post': {
                     _appendHtml: `<img src="/img/file${n}">`
                 }
             })
+            // cats.push(hs)
             cats.push(indexRs.pipe(hs))
         })
     )
