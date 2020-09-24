@@ -58,6 +58,9 @@ sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
                 '#content': _content,
                 'body': {
                     class: { append: 'detritus' }
+                },
+                '.site-nav a[href="/detritus"]': {
+                    class: { append: 'active' }
                 }
             })
 
