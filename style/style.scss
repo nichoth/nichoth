@@ -4,6 +4,22 @@ $green-color: #e5fff0;
 @import "bourbon";
 @import "neat";
 
+#content-detritus {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: stretch;
+}
+
+.post {
+  img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+  }
+}
+
 body {
   margin: 0;
   // font-family: 'Open Sans Condensed', sans-serif;
@@ -75,6 +91,7 @@ body {
   top: 6px;
   background-color: white;
   border-bottom: 1px solid black;
+  margin-bottom: 2em;
 
   a {
     padding-left: 0.2em;
