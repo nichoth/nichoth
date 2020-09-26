@@ -14,3 +14,10 @@ npm start
 npm run deploy
 ```
 
+--------------------------------------------------
+
+## notes
+
+### 9-25-2020
+Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
+

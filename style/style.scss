@@ -5,6 +5,7 @@ $green-color: #e5fff0;
 @import "neat";
 
 #content-detritus {
+  padding: 1em;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);

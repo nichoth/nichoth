@@ -35,7 +35,7 @@
     "pull-scan": "^1.0.0",
     "pull-stream": "^3.6.14",
     "pull-write-file": "^0.2.4",
-    "ssb-web": "0.0.2",
+    "ssb-web": "0.0.4",
     "stream-cat": "^1.1.1",
     "surge": "^0.21.6"
   },

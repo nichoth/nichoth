@@ -1,6 +1,6 @@
 var hyperstream = require('hyperstream');
 var fs = require('fs');
-var sbweb = require('ssb-web')
+var ssbWeb = require('ssb-web')
 var S = require('pull-stream')
 var WriteFile = require('pull-write-file')
 var cat = require('stream-cat')
@@ -27,19 +27,21 @@ srcPaths.forEach(function (path) {
 
 
 // the visual detritus page
-sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
+ssbWeb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
     if (err) throw err
-    console.log('sbot started')
 
-    var n = 0
     var cats = []
     S(
-        sbweb.getPosts({ id, sbot, type: 'ev.post' }),
-        S.map(function (post) {
-            var _n = n
-            n++
-            return { post, n: _n }
-        }),
+        ssbWeb.getPosts({ id, sbot, type: 'ev.post' }),
+        // S.map(function (post) {
+        //     var _n = n
+        //     n++
+        //     return { post, n: _n }
+        // }),
+
+        // this means `public/posts/img`
+        ssbWeb.writeFiles(sbot, 'public/posts/img'),
+
         S.through(function noop(){}, function onEnd (err) {
             console.log('on end', err)
             if (err) throw err
@@ -68,29 +70,16 @@ sbweb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
             .pipe(_hs)
             .pipe(fs.createWriteStream(__dirname +
                 '/public/detritus/index.html'))
-
-
         }),
-        S.drain(function ({ post, n }) {
-            console.log('post', n)
-            // for each post, append it to #content, after making it html
-            
-            // writing the blob
-            var hash = post.value.content.mentions[0].link
-            S(
-                sbot.blobs.get(hash),
-                WriteFile(__dirname + '/public/img/file'+n, {}, (err) => {
-                    console.log('file written', err)
-                    if (err) throw err
-                })
-            )
+        S.drain(function ({ post, blob }) {
+            console.log('post', post)
 
-            // make a thumbnail stream of html
+            // make a thumbnail stream of html for the index page
             var indexRs = fs.createReadStream(__dirname +
                 '/src/_detritus_template.html')
             var hs = hyperstream({
                 '.post': {
-                    _appendHtml: `<img src="/img/file${n}">`
+                    _appendHtml: `<img src="/img/${blob}">`
                 }
             })
             // cats.push(hs)
