@@ -33,11 +33,6 @@ ssbWeb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
     var cats = []
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post' }),
-        // S.map(function (post) {
-        //     var _n = n
-        //     n++
-        //     return { post, n: _n }
-        // }),
 
         // this means `public/posts/img`
         ssbWeb.writeFiles(sbot, 'public/posts/img'),
@@ -48,7 +43,6 @@ ssbWeb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
             sbot.close(null, function (err) {
                 console.log('sbot closed', err)
             })
-
 
             var hs = hyperstream({
                 '#content-detritus': cat(cats)
@@ -79,7 +73,7 @@ ssbWeb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
                 '/src/_detritus_template.html')
             var hs = hyperstream({
                 '.post': {
-                    _appendHtml: `<img src="/img/${blob}">`
+                    _appendHtml: `<img src="/posts/img/${blob}">`
                 }
             })
             // cats.push(hs)
