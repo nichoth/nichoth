@@ -2,7 +2,6 @@ var hyperstream = require('hyperstream');
 var fs = require('fs');
 var ssbWeb = require('ssb-web')
 var S = require('pull-stream')
-var WriteFile = require('pull-write-file')
 var cat = require('stream-cat')
 
 var srcPaths = [ 'websites', 'software' ]
@@ -61,22 +60,25 @@ ssbWeb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
             })
 
             fs.createReadStream(__dirname + '/src/_index.html')
-            .pipe(_hs)
-            .pipe(fs.createWriteStream(__dirname +
-                '/public/detritus/index.html'))
+                .pipe(_hs)
+                .pipe(fs.createWriteStream(__dirname +
+                    '/public/detritus/index.html'))
         }),
         S.drain(function ({ post, blob }) {
             console.log('post', post)
+
+            // post
+            // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
             // make a thumbnail stream of html for the index page
             var indexRs = fs.createReadStream(__dirname +
                 '/src/_detritus_template.html')
             var hs = hyperstream({
                 '.post': {
-                    _appendHtml: `<img src="/posts/img/${blob}">`
+                    _appendHtml: `<img src="/posts/img/${blob}">
+                    <p class="post-text">${post.value.content.text}</p>`
                 }
             })
-            // cats.push(hs)
             cats.push(indexRs.pipe(hs))
         })
     )
