@@ -85,6 +85,9 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
                                 ${post.value.content.text}
                             </p>
                         `
+                    },
+                    '.site-nav a[href="/detritus"]': {
+                        class: { append: 'active' }
                     }
                 }))
                 .pipe(fs.createWriteStream(__dirname +
