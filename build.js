@@ -26,12 +26,12 @@ srcPaths.forEach(function (path) {
 
 
 // the visual detritus page
-ssbWeb.startSbot('ssb-ev-DEV', function (err, { id, sbot }) {
+ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
     if (err) throw err
 
     var cats = []
     S(
-        ssbWeb.getPosts({ id, sbot, type: 'ev.post' }),
+        ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
 
         // this means `public/posts/img`
         ssbWeb.writeFiles(sbot, 'public/posts/img'),
