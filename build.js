@@ -3,6 +3,7 @@ var fs = require('fs');
 var ssbWeb = require('ssb-web')
 var S = require('pull-stream')
 var cat = require('stream-cat')
+var mkdirp = require('mkdirp')
 
 var srcPaths = [ 'websites', 'software' ]
 
@@ -68,15 +69,38 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
             // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
+
+
             // in here, make the page with a single image
+            mkdirp.sync(__dirname + '/public/posts/' + blob)
+            fs.createReadStream(__dirname + '/src/_index.html')
+                .pipe(hyperstream({
+                    'body': {
+                        class: { append: 'detritus-single-image' }
+                    },
+                    '#content': {
+                        _appendHtml: `
+                            <img src="/posts/img/${blob}">
+                            <p class="post-text">
+                                ${post.value.content.text}
+                            </p>
+                        `
+                    }
+                }))
+                .pipe(fs.createWriteStream(__dirname +
+                    '/public/posts/' + blob + '/index.html'))
+
+
 
             // make a thumbnail stream of html for the index page
             var indexRs = fs.createReadStream(__dirname +
                 '/src/_detritus_template.html')
             var hs = hyperstream({
                 '.post': {
-                    _appendHtml: `<img src="/posts/img/${blob}">
-                    <p class="post-text">${post.value.content.text}</p>`
+                    _appendHtml: `<a href="/posts/${blob}">
+                        <img src="/posts/img/${blob}">
+                        <p class="post-text">${post.value.content.text}</p>
+                    </a>`
                 }
             })
             cats.push(indexRs.pipe(hs))
