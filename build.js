@@ -32,8 +32,6 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
     var cats = []
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
-
-        // this means `public/posts/img`
         ssbWeb.writeFiles(sbot, 'public/posts/img'),
 
         S.through(function noop(){}, function onEnd (err) {
@@ -67,8 +65,10 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
         S.drain(function ({ post, blob }) {
             console.log('post', post)
 
-            // post
+            // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
+
+            // in here, make the page with a single image
 
             // make a thumbnail stream of html for the index page
             var indexRs = fs.createReadStream(__dirname +
