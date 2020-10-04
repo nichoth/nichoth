@@ -21,3 +21,16 @@ npm run deploy
 ### 9-25-2020
 Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 
+-----------------------------------------------------
+
+### frameworks
+
+* [hyperapp](https://github.com/jorgebucaran/hyperapp)
+  - [github namespace](https://github.com/hyperapp)
+  - [hypersamples](https://github.com/hyperapp/hypersamples)
+  - [hyperlit](https://github.com/zaceno/hyperlit)
+* [mutant](https://github.com/mmckegg/mutant)
+* [bulma](https://bulma.io/) -- css 
+
+
+
