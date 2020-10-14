@@ -62,6 +62,7 @@ Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 * [pinata](https://pinata.cloud/)
 * [dat sdk](https://github.com/datproject/sdk)
 * [hyperswarm](https://github.com/RangerMauve/hyperswarm-web)
+* [dat-sroe](https://github.com/datproject/dat-store)
 
 ----------------------------------------
 
