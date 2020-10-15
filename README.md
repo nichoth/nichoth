@@ -78,6 +78,8 @@ Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 
 ----------------------------------------
 
+## to read
+* https://whitepaper.fission.codes/identity/id-overview
 
 
 
