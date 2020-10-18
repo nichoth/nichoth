@@ -63,6 +63,10 @@ Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 * [dat sdk](https://github.com/datproject/sdk)
 * [hyperswarm](https://github.com/RangerMauve/hyperswarm-web)
 * [dat-sroe](https://github.com/datproject/dat-store)
+* https://github.com/jimpick/hyper-graph-db-playground
+* [hyper graph db](https://github.com/e-e-e/hyper-graph-db)
+* [hyperdiscovery](https://github.com/datproject/hyperdiscovery)
+* [hyperDB](https://github.com/mafintosh/hyperdb)
 
 ----------------------------------------
 
@@ -81,6 +85,7 @@ Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 ## to read
 * https://whitepaper.fission.codes/identity/id-overview
 * https://en.wikipedia.org/wiki/WebFinger
+* https://github.com/e-e-e/hyper-graph-db
 
 
 
