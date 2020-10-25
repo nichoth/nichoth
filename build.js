@@ -69,8 +69,6 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
             // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
-
-
             // in here, make the page with a single image
             mkdirp.sync(__dirname + '/public/posts/' + blob)
             fs.createReadStream(__dirname + '/src/_index.html')
