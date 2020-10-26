@@ -97,7 +97,7 @@ Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 -rw-r--r--  1 nick  staff    27B Oct 25 16:08 style.css
 ```
 
-* choo
+* [choo](https://github.com/nichoth/demo-world-choo)
 ```
 -rw-r--r--  1 nick  staff    30K Oct 25 19:13 bundle.js
 -rw-r--r--  1 nick  staff     0B Oct 25 19:12 style.css
