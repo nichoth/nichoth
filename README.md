@@ -87,6 +87,23 @@ Found out about [scuttle-tag](https://www.npmjs.com/package/scuttle-tag) today.
 * https://en.wikipedia.org/wiki/WebFinger
 * https://github.com/e-e-e/hyper-graph-db
 
+-------------------------------------------
+
+## sizes of things
+* [preact](https://github.com/nichoth/demo-world)
+```
+-rw-r--r--  1 nick  staff    13K Oct 25 14:42 bundle.js
+-rw-r--r--  1 nick  staff   243B Oct 25 10:55 index.html
+-rw-r--r--  1 nick  staff    27B Oct 25 16:08 style.css
+```
+
+* choo
+```
+-rw-r--r--  1 nick  staff    30K Oct 25 19:13 bundle.js
+-rw-r--r--  1 nick  staff     0B Oct 25 19:12 style.css
+```
+
+
 
 
 
