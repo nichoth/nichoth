@@ -108,6 +108,32 @@ total 872
 -rw-r--r--  1 nick  staff    27B Oct 25 21:03 style.css
 ```
 
+-----------------------------------------------------
+
+from stackoverflow
+
+> I. Encryption and decryption of data
+
+> Alice wants to send a message to Bob which no one should be able to read.
+
+> Alice encrypts the message with Bob's public key and sends it over.
+> Bob receives the message and decrypts it using his private Key.
+> Note that if A wants to send a message to B, A needs to use the Public key of B (which is publicly available to anyone) and neither public nor private key of A comes into picture here.
+
+> So if you want to send a message to me you should know and use my public key which I provide to you and only I will be able to decrypt the message since I am the only one who has access to the corresponding private key.
+
+> II. Verify the identity of sender (Authentication)
+
+> Alice wants to send a message to Bob again. The problem of encrypting the data is solved using the above method.
+
+> But what if I am sitting between Alice and Bob, introducing myself as 'Alice' to Bob and sending my own message to Bob instead of forwarding the one sent by Alice. Even though I can not decrypt and read the original message sent by Alice(that requires access to Bob's private key) I am hijacking the entire conversation between them.
+
+> Is there a way Bob can confirm that the messages he is receiving are actually sent by Alice?
+
+> Alice signs the message with her private key and sends it over. (In practice, what is signed is a hash of the message, e.g. SHA-256 or SHA-512.)
+Bob receives it and verifies it using Alice's public key. Since Alice's public key successfully verified the message, Bob can conclude that the message has been signed by Alice.
+
+---------------------------------------------------
 
 
 
