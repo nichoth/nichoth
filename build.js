@@ -36,6 +36,15 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     // pics by tag
     sbot.tags.get(function (err, res) {
         console.log('tags.get', err, res)
+        Object.keys(res).forEach(function (tag) {
+            var msgIds = res[tag]
+            msgIds.forEach(function (id) {
+                sbot.get(id, function (err, msg) {
+                    console.log('got msg', err, msg)
+                    console.log('mentions', msg.content.mentions)
+                })
+            })
+        })
     })
 
     // this is a concatted list of streams fo html for posts, an index page
