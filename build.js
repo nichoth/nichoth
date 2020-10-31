@@ -25,18 +25,28 @@ srcPaths.forEach(function (path) {
     rs.pipe(hs).pipe(fs.createWriteStream(outPath))
 })
 
+var plugins = [
+    require('@nichoth/ssb-tags')({ postType: 'ev.post' })
+]
 
 // the visual detritus page
-ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
+ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     if (err) throw err
 
+    // pics by tag
+    sbot.tags.get(function (err, res) {
+        console.log('tags.get', err, res)
+    })
+
+    // this is a concatted list of streams fo html for posts, an index page
     var cats = []
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
         ssbWeb.writeFiles(sbot, 'public/posts/img'),
 
+        // now we have gotten all the posts, can write the index/list
+        // of them
         S.through(function noop(){}, function onEnd (err) {
-            console.log('on end', err)
             if (err) throw err
             sbot.close(null, function (err) {
                 console.log('sbot closed', err)
@@ -64,7 +74,7 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
                     '/public/detritus/index.html'))
         }),
         S.drain(function ({ post, blob }) {
-            console.log('post', post)
+            // console.log('post', post)
 
             // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
@@ -77,12 +87,10 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
                         class: { append: 'detritus-single-image' }
                     },
                     '#content': {
-                        _appendHtml: `
-                            <img src="/posts/img/${blob}">
+                        _appendHtml: `<img src="/posts/img/${blob}">
                             <p class="post-text">
                                 ${post.value.content.text}
-                            </p>
-                        `
+                            </p>`
                     },
                     '.site-nav a[href="/detritus"]': {
                         class: { append: 'active' }
@@ -90,7 +98,6 @@ ssbWeb.startSbot('ssb-ev-foo', function (err, { id, sbot }) {
                 }))
                 .pipe(fs.createWriteStream(__dirname +
                     '/public/posts/' + blob + '/index.html'))
-
 
 
             // make a thumbnail stream of html for the index page
