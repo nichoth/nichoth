@@ -236,12 +236,12 @@ p.main-text {
 #email {
   svg {
     // connecting lines in the box
-    &.depressed {
-      line {
-        /* stroke: pink; */
-        /* display: none; */
-      }
-    }
+    // &.depressed {
+    //   // line {
+    //   //   /* stroke: pink; */
+    //   //   /* display: none; */
+    //   // }
+    // }
     path {
       stroke-width: 11;
       stroke: $iconColor;
