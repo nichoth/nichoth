@@ -159,8 +159,9 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                 .pipe(fs.createWriteStream(__dirname +
                     '/public/posts/' + blob + '/index.html'))
 
+            // html for this post on the index page
             // cat the new html for this post
-            contentDetritus = contentDetritus + `<div class="post">
+            contentDetritus += `<div class="post">
                 <a href="/posts/${blob}">
                     <img src="/posts/img/${blob}">
                     <p class="post-text">${post.value.content.text}</p>

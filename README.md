@@ -135,8 +135,22 @@ Bob receives it and verifies it using Alice's public key. Since Alice's public k
 
 ---------------------------------------------------
 
+## 10-31-2020
+Reading https://github.com/RangerMauve/local-first-cyberspace
 
+on `dat`:
+> It's kinda like torrents, but it supports more files, and you can update the contents without needing to create a new archive.
 
+* https://github.com/RangerMauve/discovery-swarm-web -- Abstracts away discovery-swarm interaction with WebRTC and a websocket gateway.
+* https://github.com/geut/discovery-swarm-webrtc
 
+* https://github.com/ssbc/ssb-server/issues/124 – partial replication issue
+* https://github.com/ssbc/ssb-db/issues/27 – ‘Merkle Tree Logs’ issue
+* https://github.com/arj03/ssb-browser-demo
+* https://github.com/arj03/ssb-browser-core
+* https://github.com/arj03/ssb-partial-replication
+* https://github.com/ssbc/epidemic-broadcast-trees/
+* https://viewer.scuttlebot.io/%L9m5nHRqpXM4Zkha1ENTk5wNOXQMduve8Hc9%2BF0RLZI%3D.sha256 – ssb thread about enabling partially subscribable feeds
+* https://github.com/dominictarr/tree-exchange
 
 
