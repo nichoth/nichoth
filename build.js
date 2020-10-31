@@ -57,7 +57,8 @@ function createTagIndex (sbot, tag, msgIds) {
     function write () {
         var hs = hyperstream({
             '#content': {
-                _appendHtml: posts
+                _appendHtml: posts,
+                class: { append: 'tag ' + tag }
             }
         })
         
