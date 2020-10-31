@@ -97,7 +97,7 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     })
 
     // this is a concatted list of streams of html for posts, an index page
-    var cats = []
+    // var cats = []
     var contentDetritus = ''
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
