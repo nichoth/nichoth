@@ -39,26 +39,31 @@ function createTagIndex (sbot, tag, msgIds) {
     var next = after(msgIds.length, write)
     msgIds.forEach(function (id) {
         sbot.get(id, function (err, msg) {
-            // TODO -- get all mentions
+            // TODO -- get all mentions, not just the first
+            if (err) return next(err)
             var hashSlug = slugify(msg.content.mentions[0].link)
             posts = posts + `<div class="post">
                 <img src="/posts/img/${hashSlug}">
                 <p>${msg.content.text}</p>
             </div>`
 
-            // console.log('posts aaaaa', posts)
             next(null, msg)
-
-            // console.log('*got msg*', err, msg)
-            // console.log('*mentions*', msg.content.mentions)
         })
     })
 
     function write () {
         var hs = hyperstream({
+            body: {
+                class: { append: 'tag-index' }
+            },
+
+            '.site-nav a[href="/detritus"]': {
+                class: { append: 'active' }
+            },
+            
             '#content': {
                 _appendHtml: posts,
-                class: { append: 'tag ' + tag }
+                class: { append: 'tag-index ' + tag }
             }
         })
         
@@ -93,6 +98,7 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
 
     // this is a concatted list of streams of html for posts, an index page
     var cats = []
+    var contentDetritus = ''
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
         ssbWeb.writeFiles(sbot, 'public/posts/img'),
@@ -101,12 +107,15 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
         // of them
         S.through(function noop(){}, function onEnd (err) {
             if (err) throw err
+            // console.log('**detritus**', contentDetritus)
+
             sbot.close(null, function (err) {
                 console.log('sbot closed', err)
             })
 
             var hs = hyperstream({
-                '#content-detritus': cat(cats)
+                // '#content-detritus': cat(cats)
+                '#content-detritus': contentDetritus
             })
             var _content = fs.createReadStream(__dirname + '/src/detritus.html')
                 .pipe(hs)
@@ -127,6 +136,7 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                     '/public/detritus/index.html'))
         }),
         S.drain(function ({ post, blob }) {
+            // console.log('aaaaaaa', post)
             // console.log('post', post)
 
             // post.value.content
@@ -154,17 +164,24 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
 
 
             // make a thumbnail stream of html for the index page
-            var indexRs = fs.createReadStream(__dirname +
-                '/src/_detritus_template.html')
-            var hs = hyperstream({
-                '.post': {
-                    _appendHtml: `<a href="/posts/${blob}">
-                        <img src="/posts/img/${blob}">
-                        <p class="post-text">${post.value.content.text}</p>
-                    </a>`
-                }
-            })
-            cats.push(indexRs.pipe(hs))
+            // var indexRs = fs.createReadStream(__dirname +
+            //     '/src/_detritus_template.html')
+            // var hs = hyperstream({
+            //     '.post': {
+            //         _appendHtml: `<a href="/posts/${blob}">
+            //             <img src="/posts/img/${blob}">
+            //             <p class="post-text">${post.value.content.text}</p>
+            //         </a>`
+            //     }
+            // })
+            contentDetritus = contentDetritus + `<div class="post">
+                <a href="/posts/${blob}">
+                    <img src="/posts/img/${blob}">
+                    <p class="post-text">${post.value.content.text}</p>
+                </a>
+            </div>`
+
+            // cats.push(indexRs.pipe(hs))
         })
     )
 })

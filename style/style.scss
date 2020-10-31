@@ -333,3 +333,11 @@ p.main-text {
   color: pink;
 }
 
+#content.tag-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  padding: 1em;
+  // p {
+  //   text-align: left;
+  // }
+}
