@@ -136,9 +136,6 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                     '/public/detritus/index.html'))
         }),
         S.drain(function ({ post, blob }) {
-            // console.log('aaaaaaa', post)
-            // console.log('post', post)
-
             // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
@@ -162,26 +159,13 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                 .pipe(fs.createWriteStream(__dirname +
                     '/public/posts/' + blob + '/index.html'))
 
-
-            // make a thumbnail stream of html for the index page
-            // var indexRs = fs.createReadStream(__dirname +
-            //     '/src/_detritus_template.html')
-            // var hs = hyperstream({
-            //     '.post': {
-            //         _appendHtml: `<a href="/posts/${blob}">
-            //             <img src="/posts/img/${blob}">
-            //             <p class="post-text">${post.value.content.text}</p>
-            //         </a>`
-            //     }
-            // })
+            // cat the new html for this post
             contentDetritus = contentDetritus + `<div class="post">
                 <a href="/posts/${blob}">
                     <img src="/posts/img/${blob}">
                     <p class="post-text">${post.value.content.text}</p>
                 </a>
             </div>`
-
-            // cats.push(indexRs.pipe(hs))
         })
     )
 })
