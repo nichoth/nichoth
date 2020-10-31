@@ -42,7 +42,7 @@ function createTagIndex (sbot, tag, msgIds) {
             // TODO -- get all mentions, not just the first
             if (err) return next(err)
             var hashSlug = slugify(msg.content.mentions[0].link)
-            posts = posts + `<div class="post">
+            posts += `<div class="post">
                 <img src="/posts/img/${hashSlug}">
                 <p>${msg.content.text}</p>
             </div>`
