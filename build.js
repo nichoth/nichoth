@@ -37,20 +37,24 @@ function createTagIndex (sbot, tag, msgIds) {
 
     var posts = ''
     var next = after(msgIds.length, write)
+    // create the html list of posts for this tag
     msgIds.forEach(function (id) {
         sbot.get(id, function (err, msg) {
             // TODO -- get all mentions, not just the first
             if (err) return next(err)
             var hashSlug = slugify(msg.content.mentions[0].link)
             posts += `<div class="post">
-                <img src="/posts/img/${hashSlug}">
-                <p>${msg.content.text}</p>
+                <a href="/posts/${hashSlug}">
+                    <img src="/posts/img/${hashSlug}">
+                    <p>${msg.content.text}</p>
+                </a>
             </div>`
 
             next(null, msg)
         })
     })
 
+    // write the index page with the post list
     function write () {
         var hs = hyperstream({
             body: {
