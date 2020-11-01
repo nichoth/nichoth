@@ -166,6 +166,10 @@ on `dat`:
 * https://medium.com/fauna/the-worlds-best-serverless-database-now-with-native-graphql-ebaebc390395
 * https://rxdb.info/replication-graphql.html
 
+-------------------------------------------------
+
+Need a localhost graphDB server for a local database
+
 
 
 
