@@ -153,4 +153,20 @@ on `dat`:
 * https://viewer.scuttlebot.io/%L9m5nHRqpXM4Zkha1ENTk5wNOXQMduve8Hc9%2BF0RLZI%3D.sha256 – ssb thread about enabling partially subscribable feeds
 * https://github.com/dominictarr/tree-exchange
 
+-------------------------------------------------
+## 11-1-2020
+
+### fauna & graphql
+* https://fauna.com/blog/try-faunadbs-graphql-api
+* https://docs.fauna.com/fauna/current/api/graphql/
+* https://rxdb.info/replication-graphql.html
+* https://hasura.io/blog/building-an-offline-first-web-app-with-rxdb-hasura/
+* https://docs.fauna.com/fauna/current/api/graphql/endpoints
+* https://docs.fauna.com/fauna/current/start/graphql
+* https://medium.com/fauna/the-worlds-best-serverless-database-now-with-native-graphql-ebaebc390395
+* https://rxdb.info/replication-graphql.html
+
+
+
+
 
