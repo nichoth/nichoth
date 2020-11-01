@@ -2,7 +2,6 @@ var hyperstream = require('hyperstream');
 var fs = require('fs');
 var ssbWeb = require('ssb-web')
 var S = require('pull-stream')
-var cat = require('stream-cat')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
@@ -102,9 +101,9 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
         ssbWeb.writeFiles(sbot, 'public/posts/img'),
 
-        // now we have gotten all the posts, can write the index/list
-        // of them
         S.through(function noop(){}, function onEnd (err) {
+            // now we have gotten all the posts, can write the index/list
+            // of them
             if (err) throw err
 
             sbot.close(null, function (err) {
