@@ -28,10 +28,6 @@ srcPaths.forEach(function (path) {
     rs.pipe(hs).pipe(fs.createWriteStream(outPath))
 })
 
-var plugins = [
-    require('@nichoth/ssb-tags')({ postType: 'ev.post' })
-]
-
 function createTagIndex (sbot, tag, msgIds) {
     mkdirp.sync(__dirname + '/public/detritus/' + tag)
 
@@ -78,6 +74,10 @@ function createTagIndex (sbot, tag, msgIds) {
     }
 }
 
+var plugins = [
+    require('@nichoth/ssb-tags')({ postType: 'ev.post' })
+]
+
 // the visual detritus page
 ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     if (err) throw err
@@ -86,13 +86,9 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     sbot.tags.get(function (err, res) {
         console.log('*tags.get*', err, res)
 
-        // todo: make a page for each tag
-        // the page has pics with that tag
         // need to make nav for the tag pages
         // `/visual-detritus` has all pics
         // `/visual-detritus/tag` has pics tagged with `tag`
-        // there is a file `visual-detritus/tag/index.html` for the tag index
-        // the links on the tag index go to that pic's page: `/hash`
 
         Object.keys(res).forEach(function (tag) {
             var msgIds = res[tag]
@@ -101,7 +97,6 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     })
 
     // this is a concatted list of streams of html for posts, an index page
-    // var cats = []
     var contentDetritus = ''
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
@@ -111,21 +106,17 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
         // of them
         S.through(function noop(){}, function onEnd (err) {
             if (err) throw err
-            // console.log('**detritus**', contentDetritus)
 
             sbot.close(null, function (err) {
                 console.log('sbot closed', err)
             })
 
-            var hs = hyperstream({
-                // '#content-detritus': cat(cats)
-                '#content-detritus': contentDetritus
-            })
-            var _content = fs.createReadStream(__dirname + '/src/detritus.html')
-                .pipe(hs)
-
             var _hs = hyperstream({
-                '#content': _content,
+                '#content': {
+                    _appendHtml: `<div id="content-detritus">
+                        ${contentDetritus}
+                    </div>`
+                },
                 'body': {
                     class: { append: 'detritus' }
                 },
