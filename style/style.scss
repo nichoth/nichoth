@@ -22,11 +22,10 @@ body.detritus-single-image {
     }
 }
 
-#content-detritus {
+.content-detritus {
   padding: 1em;
   display: grid;
   gap: 2rem;
-  // grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   align-items: stretch;
 }
@@ -40,6 +39,7 @@ body.detritus-single-image {
 
   .post-text {
     text-align: left;
+    margin-top: 0.2em;
   }
 }
 
@@ -103,6 +103,7 @@ body {
         background-color: #4fa8e0;
       }
     }
+    background-color: #a2a0a0;
   }
 
   &.tag-index {
@@ -118,11 +119,9 @@ body {
   justify-content: space-around;
   display: flex;
   align-items: center;
-  position: relative;
-  top: 6px;
   background-color: white;
-  border-bottom: 1px solid black;
-  margin-bottom: 2em;
+  border-bottom: 2px solid black;
+  padding: 0.2em 0;
 
   a {
     padding-left: 0.2em;
@@ -184,6 +183,7 @@ p.main-text {
     margin: 0 auto;
     margin-top: 2em;
     margin-bottom: 2em;
+    text-align: center;
 
     .icon-box.github {
         width: 5vw;
@@ -280,7 +280,8 @@ p.main-text {
 }
 
 #content {
-  text-align: center;
+  padding-top: 2em;
+  background-color: #a2a0a0;
 }
 
 .main-image-wrapper {
@@ -349,9 +350,6 @@ p.main-text {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   padding: 1em;
-  // p {
-  //   text-align: left;
-  // }
 }
 
 .tag-nav-menu {

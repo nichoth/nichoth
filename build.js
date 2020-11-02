@@ -124,9 +124,8 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
 
             var _hs = hyperstream({
                 '#content': {
-                    _appendHtml: `<div id="content-detritus">
-                        ${contentDetritus}
-                    </div>`
+                    _appendHtml: contentDetritus,
+                    class: { append: 'content-detritus' }
                 },
                 'body': {
                     class: { append: 'detritus' }
