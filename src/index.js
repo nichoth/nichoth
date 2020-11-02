@@ -5,7 +5,7 @@ var tags = require('./tags.json')
 
 // the nav for tags
 
-var el = document.getElementById('container')
+var el = document.body
 render(html`<${TagNav} />`, el)
 
 function TagNav () {
