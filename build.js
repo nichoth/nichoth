@@ -41,15 +41,15 @@ function createTagIndex (sbot, tag, msgIds) {
             posts += `<div class="post">
                 <a href="/posts/${hashSlug}">
                     <img src="/posts/img/${hashSlug}">
-                    <p>${msg.content.text}</p>
                 </a>
+                <p>${msg.content.text}</p>
             </div>`
 
             next(null, msg)
         })
     })
 
-    // write the index page with the post list
+    // write the index page for the tag index
     function write () {
         var hs = hyperstream({
             body: {
@@ -63,7 +63,11 @@ function createTagIndex (sbot, tag, msgIds) {
             '#content': {
                 _appendHtml: posts,
                 class: { append: 'tag-index ' + tag }
-            }
+            },
+
+            '.site-nav': {
+                _appendHtml: `<button id="tag-nav">tags</button>`
+            },
         })
         
         fs.createReadStream(__dirname + '/src/_index.html')
@@ -171,8 +175,8 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
             contentDetritus += `<div class="post">
                 <a href="/posts/${postPath}">
                     <img src="/posts/img/${blob}">
-                    <p class="post-text">${post.value.content.text}</p>
                 </a>
+                <p class="post-text">${post.value.content.text}</p>
             </div>`
         })
     )

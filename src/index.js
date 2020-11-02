@@ -19,7 +19,7 @@ function TagNav () {
 
     useLayoutEffect(() => {
         var el = document.getElementById('tag-nav')
-        el.addEventListener('click', toggleOpen)
+        if (el) el.addEventListener('click', toggleOpen)
 
         console.log('isOpen', isOpen)
 

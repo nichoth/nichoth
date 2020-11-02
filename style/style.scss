@@ -37,6 +37,10 @@ body.detritus-single-image {
     height: auto;
     object-fit: cover;
   }
+
+  .post-text {
+    text-align: left;
+  }
 }
 
 body {
@@ -94,6 +98,14 @@ body {
   }
 
   &.detritus {
+    .home-link {
+      img {
+        background-color: #4fa8e0;
+      }
+    }
+  }
+
+  &.tag-index {
     .home-link {
       img {
         background-color: #4fa8e0;
