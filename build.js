@@ -73,6 +73,7 @@ function createTagIndex (sbot, tag, msgIds) {
     }
 }
 
+// now the ssb stuff
 var plugins = [
     require('@nichoth/ssb-tags')({ postType: 'ev.post' })
 ]
@@ -82,20 +83,27 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     if (err) throw err
 
     // pics by tag
-    sbot.tags.get(function (err, res) {
-        console.log('*tags.get*', err, res)
+    sbot.tags.get(function (err, tags) {
+        console.log('*tags.get*', err, tags)
+
+        // for the tag nav
+        var tagsJson = JSON.stringify(Object.keys(tags))
+        fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
+            if (err) throw err
+            console.log('wrote tags json', __dirname + '/src/tags.json')
+        })
 
         // need to make nav for the tag pages
         // `/visual-detritus` has all pics
         // `/visual-detritus/tag` has pics tagged with `tag`
 
-        Object.keys(res).forEach(function (tag) {
-            var msgIds = res[tag]
+        Object.keys(tags).forEach(function (tag) {
+            var msgIds = tags[tag]
             createTagIndex(sbot, tag, msgIds)
         })
     })
 
-    // this is a concatted list of streams of html for posts, an index page
+    // this is a concatted list of html for posts, an index page
     var contentDetritus = ''
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
@@ -110,6 +118,7 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                 console.log('sbot closed', err)
             })
 
+            // need to make a nav area for selecting tags
             var _hs = hyperstream({
                 '#content': {
                     _appendHtml: `<div id="content-detritus">
@@ -118,6 +127,9 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                 },
                 'body': {
                     class: { append: 'detritus' }
+                },
+                '.site-nav': {
+                    _appendHtml: `<button id="tag-nav">tags</button>`
                 },
                 '.site-nav a[href="/detritus"]': {
                     class: { append: 'active' }
@@ -133,7 +145,6 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
             // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
-            console.log('in here', post, blob)
             var { key } = post
             var postPath = slugify(key)
             // in here, make the page with a single image

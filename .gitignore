@@ -188,3 +188,5 @@ public/software/
 public/img/file*
 public/posts/
 
+src/tags.json
+
