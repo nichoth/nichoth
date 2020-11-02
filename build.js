@@ -86,7 +86,7 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     sbot.tags.get(function (err, tags) {
         console.log('*tags.get*', err, tags)
 
-        // for the tag nav
+        // json for the tag nav
         var tagsJson = JSON.stringify(Object.keys(tags))
         fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
             if (err) throw err
@@ -118,7 +118,6 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                 console.log('sbot closed', err)
             })
 
-            // need to make a nav area for selecting tags
             var _hs = hyperstream({
                 '#content': {
                     _appendHtml: `<div id="content-detritus">

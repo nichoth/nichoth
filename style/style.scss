@@ -342,6 +342,21 @@ p.main-text {
   // }
 }
 
+.tag-nav-menu {
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  background-color: wheat;
+  position: fixed;
+  top: 0;
+  padding: 8em;
+  padding-left: 40%;
+}
+
+button {
+  cursor: pointer;
+}
+
 
 
 
