@@ -11,10 +11,12 @@ body.detritus-single-image {
       }
     }
 
+    background-color: #a2a0a0;
+
     #content {
       width: 100vw;
       height: 100vh;
-      margin: 1em;
+      padding: 1em;
       img {
         max-width: 100%;
         max-height: 100%;
@@ -112,6 +114,8 @@ body {
         background-color: #4fa8e0;
       }
     }
+
+    background-color: #a2a0a0;
   }
 }
 
@@ -281,7 +285,6 @@ p.main-text {
 
 #content {
   padding-top: 2em;
-  background-color: #a2a0a0;
 }
 
 .main-image-wrapper {
@@ -350,6 +353,8 @@ p.main-text {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   padding: 1em;
+  // grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 6em;
 }
 
 .tag-nav-menu {
