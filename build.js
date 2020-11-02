@@ -133,8 +133,11 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
             // post.value.content
             // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
+            console.log('in here', post, blob)
+            var { key } = post
+            var postPath = slugify(key)
             // in here, make the page with a single image
-            mkdirp.sync(__dirname + '/public/posts/' + blob)
+            mkdirp.sync(__dirname + '/public/posts/' + postPath)
             fs.createReadStream(__dirname + '/src/_index.html')
                 .pipe(hyperstream({
                     'body': {
@@ -151,12 +154,12 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
                     }
                 }))
                 .pipe(fs.createWriteStream(__dirname +
-                    '/public/posts/' + blob + '/index.html'))
+                    '/public/posts/' + postPath + '/index.html'))
 
             // html for this post on the index page
             // cat the new html for this post
             contentDetritus += `<div class="post">
-                <a href="/posts/${blob}">
+                <a href="/posts/${postPath}">
                     <img src="/posts/img/${blob}">
                     <p class="post-text">${post.value.content.text}</p>
                 </a>
