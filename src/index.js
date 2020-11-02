@@ -8,10 +8,8 @@ var tags = require('./tags.json')
 var el = document.getElementById('container')
 render(html`<${TagNav} />`, el)
 
-var _setIsOpen
 function TagNav () {
     const [isOpen, setIsOpen] = useState(false);
-    _setIsOpen = setIsOpen
 
     function toggleOpen (ev) {
         ev.preventDefault()
@@ -30,10 +28,15 @@ function TagNav () {
 
     if (isOpen) {
         return html`<div class="tag-nav-menu">
-            <button class="close-btn" onclick=${toggleOpen}>×</button>
+            <div class="tag-menu-controls">
+                <button class="close-btn" onclick=${toggleOpen}>×</button>
+            </div>
+            <hr />
             <ul>
                 ${tags.map(function (tag) {
-                    return html`<li>${tag}</li>`
+                    return html`<li>
+                        <a href="/detritus/${tag}">${tag}</a>
+                    </li>`
                 })}
             </ul>
         </div>`
@@ -41,9 +44,3 @@ function TagNav () {
 
     return null
 }
-
-// document.getElementById('tag-nav').addEventListener('click', ev => {
-//     console.log('click', ev)
-//     ev.preventDefault()
-//     _setIsOpen(true)
-// })
