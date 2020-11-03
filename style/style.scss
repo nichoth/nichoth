@@ -29,13 +29,25 @@ body.detritus-single-image {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  // grid-template-rows: 200px repeat(auto-fill, 100px) 300px;
+  // grid-template-rows: repeat(20, 20vw);
+  // grid-template-rows: 200px 1fr;
+  // column-count: 3;
+  grid-auto-rows: 24vw;
   align-items: stretch;
 }
 
 .post {
+  // height: 20vh;
+  height: 88%;
+  a {
+    display: block;
+    height: 100%;
+  }
+
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -351,10 +363,12 @@ p.main-text {
 
 #content.tag-index {
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   padding: 1em;
   // grid-template-columns: repeat(2, 1fr);
   padding-bottom: 6em;
+  grid-auto-rows: 24vw;
 }
 
 .tag-nav-menu {
