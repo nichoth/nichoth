@@ -139,6 +139,12 @@ body {
   border-bottom: 2px solid black;
   padding: 0.2em 0;
 
+  #tag-nav {
+    font-size: 2em;
+    background: none;
+    border: none;
+  }
+
   a {
     padding-left: 0.2em;
     &.active {
@@ -379,6 +385,22 @@ p.main-text {
   position: fixed;
   top: 0;
   padding: 4em 25%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5em;
+      font-size: 2em;
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 
   hr {
     margin: 1em 0;
