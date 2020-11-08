@@ -28,6 +28,7 @@ srcPaths.forEach(function (path) {
 })
 
 function createTagIndex (sbot, tag, msgIds) {
+    // console.log('tag here', tag, msgIds)
     mkdirp.sync(__dirname + '/public/detritus/' + tag)
 
     var posts = ''
@@ -37,6 +38,7 @@ function createTagIndex (sbot, tag, msgIds) {
         sbot.get(id, function (err, msg) {
             // TODO -- get all mentions, not just the first
             if (err) return next(err)
+            // console.log('msg here', msg)
             var hashSlug = slugify(msg.content.mentions[0].link)
             posts += `<div class="post">
                 <a href="/posts/${hashSlug}">
@@ -91,6 +93,8 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     // pics by tag
     sbot.tags.get(function (err, tags) {
         // json for the tag nav
+        if (err) throw err
+        console.log('got tags', tags)
         var tagsJson = JSON.stringify(Object.keys(tags))
         fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
             if (err) throw err
