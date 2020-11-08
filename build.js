@@ -65,8 +65,10 @@ function createTagIndex (sbot, tag, msgIds) {
                 class: { append: 'tag-index ' + tag }
             },
 
+            // here, show the active tag
+            // `tag`
             '.site-nav': {
-                _appendHtml: `<button id="tag-nav">tags</button>`
+                _appendHtml: `<button id="tag-nav">${tag}&#x21e9;</button>`
             },
         })
         
@@ -88,8 +90,6 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
 
     // pics by tag
     sbot.tags.get(function (err, tags) {
-        console.log('*tags.get*', err, tags)
-
         // json for the tag nav
         var tagsJson = JSON.stringify(Object.keys(tags))
         fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
@@ -109,6 +109,7 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
 
     // this is a concatted list of html for posts, an index page
     var contentDetritus = ''
+    // write the main stuff
     S(
         ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
         ssbWeb.writeFiles(sbot, 'public/posts/img'),

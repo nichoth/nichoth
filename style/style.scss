@@ -386,6 +386,11 @@ p.main-text {
   top: 0;
   padding: 4em 25%;
 
+  a.active {
+    color: black;
+    // text-decoration: underline;
+  }
+
   ul {
     list-style: none;
     padding: 0;
