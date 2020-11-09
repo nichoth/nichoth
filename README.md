@@ -181,7 +181,38 @@ on `dat`:
 
 -------------------------------------------------
 
-Need a localhost graphDB server for a local database
+Need a localhost graphQL server for a local database
+
+-------------------------------------------------------
+
+## 11-8-2020
+See https://www.inkandswitch.com/local-first.html
+
+* Alexei Baboulevitch’s [Data Laced with History](http://archagon.net/blog/2018/03/24/data-laced-with-history/)
+* Martin Kleppmann’s [Convergence vs Consensus (slides)](https://www.youtube.com/watch?v=B5NULPSiOGw)
+* Shapiro et al.’s [comprehensive survey](https://hal.inria.fr/inria-00555588/document)
+* Attiya et al.’s [formal specification of collaborative text editing](http://software.imdea.org/~gotsman/papers/editing-podc16.pdf)
+* Gomes et al.’s [formal verification of CRDTs](https://dl.acm.org/citation.cfm?doid=3152284.3133933)
+
+* https://github.com/automerge/automerge
+* https://github.com/automerge/hypermerge
+
+https://www.inkandswitch.com/local-first.html#git
+> while also giving our users a piece of software they can download and install, which we discovered is an important part of the local-first feeling of ownership
+
+Meaning electron is an essential part of ssb
+
+The `fs` API is the key to the whole local-first thing in ssb. Node + electron are what make it viable to store all data locally, and local data storage is what makes it a true p2p experience. For example, pubs are just traditional servers that store all your data too, but because you've downloaded all the data too, that's what makes it a cool p2p thing. 
+
+> we want applications to outlive any backend services managed by their vendors, so a decentralized solution is the logical end goal.
+
+> Live collaboration between computers without Internet access feels like magic
+
+> Servers thus have a role to play in the local-first world — not as central authorities, but as “cloud peers” that support client applications without being on the critical path. For example, a cloud peer that stores a copy of the document, and forwards it to other peers when they come online, could solve the closed-laptop problem above.
+
+
+
+
 
 
 
