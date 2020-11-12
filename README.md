@@ -210,6 +210,13 @@ The `fs` API is the key to the whole local-first thing in ssb. Node + electron a
 
 > Servers thus have a role to play in the local-first world — not as central authorities, but as “cloud peers” that support client applications without being on the critical path. For example, a cloud peer that stores a copy of the document, and forwards it to other peers when they come online, could solve the closed-laptop problem above.
 
+------------------------------------------------
+
+## 11-10-2020
+Trying firebase and rxdb
+
+`/Users/nick/code/demo-world-rxdb`
+
 
 
 

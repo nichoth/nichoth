@@ -61,7 +61,7 @@ function createTagIndex (sbot, tag, msgIds) {
             '.site-nav a[href="/detritus"]': {
                 class: { append: 'active' }
             },
-            
+
             '#content': {
                 _appendHtml: posts,
                 class: { append: 'tag-index ' + tag }
@@ -73,11 +73,11 @@ function createTagIndex (sbot, tag, msgIds) {
                 _appendHtml: `<button id="tag-nav">${tag}&#x21e9;</button>`
             },
         })
-        
+
         fs.createReadStream(__dirname + '/src/_index.html')
             .pipe(hs)
-            .pipe(fs.createWriteStream(__dirname + '/public/detritus/' + tag +
-                '/index.html'))
+            .pipe(fs.createWriteStream(__dirname + '/public/detritus/' +
+                tag + '/index.html'))
     }
 }
 
