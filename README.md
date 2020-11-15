@@ -217,11 +217,46 @@ Trying firebase and rxdb
 
 `/Users/nick/code/demo-world-rxdb`
 
+## 11-14-2020 -- reading about beaker
+* https://beakerbrowser.com/docs/how-beaker-works/privacy-and-security.html
 
+>  Beaker stores user content on the device, and provides encrypted peer-to-peer transmission of the files.
 
+> Dat websites are executed in a restrictive sandbox on the user’s device. While traditional Web apps assume a connection to a remote host, Dats are detached and must request network rights specially. 
 
+[Thick applications model](https://beakerbrowser.com/docs/how-beaker-works/thick-applications.html)
 
+> Rather than using remote services, Dat sites write user data to the local device with the localStorage, indexedDB, and Dat APIs.
 
+https://beakerbrowser.com/docs/apis/dat
+> By default, each `dat://` origin is limited to 100MB of storage
+> When the 100MB limit is reached, all writes attempted with the DatArchive API will fail.
+
+https://github.com/beakerbrowser/webdb#how-it-works
+> It duplicates ingested data into IndexedDB, which acts as a throwaway cache. The cached data can be reconstructed at any time from the source Dat archives.
+
+----------------------------------------
+
+## git
+
+https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html
+
+> When you commit a change with Git, it accepts as author whatever value you want. This means you could claim to be whoever you want when you create a commit.
+> To make GitHub (and everyone) believe that Martin authored that really terrible commit, I just had to run git config user.name and git config user.email with values that match Martin’s. Those are not hard to get at all: it only took me one minute to clone one of his repos then run git log in it.
+> The committer details are designed just to identify who of your collaborators made a change, and are not meant to be used for authenticating people. Being able to impersonate other committers does not introduce a vulnerability per se. For example, just by setting my user.name to Martin’s, I do not get the ability to push code to his repositories: GitHub would require me to authenticate with his credentials before I could do that.
+> if your Git hosting service allows that, you can also require with a policy that all commits must be signed. On GitHub, that’s done with protected branches.
+
+### cryptography
+> Asymmetric cryptography uses two separate keys: a public key and a secret (or private) one. As their names suggest, while the secret key must be protected at all cost, the public one can (and as will be our case later on, must) be shared with the world. With asymmetric cryptography, you encrypt a message using your public key, and then decrypt it using the private one. If you wanted to share an encrypted message with your friend, you’d use your friend’s public key to encrypt it. Your friend could then use their own private key to decrypt and read your message. Algorithms like RSA or the various elliptic curves work this way. Despite being lesser-known among the general public, asymmetric cryptography is wildly used, and it’s what makes TLS used by HTTPS possible too, among other things
+> In addition to encrypting data, asymmetric cryptography can also be used to sign messages (and verify signatures). This works the opposite way: you sign a message using your private key, and others can verify the signature using your public key.
+
+Git commits are not *signed* by default, they are just a hash of the content and a pointer to the *previous* hash.
+
+#### adding a cryptographic signature to the message
+> To do that you have to do two things in principle:
+
+> You calculate a hash (or checksum) of your message. You can use a hashing function such as SHA-256. As you know, hashing functions are one-way operations that generate a unique set of bytes from each message, and they cannot be reversed. The hex-encoded SHA-256 digest of “You and I will meet tomorrow at 11.30am” is: 579c4547d8dec2c4513de8c858a490a8a2679db205a0b3471f81d5b129d29b88. If you changed even just 1 bit in the original message (e.g. change the time to 11.31am), the final digest would be completely different (try it).
+> You use your private key to sign the calculated hash, using algorithms like RSA.
 
 
 
