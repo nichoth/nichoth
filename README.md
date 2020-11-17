@@ -261,4 +261,13 @@ Git commits are not *signed* by default, they are just a hash of the content and
 > You use your private key to sign the calculated hash, using algorithms like RSA.
 
 
+---------------------------------------
+
+
+## icons
+* https://svgbox.net/
+* https://ionicons.com/
+* https://feathericons.com/
+* https://www.humaaans.com/
+
 
