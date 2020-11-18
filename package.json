@@ -27,7 +27,7 @@
     "url-join": "0.0.1"
   },
   "devDependencies": {
-    "@nichoth/ssb-tags": "0.0.7",
+    "@nichoth/ssb-tags": "0.0.8",
     "bourbon": "^7.0.0",
     "bourbon-neat": "^4.0.0",
     "browserify": "^16.5.2",

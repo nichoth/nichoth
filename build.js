@@ -1,6 +1,7 @@
 var hyperstream = require('hyperstream');
 var fs = require('fs');
 var ssbWeb = require('ssb-web')
+var Tags = require('@nichoth/ssb-tags')
 var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
@@ -82,9 +83,25 @@ function createTagIndex (sbot, tag, msgIds) {
 }
 
 // now the ssb stuff
-var plugins = [
-    require('@nichoth/ssb-tags')({ postType: 'ev.post' })
-]
+var plugins = [ Tags({ postType: 'ev.post' }) ]
+
+
+// do the dev-diary
+// var _plugins = [ Tags({ postType: 'post' }) ]
+// ssbWeb.startSbot('ssb', _plugins, function (err, { id, sbot }) {
+//     if (err) throw err
+//     sbot.tags.get(function (err, tags) {
+//         if (err) throw err
+//         console.log('**tags 1**', tags)
+
+//         console.log('**dev diary**', tags['dev-diary'])
+
+//         sbot.close(function (err) {
+//             if (err) throw err
+//         })
+//     })
+// })
+
 
 // the visual detritus page
 ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
@@ -94,14 +111,14 @@ ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
     sbot.tags.get(function (err, tags) {
         // json for the tag nav
         if (err) throw err
-        console.log('got tags', tags)
+        console.log('**got tags**', tags)
         var tagsJson = JSON.stringify(Object.keys(tags))
         fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
             if (err) throw err
             console.log('wrote tags json', __dirname + '/src/tags.json')
         })
 
-        // need to make nav for the tag pages
+        // make nav for the tag pages
         // `/visual-detritus` has all pics
         // `/visual-detritus/tag` has pics tagged with `tag`
 
