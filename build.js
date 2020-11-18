@@ -90,7 +90,7 @@ function devDiary (cb) {
         if (err) throw err
         sbot.tags.get(function (err, tags) {
             if (err) throw err
-            console.log('**tags 1**', tags)
+            // console.log('**tags 1**', tags)
             console.log('tags id', tags[id])
 
             // console.log('**dev diary**', tags['dev-diary'])
@@ -113,6 +113,8 @@ function pics () {
         sbot.tags.get(function (err, tags) {
             // json for the tag nav
             if (err) throw err
+            // console.log('**aaaaaa**', tags[id])
+            // console.log('**id**', id)
             console.log('**got tags**', tags)
             var tagsJson = JSON.stringify(Object.keys(tags))
             fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
@@ -138,14 +140,13 @@ function pics () {
             ssbWeb.writeFiles(sbot, 'public/posts/img'),
 
             S.through(function noop(){}, function onEnd (err) {
-                // now we have gotten all the posts, can write the index/list
-                // of them
+                // now we have gotten all the posts, can write the
+                // index/list of them
                 if (err) throw err
 
                 sbot.close(null, function (err) {
                     console.log('sbot closed', err)
                     if (err) throw err
-                    // devDiary()
                 })
 
                 var _hs = hyperstream({
