@@ -6,6 +6,7 @@ var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
+var ssbTags = require('ssb-tags')
 
 var srcPaths = [ 'websites', 'software' ]
 
@@ -82,123 +83,136 @@ function createTagIndex (sbot, tag, msgIds) {
     }
 }
 
-// now the ssb stuff
-var plugins = [ Tags({ postType: 'ev.post' }) ]
-
-
 // do the dev-diary
-// var _plugins = [ Tags({ postType: 'post' }) ]
-// ssbWeb.startSbot('ssb', _plugins, function (err, { id, sbot }) {
-//     if (err) throw err
-//     sbot.tags.get(function (err, tags) {
-//         if (err) throw err
-//         console.log('**tags 1**', tags)
-
-//         console.log('**dev diary**', tags['dev-diary'])
-
-//         sbot.close(function (err) {
-//             if (err) throw err
-//         })
-//     })
-// })
-
-
-// the visual detritus page
-ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
-    if (err) throw err
-
-    // pics by tag
-    sbot.tags.get(function (err, tags) {
-        // json for the tag nav
+function devDiary (cb) {
+    var _plugins = [ ssbTags ]
+    ssbWeb.startSbot('ssb', _plugins, function (err, { id, sbot }) {
         if (err) throw err
-        console.log('**got tags**', tags)
-        var tagsJson = JSON.stringify(Object.keys(tags))
-        fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
+        sbot.tags.get(function (err, tags) {
             if (err) throw err
-            console.log('wrote tags json', __dirname + '/src/tags.json')
-        })
+            console.log('**tags 1**', tags)
+            console.log('tags id', tags[id])
 
-        // make nav for the tag pages
-        // `/visual-detritus` has all pics
-        // `/visual-detritus/tag` has pics tagged with `tag`
+            // console.log('**dev diary**', tags['dev-diary'])
 
-        Object.keys(tags).forEach(function (tag) {
-            var msgIds = tags[tag]
-            createTagIndex(sbot, tag, msgIds)
+            sbot.close(function (err) {
+                if (err) throw err
+                if (cb) cb(err)
+            })
         })
     })
+}
 
-    // this is a concatted list of html for posts, an index page
-    var contentDetritus = ''
-    // write the main stuff
-    S(
-        ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
-        ssbWeb.writeFiles(sbot, 'public/posts/img'),
+// the visual detritus page
+function pics () {
+    var plugins = [ Tags({ postType: 'ev.post' }) ]
+    ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
+        if (err) throw err
 
-        S.through(function noop(){}, function onEnd (err) {
-            // now we have gotten all the posts, can write the index/list
-            // of them
+        // pics by tag
+        sbot.tags.get(function (err, tags) {
+            // json for the tag nav
             if (err) throw err
-
-            sbot.close(null, function (err) {
-                console.log('sbot closed', err)
+            console.log('**got tags**', tags)
+            var tagsJson = JSON.stringify(Object.keys(tags))
+            fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
+                if (err) throw err
+                console.log('wrote tags json', __dirname + '/src/tags.json')
             })
 
-            var _hs = hyperstream({
-                '#content': {
-                    _appendHtml: contentDetritus,
-                    class: { append: 'content-detritus' }
-                },
-                'body': {
-                    class: { append: 'detritus' }
-                },
-                '.site-nav': {
-                    _appendHtml: `<button id="tag-nav">tags</button>`
-                },
-                '.site-nav a[href="/detritus"]': {
-                    class: { append: 'active' }
-                }
+            // make nav for the tag pages
+            // `/visual-detritus` has all pics
+            // `/visual-detritus/tag` has pics tagged with `tag`
+
+            Object.keys(tags).forEach(function (tag) {
+                var msgIds = tags[tag]
+                createTagIndex(sbot, tag, msgIds)
             })
+        })
 
-            fs.createReadStream(__dirname + '/src/_index.html')
-                .pipe(_hs)
-                .pipe(fs.createWriteStream(__dirname +
-                    '/public/detritus/index.html'))
-        }),
-        S.drain(function ({ post, blob }) {
-            // post.value.content
-            // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
+        // this is a concatted list of html for posts, an index page
+        var contentDetritus = ''
+        // write the main stuff
+        S(
+            ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
+            ssbWeb.writeFiles(sbot, 'public/posts/img'),
 
-            var { key } = post
-            var postPath = slugify(key)
-            // in here, make the page with a single image
-            mkdirp.sync(__dirname + '/public/posts/' + postPath)
-            fs.createReadStream(__dirname + '/src/_index.html')
-                .pipe(hyperstream({
-                    'body': {
-                        class: { append: 'detritus-single-image' }
-                    },
+            S.through(function noop(){}, function onEnd (err) {
+                // now we have gotten all the posts, can write the index/list
+                // of them
+                if (err) throw err
+
+                sbot.close(null, function (err) {
+                    console.log('sbot closed', err)
+                    if (err) throw err
+                    // devDiary()
+                })
+
+                var _hs = hyperstream({
                     '#content': {
-                        _appendHtml: `<img src="/posts/img/${blob}">
-                            <p class="post-text">
-                                ${post.value.content.text}
-                            </p>`
+                        _appendHtml: contentDetritus,
+                        class: { append: 'content-detritus' }
+                    },
+                    'body': {
+                        class: { append: 'detritus' }
+                    },
+                    '.site-nav': {
+                        _appendHtml: `<button id="tag-nav">tags</button>`
                     },
                     '.site-nav a[href="/detritus"]': {
                         class: { append: 'active' }
                     }
-                }))
-                .pipe(fs.createWriteStream(__dirname +
-                    '/public/posts/' + postPath + '/index.html'))
+                })
 
-            // html for this post on the index page
-            // cat the new html for this post
-            contentDetritus += `<div class="post">
-                <a href="/posts/${postPath}">
-                    <img src="/posts/img/${blob}">
-                </a>
-                <p class="post-text">${post.value.content.text}</p>
-            </div>`
-        })
-    )
-})
+                fs.createReadStream(__dirname + '/src/_index.html')
+                    .pipe(_hs)
+                    .pipe(fs.createWriteStream(__dirname +
+                        '/public/detritus/index.html'))
+            }),
+            S.drain(function ({ post, blob }) {
+                // post.value.content
+                // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
+
+                var { key } = post
+                var postPath = slugify(key)
+                // in here, make the page with a single image
+                mkdirp.sync(__dirname + '/public/posts/' + postPath)
+                fs.createReadStream(__dirname + '/src/_index.html')
+                    .pipe(hyperstream({
+                        'body': {
+                            class: { append: 'detritus-single-image' }
+                        },
+                        '#content': {
+                            _appendHtml: `<img src="/posts/img/${blob}">
+                                <p class="post-text">
+                                    ${post.value.content.text}
+                                </p>`
+                        },
+                        '.site-nav a[href="/detritus"]': {
+                            class: { append: 'active' }
+                        }
+                    }))
+                    .pipe(fs.createWriteStream(__dirname +
+                        '/public/posts/' + postPath + '/index.html'))
+
+                // html for this post on the index page
+                // cat the new html for this post
+                contentDetritus += `<div class="post">
+                    <a href="/posts/${postPath}">
+                        <img src="/posts/img/${blob}">
+                    </a>
+                    <p class="post-text">${post.value.content.text}</p>
+                </div>`
+            })
+        )
+    })
+}
+
+pics()
+
+// doesn't work this way i don't know why
+// devDiary(err => {
+//     if (err) throw err
+//     pics()
+// })
+
