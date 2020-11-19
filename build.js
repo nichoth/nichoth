@@ -90,8 +90,9 @@ function devDiary (cb) {
         if (err) throw err
         sbot.tags.get(function (err, tags) {
             if (err) throw err
-            // console.log('**tags 1**', tags)
-            console.log('tags id', tags[id])
+            console.log('**tags**', tags)
+            console.log('**id**', id)
+            console.log('**tags id**', tags[id])
 
             // console.log('**dev diary**', tags['dev-diary'])
 
@@ -209,7 +210,11 @@ function pics () {
     })
 }
 
-pics()
+// pics()
+
+devDiary(err => {
+    if (err) console.log('err', err)
+})
 
 // doesn't work this way i don't know why
 // devDiary(err => {

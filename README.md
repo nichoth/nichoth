@@ -271,3 +271,36 @@ Git commits are not *signed* by default, they are just a hash of the content and
 * https://www.humaaans.com/
 
 
+-------------------------------------------------
+
+## 11-19-2020
+What is [fission](https://fission.codes/)?
+
+> When you create a Fission Account, whether signing up on the web or using the command line as a developer, it creates a username and email address in our service database, and also a private / public key pair representing that account.
+
+> We also create a Fission Web Native File System (WNFS) attached to your account, and given you access to Fission Drive, which lets you browse all your files, access them from any browser, and see which apps are attached to your file system.
+
+> Each device gets their own private key using the WebCrypto API built into modern browsers. Private keys shouldn't be copied around, so instead, we link keys indicating they have access to the same account.
+
+> There is no "sign out" for a Fission-powered app. You use your key to do a passwordless login, stored in your local desktop browser, mobile web browser, or your local desktop file system with the command line developer tool.
+
+> You may create multiple Fission accounts, but you'll need a unique email address and username for each one. You'll also need to use Browser Profiles to be able to access them at the same time on the same machine, as the keys that grant access are stored in the browser.
+
+Sounds a lot like ssb & pubs, but with more advanced ID parts.
+
+> To have access to your account across multiple devices, you need to link them. 
+They have multi-device
+
+
+------------------------------------
+
+### Eventual gram update
+Need to make a backend that functions as a pub, but the API is exposed over REST instead of RPC & websockets. That way it can be hosted as lambda functions.
+* cannot work with existing clients
+* it is less decentralized this way. The server is a trusted source of data. You could use it in-browser if the client knows their private key (for publishing).
+
+
+
+
+
+
