@@ -299,6 +299,21 @@ Need to make a backend that functions as a pub, but the API is exposed over REST
 * cannot work with existing clients
 * it is less decentralized this way. The server is a trusted source of data. You could use it in-browser if the client knows their private key (for publishing).
 
+-------------------------------------------
+
+### ssc
+
+* make the server
+  - can maybe store keys locally
+  - need to then use separate auth to publish
+    + log in to server
+    + use your local priv key to sign & publish a msg
+    + is paid ? publish (if msg is valid) : err
+
+
+
+
+
 
 
 
