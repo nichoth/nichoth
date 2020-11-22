@@ -210,11 +210,11 @@ function pics () {
     })
 }
 
-// pics()
+pics()
 
-devDiary(err => {
-    if (err) console.log('err', err)
-})
+// devDiary(err => {
+//     if (err) console.log('err', err)
+// })
 
 // doesn't work this way i don't know why
 // devDiary(err => {
