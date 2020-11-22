@@ -90,7 +90,7 @@ function devDiary (cb) {
         if (err) throw err
         sbot.tags.get(function (err, tags) {
             if (err) throw err
-            console.log('**tags**', tags)
+            // console.log('**tags**', tags)
             console.log('**id**', id)
             console.log('**tags id**', tags[id])
 
