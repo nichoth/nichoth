@@ -311,7 +311,30 @@ Need to make a backend that functions as a pub, but the API is exposed over REST
     + is paid ? publish (if msg is valid) : err
 
 
+## 11-24-2020
+Should be doing ssc today.
 
+https://paper.dropbox.com/doc/ThreadDB-for-Javascript-Alpha-Preview--BADptTkxkiiWSPYUl4D~9kUoAg-4jU1b9NKU3vuy8pDigmV6
+
+https://docs.textile.io/threads/
+
+[todos demo, not video](https://github.com/textileio/js-todo-demo#threads-todo-demo)
+
+[video intro](https://www.loom.com/share/3d7ec496c3d744a39d85e3fc3e921b7d)
+
+[offline first demo](https://www.loom.com/share/ecebf43e0eda4376a389ceadb234fdb3)
+
+Have started reading about [textile thread db](https://paper.dropbox.com/doc/ThreadDB-for-Javascript-Alpha-Preview-4jU1b9NKU3vuy8pDigmV6) -- an offline-first local database that syncs to the distributed web
+
+[video intro](https://www.loom.com/share/3d7ec496c3d744a39d85e3fc3e921b7d)
+
+indexedDb wrapped with thread API
+
+These are less radical b/c it is a *local cache*, not a full replica. 
+
+> the remote is considered the “source of truth” 
+
+> ThreadDB aims to help power a new generation of web technologies by combining a novel use of event sourcing, Interplanetary Linked Data (IPLD), and access control to provide a distributed, scalable, and flexible database solution for decentralized applications.
 
 
 
