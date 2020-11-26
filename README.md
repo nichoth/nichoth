@@ -336,6 +336,20 @@ These are less radical b/c it is a *local cache*, not a full replica.
 
 > ThreadDB aims to help power a new generation of web technologies by combining a novel use of event sourcing, Interplanetary Linked Data (IPLD), and access control to provide a distributed, scalable, and flexible database solution for decentralized applications.
 
+---------------------------------------------
+
+## 11-25-2020
+Found [cypher-net](https://github.com/dominictarr/cyphernet), and old dominic project.
+
+Watched [an old video -- 2013 Realtime Conf](https://vimeo.com/77352417). git replication -- group the hashes into common prefixes, and then hash each group. That way you can tell if any of the groups contains a change.
+
+Can't get the tags to work on the main ssb network. It returns `undefined` or something like that. The new plan is to write things in this readme and then parse the markdown and write each day to the website, and copy paste to ssb.
+
+### todo
+What is a distributed hash table?
+
+
+
 
 
 
