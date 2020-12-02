@@ -20,9 +20,11 @@
     "canvas-particles": "0.0.8",
     "catch-links": "^2.0.0",
     "htm": "^3.0.4",
+    "mutant": "^3.29.0",
     "preact": "^10.5.5",
     "randomcolor": "^0.4.3",
     "routes": "^2.1.0",
+    "scuttle-tag": "^0.5.0",
     "single-page": "^1.1.0",
     "ssb-tags": "^0.2.0",
     "url-join": "0.0.1"
