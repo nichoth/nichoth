@@ -430,6 +430,18 @@ button {
   cursor: pointer;
 }
 
+li.post-bit {
+  white-space: nowrap;
+  margin-bottom: 2em;
+  height: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-
-
+// for the abridged blog list
+// ul {
+//   width: 80vw;
+//   padding: 0;
+//   list-style: none;
+//   margin: 0 auto;
+// }

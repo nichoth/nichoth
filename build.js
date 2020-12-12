@@ -44,7 +44,7 @@ function devDiary () {
             // append the full version to it's own file at /dev-diary/post
             var path = __dirname + '/src/dev-diary/' + fileName
             var file = fs.readFileSync(path, 'utf8')
-            content += `<li claass="post-bit">${marked(file)}</li>`
+            content += `<li claass="post-bit">${marked(file)}</li> <hr>`
         })
 
         content += '</ul>'
