@@ -6,8 +6,8 @@ var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
-var ssbTags = require('ssb-tags')
-var ScuttleTag = require('scuttle-tag')
+// var ssbTags = require('ssb-tags')
+// var ScuttleTag = require('scuttle-tag')
 
 var srcPaths = [ 'websites', 'software' ]
 
@@ -29,6 +29,12 @@ srcPaths.forEach(function (path) {
     var outPath = __dirname + '/public/' + path + '/index.html'
     rs.pipe(hs).pipe(fs.createWriteStream(outPath))
 })
+
+
+function devDiary () {
+
+}
+
 
 function createTagIndex (sbot, tag, msgIds) {
     // console.log('tag here', tag, msgIds)
@@ -85,54 +91,54 @@ function createTagIndex (sbot, tag, msgIds) {
 }
 
 // do the dev-diary
-function devDiary (cb) {
-    var _plugins = [ ssbTags ]
-    ssbWeb.startSbot('ssb', _plugins, function (err, { id, sbot }) {
-        if (err) throw err
+// function devDiary (cb) {
+//     var _plugins = [ ssbTags ]
+//     ssbWeb.startSbot('ssb', _plugins, function (err, { id, sbot }) {
+//         if (err) throw err
 
-        var scuttleTag = ScuttleTag(sbot)
-        // console.log('herererere', ScuttleTag)
-        // var allTags = scuttleTag.allTags(sbot)
-        var allTags = scuttleTag.obs.allTags(tags => {
-            console.log('tagggggs', tags)
-        })
-        console.log('obs', scuttleTag.obs)
-        console.log('all tags', allTags)
-        console.log('all tags 2', scuttleTag.obs.allTags)
-        // allTags(tags => console.log('**tags**', tags))
+//         var scuttleTag = ScuttleTag(sbot)
+//         // console.log('herererere', ScuttleTag)
+//         // var allTags = scuttleTag.allTags(sbot)
+//         var allTags = scuttleTag.obs.allTags(tags => {
+//             console.log('tagggggs', tags)
+//         })
+//         console.log('obs', scuttleTag.obs)
+//         console.log('all tags', allTags)
+//         console.log('all tags 2', scuttleTag.obs.allTags)
+//         // allTags(tags => console.log('**tags**', tags))
 
-        sbot.tags.get(function (err, tags) {
-            if (err) throw err
-            console.log('**tags**', tags)
-            console.log('**id**', id)
-            console.log('**tags id**', tags[id])
+//         sbot.tags.get(function (err, tags) {
+//             if (err) throw err
+//             console.log('**tags**', tags)
+//             console.log('**id**', id)
+//             console.log('**tags id**', tags[id])
 
-            sbot.close(function (err) {
-                console.log('sbot closed', err)
-                if (err) throw err
-                if (cb) cb(err)
-            })
-
-
-            // S(
-            //     sbot.tags.stream(),
-            //     S.drain(function (tag) {
-            //         console.log('in drain', tag)
-            //     }, function done (err) {
-            //         console.log('all done', err)
-
-            //         sbot.close(function (err) {
-            //             console.log('sbot closed', err)
-            //             if (err) throw err
-            //             if (cb) cb(err)
-            //         })
-            //     })
-            // )
+//             sbot.close(function (err) {
+//                 console.log('sbot closed', err)
+//                 if (err) throw err
+//                 if (cb) cb(err)
+//             })
 
 
-        })
-    })
-}
+//             // S(
+//             //     sbot.tags.stream(),
+//             //     S.drain(function (tag) {
+//             //         console.log('in drain', tag)
+//             //     }, function done (err) {
+//             //         console.log('all done', err)
+
+//             //         sbot.close(function (err) {
+//             //             console.log('sbot closed', err)
+//             //             if (err) throw err
+//             //             if (cb) cb(err)
+//             //         })
+//             //     })
+//             // )
+
+
+//         })
+//     })
+// }
 
 // the visual detritus page
 function pics () {
