@@ -6,6 +6,7 @@ var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
+var marked = require('marked')
 // var ssbTags = require('ssb-tags')
 // var ScuttleTag = require('scuttle-tag')
 
@@ -32,7 +33,32 @@ srcPaths.forEach(function (path) {
 
 
 function devDiary () {
+    mkdirp.sync(__dirname + '/public/dev-diary')
+    var content = '<ul>'
 
+    fs.readdir('./src/dev-diary', function (err, files) {
+        console.log('err', err)
+        console.log('files', files)
+        files.forEach(function (fileName) {
+            // parse the md and append the first bit to `content` string
+            // append the full version to it's own file at /dev-diary/post
+            var path = __dirname + '/src/dev-diary/' + fileName
+            var file = fs.readFileSync(path, 'utf8')
+            content += `<li claass="post-bit">${marked(file)}</li>`
+        })
+
+        content += '</ul>'
+        var selectors = {
+            '#content': {
+                _appendHtml: content
+            }
+        }
+        var hs = hyperstream(selectors)
+        var rs = fs.createReadStream(__dirname + '/src/_index.html')
+
+        var outPath = __dirname + '/public/dev-diary/index.html'
+        rs.pipe(hs).pipe(fs.createWriteStream(outPath))
+    })
 }
 
 
@@ -246,7 +272,7 @@ function pics () {
 }
 
 pics()
-// devDiary()
+devDiary()
 
 // devDiary(err => {
 //     if (err) console.log('err', err)

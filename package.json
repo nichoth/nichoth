@@ -38,6 +38,7 @@
     "ecstatic": "^4.1.4",
     "esmify": "^2.1.1",
     "hyperstream": "^1.2.2",
+    "marked": "^1.2.6",
     "mkdirp": "^1.0.4",
     "node-sass": "^4.14.1",
     "pull-scan": "^1.0.0",
