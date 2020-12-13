@@ -17,13 +17,13 @@ function devDiary (srcPath, cb) {
             var path = __dirname + '/src/dev-diary/' + fileName
             var file = fs.readFileSync(path, 'utf8')
             var markdownContent = marked(file)
+            var folderName = fileName.split('.')[0]
             content += ` <li class="post-bit">
-                <a href="${'/software/' + fileName}">${markdownContent}</a>
+                <a href="${'/software/' + folderName}">${markdownContent}</a>
             </li>
             <hr>`
 
             // build the html page for that file
-            var folderName = fileName.split('.')[0]
             mkdirp.sync(__dirname + '/public/software/' + folderName)
             var rs = fs.createReadStream(__dirname + '/src/_index.html')
             var hs = hyperstream({
