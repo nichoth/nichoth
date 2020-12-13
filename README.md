@@ -22,13 +22,6 @@ npm start
 npm run deploy
 ```
 
-## update content
-Start eventual-gram with prod app-name. From eventual-gram dir:
-```
-npm run open
-```
-Then make a new post, this will be built into the website as a photo when you do `npm run build`.
-
 --------------------------------------------------
 
 ## notes
