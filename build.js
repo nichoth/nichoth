@@ -33,38 +33,7 @@ srcPaths.forEach(function (path) {
 })
 
 
-// function devDiary () {
-//     mkdirp.sync(__dirname + '/public/dev-diary')
-//     var content = '<ul>'
-
-//     fs.readdir('./src/dev-diary', function (err, files) {
-//         console.log('err', err)
-//         console.log('files', files)
-//         files.forEach(function (fileName) {
-//             // parse the md and append the first bit to `content` string
-//             // append the full version to it's own file at /dev-diary/post
-//             var path = __dirname + '/src/dev-diary/' + fileName
-//             var file = fs.readFileSync(path, 'utf8')
-//             content += `<li claass="post-bit">${marked(file)}</li> <hr>`
-//         })
-
-//         content += '</ul>'
-//         var selectors = {
-//             '#content': {
-//                 _appendHtml: content
-//             }
-//         }
-//         var hs = hyperstream(selectors)
-//         var rs = fs.createReadStream(__dirname + '/src/_index.html')
-
-//         var outPath = __dirname + '/public/dev-diary/index.html'
-//         rs.pipe(hs).pipe(fs.createWriteStream(outPath))
-//     })
-// }
-
-
 function createTagIndex (sbot, tag, msgIds) {
-    // console.log('tag here', tag, msgIds)
     mkdirp.sync(__dirname + '/public/detritus/' + tag)
 
     var posts = ''
@@ -117,55 +86,6 @@ function createTagIndex (sbot, tag, msgIds) {
     }
 }
 
-// do the dev-diary
-// function devDiary (cb) {
-//     var _plugins = [ ssbTags ]
-//     ssbWeb.startSbot('ssb', _plugins, function (err, { id, sbot }) {
-//         if (err) throw err
-
-//         var scuttleTag = ScuttleTag(sbot)
-//         // console.log('herererere', ScuttleTag)
-//         // var allTags = scuttleTag.allTags(sbot)
-//         var allTags = scuttleTag.obs.allTags(tags => {
-//             console.log('tagggggs', tags)
-//         })
-//         console.log('obs', scuttleTag.obs)
-//         console.log('all tags', allTags)
-//         console.log('all tags 2', scuttleTag.obs.allTags)
-//         // allTags(tags => console.log('**tags**', tags))
-
-//         sbot.tags.get(function (err, tags) {
-//             if (err) throw err
-//             console.log('**tags**', tags)
-//             console.log('**id**', id)
-//             console.log('**tags id**', tags[id])
-
-//             sbot.close(function (err) {
-//                 console.log('sbot closed', err)
-//                 if (err) throw err
-//                 if (cb) cb(err)
-//             })
-
-
-//             // S(
-//             //     sbot.tags.stream(),
-//             //     S.drain(function (tag) {
-//             //         console.log('in drain', tag)
-//             //     }, function done (err) {
-//             //         console.log('all done', err)
-
-//             //         sbot.close(function (err) {
-//             //             console.log('sbot closed', err)
-//             //             if (err) throw err
-//             //             if (cb) cb(err)
-//             //         })
-//             //     })
-//             // )
-
-
-//         })
-//     })
-// }
 
 // the visual detritus page
 function pics () {
@@ -275,22 +195,18 @@ function pics () {
 pics()
 
 devDiary(__dirname + '/src/software.html', (err, stream) => {
-    // console.log('sssss', stream)
     if (err) throw err
     mkdirp(__dirname + '/public/software')
     var ws = fs.createWriteStream(__dirname + '/public/software/index.html')
     var rs = fs.createReadStream(__dirname + '/src/_index.html')
     var hs = hyperstream({
         '#content': stream,
+        '.site-nav a[href="/software"]': {
+            class: { append: 'active' }
+        },
         'body': {
             class: { append: 'software' }
         }
     })
     rs.pipe(hs).pipe(ws)
 })
-
-// devDiary(err => {
-//     if (err) console.log('err', err)
-// })
-
-
