@@ -27,6 +27,9 @@ function devDiary (srcPath, cb) {
             mkdirp.sync(__dirname + '/public/software/' + folderName)
             var rs = fs.createReadStream(__dirname + '/src/_index.html')
             var hs = hyperstream({
+                body: {
+                    class: { append: 'diary-entry' }
+                },
                 '#content': markdownContent,
                 '.site-nav a[href="/software"]': {
                     class: { append: 'active' }
