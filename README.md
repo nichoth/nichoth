@@ -362,8 +362,15 @@ In the back of my mind is the memory app -- basically a graph database that has 
 -------------------------------------------------------
 
 
-## 11-28-2020
+## 12-11-2020
 
+* https://lynnandtonic.com/
+* https://hypercore-protocol.org/
+* https://blog.glitch.com/
+* https://blog.glitch.com/post/the-easiest-way-ever-to-control-who-you-share-your-app-with
+* https://www.taco.report/
+* https://explorers.netlify.com/
+* https://www.netlify.com/blog/2020/12/03/graphcms-launches-integration-for-netlify/
 
 
 

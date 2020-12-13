@@ -430,12 +430,30 @@ button {
   cursor: pointer;
 }
 
-li.post-bit {
-  white-space: nowrap;
-  margin-bottom: 2em;
-  height: 8em;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.development-diary {
+  ul {
+    list-style: none;
+    width: 80vw;
+  }
+
+  li.post-bit {
+    box-shadow: inset 0 0 25px #fba3a3;
+    white-space: nowrap;
+    margin-bottom: 2em;
+    height: 8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    box-shadow: inset 0 0 25px cyan;
+    // border: 1px solid;
+    padding: 1em;
+
+    p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
 }
 
 // for the abridged blog list

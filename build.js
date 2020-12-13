@@ -6,11 +6,12 @@ var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
-var marked = require('marked')
+// var marked = require('marked')
+var devDiary = require('./build-dev-diary')
 // var ssbTags = require('ssb-tags')
 // var ScuttleTag = require('scuttle-tag')
 
-var srcPaths = [ 'websites', 'software' ]
+var srcPaths = [ 'websites' ]
 
 srcPaths.forEach(function (path) {
     var obj = {
@@ -32,34 +33,34 @@ srcPaths.forEach(function (path) {
 })
 
 
-function devDiary () {
-    mkdirp.sync(__dirname + '/public/dev-diary')
-    var content = '<ul>'
+// function devDiary () {
+//     mkdirp.sync(__dirname + '/public/dev-diary')
+//     var content = '<ul>'
 
-    fs.readdir('./src/dev-diary', function (err, files) {
-        console.log('err', err)
-        console.log('files', files)
-        files.forEach(function (fileName) {
-            // parse the md and append the first bit to `content` string
-            // append the full version to it's own file at /dev-diary/post
-            var path = __dirname + '/src/dev-diary/' + fileName
-            var file = fs.readFileSync(path, 'utf8')
-            content += `<li claass="post-bit">${marked(file)}</li> <hr>`
-        })
+//     fs.readdir('./src/dev-diary', function (err, files) {
+//         console.log('err', err)
+//         console.log('files', files)
+//         files.forEach(function (fileName) {
+//             // parse the md and append the first bit to `content` string
+//             // append the full version to it's own file at /dev-diary/post
+//             var path = __dirname + '/src/dev-diary/' + fileName
+//             var file = fs.readFileSync(path, 'utf8')
+//             content += `<li claass="post-bit">${marked(file)}</li> <hr>`
+//         })
 
-        content += '</ul>'
-        var selectors = {
-            '#content': {
-                _appendHtml: content
-            }
-        }
-        var hs = hyperstream(selectors)
-        var rs = fs.createReadStream(__dirname + '/src/_index.html')
+//         content += '</ul>'
+//         var selectors = {
+//             '#content': {
+//                 _appendHtml: content
+//             }
+//         }
+//         var hs = hyperstream(selectors)
+//         var rs = fs.createReadStream(__dirname + '/src/_index.html')
 
-        var outPath = __dirname + '/public/dev-diary/index.html'
-        rs.pipe(hs).pipe(fs.createWriteStream(outPath))
-    })
-}
+//         var outPath = __dirname + '/public/dev-diary/index.html'
+//         rs.pipe(hs).pipe(fs.createWriteStream(outPath))
+//     })
+// }
 
 
 function createTagIndex (sbot, tag, msgIds) {
@@ -272,15 +273,24 @@ function pics () {
 }
 
 pics()
-devDiary()
+
+devDiary(__dirname + '/src/software.html', (err, stream) => {
+    // console.log('sssss', stream)
+    if (err) throw err
+    mkdirp(__dirname + '/public/software')
+    var ws = fs.createWriteStream(__dirname + '/public/software/index.html')
+    var rs = fs.createReadStream(__dirname + '/src/_index.html')
+    var hs = hyperstream({
+        '#content': stream,
+        'body': {
+            class: { append: 'software' }
+        }
+    })
+    rs.pipe(hs).pipe(ws)
+})
 
 // devDiary(err => {
 //     if (err) console.log('err', err)
 // })
 
-// doesn't work this way i don't know why
-// devDiary(err => {
-//     if (err) throw err
-//     pics()
-// })
 
