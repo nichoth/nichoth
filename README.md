@@ -293,7 +293,54 @@ In the back of my mind is the memory app -- basically a graph database that has 
 * https://explorers.netlify.com/
 * https://www.netlify.com/blog/2020/12/03/graphcms-launches-integration-for-netlify/
 
+--------------------------------------------------
 
+## 12-13-2020
+
+via Dominic %pYmFr6d0QwLP+YG0VNoo75PP7eYNZ1Y8C2MC9IjF5aw=.sha256 :
+
+> # why flume?
+> 
+> Since I saw from [flume-rs readme](https://github.com/ssbrs/flumedb-rs) [@piet](@U5GvOKP/YUza9k53DSXxT0mk3PIrnyAmessvNfZl5E0=.ed25519) still didn't understand my flume documentation I'm gonna try explaining some high level things again here. Hope this helps.
+> 
+> _Could you build scuttlebutt on just a key value store?_
+> 
+> Well, it was originally, but it evolved towards a log oriented store and flume was refactored out of it. The problem with the key value store is that the user doesn't get to choose the keys. The key is the hash of the message. I can't create a message with a hash that you are expecting - that's basically impossible (it's a hash collision). But you can put something in a message (such as the hash of my message) and I can lookup messages that contain that something. The tool that helps you look up things is called an index. Since we don't get to choose the keys, scuttlebutt's database _is not really useful without the indexes_.
+> 
+> Some of the client apps other that patchwork do display the feeds in log order, patchbay@<=6, patchfoo, patchless. But the main user of the log order is the indexes.
+> 
+> Before the log oriented refactor, the primary store was a leveldb the keys were the hash and the value was the message. That's why scuttlebutt returns js objects that are `{key: msg_id, value: msg}`
+> There were also several indexes. I think clock `[author, seq]`, log `[timestamp]`, feed `[value.timestamp]`, user feed `[author, timestamp]`, links, maybe some others too. When a message was appended to the database, the relevant indexes were also created. These where all written in a single batch to the same leveldb instance. (this is important) this meant that the entire write, message plus indexes, either succeeded or failed _together_ which gaurantees that the indexes match the data.
+> 
+> The big problem with this model was that it was hard to change how the indexes worked, or add a new index. If index data was only added at write time, what if you have a database full of data, and want to add another index? or fix a bug in an index? There wasn't any systematic way to do this. But then I realized, you could use the `log` (message receive time) index for that - the index could reprocess all the messages in receive order, like it would have if it had been running at the time the message was received! Also, added bonus: if the reindex crashed or was shutdown part way, it could continue processing from that point, instead of starting over.
+> 
+> At this time, (the days of patchwork@1 and 2) at startup, patchwork scanned all the messages and built up some in memory data structures, such as the friends graph. This delayed startup ~10 seconds at the time, but doing this now would take several minutes! However, the idea of in memory aggregations is a good solution to some things, hence we have `flumeview-reduce`. (of course, since these are coded in a somewhat ad hoc way, it's likely they have bugs that need to be fixed, so rebuilding indexes is particularily important)
+> 
+> _The whole point of the log is to make (re)building indexes and views easy._
+> 
+> ---
+> 
+> Another way to think of it: if patchwork wasn't decentralized, but was just a website, backed by say, mongodb - you wouldn't do things like we do them at all. Instead of storing every message as it's own record, when you replied to a thread, they'd make a http request to update the key representing that thread. But that wouldn't work with scuttlebutt, because there isn't anyone with the authority to decide whether a given update to a thread was valid or not, so instead of storing the mutable state of a thread, we store the immutable updates to it. Then when we want to view the mutable state, we collect the updates and regenerate it. It's as if, instead of storing the thread, you stored the http requests to update the thread, then replayed it.
+> 
+> Scuttlebutt really is an unusual database. Firstly, it's somewhat unusual because it has master-master replication - most databases don't have that, and some have it tacked on. ssb takes that one step further, but making replication the _most important feature_ and makes many horrible compromises in order to make that feature work well. (such as: not being able to choose your keys, not delete messages, only be able to append new messages instead of update things)
+> 
+> This was a reaction to couchdb - which had a replication feature, but it didn't work really great because it allowed you to update messages and choose your own keys. couchdb replication would work for a federated application, or redundant servers, or a central hub + mirrors, but not a truely decentralized design. However, couch did have some cool things - like user definable views/indexes (based on map and reduce functions) and access to the internal log. (it was exposed as part of the replication feature, but I used it several times for various things, but that's another story) Prehaps most importantly, it was a database created by an open source community, not a corporation. I met a number of nice people who worked on couchdb! (it was the opposite of mongo, which just had a slick website, made by a company, open source, sure, but not community driven in the same way couchdb was)
+> 
+> ---
+> 
+> If anyone still has questions lets do a flume db call - AMA about flume! [@piet](@U5GvOKP/YUza9k53DSXxT0mk3PIrnyAmessvNfZl5E0=.ed25519)
+> [@mix](@ye+QM09iPcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519) [@dinosaur](@6ilZq3kN0F+dXFHAPjAwMm87JEb/VdB+LC9eIMW3sa0=.ed25519) [@aljoscha](@zurF8X68ArfRM71dF3mKh36W0xDM8QmOnAS5bYOq8hA=.ed25519) [@rabble](@vzoU7/XuBB5B0xueC9NHFr9Q76VvPktD9GUkYgN9lAc=.ed25519) [@cel](@f/6sQ6d2CMxRUhLpspgGIulDxDCwYD7DzFzPNr7u5AU=.ed25519)  
+
+-------------------------------------------------
+
+Organizing things is hard. The web is supposed to help b/c it has global text links, but servers disappearing is a hurdle. Then there is `hyper*`, which i still need to learn about.
+
+## revisiting
+* https://github.com/amark/gun
+* https://www.youtube.com/watch?v=V6DKjEbdYos -- Rich Hickey - The Database as a Value
+
+## todo
+* the graph db thing
 
 
 
