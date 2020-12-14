@@ -331,6 +331,7 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 * hyp CLI
 * web assembly
 * DHT
+* travel back in time and look [at this](https://github.com/nichoth/nichoth#10-31-2020) -- a list of stuff regarding merkle-tree, ssb, hyper-swarm
 
 
 
