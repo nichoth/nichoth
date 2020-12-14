@@ -333,6 +333,24 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 * DHT
 * travel back in time and look [at this](https://github.com/nichoth/nichoth#10-31-2020) -- a list of stuff regarding merkle-tree, ssb, hyper-swarm
 
+-------------------------------------------------------------
+
+[ssb-db partial replication](https://github.com/ssbc/ssb-db/issues/27) -- use a binary tree instead of a log
+
+[merkle trees in ssb-viewer](https://viewer.scuttlebot.io/%25L9m5nHRqpXM4Zkha1ENTk5wNOXQMduve8Hc9%2BF0RLZI%3D.sha256)
+
+> Ssb provides ooo messages, where a server can ask its peers to deliver it a message of a certain hash
+
+> you trust that whoever gave you that hash has already verified the validity of that message.
+
+[Searching the web for the origins of the hash chain](https://viewer.scuttlebot.io/%250%2BT%2FBvk742LoJNBsRmITlNNr6eXEzPBOpktR3HZnr0M%3D.sha256)
+
+--------------------------------------------
+
+## 12-14-2020
+
+* https://www.youtube.com/watch?v=nOSB177SfEM&feature=youtu.be&t=380 -- arj bornhack anarchitecture
+
 
 
 
