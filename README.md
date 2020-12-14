@@ -24,28 +24,7 @@ npm run deploy
 
 ## notes
 
-## sizes of things
-* [preact](https://github.com/nichoth/demo-world)
-```
--rw-r--r--  1 nick  staff    13K Oct 25 14:42 bundle.js
--rw-r--r--  1 nick  staff   243B Oct 25 10:55 index.html
--rw-r--r--  1 nick  staff    27B Oct 25 16:08 style.css
-```
-* [choo](https://github.com/nichoth/demo-world-choo)
-```
--rw-r--r--  1 nick  staff    30K Oct 25 19:13 bundle.js
--rw-r--r--  1 nick  staff     0B Oct 25 19:12 style.css
-```
-* [react](https://github.com/nichoth/demo-world-react)
-```
-total 872
--rw-r--r--  1 nick  staff   407K Oct 25 21:03 bundle.js
--rw-r--r--  1 nick  staff    27B Oct 25 21:03 style.css
-```
-
-
---------------------------------------------------------------
-
+### cryptography
 from stackoverflow
 
 > I. Encryption and decryption of data
@@ -223,7 +202,6 @@ Need to make a backend that functions as a pub, but the API is exposed over REST
 -------------------------------------------
 
 ### ssc
-
 * make the server
   - can maybe store keys locally
   - need to then use separate auth to publish
@@ -299,6 +277,8 @@ In the back of my mind is the memory app -- basically a graph database that has 
 
 via Dominic %pYmFr6d0QwLP+YG0VNoo75PP7eYNZ1Y8C2MC9IjF5aw=.sha256 :
 
+[link](https://viewer.scuttlebot.io/%25pYmFr6d0QwLP%2BYG0VNoo75PP7eYNZ1Y8C2MC9IjF5aw%3D.sha256)
+
 > # why flume?
 > 
 > Since I saw from [flume-rs readme](https://github.com/ssbrs/flumedb-rs) [@piet](@U5GvOKP/YUza9k53DSXxT0mk3PIrnyAmessvNfZl5E0=.ed25519) still didn't understand my flume documentation I'm gonna try explaining some high level things again here. Hope this helps.
@@ -341,6 +321,19 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 
 ## todo
 * the graph db thing
+* ssc functions
+  - publish subsequent msgs
+
+## read about these
+* hypercore
+* webrtc
+* gunDB
+* hyp CLI
+* web assembly
+* DHT
+
+
+
 
 
 
