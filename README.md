@@ -353,6 +353,31 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 
 I realized today that it is *impossible* to do this site on netlify, because the databse for photos is only available on *my computer*, thanks to ssb.
 
+### phone links
+* https://thecsspodcast.libsyn.com/
+* https://ceramic.network/
+* https://pinata.cloud/
+* [humble fungus](https://www.youtube.com/channel/UC9i7mX6VXYUwUlfcZLKInjA)
+* [hyperphone](https://github.com/mafintosh/hyperphone)
+* https://github.com/ssb-ngi-pointer/jitdb/pull/67
+* [hyperbeam](https://github.com/mafintosh/hyperbeam)
+* https://sia.codes/posts/eleventy-and-cloudinary-images/
+* [backdrifting -- DHT](https://backdrifting.net/post/040_dhts)
+* [p2p network models and implications](https://backdrifting.net/post/042_p2p_models)
+* [Paul reveals what Uplink is.](https://www.patreon.com/posts/paul-reveals-is-44665610)
+* https://slate.host/
+* https://dinhanhthi.com/
+* [11ty + nunjucks](https://dinhanhthi.com/11ty-nunjucks/)
+* https://github.com/anotherjesse/hello-hyper-github-publish
+* https://spectrum.chat/
+
+
+
+
+
+
+
+
 
 
 
