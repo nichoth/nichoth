@@ -351,7 +351,7 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 
 * https://www.youtube.com/watch?v=nOSB177SfEM&feature=youtu.be&t=380 -- arj bornhack anarchitecture
 
-I realized today that it is *impossible* to do this site on netlify, because the databse for photos is only available on *y computer*, thanks to ssb.
+I realized today that it is *impossible* to do this site on netlify, because the databse for photos is only available on *my computer*, thanks to ssb.
 
 
 
