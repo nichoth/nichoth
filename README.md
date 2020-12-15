@@ -377,6 +377,9 @@ I realized today that it is *impossible* to do this site on netlify, because the
 * https://www.cassie.codes/speaking/interactive-web-animation-with-svg/
 * https://www.cassie.codes/
 
+* https://handbook.scuttlebutt.nz/guides/
+* [tree exchange](https://github.com/dominictarr/tree-exchange) Looks cool
+* [ssb tree thread](https://viewer.scuttlebot.io/%25L9m5nHRqpXM4Zkha1ENTk5wNOXQMduve8Hc9%2BF0RLZI%3D.sha256)
 
 
 
