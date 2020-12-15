@@ -382,6 +382,11 @@ I realized today that it is *impossible* to do this site on netlify, because the
 * [ssb tree thread](https://viewer.scuttlebot.io/%25L9m5nHRqpXM4Zkha1ENTk5wNOXQMduve8Hc9%2BF0RLZI%3D.sha256)
 
 
+-------------------------------------------------
+
+## 12-15-2020
+* https://www.inkandswitch.com/local-first.html
+
 
 
 
