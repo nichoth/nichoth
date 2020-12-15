@@ -372,6 +372,12 @@ I realized today that it is *impossible* to do this site on netlify, because the
 * https://spectrum.chat/
 * https://rethinkdb.com/
 
+------------------
+
+* https://www.cassie.codes/speaking/interactive-web-animation-with-svg/
+* https://www.cassie.codes/
+
+
 
 
 

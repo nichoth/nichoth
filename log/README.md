@@ -1,10 +1,8 @@
-# notes
+# some random things
 
-## some random things
-
-### frameworks
+## frameworks
 * [hyperapp](https://github.com/jorgebucaran/hyperapp)
-  - [github namespace](https://github.com/hyperapp)
+  - [hyperapp github namespace](https://github.com/hyperapp)
   - [hypersamples](https://github.com/hyperapp/hypersamples)
   - [hyperlit](https://github.com/zaceno/hyperlit)
 * [mutant](https://github.com/mmckegg/mutant)
@@ -28,14 +26,14 @@
 * [fission](https://fission.codes/)
 * [Learn more about Threads and the Powergate from the IPFS Pinning Summit](https://blog.textile.io/learn-more-about-threads-and-the-powergate-from-the-ipfs-pinning-summit/)
 * [CS 253 Web Security](https://web.stanford.edu/class/cs253/)
+* [textile hub](https://blog.textile.io/announcing-the-textile-protocol-hub/)
 
-### hyper
+## hyper
 * https://github.com/hypercore-protocol/hypercore
 * https://www.datprotocol.com/
 * [ocean protocol](https://oceanprotocol.com/)
 * [hypergraph](https://blog.libscie.org/introducing-hypergraph-beta/)
 * [dat store](https://github.com/datproject/dat-store)
-* [textile hub](https://blog.textile.io/announcing-the-textile-protocol-hub/)
 * [hypercore-protocol.org](https://hypercore-protocol.org/)
 * [hypertrie](https://www.npmjs.com/package/hypertrie) -- Distributed single writer key/value store
 * [pinata](https://pinata.cloud/)
@@ -49,7 +47,7 @@
 
 ----------------------------------------
 
-### design
+## design
 * https://2020.webconf.asia/
 * https://kristen.dev/
 * https://www.cassie.codes/
@@ -57,8 +55,7 @@
 
 ----------------------------------------
 
-
-### to read
+## to read
 * https://whitepaper.fission.codes/identity/id-overview
 * https://en.wikipedia.org/wiki/WebFinger
 * https://github.com/e-e-e/hyper-graph-db
