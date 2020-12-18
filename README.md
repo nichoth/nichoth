@@ -335,7 +335,9 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 
 -------------------------------------------------------------
 
-[ssb-db partial replication](https://github.com/ssbc/ssb-db/issues/27) -- use a binary tree instead of a log
+[merkle tree logs](https://github.com/ssbc/ssb-db/issues/27) -- use a binary tree instead of a log
+
+[partial replicateion](https://github.com/ssbc/ssb-server/issues/124)
 
 [merkle trees in ssb-viewer](https://viewer.scuttlebot.io/%25L9m5nHRqpXM4Zkha1ENTk5wNOXQMduve8Hc9%2BF0RLZI%3D.sha256)
 
@@ -384,9 +386,16 @@ I realized today that it is *impossible* to do this site on netlify, because the
 
 -------------------------------------------------
 
+
 ## 12-15-2020
 * https://www.inkandswitch.com/local-first.html
 
+---------------------------------------------------------
+
+## 12-16-2020
+Woke up with a headache today. Took some ibuprofen and now it's ok.
+
+Found out about [ssb-keys-mnemonic](https://www.npmjs.com/package/ssb-keys-mnemonic) today.
 
 
 
