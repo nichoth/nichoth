@@ -422,11 +422,17 @@ A nice merkle-tree illustration in 'Secured by Merkle trees and cryptography'.
 * [local first cyberspace](https://github.com/RangerMauve/local-first-cyberspace)
 * [tree-exchange](https://github.com/dominictarr/tree-exchange)
 * https://github.com/anotherjesse/hello-hyper-github-publish
-* https://backdrifting.net/post/040_dhts
+* [Distributed Hash Tables and Decentralized Data Storage](https://backdrifting.net/post/040_dhts)
 * https://github.com/mafintosh/hyperbeam
 * [hyp cli](https://github.com/hypercore-protocol/cli)
 
+---------------------------------------
 
+* https://github.com/RangerMauve/hyperdrive-publisher
+* https://github.com/datproject/dat-store
+* https://github.com/RangerMauve/hyperdrive-publisher-example
+
+https://github.com/anotherjesse/hello-hyper-github-publish
 
 
 
