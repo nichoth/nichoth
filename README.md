@@ -424,6 +424,7 @@ A nice merkle-tree illustration in 'Secured by Merkle trees and cryptography'.
 * https://github.com/anotherjesse/hello-hyper-github-publish
 * https://backdrifting.net/post/040_dhts
 * https://github.com/mafintosh/hyperbeam
+* [hyp cli](https://github.com/hypercore-protocol/cli)
 
 
 
