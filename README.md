@@ -397,12 +397,33 @@ Woke up with a headache today. Took some ibuprofen and now it's ok.
 
 Found out about [ssb-keys-mnemonic](https://www.npmjs.com/package/ssb-keys-mnemonic) today.
 
+-------------------------------------------------------
 
+## 12-20-2020
+Reading about [hypercore](https://hypercore-protocol.org/) today.
 
+> Think lightweight blockchain crossed with BitTorrent.
 
+> Each peer can choose to download only the section of the log they are interested in, without having to download everything from the beginning.
 
+A nice merkle-tree illustration in 'Secured by Merkle trees and cryptography'.
 
+> To support mutable datasets, Hypercore uses asymmetric cryptography to sign the root of the Merkle tree as data is appended to it.
 
+### to read
+* https://geutstudio.com/blog/introducing-permanent-seeder/
+
+----------------------------------
+
+* https://www.parity.io/jobs/#jobs
+* [hypermerge](https://github.com/automerge/hypermerge)
+* [ssb-browser-core](https://github.com/arj03/ssb-browser-core)
+* [automerge](https://github.com/automerge/automerge)
+* [local first cyberspace](https://github.com/RangerMauve/local-first-cyberspace)
+* [tree-exchange](https://github.com/dominictarr/tree-exchange)
+* https://github.com/anotherjesse/hello-hyper-github-publish
+* https://backdrifting.net/post/040_dhts
+* https://github.com/mafintosh/hyperbeam
 
 
 
