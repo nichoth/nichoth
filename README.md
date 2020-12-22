@@ -434,6 +434,22 @@ A nice merkle-tree illustration in 'Secured by Merkle trees and cryptography'.
 
 https://github.com/anotherjesse/hello-hyper-github-publish
 
+--------------------------------------------------
+
+https://thegraph.com/
+
+-------------------------------------------------
+
+## 12-22-2020
+* [Setting up a TypeScript NodeJS Application with Prettier and ESLint](https://dev.to/caelinsutch/setting-up-a-typescript-nodejs-application-with-prettier-and-eslint-53jc)
+* [React Server Components](https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html)
+* [Speakeasy JS – How we fit our blockchain full node in a web browser (Elena Nadolinski)](https://www.youtube.com/watch?v=CS6pZ1qLUVg)
+* [p2p ordered search indexes](https://0fps.net/2020/12/19/peer-to-peer-ordered-search-indexes/)
+* [what's old is new](https://css-tricks.com/whats-old-is-new/)
+* [(Choosing our own) Adventures in Next.js](https://www.youtube.com/watch?v=_qkoAPRG2wY)
+* [cloudflare pages](https://blog.cloudflare.com/cloudflare-pages/)
+
+
 
 
 
