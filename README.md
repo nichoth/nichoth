@@ -447,8 +447,15 @@ https://thegraph.com/
 * [p2p ordered search indexes](https://0fps.net/2020/12/19/peer-to-peer-ordered-search-indexes/)
 * [what's old is new](https://css-tricks.com/whats-old-is-new/)
 * [(Choosing our own) Adventures in Next.js](https://www.youtube.com/watch?v=_qkoAPRG2wY)
-* [cloudflare pages](https://blog.cloudflare.com/cloudflare-pages/)
+* [cloudflare pages](https://blog.cloudflare.com/cloudflare-pages/) -- seems to be like netlify. but has a KV store
+  - [Workers Durable Objects Beta](https://blog.cloudflare.com/introducing-workers-durable-objects/)
+  - [Workers KV — Cloudflare's distributed database](https://blog.cloudflare.com/workers-kv-is-ga/)
+> we've made it possible for Workers to act as WebSocket endpoints
 
+----------------------------------
+
+* [@hyperswarm/replicator](https://www.npmjs.com/package/@hyperswarm/replicator)
+* [ssb-browser-core/blobs](https://github.com/arj03/ssb-browser-core#remoteurlblobid)
 
 
 
