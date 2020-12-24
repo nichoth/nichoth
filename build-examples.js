@@ -11,10 +11,14 @@ function examples () {
             class: { append: 'examples' }
         }
     })
-    var rs = fs.createReadStream(__dirname + '/src/_index.html)
+    var rs = fs.createReadStream(__dirname + '/src/_index.html')
     var outPath = __dirname + '/public/examples/index.html'
     rs.pipe(hs).pipe(fs.createWriteStream(outPath))
 }
 
 module.exports = examples
+
+if (require.main === module) {
+    examples()
+}
 

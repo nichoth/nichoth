@@ -452,10 +452,27 @@ https://thegraph.com/
   - [Workers KV — Cloudflare's distributed database](https://blog.cloudflare.com/workers-kv-is-ga/)
 > we've made it possible for Workers to act as WebSocket endpoints
 
+
 ----------------------------------
 
 * [@hyperswarm/replicator](https://www.npmjs.com/package/@hyperswarm/replicator)
 * [ssb-browser-core/blobs](https://github.com/arj03/ssb-browser-core#remoteurlblobid)
+
+-----------------------------------------
+
+What is durable-object compared to KV
+
+I think the durable-object thing gives you some co-location, so you have a strong consistency guarantee, and also it is persisted and location agnostic. Whereas KV is eventually consistent. Durable-Objects use the same memory in additin to storage, so it is immediately consistent. I think.
+
+Durable objects look like lambda functions, but with a lifespan longer than just the function running
+
+Workers-KV is like a database. eventually consistent
+
+----------------------------------------------------------------------
+
+## 12-23-2020
+
+* [Leveraging 11ty in Healthcare](https://www.youtube.com/watch?v=RvNV8Lesmrc)
 
 
 
