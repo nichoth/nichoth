@@ -6,7 +6,6 @@ var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
-// var marked = require('marked')
 var devDiary = require('./build-dev-diary')
 // var ssbTags = require('ssb-tags')
 // var ScuttleTag = require('scuttle-tag')
@@ -210,3 +209,4 @@ devDiary(__dirname + '/src/software.html', (err, stream) => {
     })
     rs.pipe(hs).pipe(ws)
 })
+
