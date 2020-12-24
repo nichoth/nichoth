@@ -486,3 +486,21 @@ button {
     padding-top: 2em;
   }
 }
+
+// ------------ the examples page ------------------------------
+body.examples {
+  hr {
+    border: none;
+    &:after {
+        background: transparent url(/img/wave.svg) bottom;
+        background-repeat: repeat-x;
+        background-size: 26px auto;
+        content: " ";
+        width: 100%;
+        height: 10px;
+        display: block;
+    }
+  }
+}
+
+// --------------------------------------------------
