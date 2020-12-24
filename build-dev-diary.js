@@ -1,6 +1,5 @@
 var hyperstream = require('hyperstream')
 var fs = require('fs')
-var marked = require('marked')
 var mkdirp = require('mkdirp')
 var marked = require('marked')
 
@@ -36,12 +35,12 @@ function devDiary (srcPath, cb) {
                 },
             })
             rs.pipe(hs)
-                .pipe(fs.createWriteStream(__dirname + '/public/software/' + 
+                .pipe(fs.createWriteStream(__dirname + '/public/software/' +
                     folderName + '/index.html'))
         })
 
         content += '</ul>'
-        
+
         var selectors = {
             '.development-diary': {
                 _appendHtml: content
