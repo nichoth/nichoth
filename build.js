@@ -7,8 +7,9 @@ var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
 var devDiary = require('./build-dev-diary')
-// var ssbTags = require('ssb-tags')
-// var ScuttleTag = require('scuttle-tag')
+var examples = require('./build-examples')
+
+examples()
 
 var srcPaths = [ 'websites' ]
 
