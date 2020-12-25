@@ -474,6 +474,41 @@ Workers-KV is like a database. eventually consistent
 
 * [Leveraging 11ty in Healthcare](https://www.youtube.com/watch?v=RvNV8Lesmrc)
 
+---------------------------------------------
 
+## 12-24-2020
+
+Watching this and noting the stuff: [Leveraging 11ty in Healthcare](https://www.youtube.com/watch?v=RvNV8Lesmrc)
+
+* [integromat](https://www.integromat.com/en)
+* [airtable](https://airtable.com/) -- "master user DB"
+* [whereby](https://whereby.com/information/embedded/)
+* [sendgrid](https://sendgrid.com/) -- for the link to join
+
+"Didn't have to do any of that API programming"
+
+Finally read this: https://0fps.net/2020/12/19/peer-to-peer-ordered-search-indexes/
+
+------------------------------------------------
+
+reading [cloudlflare worker KV](https://blog.cloudflare.com/building-a-to-do-list-with-workers-and-kv/)
+
+It's kind of weird how I can't find where the cloudflare functions can be placed in my source repo. I can only see the workers in the weird little browser editor from cloudflare.
+
+[Use a github action to deploy a worker script](https://blog.cloudflare.com/deploying-workers-with-github-actions-serverless/)
+
+So it looks like you would create a separate repo for the cloudflare workers, and use a GH action to deploy them when they change
+
+* [css tricks](https://css-tricks.com/how-to-make-a-simple-cms-with-cloudflare-github-actions-and-metalsmith/)
+* [metalsmith](https://metalsmith.io/)
+
+
+----------------------------------------------
+
+12-25-2020
+
+* [durable objects](https://blog.cloudflare.com/introducing-workers-durable-objects/)
+* [merkle](https://0fps.net/2020/12/19/peer-to-peer-ordered-search-indexes/)
+* https://dev.to/caelinsutch/setting-up-a-typescript-nodejs-application-with-prettier-and-eslint-53jc
 
 
