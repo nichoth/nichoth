@@ -505,10 +505,22 @@ So it looks like you would create a separate repo for the cloudflare workers, an
 
 ----------------------------------------------
 
-12-25-2020
+## 12-25-2020
 
 * [durable objects](https://blog.cloudflare.com/introducing-workers-durable-objects/)
 * [merkle](https://0fps.net/2020/12/19/peer-to-peer-ordered-search-indexes/)
 * https://dev.to/caelinsutch/setting-up-a-typescript-nodejs-application-with-prettier-and-eslint-53jc
+
+-----------------------------------------------------
+
+## 12-27-2020
+
+* [scroll animation](https://css-tricks.com/books/greatest-css-tricks/scroll-animation/) -- very good article
+* [css min & max](https://css-tricks.com/min-max-and-clamp-are-css-magic/)
+
+
+
+
+
 
 
