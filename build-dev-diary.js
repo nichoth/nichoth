@@ -39,11 +39,15 @@ function devDiary (srcPath, cb) {
                     folderName + '/index.html'))
         })
 
-        content += '</ul>'
+        var lines = content.split("\n")
+        lines.pop()
+        lines.join("\n")
+
+        lines += '</ul>'
 
         var selectors = {
             '.development-diary': {
-                _appendHtml: content
+                _appendHtml: lines
             }
         }
         var hs = hyperstream(selectors)
@@ -53,4 +57,25 @@ function devDiary (srcPath, cb) {
     })
 }
 
+if (require.main === module) {
+    devDiary(__dirname + '/src/software.html', (err, stream) => {
+        if (err) throw err
+        mkdirp(__dirname + '/public/software')
+        var ws = fs.createWriteStream(__dirname +
+                '/public/software/index.html')
+        var rs = fs.createReadStream(__dirname + '/src/_index.html')
+        var hs = hyperstream({
+            '#content': stream,
+            '.site-nav a[href="/software"]': {
+                class: { append: 'active' }
+            },
+            'body': {
+                class: { append: 'software' }
+            }
+        })
+        rs.pipe(hs).pipe(ws)
+    })
+}
+
 module.exports = devDiary
+
