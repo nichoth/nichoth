@@ -570,6 +570,26 @@ Need to get 'eventual-gram' working today. Need to do the routing, make sure the
 
 * [arj blog](https://people.iola.dk/arj/2020/02/18/secure-scuttlebutt-in-a-browser/)
 
+------------------------------------------------------------
+
+## 12-29-2020
+Sent this log as a 'writing sample', then realized i should have sent [the fiend guide](https://github.com/nichoth/ssb-field-guide).
+
+
+----------------------------------------------------
+
+## 12-30-2020
+Heard of [terminus DB](https://terminusdb.com/) and [the podcast](https://podcast.terminusdb.com/episodes) today
+
+-----------------------------------------
+
+## 12-31-2020
+
+
+
+
+
+
 
 
 

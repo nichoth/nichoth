@@ -17,7 +17,7 @@ function devDiary (srcPath, cb) {
             var file = fs.readFileSync(path, 'utf8')
             var markdownContent = marked(file)
             var folderName = fileName.split('.')[0]
-            content += ` <li class="post-bit">
+            content += `<li class="post-bit">
                 <a href="${'/software/' + folderName}">${markdownContent}</a>
             </li>
             <hr>`
@@ -32,22 +32,24 @@ function devDiary (srcPath, cb) {
                 '#content': markdownContent,
                 '.site-nav a[href="/software"]': {
                     class: { append: 'active' }
-                },
+                }
             })
             rs.pipe(hs)
                 .pipe(fs.createWriteStream(__dirname + '/public/software/' +
                     folderName + '/index.html'))
         })
 
-        var lines = content.split("\n")
-        lines.pop()
-        lines.join("\n")
+        // var lines = content.split("\n")
+        // lines.pop()
+        // lines.join("\n")
 
-        lines += '</ul>'
+        // lines += '</ul>'
+        content += '</ul>'
 
         var selectors = {
             '.development-diary': {
-                _appendHtml: lines
+                _appendHtml: content
+                // _appendHtml: lines
             }
         }
         var hs = hyperstream(selectors)
