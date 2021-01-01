@@ -39,6 +39,7 @@ function devDiary (srcPath, cb) {
                     folderName + '/index.html'))
         })
 
+        // remove the last hr
         var lines = content.split("\n")
         lines.pop()
         var _content = lines.join("\n")
