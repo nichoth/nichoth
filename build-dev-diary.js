@@ -39,17 +39,15 @@ function devDiary (srcPath, cb) {
                     folderName + '/index.html'))
         })
 
-        // var lines = content.split("\n")
-        // lines.pop()
-        // lines.join("\n")
+        var lines = content.split("\n")
+        lines.pop()
+        var _content = lines.join("\n")
 
-        // lines += '</ul>'
-        content += '</ul>'
+        _content += '</ul>'
 
         var selectors = {
             '.development-diary': {
-                _appendHtml: content
-                // _appendHtml: lines
+                _appendHtml: _content
             }
         }
         var hs = hyperstream(selectors)
