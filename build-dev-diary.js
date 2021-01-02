@@ -29,6 +29,11 @@ function devDiary (srcPath, cb) {
                 body: {
                     class: { append: 'diary-entry' }
                 },
+
+                '.site-nav a[href="/software"]': {
+                    class: { append: 'active' }
+                },
+
                 '#content': markdownContent,
                 '.site-nav a[href="/software"]': {
                     class: { append: 'active' }

@@ -476,17 +476,6 @@ button {
   }
 }
 
-.diary-entry {
-  background-color: beige;
-  #content {
-    padding: 1em;
-    max-width: 44em;
-    line-height: 1.4em;
-    margin: 0 auto;
-    padding-top: 2em;
-  }
-}
-
 // ------------ the examples page ------------------------------
 :root {
   --color-peach:hsl(4, 65%, 85%);
@@ -575,8 +564,31 @@ body.examples {
   }
 
 }
-
 // --------------------------------------------------
+
+
+// ------------------ body.diary-entry -----------
+
+body.diary-entry {
+  background-color: beige;
+
+  #content {
+    padding: 1em;
+    max-width: 44em;
+    line-height: 1.4em;
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+
+  .home-link{
+    img {
+      background-color: #ff7795;
+    }
+  }
+}
+
+
+// -------------------------------------
 
 
 
