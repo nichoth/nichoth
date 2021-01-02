@@ -585,6 +585,12 @@ Heard of [terminus DB](https://terminusdb.com/) and [the podcast](https://podcas
 
 ## 12-31-2020
 
+------------------------------------------
+
+## 1-2-2021
+
+The cypress tests are nice *just because* they have the UI commponent. It is just nice to be able to *see* the website as it is testing.
+
 
 
 
