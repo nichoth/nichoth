@@ -591,6 +591,32 @@ Heard of [terminus DB](https://terminusdb.com/) and [the podcast](https://podcas
 
 The cypress tests are nice *just because* they have the UI commponent. It is just nice to be able to *see* the website as it is testing.
 
+----------------------------------------
+
+## 1-3-2021
+I woke up quite late today. Am not sure why
+
+### a big list of websites from my phone
+
+* [hyp cli](https://github.com/hypercore-protocol/cli)
+* https://github.com/RangerMauve/hyperdrive-publisher
+* https://pinata.cloud/
+* https://thehub.io/startups/hyperdivision
+* https://github.com/automerge/hypermerge
+* https://polkadot.network/
+* https://www.substrate.io/
+* https://subsocial.network/
+* https://minimalistlist.com/
+* https://arweave.medium.com/
+* https://github.com/davidkpiano/xstate/
+* https://www.underpin.company/
+* https://adamrackis.dev/
+* https://css-tricks.com/creating-ui-components-in-svg/
+* https://www.ladybug.dev/
+* https://flatfile.io/
+* https://rmurphey.com/posts/on-micro-frontends/
+* https://explorers.netlify.com/
+
 
 
 
