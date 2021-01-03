@@ -617,6 +617,14 @@ I woke up quite late today. Am not sure why
 * https://rmurphey.com/posts/on-micro-frontends/
 * https://explorers.netlify.com/
 
+---------------------------------------------
+
+* https://hashbase.io/
+Seems like the best for p2p pinning
+
+---------------------------------------------------
+
+What is [ssb-feed](https://www.npmjs.com/package/ssb-feed)? it looks like what I'm doing with `ssc` -- in memory merkle dag functions.
 
 
 
