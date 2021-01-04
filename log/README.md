@@ -626,6 +626,11 @@ Seems like the best for p2p pinning
 
 What is [ssb-feed](https://www.npmjs.com/package/ssb-feed)? it looks like what I'm doing with `ssc` -- in memory merkle dag functions.
 
+---------------------------------------------------
+
+## 1-4-2021
+
+Found out about https://github.com/mikeal/dagdb from the podcast [open hive](https://www.nearform.com/podcast/)
 
 
 
