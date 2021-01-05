@@ -632,6 +632,15 @@ What is [ssb-feed](https://www.npmjs.com/package/ssb-feed)? it looks like what I
 
 Found out about https://github.com/mikeal/dagdb from the podcast [open hive](https://www.nearform.com/podcast/)
 
+-------------------------------------------------
+
+## 1-5-2021
+
+ssb-browser -- how does storage work?
+
+ssb-browser [storage limit](https://web.dev/storage-for-the-web/) -- 80%?
+
+
 
 
 
