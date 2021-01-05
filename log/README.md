@@ -640,7 +640,19 @@ ssb-browser -- how does storage work?
 
 ssb-browser [storage limit](https://web.dev/storage-for-the-web/) -- 80%?
 
+### phone stuff
 
+* ["the graph"](https://tokemy.com/indexing-web3-the-graph/amp/)
+* [orchid thief podcast](https://sparkandfire.com/orchidthief/)
+* https://threads.com/
+* [Should The Web Expose Hardware Capabilities?](https://www.smashingmagazine.com/2021/01/web-expose-hardware-capabilities/)
+* [Custom Properties as State](https://css-tricks.com/custom-properties-as-state/) -- css tricks
+* https://neurosity.co/
+* [notion is cool](https://kyliebytes.substack.com/p/notion-is-cool-heres-why)
+* [netlify blogvent](https://www.netlify.com/blog/2020/12/21/wrapping-up-blogvent-2020/)
+* https://github.com/sfnode/sfnode
+* https://kusama.network/
+* https://labs.thisdot.co/
 
 
 
