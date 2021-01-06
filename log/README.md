@@ -654,6 +654,13 @@ ssb-browser [storage limit](https://web.dev/storage-for-the-web/) -- 80%?
 * https://kusama.network/
 * https://labs.thisdot.co/
 
+-----------------------------------------------
+
+1-6-2021
+* [hypercore protocol](https://twitter.com/HypercoreProto/status/1346837739665240064) -- intro video
+* hyperswarm is the networking part
+
+
 
 
 
