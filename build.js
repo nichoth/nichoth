@@ -145,3 +145,4 @@ devDiary(__dirname + '/src/software.html', (err, stream) => {
     })
     rs.pipe(hs).pipe(ws)
 })
+

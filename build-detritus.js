@@ -4,6 +4,7 @@ var fs = require('fs');
 var S = require('pull-stream')
 var slugify = require('@sindresorhus/slugify')
 var mkdirp = require('mkdirp')
+var Tags = require('@nichoth/ssb-tags')
 
 function detritus (cb) {
     var plugins = [ Tags({ postType: 'ev.post' }) ]
