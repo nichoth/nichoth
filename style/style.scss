@@ -597,5 +597,13 @@ body.diary-entry {
   max-width: 28rem;
   margin: 2rem auto;
   font-size: 1.4rem;
+
+  ul {
+      list-style: none;
+      li {
+          margin-bottom: 0.5em;
+      }
+  }
 }
 // -----------------------------------------------
+
