@@ -6,4 +6,5 @@
 * [vercel](https://vercel.com/) -- http
 * [hashbase](https://hashbase.io/) -- dat & http
 * [render](https://render.com/) -- http
+* [fission](https://fission.codes/) -- http + backend
 
