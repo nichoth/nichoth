@@ -665,7 +665,22 @@ ssb-browser [storage limit](https://web.dev/storage-for-the-web/) -- 80%?
 ----------------------------------------
 
 ## 1-8-2021
-I added some pictures to the website yesterday. That counts as something.
+I added some pictures to the website yesterday. That counts as something. Might want to try combinig eleventy with the current `hyperstream` build command. These build scripts are getting quite laborious.
+
+Have a small headache today and took some advil.
+
+### phone stuff
+* [refactoring UI](https://refactoringui.com/)
+* [tatiana mac -- system of systems](https://www.youtube.com/watch?v=TzGfBV67Tac)
+* [cassidy next.js](https://explorers.netlify.com/learn/nextjs)
+* [cassidy next.js](https://www.youtube.com/watch?v=VAEyelMtWp8)
+* [bellincat qanon](https://www.bellingcat.com/news/americas/2021/01/07/the-making-of-qanon-a-crowdsourced-conspiracy/)
+* https://bocoup.com/
+* [graphCMS + vercel](https://graphcms.com/blog/graphcms-vercel-integration)
+* [protoschool](https://proto.school/)
+* [render](https://render.com/) -- host place
+* [compulsive shopping for men -- dumb bitch media](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL2R1bWJiaXRjaG1lZGlhL2ZlZWQueG1s/episode/ZHVtYmJpdGNobWVkaWEucG9kYmVhbi5jb20vOTU5ZTE4MWYtMWNmZC0zNDBiLWI0MGQtZDQ2MTEyOTdlZmI4?hl=en&ved=2ahUKEwjj-OT5p43uAhWDKzQIHS2XC6EQieUEegQIBRAF&ep=6)
+
 
 
 
