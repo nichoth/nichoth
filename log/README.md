@@ -656,9 +656,18 @@ ssb-browser [storage limit](https://web.dev/storage-for-the-web/) -- 80%?
 
 -----------------------------------------------
 
-1-6-2021
+## 1-6-2021
 * [hypercore protocol](https://twitter.com/HypercoreProto/status/1346837739665240064) -- intro video
 * hyperswarm is the networking part
+
+----------------------------------------
+
+## 1-8-2021
+I added some pictures to the website yesterday. That counts as something.
+
+
+
+
 
 
 
