@@ -113,7 +113,7 @@ function picsTags () {
 
             // make nav for the tag pages
             // `/visual-detritus` has all pics
-            // `/visual-detritus/tag` has pics tagged with `tag`
+            // `/visual-detritus/my-tag` has pics tagged with `my-tag`
 
             Object.keys(tags).forEach(function (tag) {
                 var msgIds = tags[tag]
