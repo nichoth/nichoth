@@ -2,12 +2,13 @@ var hyperstream = require('hyperstream');
 var fs = require('fs');
 var ssbWeb = require('ssb-web')
 var Tags = require('@nichoth/ssb-tags')
-var S = require('pull-stream')
+// var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
 var devDiary = require('./build-dev-diary')
 var examples = require('./build-examples')
+var detritus = require('./build-detritus')
 
 examples()
 
@@ -88,7 +89,8 @@ function createTagIndex (sbot, tag, msgIds) {
 
 
 // the visual detritus page
-function pics () {
+function picsTags () {
+    // -------------- tags ---------------------
     var plugins = [ Tags({ postType: 'ev.post' }) ]
     ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
         if (err) throw err
@@ -115,84 +117,17 @@ function pics () {
                 createTagIndex(sbot, tag, msgIds)
             })
         })
-
-        // this is a concatted list of html for posts, an index page
-        var contentDetritus = ''
-        // write the main stuff
-        S(
-            ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
-            ssbWeb.writeFiles(sbot, 'public/posts/img'),
-
-            S.through(function noop(){}, function onEnd (err) {
-                // now we have gotten all the posts, can write the
-                // index/list of them
-                if (err) throw err
-
-                sbot.close(null, function (err) {
-                    console.log('sbot closed', err)
-                    if (err) throw err
-                })
-
-                var _hs = hyperstream({
-                    '#content': {
-                        _appendHtml: contentDetritus,
-                        class: { append: 'content-detritus' }
-                    },
-                    'body': {
-                        class: { append: 'detritus' }
-                    },
-                    '.site-nav': {
-                        _appendHtml: `<button id="tag-nav">tags</button>`
-                    },
-                    '.site-nav a[href="/detritus"]': {
-                        class: { append: 'active' }
-                    }
-                })
-
-                fs.createReadStream(__dirname + '/src/_index.html')
-                    .pipe(_hs)
-                    .pipe(fs.createWriteStream(__dirname +
-                        '/public/detritus/index.html'))
-            }),
-            S.drain(function ({ post, blob }) {
-                // post.value.content
-                // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
-
-                var postPath = slugify(post.key)
-                // in here, make the page with a single image
-                mkdirp.sync(__dirname + '/public/posts/' + postPath)
-                fs.createReadStream(__dirname + '/src/_index.html')
-                    .pipe(hyperstream({
-                        'body': {
-                            class: { append: 'detritus-single-image' }
-                        },
-                        '#content': {
-                            _appendHtml: `<img src="/posts/img/${blob}">
-                                <p class="post-text">
-                                    ${post.value.content.text}
-                                </p>`
-                        },
-                        '.site-nav a[href="/detritus"]': {
-                            class: { append: 'active' }
-                        }
-                    }))
-                    .pipe(fs.createWriteStream(__dirname +
-                        '/public/posts/' + postPath + '/index.html'))
-
-                // html for this post on the index page
-                // cat the new html for this post
-                contentDetritus += `<div class="post">
-                    <a href="/posts/${postPath}">
-                        <img src="/posts/img/${blob}">
-                    </a>
-                    <p class="post-text">${post.value.content.text}</p>
-                </div>`
-            })
-        )
+    // -------------- /tags ---------------------
     })
 }
 
-pics()
+picsTags()
+
+// ------- do the index page
+detritus(function (err) {
+    if (err) throw err
+})
+// -----------------------
 
 devDiary(__dirname + '/src/software.html', (err, stream) => {
     if (err) throw err
@@ -210,4 +145,3 @@ devDiary(__dirname + '/src/software.html', (err, stream) => {
     })
     rs.pipe(hs).pipe(ws)
 })
-
