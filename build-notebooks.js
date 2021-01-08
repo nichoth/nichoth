@@ -18,7 +18,7 @@ function notebooks (cb) {
     fileNames.forEach(fileName => {
         // first copy the files
         var imgWS = fs.createWriteStream(__dirname + '/public/img/notebooks/' +
-            path.basename(fileName)) 
+            path.basename(fileName))
         fs.createReadStream(fileName)
             .pipe(imgWS)
 
@@ -39,7 +39,7 @@ function notebooks (cb) {
         var writePath = (__dirname + '/public/notebooks/' +
             path.basename(fileName, '.jpg'))
         mkdirp.sync(writePath)
-        
+
         var __ws = fs.createWriteStream(writePath + '/index.html')
         __ws.on('error', err => {
             console.log('foooooo', err)
@@ -85,3 +85,4 @@ if (require.main === module) {
         if (err) throw err
     })
 }
+
