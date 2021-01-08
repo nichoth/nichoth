@@ -106,6 +106,9 @@ function picsTags () {
             fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
                 if (err) throw err
                 console.log('wrote tags json', __dirname + '/src/tags.json')
+                sbot.close(null, function (err) {
+                    console.log('sbot closed', err)
+                })
             })
 
             // make nav for the tag pages
@@ -121,13 +124,13 @@ function picsTags () {
     })
 }
 
-picsTags()
 
-// ------- do the index page
+// ------- do the index page ----------
 detritus(function (err) {
     if (err) throw err
+    picsTags()
 })
-// -----------------------
+// ----------------------------------
 
 devDiary(__dirname + '/src/software.html', (err, stream) => {
     if (err) throw err
