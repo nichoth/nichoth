@@ -102,6 +102,14 @@ body {
     max-width: 20em;
   }
 
+  &.notebooks {
+    .home-link {
+      img {
+        background-color: #ff7795;
+      }
+    }
+  }
+
   &.websites {
       background-color: beige;
     .home-link {
