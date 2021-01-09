@@ -19,5 +19,14 @@ npm start
 ```
 npm run deploy
 ```
+--------------------------------------------
 
-foo
+The animation on the email square
+`/lib/main.js` -> `/public/animate.js`
+
+The tag links situation
+`/src/index.js` -> `/public/bundle.js`
+
+
+
+
