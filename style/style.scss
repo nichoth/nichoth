@@ -37,6 +37,10 @@ body.detritus-single-image {
     grid-template-rows: auto;
     align-items: stretch;
 
+    li {
+      text-align: center;
+    }
+
     img {
       max-width: 100%;
     }
