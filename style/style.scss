@@ -129,6 +129,10 @@ body {
         background-color: #ff7795;
       }
     }
+
+    #content {
+        padding: 1em;
+    }
   }
 
   &.the-log {
@@ -140,6 +144,12 @@ body {
   }
 
   &.the-list {
+      .home-link {
+        img {
+          background-color: #ff7795;
+        }
+      }
+
       #content {
           padding: 1em;
       }
