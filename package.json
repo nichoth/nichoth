@@ -10,10 +10,11 @@
     "start": "npm run build && concurrently --kill-others \"ecstatic public\" \"npm run watch-sass\"",
     "dev": "concurrently --kill-others \"budo --dir public/ --live\" \"npm run watch-sass\"",
     "watch-sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" -w style/style.scss -o public",
-    "build": "npm run build-html && npm run build-notebooks && npm run build-log && npm run build-js && npm run sass && cp src/img/wave.svg public/img/ && mkdir -p public/animation && cp src/animation.html public/animation/index.html",
+    "build": "npm run build-html && npm run build=list && npm run build-notebooks && npm run build-log && npm run build-js && npm run sass && cp src/img/wave.svg public/img/ && mkdir -p public/animation && cp src/animation.html public/animation/index.html",
     "build-html": "node build.js",
     "build-js": "browserify lib/main.js > public/animate.js && browserify -p esmify -t uglifyify --debug src/index.js > public/bundle.js",
     "build-log": "node ./build-log.js",
+    "build-list": "node ./build-list.js",
     "build-notebooks": "node build-notebooks.js ./src/img/notebooks/*",
     "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" style/style.scss > public/style.css",
     "deploy": "npm run build && surge public"
