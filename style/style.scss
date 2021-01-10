@@ -131,6 +131,20 @@ body {
     }
   }
 
+  &.the-log {
+      .home-link {
+          img {
+            background-color: #ff7795;
+          }
+      }
+  }
+
+  &.the-list {
+      #content {
+          padding: 1em;
+      }
+  }
+
   &.websites {
       background-color: beige;
     .home-link {
