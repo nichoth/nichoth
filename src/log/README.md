@@ -1,5 +1,6 @@
-# some random things
 A running log of stuff
+
+# some random things
 
 ## frameworks
 * [hyperapp](https://github.com/jorgebucaran/hyperapp)
