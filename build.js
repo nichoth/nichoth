@@ -13,6 +13,32 @@ var detritus = require('./build-detritus')
 
 examples()
 
+// ------- do the index page ----------
+detritus(function (err) {
+    if (err) throw err
+    picsTags()
+})
+// ----------------------------------
+
+devDiary(__dirname + '/src/software.html', (err, stream) => {
+    if (err) throw err
+    mkdirp(__dirname + '/public/software')
+    var ws = fs.createWriteStream(__dirname + '/public/software/index.html')
+    var rs = fs.createReadStream(__dirname + '/src/_index.html')
+    var hs = hyperstream({
+        '#content': stream,
+        '.site-nav a[href="/software"]': {
+            class: { append: 'active' }
+        },
+        'body': {
+            class: { append: 'software' }
+        }
+    })
+    rs.pipe(hs).pipe(ws)
+})
+
+
+
 var srcPaths = [ 'websites' ]
 
 srcPaths.forEach(function (path) {
@@ -34,7 +60,7 @@ srcPaths.forEach(function (path) {
     rs.pipe(hs).pipe(fs.createWriteStream(outPath))
 })
 
-
+// an index.html page for a tag
 function createTagIndex (sbot, tag, msgIds) {
     mkdirp.sync(__dirname + '/public/detritus/' + tag)
 
@@ -125,28 +151,4 @@ function picsTags () {
     })
 }
 
-
-// ------- do the index page ----------
-detritus(function (err) {
-    if (err) throw err
-    picsTags()
-})
-// ----------------------------------
-
-devDiary(__dirname + '/src/software.html', (err, stream) => {
-    if (err) throw err
-    mkdirp(__dirname + '/public/software')
-    var ws = fs.createWriteStream(__dirname + '/public/software/index.html')
-    var rs = fs.createReadStream(__dirname + '/src/_index.html')
-    var hs = hyperstream({
-        '#content': stream,
-        '.site-nav a[href="/software"]': {
-            class: { append: 'active' }
-        },
-        'body': {
-            class: { append: 'software' }
-        }
-    })
-    rs.pipe(hs).pipe(ws)
-})
 
