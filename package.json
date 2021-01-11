@@ -16,7 +16,7 @@
     "build-log": "node ./build-log.js",
     "build-list": "node ./build-list.js",
     "build-notebooks": "node build-notebooks.js ./src/img/notebooks/*",
-    "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" style/style.scss > public/style.css",
+    "sass": "node-sass --include-path \"node_modules/bourbon/core\" --include-path \"node_modules/bourbon-neat/core\" src/style/style.scss > public/style.css",
     "deploy": "npm run build && surge public",
     "copy-html": "cp src/index.html public/"
   },
