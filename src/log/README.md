@@ -683,12 +683,16 @@ Have a small headache today and took some advil.
 * [render](https://render.com/) -- host place
 * [compulsive shopping for men -- dumb bitch media](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL2R1bWJiaXRjaG1lZGlhL2ZlZWQueG1s/episode/ZHVtYmJpdGNobWVkaWEucG9kYmVhbi5jb20vOTU5ZTE4MWYtMWNmZC0zNDBiLWI0MGQtZDQ2MTEyOTdlZmI4?hl=en&ved=2ahUKEwjj-OT5p43uAhWDKzQIHS2XC6EQieUEegQIBRAF&ep=6)
 
+----------------------------------------
 
+## 1-10-21
 
+### Reading about https://render.com/ today.
+* [disks](https://render.com/docs/disks) -- data that is persisted across deploys and restarts
 
+They can host backend processes (servers). [express](https://render.com/docs/deploy-node-express-app)
 
-
-
+Websockets might work with the [services](https://render.com/pricing#services) thing
 
 
 
