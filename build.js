@@ -22,7 +22,7 @@ detritus(function (err) {
 
 devDiary(__dirname + '/src/software.html', (err, stream) => {
     if (err) throw err
-    mkdirp(__dirname + '/public/stuff')
+    mkdirp.sync(__dirname + '/public/stuff')
     var ws = fs.createWriteStream(__dirname + '/public/stuff/index.html')
     var rs = fs.createReadStream(__dirname + '/src/_index.html')
     var hs = hyperstream({
