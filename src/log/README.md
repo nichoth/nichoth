@@ -627,6 +627,15 @@ They can host backend processes (servers). [express](https://render.com/docs/dep
 
 Websockets might work with the [services](https://render.com/pricing#services) thing
 
+-----------------------------------------------
+
+## 1-14-21
+
+* https://stateofjs.com/
+* https://2020.stateofjs.com/en-US/ -- a nicely designed website
+
+
+
 
 
 
