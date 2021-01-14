@@ -20,7 +20,7 @@ detritus(function (err) {
 })
 // ----------------------------------
 
-devDiary(__dirname + '/src/software.html', (err, stream) => {
+devDiary(__dirname + '/src/stuff.html', (err, stream) => {
     if (err) throw err
     mkdirp.sync(__dirname + '/public/stuff')
     var ws = fs.createWriteStream(__dirname + '/public/stuff/index.html')
@@ -133,18 +133,15 @@ function picsTags () {
             fs.writeFile(__dirname + '/src/tags.json', tagsJson, err => {
                 if (err) throw err
                 console.log('wrote tags json', __dirname + '/src/tags.json')
+
+                Object.keys(tags).forEach(function (tag) {
+                    var msgIds = tags[tag]
+                    createTagIndex(sbot, tag, msgIds)
+                })
+
                 sbot.close(null, function (err) {
                     console.log('sbot closed', err)
                 })
-            })
-
-            // make nav for the tag pages
-            // `/visual-detritus` has all pics
-            // `/visual-detritus/my-tag` has pics tagged with `my-tag`
-
-            Object.keys(tags).forEach(function (tag) {
-                var msgIds = tags[tag]
-                createTagIndex(sbot, tag, msgIds)
             })
         })
     // -------------- /tags ---------------------

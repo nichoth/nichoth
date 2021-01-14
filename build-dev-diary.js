@@ -18,29 +18,29 @@ function devDiary (srcPath, cb) {
             var markdownContent = marked(file)
             var folderName = fileName.split('.')[0]
             content += `<li class="post-bit">
-                <a href="${'/software/' + folderName}">${markdownContent}</a>
+                <a href="${'/stuff/' + folderName}">${markdownContent}</a>
             </li>
             <hr>`
 
             // build the html page for that file
-            mkdirp.sync(__dirname + '/public/software/' + folderName)
+            mkdirp.sync(__dirname + '/public/stuff/' + folderName)
             var rs = fs.createReadStream(__dirname + '/src/_index.html')
             var hs = hyperstream({
                 body: {
                     class: { append: 'diary-entry' }
                 },
 
-                '.site-nav a[href="/software"]': {
+                '.site-nav a[href="/stuff"]': {
                     class: { append: 'active' }
                 },
 
                 '#content': markdownContent,
-                '.site-nav a[href="/software"]': {
+                '.site-nav a[href="/stuff"]': {
                     class: { append: 'active' }
                 }
             })
             rs.pipe(hs)
-                .pipe(fs.createWriteStream(__dirname + '/public/software/' +
+                .pipe(fs.createWriteStream(__dirname + '/public/stuff/' +
                     folderName + '/index.html'))
         })
 
@@ -64,19 +64,19 @@ function devDiary (srcPath, cb) {
 }
 
 if (require.main === module) {
-    devDiary(__dirname + '/src/software.html', (err, stream) => {
+    devDiary(__dirname + '/src/stuff.html', (err, stream) => {
         if (err) throw err
-        mkdirp(__dirname + '/public/software')
+        mkdirp(__dirname + '/public/stuff')
         var ws = fs.createWriteStream(__dirname +
-                '/public/software/index.html')
+                '/public/stuff/index.html')
         var rs = fs.createReadStream(__dirname + '/src/_index.html')
         var hs = hyperstream({
             '#content': stream,
-            '.site-nav a[href="/software"]': {
+            '.site-nav a[href="/stuff"]': {
                 class: { append: 'active' }
             },
             'body': {
-                class: { append: 'software' }
+                class: { append: 'stuff' }
             }
         })
         rs.pipe(hs).pipe(ws)
