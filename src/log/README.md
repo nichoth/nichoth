@@ -634,6 +634,12 @@ Websockets might work with the [services](https://render.com/pricing#services) t
 * https://stateofjs.com/
 * https://2020.stateofjs.com/en-US/ -- a nicely designed website
 
+-------------------------------------------
+
+## 1-15-2021
+
+* https://blog.sindresorhus.com/get-ready-for-esm-aa53530b3f77
+* https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase -- 'you have a limited stack inside your brain'
 
 
 
