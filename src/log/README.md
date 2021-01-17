@@ -644,8 +644,34 @@ Websockets might work with the [services](https://render.com/pricing#services) t
 
 Have been just sitting and looking at twitter and stuff today. Eventually maybe I'll do the next issue -- testing the 'set your username' thing.
 
+-----------------------------------------------------
 
+## 1-16-2021
 
+### phone stuff
+* [ipfs ethereum naming service](https://docs.ipfs.io/how-to/websites-on-ipfs/link-a-domain/#domain-name-service-dns)
+* [fleek DNS](https://blog.fleek.co/posts/guide-ens-domains-ipfs-ethereum-name-service)
+* [All the Ways You Can Surf the Decentralized Web Today](https://medium.com/the-ethereum-name-service/all-the-ways-you-can-surf-the-decentralized-web-today-bf8e7a42fa27)
+* [cloudlfare -- A Name Resolver for the Distributed Web](https://blog.cloudflare.com/cloudflare-distributed-web-resolver/)
+* [ENS Partners with Cloudflare on Improved ETH.LINK Service](https://medium.com/the-ethereum-name-service/ens-partners-with-cloudflare-on-improved-eth-link-service-4801bf9148ff)
+* https://ceramic.network/
+
+--------------------------------
+
+* [Aspen Tech Policy Hub](https://www.aspentechpolicyhub.org/programs/)
+* [delta chat](https://delta.chat/en/)
+
+---------------------------------------
+
+* [vue-storefront](https://github.com/vuestorefront/vue-storefront)
+* [avif](https://jakearchibald.com/2020/avif-has-landed/)
+
+------------------------------------------
+
+* https://moonbeam.network/
+* https://lit-html.polymer-project.org/
+* https://github.com/cassidoo/getting-a-gig
+* [hyperlog](https://github.com/mafintosh/hyperlog)
 
 
 
