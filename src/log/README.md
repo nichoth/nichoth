@@ -673,7 +673,12 @@ Have been just sitting and looking at twitter and stuff today. Eventually maybe 
 * https://github.com/cassidoo/getting-a-gig
 * [hyperlog](https://github.com/mafintosh/hyperlog)
 
+-------------------------------------
 
+## 1-18-2021
+
+* https://moonbeam.network/ -- don't know what this is
+* https://lit-html.polymer-project.org/ -- for some reason in the web component space
 
 
 
