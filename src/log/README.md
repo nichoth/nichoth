@@ -673,6 +673,10 @@ Have been just sitting and looking at twitter and stuff today. Eventually maybe 
 * https://github.com/cassidoo/getting-a-gig
 * [hyperlog](https://github.com/mafintosh/hyperlog)
 
+------------------------------------------
+
+## 1-17-2021
+Working on eventual-gram -- following people
 
 
 

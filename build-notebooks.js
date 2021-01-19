@@ -25,7 +25,6 @@ function notebooks (cb) {
         fs.createReadStream(fileName)
             .pipe(imgWS)
 
-
         // ---------- create a small version ------------
         const transformer = sharp().withMetadata().resize({
             width: 300,
