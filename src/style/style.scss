@@ -222,6 +222,19 @@ body {
 
     background-color: #a2a0a0;
   }
+
+
+  &.ghost {
+      background-color: black;
+
+      .home-link {
+          img {
+              background-color: #4fa8e0;
+          }
+      }
+  }
+
+
 }
 
 .site-nav {
