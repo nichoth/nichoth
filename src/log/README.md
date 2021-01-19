@@ -678,6 +678,12 @@ Have been just sitting and looking at twitter and stuff today. Eventually maybe 
 ## 1-17-2021
 Working on eventual-gram -- following people
 
+-------------------------------------
+
+## 1-18-2021
+
+* https://moonbeam.network/ -- don't know what this is
+* https://lit-html.polymer-project.org/ -- for some reason in the web component space
 
 
 
