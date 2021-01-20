@@ -234,8 +234,9 @@ body {
     }
 
     .ghost-box-front {
+      top: -50px;
       z-index: 3;
-      position: absolute;
+      position: fixed;
       width: 330px;
     }
 
@@ -251,9 +252,9 @@ body {
     .ghost-box-back {
       left: 10px;
       width: 300px;
-      position: absolute;
+      position: fixed;
       z-index: 1;
-      top: 105px;
+      top: -25px;
     }
   }
 
