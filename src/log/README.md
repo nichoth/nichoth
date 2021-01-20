@@ -685,6 +685,47 @@ Working on eventual-gram -- following people
 * https://moonbeam.network/ -- don't know what this is
 * https://lit-html.polymer-project.org/ -- for some reason in the web component space
 
+-----------------------------------------
+
+## 1-19-2021
+
+### phone stuff
+
+* [#Selfcare](https://www.tor.com/2021/01/19/selfcare-annalee-newitz/) 
+* [css numbers](https://twitter.com/piccalilli_/status/1233358303092232194)
+* [youtube IPFS, brave](https://www.youtube.com/watch?v=jTDkTQiKzJA&feature=emb_logo&ab_channel=BATCommunity)
+* [ladybug podcast](https://www.ladybug.dev/episodes/nextjs)
+* [cassidoo](https://cassidoo.co/) -- example homepage
+* [animation blog post](https://www.cassie.codes/posts/creating-my-logo-animation/)
+* [ipfs in brave](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/)
+* [holochain blog](https://blog.holochain.org/new-year-new-energy/)
+* [Closing the Year with Elemental Chat on Holochain RSM](https://medium.com/h-o-l-o/closing-the-year-with-elemental-chat-on-holochain-rsm-105f9eede19c)
+* [IT'S ALIIIIIIVE!](https://blog.holochain.org/its-aliiiiiive/)
+* [11up](https://www.npmjs.com/package/11up) -- Quickly bootstrap 11ty sites from some basic templates.
+* [The internet didn’t kill counterculture—you just won’t find it on Instagram](https://www.documentjournal.com/2021/01/the-internet-didnt-kill-counterculture-you-just-wont-find-it-on-instagram/)
+* [Introducing three-elements](https://hmans.co/posts/2021-01-18-three-elements/)
+* [array explorer](https://arrayexplorer.netlify.app/)
+* [the world's oldest city](https://thehypothesis.substack.com/p/a-photographic-journey-into-the-worlds)
+* [11ty jamstack toronto](https://www.youtube.com/playlist?list=PLc_KoiGi3sLfxAQhIx87GY7PnoVALDNn0)
+* [nerv](https://github.com/nervJS/nerv) -- Nerv is a virtual-dom based JavaScript (TypeScript) library with identical React 16 API, which offers much higher performance, tinier package size and better browser compatibility.
+* [hyperx](https://github.com/choojs/hyperx)
+* [hyperxify](https://github.com/substack/hyperxify) -- browserify transform for hyperx
+* [uhtml](https://github.com/WebReflection/uhtml)
+* [nanohtml](https://github.com/choojs/nanohtml)
+* [lit-html](https://lit-html.polymer-project.org/)
+* [something called rocket](https://rocket.modern-web.dev/)
+* [colossal sister](https://www.thisiscolossal.com/2019/11/sister-siqi-song/)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
