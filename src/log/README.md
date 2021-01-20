@@ -716,6 +716,10 @@ Working on eventual-gram -- following people
 * [something called rocket](https://rocket.modern-web.dev/)
 * [colossal sister](https://www.thisiscolossal.com/2019/11/sister-siqi-song/)
 
+------------------------------------
+
+* [hyperswarm-web](https://github.com/RangerMauve/hyperswarm-web)
+* [multiserver dht](https://github.com/staltz/multiserver-dht)
 
 
 
