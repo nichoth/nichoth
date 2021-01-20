@@ -45,6 +45,7 @@
 * [hyperdiscovery](https://github.com/datproject/hyperdiscovery)
 * [hyperDB](https://github.com/mafintosh/hyperdb)
 * [hyperbeam](https://github.com/mafintosh/hyperbeam)
+* [hyp cli](https://github.com/hypercore-protocol/cli)
 
 -------------------------------------------------
 
