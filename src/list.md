@@ -44,6 +44,7 @@
 * [hyper graph db](https://github.com/e-e-e/hyper-graph-db)
 * [hyperdiscovery](https://github.com/datproject/hyperdiscovery)
 * [hyperDB](https://github.com/mafintosh/hyperdb)
+* [hyperbeam](https://github.com/mafintosh/hyperbeam)
 
 -------------------------------------------------
 
