@@ -725,11 +725,13 @@ Working on eventual-gram -- following people
 
 ## 1-21-2021
 
-I don't know what I'm working on right now and that bothers me. I would like to have a single thing that I'm devoting energy to. Instead it's like a blur of different projects. I need to make sense of the decentralized things -- `hyper*`, 3box, textile, ssb. That could be a thing in it's own right -- finding an 'ideal stack' of decentralized things. Yes, that's the next thing after I get an ssb version of eventual-gram ready.
+I don't know what I'm working on right now and that bothers me. I would like to have a single thing that I'm devoting energy to. Instead it's like a blur of different projects. I need to make sense of the decentralized things -- `hyper*`, 3box, textile, ssb, ceramic, render.com, fission. That could be a thing in it's own right -- finding an 'ideal stack' of decentralized things. Yes, that's the next thing after I get an ssb version of eventual-gram ready.
 
+Life has a strange feeling at the moment. It's like i don't know what I'm working on, and it feels like I'm always busy, but I'm never getting anything done.
 
+Add to that I've just regrown my brain 🧠 and I'm always worried that I'm just dumber now and life is more confusing and frustrating for that reason.
 
-
+I'm looking for a way to deal with life, i suppose, to make some sense of the blur of things. In the past I think I just felt better about it. I don't know.
 
 
 
