@@ -721,6 +721,11 @@ Working on eventual-gram -- following people
 * [hyperswarm-web](https://github.com/RangerMauve/hyperswarm-web)
 * [multiserver dht](https://github.com/staltz/multiserver-dht)
 
+---------------------------------------
+
+## 1-21-2021
+
+I don't know what I'm working on right now and that bothers me. I would like to have a single thing that I'm devoting energy to. Instead it's like a blur of different projects. I need to make sense of the decentralized things -- `hyper*`, 3box, textile, ssb. That could be a thing in it's own right -- finding an 'ideal stack' of decentralized things. Yes, that's the next thing after I get an ssb version of eventual-gram ready.
 
 
 
