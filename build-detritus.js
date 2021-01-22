@@ -79,10 +79,10 @@ function detritus (cb) {
                     .pipe(_hs)
                     .pipe(ws)
 
-                // sbot.close(null, function (err) {
-                //     console.log('sbot closed', err)
-                //     if (cb) cb(err)
-                // })
+                sbot.close(null, function (err) {
+                    console.log('sbot closed', err)
+                    if (cb) cb(err)
+                })
             })
         )
         // ---------------- /img index page -------------------------
