@@ -11,7 +11,29 @@
 * [netlify](https://www.netlify.com/) -- http
 * [fission](https://fission.codes/)
 
-## frameworks
+## static frameworks
+* [next](https://nextjs.org/)
+* [nuxt](https://nuxtjs.org/)
+* [eleventy](https://www.11ty.dev/)
+* [gatsby](https://www.gatsbyjs.com/)
+
+
+## CMS
+* [contentful](https://www.contentful.com/)
+* [sanity](https://www.sanity.io/)
+  - [Make a headless CMS eCommerce front-end for Vue.js, Nuxt.js and Snipcart](https://www.sanity.io/blog/e-commerce-vue-nuxt-snipcart)
+* [netlify CMS](https://www.netlifycms.org/) 
+  - [Eleventy + Netlify CMS Boilerplate](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)
+  - [Examples](https://www.netlifycms.org/docs/examples/)
+* [forestry](https://forestry.io/)
+
+
+## dom stuff
+* [hyperx](https://github.com/substack/hyperx)
+* [hyperxify](https://github.com/substack/hyperxify)
+* [lit-html](https://lit-html.polymer-project.org/)
+* [nanoHTML](https://github.com/choojs/nanohtml)
+* [uhtml](https://github.com/WebReflection/uhtml)
 * [hyperapp](https://github.com/jorgebucaran/hyperapp)
   - [hyperapp github namespace](https://github.com/hyperapp)
   - [hypersamples](https://github.com/hyperapp/hypersamples)
@@ -20,19 +42,6 @@
 * [bulma](https://bulma.io/) -- css 
 * [tonic](https://tonic.technology/)
 
-
-## static frameworks
-* [next](https://nextjs.org/)
-* [nuxt](https://nuxtjs.org/)
-* [eleventy](https://www.11ty.dev/)
-* [gatsby](https://www.gatsbyjs.com/)
-
-## dom stuff
-* [hyperx](https://github.com/substack/hyperx)
-* [hyperxify](https://github.com/substack/hyperxify)
-* [lit-html](https://lit-html.polymer-project.org/)
-* [nanoHTML](https://github.com/choojs/nanohtml)
-* [uhtml](https://github.com/WebReflection/uhtml)
 
 -------------------------------------------------
 
@@ -56,13 +65,18 @@
 * [pinata](https://pinata.cloud/)
 * [dat sdk](https://github.com/datproject/sdk)
 * [hyperswarm](https://github.com/RangerMauve/hyperswarm-web)
-* [dat-sroe](https://github.com/datproject/dat-store)
+* [dat-store](https://github.com/datproject/dat-store)
 * https://github.com/jimpick/hyper-graph-db-playground
 * [hyper graph db](https://github.com/e-e-e/hyper-graph-db)
 * [hyperdiscovery](https://github.com/datproject/hyperdiscovery)
 * [hyperDB](https://github.com/mafintosh/hyperdb)
 * [hyperbeam](https://github.com/mafintosh/hyperbeam)
 * [hyp cli](https://github.com/hypercore-protocol/cli)
+
+------------------------------
+
+* [hyperlog](https://github.com/mafintosh/hyperlog) -- Merkle DAG that replicates based on scuttlebutt logs and causal linking
+
 
 -------------------------------------------------
 
