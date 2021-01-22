@@ -7,6 +7,9 @@
 * [render](https://render.com/) -- http + some backend stuff
 * [fission](https://fission.codes/) -- http + backend
 * [pinata](https://pinata.cloud/) -- ipfs 
+* [surge](https://surge.sh/) -- http
+* [netlify](https://www.netlify.com/) -- http
+* [fission](https://fission.codes/)
 
 ## frameworks
 * [hyperapp](https://github.com/jorgebucaran/hyperapp)
@@ -16,6 +19,20 @@
 * [mutant](https://github.com/mmckegg/mutant)
 * [bulma](https://bulma.io/) -- css 
 * [tonic](https://tonic.technology/)
+
+
+## static frameworks
+* [next](https://nextjs.org/)
+* [nuxt](https://nuxtjs.org/)
+* [eleventy](https://www.11ty.dev/)
+* [gatsby](https://www.gatsbyjs.com/)
+
+## dom stuff
+* [hyperx](https://github.com/substack/hyperx)
+* [hyperxify](https://github.com/substack/hyperxify)
+* [lit-html](https://lit-html.polymer-project.org/)
+* [nanoHTML](https://github.com/choojs/nanohtml)
+* [uhtml](https://github.com/WebReflection/uhtml)
 
 -------------------------------------------------
 
@@ -54,7 +71,6 @@
 * [recoil](https://recoiljs.org/) -- react state management
 * [Functional lenses for contemporary frameworks - Andre Staltz](https://www.youtube.com/watch?v=5R3l2r1XxKI)
 * [find-my-way](https://www.npmjs.com/package/find-my-way) -- http router
-* [fission](https://fission.codes/)
 * [Learn more about Threads and the Powergate from the IPFS Pinning Summit](https://blog.textile.io/learn-more-about-threads-and-the-powergate-from-the-ipfs-pinning-summit/)
 * [CS 253 Web Security](https://web.stanford.edu/class/cs253/)
 * [textile hub](https://blog.textile.io/announcing-the-textile-protocol-hub/)
