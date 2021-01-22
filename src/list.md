@@ -9,7 +9,6 @@
 * [pinata](https://pinata.cloud/) -- ipfs 
 * [surge](https://surge.sh/) -- http
 * [netlify](https://www.netlify.com/) -- http
-* [fission](https://fission.codes/)
 
 ## static frameworks
 * [next](https://nextjs.org/)
