@@ -82,6 +82,8 @@
 
 * [hyperlog reduce](https://github.com/noffle/hyperlog-reduce)
 * [hyperlog-index](https://github.com/substack/hyperlog-index)
+* [hypermerge](https://github.com/automerge/hypermerge)
+* [automerge](https://github.com/automerge/automerge)
 
 -------------------------------------------------
 
