@@ -733,7 +733,13 @@ Add to that I've just regrown my brain 🧠 and I'm always worried that I'm just
 
 I'm looking for a way to deal with life, i suppose, to make some sense of the blur of things. In the past I think I just felt better about it. I don't know.
 
+-------------------------------------------
 
+## 1-22-2021
+
+### speakeasy -- WebNative: How to put a full stack directly in the browser
+
+https://www.inkandswitch.com/local-first.html
 
 
 

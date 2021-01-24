@@ -9,6 +9,7 @@
 * [pinata](https://pinata.cloud/) -- ipfs 
 * [surge](https://surge.sh/) -- http
 * [netlify](https://www.netlify.com/) -- http
+* [heroku](https://www.heroku.com/)
 
 ## static frameworks
 * [next](https://nextjs.org/)
@@ -77,6 +78,10 @@
 * [hyperlog](https://github.com/mafintosh/hyperlog) -- Merkle DAG that replicates based on scuttlebutt logs and causal linking
 * [hyperbee](https://github.com/hypercore-protocol/hyperbee) -- An append-only Btree running on a Hypercore
 
+---------------------------
+
+* [hyperlog reduce](https://github.com/noffle/hyperlog-reduce)
+* [hyperlog-index](https://github.com/substack/hyperlog-index)
 
 -------------------------------------------------
 
