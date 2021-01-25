@@ -741,8 +741,13 @@ I'm looking for a way to deal with life, i suppose, to make some sense of the bl
 
 https://www.inkandswitch.com/local-first.html
 
+---------------------------------------------
 
+## 1-24-2021
 
+* https://twitter.com/emmibevensee/status/1323350970496032769?s=20
+* https://foundation.mozilla.org/en/blog/fellow-research-decentralized-web-hate/
+* https://rebelliousdata.com/p2p/
 
 
 
