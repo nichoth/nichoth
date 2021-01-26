@@ -4,14 +4,11 @@ $green-color: #e5fff0;
 @import "bourbon";
 @import "neat";
 
-body.the-log {
-  #content {
-    padding: 1em;
-  }
-
+body.the-log, .development-diary, body.examples {
   hr {
     margin: 2em 0;
     border: none;
+
     &:after {
         background: transparent url(/img/wave.svg) bottom;
         background-repeat: repeat-x;
@@ -21,7 +18,13 @@ body.the-log {
         height: 10px;
         display: block;
     }
+  }
 
+}
+
+body.the-log {
+  #content {
+    padding: 1em;
   }
 }
 
@@ -566,16 +569,16 @@ button {
   hr {
     margin: 2em 0;
 
-    border: none;
-    &:after {
-        background: transparent url(/img/wave.svg) bottom;
-        background-repeat: repeat-x;
-        background-size: 26px auto;
-        content: " ";
-        width: 100%;
-        height: 10px;
-        display: block;
-    }
+    // border: none;
+    // &:after {
+    //     background: transparent url(/img/wave.svg) bottom;
+    //     background-repeat: repeat-x;
+    //     background-size: 26px auto;
+    //     content: " ";
+    //     width: 100%;
+    //     height: 10px;
+    //     display: block;
+    // }
 
   }
 
@@ -615,19 +618,6 @@ body.examples {
 
   h2 {
     display: block;
-  }
-
-  hr {
-    border: none;
-    &:after {
-        background: transparent url(/img/wave.svg) bottom;
-        background-repeat: repeat-x;
-        background-size: 27px auto;
-        content: " ";
-        width: 100%;
-        height: 10px;
-        display: block;
-    }
   }
 
   .button {

@@ -749,6 +749,12 @@ https://www.inkandswitch.com/local-first.html
 * https://foundation.mozilla.org/en/blog/fellow-research-decentralized-web-hate/
 * https://rebelliousdata.com/p2p/
 
+----------------------------------------------
+
+## 1-26-2021
+* https://offbase.org/
+* [pillow fight podcast](https://anchor.fm/yamini-nambimadom)
+
 
 
 
