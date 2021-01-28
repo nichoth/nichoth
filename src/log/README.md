@@ -755,6 +755,13 @@ https://www.inkandswitch.com/local-first.html
 * https://offbase.org/
 * [pillow fight podcast](https://anchor.fm/yamini-nambimadom)
 
+---------------------------------------
+
+## 1-28-2021
+The internet is not working this morning, the day I have a job interview.
+
+* https://polkadot.network/
+* https://ceramic.network/
 
 
 
