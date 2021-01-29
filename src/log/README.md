@@ -763,5 +763,13 @@ The internet is not working this morning, the day I have a job interview.
 * https://polkadot.network/
 * https://ceramic.network/
 
+------------------------------------
+
+## 1-29-2021
+
+* [ssi](https://www.youtube.com/watch?v=djhYZZ3CkuM)
+* https://www.brightid.org/
+
+Tried looking in the `patchwork` source for how they do the avatar images for a person who doesn't have an avatar, but couldn't find something helpful. I guess it's searching npm & google now.
 
 
