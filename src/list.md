@@ -104,5 +104,22 @@
 
 -----------------------------------------
 
-8 [ctzn](https://github.com/pfrazee/ctzn) -- A hybrid p2p/federated social network mad science experiment. WIP.
+* [ctzn](https://github.com/pfrazee/ctzn) -- A hybrid p2p/federated social network mad science experiment. WIP.
+
+-----------------------------------------
+
+## 'p2p'
+* [orbitDB](https://orbitdb.org/)
+* [polkadot](https://polkadot.network/)
+* [ceramic](https://ceramic.network/)
+* [idx](https://developers.idx.xyz/learn/overview/)
+* [textile](https://www.textile.io/)
+* [fission](https://fission.codes/)
+* [3box](https://3box.io/)
+
+
+
+
+
+
 
