@@ -769,6 +769,7 @@ The internet is not working this morning, the day I have a job interview.
 
 * [ssi](https://www.youtube.com/watch?v=djhYZZ3CkuM)
 * https://www.brightid.org/
+* [cli thing](https://clig.dev/)
 
 Tried looking in the `patchwork` source for how they do the avatar images for a person who doesn't have an avatar, but couldn't find something helpful. I guess it's searching npm & google now.
 
