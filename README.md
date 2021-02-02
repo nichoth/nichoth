@@ -27,6 +27,15 @@ The animation on the email square
 The tag links situation
 `/src/index.js` -> `/public/bundle.js`
 
+---------------------------------------------------
+
+### Make a portfolio page
+* write about invintus
+* write about each thing i did at previous places
+* what I'm doing now (eventual gram) & small ssb things
+
+
+
 
 
 
