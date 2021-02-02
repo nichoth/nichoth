@@ -332,17 +332,20 @@ a {
       margin-bottom: 0.5em;
       transition: color 0.2s;
 
+      // not sure what the interval is for the colors, but this is fine
       a {
         color: #1ABBA7;
       }
 
-      &:first-child a {
-        color: #ff7795;
-      }
-      &:last-child a {
+      &:nth-child(3n) a {
         color: #4fa8e0
       }
-      &:hover a {
+
+      &:nth-child(4n) a {
+        color: #ff7795;
+      }
+
+      & a:hover {
         // background: linear-gradient(#e6646500 20%, gray 50%, transparent 71.2%);
         color: black;
       }
