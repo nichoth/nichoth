@@ -297,29 +297,57 @@ a {
   text-decoration: none;
 }
 
-p.main-text {
+
+// ----------- more stuff ----------------------------
+// .more-stuff {
+//   max-width: 28rem;
+//   margin: 2rem auto;
+//   font-size: 1.4rem;
+
+//   ul {
+//       list-style: none;
+//       li {
+//           margin-bottom: 0.5em;
+//       }
+//   }
+// }
+// -----------------------------------------------
+
+
+
+.main-text {
   font-weight: 300;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   margin-bottom: 2em;
   margin-top: 0;
   max-width: 14em;
   color: #05385F;
   font-size: 2em;
   margin: 0 auto;
-  a {
-    color: #1ABBA7;
-    transition: color 0.2s;
-    &:first-child {
-      color: #ff7795;
-    }
-    &:last-child {
-      color: #4fa8e0
-    }
-    &:hover {
-      // background: linear-gradient(#e6646500 20%, gray 50%, transparent 71.2%);
-      color: black;
-    }
+  max-width: 28rem;
+  margin: 2rem auto;
+  list-style: none;
+
+  li {
+      margin-bottom: 0.5em;
+      transition: color 0.2s;
+
+      a {
+        color: #1ABBA7;
+      }
+
+      &:first-child a {
+        color: #ff7795;
+      }
+      &:last-child a {
+        color: #4fa8e0
+      }
+      &:hover a {
+        // background: linear-gradient(#e6646500 20%, gray 50%, transparent 71.2%);
+        color: black;
+      }
   }
+
 }
 
 #github {
@@ -710,18 +738,4 @@ body.diary-entry {
 
 
 
-// ----------- more stuff ----------------------------
-.more-stuff {
-  max-width: 28rem;
-  margin: 2rem auto;
-  font-size: 1.4rem;
-
-  ul {
-      list-style: none;
-      li {
-          margin-bottom: 0.5em;
-      }
-  }
-}
-// -----------------------------------------------
 
