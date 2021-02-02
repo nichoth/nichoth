@@ -773,4 +773,30 @@ The internet is not working this morning, the day I have a job interview.
 
 Tried looking in the `patchwork` source for how they do the avatar images for a person who doesn't have an avatar, but couldn't find something helpful. I guess it's searching npm & google now.
 
+----------------------------------------------
+
+## 1-30-2021
+
+* https://www.ribbonfarm.com/
+* [handshake](https://hsd-dev.org/)
+
+---------------------------------------------
+
+## 2-1-2021
+
+* [the reboot -- breaking tech open](https://thereboot.com/breaking-tech-open-why-social-platforms-should-work-more-like-email/)
+* http://hungrycatdaily.com/
+* [Making the Webnative SDK and Fission app publishing great for Elm apps](https://talk.fission.codes/t/making-the-webnative-sdk-and-fission-app-publishing-great-for-elm-apps/1492)
+* [Moonbeam Monthly Dispatch](https://www.purestake.com/blog/moonbeam-january-2021/)
+
+
+
+
+
+
+
+
+
+
+
 

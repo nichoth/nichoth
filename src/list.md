@@ -116,6 +116,7 @@
 * [textile](https://www.textile.io/)
 * [fission](https://fission.codes/)
 * [3box](https://3box.io/)
+* [moonbeam](https://moonbeam.network/)
 
 
 

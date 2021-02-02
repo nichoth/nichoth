@@ -229,6 +229,7 @@ body {
 
   &.ghost {
     background-color: black;
+    height: 200vh;
 
     .home-link {
         img {
@@ -241,6 +242,7 @@ body {
       z-index: 3;
       position: fixed;
       width: 330px;
+      left: 30%;
     }
 
     .ghost-slice {
@@ -249,11 +251,11 @@ body {
       width: 120px;
       position: absolute;
       z-index: 2;
-      left: 115px;
+      left: 40%;
     }
 
     .ghost-box-back {
-      left: 10px;
+      left: 30%;
       width: 300px;
       position: fixed;
       z-index: 1;
