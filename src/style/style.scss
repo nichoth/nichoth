@@ -3,8 +3,7 @@ $green-color: #e5fff0;
 
 @import "bourbon";
 @import "neat";
-
-body.the-log, .development-diary, body.examples {
+body, body.the-log, .development-diary, body.examples {
   hr {
     margin: 2em 0;
     border: none;
@@ -317,11 +316,11 @@ a {
 
   li {
       margin-bottom: 0.5em;
-      transition: color 0.2s;
 
       // not sure what the interval is for the colors, but this is fine
       a {
         color: #1ABBA7;
+        transition: color 0.2s;
       }
 
       &:nth-child(2n) a {
@@ -743,6 +742,7 @@ body.diary-entry {
 .computer-stuff {
   margin: 1em;
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .websites {
