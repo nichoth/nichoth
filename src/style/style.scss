@@ -306,15 +306,14 @@ a {
 .main-text {
   font-weight: 300;
   font-size: 1.8rem;
-  margin-bottom: 2em;
   margin-top: 0;
   max-width: 14em;
   color: #05385F;
   font-size: 2em;
-  margin: 0 auto;
   max-width: 28rem;
   margin: 2rem auto;
   list-style: none;
+  margin-bottom: 4rem;
 
   li {
       margin-bottom: 0.5em;
@@ -726,6 +725,31 @@ body.diary-entry {
 
 
 // -------------------------------------
+
+
+// new stuff ------------------------------------------
+
+.project-section {
+  display: flex;
+  
+  & > a {
+    margin-right: 2rem;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.computer-stuff {
+  margin: 1em;
+  margin-top: 2rem;
+}
+
+.websites {
+  border-bottom: 1px solid #000;
+}
+
+// -----------------------------------------
 
 
 
