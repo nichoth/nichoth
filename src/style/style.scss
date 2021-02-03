@@ -158,22 +158,10 @@ body {
       }
   }
 
-  &.websites {
-      background-color: beige;
-    .home-link {
-      img {
-        background-color: #ff7795;
-      }
-    }
-
-    #content {
-      text-align: left;
-      background-color: beige;
-      & > div {
-        border-bottom: 1px solid gray;
-        padding: 1em;
-      }
-    }
+  .websites {
+    background-color: beige;
+    text-align: left;
+    padding: 1em;
   }
 
   &.stuff {
