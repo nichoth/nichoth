@@ -31,7 +31,6 @@ examples()
 
 
 detritus(function (err) {
-    console.log('***in here***', err)
     if (err) throw err
     picsTags()
 })

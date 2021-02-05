@@ -79,11 +79,12 @@ function detritus (cb) {
                     .pipe(_hs)
                     .pipe(ws)
                     .on('close', function () {
-                        console.log('!!!closed!!!')
                         sbot.close(null, function (err) {
-                            console.log('***sbot closed***', err)
-                            if (cb) return cb(err)
-                            cb(null)
+                            if (cb) {
+                                if (err) return cb(err)
+                                return cb(null)
+                            }
+                            if (err) throw err
                         })
                     })
 
