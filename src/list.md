@@ -1,4 +1,4 @@
-# a list
+# a list of things to remember
 
 ## hosts
 * [fleek](https://fleek.co/) -- ipfs and http
