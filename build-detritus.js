@@ -9,7 +9,7 @@ var Tags = require('@nichoth/ssb-tags')
 function detritus (cb) {
     var plugins = [ Tags({ postType: 'ev.post' }) ]
     ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
-        if (err) throw err
+        if (err) return cb(err)
 
         // ----------- img index page ---------------------------
 
@@ -55,7 +55,7 @@ function detritus (cb) {
             }, function onEnd (err) {
                 // now we have gotten all the posts, can write the
                 // index/list of them
-                if (err) throw err
+                if (err) return cb(err)
 
                 var _hs = hyperstream({
                     '#content': {
@@ -78,11 +78,15 @@ function detritus (cb) {
                 fs.createReadStream(__dirname + '/src/_index.html')
                     .pipe(_hs)
                     .pipe(ws)
+                    .on('close', function () {
+                        console.log('!!!closed!!!')
+                        sbot.close(null, function (err) {
+                            console.log('***sbot closed***', err)
+                            if (cb) return cb(err)
+                            cb(null)
+                        })
+                    })
 
-                sbot.close(null, function (err) {
-                    console.log('sbot closed', err)
-                    if (cb) cb(err)
-                })
             })
         )
         // ---------------- /img index page -------------------------

@@ -2,23 +2,40 @@ var hyperstream = require('hyperstream');
 var fs = require('fs');
 var ssbWeb = require('ssb-web')
 var Tags = require('@nichoth/ssb-tags')
-// var S = require('pull-stream')
 var mkdirp = require('mkdirp')
 var slugify = require('@sindresorhus/slugify')
 var after = require('after')
 var devDiary = require('./build-dev-diary')
 var examples = require('./build-examples')
 var detritus = require('./build-detritus')
+var marked = require('marked')
+
+
+
+// the main index page
+// ------------------------------------
+var rs = fs.createReadStream(__dirname + '/src/index.html')
+var ws = fs.createWriteStream(__dirname + '/public/index.html')
+var md = marked(fs.readFileSync(__dirname + '/src/list.md', 'utf8'))
+var hs = hyperstream({
+    '.main-section.list': {
+        _appendHtml: md
+    }
+})
+rs.pipe(hs).pipe(ws)
+
+// ------------------------------------
 
 
 examples()
 
-// ------- do the index page ----------
+
 detritus(function (err) {
+    console.log('***in here***', err)
     if (err) throw err
     picsTags()
 })
-// ----------------------------------
+
 
 devDiary(__dirname + '/src/stuff.html', (err, stream) => {
     if (err) throw err
@@ -144,5 +161,3 @@ function picsTags () {
     // -------------- /tags ---------------------
     })
 }
-
-

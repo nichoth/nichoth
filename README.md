@@ -32,7 +32,7 @@ The tag links situation
 ### Make a portfolio page
 * write about invintus
 * write about each thing i did at previous places
-* what I'm doing now (eventual gram) & small ssb things
+* what I'm doing now -- (eventual gram) & small ssb things
 
 
 
