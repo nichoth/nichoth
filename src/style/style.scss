@@ -4,9 +4,9 @@ $green-color: #e5fff0;
 // @import "bourbon";
 // @import "neat";
 
-p {
-    font-size: 1.2rem;
-}
+// p {
+//     font-size: 1.2rem;
+// }
 
 body, body.the-log, .development-diary, body.examples {
   hr {
@@ -465,6 +465,7 @@ a {
   z-index: 1;
   // height: 70vh;
   margin-top: 10vh;
+  margin-bottom: 4rem;
 
   a {
     // fix the wierd background leak issue
@@ -737,6 +738,8 @@ body.diary-entry {
 
 .project-section {
   display: flex;
+  font-size: 2.6ch;
+  align-items: center;
 
   & > a {
     margin-right: 2rem;
