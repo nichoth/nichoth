@@ -1,8 +1,8 @@
 $iconColor: #2F596D;
 $green-color: #e5fff0;
 
-@import "bourbon";
-@import "neat";
+// @import "bourbon";
+// @import "neat";
 
 p {
     font-size: 1.2rem;
@@ -258,6 +258,8 @@ body {
 }
 
 .site-nav {
+  font-size: 1.6rem;
+  width: 100%;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -461,7 +463,7 @@ a {
 
 .main-image-wrapper {
   z-index: 1;
-  height: 70vh;
+  // height: 70vh;
   margin-top: 10vh;
 
   a {

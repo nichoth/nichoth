@@ -837,15 +837,25 @@ swarm.on('peer', function (stream, id) {
 
       Object.keys(streams).forEach(function (sid) {
         if (sid === id) return
-
         // this is where we broadcast an incoming msg to the other peers
         streams[id].write(line + '\n')
-
       })
+
       next()
     }))
 })
 ```
+
+
+-----------------------------------------------
+
+## 2-6-2021
+
+* https://www.usepearl.com/
+* https://www.wtf.horse/
+* https://css-tricks.com/water-css/
+* https://css-tricks.com/no-class-css-frameworks/
+* https://orbitdb.org/
 
 
 
