@@ -3,6 +3,11 @@ $green-color: #e5fff0;
 
 @import "bourbon";
 @import "neat";
+
+p {
+    font-size: 1.2rem;
+}
+
 body, body.the-log, .development-diary, body.examples {
   hr {
     margin: 2em 0;
@@ -353,9 +358,7 @@ a {
 
 .icon-wrapper {
     max-width: 400px;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em auto;
     text-align: center;
 
     .icon-box.github {
@@ -452,13 +455,15 @@ a {
   left: 27%;
 }
 
-#content {
-  padding-top: 2em;
-}
+// #content {
+//   // padding-top: 2em;
+// }
 
 .main-image-wrapper {
   z-index: 1;
   height: 70vh;
+  margin-top: 10vh;
+
   a {
     // fix the wierd background leak issue
     &::before {
@@ -730,7 +735,7 @@ body.diary-entry {
 
 .project-section {
   display: flex;
-  
+
   & > a {
     margin-right: 2rem;
     img {

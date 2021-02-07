@@ -798,8 +798,54 @@ Tried looking in the `patchwork` source for how they do the avatar images for a 
 * https://firehydrant.io/
 
 
+------------------------------------------------
+
+## 2-4-2021
+* [ssb-photos](https://github.com/regular/ssb-photos)
+
+--------------------------------------------------
+
+## 2-5-2021
+* [signal hub](https://github.com/mafintosh/signalhub)
+* [gist -- substack/swarmchat.js](https://gist.github.com/substack/0177839f57e8fe0fc294)
+* [olaf -- A P2P Dat-powered chat](https://github.com/geut/olaf)
+* [geut / dat-workshop](https://github.com/geut/dat-workshop)
+* [Introducing: The Permanent Seeder](https://geutstudio.com/blog/introducing-permanent-seeder/)
+* [Running a distributed blogging engine in a browser](https://blog.offbase.org/post/offpress-a-distributed-browser-cms-over-git/)
+* https://offpress.app/
+* [moose friends](http://moose-team.github.io/friends/)
+* [webrtc-swarm](https://github.com/mafintosh/webrtc-swarm)
 
 
+
+https://gist.github.com/substack/0177839f57e8fe0fc294
+```js
+swarm.on('peer', function (stream, id) {
+  console.log('CONNECTED', id)
+  streams[id] = stream
+  onend(stream, function () { delete streams[id] })
+
+  stream
+    .pipe(split())
+    .pipe(through(function (line, enc, next) {
+      var parts = line.toString().split(',')
+      var msg = parts.slice(1).join(',')
+      var msgid = parts[0]
+
+      // this is where we add an incoming msg to our UI
+      if (addMsg(msgid, msg) === false) return next()
+
+      Object.keys(streams).forEach(function (sid) {
+        if (sid === id) return
+
+        // this is where we broadcast an incoming msg to the other peers
+        streams[id].write(line + '\n')
+
+      })
+      next()
+    }))
+})
+```
 
 
 
