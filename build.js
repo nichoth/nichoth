@@ -8,21 +8,21 @@ var after = require('after')
 var devDiary = require('./build-dev-diary')
 var examples = require('./build-examples')
 var detritus = require('./build-detritus')
-var marked = require('marked')
+// var marked = require('marked')
 
 
 
 // the main index page
 // ------------------------------------
-var rs = fs.createReadStream(__dirname + '/src/index.html')
-var ws = fs.createWriteStream(__dirname + '/public/index.html')
-var md = marked(fs.readFileSync(__dirname + '/src/list.md', 'utf8'))
-var hs = hyperstream({
-    '.main-section.list': {
-        _appendHtml: md
-    }
-})
-rs.pipe(hs).pipe(ws)
+// var rs = fs.createReadStream(__dirname + '/src/index.html')
+// var ws = fs.createWriteStream(__dirname + '/public/index.html')
+// var md = marked(fs.readFileSync(__dirname + '/src/list.md', 'utf8'))
+// var hs = hyperstream({
+//     '.main-section.list': {
+//         _appendHtml: md
+//     }
+// })
+// rs.pipe(hs).pipe(ws)
 
 // ------------------------------------
 
