@@ -11,22 +11,6 @@ var detritus = require('./build-detritus')
 // var marked = require('marked')
 
 
-
-// the main index page
-// ------------------------------------
-// var rs = fs.createReadStream(__dirname + '/src/index.html')
-// var ws = fs.createWriteStream(__dirname + '/public/index.html')
-// var md = marked(fs.readFileSync(__dirname + '/src/list.md', 'utf8'))
-// var hs = hyperstream({
-//     '.main-section.list': {
-//         _appendHtml: md
-//     }
-// })
-// rs.pipe(hs).pipe(ws)
-
-// ------------------------------------
-
-
 examples()
 
 
@@ -53,6 +37,16 @@ devDiary(__dirname + '/src/stuff.html', (err, stream) => {
     rs.pipe(hs).pipe(ws)
 })
 
+
+// the /index page
+mkdirp.sync(__dirname + '/public/index')
+var ws = fs.createWriteStream(__dirname + '/public/index/index.html')
+var rs = fs.createReadStream(__dirname + '/src/_index.html')
+var hs = hyperstream({
+    '#content': fs.createReadStream(__dirname + '/src/index/index.html'),
+    'body': { class: { append: 'index' } }
+})
+rs.pipe(hs).pipe(ws)
 
 
 var srcPaths = [ 'websites' ]
