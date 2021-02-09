@@ -130,14 +130,21 @@ body {
     max-width: 20em;
   }
 
+  p.main-writing {
+    min-width: 28rem;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+
   &.index {
     .home-link {
       img {
         background-color: #ff7795;
       }
     }
-  }
 
+  }
 
   &.notebooks {
     .home-link {
@@ -471,29 +478,6 @@ a {
   height: 80vh;
   margin-top: 10vh;
   margin-bottom: 4rem;
-
-  a {
-    // fix the wierd background leak issue
-    &::before {
-      content: " ";
-      position: absolute;
-      z-index: 99;
-      top: -3px;
-      left: 0;
-      right: 0;
-      bottom: -4px;
-      border-top: 5px solid white;
-      border-bottom: 5px solid white;
-    }
-    // display: inline-block;
-    // height: 50vh;
-    // width: 50vh;
-    // max-height: 350px;
-    // max-width: 350px;
-    // position: relative;
-    // top: 50%;
-    // transform: translateY(-40%);
-  }
 }
 
 .main-image {
