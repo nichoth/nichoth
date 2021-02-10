@@ -412,6 +412,26 @@ a {
     100%{background-position:0% 49%}
 }
 
+
+
+// ------------------------- new stuff ----------------
+@keyframes BgTest {
+  0%{ background-color: #fff; }
+  25% { background-color: pink; }
+  50% { background-color: orange;}
+  75% { background-color: cyan;}
+  100% { background-color: blue;}
+}
+
+html {
+  animation: BgTest 3s ease infinite;
+  animation-direction: alternate;
+}
+// ------------------------- /new stuff ----------------
+
+
+
+
 .icon-box {
   display: inline-block;
   min-width: 40px;
@@ -487,13 +507,13 @@ a {
   max-height: 100%;
   display: block;
   margin: 0 auto;
-  background: linear-gradient(304deg, #f8f292, #07bed8, rgb(253, 87, 144), #ffa849, #f8f292);
+  // background: linear-gradient(304deg, #f8f292, #07bed8, rgb(253, 87, 144), #ffa849, #f8f292);
 
-  background-size: 600%;
-  -webkit-animation: EvilColor 10s ease infinite;
-  -moz-animation: EvilColor 10s ease infinite;
-  -o-animation: EvilColor 10s ease infinite;
-  animation: EvilColor 10s ease infinite;
+  // background-size: 600%;
+  // -webkit-animation: EvilColor 10s ease infinite;
+  // -moz-animation: EvilColor 10s ease infinite;
+  // -o-animation: EvilColor 10s ease infinite;
+  // animation: EvilColor 10s ease infinite;
   margin-top: 1em;
 }
 
@@ -723,8 +743,6 @@ body.diary-entry {
 // -------------------------------------
 
 
-// new stuff ------------------------------------------
-
 .project-section {
   display: flex;
   font-size: 2ch;
@@ -747,9 +765,3 @@ body.diary-entry {
 .websites {
   border-bottom: 1px solid #000;
 }
-
-// -----------------------------------------
-
-
-
-
