@@ -130,11 +130,12 @@ body {
     max-width: 20em;
   }
 
-  p.main-writing {
+  p.main-writing, p.who-are-you {
     min-width: 28rem;
     width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   &.index {
