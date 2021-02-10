@@ -365,6 +365,7 @@ a {
 
 #github {
     img {
+        filter: invert(29%) sepia(81%) saturate(1501%) hue-rotate(181deg) brightness(104%) contrast(102%);
         width: 100%;
         max-height: 100%;
         transition: opacity 0.2s;
