@@ -876,7 +876,17 @@ swarm.on('peer', function (stream, id) {
 * [IPFS in Brave](https://blog.ipfs.io/2021-01-19-ipfs-in-brave/)
 * [signal -- The ecosystem is moving](https://signal.org/blog/the-ecosystem-is-moving/)
 
+--------------------------------------------------
 
+## 2-10-2021
+Watched [fission video chat](https://lu.ma/zbr4kb3k) tpday.
+
+**project cambia**
+An *ink & switch* project. 
+
+* https://www.inkandswitch.com/cambria.html
+* [Evergreen elm](https://www.youtube.com/watch?v=4T6nZffnfzg)
+* [Headless Ghost and Fission](https://blog.fission.codes/headless-ghost-blog-fission/)
 
 
 
