@@ -16,6 +16,7 @@ examples()
 
 detritus(function (err) {
     if (err) throw err
+    console.log('in here', err)
     picsTags()
 })
 
@@ -38,6 +39,7 @@ devDiary(__dirname + '/src/stuff.html', (err, stream) => {
 })
 
 
+
 // the /_index page
 mkdirp.sync(__dirname + '/public/_index')
 var ws = fs.createWriteStream(__dirname + '/public/_index/index.html')
@@ -47,6 +49,7 @@ var hs = hyperstream({
     'body': { class: { append: 'index' } }
 })
 rs.pipe(hs).pipe(ws)
+
 
 
 var srcPaths = [ 'websites' ]
@@ -128,7 +131,9 @@ function createTagIndex (sbot, tag, msgIds) {
 function picsTags () {
     // -------------- tags ---------------------
     var plugins = [ Tags({ postType: 'ev.post' }) ]
+    console.log('bbbbbbbbbb')
     ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
+        console.log('aaaaaaa', err)
         if (err) throw err
 
         // pics by tag

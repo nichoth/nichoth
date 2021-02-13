@@ -81,6 +81,8 @@ function detritus (cb) {
                     .on('close', function () {
                         sbot.close(null, function (err) {
                             if (cb) {
+                                console.log('calling back')
+                                console.log('closed', err)
                                 if (err) return cb(err)
                                 return cb(null)
                             }
@@ -96,9 +98,3 @@ function detritus (cb) {
 }
 
 module.exports = detritus
-
-if (require.main === module) {
-    detritus(err => {
-        console.log('done writing images', err)
-    })
-}

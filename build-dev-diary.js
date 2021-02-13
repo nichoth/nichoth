@@ -63,25 +63,4 @@ function devDiary (srcPath, cb) {
     })
 }
 
-if (require.main === module) {
-    devDiary(__dirname + '/src/stuff.html', (err, stream) => {
-        if (err) throw err
-        mkdirp(__dirname + '/public/stuff')
-        var ws = fs.createWriteStream(__dirname +
-                '/public/stuff/index.html')
-        var rs = fs.createReadStream(__dirname + '/src/_index.html')
-        var hs = hyperstream({
-            '#content': stream,
-            '.site-nav a[href="/stuff"]': {
-                class: { append: 'active' }
-            },
-            'body': {
-                class: { append: 'stuff' }
-            }
-        })
-        rs.pipe(hs).pipe(ws)
-    })
-}
-
 module.exports = devDiary
-

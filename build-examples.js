@@ -21,4 +21,3 @@ module.exports = examples
 if (require.main === module) {
     examples()
 }
-
