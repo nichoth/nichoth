@@ -740,6 +740,7 @@ body.diary-entry {
   align-items: stretch;
 
   > a {
+    transition: border 0.2s;
     display: block;
     margin-bottom: 2rem;
     // border: 4px solid black;
@@ -756,6 +757,13 @@ body.diary-entry {
     //   radial-gradient(ellipse at bottom, #4d9f0c, transparent);
  
     // height: min-content;
+    &:hover {
+      border: 5px solid black;
+      // border-image-source: radial-gradient(#000, #000);
+      // border-image-source: radial-gradient(farthest-corner at 40px 40px,
+      // #000000, #000000 100%);
+      // border-image-source: rgb(0, 0, 0);
+    }
   }
 }
 // --------------------------/erins stuff-------------------------------------
