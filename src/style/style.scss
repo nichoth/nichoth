@@ -729,7 +729,7 @@ body.diary-entry {
 
 
 // ------------------------- erins stuff ------------------------------------
-ul.projects {
+.projects {
   list-style: none;
   padding: 0;
   display: grid;
@@ -739,7 +739,8 @@ ul.projects {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   align-items: stretch;
 
-  li {
+  > a {
+    display: block;
     margin-bottom: 2rem;
     // border: 4px solid black;
     border: 2px solid;
