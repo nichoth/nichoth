@@ -145,6 +145,10 @@ body {
       }
     }
 
+    #content {
+      padding: 1rem;
+    }
+
   }
 
   &.notebooks {
@@ -722,10 +726,27 @@ body.diary-entry {
 }
 
 
-// -------------------------------------
+// ------------------------- erins stuff ------------------------------------
+ul.projects {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 2rem;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: stretch;
+
+  & > li {
+    margin-bottom: 2rem;
+    border: 4px solid black;
+    padding: 1rem;
+  }
+}
+// --------------------------/erins stuff-------------------------------------
 
 
-// new stuff ------------------------------------------
+// obsolete stuff ------------------------------------------
 
 .project-section {
   display: flex;
@@ -751,6 +772,7 @@ body.diary-entry {
 }
 
 // -----------------------------------------
+
 
 
 
