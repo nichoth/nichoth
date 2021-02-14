@@ -736,7 +736,7 @@ body.diary-entry {
   gap: 2rem;
   // grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   align-items: stretch;
 
   > a {
