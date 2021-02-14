@@ -741,9 +741,19 @@ ul.projects {
 
   & > li {
     margin-bottom: 2rem;
-    border: 4px solid black;
+    // border: 4px solid black;
+    border: 2px solid;
+    border-image-slice: 1;
+    // border-image-source: radial-gradient(#e66465, #00dcff);
+    // border-image-source: linear-gradient(to left, #00d0ff, #ff4f76);
+    border-image-source: radial-gradient(farthest-corner at 40px 40px,
+      #f35 0%, #3398ee 100%);
     padding: 1rem;
     background-color: white;
+    // border-image-source:
+    //   radial-gradient(ellipse at top, #e66465, transparent),
+    //   radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+ 
     // height: min-content;
   }
 }
