@@ -894,6 +894,26 @@ An *ink & switch* project.
 
 * [vmin css](http://thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS)
 
+------------------------------------------------
+
+## 2-14-2021
+
+* [speakeasy - what's new in npm](https://www.youtube.com/watch?v=oJLVTaOmlWg)
+* [next no js thing](https://next-no-js.vercel.app/)
+* [ctzn testnet saturday](https://www.youtube.com/watch?v=HfaDJ_MsMNI)
+* [cool shirts](https://roryblank.bigcartel.com/)
+* [shelly duvall](https://www.hollywoodreporter.com/features/searching-for-shelley-duvall-the-reclusive-icon-on-fleeing-hollywood-and-the-scars-of-making-the-shining)
+* [rxdb](https://github.com/pubkey/rxdb)
+* [micro-site](https://github.com/voightco/micro-site) -- Opinionated micro front-end that can be used to create a one-pager. Great for landing pages or sign-up pages. It uses the static site generator Eleventy (11ty) under the hood and sets common 11ty defaults.
+* [remotion](https://github.com/JonnyBurger/remotion) -- creating videos programmatically using React.
+* [New SSB Database (FOSDEM 2021)](https://www.youtube.com/watch?v=efzJheWQey8)
+* [private party](https://party.lol/) -- browser extension
+* https://trentwalton.com/
+
+
+
+
+
 
 
 
