@@ -144,12 +144,15 @@ body {
   }
 
   &.index {
+    color: #572E08;;
     background-color: beige;
     font-family: YoungSerif, serif;
 
     h1 {
+      font-size: 2.5rem;
       text-align: center;
       margin-top: 0;
+      margin-bottom: 2rem;
     }
 
     // .home-link {
@@ -737,6 +740,7 @@ body.diary-entry {
 
 // ------------------------- erins stuff ------------------------------------
 .projects {
+  text-align: center;
   list-style: none;
   padding: 0;
   display: grid;
@@ -747,10 +751,16 @@ body.diary-entry {
   align-items: stretch;
 
   > a {
+    h2, p {
+      color: #572E08;
+      transition: color 0.2s;
+    }
+    color: #572E08;
     transition: border 0.2s;
+    transition: color 0.2s;
     display: block;
     margin-bottom: 2rem;
-    border: 2px solid gray;
+    border: 2px solid #572E08;
     &:visited {
       color: initial;
     }
@@ -769,10 +779,14 @@ body.diary-entry {
  
     // height: min-content;
     &:hover {
-      border-color: black;
+      border-color: #1f1002;
       h2 {
         text-decoration: underline;
       }
+      h2, p {
+        color: #1f1002;
+      }
+      color: #1f1002;
       // border-image-source: radial-gradient(#000, #000);
       // border-image-source: radial-gradient(farthest-corner at 40px 40px,
       // #000000, #000000 100%);
