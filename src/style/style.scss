@@ -124,7 +124,7 @@ body {
   margin: 0;
   // font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 4em;
+  // padding-bottom: 4em;
 
   img.thumbnail {
     max-width: 20em;
@@ -385,6 +385,7 @@ a {
 .icon-wrapper {
     max-width: 400px;
     margin: 2em auto;
+    margin-bottom: 1rem;
     text-align: center;
 
     .icon-box.github {
@@ -483,8 +484,8 @@ a {
 
 .main-image-wrapper {
   z-index: 1;
-  height: 65vh;
-  margin-top: 10vh;
+  height: 45vh;
+  // margin-top: 10vh;
   // margin-bottom: 4rem;
 }
 
@@ -743,8 +744,7 @@ body.diary-entry {
     transition: border 0.2s;
     display: block;
     margin-bottom: 2rem;
-    // border: 4px solid black;
-    border: 2px solid;
+    border: 2px solid gray;
 
     // border-image-slice: 1;
     // border-image-source: radial-gradient(#e66465, #00dcff);
@@ -760,7 +760,7 @@ body.diary-entry {
  
     // height: min-content;
     &:hover {
-      border: 5px solid black;
+      border-color: black;
       // border-image-source: radial-gradient(#000, #000);
       // border-image-source: radial-gradient(farthest-corner at 40px 40px,
       // #000000, #000000 100%);
