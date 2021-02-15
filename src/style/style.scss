@@ -143,16 +143,18 @@ body {
 
     h1 {
       text-align: center;
+      margin-top: 0;
     }
 
-    .home-link {
-      img {
-        background-color: #ff7795;
-      }
-    }
+    // .home-link {
+    //   img {
+    //     background-color: #ff7795;
+    //   }
+    // }
 
     #content {
       padding: 1rem;
+      padding-top: 0;
     }
 
   }
@@ -287,11 +289,11 @@ body {
 .site-nav {
   font-size: 1.6rem;
   width: 100%;
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-bottom: 2px solid black;
+  // justify-content: space-around;
+  // display: flex;
+  // align-items: center;
+  // background-color: white;
+  // border-bottom: 2px solid black;
   padding: 0.2em 0;
 
   #tag-nav {
@@ -699,12 +701,6 @@ body.examples {
       background-repeat: no-repeat;
       background-size: 0 100%;
       transition: .5s cubic-bezier(.645,.045,.355,1);
-    }
-  }
-
-  .home-link{
-    img {
-      background-color: #ff7795;
     }
   }
 
