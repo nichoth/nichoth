@@ -141,6 +141,10 @@ body {
   &.index {
     background-color: beige;
 
+    h1 {
+      text-align: center;
+    }
+
     .home-link {
       img {
         background-color: #ff7795;
@@ -745,6 +749,9 @@ body.diary-entry {
     display: block;
     margin-bottom: 2rem;
     border: 2px solid gray;
+    &:visited {
+      color: initial;
+    }
 
     // border-image-slice: 1;
     // border-image-source: radial-gradient(#e66465, #00dcff);
@@ -761,6 +768,9 @@ body.diary-entry {
     // height: min-content;
     &:hover {
       border-color: black;
+      h2 {
+        text-decoration: underline;
+      }
       // border-image-source: radial-gradient(#000, #000);
       // border-image-source: radial-gradient(farthest-corner at 40px 40px,
       // #000000, #000000 100%);
