@@ -910,8 +910,11 @@ An *ink & switch* project.
 * [private party](https://party.lol/) -- browser extension
 * https://trentwalton.com/
 
+--------------------------------------------
 
-
+* https://ssbc.github.io/scuttlebutt-protocol-guide/
+* [So You Want to Build a P2P Twitter with E2E Encryption?](https://hackernoon.com/so-you-want-to-build-a-p2p-twitter-with-e2e-encryption-f90505b2ff8)
+* [tox](https://tox.chat/)
 
 
 
