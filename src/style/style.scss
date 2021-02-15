@@ -1,6 +1,11 @@
 $iconColor: #2F596D;
 $green-color: #e5fff0;
 
+@font-face {
+  font-family: 'YoungSerif';
+  src: url("public/font/YoungSerif-Regular.otf") format("opentype");
+}
+
 // @import "bourbon";
 // @import "neat";
 
@@ -140,6 +145,7 @@ body {
 
   &.index {
     background-color: beige;
+    font-family: YoungSerif, serif;
 
     h1 {
       text-align: center;
