@@ -6,12 +6,10 @@ var email = document.getElementById('email');
 // })
 
 email.addEventListener('mouseenter', function (ev) {
-    console.log('mouse enter')
     animate()
 })
 
 email.addEventListener('mouseleave', function (ev) {
-    console.log('mouse leave')
     unAnimate()
 })
 
