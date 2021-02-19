@@ -395,34 +395,14 @@ a {
 }
 
 #github {
-    img {
-        filter: invert(29%) sepia(81%) saturate(1501%) hue-rotate(181deg) brightness(104%) contrast(102%);
-        width: 100%;
-        max-height: 100%;
-        transition: opacity 0.2s;
-        opacity: 1;
-        &:hover {
-            opacity: 0.6;
-        }
-    }
 }
 
 .icon-wrapper {
-    max-width: 400px;
+    max-width: 800px;
     margin: 2em auto;
     margin-bottom: 1rem;
     text-align: center;
 
-    .icon-box.github {
-        width: 5vw;
-    }
-    .icon-box.email {
-        width: 6vw;
-    }
-}
-
-.icon-box {
-    margin: 0 1em;
 }
 
 @-webkit-keyframes EvilColor {
@@ -449,6 +429,8 @@ a {
 .icon-box {
   display: inline-block;
   min-width: 40px;
+  margin: 0 1em;
+
   svg {
     width: 100%;
     height: 100%;
@@ -456,11 +438,33 @@ a {
       position: absolute;
     }
   }
-}
 
-// .icon-copy {
-//   opacity: 0.4;
-// }
+  &.github {
+    width: 12vw;
+
+    img {
+        width: 5vw;
+        max-height: 100%;
+        transition: opacity 0.2s;
+        opacity: 1;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    svg {
+      width: 5vw;
+      transform: translate(-54px, 4px);
+      circle {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &.email {
+      width: 6vw;
+  }
+}
 
 .email {
   #front-square {
@@ -618,18 +622,6 @@ button {
 
   hr {
     margin: 2em 0;
-
-    // border: none;
-    // &:after {
-    //     background: transparent url(/img/wave.svg) bottom;
-    //     background-repeat: repeat-x;
-    //     background-size: 26px auto;
-    //     content: " ";
-    //     width: 100%;
-    //     height: 10px;
-    //     display: block;
-    // }
-
   }
 
   ul {
@@ -682,7 +674,6 @@ body.examples {
     letter-spacing: .02em;
 
     &:hover:after {
-      // transform: translate(0,0);
       transform: translate(-5px, -5px);
     }
 
