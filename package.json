@@ -3,9 +3,6 @@
   "description": "http://nichoth.com/",
   "version": "0.0.0",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "serve": "concurrently --kill-others \"ecstatic public\" \"npm run watch-sass\"",
     "start": "npm run build && npm run serve",
@@ -13,7 +10,7 @@
     "watch-sass": "node-sass -w src/style/style.scss -o public",
     "build": "node build.js && npm run copy && npm run build-list && npm run build-notebooks && npm run build-log && npm run build-js && npm run sass && mkdir -p public/animation && cp src/animation.html public/animation/index.html",
     "copy": "cp src/index.html public && cp src/img/*.* public/img/",
-    "build-js": "browserify lib/main.js > public/animate.js && browserify -p esmify -t uglifyify --debug src/index.js > public/bundle.js",
+    "build-js": "browserify src/lib/main.js > public/animate.js && browserify -p esmify -t uglifyify --debug src/index.js > public/bundle.js",
     "build-log": "node ./build-log.js",
     "build-list": "node ./build-list.js",
     "build-notebooks": "node build-notebooks.js ./src/img/notebooks/*",

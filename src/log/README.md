@@ -916,6 +916,31 @@ An *ink & switch* project.
 * [So You Want to Build a P2P Twitter with E2E Encryption?](https://hackernoon.com/so-you-want-to-build-a-p2p-twitter-with-e2e-encryption-f90505b2ff8)
 * [tox](https://tox.chat/)
 
+-----------------------------------------------
+
+## 2-15-2021
+
+* [same energy](https://same.energy/)
+
+-----------------------------------------------
+
+## 2-16-2021
+
+There is enough free things now that you can properly play in the world. Like I just deployed a [signalhub](https://github.com/mafintosh/signalhub) to a heroku domain from the button on the signalhub readme. I don't really know how it all works, the signalhub deployment, and that bugs me. What source code is heroku using? But that's not relevant to today's stuff.
+
+I'm starting to enjoy this whole being unemployed thing. I finally have time to learn about all these random things. There are so many random things in the world.
+
+I'm still travelling back in time ~5 years, looking at hyperlog and signalhub and webrtc-swarm. This is an interesting point in time. It *feels* like there is much less energy now towards experiments with p2p things. But there are some companies now
+
+* textile
+* ceramic
+* fission
+
+Maybe this is the end of an era so to speak. No more "centralized" services. It's kind of interesting to consider how to monetize p2p stuff. That's a rabbit hole I don't have time for at this time of night.
+
+Spent the evening using signalhub and webrtc-swarm to make a chatting thing -- https://github.com/nichoth/hub-life . Or you can use the app here -- https://hub-life.netlify.app/ . It based on [this demo](https://gist.github.com/substack/0177839f57e8fe0fc294) from substack. I'm kind of amazed that you can deploy something like this for free. It's an important feeling -- that you are getting something for free. That why people like bicycles and sailing so much I think. 
+
+
 
 
 
