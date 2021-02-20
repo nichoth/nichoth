@@ -156,7 +156,8 @@ body.detritus-single-image {
 body {
   margin: 0;
   // font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  // font-family: 'Raleway', sans-serif;
+  font-family: YoungSerif, serif;
   // padding-bottom: 4em;
 
   img.thumbnail {
@@ -168,7 +169,7 @@ body {
     // min-width: 28rem;
     // width: 50%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
   }
@@ -490,7 +491,7 @@ a {
     &:hover {
       img {
         opacity: 1;
-        transform: translate(0.3rem, .1rem);
+        transform: translate(0.2rem, .1rem);
       }
     }
 
@@ -499,7 +500,6 @@ a {
         width: 3.4rem;
         max-height: 100%;
         transition: all 0.6s;
-        // opacity: 0.6;
     }
 
     svg {
@@ -792,6 +792,12 @@ body.diary-entry {
   // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
   align-items: stretch;
+
+  .project {
+    p {
+      font-size: 0.9rem;
+    }
+  }
 
   > a {
     h2, p {
