@@ -940,7 +940,12 @@ Maybe this is the end of an era so to speak. No more "centralized" services. It'
 
 Spent the evening using signalhub and webrtc-swarm to make a chatting thing -- https://github.com/nichoth/hub-life . Or you can use the app here -- https://hub-life.netlify.app/ . It based on [this demo](https://gist.github.com/substack/0177839f57e8fe0fc294) from substack. I'm kind of amazed that you can deploy something like this for free. It's an important feeling -- that you are getting something for free. That why people like bicycles and sailing so much I think. 
 
+--------------------------------------------
 
+## 2-20-2021
+
+* https://ishadeed.com/article/css-grid-minmax/
+* https://github.com/sass/sass/issues/2849
 
 
 
