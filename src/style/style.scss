@@ -165,17 +165,18 @@ body {
   }
 
   p.main-writing, p.who-are-you {
-    width: 100%;
+    // width: 100%;
     // min-width: 28rem;
     // width: 50%;
     margin: 0 auto;
-    font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
   }
 
   p.who-are-you {
+    padding: 0 1rem;
     text-align: center;
+    font-size: 1.6rem;
   }
 
   &.index {
@@ -425,6 +426,7 @@ a {
 }
 
 .icon-wrapper {
+    padding: 0 2rem;
     max-width: 500px;
     margin: 2em auto;
     margin-bottom: 1rem;
@@ -474,7 +476,7 @@ a {
 .icon-box {
   display: inline-block;
   min-width: 40px;
-  margin: 0 1em;
+  // margin: 0 1em;
 
   svg {
     width: 100%;
@@ -512,8 +514,9 @@ a {
   }
 
   &.email {
-      width: 4rem;
-      margin-right: 5rem;
+      width: 5rem;
+      margin-right: 5.2rem;
+      transform: translate(0.8rem, 0px);
 
       #front-square {
         transition: fill-opacity 0.2s;
@@ -535,7 +538,8 @@ a {
 }
 
 .question {
-  font-family: 'Lato', sans-serif;
+  font-family: YoungSerif, serif;
+  // font-family: 'Lato', sans-serif;
   color: $iconColor;
   font-size: 4em;
   display: inline-block;
@@ -554,7 +558,8 @@ a {
 
 .main-image-wrapper {
   z-index: 1;
-  height: 45vh;
+  height: 60vh;
+  margin-top: 1em;
   // margin-top: 10vh;
   // margin-bottom: 4rem;
 }
@@ -573,7 +578,6 @@ a {
   -moz-animation: EvilColor 10s ease infinite;
   -o-animation: EvilColor 10s ease infinite;
   animation: EvilColor 10s ease infinite;
-  margin-top: 1em;
 }
 
 .links {
@@ -786,7 +790,7 @@ body.diary-entry {
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 1rem;
+  gap: 3rem;
   // grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
