@@ -6,6 +6,28 @@ $green-color: #e5fff0;
   src: url("/font/YoungSerif-Regular.otf") format("opentype");
 }
 
+
+@function css-function( $function, $values... ) {
+	@return 
+		$function
+		+ unquote( '(' )
+		+ $values
+		+ unquote( ')' )
+	;
+}
+
+@function css-min( $values... ) {
+	@return css-function( min, $values );
+}
+
+@function css-max( $values... ) {
+	@return css-function( max, $values );
+}
+
+@function css-clamp( $values... ) {
+	@return css-function( 200pxclamp, $values );
+}
+
 // @import "bourbon";
 // @import "neat";
 
@@ -13,12 +35,12 @@ $green-color: #e5fff0;
 //     font-size: 1.2rem;
 // }
 
-html {
-  overflow-x: hidden;
-}
+// html {
+//   overflow-x: hidden;
+// }
 
 body, body.the-log, .development-diary, body.examples {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   hr {
     margin: 2em 0;
@@ -142,8 +164,9 @@ body {
   }
 
   p.main-writing, p.who-are-you {
-    min-width: 28rem;
-    width: 50%;
+    width: 100%;
+    // min-width: 28rem;
+    // width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -763,10 +786,11 @@ body.diary-entry {
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 3rem;
+  gap: 1rem;
   // grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 360px), 1fr));
   align-items: stretch;
 
   > a {
