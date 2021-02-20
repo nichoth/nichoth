@@ -13,7 +13,13 @@ $green-color: #e5fff0;
 //     font-size: 1.2rem;
 // }
 
+html {
+  overflow-x: hidden;
+}
+
 body, body.the-log, .development-diary, body.examples {
+  overflow-x: hidden;
+
   hr {
     margin: 2em 0;
     border: none;
@@ -394,15 +400,14 @@ a {
 
 }
 
-#github {
-}
-
 .icon-wrapper {
-    max-width: 800px;
+    max-width: 500px;
     margin: 2em auto;
     margin-bottom: 1rem;
-    text-align: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 @-webkit-keyframes EvilColor {
@@ -426,6 +431,10 @@ a {
     100%{background-position:0% 49%}
 }
 
+#triangle {
+  width: 4rem;
+}
+
 .icon-box {
   display: inline-block;
   min-width: 40px;
@@ -440,6 +449,7 @@ a {
   }
 
   &.github {
+    min-width: 120px;
     width: 12vw;
 
     &:hover {
@@ -451,15 +461,15 @@ a {
 
     img {
         filter: invert(24%) sepia(98%) saturate(1626%) hue-rotate(184deg) brightness(99%) contrast(101%);
-        width: 5vw;
+        width: 3.4rem;
         max-height: 100%;
         transition: all 0.6s;
         // opacity: 0.6;
     }
 
     svg {
-      width: 5vw;
-      transform: translate(-5vw, 1vh);
+      width: 3.4rem;
+      transform: translate(-3.4rem, 0.1rem);
       circle {
         opacity: 0.6;
       }
@@ -467,34 +477,25 @@ a {
   }
 
   &.email {
-      width: 6vw;
-  }
-}
+      width: 4rem;
+      margin-right: 6rem;
 
-.email {
-  #front-square {
-    transition: fill-opacity 0.2s;
-  }
-  &:hover {
-    #front-square {
-      fill-opacity: 1;
-    }
-  }
-}
+      #front-square {
+        transition: fill-opacity 0.2s;
+      }
 
-#email {
-  svg {
-    // connecting lines in the box
-    // &.depressed {
-    //   // line {
-    //   //   /* stroke: pink; */
-    //   //   /* display: none; */
-    //   // }
-    // }
-    path {
-      stroke-width: 11;
-      stroke: $iconColor;
-    }
+      &:hover {
+        #front-square {
+          fill-opacity: 1;
+        }
+      }
+
+      svg {
+        path {
+          stroke-width: 11;
+          stroke: $iconColor;
+        }
+      }
   }
 }
 
