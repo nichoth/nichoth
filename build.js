@@ -40,12 +40,12 @@ devDiary(__dirname + '/src/stuff.html', (err, stream) => {
 
 
 
-// the /_index page
-mkdirp.sync(__dirname + '/public/_index')
-var ws = fs.createWriteStream(__dirname + '/public/_index/index.html')
+// the /projects page
+mkdirp.sync(__dirname + '/public/projects')
+var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
 var rs = fs.createReadStream(__dirname + '/src/_index.html')
 var hs = hyperstream({
-    '#content': fs.createReadStream(__dirname + '/src/_index/index.html'),
+    '#content': fs.createReadStream(__dirname + '/src/projects/index.html'),
     'body': { class: { append: 'index' } }
 })
 rs.pipe(hs).pipe(ws)
