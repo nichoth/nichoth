@@ -1,7 +1,7 @@
 {
   "name": "nichoth",
   "description": "http://nichoth.com/",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "serve": "concurrently --kill-others \"ecstatic public\" \"npm run watch-sass\"",
