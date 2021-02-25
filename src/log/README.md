@@ -947,6 +947,31 @@ Spent the evening using signalhub and webrtc-swarm to make a chatting thing -- h
 * https://ishadeed.com/article/css-grid-minmax/
 * https://github.com/sass/sass/issues/2849
 
+# development diary
+#dev-diary 
+
+Have spent the last few days fiddling with css & html for [my website](https://nichoth.com/) . I guess it's ok looking. A lot of dealing with css grid… `grid` was supposed to make everything so much easier… Also have made a [GH org](https://github.com/snail-studios) for the design company that I guess I am a part of. Erin wanted to start a company. Starting a company with someone… it's like the contemporary version of marriage. 
+
+A memory keeps floating through my mind. It's stuck there permanently apparently. My CS teacher in college once said "programming is like juggling. When you first start out you can juggle maybe 3 balls. And the best juggler in the world can juggle maybe like 9 balls. It's not like the best person can juggle 1 million balls."
+
+For those just tuning in to the saga, I crashed a bicycle and almost died a while ago, and after having lost my brain and semi-regrown it, that feels right. It still always feels the same writing code, weirdly. There is always the same level of frustration and challenge. But the difference is that when your brain is missing you are working on much 'easier' things. It doesn't feel any harder, you just do less work.
+
+---------------------------------------
+
+## 2-25-2021
+Electron won this round. Or maybe it was GH actions that won. Anyway, haven't figured out how to make GH actions build an electron app. I did the instructions that it says in [this repo](https://github.com/samuelmeuli/action-electron-builder). Using [this demo repo](https://github.com/nichoth/my-app) for now. The odd part is that it works fine to build it on my local computer, but when it's built by the GH action, and I start the app via terminal, it says it can't resolve some local files. Now I could either start looking at Gh actions and go down that rabbit hole until I understand them completely, or say 'ok', and keep working on the app, and just manually upload the release binaries to GH.
+
+I think it will be uploading binaries for now. Then if the app ever get to a point where I feel ok about it, looking at the GH action more.
+
+It has been humbling to work with electron, I will say that.
+
+In other battles, I have been thinking about how to deal with client side routes. I thought about writing about it, but it's not really interesting enough to get into. Basically the state/functionality for routes is slightly duplicated -- there is a 'router' but also part of the app state called 'route', that also gets matched against a router. 
+
+
+
+
+
+
 
 
 
