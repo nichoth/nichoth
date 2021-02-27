@@ -130,7 +130,6 @@ function createTagIndex (sbot, tag, msgIds) {
 function picsTags () {
     // -------------- tags ---------------------
     var plugins = [ Tags({ postType: 'ev.post' }) ]
-    console.log('bbbbbbbbbb')
     ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
         console.log('aaaaaaa', err)
         if (err) throw err
