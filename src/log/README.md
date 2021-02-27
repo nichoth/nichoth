@@ -967,6 +967,11 @@ It has been humbling to work with electron, I will say that.
 
 In other battles, I have been thinking about how to deal with client side routes. I thought about writing about it, but it's not really interesting enough to get into. Basically the state/functionality for routes is slightly duplicated -- there is a 'router' but also part of the app state called 'route', that also gets matched against a router. 
 
+---------------------------------
+
+## 2-26-2021
+
+* Attention is a limited quality that should be preserved
 
 
 

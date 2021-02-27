@@ -8,7 +8,6 @@ var after = require('after')
 var devDiary = require('./build-dev-diary')
 var examples = require('./build-examples')
 var detritus = require('./build-detritus')
-// var marked = require('marked')
 
 
 examples()
@@ -21,18 +20,18 @@ detritus(function (err) {
 })
 
 
-devDiary(__dirname + '/src/stuff.html', (err, stream) => {
+devDiary(__dirname + '/src/dev-diary.html', (err, stream) => {
     if (err) throw err
-    mkdirp.sync(__dirname + '/public/stuff')
-    var ws = fs.createWriteStream(__dirname + '/public/stuff/index.html')
+    mkdirp.sync(__dirname + '/public/dev-diary')
+    var ws = fs.createWriteStream(__dirname + '/public/dev-diary/index.html')
     var rs = fs.createReadStream(__dirname + '/src/_index.html')
     var hs = hyperstream({
         '#content': stream,
-        '.site-nav a[href="/stuff"]': {
+        '.site-nav a[href="/dev-diary"]': {
             class: { append: 'active' }
         },
         'body': {
-            class: { append: 'stuff' }
+            class: { append: 'dev-diary' }
         }
     })
     rs.pipe(hs).pipe(ws)

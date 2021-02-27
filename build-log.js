@@ -16,7 +16,9 @@ function log () {
                 class: { append: 'the-log' }
             },
             '#content': {
-                _appendHtml: md
+                _appendHtml: `<div class="link">
+                        <a href="/dev-diary">ssb dev diary</a>
+                    </div>` + md
             }
         })
 

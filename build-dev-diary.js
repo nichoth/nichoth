@@ -10,6 +10,7 @@ function devDiary (srcPath, cb) {
         console.log('err', err)
         console.log('files', files)
         if (err) return cb(err)
+
         files.forEach(function (fileName) {
             // parse the md and append the first bit to `content` string
             // append the full version to it's own file at /dev-diary/post
