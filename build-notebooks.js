@@ -6,14 +6,12 @@ const hyperstream = require('hyperstream');
 var sharp = require('sharp')
 
 function notebooks (cb) {
-    // process.stdin.pipe(process.stdout)
     var argv = minimist(process.argv.slice(2))
     var fileNames = argv._
 
     var html = `<p>a fun thing about having many saved notebooks is that
         you get to rediscover them later and it's kind of funny</p>
-    <ul>
-    `
+    <ul>`
 
     mkdirp.sync(__dirname + '/public/notebooks')
     mkdirp.sync(__dirname + '/public/img/notebooks')
