@@ -131,7 +131,6 @@ function picsTags () {
     // -------------- tags ---------------------
     var plugins = [ Tags({ postType: 'ev.post' }) ]
     ssbWeb.startSbot('ssb-ev', plugins, function (err, { id, sbot }) {
-        console.log('aaaaaaa', err)
         if (err) throw err
 
         // pics by tag
