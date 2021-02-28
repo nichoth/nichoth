@@ -58,15 +58,19 @@ function detritus (cb) {
                 if (err) return cb(err)
 
                 var _hs = hyperstream({
+                    'body': {
+                        class: { append: 'detritus' },
+                    },
                     '#content': {
                         _appendHtml: contentDetritus,
                         class: { append: 'content-detritus' }
                     },
-                    'body': {
-                        class: { append: 'detritus' }
-                    },
                     '.site-nav': {
-                        _appendHtml: `<button id="tag-nav">tags</button>`
+                        _appendHtml: `<button id="tag-nav">tags</button>
+                            <div>
+                                <a href="/notebooks">notebooks</a>
+                            </div>
+                        `
                     },
                     '.site-nav a[href="/detritus"]': {
                         class: { append: 'active' }
