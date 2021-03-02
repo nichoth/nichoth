@@ -973,6 +973,10 @@ In other battles, I have been thinking about how to deal with client side routes
 
 * Attention is a limited quality that should be preserved
 
+## 2-28-2021
+
+* https://web.dev/streams/
+* https://blog.ceramic.network/the-evolution-of-digital-identity-from-key-pairs-to-dids-and-idx/
 
 
 
