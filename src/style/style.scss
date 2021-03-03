@@ -8,7 +8,7 @@ $green-color: #e5fff0;
 
 
 @function css-function( $function, $values... ) {
-	@return 
+	@return
 		$function
 		+ unquote( '(' )
 		+ $values
@@ -516,7 +516,7 @@ a {
   &.email {
       width: 5rem;
       margin-right: 5.2rem;
-      transform: translate(0.8rem, 0px);
+      transform: translate(0.6rem, 0px);
 
       #front-square {
         transition: fill-opacity 0.2s;
@@ -828,7 +828,7 @@ body.diary-entry {
     // border-image-source:
     //   radial-gradient(ellipse at top, #e66465, transparent),
     //   radial-gradient(ellipse at bottom, #4d9f0c, transparent);
- 
+
     // height: min-content;
     &:hover {
       border-color: #1f1002;
