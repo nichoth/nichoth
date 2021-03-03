@@ -982,7 +982,12 @@ Today have figured out the psych-city bug -- it was not running `eleventy` to bu
 
 Also have updated the nav and spacing on my website.
 
+-----------------------------
 
+* https://virtualcoffee.io/
+* https://css-tricks.com/getting-deep-into-shadows/
+* https://github.com/piscinajs/piscina
+* https://twitter.com/MessariCrypto/status/1364969826406584330?s=20
 
 
 
