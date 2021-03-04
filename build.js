@@ -110,7 +110,6 @@ function createTagIndex (sbot, tag, msgIds) {
             },
 
             // here, show the active tag
-            // `tag`
             '.site-nav': {
                 _appendHtml: `<button id="tag-nav">${tag}&#x21e9;</button>`
             },

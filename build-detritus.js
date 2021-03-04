@@ -39,9 +39,9 @@ function detritus (cb) {
                                     ${post.value.content.text}
                                 </p>`
                         },
-                        '.site-nav a[href="/detritus"]': {
-                            class: { append: 'active' }
-                        }
+                        // '.site-nav a[href="/detritus"]': {
+                        //     class: { append: 'active' }
+                        // }
                     }))
                     .pipe(fs.createWriteStream(__dirname +
                         '/public/posts/' + postPath + '/index.html'))

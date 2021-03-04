@@ -1003,4 +1003,43 @@ Need to learn how to do backend
 
 Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as much as possible, unless the client wants something more wysiwyg than netlify CMS can offer.
 
+-------------------------------------------
+
+## 3-4-2021
+
+* https://www.conic.style/
+* http://solarprotocol.net/
+* https://concordant.io/
+* https://kodadot.xyz/
+* https://help.space.storage/
+* https://blog.fleek.co/posts/introducing-space-sdk-release
+* [Welcome GunDB to our Open Web Protocol Stack](https://blog.space.storage/posts/welcome-gundb-to-open-web-protocol-stack)
+* https://orbitdb.org/
+* https://peergos.org/
+* https://pinata.cloud/
+* https://ctznry.com/
+* https://ctznry.com/wizardamigos@ctzn.one
+* https://virtualcoffee.io/
+* https://radicle.xyz/
+* https://www.honeycomb.io/
+* https://linktr.ee/toolongdidntwatch
+* https://cblgh.org/
+* [The World Needs Cabal.Chat](https://medium.com/equilibriumco/the-world-needs-cabal-chat-7d25f4055e11)
+* https://www.meownica.studio/
+* https://github.com/libp2p/specs/tree/master/pubsub/gossipsub
+* https://github.com/ChainSafe/js-libp2p-gossipsub
+* https://smolcss.dev/
+* https://rachsmith.com/the-tech-setup-for-this-blog-ghost-gatsby/
+* [Keychron K3 Ultra-slim Wireless Mechanical Keyboard](https://www.keychron.com/products/keychron-k3-wireless-mechanical-keyboard)
+* https://www.lataco.com/mural-project-compton/
+* [Gateways to the Decentralized Web: How to update Google Chrome and Firefox for Web3](https://medium.com/unstoppabledomains/gateways-to-the-decentralized-web-how-to-update-google-chrome-and-firefox-for-web3-34a497c8f33c)
+* [wicked cool kit](https://wickedcoolkit.com/)
+* https://www.thisiscolossal.com/2021/02/oneclock-alarm/
+* https://github.com/Ethan-Arrowood/undici-fetch
+* https://github.com/nodejs/undici
+
+
+
+
+
 
