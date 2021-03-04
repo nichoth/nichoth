@@ -989,7 +989,18 @@ Also have updated the nav and spacing on my website.
 * https://github.com/piscinajs/piscina
 * https://twitter.com/MessariCrypto/status/1364969826406584330?s=20
 
+-----------------------------------------------
 
+## 3-3-2021
 
+Did the tinaCMS [introductory tutorial](https://tina.io/docs/getting-started/introduction/)
+
+Need to learn how to do backend
+
+* github
+* git
+* strapi
+
+Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as much as possible, unless the client wants something more wysiwyg than netlify CMS can offer.
 
 
