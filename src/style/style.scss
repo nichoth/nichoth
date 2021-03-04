@@ -169,13 +169,13 @@ body {
     // width: 50%;
     margin: 0 auto;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    // margin-top: 2rem;
   }
 
   p.who-are-you {
     padding: 0 1rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   &.index {
@@ -560,8 +560,7 @@ a {
   z-index: 1;
   height: 60vh;
   margin-top: 1em;
-  // margin-top: 10vh;
-  // margin-bottom: 4rem;
+  margin-bottom: 10vh;
 }
 
 .main-image {
