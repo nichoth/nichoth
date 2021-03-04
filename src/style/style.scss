@@ -178,7 +178,7 @@ body {
     font-size: 1.8rem;
   }
 
-  &.index {
+  &.projects-body {
     color: #572E08;;
     background-color: beige;
     font-family: YoungSerif, serif;
@@ -278,11 +278,6 @@ body {
   }
 
   &.detritus {
-    // .home-link {
-    //   img {
-    //     background-color: #4fa8e0;
-    //   }
-    // }
     background-color: #a2a0a0;
   }
 
@@ -339,13 +334,7 @@ $link-width: 2em;
 
 .site-nav {
   font-size: 1.6rem;
-  width: 100%;
-  // justify-content: space-around;
-  // display: flex;
-  // align-items: center;
-  // background-color: white;
-  // border-bottom: 2px solid black;
-  padding: 0.2em 0;
+  padding: 0.2em .4rem;
 
   #tag-nav {
     font-size: 2em;
@@ -796,10 +785,8 @@ body.diary-entry {
   grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
   align-items: stretch;
 
-  .project {
-    p {
-      font-size: 0.9rem;
-    }
+  p {
+    font-size: 0.9rem;
   }
 
   > a {
@@ -893,6 +880,7 @@ body.diary-entry {
   h1 {
     width: 100%;
     padding-right: $link-width;
+    text-align: center;
   }
 }
 

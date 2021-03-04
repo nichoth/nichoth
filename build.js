@@ -44,7 +44,7 @@ var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
 var rs = fs.createReadStream(__dirname + '/src/_index.html')
 var hs = hyperstream({
     '#content': fs.createReadStream(__dirname + '/src/projects/index.html'),
-    'body': { class: { append: 'index' } }
+    'body': { class: { append: 'projects-body' } }
 })
 rs.pipe(hs).pipe(ws)
 

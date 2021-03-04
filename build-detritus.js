@@ -15,6 +15,8 @@ function detritus (cb) {
 
         // this is a concatted list of html for posts, an index page
         var contentDetritus = ''
+
+        
         // write the main stuff
         S(
             ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
@@ -57,23 +59,24 @@ function detritus (cb) {
                 // index/list of them
                 if (err) return cb(err)
 
+                var headPart = `<div class="head-part">
+                    <div class="site-nav">
+                        <a href="/" class="home-link">
+                            <img src="/img/b.png" alt="cube">
+                        </a>
+                    </div>
+
+                    <h1>Visual Detritus</h1>
+                </div>`
+
                 var _hs = hyperstream({
                     'body': {
+                        _prependHtml: headPart,
                         class: { append: 'detritus' },
                     },
                     '#content': {
                         _appendHtml: contentDetritus,
                         class: { append: 'content-detritus' }
-                    },
-                    '.site-nav': {
-                        _appendHtml: `<button id="tag-nav">tags</button>
-                            <div>
-                                <a href="/notebooks">notebooks</a>
-                            </div>
-                        `
-                    },
-                    '.site-nav a[href="/detritus"]': {
-                        class: { append: 'active' }
                     }
                 })
 
@@ -85,8 +88,6 @@ function detritus (cb) {
                     .on('close', function () {
                         sbot.close(null, function (err) {
                             if (cb) {
-                                console.log('calling back')
-                                console.log('closed', err)
                                 if (err) return cb(err)
                                 return cb(null)
                             }
