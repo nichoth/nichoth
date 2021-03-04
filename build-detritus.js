@@ -67,7 +67,10 @@ function detritus (cb) {
                     </div>
 
                     <h1>Visual Detritus</h1>
-                </div>`
+                </div>
+                <p>
+                    <a href="/notebooks">notebooks</a>
+                </p>`
 
                 var _hs = hyperstream({
                     'body': {

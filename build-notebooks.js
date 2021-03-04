@@ -78,6 +78,17 @@ function notebooks (cb) {
 
     html += '</ul>'
 
+
+    var headPart = `<div class="head-part">
+        <div class="site-nav">
+            <a href="/" class="home-link">
+                <img src="/img/b.png" alt="cube">
+            </a>
+        </div>
+
+        <h1>Notebooks</h1>
+    </div>`
+
     // write index file
     var indexWS = fs.createWriteStream(__dirname +
         '/public/notebooks/index.html')
@@ -87,6 +98,7 @@ function notebooks (cb) {
             class: { append: 'notebooks' }
         },
         'body': {
+            _prependHtml: headPart,
             class: { append: 'notebooks' }
         }
     })

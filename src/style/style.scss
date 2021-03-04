@@ -215,6 +215,8 @@ body {
     //   }
     // }
 
+    background-color: #a2a0a0;
+
     #content {
         padding: 1em;
     }
@@ -279,6 +281,7 @@ body {
 
   &.detritus {
     background-color: #a2a0a0;
+    margin: 0.5rem;
   }
 
   &.tag-index {

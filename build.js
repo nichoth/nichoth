@@ -37,7 +37,6 @@ devDiary(__dirname + '/src/dev-diary.html', (err, stream) => {
 })
 
 
-
 // the /projects page
 mkdirp.sync(__dirname + '/public/projects')
 var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
