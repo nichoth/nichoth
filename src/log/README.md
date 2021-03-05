@@ -1038,6 +1038,11 @@ Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as
 * https://github.com/Ethan-Arrowood/undici-fetch
 * https://github.com/nodejs/undici
 
+-----------------------------------
+
+* [A Complete Beginner's Guide to React](https://www.youtube.com/watch?v=9DFjKFMdboc)
+* [A Complete Beginner's Guide to React](https://welearncode.com/beginners-guide-react/)
+
 
 
 
