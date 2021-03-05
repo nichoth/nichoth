@@ -308,15 +308,15 @@ body {
 
 $link-width: 2em;
 
+#tag-nav {
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
 .site-nav {
   font-size: 1.6rem;
   padding: 0.2em .4rem;
-
-  #tag-nav {
-    font-size: 2em;
-    background: none;
-    border: none;
-  }
 
   a {
     &.active {

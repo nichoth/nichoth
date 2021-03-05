@@ -67,6 +67,10 @@ function detritus (cb) {
                     </div>
 
                     <h1>Visual Detritus</h1>
+
+                    <div class="tag-nav">
+                        <button id="tag-nav">🏷️</button>
+                    </div>
                 </div>
                 <p>
                     <a href="/notebooks">notebooks</a>

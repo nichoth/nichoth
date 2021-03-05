@@ -95,24 +95,31 @@ function createTagIndex (sbot, tag, msgIds) {
 
     // write the index page for the tag index
     function write () {
+
+        var headPart = `<div class="head-part">
+            <div class="site-nav">
+                <a href="/" class="home-link">
+                    <img src="/img/b.png" alt="cube">
+                </a>
+            </div>
+
+            <h1>${tag}</h1>
+
+            <div class="tag-nav">
+                <button id="tag-nav">🏷️</button>
+            </div>
+        </div>`
+
         var hs = hyperstream({
             body: {
+                _prependHtml: headPart,
                 class: { append: 'tag-index' }
-            },
-
-            '.site-nav a[href="/detritus"]': {
-                class: { append: 'active' }
             },
 
             '#content': {
                 _appendHtml: posts,
                 class: { append: 'tag-index ' + tag }
-            },
-
-            // here, show the active tag
-            '.site-nav': {
-                _appendHtml: `<button id="tag-nav">${tag}&#x21e9;</button>`
-            },
+            }
         })
 
         fs.createReadStream(__dirname + '/src/_index.html')
