@@ -196,7 +196,7 @@ body {
     }
 
     #content {
-      padding: 2rem;
+      padding: 3rem;
       padding-top: 0;
     }
   }
@@ -358,8 +358,10 @@ a {
 
   padding: 0;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
+  display: flex;
+  justify-content: space-between;
 
   li {
       margin-bottom: 0.5em;
@@ -748,7 +750,7 @@ body.diary-entry {
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
   align-items: stretch;
