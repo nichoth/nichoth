@@ -393,13 +393,10 @@ a {
     position: fixed;
     bottom: 0;
     margin: 1rem auto;
-    // width: 100%;
     transform: translateX(-50%);
 
     padding: 0 2rem;
-    max-width: 500px;
-    // margin: 2em auto;
-    // margin-bottom: 1rem;
+    max-width: 330px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -532,8 +529,6 @@ a {
 }
 
 .main-image {
-  height: auto;
-  width: auto;
   max-width: 100%;
   max-height: 100%;
   display: block;
