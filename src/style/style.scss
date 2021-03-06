@@ -350,14 +350,16 @@ a {
 .main-text {
   font-weight: 300;
   font-size: 1.8rem;
-  margin-top: 0;
-  max-width: 14em;
-  color: #05385F;
-  font-size: 2em;
-  max-width: 28rem;
+  font-size: 2rem;
   margin: 2rem 1rem;
+  margin-top: 3rem;
   list-style: none;
   margin-bottom: 4rem;
+
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
 
   li {
       margin-bottom: 0.5em;
