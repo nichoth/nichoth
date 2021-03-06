@@ -1044,6 +1044,13 @@ Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as
 * [A Complete Beginner's Guide to React](https://welearncode.com/beginners-guide-react/)
 
 
+## 3-5-2021
+* https://smolcss.dev/
+* https://github.com/ChainSafe/js-libp2p-gossipsub
+* https://medium.com/equilibriumco/the-world-needs-cabal-chat-7d25f4055e11
+* [substacks cabal zine](https://substack.net/zine/cabal.html)
+* https://cblgh.org/
+
 
 
 

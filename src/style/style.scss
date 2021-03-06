@@ -196,7 +196,7 @@ body {
     }
 
     #content {
-      padding: 1rem;
+      padding: 2rem;
       padding-top: 0;
     }
   }
@@ -244,12 +244,6 @@ body {
     //     background-color: #1ABBA7;
     //   }
     // }
-
-    #github-icon {
-      img {
-        width: 4em;
-      }
-    }
   }
 
   &.detritus {
@@ -391,13 +385,19 @@ a {
 }
 
 .icon-wrapper {
+    left: 50%;
+    position: fixed;
+    bottom: 0;
+    margin: 1rem auto;
+    // width: 100%;
+    transform: translateX(-50%);
+
     padding: 0 2rem;
     max-width: 500px;
-    margin: 2em auto;
-    margin-bottom: 1rem;
+    // margin: 2em auto;
+    // margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-around;
 }
 
@@ -453,7 +453,6 @@ a {
 
   &.github {
     min-width: 120px;
-    width: 12vw;
 
     &:hover {
       img {
@@ -524,8 +523,8 @@ a {
 .main-image-wrapper {
   z-index: 1;
   height: 60vh;
-  margin-top: 1em;
-  margin-bottom: 10vh;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
 }
 
 .main-image {
@@ -748,13 +747,12 @@ body.diary-entry {
 }
 
 
-// ------------------------- erins stuff ------------------------------------
 .projects {
   text-align: center;
   list-style: none;
   padding: 0;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   // grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -779,19 +777,8 @@ body.diary-entry {
       color: initial;
     }
 
-    // border-image-slice: 1;
-    // border-image-source: radial-gradient(#e66465, #00dcff);
-    // border-image-source: linear-gradient(to left, #00d0ff, #ff4f76);
-
-    // border-image-source: radial-gradient(farthest-corner at 40px 40px,
-    //   #f35 0%, #3398ee 100%);
-
     padding: 1rem;
-    // border-image-source:
-    //   radial-gradient(ellipse at top, #e66465, transparent),
-    //   radial-gradient(ellipse at bottom, #4d9f0c, transparent);
-
-    // height: min-content;
+    
     &:hover {
       border-color: #1f1002;
       h2 {
@@ -801,14 +788,9 @@ body.diary-entry {
         color: #1f1002;
       }
       color: #1f1002;
-      // border-image-source: radial-gradient(#000, #000);
-      // border-image-source: radial-gradient(farthest-corner at 40px 40px,
-      // #000000, #000000 100%);
-      // border-image-source: rgb(0, 0, 0);
     }
   }
 }
-// --------------------------/erins stuff-------------------------------------
 
 
 // obsolete stuff ------------------------------------------
@@ -848,6 +830,7 @@ body.diary-entry {
 .head-part {
   justify-content: center;
   display: flex;
+  margin-top: 0.5rem;
 
   .site-nav {
     width: initial;
