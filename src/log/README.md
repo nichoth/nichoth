@@ -1054,8 +1054,12 @@ Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as
 -----------------------------------------------
 
 ## 3-8-2021
-
 * https://harperdb.io/
+
+------------------------------------------
+
+## 3-9-2021
+* [fugu chrome browser](https://twitter.com/feross/status/1369149438560587778)
 
 
 
