@@ -1066,6 +1066,11 @@ Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as
 ## 3-11-2021
 * https://blog.ceramic.network/ceramic-network-clay-testnet/
 
+----------------------------
+
+## 3-13-2021
+* https://flaviocopes.com/html-picture-tag/
+* https://www.geeksforgeeks.org/html-picture-tag/
 
 
 

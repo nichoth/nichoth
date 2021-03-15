@@ -15,7 +15,6 @@ function detritus (cb) {
 
         // this is a concatted list of html for posts, an index page
         var contentDetritus = ''
-
         
         // write the main stuff
         S(
@@ -38,19 +37,23 @@ function detritus (cb) {
                                 <p class="post-text">
                                     ${post.value.content.text}
                                 </p>`
-                        },
-                        // '.site-nav a[href="/detritus"]': {
-                        //     class: { append: 'active' }
-                        // }
+                        }
                     }))
                     .pipe(fs.createWriteStream(__dirname +
                         '/public/posts/' + postPath + '/index.html'))
 
                 // html for this post on the index page
                 // cat the new html for this post
+
+                // HERE -- use `picture`
                 contentDetritus += `<div class="post">
                     <a href="/posts/${postPath}">
-                        <img src="/posts/img/${blob}">
+
+                        <picture>
+                            <source type="image/webp" srcset="/posts/img/${blob}.webp">
+                            <img src="/posts/img/${blob}">
+                        </picture>
+
                     </a>
                     <p class="post-text">${post.value.content.text}</p>
                 </div>`
