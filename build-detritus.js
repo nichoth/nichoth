@@ -73,6 +73,8 @@ function detritus (cb) {
                 //     console.log('globbing', err, files)
                 //     files.forEach(fileName => {
                 //         var bName = path.basename(fileName);
+                //         fs.renameSync(fileName, __dirname + '/public/posts/img/' +
+                //             bName + '.jpg')
                 //         var output = __dirname + '/public/posts/' + bName +
                 //             '.avif'
                 //         sharp(fileName + '.jpg')
