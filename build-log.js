@@ -31,4 +31,3 @@ module.exports = log
 if (require.main === module) {
     log()
 }
-

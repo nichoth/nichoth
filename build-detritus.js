@@ -5,6 +5,9 @@ var S = require('pull-stream')
 var slugify = require('@sindresorhus/slugify')
 var mkdirp = require('mkdirp')
 var Tags = require('@nichoth/ssb-tags')
+var glob = require('glob')
+var path = require('path')
+var sharp = require('sharp')
 
 function detritus (cb) {
     var plugins = [ Tags({ postType: 'ev.post' }) ]
@@ -20,7 +23,7 @@ function detritus (cb) {
         S(
             ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
             ssbWeb.writeFiles(sbot, 'public/posts/img'),
-            S.drain(function onEvent ({ post, blob }) {
+            S.drain(function onEvent ({ post, blobHash }) {
                 // post.value.content
                 // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
@@ -33,7 +36,7 @@ function detritus (cb) {
                             class: { append: 'detritus-single-image' }
                         },
                         '#content': {
-                            _appendHtml: `<img src="/posts/img/${blob}">
+                            _appendHtml: `<img src="/posts/img/${blobHash}">
                                 <p class="post-text">
                                     ${post.value.content.text}
                                 </p>`
@@ -46,12 +49,14 @@ function detritus (cb) {
                 // cat the new html for this post
 
                 // HERE -- use `picture`
+                // @TODO
+                // write a smaller image from the ssb stream
                 contentDetritus += `<div class="post">
                     <a href="/posts/${postPath}">
 
                         <picture>
-                            <source type="image/webp" srcset="/posts/img/${blob}.webp">
-                            <img src="/posts/img/${blob}">
+                            <source type="image/webp" srcset="/posts/img/${blobHash}.avif">
+                            <img src="/posts/img/${blobHash}">
                         </picture>
 
                     </a>
@@ -61,6 +66,24 @@ function detritus (cb) {
                 // now we have gotten all the posts, can write the
                 // index/list of them
                 if (err) return cb(err)
+
+
+                // in here, re-write the img files as avif
+                // glob(__dirname + '/public/posts/img/*', {}, (err, files) => {
+                //     console.log('globbing', err, files)
+                //     files.forEach(fileName => {
+                //         var bName = path.basename(fileName);
+                //         var output = __dirname + '/public/posts/' + bName +
+                //             '.avif'
+                //         sharp(fileName + '.jpg')
+                //             .avif({ lossless: true })
+                //             .resize(500)
+                //             .toFile(output, function (err) {
+                //                 if (err) throw err
+                //             })
+                //     })
+                // })
+
 
                 var headPart = `<div class="head-part">
                     <div class="site-nav">
@@ -113,3 +136,7 @@ function detritus (cb) {
 }
 
 module.exports = detritus
+
+if (require.main === module) {
+    detritus(err => console.log('errrrrr', err))
+}
