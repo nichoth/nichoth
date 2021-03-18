@@ -8,6 +8,7 @@ var Tags = require('@nichoth/ssb-tags')
 var glob = require('glob')
 var path = require('path')
 var sharp = require('sharp')
+var slugify = require('@sindresorhus/slugify')
 
 function detritus (cb) {
     var plugins = [ Tags({ postType: 'ev.post' }) ]
@@ -23,6 +24,7 @@ function detritus (cb) {
         S(
             ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
             ssbWeb.writeFiles(sbot, 'public/posts/img'),
+            S.filter(({ post, blobHash }) => (post && blobHash)),
             S.drain(function onEvent ({ post, blobHash }) {
                 // post.value.content
                 // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
@@ -36,7 +38,7 @@ function detritus (cb) {
                             class: { append: 'detritus-single-image' }
                         },
                         '#content': {
-                            _appendHtml: `<img src="/posts/img/${blobHash}">
+                            _appendHtml: `<img src="/posts/img/${slugify(blobHash)}">
                                 <p class="post-text">
                                     ${post.value.content.text}
                                 </p>`
@@ -51,12 +53,13 @@ function detritus (cb) {
                 // HERE -- use `picture`
                 // @TODO
                 // write a smaller image from the ssb stream
+
                 contentDetritus += `<div class="post">
                     <a href="/posts/${postPath}">
 
                         <picture>
-                            <source type="image/webp" srcset="/posts/img/${blobHash}.avif">
-                            <img src="/posts/img/${blobHash}">
+                            <source type="image/avif" srcset="/posts/img/${slugify(blobHash)}.avif">
+                            <img src="/posts/img/${slugify(blobHash)}">
                         </picture>
 
                     </a>
@@ -67,19 +70,19 @@ function detritus (cb) {
                 // index/list of them
                 if (err) return cb(err)
 
-
                 // in here, re-write the img files as avif
                 glob(__dirname + '/public/posts/img/*', {}, (err, files) => {
-                    console.log('globbing', err, files)
+                    // console.log('globbing', err, files)
+                    if (err) throw err
                     files.forEach(fileName => {
                         var bName = path.basename(fileName);
-                        // fs.renameSync(fileName, __dirname + '/public/posts/img/' +
-                        //     bName + '.jpg')
                         var output = __dirname + '/public/posts/img/' +
-                            bName + '.avif'
+                            slugify(bName) + '.avif'
                         sharp(fileName)
-                            .avif({ lossless: true })
+                            .rotate()
                             .resize(500)
+                            .withMetadata()
+                            .avif({ lossless: true })
                             .toFile(output, function (err) {
                                 if (err) throw err
                             })
