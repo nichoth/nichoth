@@ -5,9 +5,9 @@ var S = require('pull-stream')
 var slugify = require('@sindresorhus/slugify')
 var mkdirp = require('mkdirp')
 var Tags = require('@nichoth/ssb-tags')
-// var glob = require('glob')
-// var path = require('path')
-// var sharp = require('sharp')
+var glob = require('glob')
+var path = require('path')
+var sharp = require('sharp')
 
 function detritus (cb) {
     var plugins = [ Tags({ postType: 'ev.post' }) ]
@@ -69,23 +69,22 @@ function detritus (cb) {
 
 
                 // in here, re-write the img files as avif
-                // glob(__dirname + '/public/posts/img/*', {}, (err, files) => {
-                //     console.log('globbing', err, files)
-                //     files.forEach(fileName => {
-                //         var bName = path.basename(fileName);
-                //         fs.renameSync(fileName, __dirname + '/public/posts/img/' +
-                //             bName + '.jpg')
-                //         var output = __dirname + '/public/posts/' + bName +
-                //             '.avif'
-                //         sharp(fileName + '.jpg')
-                //             .avif({ lossless: true })
-                //             .resize(500)
-                //             .toFile(output, function (err) {
-                //                 if (err) throw err
-                //             })
-                //     })
-                // })
-
+                glob(__dirname + '/public/posts/img/*', {}, (err, files) => {
+                    console.log('globbing', err, files)
+                    files.forEach(fileName => {
+                        var bName = path.basename(fileName);
+                        // fs.renameSync(fileName, __dirname + '/public/posts/img/' +
+                        //     bName + '.jpg')
+                        var output = __dirname + '/public/posts/img/' +
+                            bName + '.avif'
+                        sharp(fileName)
+                            .avif({ lossless: true })
+                            .resize(500)
+                            .toFile(output, function (err) {
+                                if (err) throw err
+                            })
+                    })
+                })
 
                 var headPart = `<div class="head-part">
                     <div class="site-nav">
