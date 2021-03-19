@@ -122,6 +122,9 @@
 * [3box](https://3box.io/)
 * [moonbeam](https://moonbeam.network/)
 
+----------------------------
+
+* https://decentpatterns.xyz/
 
 
 

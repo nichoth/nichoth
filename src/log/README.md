@@ -1073,7 +1073,12 @@ Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as
 * https://www.geeksforgeeks.org/html-picture-tag/
 
 
+------------------------------------------------------------
 
+## 3-18-2021
+
+* https://decentpatterns.xyz/
+* https://decentpatterns.xyz/report/
 
 
 
