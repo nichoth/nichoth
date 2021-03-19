@@ -1080,5 +1080,13 @@ Looked at tinaCMS quite a lot today. I have a feeling that we should avoid it as
 * https://decentpatterns.xyz/
 * https://decentpatterns.xyz/report/
 
+See how much you can break down the ssb pattern. Can you pipe through ssh, private-box, and hyper-swarm?
+
+The hyper pattern would be `hyperdrive` for blobs and `byperbee` for posts & metadata probably.
+
+What is `signal-hub`?
+
+
+
 
 
