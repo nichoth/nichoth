@@ -19,13 +19,14 @@ function detritus (cb) {
 
         // this is a concatted list of html for posts, an index page
         var contentDetritus = ''
-        
+
         // write the main stuff
         S(
             ssbWeb.getPosts({ id, sbot, type: 'ev.post', reverse: true }),
             ssbWeb.writeFiles(sbot, 'public/posts/img'),
             S.filter(({ post, blobHash }) => (post && blobHash)),
             S.drain(function onEvent ({ post, blobHash }) {
+                console.log('**post**', post)
                 // post.value.content
                 // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 

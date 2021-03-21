@@ -1086,6 +1086,21 @@ The hyper pattern would be `hyperdrive` for blobs and `byperbee` for posts & met
 
 What is `signal-hub`?
 
+---------------------------------------------------------
+
+## 3-19-2021
+
+* [decentralized pattern library](https://decentpatterns.xyz/library/)
+
+----------------------------------------
+
+### signalhub
+
+`webrtc-swarm` calls `hub.subscribe(uuid)` on `hub`
+
+`hub.subscribe('all')`
+
+I think signal-hub is the precursor to a direct p2p connection. A value (the url) known by all potential peers so that you have a way to meet new peers.
 
 
 
