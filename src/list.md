@@ -125,6 +125,7 @@
 ----------------------------
 
 * https://decentpatterns.xyz/
+* https://hasura.io/
 
 
 
