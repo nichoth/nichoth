@@ -1103,5 +1103,13 @@ What is `signal-hub`?
 I think signal-hub is the precursor to a direct p2p connection. A value (the url) known by all potential peers so that you have a way to meet new peers.
 
 
+-----------------------------------------
+
+## 4-10-2021
+
+### What am I doing?
+* pwa-demo
+* flobz
+
 
 
