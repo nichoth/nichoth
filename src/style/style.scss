@@ -41,7 +41,14 @@ $green-color: #e5fff0;
 
 body.flobz-content {
   margin: 1rem;
+
+  blockquote {
+    padding: 0 1em;
+    color: gray;
+    border-left: .25em solid #dfe2e5;
+  }
 }
+
 
 body, body.the-log, .development-diary, body.examples {
   // overflow-x: hidden;
@@ -775,7 +782,7 @@ body.diary-entry {
     }
 
     padding: 1rem;
-    
+
     &:hover {
       border-color: #1f1002;
       h2 {
