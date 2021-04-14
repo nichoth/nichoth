@@ -11,6 +11,7 @@ A nonesense name for an example demonstrating preact + server-side rendering
 
 > To summarize, the idea is to initially render the app on the server first and then render the components on the browser.
 
+-------------------------------------------
 
 ## it actually works
 
