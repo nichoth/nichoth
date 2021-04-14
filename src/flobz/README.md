@@ -1,6 +1,9 @@
 # flobz
 
 https://flobz.netlify.app/
+https://github.com/nichoth/flobz
+
+----------------------------------
 
 [flobz](https://github.com/nichoth/flobz) -- 
 A nonesense name for an example demonstrating preact + server-side rendering
