@@ -42,6 +42,12 @@ $green-color: #e5fff0;
 body.flobz-content {
   margin: 1rem;
 
+  #content {
+    margin: 0 auto;
+    max-width: 40rem;
+    margin-left: 2rem;
+  }
+
   blockquote {
     padding: 0 1em;
     color: gray;
