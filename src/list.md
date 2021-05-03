@@ -133,6 +133,24 @@
 `vmin` unit -- the lesser of `vw` and `vh`
 [work sans font](https://fonts.google.com/specimen/Work+Sans)
 
+## leveldb
+* https://github.com/dominictarr/charwise
+* [range of keys in Leveldb](https://kevinsimper.medium.com/how-to-get-range-of-keys-in-leveldb-and-how-gt-and-lt-works-29a8f1e11782)
+
+```js
+db.createReadStream({
+  gte: 'user'
+  lte: 'user~'
+})
+```
+
+* [dominic's weird idea](https://gist.github.com/dominictarr/5990143)
+* https://github.com/dominictarr/cyphernet
+* https://github.com/dominictarr/level-merkle
+* https://github.com/dominictarr/level-scuttlebutt
+* https://github.com/dominictarr/ltgt
+
+
 
 
 
