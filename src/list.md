@@ -55,6 +55,11 @@
 * http://broccolini.net/
 * https://vvorkvvorkvvork.com/shop
 * https://56.digital/
+* https://georgefrancis.dev/
+
+### fonts
+* [noe display](https://www.typewolf.com/noe-display#:~:text=Noe%20Display%20is%20a%20Transitional,four%20weights%20with%20matching%20italics.)
+* [noe display](https://fontsinuse.com/typefaces/31872/noe-display)
 
 
 ----------------------------------------
@@ -141,8 +146,10 @@
 ------------------------------------------
 
 ## css
-`vmin` unit -- the lesser of `vw` and `vh`
-[work sans font](https://fonts.google.com/specimen/Work+Sans)
+* `vmin` unit -- the lesser of `vw` and `vh`
+* [work sans font](https://fonts.google.com/specimen/Work+Sans)
+* [fluid typography](https://fluid-typography.netlify.app/)
+
 
 ## leveldb
 * https://github.com/dominictarr/charwise
@@ -169,7 +176,11 @@ db.createReadStream({
 
 > you can nest the <input> directly inside the <label>, in which case the for and id attributes are not needed because the association is implicit
 
+--------------------------------------
 
+* [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
+
+* [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
 
 
 

@@ -1111,5 +1111,14 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * pwa-demo
 * flobz
 
+----------------------------------------
+
+## 5-7-2021
+
+* [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
+* [radix-ui](https://radix-ui.com/primitives/docs/components/hover-card)
+* [George](https://georgefrancis.dev/)
+* [fluid typepgrphy](https://fluid-typography.netlify.app/)
+
 
 
