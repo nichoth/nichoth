@@ -122,6 +122,17 @@
 * [3box](https://3box.io/)
 * [moonbeam](https://moonbeam.network/)
 
+--------------------------
+
+* [p2p chat example](https://gist.github.com/substack/0177839f57e8fe0fc294)
+* [hyperlog](https://github.com/mafintosh/hyperlog)
+* [webRTC swarm](https://github.com/mafintosh/webrtc-swarm)
+
+---------------------------
+
+* [RangerMauve/hyperswarm-web](https://github.com/RangerMauve/hyperswarm-web)
+* [RangerMauve/hyperbeedeebee](https://github.com/RangerMauve/hyperbeedeebee)
+
 ----------------------------
 
 * https://decentpatterns.xyz/
