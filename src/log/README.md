@@ -1120,5 +1120,16 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * [George](https://georgefrancis.dev/)
 * [fluid typepgrphy](https://fluid-typography.netlify.app/)
 
+------------------------------------
+
+* [Serverless File Uploads](https://www.netlify.com/blog/2016/11/17/serverless-file-uploads/)
+* [serverless pattern](https://www.netlify.com/blog/2016/09/15/serverless-jam-a-serverless-framework-tutorial/https://www.netlify.com/blog/2016/09/15/serverless-jam-a-serverless-framework-tutorial/)
+
+------------------------------
+
+## 5-8-2021
+
+* https://www.npmjs.com/package/merkle-tree-stream
+
 
 
