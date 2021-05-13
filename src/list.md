@@ -192,4 +192,11 @@ db.createReadStream({
 * [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
 
 
+## db
+
+* [kappa-architecture.com](https://milinda.pathirage.org/kappa-architecture.com/)
+* https://github.com/kappa-db
+* [kappa-core](https://github.com/kappa-db/kappa-core)
+
+
 
