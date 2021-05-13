@@ -197,6 +197,7 @@ db.createReadStream({
 * [kappa-architecture.com](https://milinda.pathirage.org/kappa-architecture.com/)
 * https://github.com/kappa-db
 * [kappa-core](https://github.com/kappa-db/kappa-core)
+* https://github.com/kappa-db/kappa-core/blob/master/intro.md
 
 
 
