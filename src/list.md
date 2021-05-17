@@ -6,7 +6,6 @@
 * [hashbase](https://hashbase.io/) -- dat & http
 * [render](https://render.com/) -- http + some backend stuff
 * [fission](https://fission.codes/) -- http + backend
-* [pinata](https://pinata.cloud/) -- ipfs 
 * [surge](https://surge.sh/) -- http
 * [netlify](https://www.netlify.com/) -- http
 * [heroku](https://www.heroku.com/)
@@ -136,6 +135,7 @@
 * [fission](https://fission.codes/)
 * [3box](https://3box.io/)
 * [moonbeam](https://moonbeam.network/)
+* [pinata](https://pinata.cloud/) -- ipfs 
 
 --------------------------
 
