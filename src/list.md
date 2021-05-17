@@ -67,6 +67,7 @@
 ### fonts
 * [noe display](https://www.typewolf.com/noe-display#:~:text=Noe%20Display%20is%20a%20Transitional,four%20weights%20with%20matching%20italics.)
 * [noe display](https://fontsinuse.com/typefaces/31872/noe-display)
+* [work sans font](https://fonts.google.com/specimen/Work+Sans)
 
 
 ----------------------------------------
@@ -157,7 +158,6 @@
 ## css
 
 * `vmin` unit -- the lesser of `vw` and `vh`
-* [work sans font](https://fonts.google.com/specimen/Work+Sans)
 * [fluid typography](https://fluid-typography.netlify.app/)
 
 
