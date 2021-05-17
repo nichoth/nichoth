@@ -6,6 +6,13 @@ $green-color: #e5fff0;
   src: url("/font/YoungSerif-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url("/font/GTWalsheim-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
 
 @function css-function( $function, $values... ) {
 	@return
@@ -740,8 +747,25 @@ body.examples {
     }
   }
 
+  .words-example {
+      cursor: pointer;
+      font-size: 3.4rem;
+      color: transparent;
+      -webkit-text-stroke-width: .1rem;
+      font-family: "GT Walsheim", sans-serif;
+      // -webkit-text-stroke-width: .2rem;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: #00b74f;
+
+      &:hover {
+          -webkit-text-fill-color: #00b74f;
+      }
+
+      text-transform: uppercase;
+  }
+
 }
-// --------------------------------------------------
+// --------------------- /the examples page ---------
 
 
 // ------------------ body.diary-entry -----------
