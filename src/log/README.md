@@ -1132,4 +1132,16 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * https://www.npmjs.com/package/merkle-tree-stream
 
 
+-----------------------------------
+
+## 5-21-2021
+
+* [Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
+* https://github.com/stackblitz/webcontainer-core
+
+
+
+
+
+
 
