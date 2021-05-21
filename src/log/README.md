@@ -1139,6 +1139,9 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * [Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
 * https://github.com/stackblitz/webcontainer-core
 
+------------------------------------
+
+* https://web.dev/file-system-access/
 
 
 
