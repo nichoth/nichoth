@@ -26,6 +26,7 @@
   - [Examples](https://www.netlifycms.org/docs/examples/)
 * [forestry](https://forestry.io/)
 * [offbase](https://offbase.org/)
+* [strapi](https://strapi.io/features)
 
 
 ## dom stuff
