@@ -1151,6 +1151,20 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 
 * https://developers.idx.xyz/learn/welcome/
 
+-------------------------------------
+
+## 5-24-2021
+
+* https://distributed.press/ -- Distributed Press is an open source publishing tool for the World Wide Web and DWeb. It automates publishing and hosting content to the WWW that it seeds to Hypercore and IPFS. We are currently adding new features to deliver verifiable content to decentralized social networks like Aether and Scuttlebutt.
+* [hypha coop](https://hypha.coop/)
+* [RangerMauve/hyperbee-indexed.md](https://gist.github.com/RangerMauve/ae271204054b62d9a649d70b7d218191)
+* [RangerMauve/hyperbeedeebee](https://github.com/RangerMauve/hyperbeedeebee)
+* [Picture perfect image optimization for any web framework](https://bholmes.dev/blog/picture-perfect-image-optimization/)
+* [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/)
+* [Build a SaaS Platform with Next.js, Prisma, Auth0 and Stripe](https://jonmeyers.io/series/build-a-saas-platform-with-next-js-prisma-auth0-and-stripe)
+* [The headless editor framework for web artisans.](https://www.tiptap.dev/)
+
+
 
 
 
