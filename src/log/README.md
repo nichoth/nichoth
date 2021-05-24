@@ -1145,6 +1145,11 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 
 * https://smoothfriend.press/
 
+------------------------------------------
+
+## 5-23-2021
+
+* https://developers.idx.xyz/learn/welcome/
 
 
 
