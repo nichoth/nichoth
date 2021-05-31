@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "serve": "concurrently --kill-others \"ecstatic public\" \"npm run watch-sass\"",
+    "serve": "concurrently --kill-others \"npx ecstatic public\" \"npm run watch-sass\"",
     "start": "npm run build && npm run serve",
     "dev": "concurrently --kill-others \"budo --dir public/ --live\" \"npm run watch-sass\"",
     "watch-sass": "node-sass -w src/style/style.scss -o public",
