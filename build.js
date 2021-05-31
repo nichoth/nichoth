@@ -8,6 +8,7 @@ var after = require('after')
 var devDiary = require('./build-dev-diary')
 var examples = require('./build-examples')
 var detritus = require('./build-detritus')
+var marked = require('marked')
 
 
 examples()
@@ -46,6 +47,26 @@ var hs = hyperstream({
     'body': { class: { append: 'projects-body' } }
 })
 rs.pipe(hs).pipe(ws)
+
+
+fs.readFile(__dirname + '/src/_posts/ssc.md', (err, fileContent) => {
+    if (err) throw err;
+
+    // the ssc page
+    var sscHs = hyperstream({
+        '#content': marked(fileContent.toString()),
+        body: {
+            class: { append: 'ssc' }
+        }
+    })
+
+    mkdirp.sync(__dirname + '/public/ssc')
+    var sscRs = fs.createReadStream(__dirname + '/src/_index.html')
+    var sscOutPath = __dirname + '/public/ssc/index.html'
+    sscRs.pipe(sscHs).pipe(fs.createWriteStream(sscOutPath))
+});
+
+
 
 
 
