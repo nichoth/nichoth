@@ -5,9 +5,9 @@ slug: ssc-server
 
 # ssc-server
 
-* [gh](https://github.com/nichoth/ssc)
-* [gh ssc-server](https://github.com/nichoth/ssc-server)
-* [ssc-server on netlify](https://ssc-server.netlify.app/)
+* [nichoth/ssc](https://github.com/nichoth/ssc)
+* [nichoth/ssc-server](https://github.com/nichoth/ssc-server)
+* [ssc-server.netlify.app](https://ssc-server.netlify.app/)
 
 ## 5-30-2021
 

@@ -3,7 +3,7 @@ title: usurper
 slug: usurper
 ---
 
-[usurper handpoke](http://usurperhandpoke.com/)
+[usurperhandpoke.com](http://usurperhandpoke.com/)
 
 This is a website I designed and built for my roommate's tattoo business.
 
