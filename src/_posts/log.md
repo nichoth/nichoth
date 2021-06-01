@@ -1,3 +1,8 @@
+---
+title: log
+slug: log
+---
+
 A running log of stuff
 
 ## cryptography

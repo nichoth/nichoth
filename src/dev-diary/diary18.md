@@ -1,9 +1,0 @@
-# development diary
-https://github.com/nichoth/eventual-gram-ssb
-#dev-diary
-
-I [implemented](https://github.com/nichoth/eventual-gram-ssb/blob/986330906147327c9f00b104b096a3af2734bf52/src/app.js#L372) the function that [@cel](@f/6sQ6d2CMxRUhLpspgGIulDxDCwYD7DzFzPNr7u5AU=.ed25519) posted and it works great. I started by getting all contact messages and finding the ones i needed, but that took way too long, like 10 seconds. Then I thought I could just as well make a materialized DB view of it ( a flume view?) , but the way in cel's example is totally fast enough. I hadn't seen the `sbot.links` method previously.
-
-I started doing this originally b/c i wanted a place to share photos, but I couldn't bring myself to use instagram. I wanted something like ssb as far as the feeling of using it, but more for photos. Anyway, was reading [this article](https://www.propublica.org/article/climate-change-will-force-a-new-american-migration) about climate change, and realized this is the last generation to experience life in a world without a destructive climate. I had accumulated quite a lot of photos, but things have already changed so much in the last year — covid, fires — they look like they are from a completely different time. Up until very recently this country I guess has been kind of riding the wave of baby boomer prosperity, and you can kind of see it in the photos. They are mostly of people doing weird things or pictures of squalor, but they just aren't great to look at now. There is so much trouble all around… it feels suddenly dated I suppose is the short way of saying it. 
-
-hmm i feel like i had a clear intention when i started writing this, but that's close enough i guess
