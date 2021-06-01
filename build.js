@@ -1,20 +1,10 @@
 var hyperstream = require('hyperstream');
 var fs = require('fs');
-// var ssbWeb = require('ssb-web')
-// var Tags = require('@nichoth/ssb-tags')
 var mkdirp = require('mkdirp')
-// var slugify = require('@sindresorhus/slugify')
-// var after = require('after')
-// var devDiary = require('./build-dev-diary')
-// var examples = require('./build-examples')
-// var detritus = require('./build-detritus')
 var marked = require('marked')
 var path = require('path')
 var glob = require("glob")
 const matter = require('gray-matter');
-
-
-
 
 
 // the /projects page
