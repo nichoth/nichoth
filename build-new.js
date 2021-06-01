@@ -49,7 +49,7 @@ glob(__dirname + '/src/_posts/*', function (err, files) {
                 slug + '/index.html')
             var hs = hyperstream({
                 'body': {
-                    class: { append: slug }
+                    class: { append: slug + ' project' }
                 },
                 '#content': {
                     _appendHtml: marked(parsed.content)
@@ -86,6 +86,7 @@ srcPaths.forEach(function (_path) {
                 _appendHtml: content
             }
         })
+
         rs.pipe(hs).pipe(ws)
     })
 })
