@@ -3,7 +3,12 @@ title: ssc
 slug: ssc
 ---
 
-# development diary
+# ssc
+
+* [gh](https://github.com/nichoth/ssc)
+* [gh ssc-server](https://github.com/nichoth/ssc-server)
+* [ssc-server on netlify](https://ssc-server.netlify.app/)
+
 ## 5-30-2021
 
 It's a classic story... in college you split your degree between photography and computer science, then years later you want to put some pictures on the internet. There is instagram... but it's a little creepy. It's owned by facebook, and it's a free service, which means they are harvesting as much data about you as possible, and there are advertisements. So you do the obvious thing -- you create your own version of instagram. No big deal.

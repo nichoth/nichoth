@@ -177,8 +177,15 @@ body {
     font-size: 1.2rem;
   }
 
+  &.project {
+    max-width: 40rem;
+  }
+
   &.ssc {
-    margin: 1rem;
+    #content {
+      margin: 1rem;
+      line-height: 1.5rem;
+    }
   }
 
   &.flobz {
@@ -201,6 +208,10 @@ body {
     color: #572E08;;
     background-color: beige;
     font-family: YoungSerif, serif;
+
+    .site-nav {
+      margin-bottom: -4rem;
+    }
 
     h1 {
       font-size: 2.5rem;
