@@ -179,6 +179,11 @@ body {
 
   &.project {
     max-width: 40rem;
+    margin: 0 1rem;
+
+    p {
+      line-height: 1.5rem;
+    }
   }
 
   &.ssc {
