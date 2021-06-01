@@ -46,25 +46,10 @@ $green-color: #e5fff0;
 //   overflow-x: hidden;
 // }
 
-body.flobz-content {
-  margin: 1rem;
-
-  #content {
-    margin: 0 auto;
-    max-width: 40rem;
-    margin-left: 2rem;
-  }
-
-  blockquote {
-    padding: 0 1em;
-    color: gray;
-    border-left: .25em solid #dfe2e5;
-  }
-}
 
 
+// the special hr
 body, body.the-log, .development-diary, body.examples {
-  // overflow-x: hidden;
 
   hr {
     margin: 2em 0;
@@ -204,6 +189,22 @@ body {
     font-size: 1.2rem;
   }
 
+  &.flobz {
+    margin: 1rem;
+
+    #content {
+      margin: 0 auto;
+      max-width: 40rem;
+      margin-left: 2rem;
+    }
+
+    blockquote {
+      padding: 0 1em;
+      color: gray;
+      border-left: .25em solid #dfe2e5;
+    }
+  }
+
   &.projects-body {
     color: #572E08;;
     background-color: beige;
@@ -235,7 +236,7 @@ body {
     }
   }
 
-  &.the-list {
+  &.list {
       #content {
           padding: 1em;
       }
