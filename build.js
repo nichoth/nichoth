@@ -63,8 +63,8 @@ srcPaths.forEach(function (_path) {
         if (fileType === '.md') {
             content = marked(file)
         }
-        mkdirp.sync(__dirname + '/public/' + name)
         var name = path.basename(_path, fileType)
+        mkdirp.sync(__dirname + '/public/' + name)
         var rs = fs.createReadStream(__dirname + '/src/_index.html')
         var ws = fs.createWriteStream(__dirname + '/public/' + name +
             '/index.html')
