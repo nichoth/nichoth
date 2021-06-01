@@ -51,8 +51,6 @@ $green-color: #e5fff0;
 // the special hr
 body, body.the-log, .development-diary, body.examples {
 
-  background-color: beige;
-
   hr {
     margin: 2em 0;
     border: none;
@@ -183,6 +181,7 @@ body {
     max-width: 40rem;
     margin: 0 1rem;
     margin-bottom: 6rem;
+    background-color: beige;
 
     p {
       line-height: 1.5rem;

@@ -1,6 +1,6 @@
 ---
-title: ssc-server
-slug: ssc-server
+title: ssc
+slug: ssc
 ---
 
 * [gh](https://github.com/nichoth/ssc)
