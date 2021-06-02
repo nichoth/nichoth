@@ -13,38 +13,16 @@
     "sass": "node-sass src/style/style.scss > public/style.css",
     "deploy": "npm run build && surge public"
   },
-  "dependencies": {
-    "after": "^0.8.1",
-    "canvas-particles": "0.0.8",
-    "catch-links": "^2.0.0",
-    "htm": "^3.0.4",
-    "mutant": "^3.29.0",
-    "preact": "^10.5.5",
-    "randomcolor": "^0.4.3",
-    "routes": "^2.1.0",
-    "scuttle-tag": "^0.5.0",
-    "single-page": "^1.1.0",
-    "ssb-tags": "^0.2.0",
-    "url-join": "0.0.1"
-  },
   "devDependencies": {
-    "@nichoth/ssb-tags": "0.0.8",
-    "browserify": "^16.5.2",
     "concurrently": "^5.3.0",
     "ecstatic": "^4.1.4",
-    "esmify": "^2.1.1",
     "glob": "^7.1.7",
     "gray-matter": "^4.0.3",
     "hyperstream": "^1.2.2",
     "marked": "^1.2.9",
     "mkdirp": "^1.0.4",
     "node-sass": "^4.14.1",
-    "pull-scan": "^1.0.0",
-    "pull-stream": "^3.6.14",
-    "sharp": "^0.27.2",
-    "ssb-web": "^0.0.14",
-    "surge": "^0.21.6",
-    "uglifyify": "^5.0.2"
+    "surge": "^0.21.6"
   },
   "repository": {
     "type": "git",
