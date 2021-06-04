@@ -9,6 +9,7 @@
 * [surge](https://surge.sh/) -- http
 * [netlify](https://www.netlify.com/) -- http
 * [heroku](https://www.heroku.com/)
+* pinata
 
 ## static frameworks
 * [next](https://nextjs.org/)
