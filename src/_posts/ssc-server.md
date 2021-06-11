@@ -45,13 +45,3 @@ Still todo: encrypt things
 
 This is a big thing that's kind of important. Because I don't want to be able to see the pictures that everyone posts. How to do this? May need to switch to a different storage provider. Right now we are using `cloudinary`, which is fine for a demo, but it provides a robust image storage service, with CMS and stuff for the files you upload. What we want is more like just a filesystem, where i can write encrypted things and never know what it is.
 
-
-------------------------------------
-
-
-photo proof that it works on my machine
-
-![image.png](&UvmFA3M9KRB1crkZgCAEqrtGofS1kYdc1/2PkdDKqJU=.sha256)
-
-
- 
