@@ -1,8 +1,7 @@
 ---
 
 title: ssc
-slug: ssc
-#dev-diary
+slug: dev-diary-ssc
 
 ---
 
