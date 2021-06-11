@@ -22,7 +22,7 @@ So naturally you decide to build this gram app using the ssb protocol. However, 
 
 Also, sometime during all this you get run over by a car, and your brain is now a mashed potato. Not good for someone who is a computer programmer, and actually uses their brain regularly. So you spend months in a coma, and then >1 year after that learn how to walk and talk again. It's kind of a scary situation, because no one knows if or when you might get better.
 
-So fast foward like another year and here we are. You had to stop working at your prior job obviously, and now you need another job so you can go back to the bay area and see the sun again. You get rejected from ~3 jobs and 2 bootcamp-style code schools. It's kind of disheartening.
+So fast foward like another year and here we are. You had to stop working at your prior job obviously, and now you need another job so you can go back to the bay area and see the sun again. It's kind of disheartening.
 
 But maybe thats a blessing in disguise. Because now you have time to actually work on your own projects. I'm still waiting for the blessing part, so far it's just a disguise.
 
