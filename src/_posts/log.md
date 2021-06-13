@@ -1169,6 +1169,24 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * [Build a SaaS Platform with Next.js, Prisma, Auth0 and Stripe](https://jonmeyers.io/series/build-a-saas-platform-with-next-js-prisma-auth0-and-stripe)
 * [The headless editor framework for web artisans.](https://www.tiptap.dev/)
 
+--------------------------------------------------
+
+## 6-13-2021
+* [react explanations like you're five](https://github.com/reactwg/react-18/discussions/46#discussioncomment-846650)
+* [The Epicenter of Crime: The Hunt’s Donuts Story](https://www.foundsf.org/index.php?title=The_Epicenter_of_Crime:_The_Hunt%E2%80%99s_Donuts_Story)
+* [DevTools Tips](https://devtoolstips.org/)
+* [The art of Frontend Engineering](https://www.narative.co/articles/the-art-of-frontend-engineering)
+* [http://younglearnersguide.com/](http://younglearnersguide.com/)
+* [https://devjobs.page/](https://devjobs.page/)
+* [https://github.com/alpinejs/alpine](https://github.com/alpinejs/alpine)
+* [https://make8bitart.com/](https://make8bitart.com/)
+* [https://potch.github.io/layers.js/](https://potch.github.io/layers.js/)
+* [https://goshippo.com/](https://goshippo.com/)
+* [CSS! Everyone's favorite programming language](https://changelog.com/jsparty/176)
+* [Meet :has, A Native CSS Parent Selector](https://www.smashingmagazine.com/2021/06/has-native-css-parent-selector/)
+* [astro](https://astro.build/blog/introducing-astro)
+* [Flat Data](https://octo.github.com/projects/flat-data?utm_source=dlvr.it&utm_medium=twitter)
+* [planetscale db](https://www.planetscale.com/)
 
 
 
