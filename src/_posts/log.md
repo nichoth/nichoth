@@ -1179,6 +1179,7 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * [http://younglearnersguide.com/](http://younglearnersguide.com/)
 * [https://devjobs.page/](https://devjobs.page/)
 * [https://github.com/alpinejs/alpine](https://github.com/alpinejs/alpine)
+* [https://alpinejs.dev/](https://alpinejs.dev/)
 * [https://make8bitart.com/](https://make8bitart.com/)
 * [https://potch.github.io/layers.js/](https://potch.github.io/layers.js/)
 * [https://goshippo.com/](https://goshippo.com/)
@@ -1189,6 +1190,14 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * [planetscale db](https://www.planetscale.com/)
 * [frog stuff](https://rainylune.com/)
 
+
+------------------------------------------
+
+## 6-19-2021
+
+* https://artlessdevices.com/
+* https://forum.artlessdevices.com/
+* https://forum.artlessdevices.com/t/the-tyranny-of-openness-what-happened-to-peer-production/169/10
 
 
 
