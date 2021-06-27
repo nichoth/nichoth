@@ -1199,6 +1199,14 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 * https://forum.artlessdevices.com/
 * https://forum.artlessdevices.com/t/the-tyranny-of-openness-what-happened-to-peer-production/169/10
 
+---------------------------------------------
+
+## 6-26-2021
+
+rxdb -- realtime replication with any CouchDB compliant endpoint and also with custom GraphQL endpoints
+
+
+
 
 
 
