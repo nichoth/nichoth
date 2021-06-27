@@ -1207,6 +1207,8 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 
 * [::file-selector-button](https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button)
 * [Variable Aspect Ratio Card With Conic Gradients Meeting Along the Diagonal](https://css-tricks.com/variable-aspect-ratio-card-with-conic-gradients-meeting-along-the-diagonal/)
+* [Auto-Generated Social Media Images](https://css-tricks.com/auto-generated-social-media-images/)
+* [Container Queries in Web Components](https://mxb.dev/blog/container-queries-web-components/)
 
 
 
