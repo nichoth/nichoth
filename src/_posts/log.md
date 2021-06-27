@@ -1206,7 +1206,7 @@ I think signal-hub is the precursor to a direct p2p connection. A value (the url
 rxdb -- realtime replication with any CouchDB compliant endpoint and also with custom GraphQL endpoints
 
 * [::file-selector-button](https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button)
-
+* [Variable Aspect Ratio Card With Conic Gradients Meeting Along the Diagonal](https://css-tricks.com/variable-aspect-ratio-card-with-conic-gradients-meeting-along-the-diagonal/)
 
 
 
