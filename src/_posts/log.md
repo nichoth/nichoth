@@ -1209,6 +1209,7 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 * [Variable Aspect Ratio Card With Conic Gradients Meeting Along the Diagonal](https://css-tricks.com/variable-aspect-ratio-card-with-conic-gradients-meeting-along-the-diagonal/)
 * [Auto-Generated Social Media Images](https://css-tricks.com/auto-generated-social-media-images/)
 * [Container Queries in Web Components](https://mxb.dev/blog/container-queries-web-components/)
+* [Hypercore Protocol Dev Update - Multiwriter/Networking](https://www.youtube.com/watch?v=7S-D4yY1H48)
 
 
 
