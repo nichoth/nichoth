@@ -691,6 +691,43 @@ button {
 }
 
 body.examples {
+  .quote-example {
+    // display: inline-block;
+    display: flex;
+    max-width: 20rem;
+    box-shadow:
+      rgb(248, 106, 0) 0rem 0rem 0px 0.3rem,
+      rgb(255, 255, 255) 0.9rem -0.9rem 0px 0rem,
+      rgb(248, 106, 0) 0.9rem -0.9rem 0px 0.3rem,
+      rgb(255, 255, 255) 1.8rem -1.8rem 0px 0rem,
+      rgb(248, 106, 0) 1.8rem -1.8rem 0px 0.3rem;
+    margin: 2.1rem 2.1rem 0rem 0rem;
+    margin-top: 4rem;
+    padding: 2rem 4rem;
+
+    .quotation-mark-container {
+      width: 3rem;
+      display: inline-block;
+      margin-right: 0.4rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    p.quote-text {
+      background-clip: text;
+      display: inline-block;
+      background: linear-gradient(45deg, rgb(248, 106, 0),
+        rgb(148, 5, 226));
+      // for the demo, so we can see 2 lines
+      max-width: 10rem;
+
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
+
   #content {
     padding: 1em;
   }
