@@ -1211,7 +1211,10 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 * [Container Queries in Web Components](https://mxb.dev/blog/container-queries-web-components/)
 * [Hypercore Protocol Dev Update - Multiwriter/Networking](https://www.youtube.com/watch?v=7S-D4yY1H48)
 
+## 7-1-2021
 
+* [A closer look at the new Glitch starter apps](https://blog.glitch.com/post/a-closer-look-at-the-new-glitch-starter-apps)
+* [Data-driven full stack apps — running instantly!](https://blog.glitch.com/post/data-driven-full-stack-apps-running-instantly)
 
 
 
