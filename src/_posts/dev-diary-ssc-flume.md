@@ -1,6 +1,6 @@
 ---
 title: development diary
-slug: dev-diary-6-7-2021
+slug: dev-diary-ssc-flume
 ---
 
 # development diary
