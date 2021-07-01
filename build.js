@@ -7,7 +7,8 @@ var glob = require("glob")
 const matter = require('gray-matter');
 
 
-// the /projects page
+// ---------- the /projects page ----------------------
+
 mkdirp.sync(__dirname + '/public/projects')
 var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
 var rs = fs.createReadStream(__dirname + '/src/_index.html')
@@ -16,6 +17,22 @@ var hs = hyperstream({
     'body': { class: { append: 'projects-body' } }
 })
 rs.pipe(hs).pipe(ws)
+
+// ---------- /the /projects page ----------------------
+
+
+// --------------- projects/miscellany --------------
+mkdirp.sync(__dirname + '/public/projects/miscellany')
+var ws = fs.createWriteStream(__dirname +
+    '/public/projects/miscellany/index.html')
+var rs = fs.createReadStream(__dirname + '/src/_index.html')
+var hs = hyperstream({
+    '#content': fs.createReadStream(__dirname +
+        '/src/projects/miscellany/index.html'),
+    'body': { class: { append: 'projects-body-miscellany' } }
+})
+rs.pipe(hs).pipe(ws)
+// --------------- /projects/miscellany --------------
 
 
 // write the 'posts'

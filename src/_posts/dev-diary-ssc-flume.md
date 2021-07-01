@@ -1,6 +1,7 @@
 ---
 title: development diary
 slug: dev-diary-ssc-flume
+subDir: miscellany
 ---
 
 # development diary
