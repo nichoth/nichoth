@@ -215,7 +215,7 @@ body {
     }
   }
 
-  &.projects-body, &.projects-body-miscellany {
+  &.projects-body {
     color: #572E08;;
     background-color: beige;
     font-family: YoungSerif, serif;
@@ -232,7 +232,7 @@ body {
       font-weight: normal;
     }
 
-    h2 {
+    h2, h3 {
       font-weight: normal;
     }
 
@@ -801,7 +801,7 @@ body.diary-entry {
   }
 
   > a {
-    h2, p {
+    h2, h3, p {
       color: #572E08;
       transition: color 0.2s;
     }
@@ -818,10 +818,10 @@ body.diary-entry {
 
     &:hover {
       border-color: #1f1002;
-      h2 {
+      h3 {
         text-decoration: underline;
       }
-      h2, p {
+      h3, p {
         color: #1f1002;
       }
       color: #1f1002;
