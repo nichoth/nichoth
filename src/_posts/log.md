@@ -1217,5 +1217,7 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 * [Data-driven full stack apps — running instantly!](https://blog.glitch.com/post/data-driven-full-stack-apps-running-instantly)
 * [https://css-ch-typography.glitch.me/](https://css-ch-typography.glitch.me/)
 
+## 7-6-2021
 
+* [supabase](https://supabase.io/) -- a database thing
 
