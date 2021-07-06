@@ -1220,4 +1220,4 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 ## 7-6-2021
 
 * [supabase](https://supabase.io/) -- a database thing
-
+* [Hack the “Deploy to Netlify” Button Using Environment Variables to Make a Customizable Site Generator](https://css-tricks.com/hack-the-deploy-to-netlify-button-using-environment-variables-to-make-a-customizable-site-generator/)
