@@ -1223,6 +1223,15 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 * [Hack the “Deploy to Netlify” Button Using Environment Variables to Make a Customizable Site Generator](https://css-tricks.com/hack-the-deploy-to-netlify-button-using-environment-variables-to-make-a-customizable-site-generator/)
 * [Saving data to Supabase and getting it back again](https://dev.to/netlify/saving-data-to-supabase-and-getting-it-back-again-59ee)
 
+## 7-7-2021
+
+* [Leyline Core](https://github.com/AljoschaMeyer/leyline-core)
+* [bamboo](https://github.com/aljoschameyer/bamboo)
+* [p2panda](https://p2panda.org/)
+* [p2panda / p2panda](https://github.com/p2panda/p2panda)
+
+
+
 
 
 
