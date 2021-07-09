@@ -1230,6 +1230,9 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 * [p2panda](https://p2panda.org/)
 * [p2panda / p2panda](https://github.com/p2panda/p2panda)
 
+## 7-9-2021
+
+* [tonic, a component framework](https://tonicframework.dev/)
 
 
 
