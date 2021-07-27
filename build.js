@@ -86,6 +86,7 @@ srcPaths.forEach(function (_path) {
         var ws = fs.createWriteStream(__dirname + '/public/' + name +
             '/index.html')
         var hs = hyperstream({
+            'title': { _appendHtml: ' - ' + name },
             'body': {
                 class: { append: name }
             },

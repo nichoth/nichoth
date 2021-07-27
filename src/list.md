@@ -65,6 +65,14 @@
 * https://niceandserious.com/
 * https://www.siteinspire.com/websites/9564-off-season-creative
 
+------------------------------------
+
+* https://childish.studio/ / https://www.typewolf.com/site-of-the-day/studio-childish
+* https://www.dmbrut.com/ / https://www.typewolf.com/site-of-the-day/dm-brut
+
+
+-------------------------------------
+
 ### fonts
 * [noe display](https://www.typewolf.com/noe-display#:~:text=Noe%20Display%20is%20a%20Transitional,four%20weights%20with%20matching%20italics.)
   - seen [here](https://mxb.dev/blog/container-queries-web-components/)
