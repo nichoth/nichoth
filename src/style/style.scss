@@ -829,7 +829,7 @@ body.diary-entry {
   display: grid;
   gap: 3rem;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 450px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 400px), 1fr));
   align-items: stretch;
 
   p {
