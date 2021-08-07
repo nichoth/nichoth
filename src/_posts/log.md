@@ -1234,6 +1234,18 @@ rxdb -- realtime replication with any CouchDB compliant endpoint and also with c
 
 * [tonic, a component framework](https://tonicframework.dev/)
 
+## 8-7-2021
+
+https://www.youtube.com/watch?v=u7_dUCHYaGI
+
+Learning about cryptography.
+
+### Secure games
+
+Hash the move and the salt together, announce the hash; the other player acknowledges the receipt of the hash.
+
+Then you reveal what the hash content is, b/c you can't change the content at this point
+
 
 
 

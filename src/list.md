@@ -128,6 +128,10 @@
 * [textile hub](https://blog.textile.io/announcing-the-textile-protocol-hub/)
 * [zx](https://github.com/google/zx) -- script writing thing
 
+----------------------------------------
+
+* [secure database games](https://www.youtube.com/watch?v=u7_dUCHYaGI) -- the rumplestiltskin story
+
 ------------------------------------------
 
 * [rambly](https://rambly.app/)
