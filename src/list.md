@@ -57,6 +57,7 @@
 * https://vvorkvvorkvvork.com/shop
 * https://56.digital/
 * https://georgefrancis.dev/
+* https://www.shawnbinder.com/
 
 --------------------------------
 
