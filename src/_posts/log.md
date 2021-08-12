@@ -1247,6 +1247,10 @@ Hash the move and the salt together, announce the hash; the other player acknowl
 Then you reveal what the hash content is, b/c you can't change the content at this point
 
 
+## 8-12-2021
+
+* [A future for SQL on the web](https://jlongster.com/future-sql-web)
+
 
 
 
