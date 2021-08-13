@@ -1,5 +1,4 @@
 ---
-title: website -- myco moon
 slug: myco-two
 ---
 

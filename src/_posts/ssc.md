@@ -1,5 +1,4 @@
 ---
-title: ssc
 slug: ssc
 ---
 

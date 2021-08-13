@@ -1,5 +1,4 @@
 ---
-title: ssc-server
 slug: ssc-server
 ---
 

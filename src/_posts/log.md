@@ -1,5 +1,4 @@
 ---
-title: log
 slug: log
 ---
 

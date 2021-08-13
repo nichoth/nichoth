@@ -1,6 +1,5 @@
 ---
 
-title: ssc
 slug: dev-diary-ssc
 
 ---

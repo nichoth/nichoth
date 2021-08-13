@@ -1,6 +1,5 @@
 ---
 
-title: flobz
 slug: flobz
 linkName: preact + ssr + client-side routing
 

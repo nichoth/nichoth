@@ -1,6 +1,5 @@
 ---
 
-title: development diary -- myco moon two
 slug: dev-diary-myco-moon-two
 date: 8-13-2021
 

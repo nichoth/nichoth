@@ -1,5 +1,4 @@
 ---
-title: ssb-web
 slug: ssb-web
 ---
 
