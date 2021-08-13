@@ -35,18 +35,6 @@ $green-color: #e5fff0;
 	@return css-function( 200pxclamp, $values );
 }
 
-// @import "bourbon";
-// @import "neat";
-
-// p {
-//     font-size: 1.2rem;
-// }
-
-// html {
-//   overflow-x: hidden;
-// }
-
-
 
 // the special hr
 body, body.the-log, .development-diary, body.examples {
@@ -165,13 +153,20 @@ body {
     max-width: 20em;
   }
 
-  p.main-writing, p.who-are-you {
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h1.who-are-you {
     margin: 0 auto;
     margin-bottom: 1rem;
     color: #0071BC;
-  }
-
-  p.who-are-you {
     padding: 0 1rem;
     text-align: center;
     font-size: 1.2rem;
