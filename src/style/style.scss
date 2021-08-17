@@ -826,6 +826,7 @@ body.diary-entry {
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 400px), 1fr));
   align-items: stretch;
+  margin-bottom: 2rem;
 
   p {
     font-size: 0.9rem;
@@ -839,7 +840,7 @@ body.diary-entry {
     color: #572E08;
     transition: border 0.2s, color 0.2s;
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     border: 1px solid #572E08;
     &:visited {
       color: initial;
