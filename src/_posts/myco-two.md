@@ -1,5 +1,6 @@
 ---
 slug: myco-two
+type: website
 ---
 
 [version-two--mycomoon.netlify.app/](https://version-two--mycomoon.netlify.app/)

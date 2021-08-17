@@ -1,5 +1,6 @@
 ---
 slug: eventual-gram
+type: miscellany
 ---
 
 # eventual gram

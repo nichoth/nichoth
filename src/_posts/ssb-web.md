@@ -1,5 +1,6 @@
 ---
 slug: ssb-web
+type: miscellany
 ---
 
 [nichoth/ssb-web](https://github.com/nichoth/ssb-web)

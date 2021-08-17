@@ -1,5 +1,6 @@
 ---
 slug: ssc-server
+type: miscellany
 ---
 
 # ssc-server

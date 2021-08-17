@@ -1,5 +1,6 @@
 ---
 slug: myco
+type: website
 ---
 
 [https://mycomoon.com/](https://mycomoon.com/) <br>

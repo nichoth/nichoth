@@ -1,5 +1,6 @@
 ---
 slug: dev-diary-ssc-flume
+type: dev-diary
 ---
 
 # development diary

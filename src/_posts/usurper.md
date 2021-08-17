@@ -1,6 +1,7 @@
 ---
 title: usurper
 slug: usurper
+type: website
 ---
 
 [usurperhandpoke.com](http://usurperhandpoke.com/)

@@ -1,5 +1,6 @@
 ---
 slug: ssc
+type: miscellany
 ---
 
 * [nichoth/ssc](https://github.com/nichoth/ssc)

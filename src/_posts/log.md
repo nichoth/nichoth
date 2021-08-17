@@ -1,5 +1,6 @@
 ---
 slug: log
+type: dev-diary
 ---
 
 A running log of stuff

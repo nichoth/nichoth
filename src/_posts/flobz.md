@@ -2,6 +2,7 @@
 
 slug: flobz
 linkName: preact + ssr + client-side routing
+type: miscellany
 
 ---
 

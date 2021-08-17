@@ -2,6 +2,7 @@
 
 slug: dev-diary-myco-moon-two
 date: 8-13-2021
+type: dev-diary
 
 ---
 
