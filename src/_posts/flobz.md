@@ -3,6 +3,7 @@
 slug: flobz
 linkName: preact + ssr + client-side routing
 type: miscellany
+date: 6-1-2021
 
 ---
 

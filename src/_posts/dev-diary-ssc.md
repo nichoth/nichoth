@@ -2,6 +2,7 @@
 
 slug: dev-diary-ssc
 type: dev-diary
+date: 5-30-2021
 
 ---
 

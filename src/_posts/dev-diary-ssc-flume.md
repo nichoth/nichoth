@@ -1,6 +1,7 @@
 ---
 slug: dev-diary-ssc-flume
 type: dev-diary
+date: Monday, June 7, 2021 12:57 PM PDT
 ---
 
 # development diary
