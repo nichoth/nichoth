@@ -2,7 +2,6 @@
 linkTitle: eventual gram
 linkDesc: I developed a photo-sharing web app using the decentralized protocol secure-scuttlebutt (SSB)
 slug: eventual-gram
-date: 6-1-2021
 type: miscellany
 ---
 

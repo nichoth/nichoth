@@ -4,7 +4,6 @@ slug: flobz
 linkTitle: preact + ssr + client-side routing
 linkDesc: An example demonstrating preact, server-side rendering, & client-side routing
 type: miscellany
-date: 6-1-2021
 
 ---
 

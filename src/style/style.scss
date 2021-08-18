@@ -210,9 +210,14 @@ body {
     font-family: YoungSerif, serif;
 
     .project {
+      // h3 {
+      //   margin-top: 0;
+      // }
+
       time {
         display: block;
         text-align: left;
+        opacity: 0.6;
       }
     }
 

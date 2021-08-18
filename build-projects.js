@@ -53,9 +53,13 @@ function buildProjects () {
 
         function createLinkString (list) {
             return list.reduce((acc, file) => {
+                // console.log('**file', file)
                 acc += `<a href="${file.slug}">
                     <div class="project ${file.slug}">
-                        <time datetime="2018-07-07">July 7</time>
+                        ${file.date ?
+                            `<time datetime="2018-07-07">${file.date}</time>` :
+                            ''
+                        }
                         <h3>${file.linkTitle}</h3>
                         <p>${file.linkDesc}</p>
                     </div>
@@ -74,10 +78,10 @@ function buildProjects () {
                 if (err) return next(err)
                 var parsed = matter(file)
                 var fm = parsed.data
-                var { slug, type, linkTitle, linkDesc } = fm
+                var { date, slug, type, linkTitle, linkDesc } = fm
                 // end up with an object of
                 // { typeA: [{ slug, linkTitle, linkDesc }] }
-                files[type].push({ slug, linkTitle, linkDesc })
+                files[type].push({ date, slug, linkTitle, linkDesc })
                 next(null, files)
             })
         })
