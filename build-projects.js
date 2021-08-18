@@ -28,6 +28,7 @@ function buildProjects () {
             if (err) throw err
             var hs = hyperstream({
                 '.projects.dev-diary': {
+                    // need to sort this array
                     _appendHtml: createLinkString(files['dev-diary'])
                 },
                 '.projects.websites': {
@@ -53,10 +54,11 @@ function buildProjects () {
 
         function createLinkString (list) {
             return list.reduce((acc, file) => {
+                var { date } = file
                 acc += `<a href="${file.slug}">
                     <div class="project ${file.slug}">
                         ${file.date ?
-                            `<time datetime="2018-07-07">${file.date}</time>` :
+                            `<time datetime="${date}">${date}</time>` :
                             ''
                         }
                         <h3>${file.linkTitle}</h3>
@@ -80,7 +82,10 @@ function buildProjects () {
                 var { date, slug, type, linkTitle, linkDesc } = fm
                 // end up with an object of
                 // { typeA: [{ slug, linkTitle, linkDesc }] }
+
+                // should have a date as a sortable string
                 files[type].push({ date, slug, linkTitle, linkDesc })
+
                 next(null, files)
             })
         })
