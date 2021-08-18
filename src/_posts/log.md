@@ -1,6 +1,8 @@
 ---
 slug: log
 type: dev-diary
+linkTitle: log
+linkDesc: A daily log of notes
 ---
 
 A running log of stuff

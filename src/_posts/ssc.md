@@ -1,4 +1,6 @@
 ---
+linkTitle: SSC
+linkDesc: This is several in-memory functions for working with a merkle-dag, a completely generic API for a merkle-list. Thus to better "separate policy from mechanism"
 slug: ssc
 type: miscellany
 ---

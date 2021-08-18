@@ -2,6 +2,8 @@
 title: usurper
 slug: usurper
 type: website
+linkTitle: Usurper Hand Poke
+linkDesc: I developed and designed my roommate's tattoo website
 ---
 
 [usurperhandpoke.com](http://usurperhandpoke.com/)
