@@ -1,4 +1,6 @@
 ---
+linkTitle: Myco moon, version two
+linkDesc: Version two of the mushroom website
 slug: myco-two
 type: website
 date: 8-13-2021

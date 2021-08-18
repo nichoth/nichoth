@@ -111,8 +111,6 @@ body.detritus-single-image {
   }
 }
 
-
-
 .content-detritus {
   padding: 1em;
   display: grid;
@@ -862,32 +860,6 @@ body.diary-entry {
 }
 
 
-// obsolete stuff ------------------------------------------
-
-.project-section {
-  display: flex;
-  font-size: 2ch;
-  align-items: center;
-
-  & > a {
-    margin-right: 2rem;
-    img {
-      width: 100px;
-    }
-  }
-}
-
-.main-section {
-  padding: 1em;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-.websites {
-  border-bottom: 1px solid #000;
-}
-
-// -----------------------------------------
 
 
 .dev-diary {

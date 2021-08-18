@@ -1,4 +1,6 @@
 ---
+linkTitle: ssc-flume
+linkDesc: Writing about ssc, merkle-DAGs & databases
 slug: dev-diary-ssc-flume
 type: dev-diary
 date: Monday, June 7, 2021 12:57 PM PDT

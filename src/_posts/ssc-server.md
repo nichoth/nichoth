@@ -1,6 +1,8 @@
 ---
 slug: ssc-server
 type: miscellany
+linkTitle: ssc server
+linkDesc: a decentralized server for images
 ---
 
 # ssc-server
