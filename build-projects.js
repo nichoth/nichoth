@@ -55,6 +55,7 @@ function buildProjects () {
             return list.reduce((acc, file) => {
                 acc += `<a href="${file.slug}">
                     <div class="project ${file.slug}">
+                        <time datetime="2018-07-07">July 7</time>
                         <h3>${file.linkTitle}</h3>
                         <p>${file.linkDesc}</p>
                     </div>
