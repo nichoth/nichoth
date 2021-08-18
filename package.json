@@ -21,7 +21,6 @@
     "gray-matter": "^4.0.3",
     "hyperstream": "^1.2.2",
     "lodash": "^4.17.21",
-    "lodash.sortby": "^4.7.0",
     "luxon": "^2.0.2",
     "marked": "^1.2.9",
     "mkdirp": "^1.0.4",
