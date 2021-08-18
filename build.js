@@ -35,3 +35,4 @@ arr.forEach(function (_path) {
         rs.pipe(hs).pipe(ws)
     })
 })
+

@@ -182,33 +182,5 @@ node_modules
 *.css.map
 
 bundle.js
+public/*
 
-public/detritus/
-public/software/
-public/img/file*
-public/posts/
-
-src/tags.json
-
-public/dev-diary/
-public/animate.js
-public/examples/
-public/animation/
-.dat/
-public/notebooks/20210107_162437 public/notebooks/20210107_162519 public/notebooks/20210107_162733 public/notebooks/20210107_162821 public/notebooks/20210107_162831 public/notebooks/20210107_172433 public/notebooks/20210107_172524 public/notebooks/index.html
-public/img/notebooks/20210107_162437.jpg public/img/notebooks/20210107_162519.jpg public/img/notebooks/20210107_162733.jpg public/img/notebooks/20210107_162821.jpg public/img/notebooks/20210107_162831.jpg public/img/notebooks/20210107_172433.jpg public/img/notebooks/20210107_172524.jpg
-
-public/img/notebooks/20210107_162437.jpg public/img/notebooks/20210107_162519.jpg public/img/notebooks/20210107_162733.jpg public/img/notebooks/20210107_162821.jpg public/img/notebooks/20210107_162831.jpg public/img/notebooks/20210107_172433.jpg public/img/notebooks/20210107_172524.jpg
-public/notebooks/
-public/img/notebooks/20210107_162437.jpg public/img/notebooks/20210107_162519.jpg public/img/notebooks/20210107_162733.jpg public/img/notebooks/20210107_162821.jpg public/img/notebooks/20210107_162831.jpg public/img/notebooks/20210107_172433.jpg public/img/notebooks/20210107_172524.jpg
-public/img/notebooks/
-
-public/log/
-
-public/list/
-public/index.html
-public/stuff/
-public/projects/
-public/flobz/
-public/img/
-public/favicon.ico
