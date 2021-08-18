@@ -46,9 +46,7 @@ glob(__dirname + '/src/_posts/*', function (err, fileNames) {
             'body': {
                 class: { append: 'projects-body' }
             },
-            '#content': {
-                _appendHtml: projectPageStream
-            }
+            '#content': projectPageStream
         })
         rs.pipe(fileHs).pipe(ws)
     }
