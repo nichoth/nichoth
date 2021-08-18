@@ -22,8 +22,6 @@ function buildProjects () {
         function writeProjectsHtml (err) {
             var projectRs = fs.createReadStream(__dirname + '/src/_projects.html')
 
-            console.log('**files', files)
-
             // now we have all the files
             // this gets called once
 
@@ -48,9 +46,7 @@ function buildProjects () {
                 'body': {
                     class: { append: 'projects-body' }
                 },
-                '#content': {
-                    _appendHtml: projectPageStream
-                }
+                '#content': projectPageStream
             })
             rs.pipe(fileHs).pipe(ws)
         }
