@@ -3,7 +3,6 @@ linkTitle: Myco moon
 linkDesc: I developed this design from a company selling mushroom products
 slug: myco
 type: website
-date: Friday, June 25, 2021 10:44 PM PDT
 ---
 
 [https://mycomoon.com/](https://mycomoon.com/) <br>
