@@ -42,8 +42,6 @@ glob(__dirname + '/src/_posts/*', function (err, fileNames) {
         var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
         var projectPageStream = projectRs.pipe(hs)
 
-        // need to pipe the projects content into a generic index html
-        // then into the final file
         var fileHs = hyperstream({
             'body': {
                 class: { append: 'projects-body' }
@@ -57,7 +55,6 @@ glob(__dirname + '/src/_posts/*', function (err, fileNames) {
 
     function createLinkString (list) {
         return list.reduce((acc, file) => {
-            console.log('**file**', file)
             acc += `<a href="${file.slug}">
                     <div class="project ${file.slug}">
                         <h3>${file.linkTitle}</h3>
@@ -79,7 +76,6 @@ glob(__dirname + '/src/_posts/*', function (err, fileNames) {
             var parsed = matter(file)
             var fm = parsed.data
             var { slug, type, linkTitle, linkDesc } = fm
-            console.log('**stuff', linkTitle, linkDesc)
             // end up with an object of
             // { typeA: [{ slug, linkTitle, linkDesc }] }
             files[type].push({ slug, linkTitle, linkDesc })
@@ -99,7 +95,6 @@ glob(__dirname + '/src/_posts/*', function (err, files) {
 
     files.forEach(function (filePath) {
         // filePath is the full path
-        console.log('file path', filePath)
         fs.readFile(filePath, 'utf8', (err, file) => {
             if (err) throw err
             var parsed = matter(file)
