@@ -61,8 +61,9 @@ function buildProjects () {
 
             var sorted = _.orderBy(list, ['date'], ['desc'])
             return sorted.reduce((acc, file) => {
+                console.log('**file**', file)
                 var { date } = file
-                acc += `<a href="${file.slug}">
+                acc += `<a href="/projects/${file.slug}">
                     <div class="project ${file.slug}">
                         ${date ?
                             `<time datetime="${date}">${date}</time>` :
