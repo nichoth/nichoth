@@ -53,7 +53,6 @@ function buildProjects () {
 
         function createLinkString (list) {
             return list.reduce((acc, file) => {
-                // console.log('**file', file)
                 acc += `<a href="${file.slug}">
                     <div class="project ${file.slug}">
                         ${file.date ?
