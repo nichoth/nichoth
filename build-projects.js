@@ -5,6 +5,10 @@ var marked = require('marked')
 var glob = require("glob")
 const matter = require('gray-matter')
 var after = require('after')
+var _ = {
+    // sortBy: require('lodash.sortby')
+    orderBy: require('lodash/orderBy')
+}
 
 
 function buildProjects () {
@@ -53,11 +57,14 @@ function buildProjects () {
         }
 
         function createLinkString (list) {
-            return list.reduce((acc, file) => {
+            var sorted = _.orderBy(list, ['date'], ['asc'])
+            // console.log('sorted', sorted)
+            return sorted.reduce((acc, file) => {
                 var { date } = file
+                // console.log('**date**', Date.parse(date), date)
                 acc += `<a href="${file.slug}">
                     <div class="project ${file.slug}">
-                        ${file.date ?
+                        ${date ?
                             `<time datetime="${date}">${date}</time>` :
                             ''
                         }
