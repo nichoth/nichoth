@@ -222,6 +222,8 @@ db.createReadStream({
 * [kappa-core](https://github.com/kappa-db/kappa-core)
 * https://github.com/kappa-db/kappa-core/blob/master/intro.md
 * [planetscale db](https://www.planetscale.com/) -- "The database for developers"
+* [supabase](https://supabase.io/) -- The Open Source
+Firebase Alternative
 
 ----------------------------------
 
