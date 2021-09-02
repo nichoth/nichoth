@@ -59,7 +59,7 @@ function buildProjects () {
 
             // in here, need to determine the order of the links
 
-            var sorted = _.orderBy(list, ['date'], ['desc'])
+            var sorted = _.orderBy(list, ['date'], ['asc'])
             return sorted.reduce((acc, file) => {
                 console.log('**file**', file)
                 var { date } = file
