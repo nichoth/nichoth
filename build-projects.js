@@ -59,9 +59,15 @@ function buildProjects () {
 
             // in here, need to determine the order of the links
 
-            var sorted = _.orderBy(list, ['date'], ['asc'])
+            var sorted = _.orderBy(
+                list,
+                fm => {
+                    return new Date(fm.date)
+                },
+                ['desc']
+            )
+
             return sorted.reduce((acc, file) => {
-                console.log('**file**', file)
                 var { date } = file
                 acc += `<a href="/projects/${file.slug}">
                     <div class="project ${file.slug}">
