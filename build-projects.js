@@ -64,7 +64,7 @@ function buildProjects () {
                 fm => {
                     return new Date(fm.date)
                 },
-                ['desc']
+                ['asc']
             )
 
             return sorted.reduce((acc, file) => {

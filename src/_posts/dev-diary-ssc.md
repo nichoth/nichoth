@@ -10,6 +10,9 @@ date: 5-30-2021
 
 An overly long description of what I've been doing for the last 2 years, written in the 2nd person for some reason.
 
+* [nichoth/ssc-server](https://github.com/nichoth/ssc-server)
+* [nichoth/ssc](https://github.com/nichoth/ssc)
+
 ------------------------------
 
 # development diary
