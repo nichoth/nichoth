@@ -32,6 +32,9 @@ So fast foward like another year and here we are. You had to stop working at you
 
 But maybe thats a blessing in disguise. Because now you have time to actually work on your own projects. I'm still waiting for the blessing part, so far it's just a disguise.
 
+
+### thin clients
+
 You've been working on ssb-related things for a while, but it would be cool to make ssb but working in a browser. You know, so that your browser is once again a 'thin client', just *browsing* data that is on a server. The servers then are the actual 'p2p' network. They all gossip amongst each other, and that makes a lot of things easier -- no NAT hole-punching or pub servers. No gigantic `.ssb` folder taking up space on your machine.
 
 This is the very long, and very *ssb*, way of announcing [ssc](https://github.com/nichoth/ssc-server), a new, ssb inspired project. This is *less radical* than ssb. It has traditional client-server structure. I say it's ssb inspired because the data model is taken directly from ssb.
