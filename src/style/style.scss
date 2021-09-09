@@ -54,6 +54,10 @@ body, body.the-log, .development-diary, body.examples {
     }
   }
 
+  #content {
+    padding: 0 1rem;
+  }
+
 }
 
 body.the-log {
@@ -165,6 +169,7 @@ body {
       background-color: #f9f9f9;
       border-radius: 5px;
       border: 1px solid #330a0a4d;
+      overflow: scroll;
   }
 
   h1.who-are-you {
