@@ -1,7 +1,7 @@
 ---
 
 linkTitle: typescript
-linkDesc: Making websites
+linkDesc: Finally trying typescript
 slug: dev-diary-ts
 date: 9-8-2021
 type: dev-diary
