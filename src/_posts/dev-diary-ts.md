@@ -1,6 +1,6 @@
 ---
 
-linkTitle: development diary — typescript
+linkTitle: typescript
 linkDesc: Making websites
 slug: dev-diary-ts
 date: 9-8-2021
