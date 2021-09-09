@@ -357,21 +357,17 @@ a {
 .main-text {
   font-weight: 300;
   font-size: 1.8rem;
-  font-size: 2rem;
-  margin: 2rem 1rem;
+  font-size: 6vmin;
   margin-top: 3rem;
   list-style: none;
   margin-bottom: 4rem;
-
   padding: 0;
 
-  // display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(css-min(100%, 460px), 1fr));
   display: flex;
   justify-content: space-between;
 
   li {
-      margin-bottom: 0.5em;
+      margin: 0 1rem;
 
       // not sure what the interval is for the colors, but this is fine
       a {
