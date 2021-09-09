@@ -117,14 +117,12 @@ body.detritus-single-image {
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 400px;
-  // grid-template-rows: auto;
-  // grid-template-rows: repeat(auto-fill, 400px);
   align-items: stretch;
 }
 
 .post {
-  // height: 20vh;
   height: 88%;
+
   a {
     display: block;
     height: 100%;
@@ -157,7 +155,9 @@ body {
   }
 
   p {
+    // font-family: 'IBM Plex Serif', serif;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
   }
 
   pre {
@@ -187,7 +187,7 @@ body {
     }
 
     p {
-      line-height: 2rem;
+      line-height: 2.2rem;
 
       img {
           width: 100%;
@@ -217,10 +217,6 @@ body {
     font-family: YoungSerif, serif;
 
     .project {
-      // h3 {
-      //   margin-top: 0;
-      // }
-
       time {
         display: block;
         text-align: left;
