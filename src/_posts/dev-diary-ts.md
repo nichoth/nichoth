@@ -25,7 +25,7 @@ I added the fields `main` and `types` to package.json. This tells npm/node where
 "types": "dist/index.d.ts",
 ```
 
-Add `build` and `propublish` scripts to package.json:
+Add `build` and `prepublish` scripts to package.json:
 
 ```
 "scripts": {
@@ -69,7 +69,7 @@ dist/*
 
 ### tests
 
-Thats all good. So how do you run this code? You have to install an additional npm dependency, `ts-node`: `npm i -D ts-node`. Then you run a test file with this command:
+Thats all good. So how do you run this code? You have to install an additional npm dependency, `ts-node` -- `npm i -D ts-node`. Then you run a test file with this command:
 
 ```
 "test": "ts-node node_modules/tape/bin/tape test/index.ts | tap-spec"
