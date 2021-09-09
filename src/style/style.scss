@@ -357,7 +357,7 @@ a {
 .main-text {
   font-weight: 300;
   font-size: 1.8rem;
-  font-size: 6vmin;
+  font-size: clamp(1.4rem, 5vmin, 2rem);
   margin-top: 3rem;
   list-style: none;
   margin-bottom: 4rem;
