@@ -6,7 +6,7 @@ type: website
 ---
 
 [https://mycomoon.com/](https://mycomoon.com/) <br>
-[chec--mycomoon.netlify.app/](https://chec--mycomoon.netlify.app/)
+[https://chec--mycomoon.netlify.app/](https://chec--mycomoon.netlify.app/)
 
 # development diary
 
