@@ -16,7 +16,7 @@ type: website
 
 the official live version is just a placeholder -- [mycomoon.com](https://mycomoon.com/)
 
-This is the development version -- [https://chec--mycomoon.netlify.app/](chec--mycomoon.netlify.app)
+This is the development version -- [chec--mycomoon.netlify.app](https://chec--mycomoon.netlify.app/)
 
 My friend is starting a business that will sell medicinal mushroom products, things like lion's mane tinctures and what have you. The focus being more on medicinal, government sanctioned mushrooms vs recreational ones.
 
