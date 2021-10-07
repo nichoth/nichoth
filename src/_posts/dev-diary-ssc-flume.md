@@ -8,6 +8,8 @@ date: 6-7-2021
 
 # development diary
 
+[ssc-flume](https://github.com/nichoth/ssc-flume)
+
 ## ssc-flume
 Good news. I got ssc working with muxrpc and flume-DB. What this means in regular-ish english -- I made an [example repo](https://github.com/nichoth/ssc-flume/blob/main/example.js) that uses `ssb-server` (the server-side ssb-ish merkle-DAG) with `muxrpc`, but using a custom API (not the normal ssb api). The original `muxrpc` developers made things modular enough that you can pick and choose which parts to use. it's not just a baked-in part of ssb. So that's nice.
 
