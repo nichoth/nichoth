@@ -17,7 +17,8 @@ Use [nvm](https://github.com/nvm-sh/nvm) to install the latest version of `node`
 
 I use [npm](https://www.npmjs.com/) as a package manager (vs yarn). I started using npm when I started with node, and I've never found a reason to switch package managers.
 
-`npm` is also what I use to organize/orchestrate different scripts. This is an example of `scripts` in package.json:
+`npm` is also what I use to organize/orchestrate different scripts. I remember reading [this article](https://github.com/substack/blog/blob/master/npm_run.markdown) about task automation back when it still existed in blog format. This is an example of `scripts` in package.json:
+
 ```
   "scripts": {
     "start": "npm run build && concurrently --kill-others \"npm run watch-sass\" \"npm run watch-js\" \"netlify dev --port=8888\"",
