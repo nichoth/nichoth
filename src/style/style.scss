@@ -1,5 +1,6 @@
 $iconColor: #2F596D;
 $green-color: #e5fff0;
+$bgc: #f7f7eb;
 
 @font-face {
   font-family: 'YoungSerif';
@@ -202,7 +203,7 @@ body {
   &.project {
     margin: 0 auto;
     margin-bottom: 6rem;
-    background-color: beige;
+    background-color: $bgc;
     font-family: 'Raleway', sans-serif;
     // font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
     //     Helvetica,Arial,sans-serif,
@@ -240,7 +241,7 @@ body {
 
   &.projects-body {
     color: #572E08;;
-    background-color: beige;
+    background-color: $bgc;
     font-family: YoungSerif, serif;
 
     .project {
@@ -794,7 +795,7 @@ body.examples {
 // ------------------ body.diary-entry -----------
 
 body.diary-entry {
-  background-color: beige;
+  background-color: $bgc;
 
   #content {
     padding: 1em;
