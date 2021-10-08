@@ -120,7 +120,7 @@ function buildProjects () {
                 if (err) throw err
                 var parsed = matter(file)
                 var fm = parsed.data
-                var { slug } = fm
+                var { slug, type } = fm
 
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
@@ -130,7 +130,7 @@ function buildProjects () {
                     slug + '/index.html')
                 var hs = hyperstream({
                     'body': {
-                        class: { append: slug + ' project' }
+                        class: { append: slug + ' project' +  ` ${type}`}
                     },
                     '#content': {
                         _appendHtml: marked(parsed.content)

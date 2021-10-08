@@ -151,8 +151,12 @@ body.detritus-single-image {
 
 body {
   margin: 0;
-  // font-family: YoungSerif, serif;
   font-family: 'Raleway', sans-serif;
+
+  h1, h2, h3, h4 {
+    font-family: YoungSerif, serif;
+    font-weight: normal;
+  }
 
   img.thumbnail {
     max-width: 20em;
@@ -184,6 +188,15 @@ body {
     padding: 0 1rem;
     text-align: center;
     font-size: 1.2rem;
+  }
+
+  &.miscellany {
+    ul {
+      line-height: 1.5rem!important;
+    }
+    p {
+      line-height: 1.5rem!important;
+    }
   }
 
   &.project {
@@ -243,14 +256,12 @@ body {
       text-align: center;
       margin-top: 0;
       margin-bottom: 2rem;
-      font-weight: normal;
-      font-family: YoungSerif, serif;
     }
 
-    h2, h3 {
-      font-family: YoungSerif, serif;
-      font-weight: normal;
-    }
+    // h2, h3 {
+    //   font-family: YoungSerif, serif;
+    //   font-weight: normal;
+    // }
 
     #content {
       padding: 3rem;
