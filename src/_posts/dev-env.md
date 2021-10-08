@@ -2,7 +2,7 @@
 
 linkTitle: dev environment
 linkDesc: Documenting how I do things
-slug: dnv-env
+slug: dev-env
 date: 10-7-2021
 type: miscellany
 

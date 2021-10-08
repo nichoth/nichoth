@@ -54,6 +54,11 @@ body, body.the-log, .development-diary, body.examples {
     }
   }
 
+  h2, h3 {
+    font-family: YoungSerif, serif;
+    font-weight: normal;
+  }
+
   #content {
     padding: 0 1rem;
   }
@@ -146,7 +151,8 @@ body.detritus-single-image {
 
 body {
   margin: 0;
-  font-family: YoungSerif, serif;
+  // font-family: YoungSerif, serif;
+  font-family: 'Raleway', sans-serif;
 
   img.thumbnail {
     max-width: 20em;
@@ -158,10 +164,10 @@ body {
     }
   }
 
-  p {
-    // font-family: 'IBM Plex Serif', serif;
-    font-family: 'Raleway', sans-serif;
-  }
+  // p {
+  //   // font-family: 'IBM Plex Serif', serif;
+  //   // font-family: 'Raleway', sans-serif;
+  // }
 
   pre {
       padding: 1rem;
@@ -238,9 +244,11 @@ body {
       margin-top: 0;
       margin-bottom: 2rem;
       font-weight: normal;
+      font-family: YoungSerif, serif;
     }
 
     h2, h3 {
+      font-family: YoungSerif, serif;
       font-weight: normal;
     }
 
