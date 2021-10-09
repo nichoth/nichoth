@@ -32,7 +32,7 @@ Note the script `cypress-test`. Run it with `$ npm run cypress-test`. This uses 
 
 
 ### tools
-For unit tests use [tape](https://www.npmjs.com/package/tape). For testing in a browser enironment [tape-run](https://www.npmjs.com/package/tape-run). It will start an electron process (for a browser enironment), but log standard tap output to stdout in the terminal, and return a pass/fail exit code.
+For unit tests use [tape](https://www.npmjs.com/package/tape). For testing in a browser enironment [tape-run](https://www.npmjs.com/package/tape-run). Here is [an example](https://github.com/nichoth/keystore-idb/blob/e48c81cb7368e5131a13735d18eb1d9465d081bf/package.json#L56) of a test script in package.json. It will start an electron process (for a browser enironment), but log standard tap output to stdout in the terminal, and return a pass/fail exit code.
 
 For end-to-end testing I like [cypress](https://www.cypress.io/). It will start a GUI application for visually running tests, which is good because this is an *e2e* test -- part of it is that you want to test the GUI.
 
