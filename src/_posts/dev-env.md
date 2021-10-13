@@ -58,3 +58,188 @@ You want to clone the forked version, not the original. `hub` by default will cl
 $ hub clone repo-name .
 ```
 
+
+-----------------------------------------------
+
+
+# dev how to
+Notes on a javascript development process
+
+> It’s crucial to have a setup, so that, at any given moment, when you get an idea, you have the place and the tools to make it happen.
+
+&ndash; David Lynch, *Catching the Big Fish*
+
+* [npm](#npm)
+  * [publish a private package](#publish-a-private-package)
+  * [publish a compiled library](#publish-a-compiled-library)
+  * [use private npm modules with a CI server](#use-private-npm-modules-with-a-ci-server)
+  * [semantic versions](#semantic-versions)
+* [invintus systems](#invintus-systems)
+* [environment variables](#environment-variables)
+* [cypress](#cypress)
+
+
+## npm
+You can use npm to privately host our internal dependencies. This allows you to use the same workflow with both private and public libraries.
+
+### publish a private package
+
+1. **Use your org name as the scope in the `name` field:**
+```js
+{
+    "name": "@org/project-name"
+}
+```
+
+If you use `npm init` to initialize your packages, you can pass in the scope like this:
+
+```
+npm init --scope=<your_scope>
+```
+
+2. **Publish to npm. By default, scoped packages are published as private.**
+```
+npm publish
+```
+
+If you want to make the package **public**, publish it with `--access=public`
+```
+npm publish --access=public
+```
+
+#### read more
+* https://docs.npmjs.com/private-modules/intro
+
+
+### use private npm modules with a CI server
+An automated build service will need a token to authenticate with npm. Create a `.npmrc` file that exposes the token as a variable. An overview:
+
+* Create a new auth token
+* Set up a project-specific .npmrc file.
+* Configure the ci/deployment server to provide the auth token
+* Configure your personal environment to provide a different auth token
+
+See https://docs.npmjs.com/private-modules/ci-server-config
+
+
+--------------------------------------
+
+
+### publish a compiled library
+
+We want to ignore the compiled code in git, but publish the built code to npm so that users don't have to build it themselves. Add the build script as a `prepare` hook in package.json. This will run the build step before a new version is published to npm.
+
+`.gitignore`:
+```
+dist
+```
+
+`package.json`:
+```js
+{
+    "main": "dist/index.js",
+    "scripts": {
+        "prepare": "npm run build > dist/index.js"
+    }
+}
+```
+
+**If the build depends on the host environment**, the correct place to build the code is in the `postinstall` hook, because it will run on the *consumer's* machine.
+
+Read more https://docs.npmjs.com/misc/scripts
+
+-----------------------------------------------------
+
+### semantic versions
+Version numbers are meaningful to npm. By default npm will install the latest non-breaking change, which means it's important to increment the major version number on any change that breaks the API. 
+
+A caveat is version numbers starting with `0`, which are considered to be experimental. Any version number change to an experimental package is potentially a breaking change. When you install a package with an experimental version number, npm will pin it to an exact number, instead of using the default `^` operator.
+
+#### read more
+* https://docs.npmjs.com/getting-started/semantic-versioning
+* https://semver.org/
+* [We fail to follow SemVer – and why it needn’t matter](https://www.youtube.com/watch?v=tc2UgG5L7WM)
+
+
+-----------------------------------------------
+
+
+## environment variables
+[dotenv-safe](https://www.npmjs.com/package/dotenv-safe)
+
+Create a `.env.example` file that is commited with the code, and also a `.env` file that is ignored. 
+
+-------------------------------------
+
+[env-cmd](https://github.com/toddbluhm/env-cmd)
+Use both CLI env vars, and also a .env file:
+
+```js
+{
+    "build": "env-cmd --no-override .env browserify -t envify src/index.js > dist/bundle.js"
+}
+```
+
+## cypress
+
+A quick start with [cypress](https://www.cypress.io/)
+
+### install
+
+    $ npm i -D cypress
+
+This will add a folder `cypress` and a file `cypress.json` to the project.
+
+### add a script to package.json
+This is how you open the gui test runner, `cypress open`.
+
+    {
+        "cypress": "cypress open"
+    }
+
+### configure eslint
+Add a .eslintrc into the cypress folder. See https://github.com/cypress-io/eslint-plugin-cypress
+
+### write tests
+Tests go in `cypress/integration`. They look like this
+
+```js
+describe('My First Test', function() {
+    it('clicking "type" navigates to a new url', function() {
+        cy.visit('https://example.cypress.io')
+        cy.contains('type').click()
+        cy.url().should('include', '/commands/actions')
+    })
+})
+```
+
+See https://docs.cypress.io/guides/getting-started/writing-your-first-test.html
+
+### CI
+We want to be able to automate these tests, not just run them in a gui. We need a script that will start our dev server, then run the tests, then close both.
+
+Create a wrapper that runs `budo` from CLI, then runs the tests and stops the server when finished:
+
+```js
+// cypress/scripts/ci.js
+var cypress = require('cypress')
+var Budo = require('budo')
+
+var budo = Budo.cli(process.argv.slice(2), {
+    port: process.env.PORT || 8000
+}).on('connect', function () {
+    cypress.run()
+        .then(res => {
+            budo.close()
+        })
+})
+```
+
+This should be called as an npm script like the others, but using our file instead of `budo`:
+
+```
+{
+    "cypress-ci": "node ./cypress/scripts/ci.js src/index.js:bundle.js --pushstate --dir=public -- -t babelify -g aliasify -t [ envify --NODE_ENV development ] -dv"
+}
+```
+
