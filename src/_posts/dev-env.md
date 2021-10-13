@@ -74,7 +74,6 @@ Notes on a javascript development process
   * [publish a compiled library](#publish-a-compiled-library)
   * [use private npm modules with a CI server](#use-private-npm-modules-with-a-ci-server)
   * [semantic versions](#semantic-versions)
-* [invintus systems](#invintus-systems)
 * [environment variables](#environment-variables)
 * [cypress](#cypress)
 
