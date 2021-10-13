@@ -1,6 +1,7 @@
 $iconColor: #2F596D;
 $green-color: #e5fff0;
 $bgc: #f7f7eb;
+$muted-text: #3b4146;
 
 @font-face {
   font-family: 'YoungSerif';
@@ -154,6 +155,13 @@ body {
   margin: 0;
   font-family: YoungSerif, serif;
 
+   blockquote {
+     color: $muted-text;
+     border-left: 2px solid #a7aeb5;
+     padding: 0 1rem;
+     margin: 0;
+  }
+
   h1, h2, h3, h4 {
     font-family: YoungSerif, serif;
     font-weight: normal;
@@ -169,10 +177,11 @@ body {
     }
   }
 
-  // p {
-  //   // font-family: 'IBM Plex Serif', serif;
-  //   // font-family: 'Raleway', sans-serif;
-  // }
+  p {
+      font-size: 1.1rem;
+    // font-family: 'IBM Plex Serif', serif;
+    // font-family: 'Raleway', sans-serif;
+  }
 
   pre {
       padding: 1rem;
@@ -193,10 +202,10 @@ body {
 
   &.miscellany {
     ul {
-      line-height: 1.5rem!important;
+      line-height: 1.6rem!important;
     }
     p {
-      line-height: 1.5rem!important;
+      line-height: 1.6rem!important;
     }
   }
 
@@ -215,8 +224,6 @@ body {
     }
 
     p {
-      line-height: 2rem;
-
       img {
           width: 100%;
       }
