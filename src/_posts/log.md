@@ -1262,8 +1262,15 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 -------------------------------------------------
 
-## 10-13-2020
+## 10-13-2021
 
 * https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1
+
+
+------------------------------------------
+
+## 10-14-2021
+
+* [fly.io blog about tokens](https://fly.io/blog/api-tokens-a-tedious-survey/)
 
 
