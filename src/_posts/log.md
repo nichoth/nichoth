@@ -1256,8 +1256,14 @@ Then you reveal what the hash content is, b/c you can't change the content at th
 
 -------------------------------------------
 
-# 9-24-2021
+## 9-24-2021
 
 I spent the day looking at jest (the test tool) today. I notice that there is no compilation step, which means that either it's built into jest, node can read `import` statements on it's own, or it is a part of the typescript 'transform' in jest, `ts-jest` … I suppose I'm just writing things that I noticed now, as this is not really specific to fission, and not a 'support' request. 
+
+-------------------------------------------------
+
+## 10-13-2020
+
+* https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1
 
 
