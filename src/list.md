@@ -80,6 +80,7 @@
 * [noe display](https://fontsinuse.com/typefaces/31872/noe-display)
 * [work sans font](https://fonts.google.com/specimen/Work+Sans)
 * [freight bug](https://www.typewolf.com/freight-big)
+* [inter](https://fonts.google.com/specimen/Inter)
 
 
 ----------------------------------------
