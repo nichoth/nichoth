@@ -37,12 +37,12 @@ if I wanted to host my own ipfs node and use that as a 'remote', is that configu
 
 > You'd need to run your own js-ipfs (https://www.npmjs.com/package/ipfs) instance and then connect to your remote node. We use https://www.npmjs.com/package/ipfs-message-port-client as a js-ipfs proxy and then use js-ipfs in a SharedWorker through an iframe.
 
+So that means the lower-level storage is abstracted by ipfs; you don't have to think about indexedDB, etc. 
+
 * you would pass the js-ipfs instance/client to webnative via the set function above
 * userIpfs is the js-ipfs instance/client
 
 > You'd just need to tell your remote ipfs server to pin this one CID. Which you can do using its HTTP API.
 
 > Basically, every time you call fs.publish(), you'd do that.
-
-
 
