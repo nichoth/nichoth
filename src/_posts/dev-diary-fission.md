@@ -13,6 +13,8 @@ date: 10-15-2021
 
 Working on the [fission blog app](https://github.com/nichoth/blog/tree/photo)
 
+## the blog app
+
 A __big question__ is where does it save the things? It could use a browser-side device, like localstorage, but I know that `ipfs` is fairly well baked in too. 
 
 ------------------------------------------
