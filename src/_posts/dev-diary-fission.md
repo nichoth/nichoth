@@ -1,3 +1,14 @@
+---
+
+linkTitle: development diary — fission
+linkDesc: What I've been doing with fission
+slug: dev-diary-fission
+type: dev-diary
+date: 10-15-2021
+
+---
+
+
 # development diary
 
 Working on the [fission blog app](https://github.com/nichoth/blog/tree/photo)
