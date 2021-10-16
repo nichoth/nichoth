@@ -41,5 +41,5 @@ webnative.did.ucan().then(ourDID =>  // ...
 
 But `keystore-idb` has a different keypair API than `ucans`. That's why I made [nichoth/keystore-idb](https://github.com/nichoth/keystore-idb). It has a method [getKeypair](https://github.com/nichoth/keystore-idb/blob/main/test-tape/index.js#L7) that returns the same keypair API as `ucans`.
 
-I would submit this as a PR, but I don't really know what direction the fission team wants to go in to reconcile the webnative and `ucans` APIs. Also my test is a little wonky because I'm using a totally different bundler and test library.
+I would submit this as a PR, but I don't really know what direction the rest of the team wants to go in regarding reconciling the webnative and `ucans` APIs. Also my test is a little wonky because I'm using a totally different bundler and test library.
 
