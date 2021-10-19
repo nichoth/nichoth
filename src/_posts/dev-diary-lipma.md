@@ -8,11 +8,11 @@ date: 10-19-2021
 
 ---
 
+# development diary
+
 * [aljoschameyer/bamboo](https://github.com/aljoschameyer/bamboo)
 * [p2panda.org/](https://p2panda.org/)
 * [p2panda/p2panda](https://github.com/p2panda/p2panda)
-
-# development diary
 
 ## lipma links
 
