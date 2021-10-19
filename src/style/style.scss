@@ -772,6 +772,7 @@ body.examples {
     display: inline-block;
     margin-bottom: 1em;
     &:hover {
+      text-decoration: none;
       h2.underline {
         background-size: 100% 100%;
       }
