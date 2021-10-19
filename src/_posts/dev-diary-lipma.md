@@ -18,6 +18,8 @@ date: 10-19-2021
 
 What are 'lipma links'?
 
+![Lipma graph](/img/graph.svg "Graph")
+
 > Tldr: instead of needing every post to verify a chain you can skip through the chain quickly getting only key nodes which link back (following a well defined algorithm)
 
 > The idea with lipmaa links is akin to maintaining two backlinks in each message
