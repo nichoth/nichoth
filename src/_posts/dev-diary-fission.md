@@ -1,6 +1,6 @@
 ---
 
-linkTitle: development diary — fission
+linkTitle: development diary — fission, ipfs
 linkDesc: What I've been doing with fission
 slug: dev-diary-fission
 type: dev-diary

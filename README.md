@@ -32,3 +32,14 @@ npm run deploy
 * Get your total word count (including the headline and subhead).
 * Divide total word count by 200. The number before the decimal is your minutes.
 
+```css
+.projects a:after {
+    content: "";
+    position: relative;
+    padding-top: 0rem;
+    border-bottom: 2px solid black;
+    width: 50%;
+    display: block;
+    top: 0.8rem;
+}
+```
