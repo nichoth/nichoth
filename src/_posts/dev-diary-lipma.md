@@ -28,7 +28,7 @@ What are 'lipma links'?
 
 > With hopPrevious like that if you want to verify the chain from message 153, you jump to 150,140, 130,...0
 
-> The lipmaa algorithm is the optimal one suck that to verify back from 153 you just need to check :
+> The lipmaa algorithm is the optimal one such that to verify back from 153 you just need to check :
 > 153, 152, 151, 150, 140, 130, 120, 110, 100, 0
 > I'm using base 10 cos it's easier to convey the pattern. It's kinda like there are special numbers (in our case powers of 10) which behave like a superhighway 
 
