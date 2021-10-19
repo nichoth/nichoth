@@ -26,10 +26,9 @@ npm start
 npm run deploy
 ```
 
+------------------------------------------------
 
-
-
-
-
-
+## estimate reading time
+* Get your total word count (including the headline and subhead).
+* Divide total word count by 200. The number before the decimal is your minutes.
 
