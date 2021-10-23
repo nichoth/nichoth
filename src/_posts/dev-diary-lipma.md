@@ -36,7 +36,7 @@ What are 'lipma links'?
 
 ## tree vs list
 
-I remembered what I was thinking about federated vs fully p2p versions of ssb. The benefit of a federated style is that there is not a difficult period for new people to join the network, when you have to verify an entire merkle-list of messages (which can be quite long) before you look at them. This does imply some trust between you and the server, but maybe it's ok to trust a server. 
+I remembered what I was thinking about federated vs fully p2p versions of ssb. The benefit of a federated style is that there is not a difficult period for new people to join the network, when you have to verify an *entire* merkle-list of messages (which can be quite long) before you look at them. This does imply some trust between you and the server, but maybe it's ok to trust a server. 
 
 I understand that the hypercore protocol uses a proper merkle tree data structure vs the simple list structure of ssb, which should reduce the time it takes for new users to join & verify. However, I don't fully understand how hypercore works & how to use it 😦 The nice thing about ssb is that it is quite simple at its core.
 
