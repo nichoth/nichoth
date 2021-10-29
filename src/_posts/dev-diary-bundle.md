@@ -13,7 +13,7 @@ date: 10-20-2021
 
 My notes on bundling things
 
-In the `blog` app, we're using `vite` to bundle the JS.
+In the [blog](https://github.com/nichoth/blog/tree/img) app, we're using [vite](https://vitejs.dev/) to bundle the JS.
 
 Note that this application uses typescript and `import` syntax. So the transformation of typescript to JS happens in a separate step, then all the JS is bundled together
 
