@@ -233,7 +233,7 @@ Firebase Alternative
 
 ## to read
 
-* [Photo Gallery](https://eleventy-gallery.netlify.app/)
+* [Photo Gallery](https://eleventy-gallery.netlify.app/) & [code](https://github.com/tannerdolby/eleventy-photo-gallery)
 * [How to enable Gatsby Functions on Netlify](https://www.netlify.com/blog/2021/06/03/how-to-enable-gatsby-functions-on-netlify/)
 * [Build your own shop with the Shopify Storefront API, Eleventy, and serverless functions](https://www.netlify.com/blog/2021/07/20/build-your-own-shop-with-the-shopify-storefront-api-eleventy-and-serverless-functions/?utm_medium=social&utm_source=twitter&utm_campaign=devex-ph&utm_content=shopify-11ty)
 * [Dive into the new Glitch data starter apps](https://blog.glitch.com/post/dive-into-the-new-glitch-data-starter-apps)
