@@ -43,3 +43,10 @@ npm run deploy
     top: 0.8rem;
 }
 ```
+
+```js
+var str = "your long string with many words.";
+var wordCount = str.match(/(\w+)/g).length;
+alert(wordCount); //6
+```
+
