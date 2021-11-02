@@ -844,16 +844,16 @@ body.diary-entry {
       transition: color 0.2s;
     }
 
-    &::after {
-      content: "";
-      position: relative;
-      padding-top: 0rem;
-      border-bottom: 3px solid blue;
-      width: 50%;
-      display: block;
-      top: 1rem;
-      left: -1rem
-    }
+    // &::after {
+    //   content: "";
+    //   position: relative;
+    //   padding-top: 0rem;
+    //   border-bottom: 3px solid blue;
+    //   width: 50%;
+    //   display: block;
+    //   top: 1rem;
+    //   left: -1rem
+    // }
 
     > div.project {
       width: 100%;
