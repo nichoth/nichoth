@@ -839,11 +839,24 @@ body.diary-entry {
   }
 
   > a {
-    h2, h3, p {
-      color: #572E08;
-      transition: color 0.2s;
+    // &::after {
+    //   content: "";
+    //   position: relative;
+    //   padding-top: 0rem;
+    //   border-bottom: 3px solid blue;
+    //   width: 50%;
+    //   display: block;
+    //   top: 1rem;
+    //   left: -1rem
+    // }
+
+    > div.project {
+      width: 100%;
+      display: inline-block;
+      height: 98%;
     }
-    color: #572E08;
+
+    color: #1f1002;
     transition: border 0.2s, color 0.2s;
     display: block;
     margin-bottom: 0;

@@ -37,10 +37,11 @@ npm run deploy
     content: "";
     position: relative;
     padding-top: 0rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid blue;
     width: 50%;
     display: block;
-    top: 0.8rem;
+    top: 1rem;
+    left: -1rem;
 }
 ```
 
