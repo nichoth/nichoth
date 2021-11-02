@@ -1273,4 +1273,9 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 * [fly.io blog about tokens](https://fly.io/blog/api-tokens-a-tedious-survey/)
 
+--------------------------------------------
+
+## 11-2-2021
+
+* https://github.com/libp2p/specs/tree/master/pubsub/gossipsub
 
