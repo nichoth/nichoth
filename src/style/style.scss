@@ -839,16 +839,21 @@ body.diary-entry {
   }
 
   > a {
-    // &::after {
-    //   content: "";
-    //   position: relative;
-    //   padding-top: 0rem;
-    //   border-bottom: 3px solid blue;
-    //   width: 50%;
-    //   display: block;
-    //   top: 1rem;
-    //   left: -1rem
-    // }
+    h2, h3, p {
+      color: #572E08;
+      transition: color 0.2s;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      padding-top: 0rem;
+      border-bottom: 3px solid blue;
+      width: 50%;
+      display: block;
+      top: 1rem;
+      left: -1rem
+    }
 
     > div.project {
       width: 100%;
@@ -856,7 +861,7 @@ body.diary-entry {
       height: 98%;
     }
 
-    color: #1f1002;
+    color: #572E08;
     transition: border 0.2s, color 0.2s;
     display: block;
     margin-bottom: 0;
