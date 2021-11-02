@@ -844,16 +844,26 @@ body.diary-entry {
       transition: color 0.2s;
     }
 
-    // &::after {
-    //   content: "";
-    //   position: relative;
-    //   padding-top: 0rem;
-    //   border-bottom: 3px solid blue;
-    //   width: 50%;
-    //   display: block;
-    //   top: 1rem;
-    //   left: -1rem
-    // }
+    --width: 0;
+
+    &::after {
+      content: "";
+      position: relative;
+      padding-top: 0rem;
+      border-bottom: 3px solid blue;
+      width: var(--width);
+      display: block;
+      top: -0.5rem;
+      left: -1rem
+    }
+
+    .word-count {
+      text-align: left;
+      position: relative;
+      bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      opacity: 0.6;
+    }
 
     > div.project {
       width: 100%;
@@ -874,13 +884,17 @@ body.diary-entry {
 
     &:hover {
       border-color: #1f1002;
+      color: #1f1002;
+
       h3 {
         text-decoration: underline;
       }
       h3, p {
         color: #1f1002;
       }
-      color: #1f1002;
+      .word-count {
+        opacity: 1;
+      }
     }
   }
 }

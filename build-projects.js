@@ -28,6 +28,8 @@ function buildProjects () {
             // now we have all the files
             // this gets called once
 
+            // find the most words that are in any article
+
             if (err) throw err
             var hs = hyperstream({
                 '.projects.dev-diary': {
@@ -56,20 +58,34 @@ function buildProjects () {
         }
 
         function createLinkString (list) {
-
             // in here, need to determine the order of the links
-
             var sorted = _.orderBy(
                 list,
                 fm => {
-                    return new Date(fm.date)
+                    return fm.date ? new Date(fm.date) : ''
                 },
                 ['desc']
             )
 
+            var maxLength = sorted.reduce((acc, file) => {
+                // don't count the log, b/c its gigantic
+                if (file.slug === 'log') return acc
+                return file.words > acc ? file.words : acc
+            }, 0)
+
+            // need to find the relative # of words for the --width variable
+
             return sorted.reduce((acc, file) => {
                 var { date } = file
-                acc += `<a href="/projects/${file.slug}">
+                var isLog = file.slug === 'log'
+                var percent = (file.words / maxLength) * 100
+
+                acc += `<a href="/projects/${file.slug}"
+                    ${isLog ?
+                        '' :
+                        `style="--width: calc(${percent}% + 2rem);"`
+                    }
+                >
                     <div class="project ${file.slug}">
                         ${date ?
                             `<time datetime="${date}">${date}</time>` :
@@ -78,7 +94,9 @@ function buildProjects () {
                         <h3>${file.linkTitle}</h3>
                         <p>${file.linkDesc}</p>
                     </div>
+                    <div class="word-count">${file.words} words</div>
                 </a>`
+
                 return acc
             }, '')
         }
@@ -86,19 +104,30 @@ function buildProjects () {
 
         // map the fileNames to [{ slug, linkTitle, linkDescription }]
         fileNames.forEach(function (filePath) {
-
             // this get called once for each file in `_posts`
 
             fs.readFile(filePath, 'utf8', (err, file) => {
                 if (err) return next(err)
                 var parsed = matter(file)
                 var fm = parsed.data
+
+                // console.log('aaa', filePath, fm)
+                // console.log('parsed', parsed.content)
+
+                var length = parsed.content.match(/(\w+)/g).length;
+
                 var { date, slug, type, linkTitle, linkDesc } = fm
                 // end up with an object of
                 // { typeA: [{ slug, linkTitle, linkDesc }] }
 
                 // should have a date as a sortable string
-                files[type].push({ date, slug, linkTitle, linkDesc })
+                files[type].push({
+                    date,
+                    slug,
+                    linkTitle,
+                    linkDesc,
+                    words: length
+                })
 
                 next(null, files)
             })
