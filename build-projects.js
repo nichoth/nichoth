@@ -94,7 +94,15 @@ function buildProjects () {
                         <h3>${file.linkTitle}</h3>
                         <p>${file.linkDesc}</p>
                     </div>
-                    <div class="word-count">${file.words} words</div>
+                    <div class="word-count">
+                        ${
+                            (Math.round(file.words / 200) || 1) +
+                            ((Math.round(file.words / 200) || 1) === 1 ?
+                                ' minute' :
+                                ' minutes'
+                            )
+                        }
+                    </div>
                 </a>`
 
                 return acc
