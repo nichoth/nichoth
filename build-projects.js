@@ -58,6 +58,7 @@ function buildProjects () {
         }
 
         function createLinkString (list) {
+            // console.log('**list', list)
             // in here, need to determine the order of the links
             var sorted = _.orderBy(
                 list,
@@ -78,10 +79,11 @@ function buildProjects () {
             return sorted.reduce((acc, file) => {
                 var { date } = file
                 var isLog = file.slug === 'log'
+                var isWeb = file.type === 'website'
                 var percent = (file.words / maxLength) * 100
 
                 acc += `<a href="/projects/${file.slug}"
-                    ${isLog ?
+                    ${(isLog || isWeb) ?
                         '' :
                         `style="--width: calc(${percent}% + 2rem);"`
                     }
@@ -94,15 +96,18 @@ function buildProjects () {
                         <h3>${file.linkTitle}</h3>
                         <p>${file.linkDesc}</p>
                     </div>
-                    <div class="word-count">
-                        ${
-                            (Math.round(file.words / 200) || 1) +
-                            ((Math.round(file.words / 200) || 1) === 1 ?
-                                ' minute' :
-                                ' minutes'
-                            )
-                        }
-                    </div>
+                    ${file.type === 'website' ?
+                        '' :
+                        `<div class="word-count">
+                            ${
+                                (Math.round(file.words / 200) || 1) +
+                                ((Math.round(file.words / 200) || 1) === 1 ?
+                                    ' minute' :
+                                    ' minutes'
+                                )
+                            }
+                        </div>`
+                    }
                 </a>`
 
                 return acc
@@ -119,17 +124,15 @@ function buildProjects () {
                 var parsed = matter(file)
                 var fm = parsed.data
 
-                // console.log('aaa', filePath, fm)
-                // console.log('parsed', parsed.content)
-
                 var length = parsed.content.match(/(\w+)/g).length;
 
-                var { date, slug, type, linkTitle, linkDesc } = fm
+                var { type, date, slug, type, linkTitle, linkDesc } = fm
                 // end up with an object of
                 // { typeA: [{ slug, linkTitle, linkDesc }] }
 
                 // should have a date as a sortable string
                 files[type].push({
+                    type,
                     date,
                     slug,
                     linkTitle,
