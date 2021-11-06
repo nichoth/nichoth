@@ -36,5 +36,8 @@
     "url": "https://github.com/nichoth/nichoth/issues"
   },
   "homepage": "https://github.com/nichoth/nichoth#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "md5-hex": "^4.0.0"
+  }
 }
