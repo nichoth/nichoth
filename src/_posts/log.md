@@ -1279,3 +1279,9 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 * https://github.com/libp2p/specs/tree/master/pubsub/gossipsub
 
+-----------------------------------------------------
+
+## 11-7-2021
+
+* [video -- fission, ipfs](https://talk.fission.codes/t/brooklyn-zelenka-talk-notes-video-feb-13th/494)
+
