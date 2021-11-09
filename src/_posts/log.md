@@ -1285,3 +1285,13 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 * [video -- fission, ipfs](https://talk.fission.codes/t/brooklyn-zelenka-talk-notes-video-feb-13th/494)
 
+------------------------------------------------
+
+## 11-8-2021
+
+* [Cloudflare goes InterPlanetary - Introducing Cloudflare’s IPFS Gateway](https://blog.cloudflare.com/distributed-web-gateway/)
+* [Distributed Web Gateway](https://www.cloudflare.com/distributed-web-gateway/)
+* [End-to-End Integrity with IPFS](https://blog.cloudflare.com/e2e-integrity/)
+* [cloudflar/workers-chat-demo](https://github.com/cloudflare/workers-chat-demo)
+* [Using Fission with Elm – Part 3: Adding authentication and using the Fission Drive](https://dev.to/xeticode/using-fission-with-elm-part-3-adding-authentication-and-using-the-fission-drive-3fig)
+
