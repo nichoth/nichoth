@@ -1295,3 +1295,11 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 * [cloudflar/workers-chat-demo](https://github.com/cloudflare/workers-chat-demo)
 * [Using Fission with Elm – Part 3: Adding authentication and using the Fission Drive](https://dev.to/xeticode/using-fission-with-elm-part-3-adding-authentication-and-using-the-fission-drive-3fig)
 
+-------------------------------------------------
+
+## 11-9-2021
+
+* https://github.com/nichoth/orbit-npp
+* https://github.com/nichoth/hub-life -- the signalhub demo
+* https://github.com/mafintosh/signalhub
+
