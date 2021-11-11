@@ -1303,3 +1303,13 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 * https://github.com/nichoth/hub-life -- the signalhub demo
 * https://github.com/mafintosh/signalhub
 
+-----------------------------------------------
+
+## 11-10-2021
+
+* [SSB HTTP Authentication](https://ssb-ngi-pointer.github.io/ssb-http-auth-spec/)
+* setup a netlify site for planetary
+* setup lambda functions
+* created a DB
+
+
