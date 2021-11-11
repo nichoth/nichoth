@@ -1312,4 +1312,10 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 * setup lambda functions
 * created a DB
 
+-------------------------------------------------
+
+## 11-11-2021
+
+* [a good talk about npm, hypercore](https://discord.com/channels/709519409932140575/709522119335346196/908252083919147039)
+
 
