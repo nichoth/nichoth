@@ -1318,4 +1318,16 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 * [a good talk about npm, hypercore](https://discord.com/channels/709519409932140575/709522119335346196/908252083919147039)
 
+-------------------------------------------
+
+## 11-14-2021
+
+Css stuff
+
+* [The Simplest Way to Load CSS Asynchronously](https://www.filamentgroup.com/lab/load-css-simpler/)
+* [filamentgroup/loadCSS](https://github.com/filamentgroup/loadCSS/)
+* [addyosmani/critical-path-css-demo](https://github.com/addyosmani/critical-path-css-demo)
+* [addyosmani/critical](https://github.com/addyosmani/critical)
+* [clean-css/clean-css-cli](https://github.com/clean-css/clean-css-cli)
+* [uncss/uncss](https://github.com/uncss/uncss)
 
