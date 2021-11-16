@@ -37,6 +37,20 @@ $muted-text: #3b4146;
 	@return css-function( 200pxclamp, $values );
 }
 
+.discussion-fission-ipfs {
+    p {
+        font-size: 1rem;
+        line-height: initial;
+    }
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 0;
+
+        & ~ p {
+            margin-top: 0;
+        }
+    }
+}
 
 // the special hr
 body, body.the-log, .development-diary, body.examples {
