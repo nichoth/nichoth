@@ -97,7 +97,7 @@ In console!
 Under sources
 auth lobby has ipfs.html in it which powers that service worker
 
-## steven additionally has some service worker stuff for drive
+steven additionally has some service worker stuff for drive
 So you should be able to see the same when running blog
 
 ## nichoth — 10/21/2021
