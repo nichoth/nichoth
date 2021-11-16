@@ -1,7 +1,7 @@
 ---
 
 linkTitle: discussion — fission + ipfs
-linkDesc: Talking about how ipfs & webnative work
+linkDesc: Talking about ipfs & webnative
 slug: discussion-fission-ipfs
 type: dev-diary
 date: 11-15-2021
