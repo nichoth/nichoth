@@ -1335,3 +1335,9 @@ Css stuff
 
 * [hub-life](https://github.com/nichoth/hub-life) is the p2p example that I made with heroku
 
+---------------------------------------------
+
+## 11-17-2021
+
+[Netlify Raises $105 Million to Transform Development for the Modern Web](https://www.netlify.com/press/netlify-raises-usd105-million-to-transform-development-for-the-modern-web)
+
