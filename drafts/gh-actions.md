@@ -46,4 +46,9 @@ https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-en
 
 * [then add it as a secret to the repo](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 
+------------------------------------------------
+
+* [deploy a node app to DO](https://www.digitalocean.com/community/tutorials/deploying-a-node-app-to-digital-ocean)
+* [https://medium.com/@haxzie/deploying-node-js-application-to-digitalocean-setting-up-the-server-99e1d65fa291](https://medium.com/@haxzie/deploying-node-js-application-to-digitalocean-setting-up-the-server-99e1d65fa291)
+
 
