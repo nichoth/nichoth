@@ -1346,4 +1346,6 @@ Css stuff
 ## 11-19-2021
 
 [How to Host Your IPFS Files Online Forever](https://medium.com/ethereum-developers/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398)
+[fission -- Concepts](https://guide.fission.codes/developers/concepts)
+
 
