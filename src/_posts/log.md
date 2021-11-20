@@ -1341,3 +1341,9 @@ Css stuff
 
 [Netlify Raises $105 Million to Transform Development for the Modern Web](https://www.netlify.com/press/netlify-raises-usd105-million-to-transform-development-for-the-modern-web)
 
+---------------------------------------------------
+
+## 11-19-2021
+
+[How to Host Your IPFS Files Online Forever](https://medium.com/ethereum-developers/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398)
+
