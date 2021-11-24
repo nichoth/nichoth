@@ -12,7 +12,7 @@ date: 11-10-2021
 
 Making another ssb client
 
-My impulse is to use as many cloud-based, standalone services we may need -- cloudinary, pusher, netlify, etc. But I thought the whole point of ssb was that your data would be hosted locally? If it is spread out amongst all these different cloud services, how is this better than any other cloud based web app?
+My impulse is to use as many cloud-based, standalone services we may need -- cloudinary, pusher, netlify, etc. But I thought the whole point of ssb was that your data would be **hosted locally**? If it is spread out amongst all these different cloud services, how is this better than any other cloud based web app?
 
 The core of this is *where things are hosted*. It's cool to build something that is totally locally hosted. That's the one *really cool* thing about ssb -- it works without internet access.
 
