@@ -1,8 +1,10 @@
 ---
+
 linkTitle: Myco moon
 linkDesc: I developed this design from a company selling mushroom products
 slug: myco
 type: website
+
 ---
 
 [https://mycomoon.com/](https://mycomoon.com/) <br>
