@@ -9,5 +9,5 @@ type: website
 
 ![myco moon version two screenshot](/img/myco-two.png)
 
-Another iteration of Myco Moon. I don't know how I feel about the navigation overall here; it feels like it may be needlessly complex. But it is functional and looks pretty cool. Still need to add additional assets. It has some placeholder content for the time being.
+Another iteration of Myco Moon. It looks pretty cool I think. Still need to add additional assets. It has some placeholder content for the time being.
 
