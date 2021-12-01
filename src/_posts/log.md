@@ -1348,4 +1348,15 @@ Css stuff
 * [How to Host Your IPFS Files Online Forever](https://medium.com/ethereum-developers/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398)
 * [fission -- Concepts](https://guide.fission.codes/developers/concepts)
 
+-----------------------------------------
+
+## 11-27-2021
+
+* [remix.run](https://remix.run/)
+
+---------------------------------------------
+
+## 12-1-2021
+
+[WNFS-Go & Qri](https://www.youtube.com/watch?v=Hum5vfaQ9e8)
 
