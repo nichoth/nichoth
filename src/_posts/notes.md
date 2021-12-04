@@ -8,7 +8,7 @@ date: 12-4-2021
 
 ---
 
-**fission**
+# fission
 
 How would gossip work in the fission blog?
 
