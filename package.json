@@ -9,7 +9,7 @@
     "watch-sass": "sass --watch src/style/style.scss public/style.css",
     "build": "mkdir -p public && npm run copy && node ./build.js && npm run sass && npm run build-animation",
     "build-animation": "mkdir -p public/animation && cp src/animation.html public/animation/index.html",
-    "copy": "mkdir -p public && cp src/_static/* public && cp src/animate.js public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/",
+    "copy": "mkdir -p public && cp src/_static/* public && cp src/animate.js public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/ && mkdir -p public/drafts && cp src/drafts/* public/drafts",
     "sass": "sass src/style/style.scss public/style.css",
     "deploy": "npm run build && surge public"
   },
