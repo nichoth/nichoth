@@ -1,6 +1,6 @@
 ---
 
-linkTitle: fission notes
+linkTitle: fission chat
 linkDesc: copy-and-pasted notes via fission discord
 slug: fission-chat
 type: miscellany
