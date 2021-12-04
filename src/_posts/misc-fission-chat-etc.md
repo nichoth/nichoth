@@ -8,6 +8,8 @@ date: 12-4-2021
 
 ---
 
+[link to discord](https://discord.com/channels/478735028319158273/594622295910121482/912395579668185118)
+
 **barefoot** — Today at 9:34 AM
 I'm trying to understand Fission's auth and file system architecture better and wanted some direction towards readings perhaps. I'm a purely front-end developer and thought maybe I'm a target audience for Fission but I'm pretty poisoned by semi-centralized client-server mental model of apps. For context, when it comes to the back-end I've only worked with serverless functions and abstracted DBs behind GraphQL APIs.
 
