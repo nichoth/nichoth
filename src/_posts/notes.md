@@ -9,6 +9,7 @@ date: 12-4-2021
 ---
 
 **fission**
+
 How would gossip work in the fission blog?
 
 How would social network work in fission version?
