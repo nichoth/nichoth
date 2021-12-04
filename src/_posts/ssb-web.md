@@ -1,9 +1,11 @@
 ---
+
 slug: ssb-web
 type: miscellany
 linkTitle: ssb-web
 linkDesc: A tool that streams posts from an SSB log so you can easily create HTML from them
 ---
+
 
 [nichoth/ssb-web](https://github.com/nichoth/ssb-web)
 

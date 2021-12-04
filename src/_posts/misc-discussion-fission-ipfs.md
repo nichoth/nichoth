@@ -3,12 +3,14 @@
 linkTitle: discussion — fission + ipfs
 linkDesc: Talking about ipfs & webnative
 slug: discussion-fission-ipfs
-type: dev-diary
+type: miscellany
 date: 11-15-2021
 
 ---
 
 # a discussion &mdash; fission + ipfs
+
+[link to discord](https://discord.com/channels/478735028319158273/739900848234299435/900801747629510706)
 
 ## nichoth - 10/21/2021
 There's still a little question in my mind -- is there somewhere that we define what ipfs nodes we sync with? or is that more baked in at a lower level? 
