@@ -1,3 +1,13 @@
+---
+
+linkTitle: notes about fission
+linkDesc: some questions
+slug: notes
+type: miscellany
+date: 12-4-2021
+
+---
+
 **fission**
 How would gossip work in the fission blog?
 
@@ -25,5 +35,5 @@ The CID here being the 'root' CID of your file tree
 
 ------------------------------------------
 
-[pfission server docs](https://runfission.net/docs/)
+[fission server docs](https://runfission.net/docs/)
 

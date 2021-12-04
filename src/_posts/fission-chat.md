@@ -2,7 +2,7 @@
 
 linkTitle: IPFS + fission notes
 linkDesc: copy-and-pasted notes about IPFS via fission discord
-slug: fission-chat
+slug: fission-ipfs-notes
 type: miscellany
 date: 12-4-2021
 
