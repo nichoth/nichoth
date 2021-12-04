@@ -17,6 +17,8 @@ You need to store blobs, store a DB, and host a webapp. the webapp hosting is ea
 
 [The IPFS Gateway Problem](https://medium.com/pinata/the-ipfs-gateway-problem-64bbe7eb8170)
 
+[Cloudflare goes InterPlanetary - Introducing Cloudflare’s IPFS Gateway](https://blog.cloudflare.com/distributed-web-gateway/)
+
 ## storage
 > Storage is essentially free these days - bandwidth (many people fetching data) is the more costly part, although Cloudflare R2 as an example has brought costs to zero for a lot of use cases
 
@@ -35,5 +37,10 @@ How do you store the data so that you can find and replicate it?
 
 
 ## replication
-Who's data do you host on your IPFS node? See this is the pubsub situation seen [here](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b)
+Who's data do you host on your IPFS node? This is the pubsub situation seen [here](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b)
+
+[ipfs-pubsub-room](https://github.com/ipfs-shipyard/ipfs-pubsub-room)
+[js-ipfs](https://github.com/ipfs/js-ipfs)
+[Tutorial: How to build an application with IPFS PubSub Room](https://github.com/libp2p/research-pubsub/issues/18)
+[js-libp2p](https://github.com/libp2p/js-libp2p)
 
