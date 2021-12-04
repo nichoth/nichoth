@@ -8,15 +8,17 @@ date: 12-4-2021
 
 ---
 
-barefoot — Today at 9:34 AM
+**barefoot** — Today at 9:34 AM
 I'm trying to understand Fission's auth and file system architecture better and wanted some direction towards readings perhaps. I'm a purely front-end developer and thought maybe I'm a target audience for Fission but I'm pretty poisoned by semi-centralized client-server mental model of apps. For context, when it comes to the back-end I've only worked with serverless functions and abstracted DBs behind GraphQL APIs.
 
 A thought experiment that encompasses all of my questions is something like Medium or Ghost:
 
+```
 Core team --> develops layouts, functionality (i.e. "app")
 Blogger --> creates "posts" on their own "site". A "site" can have many bloggers.
 Audience --> can "comment" on "posts"
 Blogger --> can audit every "comment", choosing to show or hide it on their "site". This only applies to bloggers with "management permission" for a given "site"
+```
 
 How would the file system and the auth mechanism enable this on Fission? Here are my questions but if there's a better way to think about all of this, disregard the questions.
 
@@ -32,7 +34,7 @@ How would the file system and the auth mechanism enable this on Fission? Here ar
 
 6/ Permissions for editing anything that is not hosted by the user is also not clear to me but I imagine the mechanism would be clarified with some of the above questions. 
 
-expede — Today at 1:39 PM
+**expede** — Today at 1:39 PM
 1. When you take a step back, the question is about where data lives. In a classical system, it's "in the one database". They then tend to shard data as they scale.
 
 With content addressing (e.g. IPFS) you can host data anywhere. Fission's system is encrypted at rest, and sharded per user, so the actual location of the data doesn't matter,  User data is held by users, so the copy they have locally and the copy remotely are equally valid (I'm glossing over the magic that makes that work)
@@ -53,7 +55,7 @@ Parts of these two presentations may help give you a high level:
 
 (The second one is more general and aimed at a backend / Elixir audience, but the overall ideas are there)
 
-barefoot — Today at 6:15 PM
+**barefoot** — Today at 6:15 PM
 Awesome! Thank you so much for spending the time! It does clarify a lot of things. Also I've seen that first presentation. It was my introduction to the work at Fission. Although I didn't understand a lot of the details, it still clicked as a whole!
 
 I don't want to ask for even more work but just so I'm clear, is my characterization here correct:
@@ -64,17 +66,17 @@ Other than that I think I'm fairly confident I understand how the rest of it wou
 
 Again, thanks a lot for the time!
 
-expede — Today at 9:35 PM
+**expede** — Today at 9:35 PM
 It's related! Thanks to IPFS, we don’t depend on any particular host — it could be self hosted, use a service provider, or several for everything, or sharded across several — but the same concept. What your questions get to is really about data availability and mutability 👇 
 
 For data availability, the system itself doesn’t guarantee that data will ever be available. Any changes that happen during that time is considered to have happened concurrently form a causal point of view (as you mention: CRDTs). So you can continue to make writes with forked data and everything is okay in this model. If you want to self-host but not be online, that’s fine. If someone replicates your data and it stays online (service provide or a friend), then that’s great, too. With content addressing, we don’t depend on any particular pub — the DHT should be able to resolve the content in the same way as BitTorrent finds data. Anyone hosting that hash will serve it, regardless of location.
 
 For mutability, yes people can decide to unhost some data. By default, everything is immutable and persistent — even if you’ve said to delete from the latest version, the old data is still available (like Git). What you’re changing is a mutable reference to the latest revision, but under normal operation that contains all previous versions (uses structural sharing to keep the storage efficient). You can “force write” if you have enough permissions, but that’s the atypical case. In terms of storage cost, we think that the cost of storage is approaching zero at the limit. Even in SaaS services, I get huge amounts of storage for free or very cheap (S3, iCloud), and it’s only getting cheaper. That doesn’t prevent anyone else from providing a copy. We depend more on encryption to do read access control. 
 
-expede — Today at 9:37 PM
+**expede** — Today at 9:37 PM
 Yeah, this bit is roughly correct. We have that one top mutable root, but underneath that is all paths. So we say "I have write access to boris.fission.name (root) at path /public/photos/vacation/". We resolve the latest hash at boris.fission.name and follow the immutable links under that to make sure that we're up to date, do any conflict resolution that we need, and push an update. Anyone can validate that the old version is in the new one, and anyone working on the old version can continue safely until they catch up and do any CRDT resolution that they may need to do 
 
-expede — Today at 9:41 PM
+**expede** — Today at 9:41 PM
 > Would that truely replicate the content and pin it beyond your own reach?
 
 A big part of the idea for this design (which is new AFAICT) is that you only replicate the rows that you care about. Everyone's DB will look different. We don't expect to fully converge on "the one true state of the world" and embrace that to get lenses into the global state at a point in time (including the past). You can replicate encrypted data that you can't read if you want to, but I think that's less likely.
