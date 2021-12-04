@@ -182,4 +182,5 @@ node_modules
 
 bundle.js
 public/*
+!public/drafts
 
