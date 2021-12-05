@@ -1360,3 +1360,14 @@ Css stuff
 
 [WNFS-Go & Qri](https://www.youtube.com/watch?v=Hum5vfaQ9e8)
 
+------------------------------------
+
+## 12-4-2021
+
+* [The IPFS Cloud](https://medium.com/pinata/the-ipfs-cloud-352ecaa3ba76)
+* [Tutorial: Setting up an IPFS peer, part I](https://medium.com/textileio/tutorial-setting-up-an-ipfs-peer-part-i-de48239d82e0)
+* [Build a Decentralized Chat App with Knockout and IPFS](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b)
+* [The IPFS Gateway Problem](https://medium.com/pinata/the-ipfs-gateway-problem-64bbe7eb8170)
+* [Announcing Cloudflare R2 Storage: Rapid and Reliable Object Storage, minus the egress fees](https://blog.cloudflare.com/introducing-r2-object-storage/https://blog.cloudflare.com/introducing-r2-object-storage/)
+
+

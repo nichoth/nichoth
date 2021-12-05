@@ -1,17 +1,20 @@
 ---
 
-linkTitle: development diary — ingedients
-linkDesc: Various nodes and what they do
-slug: dev-diary-ingredients
-type: dev-diary
+linkTitle: ingedients
+linkDesc: Writing down various nodes and what they do
+slug: misc-ingredients
+type: miscellany
 date: 12-4-2021
 
 ---
 
-
 # ingredients
 
-You need to store blobs, store a DB, and host a webapp. the webapp hosting is easy because it is just a static host that serves a JS file.
+s3 + IPFS = filesystem?
+
+You need to store blobs, store a DB, and host a webapp. The webapp hosting is easy because it is just a static host that serves a JS file.
+
+Storage here usually means combining r2 or s3 with a host (something like AWS EC2) that serves an IPFS node.
 
 [Build a Decentralized Chat App with Knockout and IPFS](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b)
 
@@ -27,9 +30,13 @@ You need to store blobs, store a DB, and host a webapp. the webapp hosting is ea
 
 
 ### blobs
-In the DB we normally just write down a reference to a blob -- a hash typically. The blobs are stored separately from the DB storage, which has text records.
-  * you normally need a server-side process that will take a blob and write it to storage and run an IPFS process that will allow accessing it. In ssb blobs are stored in-process via `ssb-blobs`, a `secret-stack` plugin.
+In the DB we normally just write down a reference to a blob -- a hash typically. The blobs are stored separately from the DB storage, which has text records. You can use just a single disk to store everything, as in ssb, or you can use a network-based storage for blobs & DB.
+  * you normally need a server-side process that will take a blob and write it to storage and run an IPFS process that will allow accessing it. In ssb blobs are stored in-process via `ssb-blobs`, a `secret-stack` plugin. It writes blobs to the same disk that the DB uses.
   * see IPFS
+
+[The IPFS Cloud](https://medium.com/pinata/the-ipfs-cloud-352ecaa3ba76)
+
+ > While it would be incredible to have a giant network of servers all storing our data for free, the economics don’t make sense. After all, storage isn’t free. All of this data needs to be stored somewhere and that costs money or tokens.
 
 
 ## DB
