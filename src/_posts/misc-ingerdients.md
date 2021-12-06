@@ -10,7 +10,7 @@ date: 12-4-2021
 
 # ingredients
 
-s3 + IPFS = filesystem?
+s3/r2 + IPFS node = filesystem?
 
 You need to store blobs, store a DB, and host a webapp. The webapp hosting is easy because it is just a static host that serves a JS file.
 
