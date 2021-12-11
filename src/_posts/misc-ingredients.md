@@ -1,6 +1,6 @@
 ---
 
-linkTitle: ingedients
+linkTitle: ingredients
 linkDesc: Writing down various nodes and what they do
 slug: misc-ingredients
 type: miscellany
