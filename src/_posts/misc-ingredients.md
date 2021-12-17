@@ -12,6 +12,8 @@ date: 12-4-2021
 
 s3/r2 + IPFS node = filesystem?
 
+To do any thing, you need storage and communication. Storage so you can remember what other people have said, and communication so you can relay that to other people, and also get new information.
+
 You need to store blobs, store a DB, and host a webapp. The webapp hosting is easy because it is just a static host that serves a JS file.
 
 Storage here usually means combining r2 or s3 with a host (something like AWS EC2) that serves an IPFS node.
