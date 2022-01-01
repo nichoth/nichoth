@@ -1,6 +1,6 @@
 ---
 
-linkTitle: ingredients
+linkTitle: swarmchat
 linkDesc: Trying `webrtc-swarm` and `signalhub` for p2p
 slug: chatting
 type: miscellany
