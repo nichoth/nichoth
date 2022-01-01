@@ -143,7 +143,6 @@ function buildProjects () {
 
     // ---------- /the /projects page ----------------------
 
-
     // write the 'posts'
     // (the content that the /projects page links to)
     glob(__dirname + '/src/_posts/*', function (err, files) {

@@ -4,21 +4,23 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "serve": "concurrently --kill-others \"npx ecstatic public\" \"npm run watch-sass\"",
-    "start": "npm run build && npm run serve",
+    "serve": "concurrently --kill-others \"npx ecstatic public\" \"npm run watch-sass\" \"watchify src/chat.js -p esmify -o public/chat.js\"",
+    "start": "npm run chat && npm run build && npm run serve",
+    "chat": "mkdir -p public/chat && cp src/_chat.html public/chat/index.html && browserify src/chat.js -p esmify -dv > public/chat.js",
     "watch-sass": "sass --watch src/style/style.scss public/style.css",
-    "build": "mkdir -p public && npm run copy && node ./build.js && npm run sass && npm run build-animation",
+    "build": "mkdir -p public && npm run copy && node ./build.js && npm run sass && npm run build-animation && npm run chat",
     "build-animation": "mkdir -p public/animation && cp src/animation.html public/animation/index.html",
-    "copy": "mkdir -p public && cp src/_static/* public && cp src/animate.js public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/ && mkdir -p public/drafts && cp src/drafts/* public/drafts",
+    "copy": "cp src/_static/* public && cp src/animate.js public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/ && mkdir -p public/drafts && cp src/drafts/* public/drafts",
     "sass": "sass src/style/style.scss public/style.css",
     "deploy": "npm run build && surge public"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "after": "^0.8.2",
+    "browserify": "^17.0.0",
+    "budo": "^11.6.4",
     "concurrently": "^5.3.0",
     "ecstatic": "^4.1.4",
+    "esmify": "^2.1.1",
     "glob": "^7.1.7",
     "gray-matter": "^4.0.3",
     "hyperstream": "^1.2.2",
@@ -26,7 +28,8 @@
     "marked": "^1.2.9",
     "mkdirp": "^1.0.4",
     "sass": "^1.39.0",
-    "surge": "^0.21.6"
+    "surge": "^0.21.6",
+    "watchify": "^4.0.0"
   },
   "repository": {
     "type": "git",
@@ -38,5 +41,9 @@
     "url": "https://github.com/nichoth/nichoth/issues"
   },
   "homepage": "https://github.com/nichoth/nichoth#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "htm": "^3.1.0",
+    "preact": "^10.6.4"
+  }
 }
