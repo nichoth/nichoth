@@ -8,9 +8,9 @@ date: 1-1-2022
 
 ---
 
-__development diary__
+# development diary
 
-Thinking about *privacy*. A new brain dump.
+Thinking about *privacy*.
 
 I've been thinking recently that we should be encrypting things 'at rest'. Meaning all messages have a defined 'scope'. If something is totally public it should be unencrypted. But otherwise everything should have a set of people who are able to decrypt it.
 
