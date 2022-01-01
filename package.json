@@ -13,6 +13,8 @@
     "sass": "sass src/style/style.scss public/style.css",
     "deploy": "npm run build && surge public"
   },
+  "dependencies": {
+  },
   "devDependencies": {
     "after": "^0.8.2",
     "concurrently": "^5.3.0",
@@ -36,7 +38,5 @@
     "url": "https://github.com/nichoth/nichoth/issues"
   },
   "homepage": "https://github.com/nichoth/nichoth#readme",
-  "private": true,
-  "dependencies": {
-  }
+  "private": true
 }

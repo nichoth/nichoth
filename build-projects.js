@@ -16,21 +16,14 @@ function buildProjects () {
     glob(__dirname + '/src/_posts/*', function (err, fileNames) {
         if (err) throw err
 
-        // this gets called once
-
         mkdirp.sync(__dirname + '/public/projects')
         var files = { 'dev-diary': [], 'website': [], 'miscellany': [] }
         var next = after(fileNames.length, writeProjectsHtml)
 
         function writeProjectsHtml (err) {
-            var projectRs = fs.createReadStream(__dirname + '/src/_projects.html')
-
-            // now we have all the files
-            // this gets called once
-
-            // find the most words that are in any article
-
             if (err) throw err
+            // now we have all the files
+
             var hs = hyperstream({
                 '.projects.dev-diary': {
                     // need to sort this array
@@ -46,6 +39,7 @@ function buildProjects () {
 
             var rs = fs.createReadStream(__dirname + '/src/_index.html')
             var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
+            var projectRs = fs.createReadStream(__dirname + '/src/_projects.html')
             var projectPageStream = projectRs.pipe(hs)
 
             var fileHs = hyperstream({
@@ -54,11 +48,11 @@ function buildProjects () {
                 },
                 '#content': projectPageStream
             })
+
             rs.pipe(fileHs).pipe(ws)
         }
 
         function createLinkString (list) {
-            // console.log('**list', list)
             // in here, need to determine the order of the links
             var sorted = _.orderBy(
                 list,
@@ -68,6 +62,7 @@ function buildProjects () {
                 ['desc']
             )
 
+            // find the most words that are in any article
             var maxLength = sorted.reduce((acc, file) => {
                 // don't count the log, b/c its gigantic
                 if (file.slug === 'log') return acc
