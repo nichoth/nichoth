@@ -67,7 +67,7 @@ function ChatRoom () {
         ${_state.msgs.map(msg => {
             return html`<p class="msg">${msg}</p>`
         })}
-        <form class="msg-input" onSubmit=${submitMsg}>
+        <form id="msg-form" class="msg-input" onSubmit=${submitMsg}>
             <textarea id="newMsg" name="newMsg" cols="44" rows="12"></textarea>
             <div>
                 <button type="submit">Submit</button>
