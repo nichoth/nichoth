@@ -84,7 +84,7 @@ function ChatRoom () {
 
     return html`
         <h2>peers</h2>
-        <dl>
+        <dl class="peer-list">
             ${Object.keys(_state.peers).map(peerId => {
                 return html`
                     <dt>peer ID</dt>
@@ -93,12 +93,16 @@ function ChatRoom () {
             })}
         </dl>
 
-        ${_state.msgs.map(msg => {
-            return html`<p class="msg">${msg}</p>`
-        })}
+        <hr />
+
+        <ul class="msg-list">
+            ${_state.msgs.map(msg => {
+                return html`<li class="msg">${msg}</li>`
+            })}
+        </ul>
 
         <form id="msg-form" class="msg-input" onSubmit=${submitMsg}>
-            <textarea id="newMsg" name="newMsg" cols="44" rows="12"></textarea>
+            <textarea id="newMsg" name="newMsg" cols="44" rows="4"></textarea>
             <div>
                 <button type="submit">Submit</button>
             </div>

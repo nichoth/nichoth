@@ -1,0 +1,17 @@
+body.chat {
+    min-height: 100vh;
+
+    .msg-list {
+        list-style: none;
+        border: 1px solid;
+        height: 35vh;
+        padding: 1rem;
+        overflow-y: scroll;
+    }
+
+    #msg-form {
+        margin-bottom: 1rem;
+        position: fixed;
+        bottom: 0;
+    }
+}
