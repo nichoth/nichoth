@@ -43,7 +43,12 @@
   "homepage": "https://github.com/nichoth/nichoth#readme",
   "private": true,
   "dependencies": {
+    "end-of-stream": "^1.4.4",
     "htm": "^3.1.0",
-    "preact": "^10.6.4"
+    "observ": "^0.2.0",
+    "observ-struct": "^6.0.0",
+    "preact": "^10.6.4",
+    "signalhub": "^4.9.0",
+    "webrtc-swarm": "^2.9.0"
   }
 }
