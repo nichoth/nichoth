@@ -54,13 +54,9 @@ function buildProjects () {
 
         function createLinkString (list) {
             // in here, need to determine the order of the links
-            var sorted = _.orderBy(
-                list,
-                fm => {
-                    return fm.date ? new Date(fm.date) : ''
-                },
-                ['desc']
-            )
+            var sorted = _.orderBy(list, fm => {
+                return fm.date ? new Date(fm.date) : ''
+            }, ['desc'])
 
             // find the most words that are in any article
             var maxLength = sorted.reduce((acc, file) => {
@@ -89,7 +85,7 @@ function buildProjects () {
                             ''
                         }
                         <h3>${file.linkTitle}</h3>
-                        <p>${file.linkDesc}</p>
+                        ${marked(file.linkDesc)}
                     </div>
                     ${file.type === 'website' ?
                         '' :
@@ -140,8 +136,6 @@ function buildProjects () {
         })
 
     })
-
-    // ---------- /the /projects page ----------------------
 
     // write the 'posts'
     // (the content that the /projects page links to)
