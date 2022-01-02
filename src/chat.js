@@ -1,7 +1,7 @@
 var wswarm = require('webrtc-swarm')
 var signalhub = require('signalhub')
 var hub = signalhub('my-app-name', [
-    'https://hub-world.herokuapp.com/'  // a free sugnal-hub server I made
+    'https://hub-world.herokuapp.com/'  // a free signal-hub server I made
 ])
 var observ = require('observ')
 var struct = require('observ-struct')
