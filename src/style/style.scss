@@ -3,6 +3,8 @@ $green-color: #e5fff0;
 $bgc: #f7f7eb;
 $muted-text: #3b4146;
 
+@use './chat';
+
 @font-face {
   font-family: 'YoungSerif';
   src: url("/font/YoungSerif-Regular.otf") format("opentype");

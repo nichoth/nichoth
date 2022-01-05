@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "serve": "concurrently --kill-others \"npx ecstatic public\" \"npm run watch-sass\" \"watchify src/chat.js -p esmify -o public/chat.js\"",
+    "serve": "concurrently --kill-others \"npx ecstatic public\" \"npm run watch-sass\" \"watchify src/chat.js -p esmify -dv -o public/chat.js\"",
     "start": "npm run chat && npm run build && npm run serve",
     "chat": "mkdir -p public/chat && cp src/_chat.html public/chat/index.html && browserify src/chat.js -p esmify -dv > public/chat.js",
     "watch-sass": "sass --watch src/style/style.scss public/style.css",
@@ -48,6 +48,7 @@
     "observ": "^0.2.0",
     "observ-struct": "^6.0.0",
     "preact": "^10.6.4",
+    "randombytes": "^2.1.0",
     "signalhub": "^4.9.0",
     "webrtc-swarm": "^2.9.0"
   }
