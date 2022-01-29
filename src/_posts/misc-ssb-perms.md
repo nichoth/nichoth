@@ -17,10 +17,14 @@ https://github.com/ssb-js/secret-stack/blob/main/PLUGINS.md#pluginpermissions-ob
 To make a method public, it should be included in the anonymous array in the permissions object.
 e.g. the example in the above linked file makes a localPeers method public:
 
+```js
   permissions: {
     anonymous: [ 'localPeers' ]                                         
   },
+```
+
 createHistoryStream has it specified here:
 https://github.com/ssbc/ssb-db/blob/master/index.js#L50
 
 anonymous is the permission group that all remote callers are in by default. The local user and ssb-master-authenticated callers can call any method by default.
+
