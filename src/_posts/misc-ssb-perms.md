@@ -15,7 +15,8 @@ Plugins specify permissions:
 https://github.com/ssb-js/secret-stack/blob/main/PLUGINS.md#pluginpermissions-object-optional
 
 To make a method public, it should be included in the anonymous array in the permissions object.
-e.g. the example in the above linked file makes a localPeers method public:
+
+e.g. the example in the above linked file makes a `localPeers` method public:
 
 ```js
   permissions: {
