@@ -99,7 +99,6 @@
 * [dat store](https://github.com/datproject/dat-store)
 * [hypercore-protocol.org](https://hypercore-protocol.org/)
 * [hypertrie](https://www.npmjs.com/package/hypertrie) -- Distributed single writer key/value store
-* [pinata](https://pinata.cloud/)
 * [dat sdk](https://github.com/datproject/sdk)
 * [hyperswarm](https://github.com/RangerMauve/hyperswarm-web)
 * [dat-store](https://github.com/datproject/dat-store)
