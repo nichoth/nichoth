@@ -23,8 +23,8 @@ e.g. the example in the above linked file makes a localPeers method public:
   },
 ```
 
-createHistoryStream has it specified here:
+`createHistoryStream` has it specified here:
 https://github.com/ssbc/ssb-db/blob/master/index.js#L50
 
-anonymous is the permission group that all remote callers are in by default. The local user and ssb-master-authenticated callers can call any method by default.
+`anonymous` is the permission group that all remote callers are in by default. The local user and `ssb-master-authenticated` callers can call any method by default.
 
