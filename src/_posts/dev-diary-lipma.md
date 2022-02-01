@@ -14,6 +14,7 @@ date: 10-19-2021
 * [p2panda.org/](https://p2panda.org/)
 * [p2panda/p2panda](https://github.com/p2panda/p2panda)
 * [p2panda/beep-boop](https://github.com/p2panda/beep-boop)
+* [p2panda/handbook](https://github.com/p2panda/handbook)
 
 ## lipma links
 
