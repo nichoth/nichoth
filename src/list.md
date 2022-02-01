@@ -149,6 +149,8 @@
 
 -----------------------------------------
 
+* [James Halliday (Substack): "MAD Science"](https://www.youtube.com/watch?v=faxfLmChjVQ&ab_channel=NearForm)
+
 ## 'p2p'
 * [orbitDB](https://orbitdb.org/)
 * [polkadot](https://polkadot.network/)
