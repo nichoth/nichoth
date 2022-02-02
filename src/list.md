@@ -46,6 +46,10 @@
 
 * [remix.run](https://remix.run/)
 
+* [htm-ssr gist](https://gist.github.com/developit/699c8d8f180a1e4eed58167f9c6711be)
+* [htm + vhtml](https://github.com/developit/htm#other-uses)
+* [htm demos & examples](https://github.com/developit/htm#demos--examples)
+
 --------------------------------------
 
 * [stitches.dev](https://stitches.dev/) -- CSS in JS
