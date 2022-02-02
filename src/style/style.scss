@@ -171,6 +171,10 @@ body {
   margin: 0;
   font-family: YoungSerif, serif;
 
+  .anchorjs-link {
+    color: black;
+  }
+
    blockquote {
      color: $muted-text;
      border-left: 2px solid #a7aeb5;
@@ -938,6 +942,3 @@ body.diary-entry {
     text-align: center;
   }
 }
-
-
-
