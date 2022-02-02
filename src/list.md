@@ -46,6 +46,10 @@
 
 * [remix.run](https://remix.run/)
 
+* [htm-ssr gist](https://gist.github.com/developit/699c8d8f180a1e4eed58167f9c6711be)
+* [htm + vhtml](https://github.com/developit/htm#other-uses)
+* [htm demos & examples](https://github.com/developit/htm#demos--examples)
+
 --------------------------------------
 
 * [stitches.dev](https://stitches.dev/) -- CSS in JS
@@ -148,6 +152,8 @@
 * [ctzn](https://github.com/pfrazee/ctzn) -- A hybrid p2p/federated social network mad science experiment. WIP.
 
 -----------------------------------------
+
+* [James Halliday (Substack): "MAD Science"](https://www.youtube.com/watch?v=faxfLmChjVQ&ab_channel=NearForm)
 
 ## 'p2p'
 * [orbitDB](https://orbitdb.org/)
