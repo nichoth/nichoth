@@ -8,7 +8,7 @@ type: miscellany
 
 ---
 
-## dev environment
+# dev environment
 
 Documenting how I do things
 
@@ -62,7 +62,7 @@ $ hub clone repo-name .
 -----------------------------------------------
 
 
-# dev how to
+## dev how to
 Notes on a javascript development process
 
 > It’s crucial to have a setup, so that, at any given moment, when you get an idea, you have the place and the tools to make it happen.
@@ -78,10 +78,10 @@ Notes on a javascript development process
 * [cypress](#cypress)
 
 
-## npm
+### npm
 You can use npm to privately host our internal dependencies. This allows you to use the same workflow with both private and public libraries.
 
-### publish a private package
+#### publish a private package
 
 1. **Use your org name as the scope in the `name` field:**
 ```js
