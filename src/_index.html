@@ -41,7 +41,10 @@
                 icon: '¶'
             }
 
-            anchors.add()
+            var el = document.querySelector('body')
+            if (!el.classList.contains('projects-body')) {
+                anchors.add()
+            }
         </script>
     </body>
 </html>
