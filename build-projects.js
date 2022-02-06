@@ -163,7 +163,7 @@ function buildProjects () {
                         >
                         
                         <meta property="og:description" data-rh="true"
-                            content="${linkDesc}"
+                            content="${linkDesc}" name="description"
                         >
                         
                         <meta property="og:image" data-rh="true"
