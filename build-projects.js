@@ -148,7 +148,7 @@ function buildProjects () {
                 if (err) throw err
                 var parsed = matter(file)
                 var fm = parsed.data
-                var { slug, type } = fm
+                var { slug, type, linkDesc } = fm
 
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
@@ -157,8 +157,17 @@ function buildProjects () {
                 var ws = fs.createWriteStream(__dirname + '/public/projects/' +
                     slug + '/index.html')
                 var hs = hyperstream({
+                    'head': {
+                        _appendHtml: `<meta property="og:title" data-rh="true"
+                            content="nichoth"
+                        >
+                        
+                        <meta property="og:description" data-rh="true"
+                            content="${linkDesc}"
+                        >`
+                    },
                     'body': {
-                        class: { append: slug + ' project' +  ` ${type}`}
+                        class: { append: slug + ' project ' + type}
                     },
                     '#content': {
                         _appendHtml: marked(parsed.content)
