@@ -164,7 +164,12 @@ function buildProjects () {
                         
                         <meta property="og:description" data-rh="true"
                             content="${linkDesc}"
-                        >`
+                        >
+                        
+                        <meta property="og:image" data-rh="true"
+                            content="https://nichoth/favicon.ico" 
+                        >
+                        `
                     },
                     'body': {
                         class: { append: slug + ' project ' + type}
