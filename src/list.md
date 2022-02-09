@@ -249,3 +249,8 @@ Firebase Alternative
 
 [rechargepayments.com/](https://rechargepayments.com/)
 
+## more misc
+
+* [State of libp2p](https://fosdem.org/2022/schedule/event/libp2p/)
+* [Hyper Hyper Space: In-browser p2p applications](https://fosdem.org/2022/schedule/event/hyperhyper/)
+

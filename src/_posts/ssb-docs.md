@@ -37,3 +37,7 @@ date: 2-6-2022
 
 [AljoschaMeyer/magma](https://github.com/AljoschaMeyer/magma)
 
+[private group spec](https://github.com/ssbc/private-group-spec)
+
+[envelope spec](https://github.com/ssbc/envelope-spec)
+
