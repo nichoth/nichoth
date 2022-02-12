@@ -16,6 +16,7 @@ A list of web3 projects
 * [true movements](https://www.trumovements.net/)
 * [jlinc](https://www.jlinc.com/)
 * [lens protocol](https://lens.dev/)
+* [lens tweet](https://twitter.com/LensProtocol/status/1490782692786515970)
 * [deso.org](https://www.deso.org/)
 * [berty](https://berty.tech/)
 * [sher](https://www.producthunt.com/posts/sher-2)
