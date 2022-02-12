@@ -17,4 +17,5 @@ A list of web3 projects
 * [jlinc](https://www.jlinc.com/)
 * [lens protocol](https://lens.dev/)
 * [berty](https://berty.tech/)
+* [sher](https://www.producthunt.com/posts/sher-2)
 
