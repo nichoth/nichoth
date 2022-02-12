@@ -41,3 +41,6 @@ date: 2-6-2022
 
 [envelope spec](https://github.com/ssbc/envelope-spec)
 
+[AljoschaMeyer/set-reconciliation](https://github.com/AljoschaMeyer/set-reconciliation/)
+
+
