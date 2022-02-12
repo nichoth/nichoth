@@ -18,4 +18,5 @@ A list of web3 projects
 * [lens protocol](https://lens.dev/)
 * [berty](https://berty.tech/)
 * [sher](https://www.producthunt.com/posts/sher-2)
+* [earthstar](https://github.com/earthstar-project/earthstar)
 
