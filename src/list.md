@@ -5,7 +5,7 @@
 * [vercel](https://vercel.com/) -- http
 * [hashbase](https://hashbase.io/) -- dat & http
 * [render](https://render.com/) -- http + some backend stuff
-* [fission](https://fission.codes/) -- http + backend
+* [fission](https://fission.codes/)
 * [surge](https://surge.sh/) -- http
 * [netlify](https://www.netlify.com/) -- http
 * [heroku](https://www.heroku.com/)
