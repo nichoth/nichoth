@@ -1370,4 +1370,10 @@ Css stuff
 * [The IPFS Gateway Problem](https://medium.com/pinata/the-ipfs-gateway-problem-64bbe7eb8170)
 * [Announcing Cloudflare R2 Storage: Rapid and Reliable Object Storage, minus the egress fees](https://blog.cloudflare.com/introducing-r2-object-storage/https://blog.cloudflare.com/introducing-r2-object-storage/)
 
+--------------------------------------------
+
+2-13-2022
+
+* [How to build an HTML-only accordion — no JavaScript required](https://whitep4nth3r.com/blog/how-to-build-html-accordion-no-javascript)
+* [local first tweet](https://twitter.com/housecor/status/1492203985335373825?s=20&t=MPUlU8cKyJLdZDFGesLvUQ)
 
