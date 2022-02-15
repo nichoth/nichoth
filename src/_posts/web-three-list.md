@@ -21,4 +21,5 @@ A list of web3 projects
 * [berty](https://berty.tech/)
 * [sher](https://www.producthunt.com/posts/sher-2)
 * [earthstar](https://github.com/earthstar-project/earthstar)
+* [numbers protocol](https://www.numbersprotocol.io/) -- a decentralised photo network
 
