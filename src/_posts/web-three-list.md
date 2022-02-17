@@ -26,3 +26,4 @@ A list of web3 projects
 * [ucan](https://github.com/ucan-wg) -- decentralized permissions
 * [fission DID](https://webnative.fission.app/modules/did.html) -- DID via fission
 * [fission webnative](https://webnative.fission.app/index.html)
+* [braid](https://braid.org/) -- an extension to HTTP that generalizes it from a state transfer to a state synchronization protocol
