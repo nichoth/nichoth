@@ -11,7 +11,7 @@ date: 2-6-2022
 
 [secret-stack issue](https://github.com/ssb-js/secret-stack/issues/69) -- "request for docs"
 
-[historical issue about orbitDB as storage](https://github.com/ssbc/ssb-server/issues/454#issuecomment-350405818)
+[historical issue about ipfs as storage](https://github.com/ssbc/ssb-server/issues/454#issuecomment-350405818)
 
 [my post about lipma links](https://nichoth.com/projects/dev-diary-lipma/)
 
