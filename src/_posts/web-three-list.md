@@ -22,4 +22,7 @@ A list of web3 projects
 * [sher](https://www.producthunt.com/posts/sher-2)
 * [earthstar](https://github.com/earthstar-project/earthstar)
 * [numbers protocol](https://www.numbersprotocol.io/) -- a decentralised photo network
-
+* [Verite](https://www.circle.com/en/verite) -- identity things
+* [ucan](https://github.com/ucan-wg) -- decentralized permissions
+* [fission DID](https://webnative.fission.app/modules/did.html) -- DID via fission
+* [fission webnative](https://webnative.fission.app/index.html)
