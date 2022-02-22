@@ -1377,3 +1377,9 @@ Css stuff
 * [How to build an HTML-only accordion — no JavaScript required](https://whitep4nth3r.com/blog/how-to-build-html-accordion-no-javascript)
 * [local first tweet](https://twitter.com/housecor/status/1492203985335373825?s=20&t=MPUlU8cKyJLdZDFGesLvUQ)
 
+------------------------------------------------
+
+* [Let's say you're hosting an application on 
+@Vercel (or whatever), you have a managed database, but you need a cache (to avoid repeated API requests, with a TTL).](https://twitter.com/JasonEtco/status/1490377350055346180)
+
+

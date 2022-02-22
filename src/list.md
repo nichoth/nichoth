@@ -235,6 +235,8 @@ db.createReadStream({
 * [planetscale db](https://www.planetscale.com/) -- "The database for developers"
 * [supabase](https://supabase.io/) -- The Open Source
 Firebase Alternative
+* [upstash](https://upstash.com/)
+* [kappa db](https://github.com/kappa-db)
 
 ----------------------------------
 
@@ -258,6 +260,9 @@ Firebase Alternative
 
 * [State of libp2p](https://fosdem.org/2022/schedule/event/libp2p/)
 * [Hyper Hyper Space: In-browser p2p applications](https://fosdem.org/2022/schedule/event/hyperhyper/)
+
+* [fly.io -- global image service article](https://fly.io/docs/app-guides/run-a-global-image-service/)
+
 
 ### video misc
 
