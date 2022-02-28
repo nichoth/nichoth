@@ -1372,7 +1372,7 @@ Css stuff
 
 --------------------------------------------
 
-2-13-2022
+## 2-13-2022
 
 * [How to build an HTML-only accordion — no JavaScript required](https://whitep4nth3r.com/blog/how-to-build-html-accordion-no-javascript)
 * [local first tweet](https://twitter.com/housecor/status/1492203985335373825?s=20&t=MPUlU8cKyJLdZDFGesLvUQ)
@@ -1381,5 +1381,34 @@ Css stuff
 
 * [Let's say you're hosting an application on 
 @Vercel (or whatever), you have a managed database, but you need a cache (to avoid repeated API requests, with a TTL).](https://twitter.com/JasonEtco/status/1490377350055346180)
+
+
+## 2-27-2022
+
+### WNFS version 2
+
+https://talk.fission.codes/t/wnfs-v2-munch-learn/2517
+
+"Consider Nonlocal Concurrency" -- :38 minutes
+
+
+
+## 2-28-2022
+
+### Governing the Commons, ch 2
+
+CPR -- common pool resource
+
+What is the resource in this case?
+
+How relevant is this to internet communities? Typically things scale
+differently on the web, which is what makes it interesting. For example, you
+can make infinite copies of things. What is a resource here? I feel like
+governance in this context is about banning certain identities from a
+community. A community being like a pub in ssb -- a group of people who are able to easily communicate.
+
+
+
+
 
 
