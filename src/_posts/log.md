@@ -1407,7 +1407,10 @@ can make infinite copies of things. What is a resource here? I feel like
 governance in this context is about banning certain identities from a
 community. A community being like a pub in ssb -- a group of people who are able to easily communicate.
 
+### stuff
 
+* [feross/infire-app-cache](https://github.com/feross/infinite-app-cache)
+* [wmr](https://github.com/preactjs/wmr)
 
 
 
