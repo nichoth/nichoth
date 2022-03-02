@@ -16,7 +16,8 @@ A list of ssb-related docs
   becoming out of date now
 * [Scuttlebutt Protocol Guide](https://ssbc.github.io/scuttlebutt-protocol-guide/) -- How Scuttlebutt peers find and talk to each other
 * [ssbc.github.io](https://ssbc.github.io/ssb-server/) -- more old docs
-* [scuttlebutt.nz](https://scuttlebutt.nz/)
+* [scuttlebutt.nz](https://scuttlebutt.nz/) -- high level docs, with
+  animation and video
 * [dev.scuttlebutt.nz](https://dev.scuttlebutt.nz/#/javascript/?id=ssb-db2)
   -- Scuttlebutt Treasure Map for Developers
 * [ssb field guide](https://github.com/nichoth/ssb-field-guide) -- A field guide to developing with ssb -- low level description
