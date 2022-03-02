@@ -28,6 +28,8 @@
 * [forestry](https://forestry.io/)
 * [offbase](https://offbase.org/)
 * [strapi](https://strapi.io/features)
+* [plasmic](https://www.plasmic.app/)
+* [tina](https://tina.io/)
 
 
 ## dom stuff
@@ -268,4 +270,10 @@ Firebase Alternative
 
 * [the terrys](https://www.imdb.com/title/tt1851076/)
 
+
+## storage
+
+* [min.io](https://min.io/) -- Multi-Cloud Object Storage
+* [https://www.webiny.com/](webiny) -- Build  Serverless  Solutions in Minutes
+* [cloudinary](https://cloudinary.com/) -- media server
 
