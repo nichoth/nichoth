@@ -14,7 +14,7 @@ A list of ssb-related docs
 
 * [scuttlebot.io](http://scuttlebot.io/) -- my favorite docs site, though
   becoming out of date now
-* [Scuttlebutt Protocol Guide](https://ssbc.github.io/scuttlebutt-protocol-guide/)
+* [Scuttlebutt Protocol Guide](https://ssbc.github.io/scuttlebutt-protocol-guide/) -- How Scuttlebutt peers find and talk to each other
 * [ssbc.github.io](https://ssbc.github.io/ssb-server/) -- more old docs
 * [scuttlebutt.nz](https://scuttlebutt.nz/)
 * [dev.scuttlebutt.nz](https://dev.scuttlebutt.nz/#/javascript/?id=ssb-db2)
