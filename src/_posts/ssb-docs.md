@@ -24,6 +24,8 @@ A list of ssb-related docs
 
 -------------------------------------------------------
 
+[how to change your publicWebHosting](https://github.com/ssbc/patchwork/issues/914)
+
 [secret-stack issue](https://github.com/ssb-js/secret-stack/issues/69) -- "request for docs"
 
 [historical issue about ipfs as storage](https://github.com/ssbc/ssb-server/issues/454#issuecomment-350405818)
