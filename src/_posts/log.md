@@ -1413,5 +1413,30 @@ community. A community being like a pub in ssb -- a group of people who are able
 * [wmr](https://github.com/preactjs/wmr)
 
 
+## 3-3-2022
+
+* [https://web.dev/uses-passive-event-listeners/](Use passive listeners to improve scrolling performance)
+* [Peritext -- A CRDT for Rich-Text Collaboration](https://www.inkandswitch.com/peritext/)
+* [You can create a 𝗽𝗿𝗼𝗴𝗿𝗲𝘀𝘀 𝗯𝗮𝗿 with just one line of HTML code by using a
+  progress tag](https://twitter.com/Amit_T18/status/1497887266424852480?s=20&t=233a4lwwPJBI7V_hKsnkGw)
+
+----------------------------------------
+
+* [Let's say you're hosting an application on @Vercel (or whatever), you have a managed database, but you need a cache (to avoid repeated API requests, with a TTL). ](https://twitter.com/JasonEtco/status/1490377350055346180)
+* [Aspect Ratio is Great](https://css-irl.info/aspect-ratio-is-great/)
+* [video -- Build A Next.js App with Prisma and PlanetScale](https://www.youtube.com/watch?app=desktop&v=JtqdAn_wYzY&ab_channel=PlanetScale)
+* [SO COOL!! Cross-device chat over Bluetooth is the local-first dream! And now anyone can build their own offline-first mobile app using libp2p! So cool!!](https://twitter.com/momack28/status/1492087705081204736?s=20&t=2Vl5RkWNeij0idXmriLXnA)
+* [The cross-platform BLE transport for @libp2p was merged into gomobile-ipfs last month, with example code in the repo.](https://twitter.com/dietrich/status/1492074129566093313?s=20&t=2Vl5RkWNeij0idXmriLXnA)
+* [Decentralization -- podcast with Brooklyn](https://console.dev/podcast/s02e04-decentralization-brooklyn-zelenka-fission/)
+* [you know you can truncate text at a specific number of lines using CSS line-clamp property](https://twitter.com/_georgemoller/status/1492454516377141253?s=20&t=MPUlU8cKyJLdZDFGesLvUQ)
+* [Progressive Decentralization: A Playbook for Building Crypto Applications](https://variant.fund/writing/progressive-decentralization-a-playbook-for-building)
+* [stylelint](https://stylelint.io/user-guide/rules/list/no-duplicate-selectors/)
+* [Some useful HTML tricks you should know.](https://twitter.com/codewithhajra/status/1492144616124133380?s=20&t=HsKZeAXayMlo-ctyfbxggA)
+* [create an accordion element in HTML without JavaScript](https://twitter.com/csaba_kissi/status/1493483049765515265?s=20&t=OM_P2sx_Ao8Op8MNa62F7A)
+* [podcast -- Supabase is all in on Postgres](https://changelog.com/podcast/476)
+* [live read replication working for Litestream.](https://twitter.com/benbjohnson/status/1494800752333647872?s=20&t=6SObZ-zdc2DRPKa1d0idfA)
+* [Litestream Read Replica Demo](https://github.com/benbjohnson/litestream-read-replica-demo)
+* [Everything you need to know about monorepos, and the tools to build them.](https://monorepo.tools/)
+* [This demo shows a SQLite database on @flydotio with a primary in one region accepting writes and replicating them out to database replicas in a bunch of other regions 🤯](https://twitter.com/simonw/status/1494805788329578498?s=20&t=aJUBFNaPAYnRCQw32EUDzw)
 
 
