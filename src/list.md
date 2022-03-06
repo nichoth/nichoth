@@ -11,6 +11,8 @@
 * [heroku](https://www.heroku.com/)
 * [pinata](https://www.pinata.cloud/) -- ipfs
 
+* [concordant](https://www.concordant.io/) -- "More power to your edge app"
+
 ## static frameworks
 * [next](https://nextjs.org/)
 * [nuxt](https://nuxtjs.org/)
@@ -239,6 +241,8 @@ db.createReadStream({
 Firebase Alternative
 * [upstash](https://upstash.com/)
 * [kappa db](https://github.com/kappa-db)
+
+* [vaxine](https://medium.com/lunar-ventures/vaxine-the-database-for-social-software-6e3a292a53ca)
 
 ----------------------------------
 
