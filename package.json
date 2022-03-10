@@ -12,7 +12,7 @@
     "build-animation": "mkdir -p public/animation && cp src/animation.html public/animation/index.html",
     "copy": "cp src/_static/* public && cp src/animate.js public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/ && mkdir -p public/drafts && cp src/drafts/* public/drafts",
     "sass": "sass src/style/style.scss public/style.css",
-    "lint": "npx stylelint src/style/*",
+    "lint": "stylelint src/style/*",
     "deploy": "npm run build && surge public"
   },
   "devDependencies": {
