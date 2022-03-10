@@ -64,6 +64,8 @@ but if you are not replicating, just viewing the 20 most recent messages, then i
 * [rxdb](https://github.com/pubkey/rxdb)
 * [supabase](https://supabase.com/)
 * [oriole DB](https://github.com/orioledb/orioledb)
+* [concordant](https://www.concordant.io/)
+* [vaxine](https://medium.com/lunar-ventures/vaxine-the-database-for-social-software-6e3a292a53ca)
 
 ### p2p DBs
 * [kappa DB](https://github.com/kappa-db/kappa-core)
