@@ -1448,5 +1448,6 @@ community. A community being like a pub in ssb -- a group of people who are able
 
 [How to Secure a Webapp](https://blog.mediocregopher.com/2021/07/14/how-to-secure-a-webapp.html)
 
+[The Case for Open Infrastructure](https://blog.mediocregopher.com/2022/03/13/the-case-for-open-infrastructure.html)
 
 
