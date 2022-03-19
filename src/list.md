@@ -280,4 +280,5 @@ Firebase Alternative
 * [min.io](https://min.io/) -- Multi-Cloud Object Storage
 * [webiny](https://www.webiny.com/) -- Build  Serverless  Solutions in Minutes
 * [cloudinary](https://cloudinary.com/) -- media server
+* [web3.storage](https://web3.storage/) -- free stuff
 
