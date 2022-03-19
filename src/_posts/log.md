@@ -1440,3 +1440,13 @@ community. A community being like a pub in ssb -- a group of people who are able
 * [This demo shows a SQLite database on @flydotio with a primary in one region accepting writes and replicating them out to database replicas in a bunch of other regions 🤯](https://twitter.com/simonw/status/1494805788329578498?s=20&t=aJUBFNaPAYnRCQw32EUDzw)
 
 
+## 3-19-2022
+
+[the-cryptic-filesystem](https://blog.mediocregopher.com/2022/01/23/the-cryptic-filesystem.html)
+
+> The gossipsub library which is built into libp2p seems like a good starting place. It’s optimized for WANs and, crucially, is already implemented.
+
+[How to Secure a Webapp](https://blog.mediocregopher.com/2021/07/14/how-to-secure-a-webapp.html)
+
+
+
