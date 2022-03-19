@@ -1446,6 +1446,8 @@ community. A community being like a pub in ssb -- a group of people who are able
 
 > The gossipsub library which is built into libp2p seems like a good starting place. It’s optimized for WANs and, crucially, is already implemented.
 
+  - [gossipsub section](https://blog.mediocregopher.com/2022/01/23/the-cryptic-filesystem.html#gossip)
+
 [How to Secure a Webapp](https://blog.mediocregopher.com/2021/07/14/how-to-secure-a-webapp.html)
 
 [The Case for Open Infrastructure](https://blog.mediocregopher.com/2022/03/13/the-case-for-open-infrastructure.html)
