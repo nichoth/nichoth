@@ -169,6 +169,8 @@
 * [3box](https://3box.io/)
 * [moonbeam](https://moonbeam.network/)
 * [pinata](https://pinata.cloud/) -- ipfs 
+* [moderator.rocks](https://moderator.rocks/)
+* [atacama](https://github.com/hoodownr/atacama) -- related to moderator
 
 --------------------------
 
