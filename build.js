@@ -24,6 +24,20 @@ arr.forEach(function (_path) {
             '/index.html')
         var hs = hyperstream({
             'title': { _appendHtml: ' - ' + name },
+
+            'head': {
+                _appendHtml: `<meta property="og:title" data-rh="true"
+                    content="nichoth">
+                
+                <meta property="og:description" data-rh="true"
+                    content="${path.basename(_path, fileType)}"
+                        name="description">
+                
+                <meta property="og:image" data-rh="true"
+                    content="https://nichoth/img/cube.png">
+                `
+            },
+
             'body': {
                 class: { append: name }
             },
