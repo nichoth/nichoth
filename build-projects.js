@@ -167,7 +167,7 @@ function buildProjects () {
                         >
                         
                         <meta property="og:image" data-rh="true"
-                            content="https://nichoth/img/cube.png" 
+                            content="https://nichoth.com/img/cube.png" 
                         >
                         `
                     },
