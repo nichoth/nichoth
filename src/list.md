@@ -95,6 +95,7 @@
 * [work sans font](https://fonts.google.com/specimen/Work+Sans)
 * [freight bug](https://www.typewolf.com/freight-big)
 * [inter](https://fonts.google.com/specimen/Inter)
+* [sen](https://fonts.google.com/specimen/Sen) -- seen [here](https://www.fermyon.com/blog/serverless-reckoning)
 
 
 ----------------------------------------
