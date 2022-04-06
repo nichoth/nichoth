@@ -1453,3 +1453,8 @@ community. A community being like a pub in ssb -- a group of people who are able
 [The Case for Open Infrastructure](https://blog.mediocregopher.com/2022/03/13/the-case-for-open-infrastructure.html)
 
 
+## 4-6-2022
+
+[Sizzler Promotional Commercial 1991](https://www.youtube.com/watch?v=E3YGtQ40Qvs&ab_channel=RachelRedhouse)
+
+
