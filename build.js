@@ -19,9 +19,12 @@ arr.forEach(function (_path) {
         }
         var name = path.basename(_path, fileType)
         mkdirp.sync(__dirname + '/public/' + name)
+
         var rs = fs.createReadStream(__dirname + '/src/_index.html')
+
         var ws = fs.createWriteStream(__dirname + '/public/' + name +
             '/index.html')
+
         var hs = hyperstream({
             'title': { _appendHtml: ' - ' + name },
 
@@ -49,4 +52,3 @@ arr.forEach(function (_path) {
         rs.pipe(hs).pipe(ws)
     })
 })
-

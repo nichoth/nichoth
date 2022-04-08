@@ -1,6 +1,6 @@
 ---
 
-linkTitle: development diary — ssc
+linkTitle: development diary — ssc round two
 linkDesc: More writing about ssc
 slug: dev-diary-ssc-two
 type: dev-diary
