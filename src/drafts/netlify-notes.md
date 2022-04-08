@@ -7,6 +7,48 @@ event](https://www.netlify.com/blog/2021/12/19/automatically-trigger-netlify-fun
 
 The difficult part is that when someone clicks the 'deploy' button, we need to create a new keypair in node, and save the private key as an env variable.
 
+
+
+
+
+
+
+
+
+## add env vars with values
+
+[set env vars](https://docs.netlify.com/site-deploys/create-deploys/#pre-fill-environment-variables)
+
+### tldr -- use the hash
+> You can pass environment variable values for the site template in the hash of the template’s Deploy to Netlify URL with key/value pairs. 
+
+> You can can create custom Deploy to Netlify buttons for your users with tokens and other secure data, and they won’t appear in Netlify logs.
+
+### example pre-filled secrets
+
+```
+https://app.netlify.com/start/deploy?repository=https://github.com/myworkspace/sweetkittentemplate#SECRET_TOKEN=specialuniquevalue&CUSTOM_LOGO=https://placekitten.com/100/100
+```
+
+## add env vars that need to be written by the user when you click the button
+
+Use the `netlify.toml` file.
+
+```
+[template.environment]
+  FAUNA_DB_SECRET = "faunaDB secret"
+  CLOUDINARY_SECRET = "cloudinary secret"
+```
+
+
+
+
+
+
+
+
+----------------------------------------------
+
 **How to set the keypair when you create a new site?**
 
 * make a template repo for the deployment. The URL for this template goes in the deploy button's URL.
