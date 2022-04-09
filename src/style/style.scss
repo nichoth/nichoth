@@ -926,3 +926,21 @@ body.diary-entry {
     text-align: center;
   }
 }
+
+#important-projects {
+  padding: 0;
+  list-style: none;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  background-clip: text;
+  display: inline-block;
+  background: linear-gradient(45deg, #1800f8, #ff00f1);
+  // background: linear-gradient(45deg, #f86a00, #9405e2);
+  max-width: 10rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  li {
+    margin-bottom: 0;
+  }
+}
