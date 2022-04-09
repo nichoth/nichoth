@@ -178,6 +178,7 @@ function buildProjects () {
                         _appendHtml: marked(parsed.content)
                     }
                 })
+
                 rs.pipe(hs).pipe(ws)
             })
         })

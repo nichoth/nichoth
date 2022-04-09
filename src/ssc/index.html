@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nichoth | SSC</title>
+</head>
+
+<body class="ssc">
+    <h1>SSC</h1>
+
+    <p id="ntl-button-p">
+        <a id="ntl-button" href="https://app.netlify.com/start/deploy?repository=https://github.com/nichoth/ssc-server">
+            <img src="https://www.netlify.com/img/deploy/button.svg">
+        </a>
+    </p>
+
+    <p>
+        This is your private key
+        <button id="copy-priv-key">
+            <img class="copy-icon" src="/ssc/copy-solid.svg" title="copy">
+        </button>
+        <pre id="the-private-key"></pre>
+    </p>
+
+    <p>
+        It will never be shown again. Every time you refresh this page, a new
+        keypair will be generated. You can copy and paste the given private key
+        into the netlify form, in the "secret key" field after clicking the
+        "deploy to netlify" button above.
+    </p>
+
+
+    <p>
+        Clicking 'deploy to netlify' above will deploy your own backend to store
+        photographs, and also serve as a social network.
+    </p>
+
+    <p>
+        You will need to sign up for several web services in order to do this.
+        You will need an account on <a href="https://github.com/">github</a>
+        and <a href="https://www.netlify.com/">netlify</a> for the web hosting,
+        and you will need to visit <a href="https://fauna.com/">faunaDB</a> and
+        <a href="https://cloudinary.com/">cloudinary</a>, which will save the
+        content for your web app. All these services have free tiers of pricing,
+        so it will cost nothing and not require a credit card to start with.
+    </p>
+
+    <p>
+        After you click the 'deploy' button above, it will take you to a webpage
+        that asks you to input a secret key for each of those &mdash; fauna
+        &amp; cloudinary. So after you have created the accounts, be sure to
+        keep the pages open so you can copy and paste a secret key for each.
+    </p>
+
+    <p>
+        Also during this process we create a keypair for your new server. Since
+        it is important to keep your secret key <em>actually secret</em>, the 
+        secret key is created in your browser, and will never appear in any logs
+        in netlify. It is copy and pasted as an environment variable in your
+        server, so it is persistent but still secret.
+    </p>
+
+    <script src="/ssc/bundle.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 
-linkTitle: development diary — ssc
+linkTitle: development diary — ssc round two
 linkDesc: More writing about ssc
 slug: dev-diary-ssc-two
 type: dev-diary
@@ -32,11 +32,10 @@ There are some subtle questions there, and the world hasn't really had to think 
 
 -----------------------------
 
-This plan kind of reminds me of the early 2000s web, when most things were still server-based, and it wasn't too difficult to deploy your own php forum server for example.
+This plan kind of reminds me of the early 2000s web, when most things were still server-based, and it wasn't too difficult to deploy your own php forum server, for example.
 
 -----------------------------
 
 A nice way of articulating this is that it opens the social graph. Meaning the way data is replicated is based on a social network. This is assuming that the server operator is taking an active role in curating the friend graph. So we don't want to do something like create an invitation to our server that is always valid forever. The UI should probably allow you to create several single-use invitations.
 
 Another key element is that it should be free to do this. All the services I'm using have free tiers of pricing where it costs nothing and requires no credit card info.
-
