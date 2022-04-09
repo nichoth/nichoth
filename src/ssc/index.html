@@ -19,8 +19,22 @@
     </p>
 
     <p>
-        You can easily deploy your own backend to store photographs,
-        which will also serve as a social network.
+        This is your private key
+        <button id="copy-priv-key">
+            <img class="copy-icon" src="/ssc/copy-solid.svg" title="copy">
+        </button>
+        <pre id="the-private-key"></pre>
+    </p>
+
+    <p>
+        It will never be shown again. You can copy and paste it into the netlify
+        form after clicking the "deploy to netlify" button above
+    </p>
+
+
+    <p>
+        Clicking 'deploy to netlify' above will deploy your own backend to store
+        photographs, and also serve as a social network.
     </p>
 
     <p>
@@ -44,8 +58,8 @@
         Also during this process we create a keypair for your new server. Since
         it is important to keep your secret key <em>actually secret</em>, the 
         secret key is created in your browser, and will never appear in any logs
-        in netlify. It is saved as an environment variable in your server, so
-        it is persistent but still secret.
+        in netlify. It is copy and pasted as an environment variable in your
+        server, so it is persistent but still secret.
     </p>
 
     <script src="/ssc/bundle.js"></script>

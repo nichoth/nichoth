@@ -6,6 +6,11 @@ body.ssc {
     background-color: $bgc;
     font-family: YoungSerif, serif;
 
+    .copied {
+        color: blueviolet;
+        margin-left: 1rem;
+    }
+
     h1 {
         max-width: $mw;
         margin: 1rem auto;
@@ -19,7 +24,24 @@ body.ssc {
         line-height: 1.6rem;
     }
 
+    pre {
+        max-width: $mw;
+        margin: 1rem auto;
+    }
+
     #ntl-button-p {
         margin-top: 3rem;
+    }
+
+    #copy-priv-key {
+        border: none;
+        background-color: transparent;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+
+    .copy-icon {
+        width: 1rem;
     }
 }
