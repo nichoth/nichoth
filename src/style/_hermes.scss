@@ -1,0 +1,25 @@
+$bgc: #f7f7eb;
+$mw: 40rem;
+
+body.ssc {
+    color: #572E08;
+    background-color: $bgc;
+    font-family: YoungSerif, serif;
+
+    h1 {
+        max-width: $mw;
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    p {
+        max-width: $mw;
+        margin: 1rem auto;
+        line-height: 1.6rem;
+    }
+
+    #ntl-button-p {
+        margin-top: 3rem;
+    }
+}

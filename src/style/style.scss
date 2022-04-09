@@ -4,6 +4,7 @@ $bgc: #f7f7eb;
 $muted-text: #3b4146;
 
 @use './chat';
+@use './hermes';
 
 @font-face {
   font-family: 'YoungSerif';
@@ -197,11 +198,11 @@ body {
     }
   }
 
-  p, ul {
-      font-size: 1.1rem;
+  // p, ul {
+      // font-size: 1.1rem;
     // font-family: 'IBM Plex Serif', serif;
     // font-family: 'Raleway', sans-serif;
-  }
+  // }
   ul {
       line-height: 1.6rem;
   }
@@ -275,7 +276,7 @@ body {
   }
 
   &.projects-body {
-    color: #572E08;;
+    color: #572E08;
     background-color: $bgc;
     font-family: YoungSerif, serif;
 
@@ -393,23 +394,6 @@ $link-width: 2em;
 a {
   text-decoration: none;
 }
-
-
-// ----------- more stuff ----------------------------
-// .more-stuff {
-//   max-width: 28rem;
-//   margin: 2rem auto;
-//   font-size: 1.4rem;
-
-//   ul {
-//       list-style: none;
-//       li {
-//           margin-bottom: 0.5em;
-//       }
-//   }
-// }
-// -----------------------------------------------
-
 
 
 .main-text {

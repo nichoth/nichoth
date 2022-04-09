@@ -13,7 +13,13 @@ The difficult part is that when someone clicks the 'deploy' button, we need to c
 
 
 
+## html example
 
+```html
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter">
+  <img src="https://www.netlify.com/img/deploy/button.svg">
+</a>
+```
 
 ## add env vars with values
 
