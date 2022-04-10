@@ -11,11 +11,16 @@ body.ssc {
         margin-left: 1rem;
     }
 
-    h1 {
+    h1, h2 {
         max-width: $mw;
         margin: 1rem auto;
         margin-bottom: 2rem;
         text-align: left;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: initial;
     }
 
     p {
