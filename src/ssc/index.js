@@ -1,6 +1,7 @@
 import { create, exportPrivateKey } from 'ssc-keys'
 
-// const linkEl = document.getElementById('ntl-button')
+// here we are just adding a new private key as a DOM element,
+// so that it can be copied/pasted
 
 create().then(kp => {
     const exported = exportPrivateKey(kp)
@@ -21,8 +22,8 @@ create().then(kp => {
         )
     })
     
+    // const linkEl = document.getElementById('ntl-button')
     // const linkWithPrivKey = (linkEl.href + '#PRIV_KEY=' + exported)
         // encodeURIComponent(exported))
     // document.getElementById('ntl-button').href = linkWithPrivKey
 })
-
