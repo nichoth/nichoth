@@ -1,24 +1,18 @@
 var hyperstream = require('hyperstream')
 var fs = require('fs')
-var glob = require("glob")
+// var glob = require("glob")
 const path = require('path')
+const postcardJson = require('./cards')
 
 const rs = fs.createReadStream(path.resolve(__dirname, '..', '_index.html'))
 const ws = fs.createWriteStream(path.resolve(__dirname, '..', '..', 'public',
     'postcards', 'index.html'))
 
 getPostcardHtml((err, html) => {
-    // console.log('wooo', err, html)
-
-    // files.forEach(file => {
-    //     // var name = path.basename(file, '.png')
-    //     var name = path.basename(file)
-    //     console.log('*name*', name)
-    // })
-
     const hs = makeHs(html)
     rs.pipe(hs).pipe(ws)
 })
+
 
 function makeHs (content) {
     const hs = hyperstream({
@@ -50,27 +44,32 @@ function makeHs (content) {
 
 
 function getPostcardHtml (cb) {
-    const picPath = path.join(__dirname, '..', '..', 'public', 'postcards',
-        '*.png')
+    var postcardHtml = postcardJson.reduce((acc, card) => {
+        return acc + `<li class="postcard">
+            <img src="${card.path}">
+            <p>${card.title}</p>
+        </li>`
+    }, '<ul>')
 
-    glob(picPath, (err, files) => {
-        if (err) return cb(err)
+    postcardHtml += '</ul>'
 
-        // console.log('*files*', files)
+    process.nextTick(() => cb(null, postcardHtml))
 
-        var filesHtml = files.reduce((acc, file) => {
-            return acc + `<li class="postcard">
-                <img src="/postcards/${path.basename(file)}">
-                <p>${path.basename(file, '.png')}</p>
-            </li>`
-        }, '<ul>')
+    // const picPath = path.join(__dirname, '..', '..', 'public', 'postcards',
+    //     '*.png')
 
-        filesHtml += '</ul>'
+    // glob(picPath, (err, files) => {
+    //     if (err) return cb(err)
 
-        // cb(null, files.reduce((acc, file) => {
-        //     return acc + ``
-        // }), '')
+    //     var filesHtml = files.reduce((acc, file) => {
+    //         return acc + `<li class="postcard">
+    //             <img src="/postcards/${path.basename(file)}">
+    //             <p>${path.basename(file, '.png')}</p>
+    //         </li>`
+    //     }, '<ul>')
 
-        cb(null, filesHtml)
-    })
+    //     filesHtml += '</ul>'
+
+    //     cb(null, filesHtml)
+    // })
 }
