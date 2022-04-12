@@ -2,6 +2,7 @@
 
 body.postcards {
     background-color: v.$bgc;
+    margin-bottom: 8rem;
 
     ul {
         list-style: none;
@@ -13,11 +14,18 @@ body.postcards {
 
         .postcard {
             // max-width: 10rem;
+            max-height: 20rem;
+            max-width: 20rem;
+            justify-self: center;
+
+            p {
+                margin-top: 0;
+            }
 
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
     }
