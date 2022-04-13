@@ -50,7 +50,8 @@ const postcardJson = [
     {
         path: '/postcards/people-like-me.png',
         title: 'These people are like me',
-        desc: "These people are like me. I've found my own kind."
+        desc: "These people are like me. I've found my own kind.",
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703078692379164673'
     },
 
     {
