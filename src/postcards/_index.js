@@ -1,6 +1,5 @@
 var hyperstream = require('hyperstream')
 var fs = require('fs')
-// var glob = require("glob")
 const path = require('path')
 const postcardJson = require('./cards')
 
@@ -9,6 +8,7 @@ const ws = fs.createWriteStream(path.resolve(__dirname, '..', '..', 'public',
     'postcards', 'index.html'))
 
 getPostcardHtml((err, html) => {
+    if (err) throw err
     const hs = makeHs(html)
     rs.pipe(hs).pipe(ws)
 })
@@ -54,22 +54,4 @@ function getPostcardHtml (cb) {
     postcardHtml += '</ul>'
 
     process.nextTick(() => cb(null, postcardHtml))
-
-    // const picPath = path.join(__dirname, '..', '..', 'public', 'postcards',
-    //     '*.png')
-
-    // glob(picPath, (err, files) => {
-    //     if (err) return cb(err)
-
-    //     var filesHtml = files.reduce((acc, file) => {
-    //         return acc + `<li class="postcard">
-    //             <img src="/postcards/${path.basename(file)}">
-    //             <p>${path.basename(file, '.png')}</p>
-    //         </li>`
-    //     }, '<ul>')
-
-    //     filesHtml += '</ul>'
-
-    //     cb(null, filesHtml)
-    // })
 }

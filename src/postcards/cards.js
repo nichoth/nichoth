@@ -15,7 +15,7 @@ const postcardJson = [
     },
 
     {
-        path: '/postcards/christian-comp-prog.png',
+        path: '/postcards/christians.jpeg',
         title: 'Christian Computer Programmers'
     },
 
@@ -35,7 +35,7 @@ const postcardJson = [
     },
 
     {
-        path: '/postcards/nacho-macbook.png',
+        path: '/postcards/nacho-macbook.jpeg',
         title: 'Nacho cheese macbook pro'
     },
 
