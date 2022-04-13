@@ -60,11 +60,11 @@ const postcardJson = [
         title: "This doesn't matter"
     },
 
-    {
-        path: '/postcards/vag-eye.png',
-        title: 'eyeball',
-        desc: 'an eyeball'
-    }
+    // {
+    //     path: '/postcards/vag-eye.png',
+    //     title: 'eyeball',
+    //     desc: 'an eyeball'
+    // }
 ]
 
 module.exports = postcardJson 
