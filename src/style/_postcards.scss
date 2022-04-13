@@ -1,5 +1,12 @@
 @use './variables' as v;
 
+body.single-postcard {
+    background-color: v.$bgc;
+    img {
+        max-width: 100%;
+    }
+}
+
 body.postcards {
     background-color: v.$bgc;
     margin-bottom: 8rem;
@@ -13,11 +20,23 @@ body.postcards {
         padding: 0;
 
         .postcard {
-            // max-width: 10rem;
             margin-bottom: 2rem;
             height: 20rem;
             width: 20rem;
             justify-self: center;
+            transition: border .2s;
+
+            &:hover {
+                border: 3px solid cyan;
+            }
+
+            a {
+                color: black;
+                // &:hover {
+                //     text-decoration: solid;
+                //     text-decoration-color: cyan;
+                // }
+            }
 
             p {
                 margin-top: 0;

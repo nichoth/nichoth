@@ -1,7 +1,7 @@
 const postcardJson = [
     {
         path: '/postcards/beatoff-bonanza.png',
-        title: 'beatoff bonanza'
+        title: 'beat-off bonanza'
     },
 
     {
