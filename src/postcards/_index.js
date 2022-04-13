@@ -72,7 +72,8 @@ const html = getPostcardHtml()
 const withWords = `
     <h1>Postcards</h1>
     <p>
-        You can purchase these on the internet.
+        You can purchase <a href="https://opensea.io/collection/postcards">
+        these on the internet.</a>
     </p>
     <p>
         I made these postcards in the past when I was a student. I worked in a
