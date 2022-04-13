@@ -36,7 +36,8 @@ const postcardJson = [
 
     {
         path: '/postcards/nacho-macbook.jpeg',
-        title: 'Nacho cheese macbook pro'
+        title: 'Nacho cheese macbook pro',
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703075393844281345'
     },
 
     {

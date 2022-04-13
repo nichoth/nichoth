@@ -26,13 +26,22 @@ postcardJson.forEach(card => {
             class: { append: 'single-postcard' }
         },
 
+        '.site-nav': {
+            _appendHtml: `
+                <a class="back" href="/postcards">&lt;</a>
+            `
+        },
+
         '#content': {
             _appendHtml: `
                 <img src="${card.path}">
                 <p>${card.desc || card.title}</p>
-                <p>
-                    <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703075393844281345">see this on open sea</a>
-                </p>
+                ${card.seaLink ? 
+                    `<p>
+                        <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703075393844281345">see this on open sea</a>
+                    </p>` :
+                    ''
+                }
             `
         }
 
@@ -64,6 +73,16 @@ const withWords = `
     <h1>Postcards</h1>
     <p>
         You can purchase these on the internet.
+    </p>
+    <p>
+        I made these postcards in the past when I was a student. I worked in a
+        photo studio/laboratory at the time, and this was a fun way to pass
+        the time, printing little postcards on the photo printers. I noticed
+        that people enjoy them.
+    </p>
+    <p>
+        If you want, I can send a real, physical copy of the postcard to you
+        in the mail.
     </p>
 ` + html
 
