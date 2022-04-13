@@ -30,6 +30,9 @@ postcardJson.forEach(card => {
             _appendHtml: `
                 <img src="${card.path}">
                 <p>${card.desc || card.title}</p>
+                <p>
+                    <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703075393844281345">see this on open sea</a>
+                </p>
             `
         }
 
