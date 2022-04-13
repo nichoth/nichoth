@@ -38,7 +38,7 @@ postcardJson.forEach(card => {
                 <p>${card.desc || card.title}</p>
                 ${card.seaLink ? 
                     `<p>
-                        <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703075393844281345">see this on open sea</a>
+                        <a href="${card.seaLink}">see this on open sea</a>
                     </p>` :
                     ''
                 }
