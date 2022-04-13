@@ -57,7 +57,14 @@ const ws = fs.createWriteStream(path.resolve(__dirname, '..', '..', 'public',
     'postcards', 'index.html'))
 
 const html = getPostcardHtml()
-const hs = makeHs(html)
+const withWords = `
+    <h1>Postcards</h1>
+    <p>
+        You can purchase these on the internet.
+    </p>
+` + html
+
+const hs = makeHs(withWords)
 rs.pipe(hs).pipe(ws)
 
 // ---------------- /write the index html here --------------
