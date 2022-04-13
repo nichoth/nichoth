@@ -7,12 +7,9 @@ const rs = fs.createReadStream(path.resolve(__dirname, '..', '_index.html'))
 const ws = fs.createWriteStream(path.resolve(__dirname, '..', '..', 'public',
     'postcards', 'index.html'))
 
-getPostcardHtml((err, html) => {
-    if (err) throw err
-    const hs = makeHs(html)
-    rs.pipe(hs).pipe(ws)
-})
-
+const html = getPostcardHtml()
+const hs = makeHs(html)
+rs.pipe(hs).pipe(ws)
 
 function makeHs (content) {
     const hs = hyperstream({
@@ -43,15 +40,21 @@ function makeHs (content) {
 }
 
 
-function getPostcardHtml (cb) {
+function getPostcardHtml () {
     var postcardHtml = postcardJson.reduce((acc, card) => {
+        const ext = path.extname(card.path)
+        const fileName = path.basename(card.path, ext)
+
         return acc + `<li class="postcard">
-            <img src="${card.path}">
-            <p>${card.title}</p>
+            <a href="/postcards/${fileName}">
+                <img src="${card.path}">
+                <p>${card.title}</p>
+            </a>
         </li>`
     }, '<ul>')
 
     postcardHtml += '</ul>'
 
-    process.nextTick(() => cb(null, postcardHtml))
+    // process.nextTick(() => cb(null, postcardHtml))
+    return postcardHtml
 }
