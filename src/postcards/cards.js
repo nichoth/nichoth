@@ -11,7 +11,8 @@ const postcardJson = [
 
     {
         path: '/postcards/best-choice.png',
-        title: 'I am the best choice'
+        title: 'I am the best choice',
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703077592867536897'
     },
 
     {
@@ -26,7 +27,8 @@ const postcardJson = [
 
     {
         path: '/postcards/gluten-free.png',
-        title: 'These are our gluten free options'
+        title: 'These are our gluten free options',
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703076493355909121'
     },
 
     {
