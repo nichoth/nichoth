@@ -1,10 +1,11 @@
 $iconColor: #2F596D;
 $green-color: #e5fff0;
-$bgc: #f7f7eb;
 $muted-text: #3b4146;
 
+@use './variables' as v;
 @use './chat';
 @use './hermes';
+@use './postcards';
 
 @font-face {
   font-family: 'YoungSerif';
@@ -240,7 +241,7 @@ body {
   &.project {
     margin: 0 auto;
     margin-bottom: 6rem;
-    background-color: $bgc;
+    background-color: v.$bgc;
     font-family: 'Raleway', sans-serif;
     line-height: 2rem;
     // font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
@@ -277,7 +278,7 @@ body {
 
   &.projects-body {
     color: #572E08;
-    background-color: $bgc;
+    background-color: v.$bgc;
     font-family: YoungSerif, serif;
 
     .project {
@@ -815,7 +816,7 @@ body.examples {
 // ------------------ body.diary-entry -----------
 
 body.diary-entry {
-  background-color: $bgc;
+  background-color: v.$bgc;
 
   #content {
     padding: 1em;
@@ -928,23 +929,32 @@ body.diary-entry {
 }
 
 #important-projects {
+  line-height: 2rem;
   padding: 0;
   list-style: none;
   font-size: 1.6rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  // display: inline-block;
   background-clip: text;
-  display: inline-block;
   background: linear-gradient(45deg, #1800f8, #ff00f1);
-  max-width: 10rem;
+  // max-width: 10rem;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
   li {
     margin-bottom: 0;
+    background-clip: text;
+    background: linear-gradient(45deg, #1800f8, #ff00f1);
+    // max-width: 10rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
     a {
       &:hover {
-        border-bottom: 3px solid;
+        border-bottom: 3px solid black;
       }
     }
   }

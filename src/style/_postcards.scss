@@ -1,0 +1,59 @@
+@use './variables' as v;
+
+body.single-postcard {
+    background-color: v.$bgc;
+
+    #content {
+        margin-bottom: 6rem;
+    }
+
+    img {
+        // max-width: 100%;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+}
+
+body.postcards {
+    background-color: v.$bgc;
+    margin-bottom: 8rem;
+
+    ul {
+        list-style: none;
+        display: grid;
+        gap: 3rem;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+        padding: 0;
+
+        .postcard {
+            margin-bottom: 2rem;
+            height: 20rem;
+            width: 20rem;
+            justify-self: center;
+            transition: border .2s;
+
+            &:hover {
+                border: 3px solid cyan;
+            }
+
+            a {
+                color: black;
+                // &:hover {
+                //     text-decoration: solid;
+                //     text-decoration-color: cyan;
+                // }
+            }
+
+            p {
+                margin-top: 0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
