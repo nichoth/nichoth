@@ -85,6 +85,31 @@ const withWords = `
         If you want, I can send a real, physical copy of the postcard to you
         in the mail.
     </p>
+
+    <hr>
+
+    <p>
+        I want to write more details about my motivation here. As a US citizen
+        who is now without employment, healthcare is not so easy to get.
+        My partner/spouse person, for example, has a very serious TMJ condition
+        that even most insurance, if you do have it, simply does not cover.
+        They have what is called a "TMJ exclusion", which means they wont help
+        you with it at all. So the long story is that I just need money to pay
+        for our lives, and this is my being desperate with how to get ahold of
+        it.
+
+        Sorry it's dark, but should be ok since this is the monologue.
+
+    </p>
+
+    <hr>
+
+    <p>
+        Most NFTs I've seen seem to be computer-generated avatar like things.
+        Which is kind of interesting because the artwork is more the fact that
+        someone with money thinks it's cool to spend it frivolously than the
+        picture itself… I could think about that too much; former art major, etc 
+    </p>
 ` + html
 
 const hs = makeHs(withWords)
