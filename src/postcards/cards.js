@@ -31,7 +31,7 @@ const postcardJson = [
 
     {
         path: '/postcards/goodbye-god.png',
-        title: 'Goodbye god'
+        title: 'Goodbye God'
     },
 
     {
@@ -46,7 +46,8 @@ const postcardJson = [
 
     {
         path: '/postcards/people-like-me.png',
-        title: 'These people are like me'
+        title: 'These people are like me',
+        desc: "These people are like me. I've found my own kind."
     },
 
     {
@@ -61,7 +62,8 @@ const postcardJson = [
 
     {
         path: '/postcards/vag-eye.png',
-        title: 'eyeball'
+        title: 'eyeball',
+        desc: 'an eyeball'
     }
 ]
 

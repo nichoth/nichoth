@@ -29,7 +29,7 @@ postcardJson.forEach(card => {
         '#content': {
             _appendHtml: `
                 <img src="${card.path}">
-                <p>${card.title}</p>
+                <p>${card.desc || card.title}</p>
             `
         }
 
@@ -99,7 +99,7 @@ function getPostcardHtml () {
         return acc + `<li class="postcard">
             <a href="/postcards/${fileName}">
                 <img src="${card.path}">
-                <p>${card.title}</p>
+                <p>${card.desc || card.title}</p>
             </a>
         </li>`
     }, '<ul>')
