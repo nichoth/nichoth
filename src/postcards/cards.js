@@ -1,8 +1,8 @@
 const postcardJson = [
-    {
-        path: '/postcards/beatoff-bonanza.png',
-        title: 'beat-off bonanza'
-    },
+    // {
+    //     path: '/postcards/beatoff-bonanza.png',
+    //     title: 'beat-off bonanza'
+    // },
 
     {
         path: '/postcards/behavior-arbys.png',
@@ -22,7 +22,8 @@ const postcardJson = [
 
     {
         path: '/postcards/f-off.png',
-        title: 'f off'
+        title: 'f off',
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703083090425675777'
     },
 
     {
@@ -33,7 +34,8 @@ const postcardJson = [
 
     {
         path: '/postcards/goodbye-god.png',
-        title: 'Goodbye God'
+        title: 'Goodbye God',
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703081990914048001'
     },
 
     {
@@ -44,7 +46,8 @@ const postcardJson = [
 
     {
         path: '/postcards/never-go-away.png',
-        title: 'These people never go away'
+        title: 'These people never go away',
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703080891402420225'
     },
 
     {
