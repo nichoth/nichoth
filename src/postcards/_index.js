@@ -73,7 +73,7 @@ const withWords = `
     <h1>Postcards</h1>
 
     <p>
-        You can purchase <a href="https://opensea.io/collection/postcards">
+        You can <a href="https://opensea.io/collection/postcards">purchase
         these on the internet.</a>
     </p>
 
