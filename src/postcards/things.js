@@ -44,6 +44,8 @@ const things = [
     {
         path: '/postcards/miscellany.jpeg',
         title: "Miscellany",
+        bigDesc: `This is a collection of the various clothing items I found on
+            the sidewalk in Olympia`,
         seaLink: ''
     }
 ]

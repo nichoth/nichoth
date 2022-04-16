@@ -28,11 +28,14 @@ body.postcards {
     }
 
     h1 {
-        margin-bottom: 1rem;
+        max-width: 40rem;
+        margin: 0 auto;
     }
 
     h2 {
         margin-left: 1rem;
+        max-width: 40rem;
+        margin: 0 auto;
     }
 
     p {

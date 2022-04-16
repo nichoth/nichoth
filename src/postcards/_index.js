@@ -90,6 +90,10 @@ thingsJson.forEach(thing => {
             _appendHtml: `
                 <img src="${thing.path}">
                 <p>${thing.desc || thing.title}</p>
+                ${thing.bigDesc ?
+                    `<p>${thing.bigDesc}</p>` :
+                    ''
+                }
                 ${thing.seaLink ? 
                     `<p>
                         <a href="${thing.seaLink}">see this on open sea</a>
