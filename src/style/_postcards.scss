@@ -27,6 +27,17 @@ body.postcards {
         margin-bottom: 1rem;
     }
 
+    p {
+        max-width: 40rem;
+        margin: 2em auto;
+        line-height: 1.7em;
+    }
+
+    hr {
+        max-width: 40rem;
+        margin: 2em auto;
+    }
+
     ul {
         list-style: none;
         display: grid;
