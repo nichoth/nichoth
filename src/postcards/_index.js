@@ -192,6 +192,11 @@ const withWords = `
     to work in the morning</h2>
 
     <p>
+        You can <a href="https://opensea.io/collection/foooo">purchase
+        these on the internet.</a>
+    </p>
+
+    <p>
         This is another series of photographs, inspired by the things i would
         find on the ground when I was walking to work in the morning. These were
         all made with a 4 &times; 5 view camera though. The 4 &times; 5 size is
