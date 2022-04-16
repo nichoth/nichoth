@@ -3,6 +3,7 @@ var fs = require('fs')
 const path = require('path')
 const postcardJson = require('./cards')
 const mkdirp = require('mkdirp')
+const thingsJson = require('./things')
 
 // ------------ write a page for each picture -------------
 
@@ -44,7 +45,6 @@ postcardJson.forEach(card => {
                 }
             `
         }
-
     })
 
     const ext = path.extname(card.path)
@@ -57,6 +57,60 @@ postcardJson.forEach(card => {
         'public', 'postcards', fileName, 'index.html'))
     rs.pipe(hs).pipe(ws)
 })
+
+
+    //  things you find
+thingsJson.forEach(thing => {
+    const hs = hyperstream({
+        title: 'nichoth | ' + thing.title,
+
+        head: {
+            _appendHtml: `<meta property="og:title" data-rh="true"
+                content="nichoth | postcards">
+            
+            <meta property="og:description" data-rh="true"
+                content="Postcards" name="description">
+            
+            <meta property="og:image" data-rh="true"
+                content="https://nichoth.com/img/cube.png">
+            `
+        },
+
+        body: {
+            class: { append: 'single-postcard' }
+        },
+
+        '.site-nav': {
+            _appendHtml: `
+                <a class="back" href="/postcards#things-you-find">&lt;</a>
+            `
+        },
+
+        '#content': {
+            _appendHtml: `
+                <img src="${thing.path}">
+                <p>${thing.desc || thing.title}</p>
+                ${thing.seaLink ? 
+                    `<p>
+                        <a href="${thing.seaLink}">see this on open sea</a>
+                    </p>` :
+                    ''
+                }
+            `
+        }
+    })
+    const ext = path.extname(thing.path)
+    const fileName = path.basename(thing.path, ext)
+    const rs = fs.createReadStream(path.resolve(__dirname, '..',
+        '_index.html'))
+    mkdirp.sync(path.resolve(__dirname, '..', '..', 'public', 'postcards',
+        fileName))
+    const ws = fs.createWriteStream(path.resolve(__dirname, '..', '..',
+        'public', 'postcards', fileName, 'index.html'))
+    rs.pipe(hs).pipe(ws)
+})
+    //  /things you find
+
 
 // ------------ /write a page for each picture -------------
 
@@ -111,7 +165,7 @@ const withWords = `
     <p>
         I want to write more details about my motivation here. As a US citizen
         who is now without employment, healthcare is not so easy to get.
-        My partner/spouse person, for example, has a very serious TMJ condition
+        My partner person, for example, has a very serious TMJ condition
         that even most insurance, if you do have it, simply does not cover.
         They have what is called a "TMJ exclusion", which means they wont help
         you with it at all. So the long story is that I just need money to pay
@@ -131,7 +185,46 @@ const withWords = `
         picture itself… I could think about that too much; I'm a former art
         major, etc 
     </p>
-` + html
+` + html + `
+    <hr>
+
+    <h2 id="things-you-find">Things you find on the ground when you're walking
+    to work in the morning</h2>
+
+    <p>
+        This is another series of photographs, inspired by the things i would
+        find on the ground when I was walking to work in the morning. These were
+        all made with a 4 &times; 5 view camera though. The 4 &times; 5 size is
+        great for post cards, so these are all made as contact prints, with any
+        writing done by using an opaque marker on a transparent sheet.
+    </p>
+
+    <p>
+        NFTs are interesting in this situation because essentially what we have
+        done is cut the art gallery out of the situation. Which makes sense, i
+        suppose, that everything possible is moving online, even art/signatures.
+    </p>
+
+    <p>
+        Weirdly it does <em>feel</em> more official doing this. Like these images
+        are somehow more real, because they have been signed on a blockchain
+        that is relevant to currency.
+    </p>
+
+` + thingsJson.reduce((acc, thing) => {
+    const ext = path.extname(thing.path)
+    const fileName = path.basename(thing.path, ext)
+
+    return acc + `<li class="postcard">
+        <a href="/postcards/${fileName}">
+            <img src="${thing.path}">
+            <p>${thing.desc || thing.title}</p>
+        </a>
+    </li>`
+}, '<ul>')
+
++ '</ul>'
+
 
 const hs = makeHs(withWords)
 rs.pipe(hs).pipe(ws)

@@ -23,8 +23,16 @@ body.postcards {
     background-color: v.$bgc;
     margin-bottom: 8rem;
 
+    #things-you-find {
+        margin-top: 4rem;
+    }
+
     h1 {
         margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-left: 1rem;
     }
 
     p {
