@@ -177,17 +177,28 @@ const withWords = `
         it.
 
         Sorry it's dark, but should be ok since this is the monologue.
-
     </p>
 
     <hr>
 
+<hr>
+    
     <p>
         Most NFTs I've seen seem to be computer-generated avatar like things.
         Which is kind of interesting because the artwork is more the fact that
         someone with money thinks it's cool to spend it frivolously than the
         picture itself… I could think about that too much; I'm a former art
         major, etc 
+    </p>
+
+    <hr>
+
+    <p>
+        It also was notable how divorced the whole process was from the idea of
+        keys as identity. I thought the whole idea here is that this is like an
+        artist's signature, made with a keypair. But if there is nothing linking
+        a given keypair to an identity, what is the purpose? It feels like there
+        needs to be something linking keys to the greater world.
     </p>
 ` + html + `
     <hr>
@@ -203,7 +214,7 @@ const withWords = `
     <p>
         This is another series of photographs, inspired by the things i would
         find on the ground when I was walking to work in the morning. These were
-        all made with a 4 &times; 5 view camera though. The 4 &times; 5 size is
+        all made with a 4 &times; 5 view camera. The 4 &times; 5 size is
         great for post cards, so these are all made as contact prints, with any
         writing done by using an opaque marker on a transparent sheet.
     </p>
