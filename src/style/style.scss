@@ -193,6 +193,15 @@ body {
     max-width: 20em;
   }
 
+
+  .site-nav {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
   a {
     &:hover {
       text-decoration: underline;
@@ -291,6 +300,12 @@ body {
 
     .site-nav {
       margin-bottom: -4rem;
+
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
 
     h1 {
@@ -617,7 +632,6 @@ a {
 
   a.active {
     color: black;
-    // text-decoration: underline;
   }
 
   ul {
