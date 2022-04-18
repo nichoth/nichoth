@@ -59,7 +59,7 @@ postcardJson.forEach(card => {
 })
 
 
-    //  things you find
+    //  ------------ things you find ------------------
 thingsJson.forEach(thing => {
     const hs = hyperstream({
         title: 'nichoth | ' + thing.title,
@@ -113,7 +113,7 @@ thingsJson.forEach(thing => {
         'public', 'postcards', fileName, 'index.html'))
     rs.pipe(hs).pipe(ws)
 })
-    //  /things you find
+    //  --------- /things you find -------------------
 
 
 // ------------ /write a page for each picture -------------
@@ -155,8 +155,9 @@ const withWords = `
 
     <p>
         People are trusting me to not change a URL. And the whole thing feels
-        very <em>early internet</em>, if that's a thing. I made some HTML for each NFT
-        more or less by hand, and it is hosted on my "personal web page".
+        very <em>early internet</em>, if that's a thing. I made some HTML for
+        each NFT more or less by hand, and it is hosted on my
+        "personal web page".
     </p>
 
     <p>
@@ -176,15 +177,13 @@ const withWords = `
         for our lives, and this is me being desperate with how to get ahold of
         it.
 
-        Sorry it's dark, but should be ok since this is the monologue.
+        Sorry it's dark, but that should be ok since this is the monologue.
     </p>
 
     <hr>
 
-<hr>
-    
     <p>
-        Most NFTs I've seen seem to be computer-generated avatar like things.
+        Most NFTs I've seen seem to be computer-generated avatar-like things.
         Which is kind of interesting because the artwork is more the fact that
         someone with money thinks it's cool to spend it frivolously than the
         picture itself… I could think about that too much; I'm a former art
@@ -215,7 +214,7 @@ const withWords = `
         This is another series of photographs, inspired by the things i would
         find on the ground when I was walking to work in the morning. These were
         all made with a 4 &times; 5 view camera. The 4 &times; 5 size is
-        great for post cards, so these are all made as contact prints, with any
+        great for post cards, so these were all made as contact prints, with any
         writing done by using an opaque marker on a transparent sheet.
     </p>
 
@@ -226,24 +225,23 @@ const withWords = `
     </p>
 
     <p>
-        Weirdly it does <em>feel</em> more official doing this. Like these images
-        are somehow more real, because they have been signed on a blockchain
-        that is relevant to currency.
+        Weirdly it does <em>feel</em> more official doing this. Like these
+        images are somehow more real, because they have been signed on a
+        blockchain that is relevant to currency.
     </p>
 
 ` + thingsJson.reduce((acc, thing) => {
-    const ext = path.extname(thing.path)
-    const fileName = path.basename(thing.path, ext)
+        const ext = path.extname(thing.path)
+        const fileName = path.basename(thing.path, ext)
 
-    return acc + `<li class="postcard">
-        <a href="/postcards/${fileName}">
-            <img src="${thing.path}">
-            <p>${thing.desc || thing.title}</p>
-        </a>
-    </li>`
-}, '<ul>')
-
-+ '</ul>'
+        return acc + `<li class="postcard">
+            <a href="/postcards/${fileName}">
+                <img src="${thing.path}">
+                <p>${thing.desc || thing.title}</p>
+            </a>
+        </li>`
+    }, '<ul>') +
+'</ul>'
 
 
 const hs = makeHs(withWords)
@@ -295,6 +293,5 @@ function getPostcardHtml () {
 
     postcardHtml += '</ul>'
 
-    // process.nextTick(() => cb(null, postcardHtml))
     return postcardHtml
 }
