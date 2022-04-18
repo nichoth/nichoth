@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
     <title>nichoth | SSC</title>
 </head>
 
@@ -88,5 +89,17 @@
     </p>
 
     <script src="/ssc/bundle.js"></script>
+
+    <script>
+        anchors.options = {
+            placement: 'left',
+            icon: '¶'
+        }
+
+        var el = document.querySelector('body')
+        if (!el.classList.contains('projects-body')) {
+            anchors.add()
+        }
+    </script>
 </body>
 </html>
