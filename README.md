@@ -41,3 +41,4 @@ a watch script
 `mkdir -p public/chat && budo src/chat.js:chat.js --dir=public/chat --live --pushstate --open -- -p esmify -dv`
 build script
 `browserify src/chat.js > public/chat/chat.js -dv`
+foo
