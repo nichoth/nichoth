@@ -1463,3 +1463,29 @@ community. A community being like a pub in ssb -- a group of people who are able
 * [FormData API](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
 * [border-image in CSS](https://twitter.com/Steve8708/status/1511912289724616704?s=20&t=Zif6NhC92FBIS7aGQtfQbw)
 
+
+## 4-23-2022
+
+* [You can customize first letter of a word / paragraph in just a few seconds using CSS only.](https://twitter.com/Prathkum/status/1351199442590904322?s=20&t=4IXS9X2bWJpMlKoZ32gokg)
+* [A long thread of CSS tips and tricks](https://twitter.com/Prathkum/status/1516482529695608840?s=20&t=4IXS9X2bWJpMlKoZ32gokg)
+* [Defining the web3 stack](https://edgeandnode.com/blog/defining-the-web3-stack)
+* [Create Ultra App](https://github.com/exhibitionist-digital/create-ultra-app)
+* [Ultra](https://ultrajs.dev/)
+* [Check for your fonts locally, only download them as a fallback](https://twitter.com/builderio/status/1516553394231644166?s=20&t=_ZhSVfei1w5eCpXhM2sUEQ)
+* [what are Edge Functions?](https://twitter.com/whitep4nth3r/status/1516699390097960962?s=20&t=BQERjVWWKSa4YFSQrJiVnQ)
+* [@nodejs supports data: imports?](https://twitter.com/pawelgrzybek/status/1516467031461216267?s=20&t=BQERjVWWKSa4YFSQrJiVnQ)
+* [With a new feature like Edge Functions, you’re probably wondering, “Does it work with my framework?”](https://twitter.com/Netlify/status/1516826820431126530?s=20&t=1RPpWn-dPH1C1wO84GN4XA)
+* [Hydration is Pure Overhead](https://www.builder.io/blog/hydration-is-pure-overhead)
+* [riffle](https://riffle.systems/essays/prelude/)
+* [obsidian](https://obsidian.md/)
+* [Mauve -- blog -- p2p protocols](https://blog.mauve.moe/posts/protocol-comparisons)
+* [Achieving Paretotopia with Regenerative Cryptoecon - Juan Benet](https://www.youtube.com/watch?v=B-dd2ZRlymo&ab_channel=GitcoinMedia)
+* [Taking the Mauve Pill: Exploring Alternatives to the Centralized Web](https://hypha.coop/dripline/p2p-primer-part-1/)
+
+
+------------------------
+
+
+* [understand what it means to come back from a stroke](https://twitter.com/misprintedtype/status/1516674413000859650?s=20&t=_ZhSVfei1w5eCpXhM2sUEQ)
+
+
