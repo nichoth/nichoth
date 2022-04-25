@@ -1482,10 +1482,15 @@ community. A community being like a pub in ssb -- a group of people who are able
 * [Achieving Paretotopia with Regenerative Cryptoecon - Juan Benet](https://www.youtube.com/watch?v=B-dd2ZRlymo&ab_channel=GitcoinMedia)
 * [Taking the Mauve Pill: Exploring Alternatives to the Centralized Web](https://hypha.coop/dripline/p2p-primer-part-1/)
 
-
 ------------------------
-
 
 * [understand what it means to come back from a stroke](https://twitter.com/misprintedtype/status/1516674413000859650?s=20&t=_ZhSVfei1w5eCpXhM2sUEQ)
 
+## 4-25-2022
+
+* [stytch -- authentication platform](https://stytch.com/?utm_source=newsletter&utm_medium=paid_newsletter&utm_campaign=cassidoo-april&utm_content=main-2)
+* [Building a WebAssembly-powered serverless platform](https://blog.scottlogic.com/2022/04/16/wasm-faas.html)
+* [radix UI Libeblocks](https://www.radix-ui.com/case-studies/liveblocks)
+* [Hooks, Dependencies and Stale Closures](https://tkdodo.eu/blog/hooks-dependencies-and-stale-closures)
+* [CDNs and the Filecoin Retrieval Market](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/)
 
