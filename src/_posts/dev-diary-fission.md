@@ -11,7 +11,7 @@ date: 10-15-2021
 
 # development diary
 
-Working on the [fission blog app](https://github.com/nichoth/blog/tree/photo)
+Working on the [fission blog app](https://github.com/nichoth/blog/)
 
 ## the blog app
 
