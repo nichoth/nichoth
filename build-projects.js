@@ -148,7 +148,7 @@ function buildProjects () {
                 if (err) throw err
                 var parsed = matter(file)
                 var fm = parsed.data
-                var { slug, type, linkDesc } = fm
+                var { slug, type, linkDesc, linkTitle } = fm
 
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
@@ -170,6 +170,9 @@ function buildProjects () {
                             content="https://nichoth.com/img/cube.png" 
                         >
                         `
+                    },
+                    'title': {
+                        _appendHtml: ' | ' + linkTitle
                     },
                     'body': {
                         class: { append: slug + ' project ' + type}
