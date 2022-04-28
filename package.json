@@ -57,7 +57,7 @@
     "preact": "^10.6.4",
     "randombytes": "^2.1.0",
     "signalhub": "^4.9.0",
-    "ssc-keys": "^0.0.1",
+    "ssc-keys": "^0.0.5",
     "webrtc-swarm": "^2.9.0"
   }
 }
