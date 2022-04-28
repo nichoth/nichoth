@@ -41,3 +41,10 @@ a watch script
 `mkdir -p public/chat && budo src/chat.js:chat.js --dir=public/chat --live --pushstate --open -- -p esmify -dv`
 build script
 `browserify src/chat.js > public/chat/chat.js -dv`
+
+
+-------------------------------------
+
+
+## ssc
+The plan is to update `ssc-keys` with a webcrypto API method, then copy/paste the public & private keys
