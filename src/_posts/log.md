@@ -1494,3 +1494,36 @@ community. A community being like a pub in ssb -- a group of people who are able
 * [Hooks, Dependencies and Stale Closures](https://tkdodo.eu/blog/hooks-dependencies-and-stale-closures)
 * [CDNs and the Filecoin Retrieval Market](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/)
 
+
+## 4-27-2022
+
+[read more about UCANs](https://fission.codes/blog/verifying-ucans/#a-concrete-example)
+
+UCAN example:
+
+```js
+{
+  iss: "did:key:zAlice", // issuer
+  aud: "did:key:zstoragely", // audience
+  exp: <now + 30 seconds>, // expiration
+  att: [ // attenuation
+    { // a capability
+      with: "storagely:/documents/dnd/miranda_lovelace.pdf", // resource
+      can: "http/PUT" // ability
+    }
+  ],
+  prf: [] // proofs
+}
+```
+
+The audience here is the service you are using. The UCAN says "I am allowing this service to write to this location".
+
+I would have expected the `iss` and `aud` fields to be backwards. I would expect it to say, "I, the service, allow audience Alice to write a document here"
+
+The example is self-signed by Alice. The service here still needs to check out of band of the UCAN chain if Alice is allowed to write.
+
+
+## 4-28-2020
+
+* [zag](https://zagjs.com/)
+

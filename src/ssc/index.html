@@ -28,18 +28,26 @@
     </p>
 
     <p>
-        This is your private key
-        <button id="copy-priv-key">
+        This is your public key
+        <button id="copy-pub-key">
             <img class="copy-icon" src="/ssc/copy-solid.svg" title="copy">
+            <pre id="the-public-key"></pre>
         </button>
-        <pre id="the-private-key"></pre>
     </p>
 
     <p>
-        It will never be shown again. Every time you refresh this page, a new
-        keypair will be generated. You can copy and paste the given private key
-        into the netlify form, in the "secret key" field after clicking the
-        "deploy to netlify" button above.
+        This is your private key
+        <button id="copy-priv-key">
+            <img class="copy-icon" src="/ssc/copy-solid.svg" title="copy">
+            <pre id="the-private-key"></pre>
+        </button>
+    </p>
+
+    <p>
+        Your private key will never be shown again. Every time you refresh this
+        page, a new keypair will be generated. You can copy and paste the given
+        private key into the netlify form, in the "secret key" field after
+        clicking the "deploy to netlify" button above.
     </p>
 
 

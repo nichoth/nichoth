@@ -38,7 +38,7 @@ body.ssc {
         margin-top: 3rem;
     }
 
-    #copy-priv-key {
+    #copy-priv-key, #copy-pub-key {
         border: none;
         background-color: transparent;
         &:hover {

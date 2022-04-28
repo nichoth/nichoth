@@ -1,4 +1,5 @@
 import { create, exportPrivateKey } from 'ssc-keys'
+// import ssc from '@nichoth/ssc'
 
 // here we are just adding a new private key as a DOM element,
 // so that it can be copied/pasted
