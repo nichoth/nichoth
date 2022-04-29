@@ -36,6 +36,12 @@ const things = [
     },
 
     {
+        path: '/postcards/hair-shoe.jpg',
+        title: 'Hair Shoe',
+        seaLink: ''
+    },
+
+    {
         path: '/postcards/knife-patch.jpg',
         title: "Knife Patch",
         seaLink: ''
