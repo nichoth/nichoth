@@ -206,7 +206,7 @@ const withWords = `
     to work in the morning</h2>
 
     <p>
-        You can <a href="https://opensea.io/collection/foooo">purchase
+        You can <a href="https://opensea.io/collection/things-you-find">purchase
         these on the internet.</a>
     </p>
 
