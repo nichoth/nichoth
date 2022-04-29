@@ -20,7 +20,8 @@ const things = [
     {
         path: '/postcards/fingernails.jpg',
         title: "Fingernails",
-        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703087488472186881'
+        seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703087488472186881',
+        bigDesc: `A little stash of acrylic fingernails`
     },
 
     {
