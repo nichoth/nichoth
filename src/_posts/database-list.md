@@ -67,6 +67,7 @@ but if you are not replicating, just viewing the 20 most recent messages, then i
 * [concordant](https://www.concordant.io/)
 * [vaxine](https://medium.com/lunar-ventures/vaxine-the-database-for-social-software-6e3a292a53ca)
 * [edgeDB](https://www.edgedb.com/blog/edgedb-1-0)
+* [terminusDB](https://github.com/terminusdb/terminusdb)
 
 ### p2p DBs
 * [kappa DB](https://github.com/kappa-db/kappa-core)
