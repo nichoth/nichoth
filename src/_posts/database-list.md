@@ -2,7 +2,7 @@
 
 linkTitle: Databases
 linkDesc: A list of databases, and some notes
-slug: database-list.md
+slug: database-list
 type: miscellany
 date: 3-10-2022
 
