@@ -1523,7 +1523,15 @@ I would have expected the `iss` and `aud` fields to be backwards. I would expect
 The example is self-signed by Alice. The service here still needs to check out of band of the UCAN chain if Alice is allowed to write.
 
 
-## 4-28-2020
+## 4-28-2022
 
 * [zag](https://zagjs.com/)
+
+## 5-3-2022
+* [random numbers in node, a gist](https://gist.github.com/joepie91/7105003c3b26e65efcea63f3db82dfba)
+* [Why I don't miss React: a story about using the platform](https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/)
+* [In case you missed it, the new @remix_run K-Pop stack will let you spin up:](https://twitter.com/jlengstorf/status/1521209429055590401?s=20&t=q0pMdfh0DsPpTD1lm3JD-g)
+* [Deploying a React app with Serverless Studio](https://socketsupply.co/blog/guide-react/)
+* [tradle / why-hypercore ](https://github.com/tradle/why-hypercore)
+
 
