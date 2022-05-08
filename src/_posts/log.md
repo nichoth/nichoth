@@ -1534,4 +1534,18 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Deploying a React app with Serverless Studio](https://socketsupply.co/blog/guide-react/)
 * [tradle / why-hypercore ](https://github.com/tradle/why-hypercore)
 
+## 5-8-2022
+* [Replace Text & Images Using Edge Functions and HTMLRewriter](https://www.learnwithjason.dev/blog/html-transform-edge-function)
+* [twizzler OS](https://twizzler.io/)
+* [HAVE YOU TRIED RUBBING A DATABASE ON IT?](https://www.hytradboi.com/)
+* [pranadb](https://github.com/cashapp/pranadb)
+* [delta, a git diff thing](https://dandavison.github.io/delta/installation.html)
+* [why-hypercore](https://github.com/tradle/why-hypercore)
+* [Deploy Your Remix + Supabase App Today!](https://www.netlify.com/blog/deploy-your-remix-supabase-app-today!/?utm_source=twitter&utm_medium=kpopstack&utm_campaign=devex-jl)
+* [New blog on my experiments of Astro and service workers](https://twitter.com/passle_/status/1522504926420774917?s=20&t=NkO_wIF7-Prgu0NlC1vODA)
+* [Joining Remix](https://blog.jim-nielsen.com/2022/joining-remix/)
+* [Making CRDTs Byzantine fault tolerant](https://speakerdeck.com/ept/making-crdts-byzantine-fault-tolerant)
+* [Why I don't miss React: a story about using the platform](https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/)
+
+
 
