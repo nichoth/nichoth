@@ -1546,6 +1546,6 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Joining Remix](https://blog.jim-nielsen.com/2022/joining-remix/)
 * [Making CRDTs Byzantine fault tolerant](https://speakerdeck.com/ept/making-crdts-byzantine-fault-tolerant)
 * [Why I don't miss React: a story about using the platform](https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/)
-
+* [Fission Reactor: Dialog First Look](https://fission.codes/blog/fission-reactor-dialog-first-look/)
 
 
