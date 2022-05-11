@@ -1550,3 +1550,17 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Merge what you can, fork what you can't: managing data integrity in local-first software](https://dl.acm.org/doi/abs/10.1145/3517209.3524041)
 
 
+## 5-11-2022
+* [I'm All-In on Server-Side SQLite](https://fly.io/blog/all-in-on-sqlite-litestream/)
+* [A few of my favorite well-supported modern CSS features](https://twitter.com/argyleink/status/1523867688849666048?s=20&t=NKa7i0UvHIByba1RbQt_kw)
+* [Fitting Everything Together](https://0pointer.net/blog/fitting-everything-together.html)
+* [mycelial technology](https://mycelial.technology/)
+* [mfowler.info](https://mfowler.info/)
+
+-------------------------------
+
+* [replicache](https://replicache.dev/)
+* [replicache announcement tweet](https://twitter.com/aboodman/status/1524085188082294785?s=20&t=rgXtsOkQhKa4-Ftfxr6QDQ)
+* [Little story about "ajax"](https://twitter.com/aboodman/status/1524157782177447936?s=20&t=blUVnAg4RRrIGAZOA9PGPA)
+* [d1 is here — cloudflare first sql database](https://twitter.com/ritakozlov_/status/1524374888596885505?s=20&t=AR9h1CYY7Z8CE-vgNEVlPA)
+
