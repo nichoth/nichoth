@@ -1564,3 +1564,10 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Little story about "ajax"](https://twitter.com/aboodman/status/1524157782177447936?s=20&t=blUVnAg4RRrIGAZOA9PGPA)
 * [d1 is here — cloudflare first sql database](https://twitter.com/ritakozlov_/status/1524374888596885505?s=20&t=AR9h1CYY7Z8CE-vgNEVlPA)
 
+---------------------------
+
+* [dolt](https://github.com/dolthub/dolt)
+* [dolthub -- Dolt Use Cases in the Wild](https://www.dolthub.com/blog/2021-03-09-dolt-use-cases-in-the-wild/)
+
+
+
