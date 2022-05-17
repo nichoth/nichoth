@@ -1570,4 +1570,10 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [dolthub -- Dolt Use Cases in the Wild](https://www.dolthub.com/blog/2021-03-09-dolt-use-cases-in-the-wild/)
 
 
+## 5-17-2022
+
+* [Decentralized software architecture: SACI](https://ethresear.ch/t/decentralized-software-architecture-saci/12643)
+* [Build apps for people you care about](https://www.local-first-cooperation.org/)
+* [Serving Cloudflare Pages sites to the IPFS network](https://blog.cloudflare.com/cloudflare-pages-on-ipfs/)
+
 
