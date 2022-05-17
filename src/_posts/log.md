@@ -1576,5 +1576,3 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Build apps for people you care about](https://www.local-first-cooperation.org/)
 * [Serving Cloudflare Pages sites to the IPFS network](https://blog.cloudflare.com/cloudflare-pages-on-ipfs/)
 * [Bringing page transitions to the web](https://www.youtube.com/watch?app=desktop&v=JCJUPJ_zDQ4&ab_channel=GoogleChromeDevelopers)
-
-

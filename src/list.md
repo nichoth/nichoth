@@ -249,6 +249,7 @@ Firebase Alternative
 * [dolt](https://www.dolthub.com/)
 * [riffle](https://riffle.systems/)
 * [riffle / Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
+* [litestream](https://litestream.io/) -- Fully-replicated database with no pain and little cost
 
 ----------------------------------
 
