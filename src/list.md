@@ -10,7 +10,6 @@
 * [netlify](https://www.netlify.com/) -- http
 * [heroku](https://www.heroku.com/)
 * [pinata](https://www.pinata.cloud/) -- ipfs
-
 * [concordant](https://www.concordant.io/) -- "More power to your edge app"
 
 ## static frameworks
@@ -47,9 +46,7 @@
 * [mutant](https://github.com/mmckegg/mutant)
 * [bulma](https://bulma.io/) -- css 
 * [tonic](https://tonic.technology/)
-
 * [remix.run](https://remix.run/)
-
 * [htm-ssr gist](https://gist.github.com/developit/699c8d8f180a1e4eed58167f9c6711be)
 * [htm + vhtml](https://github.com/developit/htm#other-uses)
 * [htm demos & examples](https://github.com/developit/htm#demos--examples)
@@ -229,7 +226,6 @@ db.createReadStream({
 --------------------------------------
 
 * [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
-
 * [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
 
 
@@ -270,13 +266,13 @@ Firebase Alternative
 
 ## money
 
-[rechargepayments.com/](https://rechargepayments.com/)
+* [rechargepayments.com](https://rechargepayments.com/)
+* [swell](https://www.swell.is/) -- seen in a [video](https://www.youtube.com/watch?v=72E-EY9EEBY&ab_channel=ColbyFayock) about vercel + ecommerce
 
 ## more misc
 
 * [State of libp2p](https://fosdem.org/2022/schedule/event/libp2p/)
 * [Hyper Hyper Space: In-browser p2p applications](https://fosdem.org/2022/schedule/event/hyperhyper/)
-
 * [fly.io -- global image service article](https://fly.io/docs/app-guides/run-a-global-image-service/)
 
 
