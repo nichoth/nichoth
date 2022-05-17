@@ -247,6 +247,13 @@ Firebase Alternative
 * [vaxine](https://medium.com/lunar-ventures/vaxine-the-database-for-social-software-6e3a292a53ca)
 * [harperDB](https://dev.to/andrewbaisden/how-to-use-harperdb-custom-functions-to-build-your-entire-backend-a2m)
 
+### fancy local-first DBs
+
+* [replicache](https://replicache.dev/)
+* [dolt](https://www.dolthub.com/)
+* [riffle](https://riffle.systems/)
+* [riffle / Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
+
 ----------------------------------
 
 ## to read
