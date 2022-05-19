@@ -48,8 +48,8 @@ How do you store the data so that you can find and replicate it?
 ## replication
 Who's data do you host on your IPFS node? This is the pubsub situation seen [here](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b)
 
-[ipfs-pubsub-room](https://github.com/ipfs-shipyard/ipfs-pubsub-room)
-[js-ipfs](https://github.com/ipfs/js-ipfs)
-[Tutorial: How to build an application with IPFS PubSub Room](https://github.com/libp2p/research-pubsub/issues/18)
-[js-libp2p](https://github.com/libp2p/js-libp2p)
+* [ipfs-pubsub-room](https://github.com/ipfs-shipyard/ipfs-pubsub-room)
+* [js-ipfs](https://github.com/ipfs/js-ipfs)
+* [Tutorial: How to build an application with IPFS PubSub Room](https://github.com/libp2p/research-pubsub/issues/18)
+* [js-libp2p](https://github.com/libp2p/js-libp2p)
 
