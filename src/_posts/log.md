@@ -1586,6 +1586,7 @@ The example is self-signed by Alice. The service here still needs to check out o
 
 
 ## 5-23-2022
-[ndimatteo/HULL](https://github.com/ndimatteo/HULL) -- Headless Shopify Starter – powered by Next.js + Sanity.io
+* [ndimatteo/HULL](https://github.com/ndimatteo/HULL) -- Headless Shopify Starter – powered by Next.js + Sanity.io
+* [ditto](https://www.ditto.live/) -- Real-time sync for apps even without the internet
 
 
