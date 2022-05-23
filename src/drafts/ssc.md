@@ -1,4 +1,4 @@
-What could be better?
+## What could be better?
 
 Electron. We want to use a web browser to read content. That's what it is
 designed for -- browsing content.
