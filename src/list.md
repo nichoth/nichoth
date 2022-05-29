@@ -242,6 +242,7 @@ Firebase Alternative
 * [kappa db](https://github.com/kappa-db)
 * [vaxine](https://medium.com/lunar-ventures/vaxine-the-database-for-social-software-6e3a292a53ca)
 * [harperDB](https://dev.to/andrewbaisden/how-to-use-harperdb-custom-functions-to-build-your-entire-backend-a2m)
+* [cockroach DB](https://www.cockroachlabs.com/)
 
 ### fancy local-first DBs
 
