@@ -1612,5 +1612,6 @@ The example is self-signed by Alice. The service here still needs to check out o
 ## 6-7-2022
 
 * [Fullstack serverless with MongoDB Atlas integration](https://vercel.com/changelog/mongodb-atlas-integration)
-* [CSS Tip! ✨ Use calc && scoped](https://twitter.com/jh3yy/status/1534146966535426048?s=20&t=mEOixDYnIwtVnmCE5mAvow)
+* [CSS Tip! ✨ Use `calc` && `scoped` to create a pure CSS expanding gallery view](https://twitter.com/jh3yy/status/1534146966535426048?s=20&t=mEOixDYnIwtVnmCE5mAvow)
+
 
