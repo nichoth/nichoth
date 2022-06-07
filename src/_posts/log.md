@@ -1595,4 +1595,17 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [What image format should you use for the best balance of performance and quality? 👇](https://twitter.com/Steve8708/status/1530286144167944192?s=20&t=zRlnR5V4uvsSCJjDTNxphQ)
 * [Lens Protocol Front End Starter](https://github.com/dabit3/lens-protocol-frontend)
 
+## 6-7-2022
+
+* [dropdown](https://nextui.org/docs/components/dropdown)
+* [eleventy images](https://twitter.com/SaraSoueidan/status/1533468684089536513?s=20&t=ec8gCq_PK7Ghr7MUHWE_Ww)
+* [twitter "web 3"](https://twitter.com/CryptoShelbz/status/1518560541291081728)
+* [twitter "web 3"](https://twitter.com/MishadaVinci/status/1533444611762315265)
+* [css tip - bg pattern](https://twitter.com/ChallengesCss/status/1533032841029763072?s=20&t=BIvzwxOQj0UKpoLbH6IGdw)
+* [increase your luck](https://twitter.com/TheAnkurTyagi/status/1533087815755603969?s=20&t=-XsHv6Po3s7dFpWpzCqosQ)
+* [full page swipe effect](https://twitter.com/Steve8708/status/1532793202582794241?s=20&t=wUyaEzn10LK6iHg9Hv6Zwg)
+* [How Apple makes their beautiful hamburger](https://twitter.com/Steve8708/status/1532364254434578432?s=20&t=FmnSNcopvBrSNOuAKCJEEQ)
+* [anatomy of a CID](https://proto.school/anatomy-of-a-cid)
+* [react bricks](https://twitter.com/seldo/status/1532121092927565824?s=20&t=ugw9FiHqand7PyvofD-2yg)
+
 
