@@ -1595,7 +1595,7 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [What image format should you use for the best balance of performance and quality? 👇](https://twitter.com/Steve8708/status/1530286144167944192?s=20&t=zRlnR5V4uvsSCJjDTNxphQ)
 * [Lens Protocol Front End Starter](https://github.com/dabit3/lens-protocol-frontend)
 
-## 6-7-2022
+## 6-6-2022
 
 * [dropdown](https://nextui.org/docs/components/dropdown)
 * [eleventy images](https://twitter.com/SaraSoueidan/status/1533468684089536513?s=20&t=ec8gCq_PK7Ghr7MUHWE_Ww)
@@ -1608,4 +1608,9 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [anatomy of a CID](https://proto.school/anatomy-of-a-cid)
 * [react bricks](https://twitter.com/seldo/status/1532121092927565824?s=20&t=ugw9FiHqand7PyvofD-2yg)
 
+
+## 6-7-2022
+
+* [Fullstack serverless with MongoDB Atlas integration](https://vercel.com/changelog/mongodb-atlas-integration)
+* [CSS Tip! ✨ Use calc && scoped](https://twitter.com/jh3yy/status/1534146966535426048?s=20&t=mEOixDYnIwtVnmCE5mAvow)
 
