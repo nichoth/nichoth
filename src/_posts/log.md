@@ -1619,5 +1619,5 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [deno deploy](https://deno.com/deploy)
 * [Web Streams Everywhere (and Fetch for Node.js)](https://css-tricks.com/web-streams-everywhere-and-fetch-for-node-js/)
 * [wormhole-crypto](https://github.com/SocketDev/wormhole-crypto)
-
+* [What are the main differences between these streams and Node.js streams?](https://github.com/whatwg/streams/blob/main/FAQ.md#what-are-the-main-differences-between-these-streams-and-nodejs-streams)
 
