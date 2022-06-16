@@ -1623,6 +1623,7 @@ The example is self-signed by Alice. The service here still needs to check out o
 
 
 ## 6-25-2022
+
 * [teaful](https://github.com/teafuljs/teaful) -- a state library
 * [js-libp2p/examples/libp2p-in-the-browser/](https://github.com/libp2p/js-libp2p/tree/master/examples/libp2p-in-the-browser)
 * [dabit3 / lens-protocol-frontend](https://github.com/dabit3/lens-protocol-frontend)
@@ -1633,7 +1634,6 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [https://mycelial.technology/](https://mycelial.technology/)
 * [d1 is here — cloudflare first sql database!](https://twitter.com/ritakozlov_/status/1524374888596885505?s=20&t=AR9h1CYY7Z8CE-vgNEVlPA)
 * [A few of my favorite well-supported modern CSS features](https://twitter.com/argyleink/status/1523867688849666048?s=20&t=NKa7i0UvHIByba1RbQt_kw)
-
 * [xstate](https://xstate.js.org/docs/)
 * [Fly.io: the Reclaimer of Heroku's Magic](https://xeiaso.net/blog/fly.io-heroku-replacement)
 * [riffle](https://riffle.systems/essays/prelude/)
