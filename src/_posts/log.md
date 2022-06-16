@@ -1621,3 +1621,24 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [wormhole-crypto](https://github.com/SocketDev/wormhole-crypto)
 * [What are the main differences between these streams and Node.js streams?](https://github.com/whatwg/streams/blob/main/FAQ.md#what-are-the-main-differences-between-these-streams-and-nodejs-streams)
 
+
+## 6-25-2022
+* [teaful](https://github.com/teafuljs/teaful) -- a state library
+* [js-libp2p/examples/libp2p-in-the-browser/](https://github.com/libp2p/js-libp2p/tree/master/examples/libp2p-in-the-browser)
+* [dabit3 / lens-protocol-frontend](https://github.com/dabit3/lens-protocol-frontend)
+* [ssb paper](https://github.com/dominictarr/scalable-secure-scuttlebutt/blob/master/paper.md)
+* [The introduction of mass storage to web apps is a fundamental change](https://twitter.com/aboodman/status/1524157782177447936?s=20&t=blUVnAg4RRrIGAZOA9PGPA)
+* [https://litestream.io/](https://litestream.io/)
+* [Today, @replicache is entering General Availability!](https://twitter.com/aboodman/status/1524085188082294785)
+* [https://mycelial.technology/](https://mycelial.technology/)
+* [d1 is here — cloudflare first sql database!](https://twitter.com/ritakozlov_/status/1524374888596885505?s=20&t=AR9h1CYY7Z8CE-vgNEVlPA)
+* [A few of my favorite well-supported modern CSS features](https://twitter.com/argyleink/status/1523867688849666048?s=20&t=NKa7i0UvHIByba1RbQt_kw)
+
+* [xstate](https://xstate.js.org/docs/)
+* [Fly.io: the Reclaimer of Heroku's Magic](https://xeiaso.net/blog/fly.io-heroku-replacement)
+* [riffle](https://riffle.systems/essays/prelude/)
+* [As a web3 dev, it took me 4 months to find my first job](https://twitter.com/Haezurath/status/1530204229457125376)
+* [AljoschaMeyer/set-reconciliation](https://github.com/AljoschaMeyer/set-reconciliation)
+
+
+
