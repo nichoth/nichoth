@@ -1640,5 +1640,16 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [As a web3 dev, it took me 4 months to find my first job](https://twitter.com/Haezurath/status/1530204229457125376)
 * [AljoschaMeyer/set-reconciliation](https://github.com/AljoschaMeyer/set-reconciliation)
 
+-----------------------------------
+
+* [nanostores / nanostores](https://github.com/nanostores/nanostores)
+* [developit / unistore](https://github.com/developit/unistore)
+* [teaful](https://github.com/teafuljs/teaful) -- a state library
+* [redux-zero / redux-zero](https://github.com/redux-zero/redux-zero)
+* [KidkArolis / tiny-atom](https://github.com/KidkArolis/tiny-atom)
+* [KwanMan / preact-tiny-atom](https://github.com/KwanMan/preact-tiny-atom)
+* [Awesome Preact](https://github.com/preactjs/awesome-preact/blob/master/readme.md#libraries)
+* [nanostores/persistent](https://github.com/nanostores/persistent)
+
 
 
