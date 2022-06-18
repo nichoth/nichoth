@@ -68,6 +68,7 @@
 * [Create a nice background pattern with 4 conic-gradient](https://twitter.com/ChallengesCss/status/1533032841029763072)
 * [nextUI dropdown](https://nextui.org/docs/components/dropdown)
 * [Use calc && scoped custom properties to create a pure CSS expanding gallery view](https://twitter.com/jh3yy/status/1534146966535426048)
+* [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
 
 
 -------------------------------------------------
@@ -240,7 +241,6 @@ db.createReadStream({
 
 --------------------------------------
 
-* [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
 * [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
 
 
