@@ -1651,5 +1651,18 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Awesome Preact](https://github.com/preactjs/awesome-preact/blob/master/readme.md#libraries)
 * [nanostores/persistent](https://github.com/nanostores/persistent)
 
+---------------------------------------
+
+## 6-28-2022
+
+* [Defensive CSS](https://defensivecss.dev/)
+* [Make super cool swipe-over sections like Apple in pure CSS!](https://twitter.com/Steve8708/status/1540794691309805569?s=20&t=mvvEqJW1xtkO_pqX5Ay6fg)
+* [How Airbnb makes that cool swipe up drawer on their mobile site in CSS](https://twitter.com/Steve8708/status/1541455876669571072?s=20&t=x-02YQVBP8OWnemt4_QQYg)
+* [Data Flow in Remix](https://remix.run/blog/remix-data-flow)
+* [Remix: The Yang to React's Yin](https://kentcdodds.com/blog/remix-the-yang-to-react-s-yin)
+* [This diagram showcases what makes @remix_run special:](https://twitter.com/housecor/status/1541605649875980289?s=20&t=vsfajkpDjgn-jcoRxQg2IA)
+* [http://tef.computer/](http://tef.computer/)
+* [Critique: “Remix looks like PHP”.](https://twitter.com/housecor/status/1541785367984148480?s=20&t=bhpNmkVl5qsNs1t45u0klg)
+* [Fresh 1.0](https://deno.com/blog/fresh-is-stable)
 
 
