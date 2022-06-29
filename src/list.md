@@ -69,6 +69,8 @@
 * [nextUI dropdown](https://nextui.org/docs/components/dropdown)
 * [Use calc && scoped custom properties to create a pure CSS expanding gallery view](https://twitter.com/jh3yy/status/1534146966535426048)
 * [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
+* `vmin` unit -- the lesser of `vw` and `vh`
+* [fluid typography](https://fluid-typography.netlify.app/)
 
 
 -------------------------------------------------
@@ -208,11 +210,6 @@
 
 ------------------------------------------
 
-## css
-
-* `vmin` unit -- the lesser of `vw` and `vh`
-* [fluid typography](https://fluid-typography.netlify.app/)
-
 
 ## leveldb
 * https://github.com/dominictarr/charwise
@@ -292,6 +289,7 @@ Firebase Alternative
 * [State of libp2p](https://fosdem.org/2022/schedule/event/libp2p/)
 * [Hyper Hyper Space: In-browser p2p applications](https://fosdem.org/2022/schedule/event/hyperhyper/)
 * [fly.io -- global image service article](https://fly.io/docs/app-guides/run-a-global-image-service/)
+* [hydrogen / shopify](https://docs.netlify.com/integrations/frameworks/hydrogen/)
 
 
 ### video misc
@@ -305,4 +303,5 @@ Firebase Alternative
 * [webiny](https://www.webiny.com/) -- Build  Serverless  Solutions in Minutes
 * [cloudinary](https://cloudinary.com/) -- media server
 * [web3.storage](https://web3.storage/) -- free stuff
+* [storj](https://www.storj.io/)
 
