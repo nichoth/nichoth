@@ -71,6 +71,7 @@
 * [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
 * `vmin` unit -- the lesser of `vw` and `vh`
 * [fluid typography](https://fluid-typography.netlify.app/)
+* [auto-fill vs auto-fit](https://defensivecss.dev/tip/auto-fit-fill/)
 
 
 -------------------------------------------------
