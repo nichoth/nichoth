@@ -41,6 +41,12 @@ $muted-text: #3b4146;
 	@return css-function( 200pxclamp, $values );
 }
 
+#content .date {
+  color: gray;
+  font-family: YoungSerif, serif;
+  font-weight: normal;
+}
+
 .discussion-fission-ipfs {
     p {
         font-size: 1rem;

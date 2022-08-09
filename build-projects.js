@@ -148,7 +148,7 @@ function buildProjects () {
                 if (err) throw err
                 var parsed = matter(file)
                 var fm = parsed.data
-                var { slug, type, linkDesc, linkTitle } = fm
+                var { date, slug, type, linkDesc, linkTitle } = fm
 
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
@@ -178,7 +178,12 @@ function buildProjects () {
                         class: { append: slug + ' project ' + type}
                     },
                     '#content': {
-                        _appendHtml: marked(parsed.content)
+                        _appendHtml: `<div class="date">
+                            <time datetime="${date}">
+                                ${date}
+                            </time>
+                        </div>` +
+                        marked(parsed.content)
                     }
                 })
 
