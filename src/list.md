@@ -291,6 +291,7 @@ Firebase Alternative
 * [Hyper Hyper Space: In-browser p2p applications](https://fosdem.org/2022/schedule/event/hyperhyper/)
 * [fly.io -- global image service article](https://fly.io/docs/app-guides/run-a-global-image-service/)
 * [hydrogen / shopify](https://docs.netlify.com/integrations/frameworks/hydrogen/)
+* [Everything You Need to Know About JavaScript Import Maps](https://www.honeybadger.io/blog/import-maps/)
 
 
 ### video misc
