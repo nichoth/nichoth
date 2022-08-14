@@ -24,5 +24,5 @@ So naturally I found a technical solution to the social problem. Now anyone can 
 
 -----------------------------------
 
-The word “remix” keeps coming into my mind. Meaning I’m more interested in combining the basic ingredients of ssb in new/different ways than creating another ssb client. What is an ssb client anyway? I think the thing that really defines an ssb client is the use of muxrpc + websockets as the transport protocol, + secret-handshake / secret-stack. The storage, etc, have opinionated defaults, but still kind of up in the air. But to participate in the ‘ssb network’ you do have to speak that protocol of muxrpc & websockets.
+The word “remix” keeps coming into my mind. Meaning I’m more interested in combining the basic ingredients of ssb in new/different ways than creating another ssb client. What is an ssb client anyway? I think the thing that really defines an ssb client is the use of muxrpc + websockets as the transport protocol, + secret-handshake / secret-stack. The storage, etc, have opinionated defaults, but are still kind of up in the air. But to participate in the ‘ssb network’ you do have to speak that protocol of muxrpc & websockets.
 
