@@ -1665,4 +1665,11 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Critique: “Remix looks like PHP”.](https://twitter.com/housecor/status/1541785367984148480?s=20&t=bhpNmkVl5qsNs1t45u0klg)
 * [Fresh 1.0](https://deno.com/blog/fresh-is-stable)
 
+## 9-2-2022
+
+* [:not(:last-of-type) selector](https://twitter.com/JoshWComeau/status/1565443691120140290?s=20&t=I1uifW32JGM-UPKzTHZdFA)
+* [Experimenting with 🚀 @astrodotbuild and the Shared Element Transition API.](https://twitter.com/charca/status/1561830946462384128?s=20&t=1VyXwli2inLmw5TVeEHu2A)
+* [the UX tends to fall apart on slow mobile connections. Did you try that?](https://twitter.com/paulo_evpr/status/1561850235777077248?s=20&t=1VyXwli2inLmw5TVeEHu2A)
+* [This is what I've had in mind for the web with React Router.](https://twitter.com/ryanflorence/status/1186675229621248000?s=20&t=1VyXwli2inLmw5TVeEHu2A)
+* [navigation API](https://developer.chrome.com/docs/web-platform/navigation-api/)
 
