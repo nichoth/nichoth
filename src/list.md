@@ -239,6 +239,11 @@ db.createReadStream({
 
 --------------------------------------
 
+## javascript
+* [A comprehensive production-grade TypeScript training](https://www.totaltypescript.com/)
+
+-------------------------------------
+
 * [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
 
 
