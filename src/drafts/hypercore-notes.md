@@ -9,3 +9,5 @@ i would say that is the gist
 
 words by @serapath
 
+[via discord](https://discord.com/channels/765986527574360065/776599817778364456/1017819817950068836)
+
