@@ -1,7 +1,7 @@
 ---
 
 linkTitle: development diary — streams
-linkDesc: Streams are a very helpful metaphor
+linkDesc: Streams are a helpful metaphor
 slug: dev-diary-stream
 type: dev-diary
 date: 1-4-2022
