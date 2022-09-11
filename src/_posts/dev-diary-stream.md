@@ -16,6 +16,8 @@ See [the stream handbook](https://github.com/substack/stream-handbook)
 
 I was thinking just now that it would be nice to have a transform stream that will encrypt anything written to it, and likewise decrypt on the other side.
 
+[see ssz](https://github.com/nichoth/ssz)
+
 __Pretend code__
 ```js
 var secretSource = secretStream.encrypt({ publicKey: 'abc' })
