@@ -10,7 +10,9 @@ date: 4-26-2022
 
 # development diary
 
-## Learning next.js
+## Finally learning next.js
+
+[github.com/nichoth/nextjs-blog](https://github.com/nichoth/nextjs-blog)
 
 following [these instructions](https://nextjs.org/learn/basics/create-nextjs-app)
 
