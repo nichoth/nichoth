@@ -1673,3 +1673,11 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [This is what I've had in mind for the web with React Router.](https://twitter.com/ryanflorence/status/1186675229621248000?s=20&t=1VyXwli2inLmw5TVeEHu2A)
 * [navigation API](https://developer.chrome.com/docs/web-platform/navigation-api/)
 
+## 9-21-2022
+
+* [5t3ph / 11ty-sass-skeleton](https://github.com/5t3ph/11ty-sass-skeleton)
+  -- Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.
+* [I always thought that between the two of us, @jaffathecake did the deep-dives on obscure web stuff on HTTP203. I think he might have found his match in @bramus . 45 minutes that are worth your time if you ever wondered why `html {height: 100%}` is not doing the thing you wanted…](https://twitter.com/DasSurma/status/1569777904443355136?s=20&t=tsZue_Aet-8IfycDNOz6oA)
+* [Got Preact Signals working in @sveltejs out of the box.](https://twitter.com/marvinhagemeist/status/1569585235334991873?s=20&t=Bvt11R6OW5XdKLVPSf-HGw)
+
+
