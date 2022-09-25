@@ -14,7 +14,7 @@ $muted-text: #3b4146;
 
 @font-face {
   font-family: 'Raleway';
-  src: url("/font/Raleway-VariableFont_wght.ttf");
+  src: url("/font/Raleway-VariableFont_wght.ttf") format('truetype');
 }
 
 @function css-function( $function, $values... ) {
