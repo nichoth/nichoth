@@ -88,6 +88,7 @@
 * https://56.digital/
 * https://georgefrancis.dev/
 * https://www.shawnbinder.com/
+* https://www.snaplet.dev/
 
 --------------------------------
 
