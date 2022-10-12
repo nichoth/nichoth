@@ -313,4 +313,5 @@ Firebase Alternative
 * [cloudinary](https://cloudinary.com/) -- media server
 * [web3.storage](https://web3.storage/) -- free stuff
 * [storj](https://www.storj.io/)
+* [backblaze](https://www.backblaze.com/)
 
