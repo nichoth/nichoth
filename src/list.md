@@ -242,10 +242,6 @@ db.createReadStream({
 ## javascript
 * [A comprehensive production-grade TypeScript training](https://www.totaltypescript.com/)
 
--------------------------------------
-
-* [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
-
 
 ## db
 
@@ -291,6 +287,8 @@ Firebase Alternative
 * [rechargepayments.com](https://rechargepayments.com/)
 * [swell](https://www.swell.is/) -- seen in a [video](https://www.youtube.com/watch?v=72E-EY9EEBY&ab_channel=ColbyFayock) about vercel + ecommerce
 * [medusa](https://medusajs.com/)
+* [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
+
 
 ## more misc
 
