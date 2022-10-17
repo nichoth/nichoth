@@ -51,14 +51,22 @@
 * [htm + vhtml](https://github.com/developit/htm#other-uses)
 * [htm demos & examples](https://github.com/developit/htm#demos--examples)
 
+### state containers
+* [nanostores](https://github.com/nanostores/nanostores)
+* [observ](https://github.com/Raynos/observ)
+* [teaful](https://github.com/teafuljs/teaful)
+* [preact/signals](https://github.com/preactjs/signals)
+* [redux-zero](https://github.com/redux-zero/redux-zero)
+* [developit/unistore](https://github.com/developit/unistore)
+* [nichoth/preact-pull-stream](https://github.com/nichoth/preact-pull-stream) -- my own thing
+
+
 --------------------------------------
 
-* [stitches.dev](https://stitches.dev/) -- CSS in JS
-
--------------------------------------------------
 
 ### css
 
+* [stitches.dev](https://stitches.dev/) -- CSS in JS
 * [How does Apple make that awesome frosted glass effect on their site header in CSS?](https://twitter.com/Steve8708/status/1531101973985890305)
 * [How do Nike and Apple make such smooth and touch friendly carousels with pure CSS?](https://twitter.com/Steve8708/status/1531388545960583168)
 * [Speedy CSS Tip! Turn your images into Polaroid™](https://twitter.com/jh3yy/status/1531680894955790339)
