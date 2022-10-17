@@ -53,6 +53,7 @@
 
 ### state containers
 * [nanostores](https://github.com/nanostores/nanostores)
+  - [wtw.dev/51-nanostores](https://wtw.dev/51-nanostores) -- a little video
 * [observ](https://github.com/Raynos/observ)
 * [teaful](https://github.com/teafuljs/teaful)
 * [preact/signals](https://github.com/preactjs/signals)
