@@ -56,7 +56,7 @@
   - [wtw.dev/51-nanostores](https://wtw.dev/51-nanostores) -- a little video
 * [observ](https://github.com/Raynos/observ)
 * [teaful](https://github.com/teafuljs/teaful)
-* [preact/signals](https://github.com/preactjs/signals)
+* [preact/signals](https://github.com/preactjs/signals) ⭐
 * [redux-zero](https://github.com/redux-zero/redux-zero)
 * [developit/unistore](https://github.com/developit/unistore)
 * [nichoth/preact-pull-stream](https://github.com/nichoth/preact-pull-stream) -- my own thing
