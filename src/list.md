@@ -313,6 +313,12 @@ Firebase Alternative
 
 * [the terrys](https://www.imdb.com/title/tt1851076/)
 
+### sailing + bicycles
+* [earthstar hyperloop metaphor](https://earthstar-project.org/get-started/like-a-bicycle)
+* [Hold Fast](https://vimeo.com/15351476) -- Moxie documentary video
+* [Hundred Rabbits](https://www.youtube.com/watch?v=BW32yUEymvU) -- a
+  presentation
+
 
 ## storage
 
