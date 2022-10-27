@@ -179,9 +179,12 @@ function buildProjects () {
                     },
                     '#content': {
                         _appendHtml: `<div class="date">
-                            <time datetime="${date}">
-                                ${date}
-                            </time>
+                            ${date ? 
+                                `<time datetime="${date}">
+                                    ${date}
+                                </time>` :
+                                ''
+                            }
                         </div>` +
                         marked(parsed.content)
                     }
