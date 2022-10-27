@@ -213,7 +213,6 @@
 ----------------------------
 
 * https://decentpatterns.xyz/
-* https://hasura.io/
 
 ------------------------------------------
 
@@ -267,6 +266,7 @@ Firebase Alternative
 * [vaxine](https://medium.com/lunar-ventures/vaxine-the-database-for-social-software-6e3a292a53ca)
 * [harperDB](https://dev.to/andrewbaisden/how-to-use-harperdb-custom-functions-to-build-your-entire-backend-a2m)
 * [cockroach DB](https://www.cockroachlabs.com/)
+* [hasura](https://hasura.io/)
 
 ### fancy local-first DBs
 
