@@ -98,7 +98,6 @@ npm init --scope=<your_scope>
 ```
 npm publish
 ```
-
 If you want to make the package **public**, publish it with `--access=public`
 ```
 npm publish --access=public
