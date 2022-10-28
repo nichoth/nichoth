@@ -89,9 +89,7 @@ You can use npm to privately host our internal dependencies. This allows you to 
     "name": "@org/project-name"
 }
 ```
-
 If you use `npm init` to initialize your packages, you can pass in the scope like this:
-
 ```
 npm init --scope=<your_scope>
 ```
