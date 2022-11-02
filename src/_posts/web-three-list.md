@@ -10,7 +10,7 @@ date: 2-9-2022
 
 # web3 list
 
-A list of web3 projects
+A list of "web3" projects
 
 * [dsnp](https://www.dsnp.org/)
 * [true movements](https://www.trumovements.net/)
