@@ -1,7 +1,7 @@
 ---
 
 linkTitle: web three list
-linkDesc: Writing down various links to <q>web3</q> projects
+linkDesc: Writing down various links to &quot;web3&quot; projects
 slug: web-three-list
 type: miscellany
 date: 2-9-2022
