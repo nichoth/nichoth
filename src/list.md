@@ -246,6 +246,9 @@ db.createReadStream({
 
 > you can nest the `<input>` directly inside the `<label>`, in which case the `for` and `id` attributes are not needed because the association is implicit
 
+* [Cache serverless responses with Cache-Control headers](https://wtw.dev/59-cache-control)
+
+
 --------------------------------------
 
 ## javascript
