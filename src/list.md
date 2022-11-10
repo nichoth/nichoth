@@ -332,3 +332,8 @@ Firebase Alternative
 * [storj](https://www.storj.io/)
 * [backblaze](https://www.backblaze.com/) -- used by [wormhole app](https://wormhole.app/)
 
+## new things
+
+* [Introducing Quiet - Encrypted P2P team chat without servers, just Tor - Holmes Wilson](https://youtu.be/owSd7uuGwmw?t=170)
+  - IPFS, orbitDB, Tor
+
