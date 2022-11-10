@@ -119,7 +119,7 @@
   - seen [here](https://mxb.dev/blog/container-queries-web-components/)
 * [noe display](https://fontsinuse.com/typefaces/31872/noe-display)
 * [work sans font](https://fonts.google.com/specimen/Work+Sans)
-* [freight bug](https://www.typewolf.com/freight-big)
+* [freight big](https://www.typewolf.com/freight-big)
 * [inter](https://fonts.google.com/specimen/Inter)
 * [sen](https://fonts.google.com/specimen/Sen) -- seen [here](https://www.fermyon.com/blog/serverless-reckoning)
 
