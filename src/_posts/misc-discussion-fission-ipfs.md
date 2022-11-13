@@ -43,7 +43,7 @@ awsome thank you @walkah
 As for Cypress - this is the repo where we have a few cypress tests (and is a bit of a general testing ground for some things) https://github.com/fission-suite/benchmark
 
 ## nichoth — 10/21/2021
-the in browser nodes connect to our servers by default
+> the in browser nodes connect to our servers by default
 
 Which level is that defined in? webnative?
 
@@ -57,11 +57,11 @@ The authentication service that Fission services run. - auth-lobby/Worker.js at 
 Or rather, shared worker is the right term
 
 ## nichoth — 10/21/2021
-sorry I'm having trouble getting a picture of everything. So the auth-lobby knows which servers to connect to. And where is auth-lobby used? The call to wn.publish tells ipfs nodes to update a CID, so is auth-lobby used by webnative?
+sorry I'm having trouble getting a picture of everything. So the auth-lobby knows which servers to connect to. And where is auth-lobby used? The call to `wn.publish` tells ipfs nodes to update a CID, so is auth-lobby used by webnative?
 
 ## Philipp — 10/21/2021
 Yeah an infrastructure diagram would have quite some edges 😄
-So, when you call .publish, this sends a request to the server with the current CID of your filesystem (stored in your browser in indexeddb, under the auth lobby's domain to be exact).
+So, when you call `.publish`, this sends a request to the server with the current CID of your filesystem (stored in your browser in indexeddb, under the auth lobby's domain to be exact).
 The server (see its endpoints at https://runfission.net/docs) also has IPFS running. It will ask the IPFS network for the CID of your filesystem and pull it.
 Technically, it doesn't matter how it gets the bytes. But it likely gets them from your browser directly, because your browser is configured to be connected to the fission ipfs nodes as you saw above.
 So there's a couple of entities:
