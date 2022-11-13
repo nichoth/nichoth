@@ -40,11 +40,6 @@ In the DB we normally just write down a reference to a blob -- a hash typically.
 
  > While it would be incredible to have a giant network of servers all storing our data for free, the economics don’t make sense. After all, storage isn’t free. All of this data needs to be stored somewhere and that costs money or tokens.
 
-
-## DB
-How do you store the data so that you can find and replicate it?
-
-
 ## replication
 Who's data do you host on your IPFS node? This is the pubsub situation seen [here](https://medium.com/textileio/build-a-decentralized-chat-app-with-knockout-and-ipfs-fccf11e8ce7b)
 
