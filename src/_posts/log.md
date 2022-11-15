@@ -1681,3 +1681,12 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Got Preact Signals working in @sveltejs out of the box.](https://twitter.com/marvinhagemeist/status/1569585235334991873?s=20&t=Bvt11R6OW5XdKLVPSf-HGw)
 
 
+## 11-15-2022
+
+* [fission + capyloon](https://fission.codes/blog/capyloon/)
+* [wtw -- tailwind](https://wtw.dev/60-tailwind-not-design-system)
+* [design systems are for user interfaces](https://bradfrost.com/blog/post/design-systems-are-for-user-interfaces/)
+* [How http://Enhance.dev solves FOUCE](https://twitter.com/brianleroux/status/1592227306608951297?s=20&t=QhYbblSnyKoTeiXibbwzbg)
+* [Decentralized Networks as Essential Infrastructure](https://twitter.com/dustyweb/status/1591892079416074240?s=20&t=vEdJItX51UymPHeoXGJ9RQ)
+
+
