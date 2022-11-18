@@ -78,7 +78,7 @@
 * [nextUI dropdown](https://nextui.org/docs/components/dropdown)
 * [Use calc && scoped custom properties to create a pure CSS expanding gallery view](https://twitter.com/jh3yy/status/1534146966535426048)
 * [radix ui](https://radix-ui.com/primitives/docs/components/hover-card)
-* `vmin` unit -- the lesser of `vw` and `vh`
+* [vmin unit](https://css-tricks.com/simple-little-use-case-vmin/) -- the lesser of `vw` and `vh`
 * [fluid typography](https://fluid-typography.netlify.app/)
 * [auto-fill vs auto-fit](https://defensivecss.dev/tip/auto-fit-fill/)
 
