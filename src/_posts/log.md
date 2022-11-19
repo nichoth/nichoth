@@ -1690,3 +1690,33 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Decentralized Networks as Essential Infrastructure](https://twitter.com/dustyweb/status/1591892079416074240?s=20&t=vEdJItX51UymPHeoXGJ9RQ)
 
 
+## 11-19-2022
+* [State of the IPFS DevTools ecosystem-Brendan O'Brien, Brooklyn Zelenka, Carson Farmer & Sara Feenan](https://www.youtube.com/watch?app=desktop&v=Q-41niP2tSg&ab_channel=IPFS)
+* [Apply instant loading with the PRPL pattern](https://web.dev/apply-instant-loading-with-prpl/)
+* [This episode's a long one, but you'll come out the other side knowing how pinch-zoom, scrolling, browser UI, and software keyboards change layout & viewports.](https://twitter.com/jaffathecake/status/1569738079975665666)
+* [Make Static Pages Dynamic With Netlify Edge Functions](https://www.learnwithjason.dev/make-static-pages-dynamic-with-netlify-edge-functions)
+* [Use XState With Netlify Edge Functions](https://www.learnwithjason.dev/use-xstate-with-netlify-edge-functions)
+* [IPVM - @expede - IPFS and WASM](https://www.youtube.com/watch?v=rzJWk1nlYvs&ab_channel=IPFS)
+* ["The Skip Ratchet" by Brooklyn Zelenka (Strange Loop 2022)](https://www.youtube.com/watch?v=3UjQd-JnMrQ&ab_channel=StrangeLoopConference)
+* ["A Distributed File System for Secure P2P Applications" by Brooklyn Zelenka (Strange Loop 2022)](https://www.youtube.com/watch?v=-f4cH_HQU4U&ab_channel=StrangeLoopConference)
+* [How browsers work](https://web.dev/howbrowserswork/)
+* [Announcing the TypeScript Cookbook](https://fettblog.eu/announcing-the-typescript-cookbook/)
+* [Jake Archibald: In The Loop - setTimeout, micro tasks, requestAnimationFrame, requestIdleCallback, …](https://www.youtube.com/watch?v=cCOL7MC4Pl0&ab_channel=JSConf)
+* [saltpack, a modern crypto messaging format](https://saltpack.org/)
+* [Fission Reactor: October 2022 Research Update](https://talk.fission.codes/t/fission-reactor-october-2022-research-update/3536)
+* [What is IPLD Anyway? - Mauve Signweaver](https://www.youtube.com/watch?v=J_Q6hF_lPiM&t=6s&ab_channel=IPFS)
+* [Introducing Quiet - Encrypted P2P team chat without servers, just Tor - Holmes Wilson](https://www.youtube.com/watch?v=owSd7uuGwmw&ab_channel=IPFS)
+* [Formal Analysis of GossipSub - Ankit Kumar](https://www.youtube.com/watch?v=T3QLhijHAwA&ab_channel=IPFS)
+* [skiff -- ](https://www.fastcompany.com/90696585/skiff-ipfs-storage-private-document-editor)
+* [Functional Programming Made Easier](https://leanpub.com/fp-made-easier)
+* [Web3's future #fail is avoidable](https://generative-identity.org/web3s-future-fail-is-avoidable/)
+* ["Transducers" by Rich Hickey](https://www.youtube.com/watch?v=6mTbuzafcII&ab_channel=StrangeLoopConference)
+* [Public Key Cryptography - Computerphile](https://www.youtube.com/watch?v=GSIDS_lvRv4&t=67s&ab_channel=Computerphile)
+* [Programming Local-First Software Workshop @ ECOOP 22 Berlin](https://www.youtube.com/watch?v=hJQqjELPcOU&t=7356s&ab_channel=SoftwareTechnologyGroup)
+* [WebNative File System (WNFS) - @expede, @matheus23 - IPFS Implementations](https://www.youtube.com/watch?v=3se17NAS-Lw&ab_channel=IPFS)
+* [Web3 for Fun and Profit | Brooklyn Zelenka | CascadiaJS 2021](https://www.youtube.com/watch?v=3D2tb01mlQI&ab_channel=CascadiaJS)
+* [Keynote: Why web tech is like this - Steve Sanderson](https://www.youtube.com/watch?v=3QEoJRjxnxQ&ab_channel=NDCConferences)
+* ["Evidence-Oriented Programming" by Andreas Stefik](https://www.youtube.com/watch?v=uEFrE6cgVNY&ab_channel=StrangeLoopConference)
+* [Invertible Bloom Filters - @matheus23 - Unconf](https://www.youtube.com/watch?v=YNbcXlllOBQ&ab_channel=IPFS)
+
+
