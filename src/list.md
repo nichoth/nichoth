@@ -11,6 +11,7 @@
 * [heroku](https://www.heroku.com/)
 * [pinata](https://www.pinata.cloud/) -- ipfs
 * [concordant](https://www.concordant.io/) -- "More power to your edge app"
+* [bunny fonts](https://bunny.net/fonts/) -- GDPR ok font CDN
 
 ## static frameworks
 * [next](https://nextjs.org/)
@@ -44,7 +45,6 @@
   - [hypersamples](https://github.com/hyperapp/hypersamples)
   - [hyperlit](https://github.com/zaceno/hyperlit)
 * [mutant](https://github.com/mmckegg/mutant)
-* [bulma](https://bulma.io/) -- css 
 * [tonic](https://tonic.technology/)
 * [remix.run](https://remix.run/)
 * [htm-ssr gist](https://gist.github.com/developit/699c8d8f180a1e4eed58167f9c6711be)
@@ -67,6 +67,7 @@
 
 ### css
 
+* [bulma](https://bulma.io/) -- css 
 * [stitches.dev](https://stitches.dev/) -- CSS in JS
 * [How does Apple make that awesome frosted glass effect on their site header in CSS?](https://twitter.com/Steve8708/status/1531101973985890305)
 * [How do Nike and Apple make such smooth and touch friendly carousels with pure CSS?](https://twitter.com/Steve8708/status/1531388545960583168)
@@ -82,7 +83,7 @@
 * [vmin unit](https://css-tricks.com/simple-little-use-case-vmin/) -- the lesser of `vw` and `vh`
 * [fluid typography](https://fluid-typography.netlify.app/)
 * [auto-fill vs auto-fit](https://defensivecss.dev/tip/auto-fit-fill/)
-
+* [Do you know we can adjust the space between an element and its outline?](Do you know we can adjust the space between an element and its outline?)
 
 -------------------------------------------------
 
@@ -254,6 +255,7 @@ db.createReadStream({
 
 ## javascript
 * [A comprehensive production-grade TypeScript training](https://www.totaltypescript.com/)
+* [Everything You Need to Know About JavaScript Import Maps](https://www.honeybadger.io/blog/import-maps/)
 
 
 ## db
@@ -271,6 +273,8 @@ Firebase Alternative
 * [harperDB](https://dev.to/andrewbaisden/how-to-use-harperdb-custom-functions-to-build-your-entire-backend-a2m)
 * [cockroach DB](https://www.cockroachlabs.com/)
 * [hasura](https://hasura.io/)
+* [How SQLite Helps You Do ACID](https://fly.io/blog/sqlite-internals-rollback-journal/)
+* [Things You Should Know About Databases](https://architecturenotes.co/things-you-should-know-about-databases/)
 
 ### fancy local-first DBs
 
@@ -310,7 +314,7 @@ Firebase Alternative
 * [Hyper Hyper Space: In-browser p2p applications](https://fosdem.org/2022/schedule/event/hyperhyper/)
 * [fly.io -- global image service article](https://fly.io/docs/app-guides/run-a-global-image-service/)
 * [hydrogen / shopify](https://docs.netlify.com/integrations/frameworks/hydrogen/)
-* [Everything You Need to Know About JavaScript Import Maps](https://www.honeybadger.io/blog/import-maps/)
+* [Setup and run Pi-Hole on a Raspberry Pi](https://privacyinternational.org/guide-step/4341/raspberry-pi-setup-and-run-pi-hole)
 
 
 ### video misc
