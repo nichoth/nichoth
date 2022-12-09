@@ -12,6 +12,7 @@
 * [pinata](https://www.pinata.cloud/) -- ipfs
 * [concordant](https://www.concordant.io/) -- "More power to your edge app"
 * [bunny fonts](https://bunny.net/fonts/) -- GDPR ok font CDN
+* [fly.io](https://fly.io/)
 
 ## static frameworks
 * [next](https://nextjs.org/)
