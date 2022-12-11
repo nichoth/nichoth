@@ -337,11 +337,10 @@ Firebase Alternative
 * [web3.storage](https://web3.storage/) -- free stuff
 * [storj](https://www.storj.io/)
 * [backblaze](https://www.backblaze.com/) -- used by [wormhole app](https://wormhole.app/)
+* [imgix](https://imgix.com/)
 
 ## new things
 
 * [Introducing Quiet - Encrypted P2P team chat without servers, just Tor - Holmes Wilson](https://youtu.be/owSd7uuGwmw?t=170)
   - IPFS, orbitDB, Tor
 * [Check out this speed run where our Applied Researcher Jess builds a decentralized Flickr clone in under 10 minutes](https://twitter.com/FISSIONcodes/status/1590478358181093376?s=20&t=5SNfVr2fkMZwr9uwWxa1Hw)
-
-
