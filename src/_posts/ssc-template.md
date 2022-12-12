@@ -1,8 +1,8 @@
 ---
 
-linkTitle: ssc template
+linkTitle: template
 linkDesc: A template for ssc projects
-slug: ssc-template
+slug: template
 type: dev-diary
 date: 11-18-2022
 
@@ -15,7 +15,7 @@ In the past I spent a lot of time confiuring things -- the shell, editors, JS bu
 
 But since then typescript has been created. It's complicated, if we want typescript or not. We don't really want another build process -- transpiling `ts` to `js` -- that's just one more moving part in an already complex build process. For the most part I just want little hints in the editor about possible errors. It turns out you can do that. Add a `jsconfig.json` file, and then you can write JS, but get editor hints about typescript.
 
-This is a way of describing a new "template" -- https://github.com/socketsupply/template -- soome preferred boilerplate for any JS project.
+This is a way of describing a new "template" -- https://github.com/socketsupply/template -- some preferred boilerplate for any JS project.
 
 ### the main ingredients
 
