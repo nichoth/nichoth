@@ -25,3 +25,4 @@ This is a way of describing a new "template" -- https://github.com/socketsupply/
 * [check-max-deps](https://github.com/nichoth/check-max-deps)
 
 We use git hooks to lint the code prior to pushing. And `standardx` means we can configure the lint to our preference, like using [4 spaces per indent](https://github.com/socketsupply/template/blob/main/.eslintrc#L19).
+
