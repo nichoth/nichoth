@@ -84,7 +84,7 @@
 * [vmin unit](https://css-tricks.com/simple-little-use-case-vmin/) -- the lesser of `vw` and `vh`
 * [fluid typography](https://fluid-typography.netlify.app/)
 * [auto-fill vs auto-fit](https://defensivecss.dev/tip/auto-fit-fill/)
-* [Do you know we can adjust the space between an element and its outline?](Do you know we can adjust the space between an element and its outline?)
+* [Do you know we can adjust the space between an element and its outline?](https://twitter.com/codewithshripal/status/1599719744789254144)
 
 -------------------------------------------------
 
