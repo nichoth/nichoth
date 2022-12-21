@@ -124,7 +124,8 @@
 * [work sans font](https://fonts.google.com/specimen/Work+Sans)
 * [freight big](https://www.typewolf.com/freight-big)
 * [inter](https://fonts.google.com/specimen/Inter)
-* [sen](https://fonts.google.com/specimen/Sen) -- seen [here](https://www.fermyon.com/blog/serverless-reckoning)
+* [sen](https://fonts.google.com/specimen/Sen) -- seen [here](https://www.fermyon.com/blog/serverless-reckoning)[
+* [see fonts of robinsloan.com](https://www.robinsloan.com/colophon/)
 
 
 ----------------------------------------
