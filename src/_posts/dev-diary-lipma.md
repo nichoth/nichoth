@@ -15,6 +15,7 @@ date: 10-19-2021
 * [p2panda/p2panda](https://github.com/p2panda/p2panda)
 * [p2panda/beep-boop](https://github.com/p2panda/beep-boop)
 * [p2panda/handbook](https://github.com/p2panda/handbook)
+* [skip ratchet](https://fission.codes/blog/introducing-the-skip-ratchet/)
 
 ## lipma links
 
