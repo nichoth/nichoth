@@ -10,14 +10,14 @@ date: 11-18-2022
 
 # template
 
-* [nichoth/template](https://github.com/nichoth/template)
+* [nichoth/template-js](https://github.com/nichoth/template-js)
 
 ## When you find a better setup for your dev tools
 In the past I spent a lot of time confiuring things -- the shell, editors, JS bundlers... It was a good investment, because I haven't really had to think about it since then. Everything just works for the most part.
 
 But since then typescript has been created. It's complicated, if we want typescript or not. We don't really want another build process -- transpiling `ts` to `js` -- that's just one more moving part in an already complex build process. For the most part I just want little hints in the editor about possible errors. It turns out you can do that. Add a `jsconfig.json` file, and then you can write JS, but get editor hints about typescript.
 
-This is a way of describing a new "template" -- [nichoth/template](https://github.com/nichoth/template) -- some preferred boilerplate for any JS project.
+This is a way of describing a new "template" -- [nichoth/template](https://github.com/nichoth/template-js) -- some preferred boilerplate for any JS project.
 
 ### the main ingredients
 
