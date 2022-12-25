@@ -10,6 +10,8 @@ date: 11-18-2022
 
 # template
 
+* [nichoth/template](https://github.com/nichoth/template)
+
 ## When you find a better setup for your dev tools
 In the past I spent a lot of time confiuring things -- the shell, editors, JS bundlers... It was a good investment, because I haven't really had to think about it since then. Everything just works for the most part.
 
