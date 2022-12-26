@@ -46,7 +46,7 @@
   - [hypersamples](https://github.com/hyperapp/hypersamples)
   - [hyperlit](https://github.com/zaceno/hyperlit)
 * [mutant](https://github.com/mmckegg/mutant)
-* [tonic](https://tonic.technology/)
+* [tonic](https://tonicframework.dev/)
 * [remix.run](https://remix.run/)
 * [htm-ssr gist](https://gist.github.com/developit/699c8d8f180a1e4eed58167f9c6711be)
 * [htm + vhtml](https://github.com/developit/htm#other-uses)
