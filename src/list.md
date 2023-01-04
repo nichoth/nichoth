@@ -248,7 +248,8 @@ db.createReadStream({
 > you can nest the `<input>` directly inside the `<label>`, in which case the `for` and `id` attributes are not needed because the association is implicit
 
 * [Cache serverless responses with Cache-Control headers](https://wtw.dev/59-cache-control)
-
+* [HTML tips you won't see in most tutorials](https://twitter.com/denicmarko/status/1610230054402891777?s=20&t=UuXt9HuUaZeOl2aZIX5ShA)
+* [markodenic.com/html-tips](https://markodenic.com/html-tips/)
 
 --------------------------------------
 
