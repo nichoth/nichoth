@@ -54,6 +54,9 @@
 * [HTML with Superpowers -- An Introduction to Web Components](https://htmlwithsuperpowers.netlify.app/)
 * [HTML with Superpowers: The Guidebook](https://daverupert.com/2023/01/html-with-superpowers-the-guidebook/)
 
+---------
+
+* [elm.land](https://elm.land/)
 
 ### state containers
 * [nanostores](https://github.com/nanostores/nanostores)
