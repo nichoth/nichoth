@@ -51,6 +51,9 @@
 * [htm-ssr gist](https://gist.github.com/developit/699c8d8f180a1e4eed58167f9c6711be)
 * [htm + vhtml](https://github.com/developit/htm#other-uses)
 * [htm demos & examples](https://github.com/developit/htm#demos--examples)
+* [HTML with Superpowers -- An Introduction to Web Components](https://htmlwithsuperpowers.netlify.app/)
+* [HTML with Superpowers: The Guidebook](https://daverupert.com/2023/01/html-with-superpowers-the-guidebook/)
+
 
 ### state containers
 * [nanostores](https://github.com/nanostores/nanostores)
@@ -85,6 +88,8 @@
 * [fluid typography](https://fluid-typography.netlify.app/)
 * [auto-fill vs auto-fit](https://defensivecss.dev/tip/auto-fit-fill/)
 * [Do you know we can adjust the space between an element and its outline?](https://twitter.com/codewithshripal/status/1599719744789254144)
+* [Master the art of CSS box-shadow: a comprehensive cheatsheet](https://twitter.com/_georgemoller/status/1611333785102032897?s=20&t=82qa6NGI74Lxop3kVaMi2w)
+
 
 -------------------------------------------------
 
@@ -275,6 +280,7 @@ Firebase Alternative
 * [hasura](https://hasura.io/)
 * [How SQLite Helps You Do ACID](https://fly.io/blog/sqlite-internals-rollback-journal/)
 * [Things You Should Know About Databases](https://architecturenotes.co/things-you-should-know-about-databases/)
+* [wunderbase](https://github.com/wundergraph/wunderbase)
 
 ### fancy local-first DBs
 
