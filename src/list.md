@@ -93,6 +93,14 @@
 * [Do you know we can adjust the space between an element and its outline?](https://twitter.com/codewithshripal/status/1599719744789254144)
 * [Master the art of CSS box-shadow: a comprehensive cheatsheet](https://twitter.com/_georgemoller/status/1611333785102032897?s=20&t=82qa6NGI74Lxop3kVaMi2w)
 
+#### scroll snap
+* [css-tricks](https://css-tricks.com/practical-css-scroll-snapping/)
+* [Josh W. Comeau -- CSS scroll snapping is SO nice.](https://twitter.com/JoshWComeau/status/1247519254439546883)
+* [How do Nike and Apple make such smooth and touch friendly carousels with pure CSS?](https://twitter.com/Steve8708/status/1531388545960583168)
+* [CSS only snap scroll is pretty cool](https://twitter.com/guerriero_se/status/1314171683909955584)
+* [Addy Osmani -- CSS Scroll Snap](https://twitter.com/addyosmani/status/1485024476974694400)
+* [ishadeed.com -- via smashing magazine](https://ishadeed.com/article/css-scroll-snap/)
+
 
 -------------------------------------------------
 
