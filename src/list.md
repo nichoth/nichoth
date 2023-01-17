@@ -266,7 +266,8 @@ db.createReadStream({
 * [Cache serverless responses with Cache-Control headers](https://wtw.dev/59-cache-control)
 * [HTML tips you won't see in most tutorials](https://twitter.com/denicmarko/status/1610230054402891777?s=20&t=UuXt9HuUaZeOl2aZIX5ShA)
 * [markodenic.com/html-tips](https://markodenic.com/html-tips/)
-* [HTMLInputElement showPicker()](https://show-picker.glitch.me/demo.html) and [the tweet](https://twitter.com/aarondfrancis/status/1611800938020474880?s=20&t=ZfEQWjm8yuzRlsWGPjfNnw)
+* [HTMLInputElement showPicker()](https://show-picker.glitch.me/demo.html)
+* [I didn't realize the native HTML date picker had gotten so good](https://twitter.com/aarondfrancis/status/1611800938020474880?s=20&t=ZfEQWjm8yuzRlsWGPjfNnw)
 
 --------------------------------------
 
