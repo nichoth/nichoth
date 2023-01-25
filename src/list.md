@@ -53,6 +53,8 @@
 * [htm demos & examples](https://github.com/developit/htm#demos--examples)
 * [HTML with Superpowers -- An Introduction to Web Components](https://htmlwithsuperpowers.netlify.app/)
 * [HTML with Superpowers: The Guidebook](https://daverupert.com/2023/01/html-with-superpowers-the-guidebook/)
+* [Virtual DOM is pure overhead](https://svelte.dev/blog/virtual-dom-is-pure-overhead)
+* [Components Are Pure Overhead](https://www.youtube.com/watch?v=I6L29qSTaFA&t=722s&ab_channel=RyanCarniato)
 
 ---------
 
@@ -72,7 +74,7 @@
 --------------------------------------
 
 
-### css
+## css
 
 * [bulma](https://bulma.io/) -- css 
 * [stitches.dev](https://stitches.dev/) -- CSS in JS
@@ -92,6 +94,11 @@
 * [auto-fill vs auto-fit](https://defensivecss.dev/tip/auto-fit-fill/)
 * [Do you know we can adjust the space between an element and its outline?](https://twitter.com/codewithshripal/status/1599719744789254144)
 * [Master the art of CSS box-shadow: a comprehensive cheatsheet](https://twitter.com/_georgemoller/status/1611333785102032897?s=20&t=82qa6NGI74Lxop3kVaMi2w)
+* [Speedy CSS Tip! ⚡️ Create this neat card hover effect with a custom property switch](https://twitter.com/jh3yy/status/1588607776036917248?s=20&t=xyaFjlCT9R2FlHePbzE9PQ)
+* [The Guide To CSS Animation: Principles and Examples](https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/)
+* [A shaded blur behind a logo is simple but beautiful affect. Let's see how @vite_js does it.](https://twitter.com/_davideast/status/1586002781777039360?s=20&t=SaJfdGGVlw5zQITX7d2j0A)
+* [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+* [UI design tip -- I’ve been doing buttons wrong!](https://twitter.com/AdhamDannaway/status/1595425255027269634?s=20&t=Ym96qEZvGi8cudj4Sib6Eg)
 
 #### scroll snap
 * [css-tricks](https://css-tricks.com/practical-css-scroll-snapping/)
@@ -218,6 +225,7 @@
 * [pinata](https://pinata.cloud/) -- ipfs 
 * [moderator.rocks](https://moderator.rocks/)
 * [atacama](https://github.com/hoodownr/atacama) -- related to moderator
+* [p2panda](https://p2panda.org/learn/)
 
 --------------------------
 
@@ -268,12 +276,15 @@ db.createReadStream({
 * [markodenic.com/html-tips](https://markodenic.com/html-tips/)
 * [HTMLInputElement showPicker()](https://show-picker.glitch.me/demo.html)
 * [I didn't realize the native HTML date picker had gotten so good](https://twitter.com/aarondfrancis/status/1611800938020474880?s=20&t=ZfEQWjm8yuzRlsWGPjfNnw)
+* [https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/](https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/)
 
 --------------------------------------
 
 ## javascript
 * [A comprehensive production-grade TypeScript training](https://www.totaltypescript.com/)
 * [Everything You Need to Know About JavaScript Import Maps](https://www.honeybadger.io/blog/import-maps/)
+* [Just learned you can use underscores as separators in JavaScript numbers.](https://twitter.com/housecor/status/1596495131192033282?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
+* [4 ways to handle multiple promises](https://twitter.com/housecor/status/1596534347473080324?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
 
 
 ## db
@@ -294,6 +305,10 @@ Firebase Alternative
 * [How SQLite Helps You Do ACID](https://fly.io/blog/sqlite-internals-rollback-journal/)
 * [Things You Should Know About Databases](https://architecturenotes.co/things-you-should-know-about-databases/)
 * [wunderbase](https://github.com/wundergraph/wunderbase)
+
+---------
+
+* [Relational Databases Explained](https://architecturenotes.co/things-you-should-know-about-databases/)
 
 ### fancy local-first DBs
 
@@ -363,3 +378,4 @@ Firebase Alternative
   - IPFS, orbitDB, Tor
 * [Check out this speed run where our Applied Researcher Jess builds a decentralized Flickr clone in under 10 minutes](https://twitter.com/FISSIONcodes/status/1590478358181093376?s=20&t=5SNfVr2fkMZwr9uwWxa1Hw)
 * [lynn and tonic](https://lynnandtonic.com/thoughts/)
+
