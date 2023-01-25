@@ -378,4 +378,4 @@ Firebase Alternative
   - IPFS, orbitDB, Tor
 * [Check out this speed run where our Applied Researcher Jess builds a decentralized Flickr clone in under 10 minutes](https://twitter.com/FISSIONcodes/status/1590478358181093376?s=20&t=5SNfVr2fkMZwr9uwWxa1Hw)
 * [lynn and tonic](https://lynnandtonic.com/thoughts/)
-
+* [HOW TO MAKE A WEBSITE](https://henry.codes/writing/how-to-make-a-website/)
