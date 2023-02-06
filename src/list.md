@@ -277,8 +277,11 @@ db.createReadStream({
 * [HTMLInputElement showPicker()](https://show-picker.glitch.me/demo.html)
 * [I didn't realize the native HTML date picker had gotten so good](https://twitter.com/aarondfrancis/status/1611800938020474880?s=20&t=ZfEQWjm8yuzRlsWGPjfNnw)
 * [https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/](https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/)
+* [Bulletproof Sessions with HttpOnly Cookies](https://begin.com/blog/posts/2023-02-03-bulletproof-sessions-with-httponly-cookies)
+
 
 --------------------------------------
+
 
 ## javascript
 * [A comprehensive production-grade TypeScript training](https://www.totaltypescript.com/)
