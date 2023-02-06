@@ -355,6 +355,7 @@ Firebase Alternative
 * [fly.io -- global image service article](https://fly.io/docs/app-guides/run-a-global-image-service/)
 * [hydrogen / shopify](https://docs.netlify.com/integrations/frameworks/hydrogen/)
 * [Setup and run Pi-Hole on a Raspberry Pi](https://privacyinternational.org/guide-step/4341/raspberry-pi-setup-and-run-pi-hole)
+* [Faculty Best Practices](https://faculty.com/standards/best-practices)
 
 
 ### video misc
