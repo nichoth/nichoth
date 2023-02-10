@@ -292,6 +292,7 @@ db.createReadStream({
 * [Everything You Need to Know About JavaScript Import Maps](https://www.honeybadger.io/blog/import-maps/)
 * [Just learned you can use underscores as separators in JavaScript numbers.](https://twitter.com/housecor/status/1596495131192033282?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
 * [4 ways to handle multiple promises](https://twitter.com/housecor/status/1596534347473080324?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
+* [JSON.stringify maps](https://twitter.com/Steve8708/status/1623824604417646592?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
 
 
 ## db
