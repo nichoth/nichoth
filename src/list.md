@@ -281,6 +281,7 @@ db.createReadStream({
 * [I didn't realize the native HTML date picker had gotten so good](https://twitter.com/aarondfrancis/status/1611800938020474880?s=20&t=ZfEQWjm8yuzRlsWGPjfNnw)
 * [https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/](https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/)
 * [Bulletproof Sessions with HttpOnly Cookies](https://begin.com/blog/posts/2023-02-03-bulletproof-sessions-with-httponly-cookies)
+* [TIL, there are `new-password` and `current-password` autocomplete values](https://twitter.com/aleksandrasays/status/1622932649240043521?s=20&t=XvzZ2AUH9cnItWWTyy2ZtA)
 
 
 --------------------------------------
@@ -356,6 +357,8 @@ Firebase Alternative
 * [hydrogen / shopify](https://docs.netlify.com/integrations/frameworks/hydrogen/)
 * [Setup and run Pi-Hole on a Raspberry Pi](https://privacyinternational.org/guide-step/4341/raspberry-pi-setup-and-run-pi-hole)
 * [Faculty Best Practices](https://faculty.com/standards/best-practices)
+* [Ever wondered how the Kademlia DHT works?](https://twitter.com/n0computer/status/1623744085436628995?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
+* [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/)
 
 
 ### video misc
