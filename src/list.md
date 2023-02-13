@@ -245,6 +245,7 @@
 
 * https://decentpatterns.xyz/
 * https://decentpatterns.xyz/report/
+* [this is fine](https://newdesigncongress.org/en/pub/this-is-fine)
 
 ------------------------------------------
 
