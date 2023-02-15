@@ -1,8 +1,8 @@
 const postcardJson = [
-    // {
-    //     path: '/postcards/beatoff-bonanza.png',
-    //     title: 'beat-off bonanza'
-    // },
+    {
+        path: '/postcards/beatoff-bonanza.png',
+        title: 'beat-off bonanza'
+    },
 
     {
         path: '/postcards/behavior-arbys.png',
@@ -15,10 +15,10 @@ const postcardJson = [
         seaLink: 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/79173607740093432622172384412044296348039499574703038177878703077592867536897'
     },
 
-    // {
-    //     path: '/postcards/christians.jpeg',
-    //     title: 'Christian Computer Programmers'
-    // },
+    {
+        path: '/postcards/christians.jpeg',
+        title: 'Christian Computer Programmers'
+    },
 
     {
         path: '/postcards/f-off.png',
@@ -68,11 +68,11 @@ const postcardJson = [
         title: "This doesn't matter"
     },
 
-    // {
-    //     path: '/postcards/vag-eye.png',
-    //     title: 'eyeball',
-    //     desc: 'an eyeball'
-    // }
+    {
+        path: '/postcards/vag-eye.png',
+        title: 'eyeball',
+        desc: 'an eyeball'
+    }
 ]
 
 module.exports = postcardJson 
