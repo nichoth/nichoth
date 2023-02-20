@@ -283,6 +283,7 @@ db.createReadStream({
 * [https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/](https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/)
 * [Bulletproof Sessions with HttpOnly Cookies](https://begin.com/blog/posts/2023-02-03-bulletproof-sessions-with-httponly-cookies)
 * [TIL, there are `new-password` and `current-password` autocomplete values](https://twitter.com/aleksandrasays/status/1622932649240043521?s=20&t=XvzZ2AUH9cnItWWTyy2ZtA)
+* [Cumulative Layout Shift + images](https://twitter.com/adamdbradley/status/1627708760293605384?s=20) & [the link](https://www.builder.io/blog/how-to-improve-lighthouse-scores-by-avoiding-img-layout-shifts)
 
 
 --------------------------------------
