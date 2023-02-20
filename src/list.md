@@ -101,6 +101,7 @@
 * [UI design tip -- I’ve been doing buttons wrong!](https://twitter.com/AdhamDannaway/status/1595425255027269634?s=20&t=Ym96qEZvGi8cudj4Sib6Eg)
 * [Need a rainbow gradient? Let <hue-interpolation> do the work](https://twitter.com/argyleink/status/1620525875396739072?s=20&t=8MIu2A6vTNI4e5_NbOi1sA)
 * [Everything you didn't know you need to know about buttons](https://twitter.com/Steve8708/status/1620448506766045191?s=20&t=EMFXfNCnzLONny6iyh1Whg)
+* [Here is how I implemented dark mode on my website](https://twitter.com/flaviocopes/status/1627609246014619649?s=20)
 
 
 #### scroll snap
@@ -295,6 +296,7 @@ db.createReadStream({
 * [Just learned you can use underscores as separators in JavaScript numbers.](https://twitter.com/housecor/status/1596495131192033282?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
 * [4 ways to handle multiple promises](https://twitter.com/housecor/status/1596534347473080324?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
 * [JSON.stringify maps](https://twitter.com/Steve8708/status/1623824604417646592?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
+* [typescript reset](https://twitter.com/mattpocockuk/status/1627686847030743043?s=20) + [github link](https://github.com/total-typescript/ts-reset)
 
 
 ## db
