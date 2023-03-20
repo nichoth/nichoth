@@ -1720,3 +1720,6 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Invertible Bloom Filters - @matheus23 - Unconf](https://www.youtube.com/watch?v=YNbcXlllOBQ&ab_channel=IPFS)
 
 
+## 3-20-2023
+[html info](https://twitter.com/manucorporat/status/1637749013414805505?s=20)
+
