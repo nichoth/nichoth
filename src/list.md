@@ -102,6 +102,8 @@
 * [Need a rainbow gradient? Let `<hue-interpolation>` do the work](https://twitter.com/argyleink/status/1620525875396739072?s=20&t=8MIu2A6vTNI4e5_NbOi1sA)
 * [Everything you didn't know you need to know about buttons](https://twitter.com/Steve8708/status/1620448506766045191?s=20&t=EMFXfNCnzLONny6iyh1Whg)
 * [Here is how I implemented dark mode on my website](https://twitter.com/flaviocopes/status/1627609246014619649?s=20)
+* [If you're not using border-image in CSS, you are missing out on a very cool effect!](https://twitter.com/Steve8708/status/1511912289724616704?s=20&t=Zif6NhC92FBIS7aGQtfQbw)
+* [be sure to optimize and prioritize your images](https://twitter.com/Steve8708/status/1508861196807532547)
 
 
 #### scroll snap
@@ -285,6 +287,9 @@ db.createReadStream({
 * [Bulletproof Sessions with HttpOnly Cookies](https://begin.com/blog/posts/2023-02-03-bulletproof-sessions-with-httponly-cookies)
 * [TIL, there are `new-password` and `current-password` autocomplete values](https://twitter.com/aleksandrasays/status/1622932649240043521?s=20&t=XvzZ2AUH9cnItWWTyy2ZtA)
 * [Cumulative Layout Shift + images](https://twitter.com/adamdbradley/status/1627708760293605384?s=20) & [the link](https://www.builder.io/blog/how-to-improve-lighthouse-scores-by-avoiding-img-layout-shifts)
+* [Building an effective Image Component](https://developer.chrome.com/blog/image-component/)
+* [How to get the best image performance (Updated 2021)](https://twitter.com/leeerob/status/1352264153411497993)
+* [Image quality & performance video](https://twitter.com/AndreyLipattsev/status/1399302917539180545)
 
 
 --------------------------------------
