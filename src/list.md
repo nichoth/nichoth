@@ -99,7 +99,7 @@
 * [A shaded blur behind a logo is simple but beautiful affect. Let's see how @vite_js does it.](https://twitter.com/_davideast/status/1586002781777039360?s=20&t=SaJfdGGVlw5zQITX7d2j0A)
 * [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 * [UI design tip -- I’ve been doing buttons wrong!](https://twitter.com/AdhamDannaway/status/1595425255027269634?s=20&t=Ym96qEZvGi8cudj4Sib6Eg)
-* [Need a rainbow gradient? Let <hue-interpolation> do the work](https://twitter.com/argyleink/status/1620525875396739072?s=20&t=8MIu2A6vTNI4e5_NbOi1sA)
+* [Need a rainbow gradient? Let `<hue-interpolation>` do the work](https://twitter.com/argyleink/status/1620525875396739072?s=20&t=8MIu2A6vTNI4e5_NbOi1sA)
 * [Everything you didn't know you need to know about buttons](https://twitter.com/Steve8708/status/1620448506766045191?s=20&t=EMFXfNCnzLONny6iyh1Whg)
 * [Here is how I implemented dark mode on my website](https://twitter.com/flaviocopes/status/1627609246014619649?s=20)
 
