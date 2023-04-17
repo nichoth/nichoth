@@ -140,8 +140,12 @@
 
 ------------------------------------
 
-* https://childish.studio/ / https://www.typewolf.com/site-of-the-day/studio-childish
-* https://www.dmbrut.com/ / https://www.typewolf.com/site-of-the-day/dm-brut
+* [childish.studio](https://childish.studio/) / [see typewolf](https://www.typewolf.com/site-of-the-day/studio-childish)
+* [dmbrut.com](https://www.dmbrut.com/) / [see typewolf](https://www.typewolf.com/site-of-the-day/dm-brut)
+
+------
+
+* https://ohhelloana.blog/
 
 
 -------------------------------------
