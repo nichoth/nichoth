@@ -384,6 +384,7 @@ Firebase Alternative
 * [Hold Fast](https://vimeo.com/15351476) -- Moxie documentary video
 * [Hundred Rabbits](https://www.youtube.com/watch?v=BW32yUEymvU) -- a
   presentation
+* [Local-first software - Peter Van Hardenberg](https://www.youtube.com/watch?v=KrPsyr8Ig6M) -- bicycle vs aircraft carrier
 
 
 ## storage
