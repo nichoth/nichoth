@@ -104,6 +104,12 @@
 * [Here is how I implemented dark mode on my website](https://twitter.com/flaviocopes/status/1627609246014619649?s=20)
 * [If you're not using border-image in CSS, you are missing out on a very cool effect!](https://twitter.com/Steve8708/status/1511912289724616704?s=20&t=Zif6NhC92FBIS7aGQtfQbw)
 * [be sure to optimize and prioritize your images](https://twitter.com/Steve8708/status/1508861196807532547)
+* [Create a nice 3D Zig-Zag edge](https://twitter.com/ChallengesCss/status/1648664256550694913?s=20)
+* [select the first and last element with a specific class](https://twitter.com/ChallengesCss/status/1648305779739447296?s=20)
+* [Use @​counter-style to customize your <ol> list](https://twitter.com/ChallengesCss/status/1647925597077643264?s=20)
+* [Serving less data to users with the `prefers-reduced-data` media query](https://blog.stephaniestimac.com/posts/2023/4/css-prefers-reduced-data/)
+* [CSS Text balancing with text-wrap:balance](https://ishadeed.com/article/css-text-wrap-balance/?utm_source=CSS-Weekly&utm_campaign=Issue-545)
+* [Use modern CSS tricks to create fancy range sliders](https://twitter.com/ChallengesCss/status/1645435570867388416?s=20)
 
 
 #### scroll snap
@@ -294,7 +300,7 @@ db.createReadStream({
 * [Building an effective Image Component](https://developer.chrome.com/blog/image-component/)
 * [How to get the best image performance (Updated 2021)](https://twitter.com/leeerob/status/1352264153411497993)
 * [Image quality & performance video](https://twitter.com/AndreyLipattsev/status/1399302917539180545)
-
+* [HTML is a living language in constant evolution. The latest addition has been a new semantic element for searching/filtering operations](https://twitter.com/alvaro_montoro/status/1645449658280321031?s=20)
 
 --------------------------------------
 
@@ -326,10 +332,13 @@ Firebase Alternative
 * [How SQLite Helps You Do ACID](https://fly.io/blog/sqlite-internals-rollback-journal/)
 * [Things You Should Know About Databases](https://architecturenotes.co/things-you-should-know-about-databases/)
 * [wunderbase](https://github.com/wundergraph/wunderbase)
+* [DefraDB -- a Peer-to-Peer Edge Database](https://github.com/sourcenetwork/defradb)
 
----------
+-------
 
+* [Cozo -- a general-purpose, transactional, relational database](https://github.com/cozodb/cozo)
 * [Relational Databases Explained](https://architecturenotes.co/things-you-should-know-about-databases/)
+* [Building a database in the 2020s](https://me.0xffff.me/build-database-in-2020s.html)
 
 ### fancy local-first DBs
 
@@ -373,6 +382,10 @@ Firebase Alternative
 * [Faculty Best Practices](https://faculty.com/standards/best-practices)
 * [Ever wondered how the Kademlia DHT works?](https://twitter.com/n0computer/status/1623744085436628995?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
 * [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/)
+
+---------
+
+* [Piet Mondrian's calling card](https://twitter.com/AndrewRusseth/status/1645946723683160065?s=20)
 
 
 ### video misc
