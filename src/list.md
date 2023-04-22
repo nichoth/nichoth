@@ -151,7 +151,8 @@
 
 ------
 
-* https://ohhelloana.blog/
+* [JOTTINGS FROM ANA RODRIGUES](https://ohhelloana.blog/)
+* [self aware](https://selfaware.studio/)
 
 
 -------------------------------------
