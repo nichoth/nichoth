@@ -151,7 +151,7 @@
 
 ------
 
-* [JOTTINGS FROM ANA RODRIGUES](https://ohhelloana.blog/)
+* [JOTTINGS FROM ANA RODRIGUES](https://ohhelloana.blog/) -- via [mxb.dev](https://mxb.dev/notes/2021-07-08-oh-hello-ana-blog/)
 * [self aware](https://selfaware.studio/)
 
 
