@@ -109,7 +109,7 @@
 * [Use @​counter-style to customize your <ol> list](https://twitter.com/ChallengesCss/status/1647925597077643264?s=20)
 * [Serving less data to users with the `prefers-reduced-data` media query](https://blog.stephaniestimac.com/posts/2023/4/css-prefers-reduced-data/)
 * [CSS Text balancing with text-wrap:balance](https://ishadeed.com/article/css-text-wrap-balance/?utm_source=CSS-Weekly&utm_campaign=Issue-545)
-* [Use modern CSS tricks to create fancy range sliders](https://twitter.com/ChallengesCss/status/1645435570867388416?s=20)
+* [Use modern CSS tricks to create fancy range sliders](https://twitter.com/ChallengesCss/status/1645435570867388416?s=20) + [see demo code here](https://codepen.io/t_afif/full/KKGpmGE)
 
 
 #### scroll snap
