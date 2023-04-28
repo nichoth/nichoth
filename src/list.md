@@ -373,6 +373,7 @@ Firebase Alternative
 * [swell](https://www.swell.is/) -- seen in a [video](https://www.youtube.com/watch?v=72E-EY9EEBY&ab_channel=ColbyFayock) about vercel + ecommerce
 * [medusa](https://medusajs.com/)
 * [Build a SaaS Platform with Stripe](https://jonmeyers.io/blog/build-a-saas-platform-with-stripe)
+* [Cart and Theme Storage](https://jessedit.netlify.app/articles/client-side-routing/13-cart-and-theme-storage)
 
 
 ## more misc
