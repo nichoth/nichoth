@@ -313,6 +313,7 @@ db.createReadStream({
 * [4 ways to handle multiple promises](https://twitter.com/housecor/status/1596534347473080324?s=20&t=jxn1Bfkdvtkq82tGxfjG5A)
 * [JSON.stringify maps](https://twitter.com/Steve8708/status/1623824604417646592?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
 * [typescript reset](https://twitter.com/mattpocockuk/status/1627686847030743043?s=20) + [github link](https://github.com/total-typescript/ts-reset)
+* [just](https://github.com/angus-c/just) -- utility library
 
 
 ## db
