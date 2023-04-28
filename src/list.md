@@ -302,6 +302,7 @@ db.createReadStream({
 * [How to get the best image performance (Updated 2021)](https://twitter.com/leeerob/status/1352264153411497993)
 * [Image quality & performance video](https://twitter.com/AndreyLipattsev/status/1399302917539180545)
 * [HTML is a living language in constant evolution. The latest addition has been a new semantic element for searching/filtering operations](https://twitter.com/alvaro_montoro/status/1645449658280321031?s=20)
+* [search role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/search_role)
 
 --------------------------------------
 
