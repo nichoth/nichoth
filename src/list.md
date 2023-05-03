@@ -106,7 +106,7 @@
 * [be sure to optimize and prioritize your images](https://twitter.com/Steve8708/status/1508861196807532547)
 * [Create a nice 3D Zig-Zag edge](https://twitter.com/ChallengesCss/status/1648664256550694913?s=20)
 * [select the first and last element with a specific class](https://twitter.com/ChallengesCss/status/1648305779739447296?s=20)
-* [Use @​counter-style to customize your <ol> list](https://twitter.com/ChallengesCss/status/1647925597077643264?s=20)
+* [Use @​counter-style to customize your `<ol>` list](https://twitter.com/ChallengesCss/status/1647925597077643264?s=20)
 * [Serving less data to users with the `prefers-reduced-data` media query](https://blog.stephaniestimac.com/posts/2023/4/css-prefers-reduced-data/)
 * [CSS Text balancing with text-wrap:balance](https://ishadeed.com/article/css-text-wrap-balance/?utm_source=CSS-Weekly&utm_campaign=Issue-545)
 * [Use modern CSS tricks to create fancy range sliders](https://twitter.com/ChallengesCss/status/1645435570867388416?s=20) + [see demo code here](https://codepen.io/t_afif/full/KKGpmGE)
