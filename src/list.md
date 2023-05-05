@@ -343,6 +343,12 @@ Firebase Alternative
 * [Relational Databases Explained](https://architecturenotes.co/things-you-should-know-about-databases/)
 * [Building a database in the 2020s](https://me.0xffff.me/build-database-in-2020s.html)
 
+-----
+
+* [interested in p2p databases?](https://twitter.com/gustafjt/status/1654514487922155522)
+* [Merklizing the key/value store for fun and profit](https://joelgustafson.com/posts/2023-05-04/merklizing-the-key-value-store-for-fun-and-profit)
+
+
 ### fancy local-first DBs
 
 * [replicache](https://replicache.dev/)
