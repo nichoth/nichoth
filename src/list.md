@@ -304,6 +304,12 @@ db.createReadStream({
 * [HTML is a living language in constant evolution. The latest addition has been a new semantic element for searching/filtering operations](https://twitter.com/alvaro_montoro/status/1645449658280321031?s=20)
 * [search role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/search_role)
 
+### images
+* [bholmes.dev -- image optimization for any web framework](https://bholmes.dev/blog/picture-perfect-image-optimization#link-the-sizes-attribute)
+* [bholmes.dev -- using-11ty-image-with-any-framework](https://bholmes.dev/blog/picture-perfect-image-optimization/#link-using-11ty-image-with-any-framework)
+*  [A Guide to the Responsive Images Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset)
+* ["Blur Up" technique](https://css-tricks.com/the-blur-up-technique-for-loading-background-images/)
+
 --------------------------------------
 
 
@@ -315,6 +321,7 @@ db.createReadStream({
 * [JSON.stringify maps](https://twitter.com/Steve8708/status/1623824604417646592?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
 * [typescript reset](https://twitter.com/mattpocockuk/status/1627686847030743043?s=20) + [github link](https://github.com/total-typescript/ts-reset)
 * [just](https://github.com/angus-c/just) -- utility library
+* [state machines](https://bholmes.dev/blog/writing-a-state-machine-in-one-line-with-typescript/) -- bholmes.dev
 
 
 ## db
@@ -396,6 +403,11 @@ Firebase Alternative
 ---------
 
 * [Piet Mondrian's calling card](https://twitter.com/AndrewRusseth/status/1645946723683160065?s=20)
+
+---------
+
+* [Convert images to AVIF for free, fast](https://avif.io/)
+* [avif.io source code](https://github.com/justinschmitz97/avif.io/) -- use Rust with wasm-pack to compile a converter library into WASM and call the Rust code in the browser, from a WebWorker. 
 
 
 ### video misc
