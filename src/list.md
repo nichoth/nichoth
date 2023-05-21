@@ -112,7 +112,13 @@
 * [Use modern CSS tricks to create fancy range sliders](https://twitter.com/ChallengesCss/status/1645435570867388416?s=20) + [see demo code here](https://codepen.io/t_afif/full/KKGpmGE)
 * [the “frosted glass” effect](https://iamvdo.me/en/blog/advanced-css-filters)
 
-#### scroll snap
+### radio buttons
+* [Pure CSS Custom Styled Radio Buttons](https://moderncss.dev/pure-css-custom-styled-radio-buttons/)
+* [Accessible Toggles](https://css-irl.info/accessible-toggles/)
+* [Simplifying Form Styles With accent-color](https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/)
+* [css-tricks -- Zero Trickery Custom Radios and Checkboxes](https://css-tricks.com/zero-trickery-custom-radios-and-checkboxes/)
+
+### scroll snap
 * [css-tricks](https://css-tricks.com/practical-css-scroll-snapping/)
 * [Josh W. Comeau -- CSS scroll snapping is SO nice.](https://twitter.com/JoshWComeau/status/1247519254439546883)
 * [How do Nike and Apple make such smooth and touch friendly carousels with pure CSS?](https://twitter.com/Steve8708/status/1531388545960583168)
