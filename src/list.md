@@ -179,7 +179,6 @@
 ## hyper
 * https://github.com/hypercore-protocol/hypercore
 * https://www.datprotocol.com/
-* [ocean protocol](https://oceanprotocol.com/)
 * [hypergraph](https://blog.libscie.org/introducing-hypergraph-beta/)
 * [dat store](https://github.com/datproject/dat-store)
 * [hypercore-protocol.org](https://hypercore-protocol.org/)
