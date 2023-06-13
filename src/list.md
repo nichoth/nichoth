@@ -79,7 +79,19 @@
 * [bulma](https://bulma.io/) -- css 
 * [stitches.dev](https://stitches.dev/) -- CSS in JS
 * [How does Apple make that awesome frosted glass effect on their site header in CSS?](https://twitter.com/Steve8708/status/1531101973985890305)
+
+> tl;dr backdrop-filter: blur(20px) saturate(180%)
+
 * [How do Nike and Apple make such smooth and touch friendly carousels with pure CSS?](https://twitter.com/Steve8708/status/1531388545960583168)
+
+> /* tl;dr */
+> .carousel {
+>   scroll-snap-type: x mandatory;
+> }
+> .carousel .item {
+>     scroll-snap-align: start;
+> }
+
 * [Speedy CSS Tip! Turn your images into Polaroid™](https://twitter.com/jh3yy/status/1531680894955790339)
 * [How Apple makes their beautiful hamburger menu in *pure CSS* (no JS!)](https://twitter.com/Steve8708/status/1532364254434578432)
   - see [ssc-server](https://github.com/nichoth/ssc-server/blob/86491d9811c4d3bed0aef2789866edc57c93d5b3/src/view/components/hamburger.js)
