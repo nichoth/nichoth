@@ -92,9 +92,10 @@
 >     scroll-snap-align: start;
 > }
 
-* [Speedy CSS Tip! Turn your images into Polaroid™](https://twitter.com/jh3yy/status/1531680894955790339)
+* [Speedy CSS Tip! Turn your images into Polaroid™](https://twitter.com/jh3yy/status/1531680894955790339) + [codepen link](https://codepen.io/jh3y/pen/LYQLOaW)
 * [How Apple makes their beautiful hamburger menu in *pure CSS* (no JS!)](https://twitter.com/Steve8708/status/1532364254434578432)
   - see [ssc-server](https://github.com/nichoth/ssc-server/blob/86491d9811c4d3bed0aef2789866edc57c93d5b3/src/view/components/hamburger.js)
+* [steve on youtube](https://www.youtube.com/@Steve8708/videos)
 * [How http://github.com makes such beautiful text gradient effects in CSS](https://twitter.com/Steve8708/status/1532521679628341248)
 * [How does Tesla make that beautifully smooth full page swipe effect on their homepage?](https://twitter.com/Steve8708/status/1532793202582794241)
 * [Create a nice background pattern with 4 conic-gradient](https://twitter.com/ChallengesCss/status/1533032841029763072)
