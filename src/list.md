@@ -22,9 +22,7 @@
 
 
 ## cryptography
-* [End-to-End Encryption in the Browser](https://blog.excalidraw.com/end-to-end-encryption/)
-
-This is how [wormhole](https://wormhole.app/) works -- put the secret key after the `#` in the URL, so it is never sent to the server.
+* [End-to-End Encryption in the Browser](https://blog.excalidraw.com/end-to-end-encryption/) -- this is how [wormhole](https://wormhole.app/) works -- put the secret key after the `#` in the URL, so it is never sent to the server.
 
 
 
