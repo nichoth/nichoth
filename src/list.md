@@ -21,6 +21,13 @@
 * [gatsby](https://www.gatsbyjs.com/)
 
 
+## cryptography
+* [End-to-End Encryption in the Browser](https://blog.excalidraw.com/end-to-end-encryption/)
+
+This is how [wormhole](https://wormhole.app/) works -- put the secret key after the `#` in the URL, so it is never sent to the server.
+
+
+
 ## CMS
 * [contentful](https://www.contentful.com/)
 * [sanity](https://www.sanity.io/)
@@ -327,6 +334,7 @@ db.createReadStream({
 * [bholmes.dev -- using-11ty-image-with-any-framework](https://bholmes.dev/blog/picture-perfect-image-optimization/#link-using-11ty-image-with-any-framework)
 *  [A Guide to the Responsive Images Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset)
 * ["Blur Up" technique](https://css-tricks.com/the-blur-up-technique-for-loading-background-images/)
+
 
 --------------------------------------
 
