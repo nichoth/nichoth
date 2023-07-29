@@ -1,0 +1,1169 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://blog.excalidraw.com/end-to-end-encryption/
+Subject: End-to-End Encryption in the Browser | Excalidraw Blog
+Date: Sat, 29 Jul 2023 19:05:28 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--IZwUz2Ej4vydFP4n5rcZgWbpGkLorZZtEd9VEZkhS1----"
+
+
+------MultipartBoundary--IZwUz2Ej4vydFP4n5rcZgWbpGkLorZZtEd9VEZkhS1----
+Content-Type: text/html
+Content-ID: <frame-3EB78EC5668CBB28A7920F0F1CA5EBB2@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://blog.excalidraw.com/end-to-end-encryption/
+
+<!DOCTYPE html><html lang=3D"en" data-react-helmet=3D"lang"><head><meta htt=
+p-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-b4c357fb-6690-4eee-ac51-c=
+031b34c8bf5@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-47fba4a2-b34b-4c49-a05b-2593bf67d892@mhtml.blink" /><meta http-=
+equiv=3D"x-ua-compatible" content=3D"ie=3Dedge"><meta name=3D"viewport" con=
+tent=3D"width=3Ddevice-width, initial-scale=3D1, shrink-to-fit=3Dno"><meta =
+name=3D"generator" content=3D"Gatsby 2.32.12"><link rel=3D"sitemap" type=3D=
+"application/xml" href=3D"https://blog.excalidraw.com/sitemap.xml"><link re=
+l=3D"preconnect" href=3D"https://www.google-analytics.com/"><link rel=3D"dn=
+s-prefetch" href=3D"https://www.google-analytics.com/"><link rel=3D"alterna=
+te" type=3D"application/rss+xml" href=3D"https://blog.excalidraw.com/rss.xm=
+l"><link rel=3D"icon" href=3D"https://blog.excalidraw.com/favicon-32x32.png=
+?v=3Db2dad9018f8a69c2ae0275969a8a4c37" type=3D"image/png"><link rel=3D"mani=
+fest" href=3D"https://blog.excalidraw.com/manifest.webmanifest" crossorigin=
+=3D"anonymous"><meta name=3D"theme-color" content=3D"#663399"><link rel=3D"=
+apple-touch-icon" sizes=3D"48x48" href=3D"https://blog.excalidraw.com/icons=
+/icon-48x48.png?v=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-to=
+uch-icon" sizes=3D"72x72" href=3D"https://blog.excalidraw.com/icons/icon-72=
+x72.png?v=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-touch-icon=
+" sizes=3D"96x96" href=3D"https://blog.excalidraw.com/icons/icon-96x96.png?=
+v=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-touch-icon" sizes=
+=3D"144x144" href=3D"https://blog.excalidraw.com/icons/icon-144x144.png?v=
+=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-touch-icon" sizes=
+=3D"192x192" href=3D"https://blog.excalidraw.com/icons/icon-192x192.png?v=
+=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-touch-icon" sizes=
+=3D"256x256" href=3D"https://blog.excalidraw.com/icons/icon-256x256.png?v=
+=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-touch-icon" sizes=
+=3D"384x384" href=3D"https://blog.excalidraw.com/icons/icon-384x384.png?v=
+=3Db2dad9018f8a69c2ae0275969a8a4c37"><link rel=3D"apple-touch-icon" sizes=
+=3D"512x512" href=3D"https://blog.excalidraw.com/icons/icon-512x512.png?v=
+=3Db2dad9018f8a69c2ae0275969a8a4c37"><title>End-to-End Encryption in the Br=
+owser | Excalidraw Blog</title><link rel=3D"canonical" href=3D"https://blog=
+.excalidraw.com/end-to-end-encryption/" data-baseprotocol=3D"https:" data-b=
+asehost=3D"blog.excalidraw.com"><link as=3D"script" rel=3D"preload" href=3D=
+"https://blog.excalidraw.com/webpack-runtime-24ddfd5b61595ade3040.js"><link=
+ as=3D"script" rel=3D"preload" href=3D"https://blog.excalidraw.com/styles-4=
+07fe62976dc5310c43e.js"><link as=3D"script" rel=3D"preload" href=3D"https:/=
+/blog.excalidraw.com/framework-8e528b732ab2eaadb7b7.js"><link as=3D"script"=
+ rel=3D"preload" href=3D"https://blog.excalidraw.com/app-4362e0debf5c26be6f=
+ee.js"><link as=3D"script" rel=3D"preload" href=3D"https://blog.excalidraw.=
+com/component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127=
+c1a3e2490.js"><meta name=3D"description" content=3D"Excalidraw is a whitebo=
+ard tool that lets you easily sketch diagrams that have a hand-drawn feel t=
+o them. It is very handy to dump your thoughts many of which are sensitive:=
+ designs for new features not yet released, interview questions, org charts=
+, etc." data-react-helmet=3D"true"><meta property=3D"og:title" content=3D"E=
+nd-to-End Encryption in the Browser | Excalidraw Blog" data-react-helmet=3D=
+"true"><meta property=3D"og:description" content=3D"Excalidraw is a whitebo=
+ard tool that lets you easily sketch diagrams that have a hand-drawn feel t=
+o them. It is very handy to dump your thoughts many of which are sensitive:=
+ designs for new features not yet released, interview questions, org charts=
+, etc." data-react-helmet=3D"true"><meta property=3D"og:image" content=3D"h=
+ttps://blog.excalidraw.com/static/b145a84f9317faf72fe53723468246e6/og.png" =
+data-react-helmet=3D"true"><meta property=3D"og:type" content=3D"website" d=
+ata-react-helmet=3D"true"><meta name=3D"twitter:card" content=3D"summary_la=
+rge_image" data-react-helmet=3D"true"><meta name=3D"twitter:title" content=
+=3D"End-to-End Encryption in the Browser | Excalidraw Blog" data-react-helm=
+et=3D"true"><meta name=3D"twitter:description" content=3D"Excalidraw is a w=
+hiteboard tool that lets you easily sketch diagrams that have a hand-drawn =
+feel to them. It is very handy to dump your thoughts many of which are sens=
+itive: designs for new features not yet released, interview questions, org =
+charts, etc." data-react-helmet=3D"true"><meta name=3D"twitter:image" conte=
+nt=3D"https://blog.excalidraw.com/static/b145a84f9317faf72fe53723468246e6/o=
+g.png" data-react-helmet=3D"true"><link rel=3D"prefetch" href=3D"https://bl=
+og.excalidraw.com/page-data/index/page-data.json" crossorigin=3D"anonymous"=
+ as=3D"fetch"><link rel=3D"prefetch" href=3D"https://blog.excalidraw.com/co=
+mponent---src-pages-index-js-1362c715d112e08ffadc.js"></head><body class=3D=
+"light"><div id=3D"___gatsby"><div style=3D"outline:none" tabindex=3D"-1" i=
+d=3D"gatsby-focus-wrapper"><div style=3D"margin-left: auto; margin-right: a=
+uto; max-width: 45.5rem; padding: 2.625rem 1.3125rem;"><div style=3D"positi=
+on: fixed; right: 8px; top: 8px;"><div class=3D"react-toggle"><div class=3D=
+"react-toggle-track"><div class=3D"react-toggle-track-check"><img src=3D"da=
+ta:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0I=
+Ars4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAAD=
+x4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuN=
+C4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIy=
+LXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICA=
+gICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogIC=
+AgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZ=
+jpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAABlJJREFUWAm1=
+V3tsFEUcntnXvXu0tBWo1ZZHihBjCEWqkHiNaMLDRKOtQSKaiCFKQtS/SbxiFCHGCIkmkBSMwZh=
+QNTFoQZD0DFiwtCDFAkdDqBBBKFj63rvdnfH7zfVo5aFBj0l2Z/dm5vd98/0es8dYjlpr62azuf=
+nDQNZcU1PciMfjWvb9rvZSMk4Ayfb36pLH13189GC8LAtIRLLPt+pzwrCuLq4ISEv/gHmitrAwf=
+PbEkXc/ad4dL6iujrvyX0jcitgd/yZlZqftP6995Mr5TVLa22Tn8XVX2g/XLSRjUu7Q79jonS7I=
+7hS7/0oOb5VyqF52n98oj7esXX07EjlxwXWisRmSnm3b29TTM8iYrjmFBWExubxwY/uhNas4r/W=
+ySl1fc5cetDMd7ydl+lMJJRw5WC8ud62Xx5rfepzwxgZmbhUYNS5Stvsj4yo2GXJEFBVHWDBkfd=
+bR9HpYBaaUajDnBLKKpl1xRKYcgGtMCqEzTaSnThk/SQT0uJqTqFNBmXMCsZE48DzRZRMBRjv1G=
+HNdk3HBImF9ZUvTyxM40pMKVc4JZBXQOLOFoDeKSxdp6HIQcO4rjYT9fn0pjbz9GLt7BAAODmjS=
+VReXUMFzNW5x5vfxp2mIxZjIuQKJxAmFa+is2DQJJQ0JyBVExNOYcJnPxx/6/utnijmP555ALEa=
+gKAGGnGn64QORBjARcIA/yJk7JMJBLRrNtybTvH88KGjCf2jK86bhzmMcwDKFZEQvbIhxFYhCho=
+MWMzU2iWznlIBEVJOsP+1bdX/ALx9l7jApADeDAEcMkE90JnUmmGl4USKQ0xhoW3JB5XY0YrxYW=
+hLwMZZypUyjDGH35AbNwgUGiFBPpuGbHCpAOV1ZGXf2f/taftAv31DyeymN2d1IhAFAwTOmnzF/=
+kKcdh3me7CYCOVNgycju84u8DeVlwfFq9/ZlTfldYrMUjOlrkjkD+rU+WzCROkcEchIDHR011sy=
+ZW9JHD7y07N6JvhWMpz3pugaTkB6lWFVCKkhck0zzeMp2utq+uHrmfxOgoCO/Z8CXPlEQ1bdH8w=
+gvhSIkEG0ICcQeExIFGdimjvKka7btJFZuaXOammIGKUCFQ53j9EN1dYKWqHf0t2w407W2tgs6h=
+89ZnImjB55flh81tt9XirjjDuSl+oIPRQ0iWPgNZ5GqTqbBe3vSzEl5n5PhWKwocyR2HlqYN61q=
+V18WjYjE8JLARZPQsUSim8foIRYTlGr02Ly7piASFRtKJ4VfieYhxdS2JcDVMN6xVOKZyrCGm8b=
+108lrLRVzvptLH7IoEFLFANes6KnDi+uxfmvFnF17oALq5u1agu3/YfHkcSFzeSggV5eXRfIB7C=
+HNcO5SUI+Ih5Ir7f4MAV9IqdFzdZgNpZw1Gcs1mNvgGbTbqQ9/cz7ZuuhgyYRQ49ljTyWHhr2Dw=
+pNHHFf+5gnWZ3Bharo+0TD5dNMw5vv9RlVpSRDHK4TlnoukhtYApuOHejSZQuo5g/A9BysdKRCy=
+Ll6062fN37OXMDlvUJtUrtmxo0avrW3wTrYs3jJ9RvRVChrmSmanPMpX2OXMsmDGh6AiEIwBAlv=
+kOqIdBy+8JyAz8pz7QxiDth4KDy5uAlwzrWTnwC8Vc4KVAMZ3YUZ+IqoIjP3h5KFFX1ZMy3uW+7=
+RhEDHgTi0zC9rS7uhPCDiNrGFyqBeERtKN/B0YlyFCkw0NJ5C0Ojv7zvT1a1WV1TuvZDdL4NTgB=
+7CASYpsen6gqvG5jmTf5qHedADgkBl3D0nkSgNhZACDyi0FUKZRr3IdRjgN4WPPoFMIIegIK3mq=
+d38fS80mcJKelM4szNyzZtQbkchGePuBRS8Eg9pHU8ojRQpSqs+ajAIwTjjUMQ/nvTNM0kicwYx=
+ZIYMh/891DYi+fvedB+c1xsm4lDU6ya+Axtz+RiAzEVYbajQOpq17F0R9QevNcEhfcU+xvyQQUa=
+lGJBSesqOkgPQ4YNyUZL9fSvUPDjoNAwN8/dwFjaczNkc3ptaMud1EIDtGcmXTcefO2cGSvKIFf=
+p/2JIJxlq7xEl3nVPM4fDeIbPkD16/ptNc0bDu7qxbsu0R2JGywWMIjF2ft3tjfloAyQAGXiOn8=
+hrqwbVvMXzaO+QeHXP6nF0wvX74Hf4NGG5GPjSlYoyM3P/0FbCT6zvM/yYoAAAAASUVORK5CYII=
+=3D" width=3D"16" height=3D"16" alt=3D"presentation" style=3D"pointer-event=
+s: none;"></div><div class=3D"react-toggle-track-x"><img src=3D"data:image/=
+png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAA=
+AAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1=
+ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KIC=
+AgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1ze=
+W50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAg=
+ICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA=
+8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcm=
+lwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAABwNJREFUWAmtV1tsFFUY/=
+s6Z2d22zLYlZakUCRVaQcqlWIiCiS1gTEB9UAO+GR9En3iQGI0xJiSiRB98MjEq8cEQTSBeHhQM=
+0V7whtEGDWC90BYitxahtNtu25058/v/ZzvLbilawJNM5+yZ89+//1LgJhYRNLW1uDfBAvpGiIk=
+2O5auvfFxqIH3ZJ8/u06GN6Z9+wVl5SjcD1IbZa/UPkPyYl2uR4dreoD2bnbYxTlBBRytkHXtAR=
+EphP5KuH4lddx9h70yxX05t7yYXwGb6W8nx1jibpl2rFlGBxcG9M18okOrn7Bnk/BAO/4bI0UeE=
+E1zjBp3UmvjOxJXJdaKN/ZiIu4tOZrAb4aTdZAZArKmWeiiJZ6jt5tiagdCS9+6cgO1Ne6Mvhe+=
+ixTIfyDVhipnK9p+P0Edqx9RW/YZtQVGmOLChRxNNlyPsTEgPQKMB3dbEHa0h1awYmQ83enTd2v=
+mUtvKd1Glv2RkzBb+kZGRrKtjzG60Wguhd/lJZBingbcfWWe72vjT75bJDrhYtvA0hrurETDr5H=
+yF2Knb1MM4ab//xIoOqueA0edRnkkinTyJdYvqLFDZO4zUPFCvVoDjJq4T7TE61IWh4x5KqxX5K=
+VKkX8WZ/t2ov2cb3MHt4dhIyOxIJxJOOF6xRx/99BksXLoecWcXytILMNBDqKpnGZWPquYfPxY8=
+iXGR9fK+SgFrgcRPXPjVqhehL+3EmZ5RGJQi1QBU8TPThQnOQzm+5UXGIcetUeEAfP13VwzpI+w=
+1jGJWdSliNfvVhiMPiOsllJag4M/UGHiqM6dlBb2OTLKHHV6KkvogrJ4XhBWniWK/Gp1MQyf93F=
+OeUXKmKk/FzJxbQtKLjFXYT4USupy8fQVir2ynVEBiZMG0qtOHMS/AW4Gwrk7BG3C1F0B5nqNKE=
+0CME4MfVRLPnXkBKe+ipvoFhNQywOhdghvLi0F8ReyVXV4BKTBRbbe5f64zR/DHsdZw1hJfeWlH=
+l/GNRJzDxrd5m192z78TMaVnKELZoINZS4BzQ7vtnZljSnha/pPCbkuxzXcupYwI5tIeCpGc0Yp=
+9tWHZQy/rmYhRfNgg4bHJBYLzGkxsRJF4XKlE2jBOHNSv3kY7Tj6vthzPFl61BrYwqFlmEQhtSV=
+XmLiksxLmtRgYXI1ULU61JJ4eVKmG3/5sCVgpbMT6OMJ2E08/29Xf3w6v4FnHdCjfWgXu/O8Z5m=
+LdCkeRs2khHe1DqOtQwbHWTAnM5S2HNmhALYo5KjkPFrMMKjZl6HxhWIAb0BqE+/73GrBRQUsKY=
+iBu4JX8ycI6wtw+i5ef3NZpsrKVSHYCP37jwGDgeE1SA0S/xtl5SU2fs1ApEp0qTLVRjgyycDSs=
+LHMSwmFltZMStR3uLLg6BdLhDa5dC6ryU2pHBe1BVO9tUcwfitJt2CLJZUHoG6T7Op75u0IyK31=
+TCPcwFqgPk/KCaD3dFOuZBCO7xvCT/j048b3I3c7F2+WuOW7qdgkucFYlcQ4qop3yzTX7WaKfOC=
+ccye3Ts1Etq0+a/BHCF1yPgF3tAUkR6OrtGmo6gl94qqcXKh3rDyrOkPa58URoWcov2Mo6M+0Qj=
+rqKB+b7++oMa9Sz+ZkM0mie6aAtnGUvhmxaI+TogPOSQedgWioGSHFLn3v4kLh4HRspNmOGv41k=
++55siLFp2z6xYeJjhljFcbmxJlr4ga06TbevSByz/glQq4BJx46/c+237PbBqEYKxX3HpmKZEnQ=
+nr65X20hqJYaNcLoFOLiJk2LuBbyg7Q0OEn+hm0P3honxFD6rdxYorKpeIoi4YSSvyQHQIbM5t4=
++YNxLj/OxhVOOE4585qGpjnq+wSx6Q9CtNxTjd5klB+g6Mv36r0+b9cZFi44WYkHdG2ZWb3TtOU=
+OXyVAlKlpGvJIAJ3eBMyfYS5C0qRZGtC85j+4sOasDe9xznPYezhhO/2Q6eP2fSOvYHOjtuQ1a9=
+Q1VKynVDaMc8E0tptdxUsTFpFIYjcZKcbnoaQTNdiqCwNlL4G7oziSqGnT1ALf34vhk4R5zU3qY=
+V9ONp9K88RtouShE68JwaU8dFw5W617shWa9ykeaBIn2hcsvPgL00k45QdTCZuSVcTRNs+8fnyL=
+vooQfR5iujAnR9bxfY2xOVOxFS8SK3Le0l48VyYu1M8HRe5JD8wKPTjYnifaK3Wfn/GChYQ8ZAi=
+6WRzWgqLV5YrsVLnZaVSoXU1g9gOIDwFySiGi+Zdrnzr7J3r+SMuszlcQCRn8lNGcTuSy2jOI7o=
+9mxjZo+vR3ej3tN+ifRSOyUTS0+VMOid93cCubeiy/6TImS0QxRSCq2vxKr45zV+FQnjWH6D2xg=
++E9EatLcLAdHTgtGGD80D6jM0+aOl4wJgO/f96R2aJKCQ3yvgftRhdFMOpd6oAAAAASUVORK5CY=
+II=3D" width=3D"16" height=3D"16" alt=3D"presentation" style=3D"pointer-eve=
+nts: none;"></div></div><div class=3D"react-toggle-thumb"></div><input clas=
+s=3D"react-toggle-screenreader-only" type=3D"checkbox" aria-label=3D"Switch=
+ between Dark and Light mode"></div></div><header><div style=3D"font-family=
+: var(--ui-font); text-align: right;"><span style=3D"float: left;"><a href=
+=3D"https://blog.excalidraw.com/">All posts</a></span><a class=3D"excalidra=
+w-button" href=3D"https://excalidraw.com/" target=3D"_blank" rel=3D"noopene=
+r noreferrer" style=3D"padding: 0.7rem 0.875rem 0.7rem 0.6125rem;"><img src=
+=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAAA=
+XNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAwBQTFRFAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+AAAAAAAAAAAAAAAAAAAAAAAAAszD0iAAAAQB0Uk5TAD9YpKqmVwpeAwIRZNfhkev+450QARpmyv=
+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3D=3D" alt=3D"excalidraw" style=
+=3D"height: 1.75rem; vertical-align: middle; padding-right: 0.0875rem; marg=
+in: 0px;"> Open Excalidraw</a></div><span style=3D"clear: both;"></span></h=
+eader><main class=3D"blog-post"><h1 style=3D"margin-bottom: 0px;">End-to-En=
+d Encryption in the Browser</h1><p style=3D"margin-bottom: 1.75rem; font-fa=
+mily: var(--ui-font);"><strong>March 21, 2020</strong><span style=3D"opacit=
+y: 0.75; font-style: italic;">, by <a href=3D"https://twitter.com/vjeux">vj=
+eux</a></span></p><div>
+<p>By default, <strong>Excalidraw</strong> doesn=E2=80=99t send anything yo=
+u draw to the server. But sometimes it is useful to be able to send a link =
+to the scene you are working on to someone else.</p>
+<p>You could save the drawing to a file, send it to the other person, and h=
+ave them open it. But that=E2=80=99s pretty cumbersome. In this post we=E2=
+=80=99ll show how it=E2=80=99s possible to share just a link without the se=
+rver having access to the data.</p>
+<h2>Traditional Website Architecture</h2>
+<p>In a traditional website architecture, you=E2=80=99d save a scene by sen=
+ding it to the server, which gives you a shareable URL. The recipient then =
+downloads the scene data from the server.</p>
+<p>In that world, you trust the server to contain your information but you =
+don=E2=80=99t have to trust the pipes in between the client and the server,=
+ because you use HTTPS to encrypt the data.</p>
+<p><a href=3D"https://excalidraw.com/#json=3D5649116445016064,yOfExolZoMhtG=
+nysT3-LWA">https://excalidraw.com/#json=3D5649116445016064,yOfExolZoMhtGnys=
+T3-LWA</a></p>
+<p>This works well unless the server gets compromised. The attacker will ha=
+ve access to every single drawing ever made! This is something we=E2=80=99d=
+ like to avoid.</p>
+<h2>End-to-End Encryption</h2>
+<p>WhatsApp popularized end-to-end encryption, a technique that allows vari=
+ous clients to communicate without the server being able to read the conten=
+t of the communication.</p>
+<p>The idea is to encrypt the content before sending it to the server. The =
+server would just store the encrypted blob and send it back to the client.<=
+/p>
+<p><a href=3D"https://excalidraw.com/#json=3D5645858175451136,8w-G0ZXiOfRYA=
+n7VWpANxw">https://excalidraw.com/#json=3D5645858175451136,8w-G0ZXiOfRYAn7V=
+WpANxw</a></p>
+<p>The biggest challenge with this architecture is how to distribute the ke=
+y to encrypt the message in such a way that the server cannot see it.</p>
+<p>Thankfully, in the context of a website, we can exploit the hash part of=
+ the URL. Anything that=E2=80=99s added after the <code class=3D"language-t=
+ext">#</code> doesn=E2=80=99t get sent to the server, but is readable from =
+the client-side JavaScript code.</p>
+<p><a href=3D"https://excalidraw.com/#json=3D5660568841093120,vki3y9xuEulFV=
+HDqt-PBMw">https://excalidraw.com/#json=3D5660568841093120,vki3y9xuEulFVHDq=
+t-PBMw</a></p>
+<h2>Show me the code</h2>
+<p>Fortunately, the Web Cryptography APIs are now widely available to all t=
+he browsers that let us implement this. That said, the APIs to deal with en=
+cryption, keys and binary data are not the most straightforward, this next =
+section walks you through how to wire it all together.</p>
+<h3>Upload</h3>
+<p>We generate a random key that will be used to encrypt the data.</p>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> key <span class=3D"token operator">=3D</span> <spa=
+n class=3D"token keyword">await</span> window<span class=3D"token punctuati=
+on">.</span>crypto<span class=3D"token punctuation">.</span>subtle<span cla=
+ss=3D"token punctuation">.</span><span class=3D"token function">generateKey=
+</span><span class=3D"token punctuation">(</span>
+  <span class=3D"token punctuation">{</span> name<span class=3D"token opera=
+tor">:</span> <span class=3D"token string">"AES-GCM"</span><span class=3D"t=
+oken punctuation">,</span> length<span class=3D"token operator">:</span> <s=
+pan class=3D"token number">128</span> <span class=3D"token punctuation">}</=
+span><span class=3D"token punctuation">,</span>
+  <span class=3D"token boolean">true</span><span class=3D"token punctuation=
+">,</span> <span class=3D"token comment">// extractable</span>
+  <span class=3D"token punctuation">[</span><span class=3D"token string">"e=
+ncrypt"</span><span class=3D"token punctuation">,</span> <span class=3D"tok=
+en string">"decrypt"</span><span class=3D"token punctuation">]</span><span =
+class=3D"token punctuation">,</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>;</span></code></pre></div>
+<p>We encrypt the content with that random key. In this case, we only encry=
+pt the content once with the random key so we don=E2=80=99t need an <code c=
+lass=3D"language-text">iv</code> and can leave it filled with 0 (<a href=3D=
+"https://www.youtube.com/watch?v=3DLP1t_pzxKyE">I hope=E2=80=A6</a>).</p>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> encrypted <span class=3D"token operator">=3D</span=
+> <span class=3D"token keyword">await</span> window<span class=3D"token pun=
+ctuation">.</span>crypto<span class=3D"token punctuation">.</span>subtle<sp=
+an class=3D"token punctuation">.</span><span class=3D"token function">encry=
+pt</span><span class=3D"token punctuation">(</span>
+  <span class=3D"token punctuation">{</span> name<span class=3D"token opera=
+tor">:</span> <span class=3D"token string">"AES-GCM"</span><span class=3D"t=
+oken punctuation">,</span> iv<span class=3D"token operator">:</span> <span =
+class=3D"token keyword">new</span> <span class=3D"token class-name">Uint8Ar=
+ray</span><span class=3D"token punctuation">(</span><span class=3D"token nu=
+mber">12</span><span class=3D"token punctuation">)</span> <span class=3D"to=
+ken comment">/* don't reuse key! */</span> <span class=3D"token punctuation=
+">}</span><span class=3D"token punctuation">,</span>
+  key<span class=3D"token punctuation">,</span>
+  <span class=3D"token keyword">new</span> <span class=3D"token class-name"=
+>TextEncoder</span><span class=3D"token punctuation">(</span><span class=3D=
+"token punctuation">)</span><span class=3D"token punctuation">.</span><span=
+ class=3D"token function">encode</span><span class=3D"token punctuation">(<=
+/span><span class=3D"token constant">JSON</span><span class=3D"token punctu=
+ation">.</span><span class=3D"token function">stringify</span><span class=
+=3D"token punctuation">(</span>content<span class=3D"token punctuation">)</=
+span><span class=3D"token punctuation">)</span><span class=3D"token punctua=
+tion">,</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>;</span></code></pre></div>
+<p>We upload the encrypted content to the server. Note that we don=E2=80=99=
+t send the key to the server!</p>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> response <span class=3D"token operator">=3D</span>=
+ <span class=3D"token keyword">await</span> <span class=3D"token punctuatio=
+n">(</span>
+  <span class=3D"token keyword">await</span> <span class=3D"token function"=
+>fetch</span><span class=3D"token punctuation">(</span><span class=3D"token=
+ string">"/upload"</span><span class=3D"token punctuation">,</span> <span c=
+lass=3D"token punctuation">{</span>
+    method<span class=3D"token operator">:</span> <span class=3D"token stri=
+ng">"POST"</span><span class=3D"token punctuation">,</span>
+    body<span class=3D"token operator">:</span> encrypted<span class=3D"tok=
+en punctuation">,</span>
+  <span class=3D"token punctuation">}</span><span class=3D"token punctuatio=
+n">)</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>.</span><span class=3D"token function">json</span><span class=3D"token pun=
+ctuation">(</span><span class=3D"token punctuation">)</span><span class=3D"=
+token punctuation">;</span></code></pre></div>
+<p>We generate the shareable URL. We use the <code class=3D"language-text">=
+jwk</code> encoding in order to extract a base64 version of the key instead=
+ of having a binary encoded one.</p>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> objectURL <span class=3D"token operator">=3D</span=
+> response<span class=3D"token punctuation">.</span>url<span class=3D"token=
+ punctuation">;</span>
+<span class=3D"token keyword">const</span> objectKey <span class=3D"token o=
+perator">=3D</span> <span class=3D"token punctuation">(</span><span class=
+=3D"token keyword">await</span> window<span class=3D"token punctuation">.</=
+span>crypto<span class=3D"token punctuation">.</span>subtle<span class=3D"t=
+oken punctuation">.</span><span class=3D"token function">exportKey</span><s=
+pan class=3D"token punctuation">(</span><span class=3D"token string">"jwk"<=
+/span><span class=3D"token punctuation">,</span> key<span class=3D"token pu=
+nctuation">)</span><span class=3D"token punctuation">)</span><span class=3D=
+"token punctuation">.</span>k<span class=3D"token punctuation">;</span>
+<span class=3D"token keyword">const</span> url <span class=3D"token operato=
+r">=3D</span> objectURL <span class=3D"token operator">+</span> <span class=
+=3D"token string">"#key=3D"</span> <span class=3D"token operator">+</span> =
+objectKey<span class=3D"token punctuation">;</span>
+<span class=3D"token comment">// Example: https://excalidraw.com/?scene=3D1=
+234#key=3DBQ1moYESmTEXgtA1KozyVw</span></code></pre></div>
+<h2>Download</h2>
+<p>In the opposite direction, we download the file back from the server.</p=
+>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> response <span class=3D"token operator">=3D</span>=
+ <span class=3D"token keyword">await</span> <span class=3D"token function">=
+fetch</span><span class=3D"token punctuation">(</span><span class=3D"token =
+template-string"><span class=3D"token template-punctuation string">`</span>=
+<span class=3D"token string">/download?id=3D{id}</span><span class=3D"token=
+ template-punctuation string">`</span></span><span class=3D"token punctuati=
+on">)</span><span class=3D"token punctuation">;</span>
+<span class=3D"token keyword">const</span> encrypted <span class=3D"token o=
+perator">=3D</span> <span class=3D"token keyword">await</span> response<spa=
+n class=3D"token punctuation">.</span><span class=3D"token function">arrayB=
+uffer</span><span class=3D"token punctuation">(</span><span class=3D"token =
+punctuation">)</span><span class=3D"token punctuation">;</span></code></pre=
+></div>
+<p>The key that we encoded in the url is the <code class=3D"language-text">=
+k</code> field of the <code class=3D"language-text">jwk</code> object that =
+represents the key. In order to get back a full key object we need to repro=
+duce all the other fields that are static. It=E2=80=99s pretty verbose but =
+it works!</p>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> objectKey <span class=3D"token operator">=3D</span=
+> window<span class=3D"token punctuation">.</span>location<span class=3D"to=
+ken punctuation">.</span>hash<span class=3D"token punctuation">.</span><spa=
+n class=3D"token function">slice</span><span class=3D"token punctuation">(<=
+/span><span class=3D"token string">"#key=3D"</span><span class=3D"token pun=
+ctuation">.</span>length<span class=3D"token punctuation">)</span><span cla=
+ss=3D"token punctuation">;</span>
+<span class=3D"token keyword">const</span> key <span class=3D"token operato=
+r">=3D</span> <span class=3D"token keyword">await</span> window<span class=
+=3D"token punctuation">.</span>crypto<span class=3D"token punctuation">.</s=
+pan>subtle<span class=3D"token punctuation">.</span><span class=3D"token fu=
+nction">importKey</span><span class=3D"token punctuation">(</span>
+  <span class=3D"token string">"jwk"</span><span class=3D"token punctuation=
+">,</span>
+  <span class=3D"token punctuation">{</span>
+    k<span class=3D"token operator">:</span> objectKey<span class=3D"token =
+punctuation">,</span>
+    alg<span class=3D"token operator">:</span> <span class=3D"token string"=
+>"A128GCM"</span><span class=3D"token punctuation">,</span>
+    ext<span class=3D"token operator">:</span> <span class=3D"token boolean=
+">true</span><span class=3D"token punctuation">,</span>
+    key_ops<span class=3D"token operator">:</span> <span class=3D"token pun=
+ctuation">[</span><span class=3D"token string">"encrypt"</span><span class=
+=3D"token punctuation">,</span> <span class=3D"token string">"decrypt"</spa=
+n><span class=3D"token punctuation">]</span><span class=3D"token punctuatio=
+n">,</span>
+    kty<span class=3D"token operator">:</span> <span class=3D"token string"=
+>"oct"</span><span class=3D"token punctuation">,</span>
+  <span class=3D"token punctuation">}</span><span class=3D"token punctuatio=
+n">,</span>
+  <span class=3D"token punctuation">{</span> name<span class=3D"token opera=
+tor">:</span> <span class=3D"token string">"AES-GCM"</span><span class=3D"t=
+oken punctuation">,</span> length<span class=3D"token operator">:</span> <s=
+pan class=3D"token number">128</span> <span class=3D"token punctuation">}</=
+span><span class=3D"token punctuation">,</span>
+  <span class=3D"token boolean">false</span><span class=3D"token punctuatio=
+n">,</span> <span class=3D"token comment">// extractable</span>
+  <span class=3D"token punctuation">[</span><span class=3D"token string">"d=
+ecrypt"</span><span class=3D"token punctuation">]</span><span class=3D"toke=
+n punctuation">,</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>;</span></code></pre></div>
+<p>We decrypt the message, decode it to string and parse it back as JSON.</=
+p>
+<div class=3D"gatsby-highlight" data-language=3D"javascript"><pre class=3D"=
+language-javascript"><code class=3D"language-javascript"><span class=3D"tok=
+en keyword">const</span> decrypted <span class=3D"token operator">=3D</span=
+> <span class=3D"token keyword">await</span> window<span class=3D"token pun=
+ctuation">.</span>crypto<span class=3D"token punctuation">.</span>subtle<sp=
+an class=3D"token punctuation">.</span><span class=3D"token function">decry=
+pt</span><span class=3D"token punctuation">(</span>
+  <span class=3D"token punctuation">{</span> name<span class=3D"token opera=
+tor">:</span> <span class=3D"token string">"AES-GCM"</span><span class=3D"t=
+oken punctuation">,</span> iv<span class=3D"token operator">:</span> <span =
+class=3D"token keyword">new</span> <span class=3D"token class-name">Uint8Ar=
+ray</span><span class=3D"token punctuation">(</span><span class=3D"token nu=
+mber">12</span><span class=3D"token punctuation">)</span> <span class=3D"to=
+ken punctuation">}</span><span class=3D"token punctuation">,</span>
+  key<span class=3D"token punctuation">,</span>
+  encrypted<span class=3D"token punctuation">,</span>
+<span class=3D"token punctuation">)</span><span class=3D"token punctuation"=
+>;</span>
+<span class=3D"token keyword">const</span> decoded <span class=3D"token ope=
+rator">=3D</span> <span class=3D"token keyword">new</span> <span class=3D"t=
+oken class-name">window<span class=3D"token punctuation">.</span>TextDecode=
+r</span><span class=3D"token punctuation">(</span><span class=3D"token punc=
+tuation">)</span><span class=3D"token punctuation">.</span><span class=3D"t=
+oken function">decode</span><span class=3D"token punctuation">(</span><span=
+ class=3D"token keyword">new</span> <span class=3D"token class-name">Uint8A=
+rray</span><span class=3D"token punctuation">(</span>decrypted<span class=
+=3D"token punctuation">)</span><span class=3D"token punctuation">)</span><s=
+pan class=3D"token punctuation">;</span>
+<span class=3D"token keyword">const</span> content <span class=3D"token ope=
+rator">=3D</span> <span class=3D"token constant">JSON</span><span class=3D"=
+token punctuation">.</span><span class=3D"token function">parse</span><span=
+ class=3D"token punctuation">(</span>decoded<span class=3D"token punctuatio=
+n">)</span><span class=3D"token punctuation">;</span></code></pre></div>
+<h2>Conclusion</h2>
+<p>As the maintainer of <a href=3D"https://excalidraw.com/">Excalidraw</a>,=
+ I now sleep much better at night. If the hosting service gets compromised,=
+ it doesn=E2=80=99t really matter as none of the content can be decrypted w=
+ithout the key.</p>
+<p>It also gives me the peace of mind to use <strong>Excalidraw</strong> fo=
+r work related projects knowing that nothing will leak.</p>
+<p>If you=E2=80=99re building a website that needs to store data on the ser=
+ver, you may want to add end-to-end encryption, it=E2=80=99s pretty easy!</=
+p></div><p style=3D"font-family: var(--ui-font); margin-bottom: 0px;"><a hr=
+ef=3D"https://mobile.twitter.com/search?q=3Dhttps%3A%2F%2Fblog.excalidraw.c=
+om%2Fend-to-end-encryption%2F">Discuss on Twitter</a> =E2=80=A2 <a href=3D"=
+https://github.com/excalidraw/excalidraw-blog/edit/master/content/blog/end-=
+to-end-encryption/index.md">Edit on GitHub</a></p><hr style=3D"margin: 1.75=
+rem 0px;"><ul style=3D"display: flex; flex-wrap: wrap; justify-content: spa=
+ce-between; list-style: none; padding: 0px;"><li><a rel=3D"prev" href=3D"ht=
+tps://blog.excalidraw.com/reflections-on-excalidraw/">=E2=86=90 Reflections=
+ on Excalidraw</a></li><li><a rel=3D"next" href=3D"https://blog.excalidraw.=
+com/rethinking-virtual-whiteboard/">Rethinking Virtual Whiteboard =E2=86=92=
+</a></li></ul></main><footer style=3D"text-align: center; padding: 3.5rem 0=
+px;"><span>=C2=A9 2023 Excalidraw =E2=80=A2 <a href=3D"https://twitter.com/=
+excalidraw">Twitter</a> =E2=80=A2 <a href=3D"https://github.com/excalidraw/=
+excalidraw-blog">Source Code</a> =E2=80=A2 <a href=3D"https://github.com/ex=
+calidraw/excalidraw-blog/blob/master/LICENSE">MIT Licensed</a></span></foot=
+er></div></div><div id=3D"gatsby-announcer" style=3D"position:absolute;top:=
+0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);whit=
+e-space:nowrap;border:0" aria-live=3D"assertive" aria-atomic=3D"true"></div=
+></div></body></html>
+------MultipartBoundary--IZwUz2Ej4vydFP4n5rcZgWbpGkLorZZtEd9VEZkhS1----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b4c357fb-6690-4eee-ac51-c031b34c8bf5@mhtml.blink
+
+@charset "utf-8";
+
+html { font-family: sans-serif; text-size-adjust: 100%; }
+
+body { margin: 0px; }
+
+article, aside, details, figcaption, figure, footer, header, main, menu, na=
+v, section, summary { display: block; }
+
+audio, canvas, progress, video { display: inline-block; }
+
+audio:not([controls]) { display: none; height: 0px; }
+
+progress { vertical-align: baseline; }
+
+[hidden], template { display: none; }
+
+a { background-color: transparent; }
+
+a:active, a:hover { outline-width: 0px; }
+
+abbr[title] { border-bottom: none; text-decoration: underline dotted; }
+
+b, strong { font-weight: bolder; }
+
+dfn { font-style: italic; }
+
+h1 { font-size: 2em; margin: 0.67em 0px; }
+
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-ali=
+gn: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+img { border-style: none; }
+
+svg:not(:root) { overflow: hidden; }
+
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+figure { margin: 1em 40px; }
+
+hr { box-sizing: content-box; height: 0px; overflow: visible; }
+
+button, input, optgroup, select, textarea { font: inherit; margin: 0px; }
+
+optgroup { font-weight: 700; }
+
+button, input { overflow: visible; }
+
+button, select { text-transform: none; }
+
+[type=3D"reset"], [type=3D"submit"], button, html [type=3D"button"] { appea=
+rance: button; }
+
+fieldset { border: 1px solid silver; margin: 0px 2px; padding: 0.35em 0.625=
+em 0.75em; }
+
+legend { box-sizing: border-box; color: inherit; display: table; max-width:=
+ 100%; padding: 0px; white-space: normal; }
+
+textarea { overflow: auto; }
+
+[type=3D"checkbox"], [type=3D"radio"] { box-sizing: border-box; padding: 0p=
+x; }
+
+[type=3D"number"]::-webkit-inner-spin-button, [type=3D"number"]::-webkit-ou=
+ter-spin-button { height: auto; }
+
+[type=3D"search"] { appearance: textfield; outline-offset: -2px; }
+
+[type=3D"search"]::-webkit-search-cancel-button, [type=3D"search"]::-webkit=
+-search-decoration { appearance: none; }
+
+::-webkit-input-placeholder { color: inherit; opacity: 0.54; }
+
+::-webkit-file-upload-button { appearance: button; font: inherit; }
+
+html { font: 100% / 1.75 Merriweather, Georgia, serif; box-sizing: border-b=
+ox; overflow-y: scroll; }
+
+* { box-sizing: inherit; }
+
+::before { box-sizing: inherit; }
+
+::after { box-sizing: inherit; }
+
+body { color: rgba(0, 0, 0, 0.9); font-family: Merriweather, Georgia, serif=
+; font-weight: 400; overflow-wrap: break-word; font-kerning: normal; font-f=
+eature-settings: "kern", "liga", "clig", "calt"; }
+
+img { max-width: 100%; margin: 0px 0px 1.75rem; padding: 0px; }
+
+h1 { margin: 0px 0px 1.75rem; padding: 0px; color: inherit; font-family: va=
+r(--ui-font); font-weight: 700; text-rendering: optimizelegibility; font-si=
+ze: 2.5rem; line-height: 1.1; }
+
+h2 { margin: 0px 0px 1.75rem; padding: 0px; color: inherit; font-family: Bl=
+inkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans=
+-serif; font-weight: 700; text-rendering: optimizelegibility; font-size: 1.=
+73286rem; line-height: 1.1; }
+
+h3 { margin: 0px 0px 1.75rem; padding: 0px; color: inherit; font-family: Bl=
+inkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans=
+-serif; font-weight: 700; text-rendering: optimizelegibility; font-size: 1.=
+4427rem; line-height: 1.1; }
+
+h4 { margin: 0px 0px 1.75rem; padding: 0px; color: inherit; font-family: Bl=
+inkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans=
+-serif; font-weight: 700; text-rendering: optimizelegibility; font-size: 1r=
+em; line-height: 1.1; letter-spacing: 0.140625em; text-transform: uppercase=
+; }
+
+h5 { margin: 0px 0px 1.75rem; padding: 0px; color: inherit; font-family: Bl=
+inkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans=
+-serif; font-weight: 700; text-rendering: optimizelegibility; font-size: 0.=
+83255rem; line-height: 1.1; }
+
+h6 { margin: 0px 0px 1.75rem; padding: 0px; color: inherit; font-family: Bl=
+inkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans=
+-serif; font-weight: 700; text-rendering: optimizelegibility; font-size: 0.=
+75966rem; line-height: 1.1; font-style: italic; }
+
+hgroup { margin: 0px 0px 1.75rem; padding: 0px; }
+
+ul { margin: 0px 0px 1.75rem 1.75rem; padding: 0px; list-style: disc; }
+
+ol { margin: 0px 0px 1.75rem 1.75rem; padding: 0px; list-style-position: ou=
+tside; list-style-image: none; }
+
+dl { margin: 0px 0px 1.75rem; padding: 0px; }
+
+dd { margin: 0px 0px 1.75rem; padding: 0px; }
+
+p { margin: 0px 0px 1.75rem; padding: 0px; }
+
+figure { margin: 0px 0px 1.75rem; padding: 0px; }
+
+pre { margin: 0px 0px 1.75rem; padding: 0px; font-size: 0.85rem; line-heigh=
+t: 1.75rem; }
+
+table { margin: 0px 0px 1.75rem; padding: 0px; font-size: 1rem; line-height=
+: 1.75rem; border-collapse: collapse; width: 100%; }
+
+fieldset { margin: 0px 0px 1.75rem; padding: 0px; }
+
+blockquote { margin: 0px 1.75rem 1.75rem -1.75rem; padding: 0px 0px 0px 1.4=
+2188rem; font-size: 1.20112rem; line-height: 1.75rem; color: rgba(0, 0, 0, =
+0.59); font-style: italic; border-left: 0.32813rem solid rgba(0, 0, 0, 0.9)=
+; }
+
+form { margin: 0px 0px 1.75rem; padding: 0px; }
+
+noscript { margin: 0px 0px 1.75rem; padding: 0px; }
+
+iframe { margin: 0px 0px 1.75rem; padding: 0px; }
+
+hr { margin: 0px 0px calc(1.75rem - 1px); padding: 0px; background: rgba(0,=
+ 0, 0, 0.2); border: none; height: 1px; }
+
+address { margin: 0px 0px 1.75rem; padding: 0px; }
+
+b { font-weight: 700; }
+
+strong { font-weight: 700; }
+
+dt { font-weight: 700; }
+
+th { font-weight: 700; }
+
+li { margin-bottom: calc(0.875rem); }
+
+ol li { padding-left: 0px; }
+
+ul li { padding-left: 0px; }
+
+li > ol { margin-left: 1.75rem; margin-bottom: calc(0.875rem); margin-top: =
+calc(0.875rem); }
+
+li > ul { margin-left: 1.75rem; margin-bottom: calc(0.875rem); margin-top: =
+calc(0.875rem); }
+
+blockquote :last-child { margin-bottom: 0px; }
+
+li :last-child { margin-bottom: 0px; }
+
+p :last-child { margin-bottom: 0px; }
+
+li > p { margin-bottom: calc(0.875rem); }
+
+code { font-size: 0.85rem; line-height: 1.75rem; }
+
+kbd { font-size: 0.85rem; line-height: 1.75rem; }
+
+samp { font-size: 0.85rem; line-height: 1.75rem; }
+
+abbr { border-bottom: 1px dotted rgba(0, 0, 0, 0.5); cursor: help; }
+
+acronym { border-bottom: 1px dotted rgba(0, 0, 0, 0.5); cursor: help; }
+
+abbr[title] { border-bottom: 1px dotted rgba(0, 0, 0, 0.5); cursor: help; t=
+ext-decoration: none; }
+
+thead { text-align: left; }
+
+td, th { text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.12); fo=
+nt-feature-settings: "tnum"; padding: 0.875rem 1.16667rem calc(0.875rem - 1=
+px); }
+
+th:first-child, td:first-child { padding-left: 0px; }
+
+th:last-child, td:last-child { padding-right: 0px; }
+
+blockquote > :last-child { margin-bottom: 0px; }
+
+blockquote cite { font-size: 1rem; line-height: 1.75rem; color: rgba(0, 0, =
+0, 0.9); font-weight: 400; }
+
+blockquote cite::before { content: "=E2=80=94 "; }
+
+ul, ol { margin-left: 0px; }
+
+@media only screen and (max-width: 480px) {
+  ul, ol { margin-left: 1.75rem; }
+  blockquote { margin-left: -1.3125rem; margin-right: 0px; padding-left: 0.=
+98438rem; }
+}
+
+h1, h2, h3, h4, h5, h6 { margin-top: 3.5rem; }
+
+a { box-shadow: currentcolor 0px 1px 0px 0px; color: rgb(0, 122, 204); text=
+-decoration: none; }
+
+a:hover, a:active { box-shadow: none; }
+
+mark, ins { background: rgb(0, 122, 204); color: white; padding: 0.10938rem=
+ 0.21875rem; text-decoration: none; }
+
+:root { --ui-font: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helveti=
+ca,Arial,sans-serif; }
+
+a.gatsby-resp-image-link { box-shadow: none; }
+
+.gatsby-highlight { font-size: 0.9em; }
+------MultipartBoundary--IZwUz2Ej4vydFP4n5rcZgWbpGkLorZZtEd9VEZkhS1----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-47fba4a2-b34b-4c49-a05b-2593bf67d892@mhtml.blink
+
+@charset "utf-8";
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 100; src: local("Montserrat Thin "), local("Montserrat-Thin=
+"), url("/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff=
+2") format("woff2"), url("/static/montserrat-latin-100-370318464551d5f25b0f=
+0a78f374faac.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 100; src: local("Montserrat Thin italic"), local("Montserra=
+t-Thinitalic"), url("/static/montserrat-latin-100italic-bdeaeb79db315697bd1=
+73a55b097dc18.woff2") format("woff2"), url("/static/montserrat-latin-100ita=
+lic-ecf7d49386e8f265878e735db34a7c4b.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 200; src: local("Montserrat Extra Light "), local("Montserr=
+at-Extra Light"), url("/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4=
+a3b2c57cb.woff2") format("woff2"), url("/static/montserrat-latin-200-1fc98e=
+126a3d152549240e6244d7e669.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 200; src: local("Montserrat Extra Light italic"), local("Mo=
+ntserrat-Extra Lightitalic"), url("/static/montserrat-latin-200italic-49095=
+760a498d024fe1a85a078850df9.woff2") format("woff2"), url("/static/montserra=
+t-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 300; src: local("Montserrat Light "), local("Montserrat-Lig=
+ht"), url("/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.wo=
+ff2") format("woff2"), url("/static/montserrat-latin-300-8dc95fab9cf98d02ca=
+8d76e97d3dff60.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 300; src: local("Montserrat Light italic"), local("Montserr=
+at-Lightitalic"), url("/static/montserrat-latin-300italic-f20b178ca2024a5ea=
+c8e42e6649db86c.woff2") format("woff2"), url("/static/montserrat-latin-300i=
+talic-3fe16939288856e8e828fa2661bf2354.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 400; src: local("Montserrat Regular "), local("Montserrat-R=
+egular"), url("/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27b=
+c.woff2") format("woff2"), url("/static/montserrat-latin-400-8102c4838f9e3d=
+08dad644290a9cb701.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 400; src: local("Montserrat Regular italic"), local("Montse=
+rrat-Regularitalic"), url("/static/montserrat-latin-400italic-5cad650422a71=
+84467af5a4d17b264c4.woff2") format("woff2"), url("/static/montserrat-latin-=
+400italic-d191f22af3bb50902b99ac577f81a322.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 500; src: local("Montserrat Medium "), local("Montserrat-Me=
+dium"), url("/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.=
+woff2") format("woff2"), url("/static/montserrat-latin-500-8b763220218ffc11=
+c57c84ddb80e7b26.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 500; src: local("Montserrat Medium italic"), local("Montser=
+rat-Mediumitalic"), url("/static/montserrat-latin-500italic-47bfcca6b69d6a9=
+acca7a8bff17193e2.woff2") format("woff2"), url("/static/montserrat-latin-50=
+0italic-72c01f753c3940c0b9cb6bf2389caddf.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 600; src: local("Montserrat SemiBold "), local("Montserrat-=
+SemiBold"), url("/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee=
+0ee.woff2") format("woff2"), url("/static/montserrat-latin-600-7c839d15a6f5=
+4e7025ba8c0c4b333e8f.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 600; src: local("Montserrat SemiBold italic"), local("Monts=
+errat-SemiBolditalic"), url("/static/montserrat-latin-600italic-60789af1c93=
+38ed1a9546722ec54b4f7.woff2") format("woff2"), url("/static/montserrat-lati=
+n-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 700; src: local("Montserrat Bold "), local("Montserrat-Bold=
+"), url("/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff=
+2") format("woff2"), url("/static/montserrat-latin-700-80f10bd382f0df1cd650=
+fec59f3c9394.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 700; src: local("Montserrat Bold italic"), local("Montserra=
+t-Bolditalic"), url("/static/montserrat-latin-700italic-ba136d97b14e82284dd=
+595e257f11c47.woff2") format("woff2"), url("/static/montserrat-latin-700ita=
+lic-8c98142b425630821139c24bd1698700.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 800; src: local("Montserrat ExtraBold "), local("Montserrat=
+-ExtraBold"), url("/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a4=
+68c3b.woff2") format("woff2"), url("/static/montserrat-latin-800-9a9befcf50=
+d64f9d2d19d8b1d1984add.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 800; src: local("Montserrat ExtraBold italic"), local("Mont=
+serrat-ExtraBolditalic"), url("/static/montserrat-latin-800italic-540ffdd22=
+3d1a9ad3d4e678e1a23372e.woff2") format("woff2"), url("/static/montserrat-la=
+tin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: normal; font-display: swa=
+p; font-weight: 900; src: local("Montserrat Black "), local("Montserrat-Bla=
+ck"), url("/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.wo=
+ff2") format("woff2"), url("/static/montserrat-latin-900-26d42c9428780e545a=
+540bbb50c84bce.woff") format("woff"); }
+
+@font-face { font-family: Montserrat; font-style: italic; font-display: swa=
+p; font-weight: 900; src: local("Montserrat Black italic"), local("Montserr=
+at-Blackitalic"), url("/static/montserrat-latin-900italic-451157bc8861fe54f=
+523b3669a3def71.woff2") format("woff2"), url("/static/montserrat-latin-900i=
+talic-a8ec4957e1c24f5793305763ad9845b3.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: normal; font-display: s=
+wap; font-weight: 300; src: local("Merriweather Light "), local("Merriweath=
+er-Light"), url("/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37=
+af46a.woff2") format("woff2"), url("/static/merriweather-latin-300-cc7de05e=
+166e90320d7d896e0f72a19d.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: italic; font-display: s=
+wap; font-weight: 300; src: local("Merriweather Light italic"), local("Merr=
+iweather-Lightitalic"), url("/static/merriweather-latin-300italic-8fe52a480=
+89d6ebe46db0b8e7cc66263.woff2") format("woff2"), url("/static/merriweather-=
+latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: normal; font-display: s=
+wap; font-weight: 400; src: local("Merriweather Regular "), local("Merriwea=
+ther-Regular"), url("/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eb=
+a704cc39f.woff2") format("woff2"), url("/static/merriweather-latin-400-69f0=
+9800f4f6479d06e44eba837df872.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: italic; font-display: s=
+wap; font-weight: 400; src: local("Merriweather Regular italic"), local("Me=
+rriweather-Regularitalic"), url("/static/merriweather-latin-400italic-3a9be=
+9ea9f7aa4af6de7307df21d9fc0.woff2") format("woff2"), url("/static/merriweat=
+her-latin-400italic-d76079ed7541a433a54f79316de086e9.woff") format("woff");=
+ }
+
+@font-face { font-family: Merriweather; font-style: normal; font-display: s=
+wap; font-weight: 700; src: local("Merriweather Bold "), local("Merriweathe=
+r-Bold"), url("/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5=
+e03.woff2") format("woff2"), url("/static/merriweather-latin-700-ba56ea84b8=
+084b7ff9677f50d3cd81bd.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: italic; font-display: s=
+wap; font-weight: 700; src: local("Merriweather Bold italic"), local("Merri=
+weather-Bolditalic"), url("/static/merriweather-latin-700italic-1ef5edaaa20=
+ae53ea50399884c5e48c6.woff2") format("woff2"), url("/static/merriweather-la=
+tin-700italic-534bc9e7ce93c73d73426e46acd78092.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: normal; font-display: s=
+wap; font-weight: 900; src: local("Merriweather Black "), local("Merriweath=
+er-Black"), url("/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43=
+ac25f.woff2") format("woff2"), url("/static/merriweather-latin-900-3799b6e2=
+f5ed3fcccf9d7a708d7419fa.woff") format("woff"); }
+
+@font-face { font-family: Merriweather; font-style: italic; font-display: s=
+wap; font-weight: 900; src: local("Merriweather Black italic"), local("Merr=
+iweather-Blackitalic"), url("/static/merriweather-latin-900italic-e1b4d2aaa=
+78e12ad84aaf8a56321e4c2.woff2") format("woff2"), url("/static/merriweather-=
+latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff") format("woff"); }
+
+.blog-post h3 { margin-top: 1rem; margin-bottom: 0.5rem; }
+
+.blog-post img, .blog-post svg { max-width: 100%; margin: 4px auto; display=
+: block; }
+
+.blog-post table { width: 60%; margin: 0px auto 1.75rem; }
+
+.blog-post th { font-weight: 700; font-size: 1.1em; border-bottom-width: 3p=
+x; }
+
+.blog-post td[align=3D"right"], .blog-post th[align=3D"right"] { text-align=
+: right; }
+
+.blog-post td[align=3D"center"], .blog-post th[align=3D"center"] { text-ali=
+gn: center; }
+
+.blog-post td, .blog-post th { padding: 4px 0px; }
+
+.blog-post .twitter-tweet { margin-left: auto; margin-right: auto; }
+
+td, th { border-color: rgb(173, 181, 189); }
+
+@media only screen and (max-width: 640px) {
+  .blog-post table { width: 90%; }
+}
+
+code[class*=3D"language-"], pre[class*=3D"language-"] { color: rgb(101, 123=
+, 131); font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monosp=
+ace; text-align: left; white-space: pre; word-spacing: normal; word-break: =
+normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none=
+; }
+
+pre[class*=3D"language-"] { padding: 1em; margin: 0.5em 0px; overflow: auto=
+; border-radius: 0.3em; }
+
+:not(pre) > code[class*=3D"language-"], pre[class*=3D"language-"] { backgro=
+und-color: rgb(253, 246, 227); }
+
+:not(pre) > code[class*=3D"language-"] { padding: 0.1em; border-radius: 0.3=
+em; }
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog { color: rgb(14=
+7, 161, 161); }
+
+.token.punctuation { color: rgb(88, 110, 117); }
+
+.token.namespace { opacity: 0.7; }
+
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.prop=
+erty, .token.symbol, .token.tag { color: rgb(38, 139, 210); }
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.sele=
+ctor, .token.string, .token.url { color: rgb(42, 161, 152); }
+
+.token.entity { color: rgb(101, 123, 131); background: rgb(238, 232, 213); =
+}
+
+.token.atrule, .token.attr-value, .token.keyword { color: rgb(133, 153, 0);=
+ }
+
+.token.class-name, .token.function { color: rgb(181, 137, 0); }
+
+.token.important, .token.regex, .token.variable { color: rgb(203, 75, 22); =
+}
+
+.token.bold, .token.important { font-weight: 700; }
+
+.token.italic { font-style: italic; }
+
+.token.entity { cursor: help; }
+
+.excalidraw-button { background-color: rgb(255, 255, 255); border-radius: 8=
+px; border: 1px solid rgb(134, 142, 150); box-shadow: none; font-weight: 60=
+0; transition: all 0.2s ease 0s; }
+
+.excalidraw-button:hover { background-color: rgb(241, 243, 245); }
+
+svg { height: auto; width: auto; }
+
+svg, video { max-width: 100%; }
+
+body { --bg: #fff; --textNormal: #212529; --textTitle: #212529; --textLink:=
+ #228be6; --hr: rgba(0,0,0,0.2); background-color: var(--bg); font-family: =
+system-ui, sans-serif; }
+
+body.dark { -webkit-font-smoothing: antialiased; --bg: #212529; --textNorma=
+l: #dbe4ff; --textTitle: #fff; --hr: hsla(0,0%,100%,0.2); }
+
+body.dark h1, h2, h3, h4, h5, h6 { color: var(--textTitle); }
+
+h1, h2, h3 { line-height: 1.4; }
+
+h1, h1 code { font-size: 2.5rem; }
+
+blockquote, body.dark, p, ul { color: var(--textNormal); }
+
+blockquote { border-left-color: var(--textNormal); }
+
+figcaption { text-align: center; font-size: 0.9rem; }
+
+body.dark a { color: var(--textLink); }
+
+.react-toggle { touch-action: pan-x; z-index: 1; display: inline-block; pos=
+ition: relative; cursor: pointer; background-color: transparent; border: 0p=
+x; padding: 0px; user-select: none; -webkit-tap-highlight-color: transparen=
+t; }
+
+.react-toggle-screenreader-only { border: 0px; clip: rect(0px, 0px, 0px, 0p=
+x); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: ab=
+solute; width: 1px; }
+
+.react-toggle-track { width: 50px; height: 24px; padding: 0px; border-radiu=
+s: 30px; background-color: rgb(15, 17, 20); transition: all 0.2s ease 0s; }
+
+.react-toggle-track-check { position: absolute; width: 17px; height: 17px; =
+left: 5px; top: 0px; bottom: 0px; margin-top: auto; margin-bottom: auto; li=
+ne-height: 0; opacity: 0; transition: opacity 0.25s ease 0s; }
+
+.react-toggle--checked .react-toggle-track-check, .react-toggle-track-x { o=
+pacity: 1; transition: opacity 0.25s ease 0s; }
+
+.react-toggle-track-x { position: absolute; width: 17px; height: 17px; righ=
+t: 5px; top: 0px; bottom: 0px; margin-top: auto; margin-bottom: auto; line-=
+height: 0; }
+
+.react-toggle--checked .react-toggle-track-x { opacity: 0; }
+
+.react-toggle-thumb { position: absolute; top: 1px; left: 1px; width: 22px;=
+ height: 22px; border-radius: 50%; background-color: rgb(250, 250, 250); bo=
+x-sizing: border-box; transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0=
+ms; transform: translateX(0px); }
+
+.react-toggle--checked .react-toggle-thumb { transform: translateX(26px); b=
+order-color: rgb(25, 171, 39); }
+
+.react-toggle--focus .react-toggle-thumb { box-shadow: rgb(34, 139, 230) 0p=
+x 0px 2px 3px; }
+
+.react-toggle:active .react-toggle-thumb { box-shadow: rgb(34, 139, 230) 0p=
+x 0px 5px 5px; }
+------MultipartBoundary--IZwUz2Ej4vydFP4n5rcZgWbpGkLorZZtEd9VEZkhS1------
