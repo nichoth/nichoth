@@ -389,6 +389,9 @@ Firebase Alternative
 * [litestream](https://litestream.io/) -- Fully-replicated database with no pain and little cost
 * [ditto](https://www.ditto.live/)
 * [instantDB](https://www.instantdb.com/)
+* [ccorcos/tuple-database](https://github.com/ccorcos/tuple-database/)
+* [triplit](https://www.triplit.dev/)
+see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packages/db)
 
 ----------------------------------
 
