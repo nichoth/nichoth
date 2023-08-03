@@ -433,6 +433,7 @@ see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packa
 * [Faculty Best Practices](https://faculty.com/standards/best-practices)
 * [Ever wondered how the Kademlia DHT works?](https://twitter.com/n0computer/status/1623744085436628995?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
 * [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/)
+* [Proof of X](https://julian.digital/2020/08/06/proof-of-x/) -- "At their core, social networks are primarily about one thing: Building social capital through signaling."
 
 ---------
 
