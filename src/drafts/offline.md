@@ -13,3 +13,11 @@
 -------
 
 see this example https://gist.github.com/dsheiko/8a5878678371f950d37f3ee074fe8031
+
+-------
+
+* [Offline first with progressive web apps [ Part 1 / 3 ]](https://schoovaertswout.medium.com/offline-first-with-progressive-web-apps-part-1-3-102e61992567)
+* [#05 - Make Progressive Web Apps Work Offline](https://dev.to/azure/05-make-progressive-web-apps-work-offline-fil)
+* [Offline data](https://web.dev/learn/pwa/offline-data/)
+* [Making PWAs work offline with Service workers](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Offline_Service_workers)
+* [Offline Cookbook](https://jakearchibald.com/2014/offline-cookbook/)
