@@ -86,13 +86,15 @@
 * [How does Apple make that awesome frosted glass effect on their site header in CSS?](https://twitter.com/Steve8708/status/1531101973985890305)
 
 > tl;dr 
+
 ```css
 backdrop-filter: blur(20px) saturate(180%)
 ```
 
 * [How do Nike and Apple make such smooth and touch friendly carousels with pure CSS?](https://twitter.com/Steve8708/status/1531388545960583168)
 
-> /* tl;dr */
+> tl;dr
+
 ```css
 .carousel {
   scroll-snap-type: x mandatory;
