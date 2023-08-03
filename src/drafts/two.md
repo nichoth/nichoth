@@ -1,2 +1,1 @@
 One thing that I've done here is factor for *deployability*, so that it is *easy to deploy* an instance of the application. By *easy to deploy*, what I mean is no-code. And keeping config to a minimum.
-

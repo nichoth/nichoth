@@ -1,7 +1,6 @@
 # netlify notes
 
-[run a lambda function on an
-event](https://www.netlify.com/blog/2021/12/19/automatically-trigger-netlify-functions-on-specific-events/)
+[run a lambda function on an event](https://www.netlify.com/blog/2021/12/19/automatically-trigger-netlify-functions-on-specific-events/)
 
 [blog about the button](https://www.netlify.com/blog/2021/12/26/deploying-with-the-click-of-a-button/)
 

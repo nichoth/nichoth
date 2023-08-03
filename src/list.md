@@ -353,6 +353,7 @@ db.createReadStream({
 * [typescript reset](https://twitter.com/mattpocockuk/status/1627686847030743043?s=20) + [github link](https://github.com/total-typescript/ts-reset)
 * [just](https://github.com/angus-c/just) -- utility library
 * [state machines](https://bholmes.dev/blog/writing-a-state-machine-in-one-line-with-typescript/) -- bholmes.dev
+* [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
 
 
 ## db
@@ -434,6 +435,7 @@ see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packa
 * [Ever wondered how the Kademlia DHT works?](https://twitter.com/n0computer/status/1623744085436628995?s=20&t=kVcJ-ih4s17jM4Ug9iIzRg)
 * [How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/)
 * [Proof of X](https://julian.digital/2020/08/06/proof-of-x/) -- "At their core, social networks are primarily about one thing: Building social capital through signaling."
+* [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
 
 ---------
 
@@ -474,3 +476,4 @@ see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packa
 * [Check out this speed run where our Applied Researcher Jess builds a decentralized Flickr clone in under 10 minutes](https://twitter.com/FISSIONcodes/status/1590478358181093376?s=20&t=5SNfVr2fkMZwr9uwWxa1Hw)
 * [lynn and tonic](https://lynnandtonic.com/thoughts/)
 * [HOW TO MAKE A WEBSITE](https://henry.codes/writing/how-to-make-a-website/)
+* [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)

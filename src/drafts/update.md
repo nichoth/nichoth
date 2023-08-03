@@ -11,4 +11,3 @@ this reproducible in [nichoth/template-js](https://github.com/nichoth/template-j
 * [nichoth/single-page](https://github.com/nichoth/single-page)
 * [nichoth/catch-links](https://github.com/nichoth/catch-links)
 * [nichoth/route-event](https://github.com/nichoth/route-event)
-
