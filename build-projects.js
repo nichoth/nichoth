@@ -157,19 +157,22 @@ function buildProjects () {
                     slug + '/index.html')
                 var hs = hyperstream({
                     'head': {
-                        _appendHtml: `<meta property="og:title" data-rh="true"
-                            content="nichoth &mdash; ${linkTitle}"
-                        />
+                        _appendHtml: `<meta property="og:title"
+                            content="nichoth &mdash; ${linkTitle}" />
 
                         <meta property="og:type" content="website" />
+
+                        <meta name="twitter:description"
+                            content="${linkDesc}" />
+
+                        <meta name="twitter:image"
+                            content="https://nichoth.com/img/cube.png" />
                         
-                        <meta property="og:description" data-rh="true"
-                            content="${linkDesc}" name="description"
-                        />
+                        <meta property="og:description"
+                            content="${linkDesc}" name="description" />
                         
-                        <meta property="og:image" data-rh="true"
-                            content="https://nichoth.com/img/cube.png" 
-                        />
+                        <meta property="og:image"
+                            content="https://nichoth.com/img/cube.png" />
                         `
                     },
                     'title': {
