@@ -30,4 +30,4 @@ But, because of how the view is organized (in a tree), we can create all event n
 Now we know at compile time what the possible events may be. We can pass in the set of event names, and throw an error if you subscribe to an event not in the list. So all you need to do is start the app, and it will immediately explode if you listen for the wrong event name.
 
 ## typescript
-But, if we can catch errors at compile time, shoudln't we do that with typescript? Yes, but that's a project for another day. 
+But, if we can catch errors at compile time, shouldn't we do that with typescript? Yes, but that's a project for another day. 
