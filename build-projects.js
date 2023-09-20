@@ -162,6 +162,8 @@ function buildProjects () {
 
                         <meta property="og:type" content="website" />
 
+                        <meta name="og:site_name" content="nichoth"></meta>
+
                         <meta name="twitter:description"
                             content="${linkDesc}" />
 
