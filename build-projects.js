@@ -105,7 +105,6 @@ function buildProjects () {
             }, '')
         }
 
-
         // map the fileNames to [{ slug, linkTitle, linkDescription }]
         fileNames.forEach(function (filePath) {
             // this get called once for each file in `_posts`
@@ -160,15 +159,17 @@ function buildProjects () {
                     'head': {
                         _appendHtml: `<meta property="og:title" data-rh="true"
                             content="nichoth &mdash; ${linkTitle}"
-                        >
+                        />
+
+                        <meta property="og:type" content="website" />
                         
                         <meta property="og:description" data-rh="true"
                             content="${linkDesc}" name="description"
-                        >
+                        />
                         
                         <meta property="og:image" data-rh="true"
                             content="https://nichoth.com/img/cube.png" 
-                        >
+                        />
                         `
                     },
                     'title': {
