@@ -25,7 +25,7 @@ But since we are using signals, the state updates are more efficient. Any interm
 ## events
 I couldn't use redux though. It has some things I don't need, and a constraint it imposes is that your update functions need to be synchronous. What I really wanted was more like an event emitter. But we are in a browser, so there is no `require(events)`. In the past I had used [nanobus](https://github.com/choojs/nanobus) and that worked well.
 
-But, because of how the view is organized (in a tree), we can create all event names at compile time, and then we can see immediately if we a listening for an event that does not exist. That's the premise of [@nichoth/events](https://github.com/nichoth/events). It's a minimal event bus, with functions that will [create a namespaced tree of event names](https://github.com/nichoth/events#create-namespaced-events).
+But, because of how the view is organized (in a tree), we can create all event names at compile time, and then we can see immediately if we listen for an event that does not exist. That's the premise of [@nichoth/events](https://github.com/nichoth/events). It's a minimal event bus, with functions that will [create a namespaced tree of event names](https://github.com/nichoth/events#create-namespaced-events).
 
 Now we know at compile time what the possible events may be. We can pass in the set of event names, and throw an error if you subscribe to an event not in the list. So all you need to do is start the app, and it will immediately explode if you listen for the wrong event name.
 
