@@ -164,6 +164,9 @@ function buildProjects () {
 
                         <meta name="og:site_name" content="nichoth"></meta>
 
+                        <meta property="og:url"
+                            content="https://nichoth.com/projects/${slug}" />
+
                         <meta name="twitter:description"
                             content="${linkDesc}" />
 
