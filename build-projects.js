@@ -168,6 +168,9 @@ function buildProjects () {
                             name="og:url"
                             content="https://nichoth.com/projects/${slug}" />
 
+                        <meta property="twitter:url"
+                            content="https://nichoth.com/projects/${slug}" />
+
                         <meta name="twitter:description"
                             content="${linkDesc}" />
 
