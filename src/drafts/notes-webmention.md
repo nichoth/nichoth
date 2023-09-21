@@ -19,7 +19,7 @@ exports.handler = async () => {
 
 see [finished lambda function](https://gist.github.com/maxboeck/77c3c8e244f190147cca2f7383d5f183)
 
-THen compare our list to a [search of twitter](https://mxb.dev/blog/syndicating-content-to-twitter-with-netlify-functions/)
+Then compare our list to a [search of twitter](https://mxb.dev/blog/syndicating-content-to-twitter-with-netlify-functions/)
 > We can then search twitter for tweets containing the latest note’s URL 
 
 ```js
@@ -72,3 +72,4 @@ date: 3-10-2022
 This log format of *notes* is like the ssb log.
 
 Could maybe put the hash of the previous message in each message, then you wouldn't need to trust the twitter servers.
+
