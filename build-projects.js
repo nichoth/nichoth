@@ -158,7 +158,7 @@ function buildProjects () {
                 var hs = hyperstream({
                     'head': {
                         _appendHtml: `<meta property="og:title"
-                            content="nichoth &mdash; ${linkTitle}" />
+                            content="${linkTitle}" />
 
                         <meta property="og:type" content="article" />
 
