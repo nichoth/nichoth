@@ -160,7 +160,7 @@ function buildProjects () {
                         _appendHtml: `<meta property="og:title"
                             content="nichoth &mdash; ${linkTitle}" />
 
-                        <meta property="og:type" content="website" />
+                        <meta property="og:type" content="article" />
 
                         <meta name="og:site_name" content="nichoth"></meta>
 
