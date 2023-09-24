@@ -16,7 +16,7 @@ What is the deal with [Signals](https://preactjs.com/blog/introducing-signals/),
 
 Signals are essentially two-way data binding, aka, the thing that made client side apps difficult in the past. And my first experience was that I encountered traditional problems -- obtuse state machines that are hard to reason about, and infinite rendering loops, where a state update will trigger a re-render that triggers a state update, etc...
 
-In my first naïve experiments I just updated a signal from anywhere in the app. This resulted in expected unpredictable behavior and hard to track down bugs.
+In my first naïve experiments I just updated a signal from anywhere in the app. This resulted in unpredictable behavior and hard to track down bugs.
 
 *But*, a possible solution is a redux-like state machine, where all events in the app flow through a single subscription, and that is the only place where state is updated. Then we are back to a the yo-yo pattern -- data down, events up.
 
