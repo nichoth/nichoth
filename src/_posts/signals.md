@@ -18,7 +18,7 @@ Signals are essentially two-way data binding, aka, the thing that made client si
 
 In my first naïve experiments I just updated a signal from anywhere in the app. This resulted in unpredictable behavior and hard to track down bugs.
 
-*But*, a possible solution is a redux-like state machine, where all events in the app flow through a single subscription, and that is the only place where state is updated. Then we are back to a the yo-yo pattern -- data down, events up.
+*But*, a possible solution is a redux-like state machine, where all events in the app flow through a single subscription, or "store", and that is the only place where state is updated. So there is a single state object for the app, and a single place where state is updated. Then we are back to a the yo-yo pattern -- data down, events up.
 
 But since we are using signals, the state updates are more efficient. Any intermediary view nodes between the top and the state consumer do not need to re-render -- they simply pass the signal down to the consumer.
 
