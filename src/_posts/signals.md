@@ -12,7 +12,7 @@ date: 9-20-2023
 
 __Trying another state management library, 2023 edition__
 
-What is the deal with [Signals](https://preactjs.com/blog/introducing-signals/), a new state machine from the `preact` developers? The `signals` pattern is to pass an object between components, and then mutate the `.value` property, but you use getter and setter function to effectively create a subscription wherever you access the `.value` property. This gives you efficient state updates, but it seemingly erases the benefit of a framework like React. The benefit being a unidirectional data flow, where application state travels from the top downward.
+What is the deal with [Signals](https://preactjs.com/blog/introducing-signals/), a new state machine from the `preact` developers? The `signals` pattern is to pass an object between components, and then mutate the `.value` property, but you use getter and setter functions to effectively create a subscription wherever you access the `.value` property. This gives you efficient state updates, but it seemingly erases the benefit of a framework like React. The benefit being a unidirectional data flow, where application state travels from the top downward.
 
 Signals are essentially two-way data binding, aka, the thing that made client side apps difficult in the past. And my first experience was that I encountered traditional problems -- obtuse state machines that are hard to reason about, and infinite rendering loops, where a state update will trigger a re-render that triggers a state update, etc...
 
