@@ -21,3 +21,4 @@ see this example https://gist.github.com/dsheiko/8a5878678371f950d37f3ee074fe803
 * [Offline data](https://web.dev/learn/pwa/offline-data/)
 * [Making PWAs work offline with Service workers](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Offline_Service_workers)
 * [Offline Cookbook](https://jakearchibald.com/2014/offline-cookbook/)
+
