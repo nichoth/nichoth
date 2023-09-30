@@ -27,9 +27,7 @@ Since we are using signals, the state updates are more efficient. Any intermedia
 -------
 
 ## events
-I couldn't use redux though. It has some things I don't need, and a constraint it imposes is that your update functions need to be synchronous. What I really wanted was more like an event emitter. But we are in a browser, so there is no `require(events)`. In the past I had used [nanobus](https://github.com/choojs/nanobus) and that worked well.
-
-But, `nanobus` is not quite nano enough, and it has some things that I didn't need, and is missing some things I did want.
+I couldn't use redux though. It has some things I don't need, and a constraint it imposes is that your update functions need to be synchronous. What I really wanted was more like an event emitter. But we are in a browser, so there is no `require(events)`. In the past I had used [nanobus](https://github.com/choojs/nanobus) and that worked well, but `nanobus` is not quite nano enough. It has some things that I didn't need, and is missing some things I did want.
 
 Because the view is organized in a tree (the DOM), we can create all event names at compile time, and then we can see immediately if we listen for an event that does not exist. That's the premise of [@nichoth/events](https://github.com/nichoth/events). It's a minimal event bus, with functions that help to [create a namespaced tree of event names](https://github.com/nichoth/events#create-namespaced-events).
 
