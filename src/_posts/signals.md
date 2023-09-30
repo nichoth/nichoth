@@ -28,8 +28,6 @@ At first I tried just updating a signal from anywhere in the app. This caused tr
 
 *But*, a possible solution is a redux-like pattern, where all events in the app flow through a single subscription, or "store", and that is the only place where state is updated. So there is a single state object for the app, and a single place where state is updated. Then we are back to a nice render loop pattern -- data down, events up.
 
--------
-
 ## events
 I couldn't use redux though. It has some things I don't need, and a constraint it imposes is that your update functions need to be synchronous, if I recall correctly. What I really wanted was more like an event emitter. But we are in a browser, so there is no `require(events)`. In the past I had used [nanobus](https://github.com/choojs/nanobus), and that worked well, but `nanobus` is not quite nano enough. It has some things that I didn't need, and is missing some things I do want.
 
