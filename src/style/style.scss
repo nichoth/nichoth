@@ -4,23 +4,11 @@ $muted-text: #3b4146;
 
 @use './variables' as v;
 @use './chat';
-@use './hermes';
 @use './postcards';
 
 @font-face {
   font-family: 'YoungSerif';
   src: url("/font/YoungSerif-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url("/font/Raleway-VariableFont_wght.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('/font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-  font-style: italic;
 }
 
 @function css-function( $function, $values... ) {
@@ -67,6 +55,7 @@ $muted-text: #3b4146;
 
 // the special hr
 body, body.the-log, .development-diary, body.examples {
+  font-weight: normal;
 
   hr {
     margin: 2em 0;
@@ -113,7 +102,6 @@ body.detritus-single-image {
       }
     }
 }
-
 
 #content.notebooks {
   ul {
@@ -180,7 +168,8 @@ body.detritus-single-image {
 
 body {
   margin: 0;
-  font-family: YoungSerif, serif;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
 
   .anchorjs-link {
     color: black;
@@ -224,7 +213,12 @@ body {
        margin-bottom: 0.2rem;
    }
 
+  code {
+    font-weight: 400;
+  }
+
   pre {
+      font-weight: 400;
       line-height: initial;
       padding: 1rem;
       background-color: #f9f9f9;

@@ -9,7 +9,6 @@ var _ = {
     orderBy: require('lodash/orderBy')
 }
 
-
 function buildProjects () {
     // ---------- the /projects page ----------------------
 
