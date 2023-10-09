@@ -57,7 +57,8 @@ class NewMessage extends Tonic {
 
             <p>
                 This will use an envelope that I signed in advance with my
-                keypair, which is <code>did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e</code>
+                keypair. The envelope looks like this
+                <pre></pre>
             </p>
 
             <form class="new-msg">
@@ -108,10 +109,9 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
-                This lets us do something like E2E encrypt the message, so that
-                way you can send me a message, without my server ever learning
-                <em>who you are</em>. So we preserve privacy while preventing
-                spam.
+                This lets us E2E encrypt the message, so that you can send me
+                a message, and my server never learns <em>who you are</em>.
+                This way we preserve privacy while preventing spam.
             </p>
 
             <hr />
@@ -161,7 +161,7 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
-                Back the the envelope. So, the envelope is a message that has
+                Back to the envelope. So, the envelope is a message that has
                 been pre-signed by me. When you send a message through this
                 page, we encrypt the message contents (including your identity),
                 and send the encrypted message to my server. My server then
@@ -181,10 +181,6 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
-                This is your DID on <code>nichoth.com</code>:
-            </p>
-
-            <p>
                 Anyone can prove that this envelope is valid just by
                 checking that the signature is valid. My server never learns
                 <em>who</em> you are. To check validity, my server needs to make
@@ -193,9 +189,32 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
-                In real life, the server might want to match your public key
-                against a list of UCANs, or otherwise validate who you are. It
-                could keep a list of DIDs that are allowed.
+                In real life, the server might want to match the recipient's
+                DID against a list of UCANs, or otherwise validate who
+                they are. It could keep a list of DIDs that are allowed.
+            </p>
+
+            <p>
+                You would probably want to give out the envelopes privately,
+                for spam prevention, but if they are given out publicly it's
+                not that big a deal, because the message is signed by you.
+                So if I get a message from someone I don't know, or a
+                mal-formed message, I can just discard it or something.
+            </p>
+
+            <h2>The replay vector</h2>
+            <p>
+                We need to make sure the same envelope is not used more than
+                once. Each envelope has a sequence number, so we can check if
+                the same envelope is used multiple times. But we probably give
+                out the envelopes to multiple people, so they are not
+                necessarily used in sequential order.
+            </p>
+
+            <p>
+                How to check that an envelope is not replayed? We want to avoid
+                simply writing down an ID of each envelope we see, because it
+                is storage inefficient.
             </p>
 
             <hr />
