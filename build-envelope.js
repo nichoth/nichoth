@@ -73,7 +73,10 @@ var hs = hyperstream({
     "imports": {
         "@socketsupply/tonic": "/tonic.min.js",
         "@ssc-half-light/identity": "/identity.js",
-        "@oddjs/odd": "/odd.js"
+        "@oddjs/odd": "/odd.js",
+        "ky": "/ky.js",
+        "@ssc-half-light/request": "/request.js",
+        "@ssc-half-light/envelope": "/envelope.js"
     }
 }
 </pre>
@@ -81,7 +84,7 @@ var hs = hyperstream({
 
                     <li>
                         <a href="https://tonicframework.dev/">Tonic framework</a>
-                         -- help with web components.
+                         &mdash; help with web components.
                     </li>
 
                     <li>
