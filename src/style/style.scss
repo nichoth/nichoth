@@ -56,6 +56,7 @@ $muted-text: #3b4146;
 // the special hr
 body, body.the-log, .development-diary, body.examples {
   font-weight: normal;
+  margin-bottom: 6rem;
 
   hr {
     margin: 2em 0;
@@ -86,6 +87,16 @@ body, body.the-log, .development-diary, body.examples {
 body.the-log {
   #content {
     padding: 1em;
+  }
+}
+
+.the-colophon {
+  margin: 0 1rem;
+  max-width: 40rem;
+  line-height: 1.4em;
+
+  & ul {
+    padding: 1rem;
   }
 }
 
@@ -169,7 +180,7 @@ body.detritus-single-image {
 body {
   margin: 0;
   font-family: Raleway, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 
   .anchorjs-link {
     color: black;
@@ -410,7 +421,7 @@ a {
 
 
 .main-text {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.8rem;
   font-size: clamp(1.4rem, 5vmin, 2rem);
   margin-top: 3rem;
@@ -758,7 +769,7 @@ body.examples {
     background-color: black;
     color: black;
     font-family: sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     letter-spacing: .02em;
 
