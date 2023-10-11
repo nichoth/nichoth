@@ -46,8 +46,8 @@ var hs = hyperstream({
                 <small><strong>The Colophon</strong></small>
 
                 <p>
-                    This page is is made entirely with tools
-                    provided by the browser. We are using <code>import</code>
+                    This page is is made with tools provided by the browser as
+                    much as possible. We are using <code>import</code>
                     statements to resolve ES modules, the view library uses
                     web components, and we are using the browser's
                     <a href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle">
@@ -57,8 +57,9 @@ var hs = hyperstream({
                 </p>
 
                 <p>
-                    The build script for this page simply copies some JS files
-                    from one folder to another, and builds the css, which uses
+                    The build script for this page copies some JS files
+                    from one folder to another, bundles some modules that have
+                    dependencies, and builds the css, which uses
                     <a href="https://github.com/postcss/postcss-cli">postcss</a>
                     so that I can use nesting. Modules are resolved by the
                     browser with an <code>importmap</code>.

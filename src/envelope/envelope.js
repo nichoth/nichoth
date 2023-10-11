@@ -1,56 +1,8 @@
-import {html, render, signal, effect} from 'https://cdn.jsdelivr.net/npm/preact-htm-signals-standalone/dist/standalone.js'
 import { program } from '@oddjs/odd'
 import ky from 'ky'
-import { create as createEnvelope } from '@ssc-half-light/envelope'
+import { create as createEnvelope, wrapMessage } from '@ssc-half-light/envelope'
 import { SignedRequest } from '@ssc-half-light/request'
 import { create as _createId } from '@ssc-half-light/identity'
-
-// const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
-// const MY_DID = 'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e'
-// let identity = signal(null)
-
-// /**
-//  * Create the HTML based on the app state
-//  */
-// function getHTML () {
-// 	// If there are no todos, show a message
-// 	if (!todos.value.length) {
-// 		return html`<p><em>You don't have any todos yet.</em></p>`
-// 	}
-
-// 	// Otherwise, render the todo items
-// 	return html`<ul>
-//         ${todos.value.map(function (todo, index) {
-//             return html`<li>${todo} <button data-delete="${index}">Delete</button></li>`
-//         })}
-//     </ul>`
-// }
-
-// function IdentityView ({ identity }) {
-//     return html`<div class="identity-view">
-//         <pre>${JSON.stringify(id, null, 2)}</pre>
-//     </div>`
-// }
-
-// render(html`<${getHTML} />`, app)
-
-// async function createId (name) {
-//     const _program = await program({
-//         namespace: { creator: 'nichoth', name: 'nichoth.com' },
-//         debug: true
-//     })
-
-//     // @ts-ignore
-//     window.program = _program
-//     const crypto = _program.components.crypto
-//     const id = await _createId(crypto, {
-//         humanName: name || 'test'
-//     })
-
-//     return [id, crypto]
-// }
-
-
 import Tonic from '@socketsupply/tonic'
 
 /**
@@ -60,7 +12,8 @@ import Tonic from '@socketsupply/tonic'
  */
 
 let globalCrypto = null
-const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
+// const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
+const URL_ROOT = 'http://localhost:8888/api'
 const MY_DID = 'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e'
 
 /**
@@ -83,7 +36,6 @@ class CreateEnvelope extends Tonic {
         if (!request || !identity) throw new Error('missing request or id')
         ev.preventDefault()
         ev.stopPropagation()
-        console.log('submit new envelope', request)
 
         const crypto = globalCrypto
         const { envelopes } = this.props
@@ -93,11 +45,12 @@ class CreateEnvelope extends Tonic {
             seq: latest + 1
         })
 
-        const res = await request.post(URL_ROOT + '/envelope', {
-            json: newEnvelope
-        }).json()
+        await request.post(URL_ROOT + '/envelope', {
+            json: { envelope: newEnvelope }
+        })
 
-        console.log('done making envelope', res)
+        this.props.oncreate(newEnvelope)
+        console.log('done making envelope', this.props)
     }
 
     render () {
@@ -112,26 +65,29 @@ class CreateEnvelope extends Tonic {
  * The form to send a message
  */
 class NewMessage extends Tonic {
-    submit (ev) {
+    async submit (ev) {
         ev.preventDefault()
         ev.stopPropagation()
         const msg = ev.target.elements.msg.value
+        console.log('this props', this.props)
         console.log('submit new message', msg)
+        this.props.onsend(msg)
     }
 
     render () {
+        window.props = this.props
+
         return this.html`<div>
             <h2>Send a message</h2>
 
             <p>
                 This will use an envelope that I signed in advance with my
-                keypair. The envelope looks like this:
-                <pre></pre>
+                keypair. The envelope <strong>looks like this:</strong>
+                <pre>${JSON.stringify(this.props.envelopes[0], null, 2)}</pre>
             </p>
 
             <form class="new-msg">
                 <textarea id="msg" name="msg" rows="5" cols="33">It was a dark and stormy night...</textarea>
-
                 <button type="submit">send message</button>
             </form>
         </div>`
@@ -146,28 +102,36 @@ class EnvelopeDemo extends Tonic {
             identity: null,
             crypto: null,
             request: null,
-            envelopes: null
+            envelopes: null,
+            recipient: null
         }
 
-        // fetch existing envelopes right away
-        this.fetchEnvelopes()
+        // fetch these right away
+        this.init()
 
         // @ts-ignore
         window.state = this.state
     }
 
-    async fetchEnvelopes () {
-        const res = await fetch(URL_ROOT + '/envelope')
-        let envelopes
-        try {
-            envelopes = await res.json()
-        } catch (err) {
-            console.log('cant parse json...', await res.text())
-        }
+    async init () {
+        await Promise.all([
+            this.fetchEnvelopes(),
+            this.fetchRecipient()
+        ])
 
-        console.log('envelopes', envelopes)
-        this.state.envelopes = envelopes
         this.reRender()
+    }
+
+    async fetchEnvelopes () {
+        const envelopes = await ky.get(URL_ROOT + '/envelope').json()
+        console.log('got envelopes', envelopes)
+        this.state.envelopes = envelopes
+    }
+
+    async fetchRecipient () {
+        const recp = await ky.get(URL_ROOT + '/get-nichoth').json()
+        console.log('got recipient', recp)
+        this.state.recipient = recp
     }
 
     // "get your identity" button
@@ -177,10 +141,33 @@ class EnvelopeDemo extends Tonic {
         const [id, crypto] = await createId(name)
         this.state.identity = id
         this.state.crypto = globalCrypto = crypto
-        console.log('crypto', crypto)
         this.state.request = SignedRequest(ky, crypto, window.localStorage)
         this.reRender()
         window.scrollTo(0, 0)
+    }
+
+    handleCreateEnvelope (newEnvelope) {
+        this.state.envelopes.push(newEnvelope)
+        this.reRender()
+    }
+
+    handleSendMsg (msg) {
+        console.log('send message...', this.state)
+        const { identity, recipient } = this.state
+        const nextEnvelope = this.state.envelopes.shift()
+        wrapMessage(
+            identity,
+            recipient,
+            nextEnvelope,
+            {
+                from: { username: this.state.identity.username },
+                text: msg
+            }
+        ).then(envelopedMsg => {
+            console.log('enveloped -----', envelopedMsg)
+            this.state.encryptedMsg = envelopedMsg
+            this.reRender()
+        })
     }
 
     render () {
@@ -188,7 +175,7 @@ class EnvelopeDemo extends Tonic {
             // check if rootDid is MY_DID
             // if so, show a form to create more envelopes
             // if not, show a form to send a new message
-            return this.html`
+            return this.html`<div id="envelope-demo-content">
                 <h2>Your identity is:</h2>
                 <identity-view identity=${this.state.identity}></identity-view>
 
@@ -204,29 +191,46 @@ class EnvelopeDemo extends Tonic {
 
                         ${!!(this.state.envelopes && this.state.envelopes[0]) ?
                             (this.html`<p>The envelopes look like this:</p>
-                            <pre>${this.state.envelopes[0]}</pre>`) :
+                            <pre>${JSON.stringify(this.state.envelopes[0], null, 2)}</pre>`) :
                             ''
                         }
 
                         <create-envelope
+                            oncreate=${this.handleCreateEnvelope.bind(this)}
                             identity=${this.state.identity}
                             envelopes=${this.state.envelopes}
                             crypto=${globalCrypto}
                             request=${this.state.request}
                         ></create-envelope>
                     </div>`:
+
                     this.html`<div>
-                        <p>You are ${this.state.identity.humanName}</p>
+                        <p>Your human name is
+                            <strong>${this.state.identity.humanName}</strong>
+                        </p>
                         <p>number of envelopes: <span class="envelope-count">
                             ${this.state.envelopes ?
                                 '' + this.state.envelopes.length :
                                 '0'
                             }
                         </span></p>
-                        <new-message></new-message>
+
+                        ${this.state.encryptedMsg ?
+                            this.html`<div>
+                                <h2>Your message</h2>
+                                <strong>The message you sent</strong> looks like this:
+                                <br>(the content is encrypted)
+                                <pre>${JSON.stringify(this.state.encryptedMsg, null, 2)}</pre>
+                            </div>` :
+                            this.html`<new-message
+                                onsend=${this.handleSendMsg.bind(this)}
+                                envelopes=${this.state.envelopes}
+                                identity=${this.state.identity}
+                            ></new-message>`
+                        }
                     </div>`
                 }
-            `
+            </div>`
         }
 
         return this.html`
