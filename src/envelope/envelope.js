@@ -15,8 +15,8 @@ import Tonic from '@socketsupply/tonic'
  * Everything resolved via ESM + the browser
  */
 
-// const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
-const URL_ROOT = 'http://localhost:8888/api'
+const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
+// const URL_ROOT = 'http://localhost:8888/api'
 const MY_DID = 'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e'
 
 // passing the crypto object through props did not work...
