@@ -5,19 +5,22 @@ import {
     wrapMessage,
     decryptMessage
 } from '@ssc-half-light/envelope'
+import { create as createMsg } from '@ssc-half-light/message'
 import { SignedRequest } from '@ssc-half-light/request'
 import { create as _createId } from '@ssc-half-light/identity'
 import Tonic from '@socketsupply/tonic'
 
 /**
  * Look, no build tools
- * Everything is simply copied to the public directory, and resolved
- * via ESM + the browser
+ * Everything resolved via ESM + the browser
  */
 
 // const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
 const URL_ROOT = 'http://localhost:8888/api'
 const MY_DID = 'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e'
+
+// passing the crypto object through props did not work...
+let globalCrypto
 
 /**
  * All identity state is derived from the public key DID,
@@ -40,9 +43,9 @@ class CreateEnvelope extends Tonic {
         ev.preventDefault()
         ev.stopPropagation()
 
-        const { envelopes, crypto } = this.props
+        const { envelopes } = this.props
         const latest = envelopes ? envelopes.length : 0
-        const newEnvelope = await createEnvelope(crypto, {
+        const newEnvelope = await createEnvelope(globalCrypto, {
             username: this.props.identity.username,
             seq: latest + 1
         })
@@ -82,7 +85,14 @@ class NewMessage extends Tonic {
             <p>
                 This will use an envelope that I signed in advance with my
                 keypair. The envelope <strong>looks like this:</strong>
-                <pre>${JSON.stringify(this.props.envelopes[0], null, 2)}</pre>
+            </p>
+
+            <pre>${JSON.stringify(this.props.envelopes[0], null, 2)}</pre>
+
+            <p>
+                <strong>Note, </strong> we are not using the sequence number
+                for anything. In real life we could use it to help prevent
+                replay attacks.
             </p>
 
             <form class="new-msg">
@@ -99,7 +109,6 @@ class EnvelopeDemo extends Tonic {
 
         this.state = {
             identity: null,
-            crypto: null,
             request: null,
             envelopes: null,
             recipient: null,
@@ -138,7 +147,7 @@ class EnvelopeDemo extends Tonic {
         const name = ev.target.elements.humanName.value
         const [id, crypto] = await createId(name)
         this.state.identity = id
-        this.state.crypto = crypto
+        globalCrypto = crypto
         this.state.request = SignedRequest(ky, crypto, window.localStorage)
         this.reRender()
         window.scrollTo(0, 0)
@@ -149,17 +158,17 @@ class EnvelopeDemo extends Tonic {
         this.reRender()
     }
 
-    handleSendMsg (msg) {
+    async handleSendMsg (msg) {
         const { identity, recipient } = this.state
         const nextEnvelope = this.state.envelopes.shift()
         wrapMessage(
             identity,
             recipient,
             nextEnvelope,
-            {
+            await createMsg(globalCrypto, {
                 from: { username: this.state.identity.username },
                 text: msg
-            }
+            })
         ).then(([{ envelope, message }, senderKeys]) => {
             this.state.encryptedMsg = { envelope, message }
             this.state.myKeys = senderKeys
@@ -203,7 +212,7 @@ class EnvelopeDemo extends Tonic {
                             oncreate=${this.handleCreateEnvelope.bind(this)}
                             identity=${this.state.identity}
                             envelopes=${this.state.envelopes}
-                            crypto=${this.state.crypto}
+                            mycrypto=${globalCrypto}
                             request=${this.state.request}
                         ></create-envelope>
                     </div>`:
@@ -222,7 +231,7 @@ class EnvelopeDemo extends Tonic {
                         ${this.state.encryptedMsg ?
                             (this.html`<decrypt-msg
                                 id="decrypter"
-                                crypto=${this.state.crypto}
+                                mycrypto=${globalCrypto}
                                 mykeys=${this.state.myKeys}
                                 encryptedmsg=${this.state.encryptedMsg}
                             >
@@ -243,20 +252,20 @@ class EnvelopeDemo extends Tonic {
             <h1>envelopes</h1>
             <h2>What's all this then?</h2>
             <p>
-                Envelopes that have been pre-signed by the recipient. That way
-                we can be sure that a message is legitimate, and check if
-                we want to store and forward this message &mdash; without
-                revealing the sender's identity. So the metadata of who
-                is talking to whom stays hidden.
+                Envelopes that have been pre-signed by the recipient, but where
+                the message's author is secret. That way
+                we can tell if we want to devote resources to storing and
+                forwarding the message, but still preserve the privacy of who is 
+                talking to whom.
             </p>
 
             <p>
-                This lets us E2E encrypt the message, while staying practical to
-                things like storage & message delivery. We encrypt the
+                This lets us E2E encrypt the message, but reject messages for
+                a user that we don't care about. We encrypt the
                 <em>content</em> of the message and the <em>message author</em>
                 &mdash; they look like just opaque strings to the server. But,
                 we can still deliver the message to the correct person,
-                because my ID is visible on the envelope.
+                because the recipient's ID is visible on the envelope.
             </p>
 
             <hr />
@@ -300,7 +309,8 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
-                When you click "submit", we encrypt your message to
+                When you click "submit", we create a new symmetric key,
+                and encrypt your message with the key, and encrypt the key to
                 me, so only my private key is able to decrypt it. My name is
                 visible on the envelope, but your name is in the encrypted part,
                 so only myself and you are able to read it.
@@ -309,7 +319,7 @@ class EnvelopeDemo extends Tonic {
             <p>
                 Anyone can prove that the envelope is valid just by
                 checking that the signature is valid. My server never learns
-                <em>who</em> you are. To check validity, my server needs to make
+                <em>who you are</em>. To check validity, my server needs to make
                 sure that the envelope is addressed to a valid user. For demo
                 purposes there is only one valid user, me.
             </p>
@@ -345,20 +355,8 @@ class EnvelopeDemo extends Tonic {
 
             <p>
                 Envelope order cannot be guaranteed for local-first scenarios,
-                where envelopes can arrive in any order.
-            </p>
-
-            <p>
-                Could create sets of messages that are indexed by a hash.
-                Each set goes to a different recipient. The hash is necessary
-                because we don't want intermediate nodes to learn anything
-                about who the message is from. We <em>can</em> guarantee message
-                order within a set.
-            </p>
-
-            <p>
-                The envelope author (the recipient) would need to keep track
-                of a map of <code>envelopeHash</code> to <code>user</code>.
+                where envelopes can arrive in any order if the sender has
+                multiple devices.
             </p>
 
             <p>
@@ -390,12 +388,14 @@ class DecryptMsg extends Tonic {
         // need to decrypt message here
         ev.preventDefault()
         ev.stopPropagation()
-        const { mykeys } = this.props
+        const { mykeys, encryptedmsg } = this.props
+        console.log('in here', this.props)
         const decrypted = await decryptMessage(
-            this.props.crypto,
-            this.props.encryptedmsg.message,
+            globalCrypto,
+            encryptedmsg.message,
             mykeys
         )
+        console.log('decrypted', decrypted)
         this.state.decryptedMsg = decrypted
         this.reRender()
     }

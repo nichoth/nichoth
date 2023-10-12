@@ -23,7 +23,8 @@ var hs = hyperstream({
                         "@oddjs/odd": "/odd.js",
                         "ky": "/ky.js",
                         "@ssc-half-light/request": "/request.js",
-                        "@ssc-half-light/envelope": "/envelope.js"
+                        "@ssc-half-light/envelope": "/envelope.js",
+                        "@ssc-half-light/message": "/message.js"
                     }
                 }
             </script>
