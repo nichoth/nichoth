@@ -252,18 +252,18 @@ class EnvelopeDemo extends Tonic {
             <h1>envelopes</h1>
             <h2>What's all this then?</h2>
             <p>
-                Envelopes that have been pre-signed by the recipient, but where
-                the message's author is secret. That way
-                we can tell if we want to devote resources to storing and
-                forwarding the message, but still preserve the privacy of who is 
-                talking to whom.
+                Envelopes that have been pre-signed by the recipient. That way
+                we can put a message in the envelope, and the message's author
+                stays secret (encrypted). This lets us preserve the privacy
+                of who is talking to whom, but stay practical in terms of
+                things like storage and message delivery.
             </p>
 
             <p>
-                This lets us E2E encrypt the message, but reject messages for
-                a user that we don't care about. We encrypt the
+                This allows us to E2E encrypt the message, but we can reject
+                messages for a user that we don't care about. We encrypt the
                 <em>content</em> of the message and the <em>message author</em>
-                &mdash; they look like just opaque strings to the server. But,
+                &mdash; they look like just opaque strings to the server, but
                 we can still deliver the message to the correct person,
                 because the recipient's ID is visible on the envelope.
             </p>
@@ -310,10 +310,11 @@ class EnvelopeDemo extends Tonic {
 
             <p>
                 When you click "submit", we create a new symmetric key,
-                and encrypt your message with the key, and encrypt the key to
-                me, so only my private key is able to decrypt it. My name is
-                visible on the envelope, but your name is in the encrypted part,
-                so only myself and you are able to read it.
+                and encrypt the message with that key, then encrypt that key with
+                the recipient's public key. So only the recipient's private key
+                is able to decrypt it. The recipient's name is visible on the
+                envelope, but your name is in the encrypted part, so only
+                myself and you are able to read it.
             </p>
 
             <p>
@@ -337,6 +338,8 @@ class EnvelopeDemo extends Tonic {
                 So if I get a message from someone I don't know, or a
                 mal-formed message, I can just discard it or something.
             </p>
+
+            <hr />
 
             <h2>The replay vector</h2>
             <p>

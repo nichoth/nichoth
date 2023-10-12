@@ -61,7 +61,7 @@ var hs = hyperstream({
                     The build script for this page copies some JS files
                     from one folder to another, bundles some modules that have
                     dependencies, and builds the css, which uses
-                    <a href="https://github.com/postcss/postcss-cli">postcss</a>
+                    <a href="https://github.com/postcss/postcss-cli">postcss</a>,
                     so that I can use nesting. Modules are resolved by the
                     browser with an <code>importmap</code>.
                 </p>
@@ -94,6 +94,7 @@ var hs = hyperstream({
                     </li>
                 </ul>
             </div>
+
             <script type="module" src="./envelope.js"></script>
         `
     }
