@@ -13,7 +13,7 @@ arr.forEach(function (_path) {
     var fileType = path.extname(_path)
     fs.readFile(__dirname + '/src/' + _path, 'utf8', (err, file) => {
         if (err) throw err
-        var content = file
+        let content = file
         if (fileType === '.md') {
             content = marked(file)
         }

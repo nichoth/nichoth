@@ -45,5 +45,4 @@ export default defineConfig({
 });
 ```
 
-This is a bad thing because if I want to do something, like change the source file and output folder, how do I do that? Bash is the most basic level that people know, and I miss the browserify way of using bash pipes to determine the output.
-
+That said, I do miss the browserify way of using bash pipes to transform and determine the output.

@@ -2,7 +2,6 @@ var hyperstream = require('hyperstream');
 var ssbWeb = require('ssb-web')
 var fs = require('fs');
 var S = require('pull-stream')
-var slugify = require('@sindresorhus/slugify')
 var mkdirp = require('mkdirp')
 var Tags = require('@nichoth/ssb-tags')
 var glob = require('glob')
