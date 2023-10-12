@@ -166,7 +166,10 @@ class EnvelopeDemo extends Tonic {
             recipient,
             nextEnvelope,
             await createMsg(globalCrypto, {
-                from: { username: this.state.identity.username },
+                from: {
+                    username: this.state.identity.username,
+                    humanName: this.state.identity.humanName
+                },
                 text: msg
             })
         ).then(([{ envelope, message }, senderKeys]) => {
@@ -252,15 +255,16 @@ class EnvelopeDemo extends Tonic {
             <h1>envelopes</h1>
             <h2>What's all this then?</h2>
             <p>
-                Envelopes that have been pre-signed by the recipient. That way
-                we can put a message in the envelope, and the message's author
-                stays secret (encrypted). This lets us preserve the privacy
-                of who is talking to whom, but stay practical in terms of
-                things like storage and message delivery.
+                Envelopes that have been pre-signed by the recipient.
+                This lets us preserve the privacy
+                of who is talking to whom, because the author of the message
+                can stay secret (encrypted). But since the message recipient is
+                visible we stay practical in terms of storage
+                and message delivery.
             </p>
 
             <p>
-                This allows us to E2E encrypt the message, but we can reject
+                Now we can E2E encrypt the message, but reject
                 messages for a user that we don't care about. We encrypt the
                 <em>content</em> of the message and the <em>message author</em>
                 &mdash; they look like just opaque strings to the server, but
@@ -282,6 +286,16 @@ class EnvelopeDemo extends Tonic {
                 been created, they can be passed to any other server, and
                 can be validated by any server.
             </p>
+
+            <p>
+                Whether the identity in the envelope means anything to
+                another server is another issue. Every public key
+                is unique, but we can link multiple public keys to form a
+                single identity. <a href="https://ucan.xyz/">UCAN</a> is a
+                system for this.
+            </p>
+
+            <hr />
 
             <p>
                 The envelope is a message pre-signed by me.
@@ -318,7 +332,7 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
-                Anyone can prove that the envelope is valid just by
+                Anyone can prove that the envelope is valid by
                 checking that the signature is valid. My server never learns
                 <em>who you are</em>. To check validity, my server needs to make
                 sure that the envelope is addressed to a valid user. For demo
@@ -328,7 +342,7 @@ class EnvelopeDemo extends Tonic {
             <p>
                 In real life, the server might want to match the recipient's
                 DID against a list of UCANs, or otherwise validate who
-                they are. It could keep a list of DIDs that are allowed.
+                the recipient is. It could keep a list of DIDs that are allowed.
             </p>
 
             <p>
