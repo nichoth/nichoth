@@ -351,6 +351,11 @@ class EnvelopeDemo extends Tonic {
             </p>
 
             <p>
+                The envelope author (the recipient) would need to keep track
+                of a map of <code>envelopeHash</code> to <code>user</code>.
+            </p>
+
+            <p>
                 If we do not prevent the replay attack, is it that bad?
                 It is still impossible to forge the message sender's identity.
             </p>
