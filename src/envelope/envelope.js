@@ -1,6 +1,10 @@
 import { program } from '@oddjs/odd'
 import ky from 'ky'
-import { create as createEnvelope, wrapMessage } from '@ssc-half-light/envelope'
+import {
+    create as createEnvelope,
+    wrapMessage,
+    decryptMessage
+} from '@ssc-half-light/envelope'
 import { SignedRequest } from '@ssc-half-light/request'
 import { create as _createId } from '@ssc-half-light/identity'
 import Tonic from '@socketsupply/tonic'
@@ -11,7 +15,6 @@ import Tonic from '@socketsupply/tonic'
  * via ESM + the browser
  */
 
-let globalCrypto = null
 // const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
 const URL_ROOT = 'http://localhost:8888/api'
 const MY_DID = 'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e'
@@ -37,8 +40,7 @@ class CreateEnvelope extends Tonic {
         ev.preventDefault()
         ev.stopPropagation()
 
-        const crypto = globalCrypto
-        const { envelopes } = this.props
+        const { envelopes, crypto } = this.props
         const latest = envelopes ? envelopes.length : 0
         const newEnvelope = await createEnvelope(crypto, {
             username: this.props.identity.username,
@@ -50,7 +52,6 @@ class CreateEnvelope extends Tonic {
         })
 
         this.props.oncreate(newEnvelope)
-        console.log('done making envelope', this.props)
     }
 
     render () {
@@ -69,8 +70,6 @@ class NewMessage extends Tonic {
         ev.preventDefault()
         ev.stopPropagation()
         const msg = ev.target.elements.msg.value
-        console.log('this props', this.props)
-        console.log('submit new message', msg)
         this.props.onsend(msg)
     }
 
@@ -103,7 +102,8 @@ class EnvelopeDemo extends Tonic {
             crypto: null,
             request: null,
             envelopes: null,
-            recipient: null
+            recipient: null,
+            myKeys: null
         }
 
         // fetch these right away
@@ -124,13 +124,11 @@ class EnvelopeDemo extends Tonic {
 
     async fetchEnvelopes () {
         const envelopes = await ky.get(URL_ROOT + '/envelope').json()
-        console.log('got envelopes', envelopes)
         this.state.envelopes = envelopes
     }
 
     async fetchRecipient () {
         const recp = await ky.get(URL_ROOT + '/get-nichoth').json()
-        console.log('got recipient', recp)
         this.state.recipient = recp
     }
 
@@ -140,7 +138,7 @@ class EnvelopeDemo extends Tonic {
         const name = ev.target.elements.humanName.value
         const [id, crypto] = await createId(name)
         this.state.identity = id
-        this.state.crypto = globalCrypto = crypto
+        this.state.crypto = crypto
         this.state.request = SignedRequest(ky, crypto, window.localStorage)
         this.reRender()
         window.scrollTo(0, 0)
@@ -152,7 +150,6 @@ class EnvelopeDemo extends Tonic {
     }
 
     handleSendMsg (msg) {
-        console.log('send message...', this.state)
         const { identity, recipient } = this.state
         const nextEnvelope = this.state.envelopes.shift()
         wrapMessage(
@@ -163,9 +160,16 @@ class EnvelopeDemo extends Tonic {
                 from: { username: this.state.identity.username },
                 text: msg
             }
-        ).then(envelopedMsg => {
-            console.log('enveloped -----', envelopedMsg)
-            this.state.encryptedMsg = envelopedMsg
+        ).then(([{ envelope, message }, senderKeys]) => {
+            this.state.encryptedMsg = { envelope, message }
+            this.state.myKeys = senderKeys
+            // Need to call our server with the new envelope + message
+            // Note we are using `ky`, not `request`, because the envelope
+            // works as auth.
+            ky.post(URL_ROOT + '/message', {
+                json: { envelope, message }
+            })
+
             this.reRender()
         })
     }
@@ -199,7 +203,7 @@ class EnvelopeDemo extends Tonic {
                             oncreate=${this.handleCreateEnvelope.bind(this)}
                             identity=${this.state.identity}
                             envelopes=${this.state.envelopes}
-                            crypto=${globalCrypto}
+                            crypto=${this.state.crypto}
                             request=${this.state.request}
                         ></create-envelope>
                     </div>`:
@@ -216,12 +220,14 @@ class EnvelopeDemo extends Tonic {
                         </span></p>
 
                         ${this.state.encryptedMsg ?
-                            this.html`<div>
-                                <h2>Your message</h2>
-                                <strong>The message you sent</strong> looks like this:
-                                <br>(the content is encrypted)
-                                <pre>${JSON.stringify(this.state.encryptedMsg, null, 2)}</pre>
-                            </div>` :
+                            (this.html`<decrypt-msg
+                                id="decrypter"
+                                crypto=${this.state.crypto}
+                                mykeys=${this.state.myKeys}
+                                encryptedmsg=${this.state.encryptedMsg}
+                            >
+                            </decrypt-msg>`) :
+                            // control to compose a new message
                             this.html`<new-message
                                 onsend=${this.handleSendMsg.bind(this)}
                                 envelopes=${this.state.envelopes}
@@ -373,6 +379,56 @@ class EnvelopeDemo extends Tonic {
     }
 }
 
+class DecryptMsg extends Tonic {
+    constructor () {
+        super()
+        this.state = { decryptedMsg: null }
+        window.state2 = this.state
+    }
+
+    async submit (ev) {
+        // need to decrypt message here
+        ev.preventDefault()
+        ev.stopPropagation()
+        const { mykeys } = this.props
+        const decrypted = await decryptMessage(
+            this.props.crypto,
+            this.props.encryptedmsg.message,
+            mykeys
+        )
+        this.state.decryptedMsg = decrypted
+        this.reRender()
+    }
+
+    render () {
+        return (this.html`<div class="decrypter">
+            <div>
+                <h2>Your message</h2>
+                <strong>The message you sent</strong> looks like this:
+                <br>(the content is encrypted)
+                <pre>${JSON.stringify(this.props.encryptedmsg, null, 2)}</pre>
+            </div>
+
+            <form>
+                <label>
+                    Decrypt your message
+                    <button type="submit">decypt</button>
+                </label>
+            </form>
+
+            ${(this.state.decryptedMsg ?
+               (this.html`<div class="decrypted-msg">
+                    <strong>Decrypted message</strong>
+                    <pre>${JSON.stringify(this.state.decryptedMsg, null, 2)}</pre>
+                </div>`) :
+                ''
+            )}
+        </div>`)
+
+    }
+}
+
+Tonic.add(DecryptMsg)
 Tonic.add(NewMessage)
 Tonic.add(EnvelopeDemo)
 Tonic.add(CreateEnvelope)
