@@ -259,17 +259,17 @@ class EnvelopeDemo extends Tonic {
                 This lets us preserve the privacy
                 of who is talking to whom, because the author of the message
                 can stay secret (encrypted). But since the message recipient is
-                visible we stay practical in terms of storage
+                visible, we stay practical in terms of storage
                 and message delivery.
             </p>
 
             <p>
-                Now we can E2E encrypt the message, but reject
-                messages for a user that we don't care about. We encrypt the
+                This is about finding the right amout of visiblity.
+                We can E2E encrypt the message, but still reject
+                messages for a user that we don't care about, because the server
+                can read the recipient's name. We encrypt the
                 <em>content</em> of the message and the <em>message author</em>
-                &mdash; they look like just opaque strings to the server, but
-                we can still deliver the message to the correct person,
-                because the recipient's ID is visible on the envelope.
+                though, so they look like just opaque strings to the server.
             </p>
 
             <hr />

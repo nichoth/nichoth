@@ -92,6 +92,10 @@ var hs = hyperstream({
                         Persistent client-side keys via <a href="https://odd.dev/">
                         Fission's keystore library</a>
                     </li>
+
+                    <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
+                        the source code for this page.
+                    </a></li>
                 </ul>
             </div>
 
