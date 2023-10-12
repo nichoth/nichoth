@@ -88,7 +88,7 @@ var hs = hyperstream({
                     </li>
 
                     <li>
-                        Presistent client-side keys via <a href="https://odd.dev/">
+                        Persistent client-side keys via <a href="https://odd.dev/">
                         Fission's keystore library</a>
                     </li>
                 </ul>

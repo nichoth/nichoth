@@ -337,6 +337,24 @@ class EnvelopeDemo extends Tonic {
                 is storage inefficient.
             </p>
 
+            <p>
+                Envelope order cannot be guaranteed for local-first scenarios,
+                where envelopes can arrive in any order.
+            </p>
+
+            <p>
+                Could create sets of messages that are indexed by a hash.
+                Each set goes to a different recipient. The hash is necessary
+                because we don't want intermediate nodes to learn anything
+                about who the message is from. We <em>can</em> guarantee message
+                order within a set.
+            </p>
+
+            <p>
+                If we do not prevent the replay attack, is it that bad?
+                It is still impossible to forge the message sender's identity.
+            </p>
+
             <hr />
 
             <form class="id-controls">
