@@ -27,4 +27,11 @@
     margin-bottom: 6rem;
     max-width: 40rem;
     font-family: 'Raleway', sans-serif;
+
+    & .success {
+        border: 4px solid green;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-style: dashed;
+    }
 }

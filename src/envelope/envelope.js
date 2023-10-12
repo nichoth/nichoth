@@ -406,7 +406,6 @@ class DecryptMsg extends Tonic {
         ev.preventDefault()
         ev.stopPropagation()
         const { mykeys, encryptedmsg } = this.props
-        console.log('in here', this.props)
         const decrypted = await decryptMessage(
             globalCrypto,
             encryptedmsg.message,
@@ -419,7 +418,7 @@ class DecryptMsg extends Tonic {
 
     render () {
         return (this.html`<div class="decrypter">
-            <div>
+            <div class="success">
                 <h2>Your message</h2>
                 <strong>The message you sent</strong> looks like this:
                 <br>(the content is encrypted)
