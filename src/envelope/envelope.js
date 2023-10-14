@@ -8,7 +8,7 @@ import {
 import { create as createMsg } from '@ssc-half-light/message'
 import { SignedRequest } from '@ssc-half-light/request'
 import { create as _createId } from '@ssc-half-light/identity'
-import Tonic from '@socketsupply/tonic'
+import Tonic from '@nichoth/tonic'
 
 /**
  * Look, no build tools

@@ -17,7 +17,7 @@ var hs = hyperstream({
             <script type="importmap">
                 {
                     "imports": {
-                        "@socketsupply/tonic": "/tonic.min.js",
+                        "@nichoth/tonic": "/tonic.min.js",
                         "@ssc-half-light/identity": "/identity.js",
                         "@oddjs/odd": "/odd.js",
                         "ky": "/ky.js",
