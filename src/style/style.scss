@@ -98,6 +98,12 @@ body.the-log {
 
   & ul {
     padding: 1rem;
+
+    // nested list
+    & ul {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
 
