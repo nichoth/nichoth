@@ -122,13 +122,13 @@ var hs = hyperstream({
 
                             <li>
                                 <a href="https://github.com/ssc-half-light/identity">
-                                    identity
+                                    <code>identity</code>
                                 </a> &mdash; Use multiple devices with one identity
                             </li>
 
                             <li>
                                 <a href="https://github.com/ssc-half-light/envelope">
-                                envelope
+                                <code>envelope</code>
                                 </a> &mdash; The thing we are demonstrating
                             </li>
                         </ul>
