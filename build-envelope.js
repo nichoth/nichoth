@@ -106,6 +106,22 @@ var hs = hyperstream({
                         the backend code.</a>
                     </li>
 
+                    <li>
+                        The <strong>odds and ends</strong> &mdash;
+                        <ul>
+                            <li>
+                                <a href="https://github.com/ssc-half-light/request">
+                                <code>request</code>
+                                </a> &mdash; authenticate http requests
+                            </li>
+                            <li>
+                                <a href="https://github.com/ssc-half-light/message">
+                                <code>message</code>
+                                </a> &mdash; Create signed messages
+                            </li>
+                        </ul>
+                    </li>
+
                     <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
                         the source code for this page.
                     </a></li>
