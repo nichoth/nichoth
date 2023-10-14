@@ -260,14 +260,15 @@ class EnvelopeDemo extends Tonic {
                 of who is talking to whom, because the author of the message
                 can stay secret (encrypted). But since the message recipient is
                 visible, we stay practical in terms of storage
-                and message delivery.
+                and message delivery, and reject messages we don't care about,
+                and deliver the message to the correct person.
             </p>
 
             <p>
                 This is about finding the right amout of visiblity.
                 We can E2E encrypt the message, but still reject
                 messages for a user that we don't care about, because the server
-                can read the recipient's name. We encrypt the
+                <em>can</em> read the recipient's name. We encrypt the
                 <em>content</em> of the message and the <em>message author</em>
                 though, so they look like just opaque strings to the server.
             </p>
@@ -284,15 +285,15 @@ class EnvelopeDemo extends Tonic {
                 the current domain, <code>nichoth.com</code>. But, the good
                 news is that these envelopes are static objects. Once they have
                 been created, they can be passed to any other server, and
-                can be validated by any server.
+                can be validated by any server or browser.
             </p>
 
             <p>
                 Whether the identity in the envelope means anything to
                 another server is another issue. Every public key
                 is unique, but we can link multiple public keys to form a
-                single identity. <a href="https://ucan.xyz/">UCAN</a> is a
-                system for this.
+                single identity. This is common enough that it has a name,
+                <a href="https://ucan.xyz/">UCAN.</a>
             </p>
 
             <hr />
@@ -317,18 +318,18 @@ class EnvelopeDemo extends Tonic {
                 except allow you to submit this form. We are using the
                 <a href="https://github.com/ssc-half-light/identity">
                     identity module
-                </a> here. Under the hood, an identity correstponds to one
+                </a> here. Under the hood, an identity corresponds to one
                 AES (symmetric) key. That key is encrypted to various public
                 keys, one for each device of the identity.
             </p>
 
             <p>
                 When you click "submit", we create a new symmetric key,
-                and encrypt the message with that key, then encrypt that key with
-                the recipient's public key. So only the recipient's private key
-                is able to decrypt it. The recipient's name is visible on the
-                envelope, but your name is in the encrypted part, so only
-                myself and you are able to read it.
+                and encrypt the message with that key. Then we encrypt that key
+                with the recipient's public key. So only the recipient's
+                private key is able to decrypt it. The recipient's name is
+                visible on the envelope, but your name is in the encrypted part,
+                so only myself and you are able to read your identity.
             </p>
 
             <p>

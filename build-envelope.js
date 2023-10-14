@@ -1,7 +1,6 @@
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 const hyperstream = require('hyperstream');
-// const esbuild = require('esbuild')
 
 mkdirp.sync(__dirname + '/public/envelope')
 
@@ -91,6 +90,18 @@ var hs = hyperstream({
                     <li>
                         Persistent client-side keys via <a href="https://odd.dev/">
                         Fission's keystore library</a>
+                    </li>
+
+                    <li>
+                        This page talks to a <a href="https://fauna.com/">
+                        Fauna database</a>. We call a lambda function that
+                        validates the message, and, if it is valid, we write
+                        the message to the database.
+                    </li>
+
+                    <li>
+                        Lambda functions &mdash; hosted with
+                        <a href="https://www.netlify.com/">netlify</a>.
                     </li>
 
                     <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
