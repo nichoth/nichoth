@@ -119,20 +119,21 @@ var hs = hyperstream({
                                 <code>message</code>
                                 </a> &mdash; Create signed messages
                             </li>
+
+                            <li>
+                                <a href="https://github.com/ssc-half-light/identity">
+                                    identity
+                                </a> &mdash; Use multiple devices with one identity
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/ssc-half-light/envelope">
+                                envelope
+                                </a> &mdash; The thing we are demonstrating
+                            </li>
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="https://github.com/ssc-half-light/identity">
-                            identity
-                        </a> &mdash; Use multiple devices with one identity
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/ssc-half-light/envelope">
-                        envelope
-                        </a> &mdash; The thing we are demonstrating
-                    </li>
 
                     <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
                         the source code for this page.
