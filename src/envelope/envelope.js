@@ -260,20 +260,12 @@ class EnvelopeDemo extends Tonic {
             <p>
                 Envelopes that have been pre-signed by the recipient.
                 This lets us preserve the privacy
-                of who is talking to whom, because the author of the message
-                can stay secret (encrypted). But since the message recipient is
-                visible, we stay practical in terms of storage
-                and message delivery, and reject messages we don't care about,
-                and deliver the message to the correct person.
-            </p>
-
-            <p>
-                This is about finding the right amout of visiblity.
-                We can E2E encrypt the message, but still reject
-                messages for a user that we don't care about, because the server
-                <em>can</em> read the recipient's name. We encrypt the
-                <em>content</em> of the message and the <em>message author</em>
-                though, so they look like just opaque strings to the server.
+                of who is talking to whom, but stay practical with storage and
+                message delivery. Because the author of the message
+                is secret (encrypted), but the recipient is visible, we can
+                reject messages for a person that we don't care
+                about, and deliver messages efficiently to users we do care
+                about. 
             </p>
 
             <hr />
@@ -288,7 +280,7 @@ class EnvelopeDemo extends Tonic {
                 the current domain, <code>nichoth.com</code>. But, the good
                 news is that these envelopes are static objects. Once they have
                 been created, they can be passed to any other server, and
-                can be validated by any server or browser.
+                can be validated by any server (or browser).
             </p>
 
             <p>
