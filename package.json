@@ -2,6 +2,7 @@
   "name": "nichoth",
   "description": "http://nichoth.com/",
   "version": "0.0.1",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "serve": "concurrently --kill-others \"npx ecstatic public\" \"npm run watch-sass\" \"watchify src/chat.js -p esmify -dv -o public/chat.js\"",
@@ -69,6 +70,5 @@
   "bugs": {
     "url": "https://github.com/nichoth/nichoth/issues"
   },
-  "homepage": "https://github.com/nichoth/nichoth#readme",
-  "private": true
+  "homepage": "https://github.com/nichoth/nichoth#readme"
 }
