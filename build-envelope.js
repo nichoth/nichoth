@@ -102,6 +102,8 @@ var hs = hyperstream({
                     <li>
                         Lambda functions &mdash; hosted with
                         <a href="https://www.netlify.com/">netlify</a>.
+                        You can look at <a href="https://github.com/nichoth/nichoth-backend">
+                        the backend code.</a>
                     </li>
 
                     <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
