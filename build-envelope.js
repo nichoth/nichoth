@@ -131,7 +131,7 @@ var hs = hyperstream({
                     <li>
                         <a href="https://github.com/ssc-half-light/envelope">
                         envelope
-                        </a> mdash; The thing we are demonstrating
+                        </a> &mdash; The thing we are demonstrating
                     </li>
 
                     <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
