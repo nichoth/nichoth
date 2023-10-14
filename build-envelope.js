@@ -106,6 +106,10 @@ var hs = hyperstream({
                         the backend code.</a>
                     </li>
 
+                    <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
+                        the source code for this page.
+                    </a></li>
+
                     <li>
                         The <strong>odds and ends</strong> &mdash;
                         <ul>
@@ -133,11 +137,6 @@ var hs = hyperstream({
                             </li>
                         </ul>
                     </li>
-
-
-                    <li>See <a href="https://github.com/nichoth/nichoth/blob/main/src/envelope/envelope.js">
-                        the source code for this page.
-                    </a></li>
                 </ul>
             </div>
 
