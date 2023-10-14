@@ -164,7 +164,7 @@ class EnvelopeDemo extends Tonic {
     async handleSendMsg (msg) {
         const { identity, recipient } = this.state
         const nextEnvelope = this.state.envelopes.shift()
-        wrapMessage(
+        const [{ envelope, message }, senderKeys] = await wrapMessage(
             identity,
             recipient,
             nextEnvelope,
@@ -175,18 +175,19 @@ class EnvelopeDemo extends Tonic {
                 },
                 text: msg
             })
-        ).then(([{ envelope, message }, senderKeys]) => {
-            this.state.encryptedMsg = { envelope, message }
-            this.state.myKeys = senderKeys
-            // Need to call our server with the new envelope + message
-            // Note we are using `ky`, not `request`, because the envelope
-            // works as auth.
-            ky.post(URL_ROOT + '/message', {
-                json: { envelope, message }
-            })
+        )
 
-            this.reRender()
+        this.state.encryptedMsg = { envelope, message }
+        this.state.myKeys = senderKeys
+
+        // Need to call our server with the new envelope + message
+        // Note we are using `ky`, not `request`, because the envelope
+        // works as auth.
+        await ky.post(URL_ROOT + '/message', {
+            json: { envelope, message }
         })
+
+        this.reRender()
     }
 
     render () {
