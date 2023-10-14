@@ -17,9 +17,12 @@ import Tonic from '@socketsupply/tonic'
 
 const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
 // const URL_ROOT = 'http://localhost:8888/api'
-const MY_DID = 'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e'
+const ALLOWED_DIDS = [
+    'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e',
+    'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2txSGy8PkPwRD5J3rJ2JAcY3uKeYRwSEjJ51UfVxyvAnfQm4rJcQMs9wBvtxdLJVurvsuGDsn2KTZhVBu7ArqeFxqxWR4yyEbfXkJm3k78FrGKddwneE8VMeDiawWHAv6cW3N8ygwKzYnR4ntoNWpjVQn3PNEH8CNd8xweSoa3oMYQmNPxxwik5pjXERtQVFJrEmaqzmBVx3EAJkMruLk1CdZtFm3B8FXF2azyizTPjSUHkrG9VWTrGYU33DBLNFovfrca3dzrCcnEso8d1fHgjsezpVt6DTaSNDtobFa1P8r4qYvd1CVnM5fUx9knAW9ThDqHBAfhVuNPVBLEDzpiLHD6hFd7xx2tgdv'
+]
 
-// passing the crypto object through props did not work...
+// passing the crypto object through props did not work... why?
 let globalCrypto
 
 /**
@@ -188,14 +191,14 @@ class EnvelopeDemo extends Tonic {
 
     render () {
         if (this.state.identity) {
-            // check if rootDid is MY_DID
+            // check if rootDid is one of mine
             // if so, show a form to create more envelopes
             // if not, show a form to send a new message
             return this.html`<div id="envelope-demo-content">
                 <h2>Your identity is:</h2>
                 <identity-view identity=${this.state.identity}></identity-view>
 
-                ${this.state.identity.rootDid === MY_DID ?
+                ${ALLOWED_DIDS.includes(this.state.identity.rootDid) ?
                     this.html`<div>
                         <p>You are nichoth</p>
                         <p>number of envelopes: <span class="envelope-count">
