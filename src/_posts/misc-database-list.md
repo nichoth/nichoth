@@ -76,3 +76,6 @@ but if you are not replicating, just viewing the 20 most recent messages, then i
 * [orbit DB](https://orbitdb.org/)
 * [rxdb](https://github.com/pubkey/rxdb)
 
+## see also
+* [jlongster/crdt-example-app](https://github.com/jlongster/crdt-example-app) -- A full implementation of CRDTs using hybrid logical clocks and a demo app that uses it
+
