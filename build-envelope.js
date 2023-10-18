@@ -40,6 +40,7 @@ var hs = hyperstream({
 
     'body': {
         class: { append: 'envelope-page' },
+        style: 'opacity: 0',
         _appendHtml: `
             <hr>
             <div class="the-colophon">
@@ -142,6 +143,8 @@ var hs = hyperstream({
 
             <script type="module" src="./envelope.js"></script>
         `
+        // ^ in that script tag, should stream the file `envelope.js`
+        // instead of linking it, for FOUC
     }
 })
 

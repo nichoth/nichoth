@@ -26,6 +26,14 @@ const ALLOWED_DIDS = [
 let globalCrypto
 
 /**
+ * Make the page visible when it's ready
+ * (prevent FOUC)
+ */
+domReady(() => {
+    document.body.style.opacity = '1'
+})
+
+/**
  * All identity state is derived from the public key DID,
  * which is saved in indexedDB.
  */
@@ -468,4 +476,13 @@ async function createId (name) {
     })
 
     return [id, crypto]
+}
+
+function domReady (cb) {
+    (
+        document.readyState === 'interactive' ||
+        document.readyState === 'complete'
+    ) ?
+        cb() :
+        document.addEventListener('DOMContentLoaded', cb)
 }
