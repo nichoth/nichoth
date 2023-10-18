@@ -274,7 +274,7 @@ class EnvelopeDemo extends Tonic {
                 is secret (encrypted), but the recipient is visible, we can
                 reject messages for a person that we don't care
                 about, and deliver messages efficiently to users we do care
-                about. 
+                about.
             </p>
 
             <hr />
@@ -486,3 +486,4 @@ function domReady (cb) {
         cb() :
         document.addEventListener('DOMContentLoaded', cb)
 }
+
