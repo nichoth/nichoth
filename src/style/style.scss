@@ -439,6 +439,7 @@ $link-width: 2em;
 
       // not sure what the interval is for the colors, but this is fine
       a {
+        text-decoration: none;
         color: #1ABBA7;
         transition: color 0.2s;
       }
