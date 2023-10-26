@@ -269,7 +269,8 @@ class EnvelopeDemo extends Tonic {
             <p>
                 Envelopes that have been pre-signed by the recipient.
                 This lets us preserve the privacy
-                of who is talking to whom, but stay practical with storage and
+                of who is talking to whom, by encrypting the message's author.
+                But we can stay practical with storage and
                 message delivery. Because the author of the message
                 is secret (encrypted), but the recipient is visible, we can
                 reject messages for a person that we don't care
