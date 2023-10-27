@@ -22,4 +22,4 @@ At least one good thing that came out of the factory factory was an extra minima
 
 -------
 
-[This app template](https://github.com/nichoth/template-ts-preact-htm-app) shows the architecture in a re-usable format.
+[This app template](https://github.com/nichoth/template-ts-preact-htm-app) shows this architecture in a re-usable format.
