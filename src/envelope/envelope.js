@@ -124,6 +124,7 @@ class EnvelopeDemo extends Tonic {
             envelopes: null,
             recipient: null,
             messages: null,
+            decryptedMsgs: null,
             myKeys: null
         }
 
@@ -170,7 +171,6 @@ class EnvelopeDemo extends Tonic {
         if (ALLOWED_DIDS.includes(id.rootDid)) {  // check if you are me
             const msgs = await getMessages(this.state.request, id.rootDid)
             this.state.messages = msgs
-            console.log('**msgs**', msgs)
         }
         this.reRender()
         window.scrollTo(0, 0)
@@ -184,8 +184,8 @@ class EnvelopeDemo extends Tonic {
         const decrypted = await Promise.all(msgs.map(async msg => {
             return decryptMessage(globalCrypto, msg)
         }))
-        console.log('decrypt', decrypted)
-        this.state.decryptMessages = decrypted
+        this.state.decryptedMsgs = decrypted
+        this.reRender()
     }
 
     handleCreateEnvelope (newEnvelope) {
@@ -267,6 +267,19 @@ class EnvelopeDemo extends Tonic {
                                 })}</ul>
 
                                 <button data-event="decrypt">decrypt</button>
+
+                                ${this.state.decryptedMsgs ?
+                                    this.html`<ul>
+                                        ${this.state.decryptedMsgs.map(msg => {
+                                            return this.html`<li>
+                                                <pre>
+                                                    ${JSON.stringify(msg, null, 2)}
+                                                </pre>
+                                            </li>`
+                                        })}
+                                    </ul>` :
+                                    ''
+                                }
                             </div>` :
                             null
                         }
