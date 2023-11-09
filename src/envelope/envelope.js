@@ -11,13 +11,13 @@ import { create as _createId } from '@ssc-half-light/identity'
 import Tonic from '@nichoth/tonic'
 
 /**
- * Look, no build tools
+ * Look, no build tools**
  * Everything resolved via ESM + the browser
  */
 
-const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
-// const URL_ROOT = 'http://localhost:8888/api'
-const ALLOWED_DIDS = [
+// const URL_ROOT = 'https://nichoth-backend.netlify.app/api'
+const URL_ROOT = 'http://localhost:8888/api'
+const ALLOWED_DIDS = [  // my DIDs, for localhost and nichoth.com
     'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2QFw2XWbPxrrbwS2ha8yApyMoQicyamSGTuov6334CHXkw34vRhp7onJNqs6qr3mkfzwckU27kzV3A718mmpVc1Saban1k7jmedsfEtfaTbyLQp2Xa2GwqnDtAR7AbTSsXJroJe9N7L68jeHhSdyq2g9n5G8qnFMRrdBmDFM6ecPZLkHijieiHZj42JxFREHvy3uUjKjwyQVsYjWVFX32EBBpfTMez6vK9tahy5r2paYP7rHhzYz9MfcWHsWmn8voMzyRSUutBEKVCXbwtCGPR5moMKdyv8Q8skGNmVHw1D9BYgg8YoAmqatqRg3UZfhG8cWdusV4iuGFvygn2XaJS2ugAd6iF4ohHY1e',
     'did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2txSGy8PkPwRD5J3rJ2JAcY3uKeYRwSEjJ51UfVxyvAnfQm4rJcQMs9wBvtxdLJVurvsuGDsn2KTZhVBu7ArqeFxqxWR4yyEbfXkJm3k78FrGKddwneE8VMeDiawWHAv6cW3N8ygwKzYnR4ntoNWpjVQn3PNEH8CNd8xweSoa3oMYQmNPxxwik5pjXERtQVFJrEmaqzmBVx3EAJkMruLk1CdZtFm3B8FXF2azyizTPjSUHkrG9VWTrGYU33DBLNFovfrca3dzrCcnEso8d1fHgjsezpVt6DTaSNDtobFa1P8r4qYvd1CVnM5fUx9knAW9ThDqHBAfhVuNPVBLEDzpiLHD6hFd7xx2tgdv'
 ]
@@ -123,6 +123,7 @@ class EnvelopeDemo extends Tonic {
             request: null,
             envelopes: null,
             recipient: null,
+            messages: null,
             myKeys: null
         }
 
@@ -152,7 +153,13 @@ class EnvelopeDemo extends Tonic {
         this.state.recipient = recp
     }
 
-    // "get your identity" button
+    /**
+     * The "get your identity" button
+     *   - create a `request` instance
+     *   - create a unique Identity for this machine
+     *   - fetch any messages if you are me
+     * @param {SubmitEvent} ev 
+     */
     async submit (ev) {
         ev.preventDefault()
         const name = ev.target.elements.humanName.value
@@ -160,8 +167,25 @@ class EnvelopeDemo extends Tonic {
         this.state.identity = id
         globalCrypto = crypto
         this.state.request = SignedRequest(ky, crypto, window.localStorage)
+        if (ALLOWED_DIDS.includes(id.rootDid)) {  // check if you are me
+            const msgs = await getMessages(this.state.request, id.rootDid)
+            this.state.messages = msgs
+            console.log('**msgs**', msgs)
+        }
         this.reRender()
         window.scrollTo(0, 0)
+    }
+
+    async click (ev) {
+        const el = Tonic.match(ev.target, '[data-event]')
+        if (!el || el.dataset.event !== 'decrypt') return
+        ev.preventDefault()
+        const msgs = this.state.messages
+        const decrypted = await Promise.all(msgs.map(async msg => {
+            return decryptMessage(globalCrypto, msg.content, msg.key)
+        }))
+        console.log('decrypt', decrypted)
+        this.state.decryptMessages = decrypted
     }
 
     handleCreateEnvelope (newEnvelope) {
@@ -230,6 +254,22 @@ class EnvelopeDemo extends Tonic {
                             mycrypto=${globalCrypto}
                             request=${this.state.request}
                         ></create-envelope>
+
+                        <hr />
+
+                        ${this.state.messages ?
+                            this.html`<div>
+                                <h3>messages:</h3>
+                                <ul>${this.state.messages.map(msg => {
+                                    return this.html`<li>
+                                        <pre>${JSON.stringify(msg, null, 2)}</pre>
+                                    </li>`
+                                })}</ul>
+
+                                <button data-event="decrypt">decrypt</button>
+                            </div>` :
+                            null
+                        }
                     </div>`:
 
                     this.html`<div>
@@ -487,3 +527,13 @@ function domReady (cb) {
         document.addEventListener('DOMContentLoaded', cb)
 }
 
+/**
+ * Get our (encrypted) messages
+ * @param {ReturnType<SignedRequest>}
+ * @param {string} did 
+ */
+async function getMessages (request, DID) {
+    if (!DID) return (DID) => getMessages(request, DID)
+    const msgs = await request.get(URL_ROOT + '/message').json()
+    return msgs
+}
