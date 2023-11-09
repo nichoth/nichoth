@@ -182,7 +182,7 @@ class EnvelopeDemo extends Tonic {
         ev.preventDefault()
         const msgs = this.state.messages
         const decrypted = await Promise.all(msgs.map(async msg => {
-            return decryptMessage(globalCrypto, msg.content, msg.key)
+            return decryptMessage(globalCrypto, msg)
         }))
         console.log('decrypt', decrypted)
         this.state.decryptMessages = decrypted
