@@ -18,7 +18,7 @@ Since then I read a couple things -- [factoryfactoryfactory.net](https://factory
 
 A couple things happened next. I rewrote [the `jazz-signals` example](https://github.com/nichoth/jazz-signals/tree/main/example) so that it is simpler, and I [forked the standalone signals library](https://github.com/nichoth/preact-htm-signals-standalone/tree/fork), so that I can use it via CDN without having to trust another person.
 
-At least one good thing that came out of the factory factory was an extra minimal event emitter.
+At least one good thing that came out of the factory factory was an extra minimal [event emitter](https://github.com/nichoth/events).
 
 -------
 
