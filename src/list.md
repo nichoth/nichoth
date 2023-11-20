@@ -33,8 +33,6 @@
 * [netlify CMS](https://www.netlifycms.org/) 
   - [Eleventy + Netlify CMS Boilerplate](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)
   - [Examples](https://www.netlifycms.org/docs/examples/)
-* [forestry](https://forestry.io/)
-* [offbase](https://offbase.org/)
 * [strapi](https://strapi.io/features)
 * [plasmic](https://www.plasmic.app/)
 * [tina](https://tina.io/)
