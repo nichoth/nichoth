@@ -20,6 +20,7 @@ __Links to various templates__
 
 ## notes
 [Links and notes](https://github.com/nichoth/notes/discussions)
+
 plus, [a list](https://nichoth.com/list/)
 
 ## build
