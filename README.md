@@ -7,7 +7,8 @@ My website, from the distant past, that i have no memory of
 ---------------------
 
 ## templates
-Links to various templates
+
+__Links to various templates__
 
 * [template-ts](https://github.com/nichoth/template-ts) -- A template for Node JS typescript dependency modules
 * [template-ts-browser](https://github.com/nichoth/template-ts-browser) -- Template for typescript projects in a browser environment
@@ -17,18 +18,22 @@ Links to various templates
 * [template-tonic-spa](https://github.com/nichoth/template-tonic-spa) -- Tonic framework + client-side routing
 * [template-web-ssc](https://github.com/nichoth/template-web-ssc) -- Use the same source code to build web apps and native apps
 
+## notes
+[Links and notes](https://github.com/nichoth/notes/discussions)
+plus, [a list](https://nichoth.com/list/)
+
 ## build
-```
+```sh
 npm run build
 ```
 
 ## start a local dev server
-```
+```sh
 npm start
 ```
 
 ## deploy to surge
-```
+```sh
 npm run deploy
 ```
 
