@@ -54,7 +54,15 @@ or add to the build script
 
 the problem is that there's no `watch` script for developing
 
-a watch script
-`mkdir -p public/chat && budo src/chat.js:chat.js --dir=public/chat --live --pushstate --open -- -p esmify -dv`
-build script
-`browserify src/chat.js > public/chat/chat.js -dv`
+__a watch script__
+
+```sh
+mkdir -p public/chat && budo src/chat.js:chat.js --dir=public/chat --live --pushstate --open -- -p esmify -dv
+```
+
+__build script__
+
+```sh
+browserify src/chat.js > public/chat/chat.js -dv
+```
+
