@@ -1,0 +1,57 @@
+$bgc: #f7f7eb;
+$mw: 40rem;
+
+body.ssc {
+    color: #572E08;
+    background-color: $bgc;
+    font-family: YoungSerif, serif;
+    margin: 1rem;
+
+    .copied {
+        color: blueviolet;
+        margin-left: 1rem;
+    }
+
+    h1, h2 {
+        max-width: $mw;
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: initial;
+    }
+
+    p {
+        max-width: $mw;
+        margin: 1rem auto;
+        line-height: 1.6rem;
+    }
+
+    pre {
+        max-width: $mw;
+        margin: 1rem auto;
+    }
+
+    #the-private-key {
+        margin-bottom: 2rem;
+    }
+
+    #ntl-button-p {
+        margin-top: 3rem;
+    }
+
+    #copy-priv-key, #copy-pub-key {
+        border: none;
+        background-color: transparent;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+
+    .copy-icon {
+        width: 1rem;
+    }
+}
