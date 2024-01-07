@@ -10,6 +10,7 @@ My website, from the distant past, that i have no memory of
 
 __Links to various templates__
 
+* [template-js](https://github.com/nichoth/template-js) -- A template for JS projects
 * [template-ts](https://github.com/nichoth/template-ts) -- A template for Node JS typescript dependency modules
 * [template-ts-browser](https://github.com/nichoth/template-ts-browser) -- Template for typescript projects in a browser environment
 * [template-ts-preact-htm](https://github.com/nichoth/template-ts-preact-htm) -- Template for peact, htm, and typescript
