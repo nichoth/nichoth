@@ -1,6 +1,6 @@
 # nichoth.com
 
-http://nichoth.com/
+https://nichoth.com/
 
 My website, from the distant past, that i have no memory of
 
