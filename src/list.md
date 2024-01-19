@@ -72,6 +72,8 @@
 * [redux-zero](https://github.com/redux-zero/redux-zero)
 * [developit/unistore](https://github.com/developit/unistore)
 * [nichoth/preact-pull-stream](https://github.com/nichoth/preact-pull-stream) -- my own thing
+* [jotai](https://github.com/pmndrs/jotai)
+* [zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
 
 
 --------------------------------------
