@@ -26,4 +26,5 @@ This is a way of describing a new "template" -- [nichoth/template-js](https://gi
 * typescript via a [jsconfig.json file](https://code.visualstudio.com/docs/languages/jsconfig)
 * [check-max-deps](https://github.com/nichoth/check-max-deps)
 
-We use git hooks to lint the code prior to pushing. And `standardx` means we can configure the lint to our preference, like using [4 spaces per indent](https://github.com/nichoth/template-js/blob/main/.eslintrc#L14).
+We use git hooks to lint the code prior to pushing. And `standardx` means we can configure the lint to our preference, like using [4 spaces per indent](https://github.com/nichoth/template-js/blob/main/.eslintrc#L15).
+
