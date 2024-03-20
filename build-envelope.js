@@ -33,7 +33,7 @@ var hs = hyperstream({
     '#content': {
         class: { append: 'envelope-page' },
         _appendHtml: `
-            <envelope-demo class="envelope-demo" id="envelope-demo" id="env-demo">
+            <envelope-demo class="envelope-demo" id="envelope-demo">
             </envelope-demo>
         `
     },
@@ -143,8 +143,6 @@ var hs = hyperstream({
 
             <script type="module" src="./envelope.js"></script>
         `
-        // ^ in that script tag, should stream the file `envelope.js`
-        // instead of linking it, for FOUC
     }
 })
 
