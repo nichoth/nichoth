@@ -333,6 +333,8 @@ db.createReadStream({
 * [HTML is a living language in constant evolution. The latest addition has been a new semantic element for searching/filtering operations](https://twitter.com/alvaro_montoro/status/1645449658280321031?s=20)
 * [search role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/search_role)
 
+----------------------------------
+
 * [Front-End solution: progress indicator](https://piccalil.li/blog/solution-009-progress-indicator) -- HTML component loading indicator
 
 ### images
