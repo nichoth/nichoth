@@ -44,7 +44,7 @@ This is the very long, and very *ssb*, way of announcing [ssc](https://github.co
 
 -------------------------------
 
-There are a couple bits of pure magic that are the basis of contemporary networks -- the signed merkle-list and public/private keys. It's too much to go into now, but these ingredients enable cool things. I imagine in the future people will continue to refine these ingredients, like right now we are seeing identity being decoupled from proprietary networks. Like `metamask`, for example. This is a nice thing to play with in ssc too -- the identity is more at the forefront than *patchwork*, for example, where it is baked into the client.
+There are a couple bits of pure magic that are the basis of contemporary networks -- the signed merkle-list and public/private keys. It's too much to go into now, but these ingredients enable cool things. I imagine in the future people will continue to refine these ingredients, like right now we are seeing identity being decoupled from proprietary networks. This is a nice thing to play with in ssc too -- the identity is more at the forefront than *patchwork*, for example, where it is baked into the client.
 
 So how does *trust* work in a server-based p2p network? Decoupling the identity from the server reduces trust issues quite a lot. For example, thinking about *evil nichoth* in the future, evil-nichoth would not be able to impersonate a user of the network becuase every user's data is signed with their private key. And if you store your private key on a different ID-server or on your own machine, then i wouldn't have access to it. Also any thin-client (web browser) would still be able to verify your posts are ok.
 
