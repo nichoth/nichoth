@@ -72,3 +72,19 @@ __build script__
 browserify src/chat.js > public/chat/chat.js -dv
 ```
 
+## comments
+
+See [aleksandrhovhannisyan.com](https://www.aleksandrhovhannisyan.com/blog/static-site-comments-github-issues/#how-it-works-storing-comments-in-github-issues) -- github issues as comments. I didn't use this because it uses github issues for composing comments, which I don't like so much.
+
+[greenash.net comments](https://greenash.net.au/thoughts/2022/03/email-based-comment-moderation-with-netlify-functions/)
+
+1. Use netlify forms to submit a comment
+2. Comment gets saved in netlify
+3. Use [submission created event](https://docs.netlify.com/functions/trigger-on-events/) to send an email to yourself
+4. Site admin approves the comment, which then writes it to github, with the [Github contents API](https://docs.github.com/en/rest/reference/repos#contents)
+5. Also you can delete the comment from netlify with the [forms API](https://docs.netlify.com/api/get-started/#delete-submissions)
+6. netlify rebuilds due to github commit, as usual
+
+You could also use a lambda function to handle form submissions, which would remove the limit of 100 submissions per month of netlify forms.
+
+Netlify forms has built-in spam prevention, which is nice

@@ -11,7 +11,7 @@ import { create as _createId } from '@ssc-half-light/identity'
 import Tonic from '@nichoth/tonic'
 
 /**
- * Look, no build tools**
+ * Look, no build tools
  * Everything resolved via ESM + the browser
  */
 
