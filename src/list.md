@@ -319,7 +319,7 @@ db.createReadStream({
 
 > you can nest the `<input>` directly inside the `<label>`, in which case the `for` and `id` attributes are not needed because the association is implicit
 
-* [Cache serverless responses with Cache-Control headers](https://wtw.dev/59-cache-control)
+* [The the scariest part of backend dev, explained! (caches)](https://wtw.dev/59-the-the-scariest-part-of-backend-dev-explained)
 * [markodenic.com/html-tips](https://markodenic.com/html-tips/)
 * [HTMLInputElement showPicker()](https://show-picker.glitch.me/demo.html)
 * [I didn't realize the native HTML date picker had gotten so good](https://twitter.com/aarondfrancis/status/1611800938020474880?s=20&t=ZfEQWjm8yuzRlsWGPjfNnw)
