@@ -479,6 +479,5 @@ see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packa
 * [Check out this speed run where our Applied Researcher Jess builds a decentralized Flickr clone in under 10 minutes](https://twitter.com/FISSIONcodes/status/1590478358181093376?s=20&t=5SNfVr2fkMZwr9uwWxa1Hw)
 * [lynn and tonic](https://lynnandtonic.com/thoughts/)
 * [HOW TO MAKE A WEBSITE](https://henry.codes/writing/how-to-make-a-website/)
-* [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
 * [Bring Your Own Client](https://www.geoffreylitt.com/2021/03/05/bring-your-own-client.html) -- choose your favorite application to interact with some data
 
