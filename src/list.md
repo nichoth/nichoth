@@ -447,7 +447,7 @@ see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packa
 ---------
 
 * [Convert images to AVIF for free, fast](https://avif.io/)
-* [avif.io source code](https://github.com/justinschmitz97/avif.io/) -- use Rust with wasm-pack to compile a converter library into WASM and call the Rust code in the browser, from a WebWorker. 
+* [avif.io source code](https://github.com/loki315zx/avif.io) -- use Rust with wasm-pack to compile a converter library into WASM and call the Rust code in the browser, from a WebWorker. 
 
 
 ### video misc
