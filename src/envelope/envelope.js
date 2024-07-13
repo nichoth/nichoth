@@ -11,7 +11,7 @@ import { create as _createId } from '@ssc-half-light/identity'
 import Tonic from '@nichoth/tonic'
 
 /**
- * Look, no build tools**
+ * Look, no build tools
  * Everything resolved via ESM + the browser
  */
 
@@ -343,6 +343,13 @@ class EnvelopeDemo extends Tonic {
                 news is that these envelopes are static objects. Once they have
                 been created, they can be passed to any other server, and
                 can be validated by any server (or browser).
+            </p>
+
+            <p>
+                This is my public key for <code>nichoth.com</code>:
+                <pre>
+                    did:key:z13V3Sog2YaUKhdGCmgx9UZuW1o1ShFJYc6DvGYe7NTt689NoL2txSGy8PkPwRD5J3rJ2JAcY3uKeYRwSEjJ51UfVxyvAnfQm4rJcQMs9wBvtxdLJVurvsuGDsn2KTZhVBu7ArqeFxqxWR4yyEbfXkJm3k78FrGKddwneE8VMeDiawWHAv6cW3N8ygwKzYnR4ntoNWpjVQn3PNEH8CNd8xweSoa3oMYQmNPxxwik5pjXERtQVFJrEmaqzmBVx3EAJkMruLk1CdZtFm3B8FXF2azyizTPjSUHkrG9VWTrGYU33DBLNFovfrca3dzrCcnEso8d1fHgjsezpVt6DTaSNDtobFa1P8r4qYvd1CVnM5fUx9knAW9ThDqHBAfhVuNPVBLEDzpiLHD6hFd7xx2tgdv
+                </pre>
             </p>
 
             <p>
