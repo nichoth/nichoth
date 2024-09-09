@@ -1,7 +1,7 @@
 ---
 
 linkTitle: development diary &mdash; webauthn
-linkDesc: UCANs
+linkDesc: A first look at `webauthn`
 slug: dev-diary-webauthn
 type: dev-diary
 date: 9-8-2024
