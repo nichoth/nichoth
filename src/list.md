@@ -460,6 +460,7 @@ see also -- [github repo](https://github.com/aspen-cloud/triplit/tree/main/packa
 * [Hundred Rabbits](https://www.youtube.com/watch?v=BW32yUEymvU) -- a
   presentation
 * [Local-first software - Peter Van Hardenberg](https://www.youtube.com/watch?v=KrPsyr8Ig6M) -- bicycle vs aircraft carrier
+* [Dominic Tarr -- Omega Projects](https://vimeo.com/175370577)
 
 
 ## storage
