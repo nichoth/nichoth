@@ -53,8 +53,8 @@ function buildProjects () {
 
         function createLinkString (list) {
             // in here, need to determine the order of the links
-            var sorted = _.orderBy(list, fm => {
-                return fm.date ? new Date(fm.date) : ''
+            var sorted = _.orderBy(list, frontmatter => {
+                return frontmatter.date ? new Date(frontmatter.date) : ''
             }, ['desc'])
 
             // find the most words that are in any article
@@ -111,11 +111,11 @@ function buildProjects () {
             fs.readFile(filePath, 'utf8', (err, file) => {
                 if (err) return next(err)
                 var parsed = matter(file)
-                var fm = parsed.data
+                var frontmatter = parsed.data
 
                 var length = parsed.content.match(/(\w+)/g).length;
 
-                var { type, date, slug, type, linkTitle, linkDesc } = fm
+                var { type, date, slug, type, linkTitle, linkDesc } = frontmatter
                 // end up with an object of
                 // { typeA: [{ slug, linkTitle, linkDesc }] }
 
@@ -145,8 +145,8 @@ function buildProjects () {
             fs.readFile(filePath, 'utf8', (err, file) => {
                 if (err) throw err
                 var parsed = matter(file)
-                var fm = parsed.data
-                var { date, slug, type, linkDesc, linkTitle } = fm
+                var frontmatter = parsed.data
+                var { date, slug, type, linkDesc, linkTitle } = frontmatter
 
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
