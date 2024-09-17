@@ -16,7 +16,7 @@ In this scenario, you have one device, generally the smartphone, that is always 
 
 If you want to use another device, the smartphone needs to sign a message authorizing the other device. This works for the public library scenario. You can create a new auth token with a limited lifespan.
 
-This is interesting because this is a totally new UX for authentication. You would want to provide a way to recover your account of course, in the event that you lose your phone. This generally means encouraging adding a second device that is authenticated. Or you could create another keypair, and store it somewhere safe.
+This is interesting because this is a totally new UX for authentication. You would want to provide a way to recover your account of course, in the event that you lose your phone. This generally means encouraging the user to add a second device that is authenticated. Or you could create another keypair, and store it somewhere safe.
 
 This is different than the standard model, where we assume you are on a shared device. That's how unix / contemporary systems work. We assume you are on a shared terminal, so you need some way to prove your identity. Because every user has 1 smartphone that is not shared, that works as verification of ID.
 
