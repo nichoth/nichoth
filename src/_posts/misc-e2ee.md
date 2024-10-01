@@ -37,3 +37,5 @@ Somehow our simple todo list has turned into an investigation of personal privac
 We want ✨ **end to end encryption** ✨.
 
 This way we can use traditional methods of sync, like for example a server that stores data in a database. The data we are saving, though, will be just an opaque string. It is only usable if you can decrypt it, and, because this is encrypted end to end, we (the user) are the only person who can decrypt it.
+
+[Read more about how this works](https://github.com/nichoth/level-todo?tab=readme-ov-file#e2e-encryption).
