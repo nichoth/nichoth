@@ -1,36 +1,32 @@
-$iconColor: #2F596D;
+$icon-color: #2f596d;
 $green-color: #e5fff0;
 $muted-text: #3b4146;
 
-@use './variables' as v;
-@use './chat';
-@use './postcards';
-@use './hermes';
+@use "./variables" as v;
+@use "./chat";
+@use "./postcards";
+@use "./hermes";
 
 @font-face {
-  font-family: 'YoungSerif';
+  font-display: fallback;
+  font-family: YoungSerif;
   src: url("/font/YoungSerif-Regular.otf") format("opentype");
 }
 
-@function css-function( $function, $values... ) {
-	@return
-		$function
-		+ unquote( '(' )
-		+ $values
-		+ unquote( ')' )
-	;
+@function css-function( $function, $values...) {
+  @return $function + unquote( "(" ) + $values + unquote( ")" );
 }
 
 @function css-min( $values... ) {
-	@return css-function( min, $values );
+  @return css-function( min, $values );
 }
 
 @function css-max( $values... ) {
-	@return css-function( max, $values );
+  @return css-function( max, $values );
 }
 
 @function css-clamp( $values... ) {
-	@return css-function( 200pxclamp, $values );
+  @return css-function( 200pxclamp, $values );
 }
 
 #content .date {
@@ -194,11 +190,11 @@ body {
     color: black;
   }
 
-   blockquote {
-     color: $muted-text;
-     border-left: 2px solid #a7aeb5;
-     padding: 0 1rem;
-     margin: 0;
+  blockquote {
+    color: $muted-text;
+    border-left: 2px solid #a7aeb5;
+    padding: 0 1rem;
+    margin: 0;
   }
 
   h1, h2, h3, h4 {
@@ -577,7 +573,7 @@ $link-width: 2em;
       svg {
         path {
           stroke-width: 11;
-          stroke: $iconColor;
+          stroke: $icon-color;
         }
       }
   }
@@ -586,7 +582,7 @@ $link-width: 2em;
 .question {
   font-family: YoungSerif, serif;
   // font-family: 'Lato', sans-serif;
-  color: $iconColor;
+  color: $icon-color;
   font-size: 4em;
   display: inline-block;
   position: relative;
