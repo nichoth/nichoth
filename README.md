@@ -7,10 +7,6 @@ My website, from the distant past, that i have no memory of
 ---------------------
 
 
-## WIP
-* [Half Light](https://github.com/ssc-half-light/)
-
-
 ## templates
 
 __Links to various templates__
@@ -49,9 +45,9 @@ npm run deploy
 
 ## chat
 
-make a file `src/_chat.html`
-copy the file to `public/chat/index.html`
-`_chat.html` should have a link like `/chat/chat.js`
+1. make a file `src/_chat.html`
+2. copy the file to `public/chat/index.html`
+3. `_chat.html` should have a link like `/chat/chat.js`
 
 `src="/chat/chat.js"`
 
