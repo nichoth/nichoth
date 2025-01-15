@@ -31,7 +31,7 @@ A list of ssb-related docs
 
 [historical issue about ipfs as storage](https://github.com/ssbc/ssb-server/issues/454#issuecomment-350405818)
 
-[my post about lipma links](https://nichoth.com/projects/dev-diary-lipma/)
+[my post about lipmaa links](https://nichoth.com/projects/dev-diary-lipma/)
 
 [AljoschaMeyer/magma](https://github.com/AljoschaMeyer/magma)
 

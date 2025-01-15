@@ -1,8 +1,8 @@
 ---
 
-linkTitle: lipma links
+linkTitle: lipmaa links
 linkDesc: Getting lost in merkle forests
-slug: dev-diary-lipma
+slug: dev-diary-lipmaa
 type: dev-diary
 date: 10-19-2021
 
@@ -17,11 +17,11 @@ date: 10-19-2021
 * [p2panda/handbook](https://github.com/p2panda/handbook)
 * [skip ratchet](https://fission.codes/blog/introducing-the-skip-ratchet/)
 
-## lipma links
+## lipmaa links
 
-What are 'lipma links'?
+What are 'lipmaa links'?
 
-![Lipma graph](/img/graph.svg "Graph")
+![Lipmaa graph](/img/graph.svg "Graph")
 
 > Tldr: instead of needing every post to verify a chain you can skip through the chain quickly getting only key nodes which link back (following a well defined algorithm)
 
