@@ -44,7 +44,7 @@
     "budo": "^11.8.4",
     "concurrently": "^5.3.0",
     "ecstatic": "^4.1.4",
-    "esbuild": "0.19.4",
+    "esbuild": "0.25.0",
     "esmify": "^2.1.1",
     "glob": "^7.1.7",
     "gray-matter": "^4.0.3",
