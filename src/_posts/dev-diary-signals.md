@@ -22,7 +22,7 @@ This gives you more efficient state updates, because any intermediate nodes in t
 
 But, this seemingly erases the benefit of a framework like React &mdash; a unidirectional data flow, where application state travels from the top downward.
 
-Signals are essentially two-way data binding, aka, the thing that made client side apps difficult in the past. In my first try I hit traditional problems &mdash; obtuse state machines that are hard to reason about, and infinite rendering loops, where a state update will trigger a re-render that triggers a state update, etc...
+Signals are essentially two-way data binding, aka, the thing that made client side apps difficult in the past. In my first try I hit traditional problems &mdash; obtuse state machines that are hard to reason about, and infinite rendering loops, where a state update will trigger a re-render that triggers a state update, etc&hellip;
 
 At first I tried just updating a signal from anywhere in the app. This caused tricky behavior and hard to track down bugs.
 
