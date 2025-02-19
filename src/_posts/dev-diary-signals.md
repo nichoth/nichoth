@@ -31,6 +31,11 @@ At first I tried just updating a signal from anywhere in the app. This caused tr
 ## events
 I couldn't use redux though. It has some things I don't need, and imposes a constraint that your update functions need to be synchronous, if I recall correctly. What I really wanted was more like an event emitter. But we are in a browser, so there is no `require(events)`. In the past I had used [nanobus](https://github.com/choojs/nanobus), and that worked well, but `nanobus` is not quite nano enough. It has some things that I don't need, and is missing some things I do want.
 
-Because the view is organized in a tree (the DOM), we can create all event names at compile time, and then we can see immediately if we listen for an event that does not exist. That's the premise of [@nichoth/events](https://github.com/nichoth/events). It's a minimal event bus, with functions that help to [create a namespaced tree of event names](https://github.com/nichoth/events#create-namespaced-events).
+~~Because the view is organized in a tree (the DOM), we can create all event names at compile time, and then we can see immediately if we listen for an event that does not exist. That's the premise of [@nichoth/events](https://github.com/nichoth/events). It's a minimal event bus, with functions that help to [create a namespaced tree of event names](https://github.com/nichoth/events#create-namespaced-events).~~
+
+_**Update**, Feb, 2025_
+Luckily there is an abundance of event emitters in the world of Javascript.
+These days I would recommend either [nanoevents](https://github.com/ai/nanoevents)
+or [mitt](https://github.com/developit/mitt).
 
 We know at compile time what the possible events may be, and we can pass in the set of all possible event names, and throw an error if you subscribe to an event not in the list. So all you need to do is start the app, and it will immediately explode if you listen for a bad event name.
