@@ -6,7 +6,7 @@ My website, from the distant past, that i have no memory of
 
 ---------------------
 
-[![nichoth's GitHub stats](https://github-readme-stats.vercel.app/api?username=nichoth)](https://github.com/nichoth/github-readme-stats)
+[![nichoth's GitHub stats](https://github-readme-stats.vercel.app/api?username=nichoth&show_icons=true&theme=transparent)](https://github.com/nichoth/github-readme-stats)
 
 
 ## templates
