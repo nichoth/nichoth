@@ -37,12 +37,6 @@ postcardJson.forEach(card => {
             _appendHtml: `
                 <img src="${card.path}">
                 <p>${card.desc || card.title}</p>
-                ${card.seaLink ? 
-                    `<p>
-                        <a href="${card.seaLink}">see this on open sea</a>
-                    </p>` :
-                    ''
-                }
             `
         }
     })
