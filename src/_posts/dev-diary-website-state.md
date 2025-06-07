@@ -3,7 +3,7 @@
 linkTitle: State of the Website
 linkDesc: How to do websites?
 slug: state-of-the-website
-date: 2025-06-07
+date: 06-07-2025
 type: dev-diary
 
 ---
@@ -55,8 +55,8 @@ and the HTML is created from JS, either on the server or in the client.
 This means our server needs to be *a lot smarter*. Not the server, necessarily,
 but the build process, at least, now depends on some very smart JS.
 
-That's the part I'm note crazy about. Now we are relying on very smart
-(aka brittle) JS to do what we used to do by hand -- splitting bundles,
+That's the part I'm not crazy about. Now we are relying on very smart
+(aka brittle) JS to do what we used to do by hand &mdash; splitting bundles,
 attaching event listeners, linking files to pages. We are trusting a compiler to
 do the things that are part of *the web* as a platform.
 
@@ -83,7 +83,7 @@ the SSR version? It's a bit controversial, for a few reasons.
    *vintage react*, was a dramatic change. It made a huge cut to the pain 
    of client-side development. Instead of spending all day moving DOM nodes
    around, you could focus just on your application logic, the things
-   that matter. Classic react used something I already know -- HTML, so
+   that matter. Classic react used something I already know &mdash; HTML, so
    there is no investment of time learning a new pattern.
 2. Is the end result better, or at least as good? Probably not. One thing about
    client-side react is that *it worked*. It just did its
