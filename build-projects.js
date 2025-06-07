@@ -113,7 +113,7 @@ function buildProjects () {
                 var parsed = matter(file)
                 var frontmatter = parsed.data
 
-                var length = parsed.content.match(/(\w+)/g).length;
+                var length = parsed.content.match(/(\w+)/g)?.length || 0;
 
                 var { type, date, slug, type, linkTitle, linkDesc } = frontmatter
                 // end up with an object of
