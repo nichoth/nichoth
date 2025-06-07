@@ -22,8 +22,9 @@
     "deploy": "npm run build && surge public"
   },
   "dependencies": {
-    "@oddjs/odd": "^0.37.2",
+    "@nichoth/debug": "^0.6.7",
     "@nichoth/tonic": "^15.1.2",
+    "@oddjs/odd": "^0.37.2",
     "@ssc-half-light/envelope": "^0.1.16",
     "@ssc-half-light/identity": "^0.0.12",
     "@ssc-half-light/message": "^0.5.8",
