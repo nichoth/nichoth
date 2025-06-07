@@ -53,10 +53,11 @@ imperative code needed to link HTML to JS and CSS.
 
 ### Servers
 
-Now we have a compiled bundle of code that attaches the event listeners,
-and the HTML is created from JS, either on the server or in the client.
-This means our server needs to be *a lot smarter*. Not the server, necessarily,
-but the build process, at least, now depends on some very smart JS.
+So let's say we do this with React. Now we have a compiled bundle of code that
+attaches the event listeners, and the HTML is created from JS, either on the
+server or in the client.  This means our server needs to be *a lot smarter*. Not
+the server, necessarily, but the build process, at least, now depends on some
+very smart JS.
 
 That's the part I'm not crazy about. Now we are relying on very smart
 (aka brittle) JS to do what we used to do by hand &mdash; splitting bundles,
@@ -70,15 +71,15 @@ After dipping my toe into updating the GUI from JS events again, like in
 2012... I get it. *It is painful* to update the DOM manually, imperatively.
 
 This brings us to [*islands architecture*](https://jasonformat.com/islands-architecture/),
-which is where we try to keep the good parts of the react pattern, and also have
-that imperative, hand-rolled style for factoring and linking
+which is where we try to keep the good parts of the react pattern, and also use
+the imperative, hand-rolled style for factoring and linking
 your dependencies.
 
 ### The Future
 
 My memory of when React was first released is that it was a huge revelation,
 a new way to do the web that was universally loved by developers. What about
-the SSR version? It's a bit controversial, for a few reasons.
+the SSR version? It's a bit controversial.
 
 1. It takes a non-trivial investment of time for a developer to learn to use it.
    If I have to invest a chunk of time, then why not do what I already know,
@@ -91,7 +92,6 @@ the SSR version? It's a bit controversial, for a few reasons.
 2. Is the end result better, or at least as good? Probably not. One thing about
    client-side react is that *it worked*. It just did its
    thing and you didn't have to think about it most of the time. The amount of
-   logic, [context specific logic](https://www.zachleat.com/web/webc-in-eleventy/)
+   logic, [context specific logic](https://www.zachleat.com/web/webc-in-eleventy/),
    that goes into server-side rendering makes it a much harder problem. Is it
-   possible to solve this is a mechanical way? We are still waiting for
-   an answer.
+   possible to solve this is a mechanical way?
