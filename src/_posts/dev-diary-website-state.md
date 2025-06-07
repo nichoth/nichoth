@@ -10,6 +10,9 @@ type: dev-diary
 
 # development diary
 
+Hydration, server-side rendering, client-side apps, single-page apps&hellip;
+so many choices&hellip;
+
 ## State of the Website
 
 At the end of the day, we want to make an HTTP request for exactly
