@@ -29,6 +29,10 @@ $muted-text: #3b4146;
   @return css-function( 200pxclamp, $values );
 }
 
+body {
+  transition: opacity 0.2s;
+}
+
 #content .date {
   color: gray;
   font-family: YoungSerif, serif;

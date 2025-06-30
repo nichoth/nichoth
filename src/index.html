@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      opacity: 0;
+    }
+  </style>
+
   <link rel="stylesheet" href="/style.css">
+
+  <noscript>
+    <style>
+      body {
+        opacity: 1;  /* FOUC */
+      }
+    </style>
+  </noscript>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,6 +78,7 @@
   <!-- used in the animate.js file -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.js"></script>
   <script src="/animate.js"></script>
+  <script src="/index.js"></script>  <!-- fouc -->
 </body>
 </html>
 
