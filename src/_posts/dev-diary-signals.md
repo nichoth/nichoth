@@ -23,7 +23,7 @@ But &mdash; this is the tricky part &mdash; you use
 to create a subscription wherever you access the `.value` property.
 
 This gives you more efficient state updates, because any intermediate nodes
-in the view do *not* need to re-render. Since we have just mutated a value,
+in the view do *not need to re-render*. Since we have just mutated a value,
 the object reference stays the same, so we don't re-render our entire DOM tree.
 The nodes that consume the signal, though, do re-render when it changes,
 because of the `get` and `set` traps.
