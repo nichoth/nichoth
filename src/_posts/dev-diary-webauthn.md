@@ -12,7 +12,7 @@ date: 9-8-2024
 
 ## Using the `webauthn` API to keep a keypair secret.
 
-This is my first dive into the `webauthn` API &mdash; [@bicycle-codes/webauthn-keys](https://github.com/bicycle-codes/webauthn-keys/)
+This is my first dive into the `webauthn` API &mdash; [@substrate-system/webauthn-keys](https://github.com/substrate-system/webauthn-keys)
 
 I'm kind of happy about this one. It gets around the issue with the `webcrypto` API not yet supporting ECC keys in all browsers. I was using RSA for everything in [the identity module](https://github.com/bicycle-codes/identity), for example.
 
