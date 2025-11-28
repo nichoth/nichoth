@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/multikey/v1"
+    ],
+    "id": "did:web:nichoth.com",
+    "alsoKnownAs": [
+        "at://nichoth.com",
+        "https://github.com/nichoth/"
+    ],
+    "verificationMethod": [
+        {
+            "id": "did:web:nichoth.com#main-key",
+            "type": "Multikey",
+            "controller": "did:web:nichoth.com",
+            "publicKeyMultibase": "z6Mkmy1ak2zS6hPohyNnPwMUDqpC3WE8wTR3Fcz5esUoCFNH"
+        }
+    ],
+    "authentication": ["#main-key"],
+    "assertionMethod": ["#main-key"]
+}
