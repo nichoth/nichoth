@@ -42,7 +42,50 @@ npm run build
 npm start
 ```
 
-## deploy to surge
-```sh
-npm run deploy
+## Notes
+
+### DID
+
+See [did.json](./src/_well-known/did.json).
+
+The key format is [Multikey](https://www.w3.org/TR/cid-1.0/#Multikey),
+a generic, self-describing,
+[multicodec-based](https://www.w3.org/TR/cid-1.0/#multibase-0)
+public key encoding.
+
+```js
+// ...
+"verificationMethod": [
+    {
+        "id": "did:web:nichoth.com#main-key",
+        "type": "Multikey",  // < -- this
+        "controller": "did:web:nichoth.com",
+        "publicKeyMultibase": "z6Mkmy1ak2zS6hPohyNnPwMUDqpC3WE8wTR3Fcz5esUoCFNH"
+    }
+],
+// ...
+```
+
+To encode something as a multikey:
+
+```js
+import { bases } from "multiformats/bases/base58"
+import {
+  encode as multibaseEncode,
+  decode as multibaseDecode
+  } from "multiformats/bases/base58"
+import * as varint from "multiformats/src/varint"
+import * as multicodec from "multicodec"
+
+// Suppose you have a raw public-key Buffer/Uint8Array
+const rawKeyBytes = /* ... */
+
+// Add the proper multicodec prefix for, say, ed25519-pub (via multicodec)
+const prefixed = multicodec.addPrefix('ed25519-pub', rawKeyBytes)
+
+// Then multibase-encode it (e.g. base58btc)
+const mb = bases.base58.encoder.encode(prefixed)
+
+// This yields something like "z6Mk…", same style as in the DID doc
+console.log(mb)
 ```
