@@ -4,7 +4,7 @@ linkTitle: Signals
 linkDesc: What it's like developing with `@preact/signals`
 slug: signals
 type: dev-diary
-date: 9-20-2023
+date: 2025-09-20
 
 ---
 

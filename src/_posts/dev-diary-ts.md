@@ -3,8 +3,8 @@
 linkTitle: typescript
 linkDesc: Finally trying typescript
 slug: dev-diary-ts
-date: 9-8-2021
 type: dev-diary
+date: 2021-09-08
 
 ---
 

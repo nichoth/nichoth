@@ -3,7 +3,7 @@ linkTitle: ssc-flume
 linkDesc: Writing about ssc, merkle-DAGs & databases
 slug: dev-diary-ssc-flume
 type: dev-diary
-date: 6-7-2021
+date: 2021-06-07
 ---
 
 # development diary

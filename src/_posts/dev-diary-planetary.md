@@ -4,7 +4,7 @@ linkTitle: development diary — planetary
 linkDesc: My notes on making another ssb client
 slug: dev-diary-planetary
 type: dev-diary
-date: 11-10-2021
+date: 2021-11-10
 
 ---
 

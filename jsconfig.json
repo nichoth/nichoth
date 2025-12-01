@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "noImplicitAny": false,
+    "noEmit": true,
+    "module": "commonjs",
+    "strict": false,
+    "types": ["node"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
+}

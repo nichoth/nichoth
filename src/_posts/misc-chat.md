@@ -4,7 +4,7 @@ linkTitle: swarmchat
 linkDesc: Trying `webrtc-swarm` and `signalhub` for p2p
 slug: chatting
 type: miscellany
-date: 1-1-2022
+date: 2022-01-01
 
 ---
 

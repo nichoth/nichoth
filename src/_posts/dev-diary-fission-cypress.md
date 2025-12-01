@@ -4,7 +4,7 @@ linkTitle: development diary — fission & cypress
 linkDesc: Using cypress
 slug: dev-diary-fission-cypress
 type: dev-diary
-date: 10-16-2021
+date: 2021-10-16
 
 ---
 

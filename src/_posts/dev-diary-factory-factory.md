@@ -4,7 +4,7 @@ linkTitle: development diary — the factory factory factory
 linkDesc: Stop making factory factory factories
 slug: dev-diary-factory
 type: dev-diary
-date: 10-25-2023
+date: 2023-10-25
 
 ---
 

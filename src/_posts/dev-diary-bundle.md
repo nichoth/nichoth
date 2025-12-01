@@ -4,7 +4,7 @@ linkTitle: development diary — bundling
 linkDesc: My notes on bundling things
 slug: dev-diary-bundle
 type: dev-diary
-date: 10-20-2021
+date: 2021-10-20
 
 ---
 

@@ -4,7 +4,7 @@ linkTitle: development diary — ssc round two
 linkDesc: More writing about ssc
 slug: dev-diary-ssc-two
 type: dev-diary
-date: 4-6-2022
+date: 2022-04-06
 
 ---
 

@@ -4,7 +4,7 @@ linkTitle: ssb permissions
 linkDesc: A bit of info about secret-stack permissions
 slug: ssb-perms
 type: miscellany
-date: 12-28-2021
+date: 2021-12-28
 
 ---
 

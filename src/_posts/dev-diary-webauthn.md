@@ -4,7 +4,7 @@ linkTitle: development diary &mdash; webauthn
 linkDesc: A first look at `webauthn`
 slug: dev-diary-webauthn
 type: dev-diary
-date: 9-8-2024
+date: 2024-09-08
 
 ---
 

@@ -4,7 +4,7 @@ linkTitle: development diary — ssc edition
 linkDesc: What happened during the last 2 years
 slug: dev-diary-ssc
 type: dev-diary
-date: 5-30-2021
+date: 2021-05-30
 
 ---
 

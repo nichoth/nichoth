@@ -4,7 +4,7 @@ linkTitle: development diary — UCAN
 linkDesc: UCANs
 slug: dev-diary-ucan
 type: dev-diary
-date: 10-16-2021
+date: 2021-10-16
 
 ---
 

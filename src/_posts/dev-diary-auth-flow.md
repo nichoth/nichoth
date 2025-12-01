@@ -4,7 +4,7 @@ linkTitle: development diary &mdash; authentication
 linkDesc: New hardware, new authentication
 slug: dev-diary-auth
 type: dev-diary
-date: 09-17-2024
+date: 2024-09-17
 
 ---
 

@@ -1,7 +1,5 @@
-@use './variables' as v;
-
 body.single-postcard {
-    background-color: v.$bgc;
+    background-color: var(--bgc);
 
     #content {
         margin-bottom: 6rem;
@@ -19,7 +17,7 @@ body.single-postcard {
 }
 
 body.postcards {
-    background-color: v.$bgc;
+    background-color: var(--bgc);
     margin-bottom: 8rem;
 
     #things-you-find {
@@ -70,10 +68,10 @@ body.postcards {
 
             a {
                 color: black;
-                // &:hover {
-                //     text-decoration: solid;
-                //     text-decoration-color: cyan;
-                // }
+                /* &:hover {
+                    text-decoration: solid;
+                    text-decoration-color: cyan;
+                } */
             }
 
             p {
