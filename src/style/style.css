@@ -4,8 +4,6 @@
 @import url("./_hermes.css");
 @import url("../../node_modules/@substrate-system/a11y/dist/visually-hidden.css");
 
-/* stylelint-disable */
-
 :root {
   --icon-color: #2f596d;
   --green-color: #e5fff0;
@@ -29,26 +27,30 @@ body {
 }
 
 .discussion-fission-ipfs {
-    p {
-        font-size: 1rem;
-        line-height: initial;
-    }
-    h2 {
-        font-size: 1rem;
-        margin-bottom: 0;
+  & p {
+    font-size: 1rem;
+    line-height: initial;
+  }
 
-        & ~ p {
-            margin-top: 0;
-        }
+  & h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+
+    & ~ p {
+      margin-top: 0;
     }
+  }
 }
 
 /* the special hr */
-body, body.the-log, .development-diary, body.examples {
+body,
+body.the-log,
+.development-diary,
+body.examples {
   font-weight: normal;
   margin-bottom: 6rem;
 
-  hr {
+  & hr {
     margin: 2em 0;
     border: none;
 
@@ -63,19 +65,19 @@ body, body.the-log, .development-diary, body.examples {
     }
   }
 
-  h2, h3 {
+  & h2, & h3 {
     font-family: YoungSerif, serif;
     font-weight: normal;
   }
 
-  #content {
+  & #content {
     padding: 0 1rem;
   }
 
 }
 
 body.the-log {
-  #content {
+  & #content {
     padding: 1em;
   }
 }
@@ -100,11 +102,11 @@ body.the-log {
 body.detritus-single-image {
     background-color: #a2a0a0;
 
-    #content {
+    & #content {
       width: 100vw;
       height: 100vh;
       padding: 1em;
-      img {
+      & img {
         max-width: 100%;
         max-height: 100%;
       }
@@ -112,7 +114,7 @@ body.detritus-single-image {
 }
 
 #content.notebooks {
-  ul {
+  & ul {
     list-style-type: none;
 
     padding: 1em;
@@ -123,11 +125,11 @@ body.detritus-single-image {
     grid-template-rows: auto;
     align-items: stretch;
 
-    li {
+    & li {
       text-align: center;
     }
 
-    img {
+    & img {
       max-width: 100%;
     }
   }
@@ -139,7 +141,7 @@ body.detritus-single-image {
   max-height: 100vh;
   text-align: center;
 
-  img {
+  & img {
     max-width: 100%;
     max-height: 100%;
   }
@@ -157,18 +159,18 @@ body.detritus-single-image {
 .post {
   height: 88%;
 
-  a {
+  & a {
     display: block;
     height: 100%;
   }
 
-  img {
+  & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .post-text {
+  & .post-text {
     text-align: left;
     margin-top: 0.2em;
   }
@@ -179,53 +181,53 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 400;
 
-  .anchorjs-link {
+  & .anchorjs-link {
     color: black;
   }
 
-  blockquote {
+  & blockquote {
     color: var(--muted-text);
     border-left: 2px solid #a7aeb5;
     padding: 0 1rem;
     margin: 0;
   }
 
-  h1, h2, h3, h4 {
+  & h1, & h2, & h3, & h4 {
     font-family: YoungSerif, serif;
     font-weight: normal;
   }
 
-  img.thumbnail {
+  & img.thumbnail {
     max-width: 20em;
   }
 
 
-  .site-nav {
-    a {
+  & .site-nav {
+    & a {
       &:hover {
         text-decoration: none;
       }
     }
   }
 
-  a {
+  & a {
     &:hover {
       text-decoration: underline;
     }
   }
 
-  ul {
+  & ul {
       line-height: 1.6rem;
   }
-   li {
+   & li {
        margin-bottom: 0.2rem;
    }
 
-  code {
+  & code {
     font-weight: 400;
   }
 
-  h1.who-are-you {
+  & h1.who-are-you {
     margin: 0 auto;
     margin-bottom: 1rem;
     color: #0071BC;
@@ -235,11 +237,11 @@ body {
   }
 
   &.miscellany {
-    ul {
+    & ul {
       line-height: 1.8rem!important;
     }
 
-    p {
+    & p {
       line-height: 1.8rem!important;
     }
   }
@@ -251,23 +253,23 @@ body {
     font-family: Raleway, sans-serif;
     line-height: 2rem;
 
-    h1 {
+    & h1 {
       font-size: 1.5rem;
     }
 
-    h2 {
+    & h2 {
       font-size: 1.2rem;
     }
 
-    #content {
+    & #content {
       margin: 0 auto;
       max-width: 40rem;
     }
 
-    p {
+    & p {
       text-wrap: pretty;
 
-      img {
+      & img {
           width: 100%;
       }
     }
@@ -276,13 +278,13 @@ body {
   &.flobz {
     margin: 1rem;
 
-    #content {
+    & #content {
       margin: 0 auto;
       max-width: 40rem;
       margin-left: 2rem;
     }
 
-    blockquote {
+    & blockquote {
       padding: 0 1em;
       color: gray;
       border-left: .25em solid #dfe2e5;
@@ -294,8 +296,8 @@ body {
     background-color: var(--bgc);
     font-family: YoungSerif, serif;
 
-    .project {
-      time {
+    & .project {
+      & time {
         display: block;
         text-align: left;
         opacity: 0.6;
@@ -304,17 +306,17 @@ body {
       font-weight: 400;
     }
 
-    .site-nav {
+    & .site-nav {
       margin-bottom: -4rem;
 
-      a {
+      & a {
         &:hover {
           text-decoration: none;
         }
       }
     }
 
-    h1 {
+    & h1 {
       font-size: 2.5rem;
       text-align: center;
       margin-top: 0;
@@ -326,7 +328,7 @@ body {
       font-weight: normal;
     } */
 
-    #content {
+    & #content {
       padding: 3rem;
       padding-top: 0;
     }
@@ -335,13 +337,13 @@ body {
   &.notebooks {
     background-color: #a2a0a0;
 
-    #content {
+    & #content {
         padding: 1em;
     }
   }
 
   &.list {
-      #content {
+      & #content {
           padding: 1em;
       }
   }
@@ -360,7 +362,7 @@ body {
     background-color: black;
     height: 200vh;
 
-    .ghost-box-front {
+    & .ghost-box-front {
       top: -50px;
       z-index: 3;
       position: fixed;
@@ -368,7 +370,7 @@ body {
       left: 30%;
     }
 
-    .ghost-slice {
+    & .ghost-slice {
       top: 145px;
       left: 60px;
       width: 120px;
@@ -377,7 +379,7 @@ body {
       left: 40%;
     }
 
-    .ghost-box-back {
+    & .ghost-box-back {
       left: 30%;
       width: 300px;
       position: fixed;
@@ -402,14 +404,14 @@ body {
   font-size: 1.6rem;
   padding: 0.2em .4rem;
 
-  a {
+  & a {
     &.active {
       background-image: radial-gradient(red, transparent);
     }
   }
 
-  .home-link {
-    img {
+  & .home-link {
+    & img {
       width: var(--link-width);
     }
   }
@@ -427,21 +429,21 @@ body {
   display: flex;
   justify-content: space-between;
 
-  li {
+  & li {
       margin: 0 1rem;
 
       /* not sure what the interval is for the colors, but this is fine */
-      a {
+      & a {
         text-decoration: none;
         color: #1ABBA7;
         transition: color 0.2s;
       }
 
-      &:nth-child(2n) a {
+      &:nth-child(2n) & a {
         color: #4fa8e0
       }
 
-      &:nth-child(3n) a {
+      &:nth-child(3n) & a {
         color: #ff7795;
       }
 
@@ -511,7 +513,7 @@ body {
     transition: all 0.6s;
   }
 
-  svg {
+  & svg {
     width: 100%;
     height: 100%;
 
@@ -522,23 +524,23 @@ body {
 
   &.github {
     &:hover {
-      img {
+      & img {
         opacity: 1;
         transform: translate(0.2rem, .1rem);
       }
     }
 
-    img {
+    & img {
         filter: invert(24%) sepia(98%) saturate(1626%) hue-rotate(184deg) brightness(99%) contrast(101%);
         width: 3.4rem;
         max-height: 100%;
         transition: all 0.6s;
     }
 
-    svg {
+    & svg {
       width: 3.4rem;
       transform: translate(-3.4rem, 0.1rem);
-      circle {
+      & circle {
         opacity: 0.6;
       }
     }
@@ -631,19 +633,19 @@ body {
   top: 0;
   padding: 4em 25%;
 
-  a.active {
+  & a.active {
     color: black;
   }
 
-  ul {
+  & ul {
     list-style: none;
     padding: 0;
 
-    li {
+    & li {
       margin-bottom: 0.5em;
       font-size: 2em;
 
-      a {
+      & a {
         &:hover {
           text-decoration: underline;
         }
@@ -651,12 +653,12 @@ body {
     }
   }
 
-  hr {
+  & hr {
     margin: 1em 0;
     margin-top: 0;
   }
 
-  .close-btn {
+  & .close-btn {
     background-color: transparent;
     border: none;
     font-weight: 100;
@@ -677,16 +679,16 @@ button {
 .development-diary {
   margin-top: 4em;
 
-  hr {
+  & hr {
     margin: 2em 0;
   }
 
-  ul {
+  & ul {
     list-style: none;
     width: 80vw;
   }
 
-  li.post-bit {
+  & li.post-bit {
     /* box-shadow: inset 0 0 25px #fba3a3; */
     box-shadow: inset 0 0 18px black;
     white-space: nowrap;
@@ -696,7 +698,7 @@ button {
 
     padding: 1em;
 
-    p {
+    & p {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -711,7 +713,7 @@ button {
 }
 
 body.examples {
-  .quote-example {
+  & .quote-example {
     /* display: inline-block; */
     display: flex;
     max-width: 20rem;
@@ -725,16 +727,16 @@ body.examples {
     margin-top: 4rem;
     padding: 2rem 4rem;
 
-    .quotation-mark-container {
+    & .quotation-mark-container {
       width: 3rem;
       display: inline-block;
       margin-right: 0.4rem;
-      img {
+      & img {
         width: 100%;
       }
     }
 
-    p.quote-text {
+    & p.quote-text {
       background-clip: text;
       display: inline-block;
       background: linear-gradient(45deg, rgb(248, 106, 0),
@@ -747,15 +749,15 @@ body.examples {
     }
   }
 
-  #content {
+  & #content {
     padding: 1em;
   }
 
-  h2 {
+  & h2 {
     display: block;
   }
 
-  .button {
+  & .button {
     display: inline-block;
     position: relative;
     padding: .5rem 1.25rem;
@@ -788,17 +790,17 @@ body.examples {
     }
   }
 
-  a.underline-link {
+  & a.underline-link {
     display: inline-block;
     margin-bottom: 1em;
     &:hover {
       text-decoration: none;
-      h2.underline {
+      & h2.underline {
         background-size: 100% 100%;
       }
     }
 
-    h2.underline {
+    & h2.underline {
       line-height: 1;
       background-image: linear-gradient(transparent 50%,var(--underline) 50%,var(--underline) 85%,transparent 85%,transparent 100%);
       background-repeat: no-repeat;
@@ -807,7 +809,7 @@ body.examples {
     }
   }
 
-  .words-example {
+  & .words-example {
       cursor: pointer;
       font-size: 3.4rem;
       color: transparent;
@@ -833,7 +835,7 @@ body.examples {
 body.diary-entry {
   background-color: var(--bgc);
 
-  #content {
+  & #content {
     padding: 1em;
     max-width: 44em;
     line-height: 1.4em;
@@ -854,12 +856,12 @@ body.diary-entry {
   align-items: stretch;
   margin-bottom: 3rem;
 
-  p {
+  & p {
     font-size: 0.9rem;
   }
 
-  > a {
-    h2, h3, p {
+  & > a {
+    & h2, & h3, & p {
       color: #572E08;
       transition: color 0.2s;
     }
@@ -877,7 +879,7 @@ body.diary-entry {
       left: -1rem
     }
 
-    .word-count {
+    & .word-count {
       text-align: left;
       position: relative;
       bottom: 0.5rem;
@@ -885,7 +887,7 @@ body.diary-entry {
       opacity: 0.6;
     }
 
-    > div.project {
+    & > div.project {
       width: 100%;
       display: inline-block;
       height: 98%;
@@ -908,13 +910,13 @@ body.diary-entry {
       border-color: #1f1002;
       color: #1f1002;
 
-      h3 {
+      & h3 {
         text-decoration: underline;
       }
-      h3, p {
+      & h3, & p {
         color: #1f1002;
       }
-      .word-count {
+      & .word-count {
         opacity: 1;
       }
     }
@@ -922,7 +924,7 @@ body.diary-entry {
 }
 
 .dev-diary {
-  #content {
+  & #content {
     margin: 1rem;
   }
 }
@@ -932,11 +934,11 @@ body.diary-entry {
   display: flex;
   margin-top: 0.5rem;
 
-  .site-nav {
+  & .site-nav {
     width: initial;
   }
 
-  h1 {
+  & h1 {
     width: 100%;
     /* padding-right: var(--link-width); */
     text-align: center;
@@ -959,7 +961,7 @@ body.diary-entry {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
-  li {
+  & li {
     margin-bottom: 0;
     background-clip: text;
     background: linear-gradient(45deg, #1800f8, #ff00f1);
@@ -967,7 +969,7 @@ body.diary-entry {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
-    a {
+    & a {
       &:hover {
         border-bottom: 3px solid black;
       }
