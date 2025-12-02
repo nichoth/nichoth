@@ -1,6 +1,6 @@
-const { spawn } = require('child_process');
-const { watch } = require('fs');
-const path = require('path');
+const { spawn } = require('node:child_process');
+const { watch } = require('node:fs');
+const path = require('node:path');
 
 const styleDir = path.join(__dirname, 'src', 'style');
 

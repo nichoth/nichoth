@@ -1,7 +1,8 @@
-@import "./_variables.css";
-@import "./_chat.css";
-@import "./_postcards.css";
-@import "./_hermes.css";
+@import url("./_variables.css");
+@import url("./_chat.css");
+@import url("./_postcards.css");
+@import url("./_hermes.css");
+@import url("../../node_modules/@substrate-system/a11y/dist/visually-hidden.css");
 
 /* stylelint-disable */
 
@@ -505,20 +506,21 @@ body {
 
 .icon-box {
   display: inline-block;
-  min-width: 40px;
-  /* margin: 0 1em; */
+
+  & * {
+    transition: all 0.6s;
+  }
 
   svg {
     width: 100%;
     height: 100%;
+
     &.icon-animate {
       position: absolute;
     }
   }
 
   &.github {
-    min-width: 120px;
-
     &:hover {
       img {
         opacity: 1;
@@ -543,26 +545,22 @@ body {
   }
 
   &.email {
-      width: 5rem;
-      margin-right: 5.2rem;
-      transform: translate(0.6rem, 0px);
+    width: 4.5rem;
+    margin-right: 56px;
 
-      #front-square {
-        transition: fill-opacity 0.2s;
+    & #back-square {
+      transform: translate(-5px, -5px);
+    }
+
+    &:hover {
+      & #front-square {
+        fill-opacity: 1;
       }
 
-      &:hover {
-        #front-square {
-          fill-opacity: 1;
-        }
+      & #front-square, & #front-v {
+        transform: translate(15px, 13px);
       }
-
-      svg {
-        path {
-          stroke-width: 11;
-          stroke: var(--icon-color);
-        }
-      }
+    }
   }
 }
 

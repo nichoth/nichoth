@@ -16,7 +16,7 @@
     "build-envelope": "npm run copy-envelope && node ./build-envelope.js && cp src/envelope/envelope.js public/envelope/envelope.js && postcss src/envelope/envelope.css --use postcss-nesting > public/envelope/envelope.css && esbuild --bundle --sourcemap=inline --format=esm ./node_modules/ky/distribution/index.js --outfile=./public/ky.js && esbuild ./node_modules/@ssc-half-light/request/src/index.ts --sourcemap=inline --bundle --format=esm --outfile=./public/request.js && esbuild ./node_modules/@ssc-half-light/envelope/src/index.ts --sourcemap=inline --bundle --format=esm --outfile=./public/envelope.js && esbuild ./node_modules/@ssc-half-light/message/src/index.ts --sourcemap=inline --bundle --format=esm --outfile=./public/message.js",
     "build-js": "esbuild ./src/index.ts --bundle > public/index.js",
     "copy-envelope": "mkdir -p public && cp ./node_modules/@nichoth/tonic/dist/tonic.min.js ./public && cp ./node_modules/@ssc-half-light/identity/dist/index.min.js ./public/identity.js && cp ./node_modules/@oddjs/odd/dist/index.esm.min.js public/odd.js",
-    "copy": "cp src/_static/* public && cp src/animate.js public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/",
+    "copy": "cp src/_static/* public && cp src/favicon.ico public && mkdir -p public/font && cp src/font/* public/font && cp src/index.html public && mkdir -p public/img && cp src/img/*.* public/img/",
     "well-known": "mkdir -p ./public/.well-known && cp ./src/_well-known/* ./public/.well-known",
     "lint": "stylelint src/style/*.css",
     "test": "playwright test",
