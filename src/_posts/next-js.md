@@ -4,7 +4,7 @@ linkTitle: next js
 linkDesc: Finally learning next js
 slug: dev-diary-nextjs
 type: dev-diary
-date: 4-26-2022
+date: 2022-04-26
 
 ---
 

@@ -100,11 +100,12 @@ function buildProjects () {
                 var isWeb = file.type === 'website'
                 var percent = (file.words / maxLength) * 100
 
-                console.log('**post**', file.slug)
-                console.log('**date**', date)
-                const dateString = new Intl.DateTimeFormat('en-US')
+                const dateString = new Intl.DateTimeFormat('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric'
+                })
                     .format(date)
-                    .replace(/\//g, "-")
 
                 acc += `<a href="/projects/${file.slug}"
                     ${(isLog || isWeb) ?
@@ -153,6 +154,14 @@ function buildProjects () {
                 var frontmatter = parsed.data
                 var { date, slug, type, linkDesc, linkTitle } = frontmatter
 
+                const dateString = date ?
+                    new Intl.DateTimeFormat('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                    }).format(date) :
+                    ''
+
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
                 // in here, write the file
@@ -186,19 +195,22 @@ function buildProjects () {
                         
                         <meta property="og:image"
                             content="https://nichoth.com/img/cube.png" />
+
+                        <link href="prism.css" rel="stylesheet" />
                         `
                     },
                     'title': {
                         _appendHtml: ' | ' + linkTitle
                     },
                     'body': {
-                        class: { append: slug + ' project ' + type}
+                        class: { append: slug + ' project ' + type},
+                        _appendHtml: '<script src="prism.js"></script>'
                     },
                     '#content': {
                         _appendHtml: `<div class="date">
                             ${date ? 
                                 `<time datetime="${date}">
-                                    ${date}
+                                    ${dateString}
                                 </time>` :
                                 ''
                             }

@@ -4,7 +4,7 @@ linkTitle: ucan demo
 linkDesc: A demonstration of using UCANs for an invitation-only web app
 slug: ucan-demo
 type: miscellany
-date: 2-19-2022
+date: 2022-02-19
 
 ---
 

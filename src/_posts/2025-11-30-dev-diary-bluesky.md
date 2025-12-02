@@ -8,37 +8,59 @@ date: 2025-11-30
 
 ---
 
-# Use Bluesky as a Backend
+# Bluesky as a Backend
 
-Consume the bluesky firehose, store relevant data, and serve a custom feed API.
+Good news everyone. It is possible to consume the bluesky firehose without
+spending money. This is a recipe about how to drink from the firehose,
+store relevant data, and serve a custom feed API for free.
+
+Why would you want to drink from a firehose? Using Bluesky as a backend means
+that we get a higher level of abstraction for our application code.
+Normally you have a database, and the database does not know or care about
+what's in it. That's what your application code is for. By using Bluesky's
+infrastructure, our app can deal directly with things like "posts" and social
+interactions &mdash; "likes" and "follows" &mdash; and we don't have to think
+about how to translate database records into those things.
+
 
 ## A Few Key Ingredients
 
-An important note about [fly.io](https://fly.io/) is that inbound
+### Fly.io
+
+On [fly.io](https://fly.io/), inbound
 bandwidth (ingress) is free. That means we can **drink from the firehose**
 **without spending any money**. They do charge for outbound bandwidth (egress)
 though, so if your app takes flight you might have to spend some money.
 
-Hmm&hellip; the blusky "firehose"&hellip; plus a database with state derived
-from the firehose&hellip; this feels oddly familiar&hellip; kind of
-like a [kappa architecture DB](https://en.wikipedia.org/wiki/Lambda_architecture#Kappa_architecture),
-as seen in [Apache Kafka](https://kafka.apache.org/11/documentation/streams/architecture).
-
-That's good news. Kappa/Kafka architecture is intuitive. I can think about it.
-
-
-## At the End of the Day
-
-And it works. This is something that is totally feasible to do right now.
-It is such nice hack that I've created two templates for it:
-
-* [firehose-consumer](https://github.com/bskyprism/firehose-consumer)
-* [feed-worker](https://github.com/bskyprism/feed-worker)
-  (the HTTP server/databse server)
+### Cloudflare D1
 
 The database in this example is
 [Cloudflare D1](https://developers.cloudflare.com/d1/), which also is free for
 a small amount of data.
+
+## Kappa Architecture
+
+Hmm<span class="hellip">&hellip;</span> the blusky
+"firehose"<span class="hellip">&hellip;</span> plus a
+database with state derived from the firehose<span>&hellip;</span> this feels
+oddly familiar&hellip; kind of like a
+[kappa architecture DB](https://en.wikipedia.org/wiki/Lambda_architecture#Kappa_architecture),
+as seen in
+[Apache Kafka](https://kafka.apache.org/11/documentation/streams/architecture).
+
+That's good news. Kappa/Kafka architecture is intuitive. This will make our
+backend easy to reason about.
+
+
+## At the End of the Day
+
+It works, too. This is something that is totally feasible to do right now.
+It is such nice hack that I've created two templates for it:
+
+* [firehose-consumer](https://github.com/bskyprism/firehose-consumer)
+  (fly.io websocket listener)
+* [feed-worker](https://github.com/bskyprism/feed-worker)
+  (the HTTP server/databse server)
 
 
 ## More Details
@@ -46,25 +68,26 @@ a small amount of data.
 ### The Firehose
 
 We need a way to tell our application's messages from other applications', like
-the Bluesky app. There are two possibilities here &mdash; use a
-[custom lexicon](https://atproto.com/guides/lexicon),
+the Bluesky app's messages for example. There are two possibilities
+here &mdash; use a [custom lexicon](https://atproto.com/guides/lexicon),
 or re-use an existing Bluesky lexicon and add a unique tag to our
-app's messages. Creating a new lexicon means that the Bluesky cient applications
-would not show our app's messages, whereas using a unique tag plus re-using the
+app's messages. Creating a new lexicon means that the Bluesky cient application
+would not show our app's messages. Using a unique tag plus re-using the
 existing
 [Bluesky post lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json) would result in our app's content being visible in
 the Bluesky app.
 
-For this example, we will use a unique tag. This has an added benefit that
-Bluesky's moderation policy does apply to our messages, since they
-are definitely visible withing Bluesky. This does mean that anyone can create
-a message for our application, but that is ok.
+For this example, we will use a unique tag. This has the benefit that
+Bluesky's moderation policy definitely does apply to our messages, since they
+are visible withing Bluesky. This does mean that anyone can create
+a message for our application, but that is ok. We can add additional validation
+as necessary.
 
 In [at protocol](https://atproto.com/), tags are both extracted from the post
-text, and can also be added programmatically, if you are using the API. We will
-do the latter. This means that the tags we use are *invisible* to the app
-users. They are just added by machines and read by machines, and that's good.
-It would just be noise if it were visible to users.
+text, and can also be added programmatically if you are using the API. We will
+do the latter, meaning that the tags we use are *invisible* to the app
+users. They are just added by machines and read by machines, and that's good
+becuase it would just be noise if it were visible.
 
 ```ts
 // browser
@@ -106,13 +129,13 @@ which will result in a new record written to our database.
 ## Register the Custom Feed
 
 So that's great. Now we have some infrastructure for saving our app's posts.
-Our frontend only uses the Bluesky `Agent`, so how does it know how to get
+Our frontend only uses the Bluesky `Agent`. How does the agent know how to get
 our app's posts, which have been indexed and stored in our DB?
 
 We need to [register our custom feed](https://docs.bsky.app/docs/starter-templates/custom-feeds#publishing-your-feed).
 That means calling a method on our `agent` with our custom feed's name. When
 someone views our app's custom feed, the client/browser calls Bluesky's
-app view backend, the Bluesky backend sees they are asking for your custom
+app view backend, the Bluesky backend sees they are asking for our custom
 feed, and then the Bluesky backend calls our server
 (the Cloudflare server). The Buesky backend gets a "feed skeleton" from our
 custom feed server, and then then hydrates the feed skeleton and returns it
@@ -126,5 +149,10 @@ at the end of the day Bluesky's servers are hosting the data.
 
 This is new. No other service works at that level &mdash; concerned with the
 *content* of your data. This is great, because now I do not have to think about
-moderation. I don't have to look at any disturbing images that people post,
-don't have to think about banning people, etc.
+moderation. I don't have to look at inappropriate images and
+think about how to ban people, etc.
+
+## See Also
+
+* [A Bluesky post about this](https://bsky.app/profile/nichoth.com/post/3m6scdzclm22p)
+* [Bluesky docs &mdash; custom feeds](https://docs.bsky.app/docs/starter-templates/custom-feeds#publishing-your-feed)

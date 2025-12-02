@@ -3,6 +3,8 @@
 @import "./_postcards.css";
 @import "./_hermes.css";
 
+/* stylelint-disable */
+
 :root {
   --icon-color: #2f596d;
   --green-color: #e5fff0;
@@ -220,16 +222,6 @@ body {
 
   code {
     font-weight: 400;
-  }
-
-  pre {
-      font-weight: 400;
-      line-height: initial;
-      padding: 1rem;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      border: 1px solid #330a0a4d;
-      overflow: scroll;
   }
 
   h1.who-are-you {
