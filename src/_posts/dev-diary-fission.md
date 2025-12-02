@@ -4,7 +4,7 @@ linkTitle: development diary — fission, ipfs
 linkDesc: What I've been doing with fission
 slug: dev-diary-fission
 type: dev-diary
-date: 10-15-2021
+date: 2021-10-15
 
 ---
 

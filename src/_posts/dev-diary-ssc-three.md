@@ -4,7 +4,7 @@ linkTitle: development diary — ssc again
 linkDesc: slow progress on ssc-server
 slug: dev-diary-ssc-three
 type: dev-diary
-date: 5-4-2022
+date: 2022-05-04
 
 ---
 

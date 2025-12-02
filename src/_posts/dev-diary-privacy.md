@@ -4,7 +4,7 @@ linkTitle: privacy
 linkDesc: Thinking about privacy
 slug: dev-diary-privacy
 type: dev-diary
-date: 1-1-2022
+date: 2022-01-01
 
 ---
 

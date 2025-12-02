@@ -4,7 +4,7 @@ linkTitle: fission chat
 linkDesc: copy-and-pasted notes via fission discord
 slug: fission-chat
 type: miscellany
-date: 12-4-2021
+date: 2021-12-04
 
 ---
 

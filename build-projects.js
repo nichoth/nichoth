@@ -19,13 +19,41 @@ function buildProjects () {
         var files = { 'dev-diary': [], 'website': [], 'miscellany': [] }
         var next = after(fileNames.length, writeProjectsHtml)
 
+        // map the fileNames to [{ slug, linkTitle, linkDescription }]
+        fileNames.forEach(function (filePath) {
+            // this get called once for each file in `_posts`
+
+            fs.readFile(filePath, 'utf8', (err, file) => {
+                if (err) return next(err)
+                var parsed = matter(file)
+                var frontmatter = parsed.data
+
+                var length = parsed.content.match(/(\w+)/g)?.length || 0;
+
+                var { type, date, slug, type, linkTitle, linkDesc } = frontmatter
+                // end up with an object of
+                // { typeA: [{ slug, linkTitle, linkDesc }] }
+
+                // should have a date as a sortable string
+                files[type].push({
+                    type,
+                    date,
+                    slug,
+                    linkTitle,
+                    linkDesc,
+                    words: length
+                })
+
+                next(null, files)
+            })
+        })
+
         function writeProjectsHtml (err) {
             if (err) throw err
             // now we have all the files
 
             var hs = hyperstream({
                 '.projects.dev-diary': {
-                    // need to sort this array
                     _appendHtml: createLinkString(files['dev-diary'])
                 },
                 '.projects.websites': {
@@ -72,6 +100,13 @@ function buildProjects () {
                 var isWeb = file.type === 'website'
                 var percent = (file.words / maxLength) * 100
 
+                const dateString = new Intl.DateTimeFormat('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric'
+                })
+                    .format(date)
+
                 acc += `<a href="/projects/${file.slug}"
                     ${(isLog || isWeb) ?
                         '' :
@@ -80,7 +115,7 @@ function buildProjects () {
                 >
                     <div class="project ${file.slug}">
                         ${date ?
-                            `<time datetime="${date}">${date}</time>` :
+                            `<time datetime="${date}">${dateString}</time>` :
                             ''
                         }
                         <h3>${file.linkTitle}</h3>
@@ -104,35 +139,6 @@ function buildProjects () {
             }, '')
         }
 
-        // map the fileNames to [{ slug, linkTitle, linkDescription }]
-        fileNames.forEach(function (filePath) {
-            // this get called once for each file in `_posts`
-
-            fs.readFile(filePath, 'utf8', (err, file) => {
-                if (err) return next(err)
-                var parsed = matter(file)
-                var frontmatter = parsed.data
-
-                var length = parsed.content.match(/(\w+)/g)?.length || 0;
-
-                var { type, date, slug, type, linkTitle, linkDesc } = frontmatter
-                // end up with an object of
-                // { typeA: [{ slug, linkTitle, linkDesc }] }
-
-                // should have a date as a sortable string
-                files[type].push({
-                    type,
-                    date,
-                    slug,
-                    linkTitle,
-                    linkDesc,
-                    words: length
-                })
-
-                next(null, files)
-            })
-        })
-
     })
 
     // write the 'posts'
@@ -147,6 +153,14 @@ function buildProjects () {
                 var parsed = matter(file)
                 var frontmatter = parsed.data
                 var { date, slug, type, linkDesc, linkTitle } = frontmatter
+
+                const dateString = date ?
+                    new Intl.DateTimeFormat('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                    }).format(date) :
+                    ''
 
                 mkdirp.sync(__dirname + '/public/projects/' + slug)
 
@@ -181,19 +195,22 @@ function buildProjects () {
                         
                         <meta property="og:image"
                             content="https://nichoth.com/img/cube.png" />
+
+                        <link href="/prism.css" rel="stylesheet" />
                         `
                     },
                     'title': {
                         _appendHtml: ' | ' + linkTitle
                     },
                     'body': {
-                        class: { append: slug + ' project ' + type}
+                        class: { append: slug + ' project ' + type},
+                        _appendHtml: '<script src="/prism.js"></script>'
                     },
                     '#content': {
                         _appendHtml: `<div class="date">
                             ${date ? 
                                 `<time datetime="${date}">
-                                    ${date}
+                                    ${dateString}
                                 </time>` :
                                 ''
                             }

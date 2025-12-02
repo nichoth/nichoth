@@ -4,7 +4,7 @@ linkTitle: ssb docs
 linkDesc: Compiling a list of ssb-related docs
 slug: ssb-docs
 type: miscellany
-date: 3-1-2022
+date: 2022-03-01
 
 ---
 

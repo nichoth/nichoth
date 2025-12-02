@@ -4,7 +4,7 @@ linkTitle: lipmaa links
 linkDesc: Getting lost in merkle forests
 slug: dev-diary-lipmaa
 type: dev-diary
-date: 10-19-2021
+date: 2021-10-19
 
 ---
 

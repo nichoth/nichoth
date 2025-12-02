@@ -4,7 +4,7 @@ linkTitle: ssb field guide
 linkDesc: A field guide to developing with ssb
 slug: ssb-field-guide
 type: miscellany
-date: 11-10-2017
+date: 2017-11-10
 
 ---
 

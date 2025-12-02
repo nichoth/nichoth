@@ -1,9 +1,6 @@
-$bgc: #f7f7eb;
-$mw: 40rem;
-
 body.ssc {
     color: #572E08;
-    background-color: $bgc;
+    background-color: var(--bgc);
     font-family: YoungSerif, serif;
     margin: 1rem;
 
@@ -13,7 +10,7 @@ body.ssc {
     }
 
     h1, h2 {
-        max-width: $mw;
+        max-width: 40rem;
         margin: 1rem auto;
         margin-bottom: 2rem;
         text-align: left;
@@ -25,13 +22,13 @@ body.ssc {
     }
 
     p {
-        max-width: $mw;
+        max-width: 40rem;
         margin: 1rem auto;
         line-height: 1.6rem;
     }
 
     pre {
-        max-width: $mw;
+        max-width: 40rem;
         margin: 1rem auto;
     }
 

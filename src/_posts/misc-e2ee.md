@@ -4,7 +4,7 @@ linkTitle: End to End Encryption
 linkDesc: Investigating privacy + e2ee on the internet
 slug: misc-e2ee
 type: miscellany
-date: 9-30-2024
+date: 2024-09-30
 
 ---
 

@@ -4,7 +4,7 @@ linkTitle: notes about fission
 linkDesc: some questions
 slug: notes
 type: miscellany
-date: 12-4-2021
+date: 2021-12-04
 
 ---
 

@@ -4,7 +4,7 @@ linkTitle: template
 linkDesc: A template for JS projects
 slug: template
 type: dev-diary
-date: 11-18-2022
+date: 2022-11-18
 
 ---
 

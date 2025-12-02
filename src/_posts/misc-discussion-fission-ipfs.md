@@ -4,7 +4,7 @@ linkTitle: discussion — fission + ipfs
 linkDesc: Talking about ipfs & webnative
 slug: discussion-fission-ipfs
 type: miscellany
-date: 11-15-2021
+date: 2021-11-15
 
 ---
 

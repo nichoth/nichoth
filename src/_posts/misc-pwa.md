@@ -4,7 +4,7 @@ linkTitle: installable PWA
 linkDesc: How to make a PWA installable
 slug: misc-pwa
 type: miscellany
-date: 7-6-2022
+date: 2022-07-06
 
 ---
 

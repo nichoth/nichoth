@@ -3,8 +3,8 @@
 linkTitle: dev environment
 linkDesc: Documenting how I do things
 slug: dev-env
-date: 10-7-2021
 type: miscellany
+date: 2021-10-07
 
 ---
 

@@ -4,7 +4,7 @@ linkTitle: notes on github actions
 linkDesc: Finally learning syntax for github actions
 slug: gh-actions
 type: miscellany
-date: 12-4-2021
+date: 2021-12-04
 
 ---
 

@@ -33,7 +33,7 @@ Bob receives it and verifies it using Alice's public key. Since Alice's public k
 
 ---------------------------------------------------
 
-## 10-31-2020
+## 2020-10-31
 Reading https://github.com/RangerMauve/local-first-cyberspace
 
 on `dat`:
@@ -98,12 +98,12 @@ The `fs` API is the key to the whole local-first thing in ssb. Node + electron a
 
 ------------------------------------------------
 
-## 11-10-2020
+## 2020-11-10
 Trying firebase and rxdb
 
 `/Users/nick/code/demo-world-rxdb`
 
-## 11-14-2020 -- reading about beaker
+## 2020-11-14 -- reading about beaker
 * https://beakerbrowser.com/docs/how-beaker-works/privacy-and-security.html
 
 >  Beaker stores user content on the device, and provides encrypted peer-to-peer transmission of the files.
@@ -157,7 +157,7 @@ Git commits are not *signed* by default, they are just a hash of the content and
 
 -------------------------------------------------
 
-## 11-19-2020
+## 2020-11-19
 What is [fission](https://fission.codes/)?
 
 > When you create a Fission Account, whether signing up on the web or using the command line as a developer, it creates a username and email address in our service database, and also a private / public key pair representing that account.
@@ -194,7 +194,7 @@ Need to make a backend that functions as a pub, but the API is exposed over REST
     + is paid ? publish (if msg is valid) : err
 
 
-## 11-24-2020
+## 2020-11-24
 Should be doing ssc today.
 
 https://paper.dropbox.com/doc/ThreadDB-for-Javascript-Alpha-Preview--BADptTkxkiiWSPYUl4D~9kUoAg-4jU1b9NKU3vuy8pDigmV6
@@ -221,7 +221,7 @@ These are less radical b/c it is a *local cache*, not a full replica.
 
 ---------------------------------------------
 
-## 11-25-2020
+## 2020-11-25
 Found [cypher-net](https://github.com/dominictarr/cyphernet), and old dominic project.
 
 Watched [an old video -- 2013 Realtime Conf](https://vimeo.com/77352417). git replication -- group the hashes into common prefixes, and then hash each group. That way you can tell if any of the groups contains a change, so it's more efficient to replicate.
@@ -239,13 +239,13 @@ ssc is what i've called the next project btw. it a 'pub', but made with unique c
 --------------------------------------------------------
 
 
-## 11-25-2020
+## 2020-11-25
 In the back of my mind is the memory app -- basically a graph database that has a UI. I want to use levelgraph, but have been thinking that I could use it will an ssb-like network also, which i guess means things would be easy to replicate/share.
 
 -------------------------------------------------------
 
 
-## 12-11-2020
+## 2020-12-11
 
 * https://lynnandtonic.com/
 * https://hypercore-protocol.org/
@@ -257,7 +257,7 @@ In the back of my mind is the memory app -- basically a graph database that has 
 
 --------------------------------------------------
 
-## 12-13-2020
+## 2020-12-13
 
 via Dominic %pYmFr6d0QwLP+YG0VNoo75PP7eYNZ1Y8C2MC9IjF5aw=.sha256 :
 
@@ -315,7 +315,7 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 * hyp CLI
 * web assembly
 * DHT
-* travel back in time and look [at this](https://github.com/nichoth/nichoth#10-31-2020) -- a list of stuff regarding merkle-tree, ssb, hyper-swarm
+* travel back in time and look [at this](https://github.com/nichoth/nichoth#2020-10-31) -- a list of stuff regarding merkle-tree, ssb, hyper-swarm
 
 -------------------------------------------------------------
 
@@ -333,7 +333,7 @@ Organizing things is hard. The web is supposed to help b/c it has global text li
 
 --------------------------------------------
 
-## 12-14-2020
+## 2020-12-14
 
 * https://www.youtube.com/watch?v=nOSB177SfEM&feature=youtu.be&t=380 -- arj bornhack anarchitecture
 
@@ -371,19 +371,19 @@ I realized today that it is *impossible* to do this site on netlify, because the
 -------------------------------------------------
 
 
-## 12-15-2020
+## 2020-12-15
 * https://www.inkandswitch.com/local-first.html
 
 ---------------------------------------------------------
 
-## 12-16-2020
+## 2020-12-16
 Woke up with a headache today. Took some ibuprofen and now it's ok.
 
 Found out about [ssb-keys-mnemonic](https://www.npmjs.com/package/ssb-keys-mnemonic) today.
 
 -------------------------------------------------------
 
-## 12-20-2020
+## 2020-12-20
 Reading about [hypercore](https://hypercore-protocol.org/) today.
 
 > Think lightweight blockchain crossed with BitTorrent.
@@ -424,7 +424,7 @@ https://thegraph.com/
 
 -------------------------------------------------
 
-## 12-22-2020
+## 2020-12-22
 * [Setting up a TypeScript NodeJS Application with Prettier and ESLint](https://dev.to/caelinsutch/setting-up-a-typescript-nodejs-application-with-prettier-and-eslint-53jc)
 * [React Server Components](https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html)
 * [Speakeasy JS – How we fit our blockchain full node in a web browser (Elena Nadolinski)](https://www.youtube.com/watch?v=CS6pZ1qLUVg)
@@ -454,13 +454,13 @@ Workers-KV is like a database. eventually consistent
 
 ----------------------------------------------------------------------
 
-## 12-23-2020
+## 2020-12-23
 
 * [Leveraging 11ty in Healthcare](https://www.youtube.com/watch?v=RvNV8Lesmrc)
 
 ---------------------------------------------
 
-## 12-24-2020
+## 2020-12-24
 
 Watching this and noting the stuff: [Leveraging 11ty in Healthcare](https://www.youtube.com/watch?v=RvNV8Lesmrc)
 
@@ -489,7 +489,7 @@ So it looks like you would create a separate repo for the cloudflare workers, an
 
 ----------------------------------------------
 
-## 12-25-2020
+## 2020-12-25
 
 * [durable objects](https://blog.cloudflare.com/introducing-workers-durable-objects/)
 * [merkle](https://0fps.net/2020/12/19/peer-to-peer-ordered-search-indexes/)
@@ -497,7 +497,7 @@ So it looks like you would create a separate repo for the cloudflare workers, an
 
 -----------------------------------------------------
 
-## 12-27-2020
+## 2020-12-27
 
 * [scroll animation](https://css-tricks.com/books/greatest-css-tricks/scroll-animation/) -- very good article
 * [css min & max](https://css-tricks.com/min-max-and-clamp-are-css-magic/)
@@ -506,7 +506,7 @@ So it looks like you would create a separate repo for the cloudflare workers, an
 
 ------------------------------------------------------------------
 
-## 12-28-2020
+## 2020-12-28
 
 Need to get 'eventual-gram' working today. Need to do the routing, make sure the invite-code page is ok
 
@@ -514,18 +514,18 @@ Need to get 'eventual-gram' working today. Need to do the routing, make sure the
 
 ------------------------------------------------------------
 
-## 12-29-2020
+## 2020-12-29
 Sent this log as a 'writing sample', then realized i should have sent [the fiend guide](https://github.com/nichoth/ssb-field-guide).
 
 
 ----------------------------------------------------
 
-## 12-30-2020
+## 2020-12-30
 Heard of [terminus DB](https://terminusdb.com/) and [the podcast](https://podcast.terminusdb.com/episodes) today
 
 -----------------------------------------
 
-## 12-31-2020
+## 2020-12-31
 
 ------------------------------------------
 
@@ -1262,14 +1262,14 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 -------------------------------------------------
 
-## 10-13-2021
+## 2021-10-13
 
 * https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1
 
 
 ------------------------------------------
 
-## 10-14-2021
+## 2021-10-14
 
 * [fly.io blog about tokens](https://fly.io/blog/api-tokens-a-tedious-survey/)
 
@@ -1305,7 +1305,7 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 -----------------------------------------------
 
-## 11-10-2021
+## 2021-11-10
 
 * [SSB HTTP Authentication](https://ssb-ngi-pointer.github.io/ssb-http-auth-spec/)
 * setup a netlify site for planetary
@@ -1314,13 +1314,13 @@ I spent the day looking at jest (the test tool) today. I notice that there is no
 
 -------------------------------------------------
 
-## 11-11-2021
+## 2021-11-11
 
 * [a good talk about npm, hypercore](https://discord.com/channels/709519409932140575/709522119335346196/908252083919147039)
 
 -------------------------------------------
 
-## 11-14-2021
+## 2021-11-14
 
 Css stuff
 
@@ -1337,20 +1337,20 @@ Css stuff
 
 ---------------------------------------------
 
-## 11-17-2021
+## 2021-11-17
 
 [Netlify Raises $105 Million to Transform Development for the Modern Web](https://www.netlify.com/press/netlify-raises-usd105-million-to-transform-development-for-the-modern-web)
 
 ---------------------------------------------------
 
-## 11-19-2021
+## 2021-11-19
 
 * [How to Host Your IPFS Files Online Forever](https://medium.com/ethereum-developers/how-to-host-your-ipfs-files-online-forever-f0c56b9b5398)
 * [fission -- Concepts](https://guide.fission.codes/developers/concepts)
 
 -----------------------------------------
 
-## 11-27-2021
+## 2021-11-27
 
 * [remix.run](https://remix.run/)
 
@@ -1681,7 +1681,7 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Got Preact Signals working in @sveltejs out of the box.](https://twitter.com/marvinhagemeist/status/1569585235334991873?s=20&t=Bvt11R6OW5XdKLVPSf-HGw)
 
 
-## 11-15-2022
+## 2022-11-15
 
 * [fission + capyloon](https://fission.codes/blog/capyloon/)
 * [wtw -- tailwind](https://wtw.dev/60-tailwind-not-design-system)
@@ -1690,7 +1690,7 @@ The example is self-signed by Alice. The service here still needs to check out o
 * [Decentralized Networks as Essential Infrastructure](https://twitter.com/dustyweb/status/1591892079416074240?s=20&t=vEdJItX51UymPHeoXGJ9RQ)
 
 
-## 11-19-2022
+## 2022-11-19
 * [State of the IPFS DevTools ecosystem-Brendan O'Brien, Brooklyn Zelenka, Carson Farmer & Sara Feenan](https://www.youtube.com/watch?app=desktop&v=Q-41niP2tSg&ab_channel=IPFS)
 * [Apply instant loading with the PRPL pattern](https://web.dev/apply-instant-loading-with-prpl/)
 * [This episode's a long one, but you'll come out the other side knowing how pinch-zoom, scrolling, browser UI, and software keyboards change layout & viewports.](https://twitter.com/jaffathecake/status/1569738079975665666)

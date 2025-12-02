@@ -3,8 +3,8 @@
 linkTitle: State of the Website
 linkDesc: How to do websites?
 slug: state-of-the-website
-date: 06-07-2025
 type: dev-diary
+date: 2025-06-07
 
 ---
 
