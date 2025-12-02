@@ -1,9 +1,6 @@
 var DUR = 500
 
 var email = document.getElementById('email');
-// email.addEventListener('click', () => {
-//     animate()
-// })
 
 email.addEventListener('mouseenter', function (ev) {
     animate()

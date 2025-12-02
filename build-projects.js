@@ -196,7 +196,7 @@ function buildProjects () {
                         <meta property="og:image"
                             content="https://nichoth.com/img/cube.png" />
 
-                        <link href="prism.css" rel="stylesheet" />
+                        <link href="/prism.css" rel="stylesheet" />
                         `
                     },
                     'title': {
@@ -204,7 +204,7 @@ function buildProjects () {
                     },
                     'body': {
                         class: { append: slug + ' project ' + type},
-                        _appendHtml: '<script src="prism.js"></script>'
+                        _appendHtml: '<script src="/prism.js"></script>'
                     },
                     '#content': {
                         _appendHtml: `<div class="date">
