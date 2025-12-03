@@ -13,7 +13,7 @@
             "id": "did:web:nichoth.com#main-key",
             "type": "Multikey",
             "controller": "did:web:nichoth.com",
-            "publicKeyMultibase": "z6Mkmy1ak2zS6hPohyNnPwMUDqpC3WE8wTR3Fcz5esUoCFNH"
+            "publicKeyMultibase": "z6MktJ6Tv1kuh4Dwybs5dcmvrXKkar5CkFFqrJPeL6wgMbKf"
         }
     ],
     "authentication": ["#main-key"],
