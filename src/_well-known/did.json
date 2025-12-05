@@ -16,6 +16,6 @@
             "publicKeyMultibase": "z6MktJ6Tv1kuh4Dwybs5dcmvrXKkar5CkFFqrJPeL6wgMbKf"
         }
     ],
-    "authentication": ["#main-key"],
-    "assertionMethod": ["#main-key"]
+    "authentication": ["did:web:nichoth.com#main-key"],
+    "assertionMethod": ["did:web:nichoth.com#main-key"]
 }
