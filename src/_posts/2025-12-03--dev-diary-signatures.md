@@ -4,7 +4,7 @@ linkTitle: Bluesky, the Web, and Cryptography
 linkDesc: More keys, more fun
 slug: signatures
 type: dev-diary
-date: 2025-11-30
+date: 2025-12-04
 
 ---
 
