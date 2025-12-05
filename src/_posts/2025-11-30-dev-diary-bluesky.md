@@ -10,7 +10,7 @@ date: 2025-11-30
 
 # Bluesky as a Backend
 
-Good news everyone. It is possible to consume the bluesky firehose without
+Good news everyone. It is possible to consume the Bluesky firehose without
 spending money. This is a recipe about how to drink from the firehose,
 store relevant data, and serve a custom feed API for free.
 
@@ -22,6 +22,11 @@ infrastructure, our app can deal directly with things like "posts" and social
 interactions &mdash; "likes" and "follows" &mdash; and we don't have to think
 about how to translate database records into those things.
 
+## Moderation
+
+The bigger benefit is that this effectively
+[factors out moderation](#refactoring-our-concerns). Moderation is the really
+sticky, unpleasant work on the internet, and now you do not have to do it.
 
 ## A Few Key Ingredients
 
