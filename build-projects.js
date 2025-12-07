@@ -203,8 +203,7 @@ function buildProjects () {
                         _appendHtml: ' | ' + linkTitle
                     },
                     'body': {
-                        class: { append: slug + ' project ' + type},
-                        _appendHtml: '<script src="/prism.js"></script>'
+                        class: { append: slug + ' project ' + type}
                     },
                     '#content': {
                         _appendHtml: `<div class="date">
