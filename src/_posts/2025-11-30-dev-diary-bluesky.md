@@ -161,3 +161,7 @@ think about how to ban people, etc.
 
 * [A Bluesky post about this](https://bsky.app/profile/nichoth.com/post/3m6scdzclm22p)
 * [Bluesky docs &mdash; custom feeds](https://docs.bsky.app/docs/starter-templates/custom-feeds#publishing-your-feed)
+* [firehose-consumer](https://github.com/bskyprism/firehose-consumer)
+  (fly.io websocket listener)
+* [feed-worker](https://github.com/bskyprism/feed-worker)
+  (the HTTP server/databse server)
