@@ -19,6 +19,10 @@
   src: url("/font/YoungSerif-Regular.otf") format("opentype");
 }
 
+pre {
+  font-size: 0.9rem !important;
+}
+
 #content .date {
   color: gray;
   font-family: YoungSerif, serif;

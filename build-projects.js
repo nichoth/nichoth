@@ -99,14 +99,21 @@ function buildProjects () {
                 var isLog = file.slug === 'log'
                 var isWeb = file.type === 'website'
                 var percent = (file.words / maxLength) * 100
-                const isoDate = new Date(date).toISOString().split('T').shift()
+                const isoDate = date ?
+                    (new Date(date)
+                        .toISOString()
+                        .split('T')
+                        .shift()
+                    ) :
+                        ''
 
-                const dateString = new Intl.DateTimeFormat('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric'
-                })
-                    .format(date)
+                const dateString = date ?
+                    (new Intl.DateTimeFormat('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                    }).format(date)) :
+                    ''
 
                 acc += `<a href="/projects/${file.slug}"
                     ${(isLog || isWeb) ?

@@ -25,7 +25,6 @@ function detritus (cb) {
             ssbWeb.writeFiles(sbot, 'public/posts/img'),
             S.filter(({ post, blobHash }) => (post && blobHash)),
             S.drain(function onEvent ({ post, blobHash }) {
-                console.log('**post**', post)
                 // post.value.content
                 // { type: 'ev.post', text: 'kkkkkkkkk', mentions: [Array] }
 
@@ -72,7 +71,6 @@ function detritus (cb) {
 
                 // in here, re-write the img files as avif
                 glob(__dirname + '/public/posts/img/*', {}, (err, files) => {
-                    // console.log('globbing', err, files)
                     if (err) throw err
                     files.forEach(fileName => {
                         var bName = path.basename(fileName);
