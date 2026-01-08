@@ -13,6 +13,10 @@
   --underline: var(--color-peach);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-display: fallback;
   font-family: YoungSerif;
@@ -993,5 +997,11 @@ body.diary-entry {
         border-bottom: 3px solid black;
       }
     }
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

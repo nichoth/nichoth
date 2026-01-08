@@ -1,3 +1,4 @@
+// @ts-check
 var hyperstream = require('hyperstream')
 var fs = require('fs')
 var mkdirp = require('mkdirp')
@@ -67,6 +68,7 @@ function buildProjects () {
             var rs = fs.createReadStream(__dirname + '/src/_index.html')
             var ws = fs.createWriteStream(__dirname + '/public/projects/index.html')
             var projectRs = fs.createReadStream(__dirname + '/src/_projects.html')
+            // @ts-expect-error
             var projectPageStream = projectRs.pipe(hs)
 
             var fileHs = hyperstream({
@@ -76,6 +78,7 @@ function buildProjects () {
                 '#content': projectPageStream
             })
 
+            // @ts-expect-error
             rs.pipe(fileHs).pipe(ws)
         }
 
@@ -196,6 +199,10 @@ function buildProjects () {
                             content="${linkDesc}" />
 
                         <meta name="twitter:image"
+                            content="${createMetaImage({
+                                cloudName: 'dhv2youtt',
+                                text: linkDesc
+                            })}"
                             content="https://nichoth.com/img/cube.png" />
                         
                         <meta property="og:description"
@@ -226,6 +233,7 @@ function buildProjects () {
                     }
                 })
 
+                // @ts-expect-error
                 rs.pipe(hs).pipe(ws)
             })
         })
@@ -233,3 +241,25 @@ function buildProjects () {
 }
 
 module.exports = buildProjects
+
+// https://res.cloudinary.com/dhv2youtt/image/upload/v1765998711/cube_vufm7u.png
+
+// cube_vufm7u.png
+
+/**
+ * Create an image via Cloudinary.
+ *
+ * @param {{ cloudName:string; text:string; }} opts
+ * @returns {string}
+ */
+function createMetaImage ({ cloudName, text }) {
+    const imageTransformations = ['w_1200', 'h_627', 'c_fill', 'q_auto',
+        'f_auto' ].join(',')
+    const textTransformations = ['w_600', 'x_480', 'y_254', 'g_south_west',
+        'co_white', `l_text:roboto_64:${encodeURIComponent(text)}`].join(',')
+
+    const baseUrl = `https://res.cloudinary.com/${cloudName}/image/upload/`
+
+	return `${baseUrl}${imageTransformations}/${textTransformations}/` +
+        'cube_vufm7u.png'
+}
