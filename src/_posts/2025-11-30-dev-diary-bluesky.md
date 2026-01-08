@@ -76,23 +76,22 @@ We need a way to tell our application's messages from other applications', like
 the Bluesky app's messages for example. There are two possibilities
 here &mdash; use a [custom lexicon](https://atproto.com/guides/lexicon),
 or re-use an existing Bluesky lexicon and add a unique tag to our
-app's messages. Creating a new lexicon means that the Bluesky cient application
+app's messages. Creating a new lexicon means the Bluesky cient application
 would not show our app's messages. Using a unique tag plus re-using the
 existing
-[Bluesky post lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json) would result in our app's content being visible in
-the Bluesky app.
+[Bluesky post lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json)
+results in our app's content being visible in Bluesky.
 
-For this example, we will use a unique tag. This has the benefit that
-Bluesky's moderation policy definitely does apply to our messages, since they
-are visible withing Bluesky. This does mean that anyone can create
-a message for our application, but that is ok. We can add additional validation
-as necessary.
+For this example, we will use a unique tag. The benefit is that
+Bluesky's moderation policy definitely *does* apply to our messages, since it
+will be visible within Bluesky. This does mean that anyone can create
+a message for our application, i.e. from a different frontend, but that is ok.
 
 In [at protocol](https://atproto.com/), tags are both extracted from the post
 text, and can also be added programmatically if you are using the API. We will
-do the latter, meaning that the tags we use are *invisible* to the app
+do the latter, meaning the tags we use are *invisible* to the app
 users. They are just added by machines and read by machines, and that's good
-becuase it would just be noise if it were visible.
+becuase it would just be noise to the user.
 
 ```ts
 // browser
@@ -129,28 +128,30 @@ await agent.post({
 After we create the post record by calling `agent.post`, the Bluesky servers
 will get our post data, then it will be broadcast on the firehose, where it
 will be seen by our fly.io server, and our server will call our database server,
-which will result in a new record written to our database.
+which will result in a new record in our database.
 
 ## Register the Custom Feed
 
 So that's great. Now we have some infrastructure for saving our app's posts.
-Our frontend only uses the Bluesky `Agent`. How does the agent know how to get
-our app's posts, which have been indexed and stored in our DB?
+Our frontend only uses the Bluesky `Agent` &mdash; how does the agent know how
+to get our app's posts, which have been indexed and stored in our DB?
 
-We need to [register our custom feed](https://docs.bsky.app/docs/starter-templates/custom-feeds#publishing-your-feed).
-That means calling a method on our `agent` with our custom feed's name. When
-someone views our app's custom feed, the client/browser calls Bluesky's
-app view backend, the Bluesky backend sees they are asking for our custom
-feed, and then the Bluesky backend calls our server
-(the Cloudflare server). The Buesky backend gets a "feed skeleton" from our
-custom feed server, and then then hydrates the feed skeleton and returns it
+We need to
+[register our custom feed](https://docs.bsky.app/docs/starter-templates/custom-feeds#publishing-your-feed).
+That means
+[calling a method on our `agent`](https://github.com/bskyprism/feed-worker/blob/4d39446ad801e8c5b3dcd17d1feadccb93bb6e78/scripts/publish-feed-gen.ts#L52)
+with our custom feed's name. When someone views our app's custom feed,
+the client/browser calls Bluesky's app view backend, the Bluesky backend sees
+they are asking for our custom feed, and then the Bluesky backend calls our
+server (the Cloudflare server). The Buesky backend gets a "feed skeleton" from
+our custom feed server, and then then hydrates the feed skeleton and returns it
 to the client.
 
 ## Refactoring Our Concerns
 
-This is interesting because effectively Bluesky has factored out moderation.
-My application can create data (posts), but Bluesky has to moderate it, because
-at the end of the day Bluesky's servers are hosting the data.
+This is interesting. Effectively Bluesky has factored out moderation.
+My application can create data (posts), but Bluesky has to moderate it.
+At the end of the day Bluesky's servers are hosting the data.
 
 This is new. No other service works at that level &mdash; concerned with the
 *content* of your data. This is great, because now I do not have to think about
