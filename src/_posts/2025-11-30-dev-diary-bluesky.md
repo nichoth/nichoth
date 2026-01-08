@@ -59,8 +59,8 @@ backend easy to reason about.
 
 ## At the End of the Day
 
-It works, too. This is something that is totally feasible to do right now.
-It is such nice hack that I've created two templates for it:
+It works, too. This is something totally feasible right now.
+It is such a nice hack that I've created two templates for it:
 
 * [firehose-consumer](https://github.com/bskyprism/firehose-consumer)
   (fly.io websocket listener)
