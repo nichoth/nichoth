@@ -150,8 +150,8 @@ to the client.
 ## Refactoring Our Concerns
 
 This is interesting. Effectively Bluesky has factored out moderation.
-My application can create data (posts), but Bluesky has to moderate it.
-At the end of the day Bluesky's servers are hosting the data.
+My application can create data (posts), but Bluesky has to moderate it,
+because at the end of the day Bluesky's servers are hosting the data.
 
 This is new. No other service works at that level &mdash; concerned with the
 *content* of your data. This is great, because now I do not have to think about
