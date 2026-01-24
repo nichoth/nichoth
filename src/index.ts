@@ -1,3 +1,15 @@
+fouc(() => {
+    const img = document.querySelector('img.main-image') as HTMLImageElement
+
+    if (img.complete) {
+        document.body.style.opacity = '1'  // prevent FOUC
+    } else {
+        img.addEventListener('load', () => {
+            document.body.style.opacity = '1'
+        })
+    }
+})
+
 function fouc (cb:()=>any) {
     if (document.readyState !== 'loading') {
         // start things
@@ -8,7 +20,3 @@ function fouc (cb:()=>any) {
         document.addEventListener('DOMContentLoaded', cb)
     }
 }
-
-fouc(() => {
-    document.body.style.opacity = '1'  // prevent FOUC
-})

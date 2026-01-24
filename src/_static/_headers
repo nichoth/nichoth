@@ -1,3 +1,4 @@
 /.well-known/did.json
   Content-Type: application/did+json
-  
+/img/*  # Cache all files in the images folder for 1 year
+  Cache-Control: public, max-age=31536000, immutable
