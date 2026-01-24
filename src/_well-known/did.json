@@ -6,7 +6,8 @@
     "id": "did:web:nichoth.com",
     "alsoKnownAs": [
         "at://nichoth.com",
-        "https://github.com/nichoth/"
+        "https://github.com/nichoth/",
+        "did:plc:s53e6k6sirobjtz5s6vdddwr"
     ],
     "verificationMethod": [
         {
