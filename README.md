@@ -89,3 +89,5 @@ const mb = bases.base58.encoder.encode(prefixed)
 // This yields something like "z6Mk…", same style as in the DID doc
 console.log(mb)
 ```
+
+<link rel="did" href="did:plc:s53e6k6sirobjtz5s6vdddwr">
