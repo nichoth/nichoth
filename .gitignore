@@ -3,10 +3,9 @@ bundle.js
 .DS_Store
 .env
 public
-
 .claude
-
 # Playwright test artifacts
 test-results/
 playwright-report/
 playwright/.cache/
+
