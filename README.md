@@ -6,6 +6,7 @@ https://nichoth.com/
 
 ![nichoth's GitHub stats](https://github-readme-stats.vercel.app/api?username=nichoth&show_icons=true&theme=transparent)
 
+[Bluesky DID: did:plc:s53e6k6sirobjtz5s6vdddwr](https://verify.aviary.domains/did/did:plc:s53e6k6sirobjtz5s6vdddwr)
 
 ## templates
 
