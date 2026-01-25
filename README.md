@@ -71,11 +71,6 @@ To encode something as a multikey:
 
 ```js
 import { bases } from "multiformats/bases/base58"
-import {
-  encode as multibaseEncode,
-  decode as multibaseDecode
-  } from "multiformats/bases/base58"
-import * as varint from "multiformats/src/varint"
 import * as multicodec from "multicodec"
 
 // Suppose you have a raw public-key Buffer/Uint8Array
@@ -87,6 +82,6 @@ const prefixed = multicodec.addPrefix('ed25519-pub', rawKeyBytes)
 // Then multibase-encode it (e.g. base58btc)
 const mb = bases.base58.encoder.encode(prefixed)
 
-// This yields something like "z6Mk…", same style as in the DID doc
+// This yields something like "z6Mk...", same style as in the DID doc
 console.log(mb)
 ```
