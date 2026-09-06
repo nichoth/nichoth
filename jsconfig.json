@@ -6,7 +6,6 @@
     "module": "commonjs",
     "strict": false,
     "types": ["node"],
-    "moduleResolution": "node",
     "resolveJsonModule": true
   },
   "exclude": ["node_modules"]

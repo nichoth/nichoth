@@ -7,30 +7,27 @@ var buildProjects = require('./build-projects')
 
 buildProjects()
 
-// write some odd individual files (that aren't posts)
+// write some odd individual files (file that aren't posts)
 var arr = ['list.md', 'examples.html']
 arr.forEach(function (_path) {
     var fileType = path.extname(_path)
     fs.readFile(__dirname + '/src/' + _path, 'utf8', (err, file) => {
         if (err) throw err
         let content = file
-        if (fileType === '.md') {
-            content = marked(file)
-        }
-        var name = path.basename(_path, fileType)
+        if (fileType === '.md') content = marked(file)
+        const name = path.basename(_path, fileType)
+
         mkdirp.sync(__dirname + '/public/' + name)
 
-        var rs = fs.createReadStream(__dirname + '/src/_index.html')
-
-        var ws = fs.createWriteStream(__dirname + '/public/' + name +
+        const rs = fs.createReadStream(__dirname + '/src/_index.html')
+        const ws = fs.createWriteStream(__dirname + '/public/' + name +
             '/index.html')
 
-        var hs = hyperstream({
+        const hs = hyperstream({
             'title': { _appendHtml: ' - ' + name },
 
             'head': {
-                _appendHtml: `<meta property="og:title" data-rh="true"
-                    content="nichoth">
+                _appendHtml: `<meta property="og:title" data-rh="true" content="nichoth">
                 
                 <meta property="og:description" data-rh="true"
                     content="${path.basename(_path, fileType)}"
