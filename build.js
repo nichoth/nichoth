@@ -10,7 +10,8 @@ buildProjects()
 // write some odd individual files (file that aren't posts)
 var arr = ['list.md', 'examples.html']
 arr.forEach(function (_path) {
-    var fileType = path.extname(_path)
+    const fileType = path.extname(_path)
+
     fs.readFile(__dirname + '/src/' + _path, 'utf8', (err, file) => {
         if (err) throw err
         let content = file
