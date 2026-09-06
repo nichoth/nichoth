@@ -11,6 +11,7 @@
   --link-width: 2em;
   --color-peach: hsl(4deg 65% 85%);
   --underline: var(--color-peach);
+  --coral: #ff7a60;
 }
 
 html {
@@ -725,6 +726,27 @@ button {
 /* ------------ the examples page ------------------------------ */
 
 body.examples {
+  & a.squiggle {
+    transition: 0.1s all;
+    text-decoration: none;
+    background-position: bottom;
+    background-size: 20%;
+    padding-bottom: 0.15em;
+
+    &:hover {
+      -webkit-text-fill-color: initial;
+      background-clip: initial;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='coral' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: left bottom;
+      background-repeat: repeat-x;
+      background-size: auto 3px;
+      box-decoration-break: initial;
+      box-decoration-break: slice;
+      padding-bottom: 0.15em;
+      color: var(--coral);
+    }
+  }
+
   & .quote-example {
     /* display: inline-block; */
     display: flex;
